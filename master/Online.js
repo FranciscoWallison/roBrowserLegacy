@@ -82375,7 +82375,7 @@ var init_preload_helper = __esmMin((() => {
 //#region src/UI/Common.css?raw
 var Common_default$1;
 var init_Common$1 = __esmMin((() => {
-	Common_default$1 = "/* Avoid input focus border */\r\n:focus {\r\n	outline: none;\r\n}\r\n::-moz-focus-inner {\r\n	border: 0;\r\n}\r\n\r\n* {\r\n	-moz-user-select: none;\r\n}\r\n\r\nhtml,\r\nbody {\r\n	touch-action: manipulation;\r\n	margin: 0;\r\n}\r\n\r\ncanvas {\r\n	touch-action: none;\r\n}\r\n\r\nbody {\r\n	background-color: #000;\r\n	color: #484848;\r\n	font-size: 11px;\r\n	font-weight: 400;\r\n	font-family: Gulim, Dotum, 'Malgun Gothic', sans-serif, Arial;\r\n	overflow: hidden;\r\n	-webkit-user-select: none;\r\n	user-select: none;\r\n	min-width: 100vw;\r\n	min-height: 100vh;\r\n	letter-spacing: 0;\r\n	line-height: 1.2;\r\n}\r\n\r\n.title {\r\n	font-size: 12px;\r\n}\r\n\r\nbutton,\r\nui-button {\r\n	padding: 0;\r\n}\r\n\r\nui-button {\r\n	display: inline-block;\r\n}\r\n\r\n.ui-btn {\r\n	-webkit-appearance: none;\r\n	appearance: none;\r\n	display: inline-flex;\r\n	align-items: center;\r\n	justify-content: center;\r\n\r\n	height: 20px;\r\n	min-width: 52px;\r\n	padding: 0 10px;\r\n\r\n	font-size: 12px;\r\n	line-height: 1;\r\n	color: #3f3f3f;\r\n	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.85);\r\n\r\n	border-radius: 4px;\r\n	border: 1px solid;\r\n\r\n	/* 3D border: top right bottom left */\r\n	border-color: #cfcfcf #a9a9a9 #5f5f5f #bdbdbd;\r\n\r\n	/* glossy + subtle depth */\r\n	background: linear-gradient(to bottom, #ffffff 0%, #f2f2f2 35%, #dcdcdc 55%, #f9f9f9 100%);\r\n\r\n	box-shadow:\r\n		inset 0 1px 0 rgba(255, 255, 255, 0.95),\r\n		/* top highlight */ inset 0 -1px 0 rgba(0, 0, 0, 0.12),\r\n		/* bottom inner edge */ 0 1px 0 rgba(0, 0, 0, 0.12); /* outer bottom shadow */\r\n\r\n	cursor: pointer;\r\n}\r\n\r\n/* Hover: hơi xanh nhẹ giống button Reset */\r\n.ui-btn:hover {\r\n	border-color: #c9d1dd #8ea2c4 #4d5f86 #b1bfd5;\r\n	background: linear-gradient(to bottom, #f7fbff 0%, #dfe8f6 35%, #c0d0ee 55%, #f0f6ff 100%);\r\n\r\n	box-shadow:\r\n		inset 0 1px 0 rgba(255, 255, 255, 0.95),\r\n		inset 0 -1px 0 rgba(0, 0, 0, 0.12),\r\n		0 1px 0 rgba(0, 0, 0, 0.12);\r\n}\r\n\r\n/* Active: giống \"ấn xuống\" */\r\n.ui-btn:active {\r\n	border-color: #9fb0c9 #6f86a6 #3b4b67 #7f96b6;\r\n\r\n	background: linear-gradient(to bottom, #cdd8eb 0%, #b7c8e5 45%, #dfe9fb 100%);\r\n\r\n	box-shadow:\r\n		inset 0 2px 3px rgba(0, 0, 0, 0.18),\r\n		inset 0 1px 0 rgba(255, 255, 255, 0.35);\r\n\r\n	transform: translateY(1px); /* cảm giác bị nhấn */\r\n}\r\n\r\n/* Disabled */\r\n.ui-btn:disabled,\r\n.ui-btn.is-disabled {\r\n	cursor: default;\r\n	color: #8f8f8f;\r\n	text-shadow: none;\r\n\r\n	border-color: #d3d3d3 #bdbdbd #9b9b9b #c9c9c9;\r\n\r\n	background: linear-gradient(to bottom, #f6f6f6 0%, #e7e7e7 55%, #fafafa 100%);\r\n\r\n	box-shadow:\r\n		inset 0 1px 0 rgba(255, 255, 255, 0.9),\r\n		inset 0 -1px 0 rgba(0, 0, 0, 0.08),\r\n		0 1px 0 rgba(0, 0, 0, 0.08);\r\n\r\n	transform: none;\r\n}\r\n\r\n/* Hide native cursor inside Shadow DOM when custom cursor is active */\r\n:host-context(.custom-cursor) * {\r\n	cursor: none !important;\r\n}\r\n";
+	Common_default$1 = "/* Avoid input focus border */\r\n:focus {\r\n	outline: none;\r\n}\r\n::-moz-focus-inner {\r\n	border: 0;\r\n}\r\n\r\n* {\r\n	-moz-user-select: none;\r\n}\r\n\r\nhtml,\r\nbody {\r\n	touch-action: manipulation;\r\n	margin: 0;\r\n}\r\n\r\n/* Prevent mobile browser auto-zoom on input focus and double-tap */\r\n:host {\r\n	touch-action: manipulation;\r\n}\r\n\r\ninput,\r\ntextarea,\r\nselect {\r\n	touch-action: manipulation;\r\n}\r\n\r\ncanvas {\r\n	touch-action: none;\r\n}\r\n\r\nbody {\r\n	background-color: #000;\r\n	color: #484848;\r\n	font-size: 11px;\r\n	font-weight: 400;\r\n	font-family: Gulim, Dotum, 'Malgun Gothic', sans-serif, Arial;\r\n	overflow: hidden;\r\n	-webkit-user-select: none;\r\n	user-select: none;\r\n	min-width: 100vw;\r\n	min-height: 100vh;\r\n	letter-spacing: 0;\r\n	line-height: 1.2;\r\n}\r\n\r\n.title {\r\n	font-size: 12px;\r\n}\r\n\r\nbutton,\r\nui-button {\r\n	padding: 0;\r\n}\r\n\r\nui-button {\r\n	display: inline-block;\r\n}\r\n\r\n.ui-btn {\r\n	-webkit-appearance: none;\r\n	appearance: none;\r\n	display: inline-flex;\r\n	align-items: center;\r\n	justify-content: center;\r\n\r\n	height: 20px;\r\n	min-width: 52px;\r\n	padding: 0 10px;\r\n\r\n	font-size: 12px;\r\n	line-height: 1;\r\n	color: #3f3f3f;\r\n	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.85);\r\n\r\n	border-radius: 4px;\r\n	border: 1px solid;\r\n\r\n	/* 3D border: top right bottom left */\r\n	border-color: #cfcfcf #a9a9a9 #5f5f5f #bdbdbd;\r\n\r\n	/* glossy + subtle depth */\r\n	background: linear-gradient(to bottom, #ffffff 0%, #f2f2f2 35%, #dcdcdc 55%, #f9f9f9 100%);\r\n\r\n	box-shadow:\r\n		inset 0 1px 0 rgba(255, 255, 255, 0.95),\r\n		/* top highlight */ inset 0 -1px 0 rgba(0, 0, 0, 0.12),\r\n		/* bottom inner edge */ 0 1px 0 rgba(0, 0, 0, 0.12); /* outer bottom shadow */\r\n\r\n	cursor: pointer;\r\n}\r\n\r\n/* Hover: hơi xanh nhẹ giống button Reset */\r\n.ui-btn:hover {\r\n	border-color: #c9d1dd #8ea2c4 #4d5f86 #b1bfd5;\r\n	background: linear-gradient(to bottom, #f7fbff 0%, #dfe8f6 35%, #c0d0ee 55%, #f0f6ff 100%);\r\n\r\n	box-shadow:\r\n		inset 0 1px 0 rgba(255, 255, 255, 0.95),\r\n		inset 0 -1px 0 rgba(0, 0, 0, 0.12),\r\n		0 1px 0 rgba(0, 0, 0, 0.12);\r\n}\r\n\r\n/* Active: giống \"ấn xuống\" */\r\n.ui-btn:active {\r\n	border-color: #9fb0c9 #6f86a6 #3b4b67 #7f96b6;\r\n\r\n	background: linear-gradient(to bottom, #cdd8eb 0%, #b7c8e5 45%, #dfe9fb 100%);\r\n\r\n	box-shadow:\r\n		inset 0 2px 3px rgba(0, 0, 0, 0.18),\r\n		inset 0 1px 0 rgba(255, 255, 255, 0.35);\r\n\r\n	transform: translateY(1px); /* cảm giác bị nhấn */\r\n}\r\n\r\n/* Disabled */\r\n.ui-btn:disabled,\r\n.ui-btn.is-disabled {\r\n	cursor: default;\r\n	color: #8f8f8f;\r\n	text-shadow: none;\r\n\r\n	border-color: #d3d3d3 #bdbdbd #9b9b9b #c9c9c9;\r\n\r\n	background: linear-gradient(to bottom, #f6f6f6 0%, #e7e7e7 55%, #fafafa 100%);\r\n\r\n	box-shadow:\r\n		inset 0 1px 0 rgba(255, 255, 255, 0.9),\r\n		inset 0 -1px 0 rgba(0, 0, 0, 0.08),\r\n		0 1px 0 rgba(0, 0, 0, 0.08);\r\n\r\n	transform: none;\r\n}\r\n\r\n/* Hide native cursor inside Shadow DOM when custom cursor is active */\r\n:host-context(.custom-cursor) * {\r\n	cursor: none !important;\r\n}\r\n";
 }));
 //#endregion
 //#region src/Controls/MouseEventHandler.js
@@ -89660,6 +89660,7 @@ var init_Renderer = __esmMin((() => {
 				jquery_default(window).resize(this.onResize.bind(this)).on("contextmenu", function() {
 					return false;
 				});
+				if (window.visualViewport) window.visualViewport.addEventListener("resize", this.onResize.bind(this));
 				this.render(null);
 				this.resize();
 			}
@@ -110542,6 +110543,16 @@ var init_PacketStructure = __esmMin((() => {
 		this.castle_list = fp.readString(end - fp.tell());
 	};
 	PACKET.ZC.GUILD_AGIT_INFO.size = -1;
+	PACKET.ZC.ADD_SKILL2 = function PACKET_ZC_ADD_SKILL2(fp, end) {
+		this.data = {};
+		this.data.SKID = fp.readUShort();
+		this.data.type = fp.readLong();
+		this.data.level = fp.readShort();
+		this.data.spcost = fp.readShort();
+		this.data.attackRange = fp.readShort();
+		this.data.upgradable = fp.readUChar();
+	};
+	PACKET.ZC.ADD_SKILL2.size = 15;
 	PACKET.ZC.PROPERTY_HOMUN3 = function PACKET_ZC_PROPERTY_HOMUN3(fp, end) {
 		this.szName = fp.readString(NAME_LENGTH);
 		this.bModified = fp.readUChar();
@@ -110566,6 +110577,17 @@ var init_PacketStructure = __esmMin((() => {
 		this.ATKRange = fp.readShort();
 	};
 	PACKET.ZC.PROPERTY_HOMUN3.size = 73;
+	PACKET.ZC.ADD_SKILL3 = function PACKET_ZC_ADD_SKILL3(fp, end) {
+		this.data = {};
+		this.data.SKID = fp.readUShort();
+		this.data.type = fp.readLong();
+		this.data.level = fp.readShort();
+		this.data.spcost = fp.readShort();
+		this.data.attackRange = fp.readShort();
+		this.data.upgradable = fp.readUChar();
+		this.data.level2 = fp.readShort();
+	};
+	PACKET.ZC.ADD_SKILL3.size = 17;
 	PACKET.ZC.SKILLINFO_LIST2 = function PACKET_ZC_SKILLINFO_LIST2(fp, end) {
 		this.skillList = (function() {
 			const count = (end - fp.tell()) / 15 | 0;
@@ -110584,6 +110606,16 @@ var init_PacketStructure = __esmMin((() => {
 		})();
 	};
 	PACKET.ZC.SKILLINFO_LIST2.size = -1;
+	PACKET.ZC.SKILLINFO_UPDATE3 = function PACKET_ZC_SKILLINFO_UPDATE3(fp, end) {
+		this.SKID = fp.readShort();
+		this.type = fp.readLong();
+		this.level = fp.readShort();
+		this.spcost = fp.readShort();
+		this.attackRange = fp.readShort();
+		this.upgradable = fp.readChar();
+		this.level2 = fp.readShort();
+	};
+	PACKET.ZC.SKILLINFO_UPDATE3.size = 17;
 	PACKET.ZC.EQUIPWIN_MICROSCOPE_V7 = function PACKET_ZC_EQUIPWIN_MICROSCOPE_V7(fp, end) {
 		this.characterName = fp.readString(NAME_LENGTH);
 		this.job = fp.readShort();
@@ -145656,8 +145688,11 @@ var init_PacketRegister = __esmMin((() => {
 		2853: PACKET.ZC.PAR_4JOB_CHANGE,
 		2855: PACKET.ZC.GUILD_AGIT_INFO,
 		2849: PACKET.CZ.SHORTCUT_KEY_CHANGE2,
+		2858: PACKET.ZC.ADD_SKILL2,
 		2863: PACKET.ZC.PROPERTY_HOMUN3,
+		2865: PACKET.ZC.ADD_SKILL3,
 		2866: PACKET.ZC.SKILLINFO_LIST2,
+		2867: PACKET.ZC.SKILLINFO_UPDATE3,
 		2871: PACKET.ZC.EQUIPWIN_MICROSCOPE_V7,
 		2873: PACKET.ZC.SPLIT_SEND_ITEMLIST_EQUIP2,
 		2877: PACKET.ZC.PC_PURCHASE_ITEMLIST_FROMMC3,
@@ -152925,27 +152960,39 @@ var init_UIImage = __esmMin((() => {
 			if (this._initialized) return;
 			this._initialized = true;
 			this.style.display = "none";
-			this._loadSrc(this.getAttribute("src"));
+			this._applyBackground();
 		}
 		static get observedAttributes() {
 			return ["src"];
 		}
 		attributeChangedCallback(name, oldVal, newVal) {
-			if (name === "src") this._loadSrc(newVal);
+			if (name === "src" && this._initialized) this._applyBackground();
 		}
-		_loadSrc(path) {
+		_applyBackground() {
+			const path = this.getAttribute("src");
 			if (!path) return;
 			const target = this.parentElement;
-			if (!target) return;
+			if (!target) {
+				requestAnimationFrame(() => {
+					const retryTarget = this.parentElement;
+					if (retryTarget) this._loadImage(path, retryTarget);
+				});
+				return;
+			}
+			this._loadImage(path, target);
+		}
+		_loadImage(path, target) {
 			Client.loadFile(DB.INTERFACE_PATH + path, (dataURI) => {
 				if (dataURI instanceof ArrayBuffer) try {
 					const tga = new Targa();
 					tga.load(new Uint8Array(dataURI));
 					target.style.backgroundImage = `url(${tga.getDataURL()})`;
 				} catch (e) {
-					console.error(e.message);
+					console.error(`[ui-image] TGA decode error for "${path}":`, e.message);
 				}
 				else target.style.backgroundImage = `url(${dataURI})`;
+			}, () => {
+				console.warn(`[ui-image] Failed to load: ${path}`);
 			});
 		}
 	};
@@ -153036,7 +153083,7 @@ var init_Announce$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Announce/Announce.js
-function _getRoot$26() {
+function _getRoot$41() {
 	return Announce._shadow || Announce._host;
 }
 var Announce, _timer$2, _life$1, Announce_default;
@@ -153063,7 +153110,7 @@ var init_Announce = __esmMin((() => {
 	* Initialize component
 	*/
 	Announce.init = function init() {
-		const root = _getRoot$26();
+		const root = _getRoot$41();
 		this.canvas = root.querySelector("canvas");
 		this.ctx = this.canvas.getContext("2d");
 	};
@@ -153968,75 +154015,102 @@ var init_ItemInfo$1 = __esmMin((() => {
 //#region src/UI/Components/InputBox/InputBox.html?raw
 var InputBox_default$2;
 var init_InputBox$2 = __esmMin((() => {
-	InputBox_default$2 = "<div id=\"inputbox\">\r\n	<div class=\"border\">\r\n		<div class=\"text\" data-text=\"1259\">Input number</div>\r\n		<input type=\"text\" value=\"\" />\r\n		<button data-background=\"btn_ok.bmp\" data-hover=\"btn_ok_b.bmp\" data-down=\"btn_ok_a.bmp\"></button>\r\n	</div>\r\n</div>\r\n";
+	InputBox_default$2 = "<div id=\"inputbox\">\r\n	<div class=\"border\">\r\n		<div class=\"text\">Input number</div>\r\n		<input type=\"text\" value=\"\" />\r\n		<ui-button bg=\"btn_ok.bmp\" hover=\"btn_ok_b.bmp\" down=\"btn_ok_a.bmp\"></ui-button>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/InputBox/InputBox.css?raw
 var InputBox_default$1;
 var init_InputBox$1 = __esmMin((() => {
-	InputBox_default$1 = "#inputbox {\r\n	position: absolute;\r\n	width: 274px;\r\n	height: 44px;\r\n	border-radius: 5px;\r\n	background-color: white;\r\n	padding: 2px;\r\n	z-index: 1000;\r\n}\r\n#inputbox .border {\r\n	border-radius: 5px;\r\n	border: 1px solid #c1c6c2;\r\n	width: 262px;\r\n	height: 37px;\r\n	padding-top: 5px;\r\n	padding-left: 10px;\r\n}\r\n#inputbox .text {\r\n	border-radius: 5px;\r\n	width: 270px;\r\n	height: 13px;\r\n	overflow: hidden;\r\n}\r\n#inputbox input {\r\n	border: 0;\r\n	background-color: #efefef;\r\n	width: 203px;\r\n	height: 16px;\r\n	margin-top: 3px;\r\n}\r\n#inputbox button {\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	position: absolute;\r\n	bottom: 13px;\r\n	right: 10px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#inputbox.number {\r\n	width: 174px;\r\n}\r\n#inputbox.number .border {\r\n	width: 162px;\r\n}\r\n#inputbox.number .text {\r\n	width: 170px;\r\n}\r\n#inputbox.number input {\r\n	width: 103px;\r\n}\r\n";
+	InputBox_default$1 = ":host {\r\n	top: 0px;\r\n	left: 0px;\r\n	z-index: 1000;\r\n}\r\n\r\n#inputbox {\r\n	position: relative;\r\n	width: 274px;\r\n	height: 44px;\r\n	border-radius: 5px;\r\n	background-color: white;\r\n	padding: 2px;\r\n}\r\n#inputbox .border {\r\n	border-radius: 5px;\r\n	border: 1px solid #c1c6c2;\r\n	width: 262px;\r\n	height: 37px;\r\n	padding-top: 5px;\r\n	padding-left: 10px;\r\n}\r\n#inputbox .text {\r\n	border-radius: 5px;\r\n	width: 270px;\r\n	height: 13px;\r\n	overflow: hidden;\r\n}\r\n#inputbox input {\r\n	border: 0;\r\n	background-color: #efefef;\r\n	width: 203px;\r\n	height: 16px;\r\n	margin-top: 3px;\r\n}\r\n#inputbox ui-button {\r\n	width: 42px;\r\n	height: 20px;\r\n	position: absolute;\r\n	bottom: 13px;\r\n	right: 10px;\r\n}\r\n\r\n#inputbox.number {\r\n	width: 174px;\r\n}\r\n#inputbox.number .border {\r\n	width: 162px;\r\n}\r\n#inputbox.number .text {\r\n	width: 170px;\r\n}\r\n#inputbox.number input {\r\n	width: 103px;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/InputBox/InputBox.js
 /**
+* Helper to get shadow root
+*/
+function _getRoot$40() {
+	return InputBox._shadow || InputBox._host;
+}
+/**
 * Validate input
-*
-* @param {ClickEvent}
 */
 function validate$1() {
-	let text = this.ui.find("input").val();
-	if (!this.isPersistent || text.length) {
-		if (this.ui.hasClass("number")) text = parseInt(text, 10) | 0;
-		this.onSubmitRequest(text);
+	const root = _getRoot$40();
+	const input = root.querySelector("input");
+	let text = input ? input.value : "";
+	if (!InputBox.isPersistent || text.length) {
+		const innerRoot = root.querySelector("#inputbox");
+		if (innerRoot && innerRoot.classList.contains("number")) text = parseInt(text, 10) | 0;
+		InputBox.onSubmitRequest(text);
 	}
 }
 var InputBox, InputBox_default;
 var init_InputBox = __esmMin((() => {
-	init_jquery();
 	init_Renderer();
 	init_KeyEventHandler();
 	init_DBManager();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
+	init_Elements();
 	init_InputBox$2();
 	init_InputBox$1();
-	InputBox = new UIComponent("InputBox", InputBox_default$2, InputBox_default$1);
+	InputBox = new GUIComponent("InputBox", InputBox_default$1);
+	InputBox.render = () => InputBox_default$2;
+	/**
+	* Freeze mouse — modal dialog
+	*/
+	InputBox.mouseMode = GUIComponent.MouseMode.FREEZE;
+	/**
+	* Capture key events to allow typing in the input
+	*/
+	InputBox.captureKeyEvents = true;
 	/**
 	* Initialize GUI
 	*/
-	InputBox.init = function Init() {
+	InputBox.init = function init() {
 		this.draggable();
-		this.ui.css({
-			top: (Renderer.height - 120) / 1.5 - 49,
-			left: (Renderer.width - 280) / 2 + 1
+		this._host.style.top = `${(Renderer.height - 120) / 1.5 - 49}px`;
+		this._host.style.left = `${(Renderer.width - 280) / 2 + 1}px`;
+		const root = _getRoot$40();
+		const btn = root.querySelector("ui-button");
+		if (btn) btn.addEventListener("click", () => validate$1());
+		const input = root.querySelector("input");
+		if (input) input.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
+		this._overlay = document.createElement("div");
+		this._overlay.className = "win_popup_overlay";
+		this._overlay.style.zIndex = "30";
+		this._overlay.style.position = "fixed";
+		this._overlay.style.top = "0";
+		this._overlay.style.left = "0";
+		this._overlay.style.width = "100%";
+		this._overlay.style.height = "100%";
+		this._overlay.addEventListener("click", () => {
+			InputBox.remove();
 		});
-		this.ui.find("button").click(validate$1.bind(this));
-		this.ui.find("input").mousedown(function(event) {
-			event.stopImmediatePropagation();
-		});
-		this.overlay = jquery_default("<div/>").addClass("win_popup_overlay").css("zIndex", 30).click(function() {
-			this.remove();
-		}.bind(this));
 	};
 	/**
 	* Input Post-Render callback
-	* Should append data, focus, select text, etc...
 	*/
-	InputBox.onAppend = function OnAppend() {
-		const input = this.ui.find("input");
-		if (input.length) {
+	InputBox.onAppend = function onAppend() {
+		const input = _getRoot$40().querySelector("input");
+		if (input) {
 			input.focus();
-			if (input.val()) input.select();
+			if (input.value) input.select();
 		}
 	};
 	/**
 	* Remove data from UI
 	*/
-	InputBox.onRemove = function OnRemove() {
-		this.ui.find("input").val("");
-		this.ui.find(".text").text("");
-		this.ui.find("input").keydown(null);
-		this.overlay.detach();
+	InputBox.onRemove = function onRemove() {
+		const root = _getRoot$40();
+		const input = root.querySelector("input");
+		if (input) {
+			input.value = "";
+			input.removeEventListener("keydown", null);
+		}
+		const text = root.querySelector(".text");
+		if (text) text.textContent = "";
+		if (this._overlay && this._overlay.parentNode) this._overlay.remove();
 	};
 	/**
 	* Key Listener
@@ -154044,9 +154118,19 @@ var init_InputBox = __esmMin((() => {
 	* @param {object} event
 	* @return {boolean}
 	*/
-	InputBox.onKeyDown = function OnKeyDown(event) {
+	InputBox.onKeyDown = function onKeyDown(event) {
+		const focused = (this._shadow || this._host).activeElement;
+		if (focused && focused.tagName && focused.tagName.match(/input|select|textarea/i)) {
+			if (!this.isPersistent && event.which === KEYS.ENTER) {
+				validate$1();
+				event.stopImmediatePropagation();
+				return false;
+			}
+			event.stopImmediatePropagation();
+			return true;
+		}
 		if (!this.isPersistent && event.which === KEYS.ENTER) {
-			validate$1.call(this);
+			validate$1();
 			event.stopImmediatePropagation();
 			return false;
 		}
@@ -154055,64 +154139,72 @@ var init_InputBox = __esmMin((() => {
 	/**
 	* Set input type
 	*
-	* @param {string} input type (number or text)
-	* @param {boolean} is the popup persistent ? false : clicking in any part of the game will remove the input
-	* @param {string|number} default value to show in the input
+	* @param {string} type (number or text)
+	* @param {boolean} isPersistent
+	* @param {string|number} defaultVal
+	* @param {number} itemId
 	*/
 	InputBox.setType = function setType(type, isPersistent, defaultVal, itemId = null) {
 		this.isPersistent = !!isPersistent;
-		if (!this.isPersistent) this.overlay.appendTo("body");
+		const root = _getRoot$40();
+		const innerRoot = root.querySelector("#inputbox");
+		const textEl = root.querySelector(".text");
+		const input = root.querySelector("input");
+		if (!this.isPersistent) document.body.appendChild(this._overlay);
 		switch (type) {
 			case "number":
-				this.ui.addClass("number");
-				this.ui.find(".text").text(DB.getMessage(1259));
-				this.ui.find("input").attr("type", "text");
+				innerRoot.classList.add("number");
+				if (textEl) textEl.textContent = DB.getMessage(1259);
+				if (input) input.type = "text";
 				defaultVal = defaultVal || 0;
 				break;
 			case "price":
-				this.ui.addClass("number");
-				this.ui.find(".text").text("Input Price");
-				this.ui.find("input").attr("type", "text");
+				innerRoot.classList.add("number");
+				if (textEl) textEl.textContent = "Input Price";
+				if (input) input.type = "text";
 				defaultVal = defaultVal || 0;
 				break;
 			case "text":
-				this.ui.removeClass("number");
-				this.ui.find(".text").text("");
-				this.ui.find("input").attr("type", "text");
+				innerRoot.classList.remove("number");
+				if (textEl) textEl.textContent = "";
+				if (input) input.type = "text";
 				break;
 			case "shopname":
-				this.ui.removeClass("number");
-				this.ui.find(".text").text("Input your Shop Name");
-				this.ui.find("input").attr("type", "text");
+				innerRoot.classList.remove("number");
+				if (textEl) textEl.textContent = "Input your Shop Name";
+				if (input) input.type = "text";
 				break;
 			case "pass":
-				this.ui.removeClass("number");
-				this.ui.find(".text").text("");
-				this.ui.find("input").attr("type", "password");
+				innerRoot.classList.remove("number");
+				if (textEl) textEl.textContent = "";
+				if (input) input.type = "password";
 				break;
 			case "mail":
-				this.ui.removeClass("number");
-				this.ui.find(".text").text(DB.getMessage(300));
-				this.ui.find("input").attr("type", "password");
+				innerRoot.classList.remove("number");
+				if (textEl) textEl.textContent = DB.getMessage(300);
+				if (input) input.type = "password";
 				break;
 			case "birthdate":
-				this.ui.removeClass("number");
-				this.ui.find(".text").text(DB.getMessage(1815));
-				this.ui.find("input").attr("type", "text");
+				innerRoot.classList.remove("number");
+				if (textEl) textEl.textContent = DB.getMessage(1815);
+				if (input) input.type = "text";
 				break;
 			case "item":
-				this.ui.addClass("number");
-				this.ui.find(".text").text(DB.getItemInfo(itemId).identifiedDisplayName);
-				this.ui.find("input").attr("type", "text");
+				innerRoot.classList.add("number");
+				if (textEl) textEl.textContent = DB.getItemInfo(itemId).identifiedDisplayName;
+				if (input) input.type = "text";
 				defaultVal = defaultVal || 0;
 				break;
 		}
-		if (typeof defaultVal !== "undefined") this.ui.find("input").val(defaultVal).select();
+		if (typeof defaultVal !== "undefined" && input) {
+			input.value = defaultVal;
+			input.select();
+		}
 	};
 	/**
 	* Callback to define
 	*/
-	InputBox.onSubmitRequest = function OnSubmitRequest() {};
+	InputBox.onSubmitRequest = function onSubmitRequest() {};
 	InputBox_default = UIManager.addComponent(InputBox);
 }));
 //#endregion
@@ -155318,15 +155410,15 @@ var init_Storage$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/CartItems/CartItems.js
-function _getRoot$25() {
+function _getRoot$39() {
 	return CartItems._shadow || CartItems._host;
 }
 /**
 * Extend inventory window size
 */
 function onResize$15() {
-	const content = _getRoot$25().querySelector(".container .content");
-	const hideEl = _getRoot$25().querySelector(".hide");
+	const content = _getRoot$39().querySelector(".container .content");
+	const hideEl = _getRoot$39().querySelector(".hide");
 	const top = CartItems._host.offsetTop;
 	const left = CartItems._host.offsetLeft;
 	let lastWidth = 0;
@@ -155358,7 +155450,7 @@ function onResize$15() {
 * Hide/show inventory's content
 */
 function onToggleReduction$4() {
-	const panel = _getRoot$25().querySelector(".panel");
+	const panel = _getRoot$39().querySelector(".panel");
 	if (_realSize$5) {
 		if (panel) panel.style.display = "block";
 		CartItems._host.style.height = `${_realSize$5}px`;
@@ -155430,7 +155522,7 @@ function onItemOver$17(_e) {
 	if (!item) return;
 	let quantity = " ea";
 	if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR) && item.Options && item.Options.filter((Option) => Option.index !== 0).length > 0) quantity = " Quantity";
-	const root = _getRoot$25();
+	const root = _getRoot$39();
 	const overlay = root.querySelector(".overlay");
 	const rootEl = root.querySelector("#cartitems") || root;
 	const itemRect = this.getBoundingClientRect();
@@ -155448,7 +155540,7 @@ function onItemOver$17(_e) {
 * Hide the item name
 */
 function onItemOut$18() {
-	const overlay = _getRoot$25().querySelector(".overlay");
+	const overlay = _getRoot$39().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 /**
@@ -155576,7 +155668,7 @@ var init_CartItems = __esmMin((() => {
 	* Initialize UI
 	*/
 	CartItems.init = function Init() {
-		const root = _getRoot$25();
+		const root = _getRoot$39();
 		const baseBtn = root.querySelector(".titlebar .base");
 		if (baseBtn) baseBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
 		const miniBtn = root.querySelector(".titlebar .mini");
@@ -155629,14 +155721,14 @@ var init_CartItems = __esmMin((() => {
 		this._host.style.top = `${Math.min(Math.max(0, _preferences$68.y), Renderer.height - hostRect.height)}px`;
 		this._host.style.left = `${Math.min(Math.max(0, _preferences$68.x), Renderer.width - hostRect.width)}px`;
 		_realSize$5 = _preferences$68.reduce ? 0 : hostRect.height;
-		const miniBtn = _getRoot$25().querySelector(".titlebar .mini");
+		const miniBtn = _getRoot$39().querySelector(".titlebar .mini");
 		if (miniBtn) miniBtn.dispatchEvent(new Event("mousedown"));
 	};
 	/**
 	* Remove Inventory from window (and so clean up items)
 	*/
 	CartItems.onRemove = function OnRemove() {
-		const content = _getRoot$25().querySelector(".container .content");
+		const content = _getRoot$39().querySelector(".container .content");
 		if (content) content.innerHTML = "";
 		this.list.length = 0;
 		document.querySelectorAll(".ItemInfo").forEach((el) => el.remove());
@@ -155680,7 +155772,7 @@ var init_CartItems = __esmMin((() => {
 	CartItems.resize = function Resize(width, height) {
 		width = Math.min(Math.max(width, 6), 9);
 		height = Math.min(Math.max(height, 2), 6);
-		const content = _getRoot$25().querySelector(".container .content");
+		const content = _getRoot$39().querySelector(".container .content");
 		if (content) {
 			content.style.width = `${width * 32 + 13}px`;
 			content.style.height = `${height * 32}px`;
@@ -155722,7 +155814,7 @@ var init_CartItems = __esmMin((() => {
 		}
 	};
 	CartItems.setCartInfo = function SetCartInfo(curCount, maxCount, curWeight, maxWeight) {
-		const root = _getRoot$25();
+		const root = _getRoot$39();
 		const ncnt = root.querySelector(".ncnt");
 		const mcnt = root.querySelector(".mcnt");
 		const nwt = root.querySelector(".nwt");
@@ -155741,7 +155833,7 @@ var init_CartItems = __esmMin((() => {
 		let object = this.getItemByIndex(item.index);
 		if (object) {
 			object.count += item.count;
-			const countEl = _getRoot$25().querySelector(`.item[data-index="${item.index}"] .count`);
+			const countEl = _getRoot$39().querySelector(`.item[data-index="${item.index}"] .count`);
 			if (countEl) countEl.textContent = object.count;
 			return;
 		}
@@ -155756,7 +155848,7 @@ var init_CartItems = __esmMin((() => {
 	CartItems.addItemSub = function AddItemSub(item) {
 		if (item.WearState && item.type !== ItemType_default.AMMO && item.type !== ItemType_default.CARD) return false;
 		const it = DB.getItemInfo(item.ITID);
-		const root = _getRoot$25();
+		const root = _getRoot$39();
 		const content = root.querySelector(".container .content");
 		if (!content) return true;
 		content.insertAdjacentHTML("beforeend", `<div class="item" data-index="${item.index}" draggable="true"><div class="icon"></div><div class="grade"></div><div class="amount"><span class="count">${item.count || 1}</span></div></div>`);
@@ -155785,13 +155877,13 @@ var init_CartItems = __esmMin((() => {
 		if (item.count) {
 			item.count -= count;
 			if (item.count > 0) {
-				const countEl = _getRoot$25().querySelector(`.item[data-index="${item.index}"] .count`);
+				const countEl = _getRoot$39().querySelector(`.item[data-index="${item.index}"] .count`);
 				if (countEl) countEl.textContent = item.count;
 				return item;
 			}
 		}
 		this.list.splice(this.list.indexOf(item), 1);
-		const root = _getRoot$25();
+		const root = _getRoot$39();
 		const el = root.querySelector(`.item[data-index="${item.index}"]`);
 		if (el) el.remove();
 		const content = root.querySelector(".container .content");
@@ -155811,7 +155903,7 @@ var init_CartItems = __esmMin((() => {
 		const item = this.getItemByIndex(index);
 		if (!item) return;
 		item.count = count;
-		const root = _getRoot$25();
+		const root = _getRoot$39();
 		if (item.count > 0) {
 			const countEl = root.querySelector(`.item[data-index="${item.index}"] .count`);
 			if (countEl) countEl.textContent = item.count;
@@ -190791,7 +190883,7 @@ var init_SkillTargetSelection$1 = __esmMin((() => {
 /**
 * Helper to get the shadow root
 */
-function _getRoot$24() {
+function _getRoot$38() {
 	return SkillTargetSelection._shadow || SkillTargetSelection._host;
 }
 /**
@@ -190940,7 +191032,7 @@ var init_SkillTargetSelection = __esmMin((() => {
 	* Initialize component
 	*/
 	SkillTargetSelection.init = function init() {
-		const root = _getRoot$24();
+		const root = _getRoot$38();
 		_skillName = root.querySelector(".skill-name");
 		_description = root.querySelector(".skill-description");
 		_skillLevel = root.querySelector(".skill-level");
@@ -197859,7 +197951,7 @@ function _formatROText(value) {
 /**
 * Helper to get the shadow root
 */
-function _getRoot$23() {
+function _getRoot$37() {
 	return SkillDescription$1._shadow || SkillDescription$1._host;
 }
 var _allowedTags, SkillDescription$1, SkillDescription_default;
@@ -197899,7 +197991,7 @@ var init_SkillDescription = __esmMin((() => {
 	* Initialize UI
 	*/
 	SkillDescription$1.init = function init() {
-		const closeBtn = _getRoot$23().querySelector(".close");
+		const closeBtn = _getRoot$37().querySelector(".close");
 		if (closeBtn) {
 			closeBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
 			closeBtn.addEventListener("click", () => SkillDescription$1.remove());
@@ -197913,7 +198005,7 @@ var init_SkillDescription = __esmMin((() => {
 	*/
 	SkillDescription$1.setSkill = function setSkill(id) {
 		this.uid = id;
-		const content = _getRoot$23().querySelector(".content");
+		const content = _getRoot$37().querySelector(".content");
 		if (content) content.innerHTML = _formatROText(DB.getSkillDescription(id));
 		const hostWidth = this._host.getBoundingClientRect().width;
 		const hostHeight = this._host.getBoundingClientRect().height;
@@ -198354,7 +198446,7 @@ function _root$3(comp) {
 /**
 * Helper: escape HTML (replace jQuery.escape)
 */
-function _escapeHTML$4(text) {
+function _escapeHTML$6(text) {
 	const div = document.createElement("div");
 	div.textContent = text;
 	return div.innerHTML;
@@ -198871,7 +198963,7 @@ var init_Guild$1 = __esmMin((() => {
 			if (SessionStorage_default.isGuildMaster && member.GPositionID !== 0) {
 				let selectHTML = `<select class="changePosition member_${member.AID}_${member.GID}">`;
 				_positions.forEach((position, key) => {
-					selectHTML += `<option value="${position.positionID}" ${key === member.GPositionID ? "selected" : ""}>${_escapeHTML$4(position.posName)}</option>`;
+					selectHTML += `<option value="${position.positionID}" ${key === member.GPositionID ? "selected" : ""}>${_escapeHTML$6(position.posName)}</option>`;
 				});
 				selectHTML += "</select>";
 				positionCell.innerHTML = selectHTML;
@@ -199019,7 +199111,7 @@ var init_Guild$1 = __esmMin((() => {
 		tr.className = `skill id${skill.SKID} ${className}`;
 		tr.setAttribute("data-index", skill.SKID);
 		tr.setAttribute("draggable", "true");
-		tr.innerHTML = `<td class="icon"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="24" height="24" /></td><td class="levelupcontainer"></td><td class=selectable><div class="name">${_escapeHTML$4(sk.SkillName)}<br/><span class="level">` + (sk.bSeperateLv ? `<button class="currentDown"></button>Lv : <span class="current">${skill.level}</span> / <span class="max">${skill.level}</span><button class="currentUp"></button>` : `Lv : <span class="current">${skill.level}</span>`) + `</span></div></td><td class="selectable type"><div class="consume">${skill.type ? `Sp : <span class="spcost">${skill.spcost}</span>` : "Passive"}</div></td>`;
+		tr.innerHTML = `<td class="icon"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="24" height="24" /></td><td class="levelupcontainer"></td><td class=selectable><div class="name">${_escapeHTML$6(sk.SkillName)}<br/><span class="level">` + (sk.bSeperateLv ? `<button class="currentDown"></button>Lv : <span class="current">${skill.level}</span> / <span class="max">${skill.level}</span><button class="currentUp"></button>` : `Lv : <span class="current">${skill.level}</span>`) + `</span></div></td><td class="selectable type"><div class="consume">${skill.type ? `Sp : <span class="spcost">${skill.spcost}</span>` : "Passive"}</div></td>`;
 		if (!skill.upgradable || !_skpoints) levelup.style.display = "none";
 		tr.querySelector(".levelupcontainer").appendChild(levelup);
 		const currentUp = tr.querySelector(".level .currentUp");
@@ -202951,7 +203043,7 @@ var init_SkillList$2 = __esmMin((() => {
 function _root$2(comp) {
 	return comp._shadow || comp._host;
 }
-function _escapeHTML$3(text) {
+function _escapeHTML$5(text) {
 	const div = document.createElement("div");
 	div.textContent = text;
 	return div.innerHTML;
@@ -203581,7 +203673,7 @@ var init_SkillList$1 = __esmMin((() => {
 				element.className = `skill id${key} ${className}`;
 				element.setAttribute("data-index", key);
 				element.setAttribute("draggable", "true");
-				element.innerHTML = `<div class="name">${_escapeHTML$3(sk.SkillName).substr(0, 7)}...<br/></div><div class="icon"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="24" height="24" /></div><div class=selectable><span class="level" style="display: none">` + (sk.bSeperateLv ? `<button class="currentDown"></button><span class="current">0</span> / <span class="max">0</span><button class="currentUp"></button>` : "<span class=\"current\">0</span>") + "</span></div>";
+				element.innerHTML = `<div class="name">${_escapeHTML$5(sk.SkillName).substr(0, 7)}...<br/></div><div class="icon"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="24" height="24" /></div><div class=selectable><span class="level" style="display: none">` + (sk.bSeperateLv ? `<button class="currentDown"></button><span class="current">0</span> / <span class="max">0</span><button class="currentUp"></button>` : "<span class=\"current\">0</span>") + "</span></div>";
 				const upBtn = element.querySelector(".level .currentUp");
 				if (upBtn) {
 					if (_rArrow$1) upBtn.style.backgroundImage = _rArrow$1;
@@ -203602,7 +203694,7 @@ var init_SkillList$1 = __esmMin((() => {
 							const miniTr = document.createElement("tr");
 							miniTr.className = `skill id${key} disabled`;
 							miniTr.setAttribute("data-index", key);
-							miniTr.innerHTML = `<td class="icon"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="24" height="24" /></td><td class="levelupcontainer"></td><td class="selectable"><div class="name">${_escapeHTML$3(sk.SkillName)}<br/><span class="level">Lv : <span class="current">0</span></span></div></td><td class="selectable type"><div class="consume">Passive</div></td>`;
+							miniTr.innerHTML = `<td class="icon"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="24" height="24" /></td><td class="levelupcontainer"></td><td class="selectable"><div class="name">${_escapeHTML$5(sk.SkillName)}<br/><span class="level">Lv : <span class="current">0</span></span></div></td><td class="selectable type"><div class="consume">Passive</div></td>`;
 							miniBox.appendChild(miniTr);
 							Client.loadFile(`${DB.INTERFACE_PATH}item/${sk.Name}.bmp`, (data) => {
 								const img = miniTr.querySelector(".icon img");
@@ -203626,7 +203718,7 @@ var init_SkillList$1 = __esmMin((() => {
 		element.className = `skill id${skill.SKID} ${className}`;
 		element.setAttribute("data-index", skill.SKID);
 		element.setAttribute("draggable", "true");
-		element.innerHTML = `<div class="name">${_escapeHTML$3(sk.SkillName).substr(0, 7)}...<br/></div><div class="icon"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="24" height="24" /></div><div class="levelupcontainer"></div><div class=selectable><span class="level">` + (sk.bSeperateLv ? `<button class="currentDown"></button><span class="current">${skill.level}</span> / <span class="max">${skill.level}</span><button class="currentUp"></button>` : `<span class="current">${skill.level}</span>`) + "</span></div>";
+		element.innerHTML = `<div class="name">${_escapeHTML$5(sk.SkillName).substr(0, 7)}...<br/></div><div class="icon"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="24" height="24" /></div><div class="levelupcontainer"></div><div class=selectable><span class="level">` + (sk.bSeperateLv ? `<button class="currentDown"></button><span class="current">${skill.level}</span> / <span class="max">${skill.level}</span><button class="currentUp"></button>` : `<span class="current">${skill.level}</span>`) + "</span></div>";
 		const upBtn = element.querySelector(".level .currentUp");
 		if (upBtn) {
 			if (_rArrow$1) upBtn.style.backgroundImage = _rArrow$1;
@@ -203707,7 +203799,7 @@ var init_SkillList$1 = __esmMin((() => {
 		tr.className = `skill id${skill.SKID} ${className}`;
 		tr.setAttribute("data-index", skill.SKID);
 		tr.setAttribute("draggable", "true");
-		tr.innerHTML = `<td class="icon"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="24" height="24" /></td><td class="levelupcontainer"></td><td class=selectable><div class="name">${_escapeHTML$3(sk.SkillName)}<br/><span class="level">` + (sk.bSeperateLv ? `<button class="currentDown"></button>Lv : <span class="current">${skill.level}</span> / <span class="max">${skill.level}</span><button class="currentUp"></button>` : `Lv : <span class="current">${skill.level}</span>`) + `</span></div></td><td class="selectable type"><div class="consume">${skill.type ? `Sp : <span class="spcost">${skill.spcost}</span>` : "Passive"}</div></td>`;
+		tr.innerHTML = `<td class="icon"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="24" height="24" /></td><td class="levelupcontainer"></td><td class=selectable><div class="name">${_escapeHTML$5(sk.SkillName)}<br/><span class="level">` + (sk.bSeperateLv ? `<button class="currentDown"></button>Lv : <span class="current">${skill.level}</span> / <span class="max">${skill.level}</span><button class="currentUp"></button>` : `Lv : <span class="current">${skill.level}</span>`) + `</span></div></td><td class="selectable type"><div class="consume">${skill.type ? `Sp : <span class="spcost">${skill.spcost}</span>` : "Passive"}</div></td>`;
 		if (!skill.upgradable || !_points$1) levelup.style.display = "none";
 		tr.querySelector(".levelupcontainer").appendChild(levelup);
 		const upBtn = tr.querySelector(".level .currentUp");
@@ -203828,7 +203920,7 @@ var init_SkillListV0$1 = __esmMin((() => {
 function _root$1(comp) {
 	return comp._shadow || comp._host;
 }
-function _escapeHTML$2(text) {
+function _escapeHTML$4(text) {
 	const div = document.createElement("div");
 	div.textContent = text;
 	return div.innerHTML;
@@ -204339,7 +204431,7 @@ var init_SkillListV0 = __esmMin((() => {
 				element.className = `skill id${key} ${className}`;
 				element.setAttribute("data-index", key);
 				element.setAttribute("draggable", "true");
-				element.innerHTML = `<div class="name">${_escapeHTML$2(sk.SkillName).substr(0, 7)}...<br/></div><div class="icon"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="24" height="24" /></div><div class=selectable><span class="level" style="display: none">` + (sk.bSeperateLv ? `<button class="currentDown"></button><span class="current">0</span> / <span class="max">0</span><button class="currentUp"></button>` : "<span class=\"current\">0</span>") + "</span></div>";
+				element.innerHTML = `<div class="name">${_escapeHTML$4(sk.SkillName).substr(0, 7)}...<br/></div><div class="icon"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="24" height="24" /></div><div class=selectable><span class="level" style="display: none">` + (sk.bSeperateLv ? `<button class="currentDown"></button><span class="current">0</span> / <span class="max">0</span><button class="currentUp"></button>` : "<span class=\"current\">0</span>") + "</span></div>";
 				const upBtn = element.querySelector(".level .currentUp");
 				if (upBtn) {
 					if (_rArrow) upBtn.style.backgroundImage = _rArrow;
@@ -204372,7 +204464,7 @@ var init_SkillListV0 = __esmMin((() => {
 		element.className = `skill id${skill.SKID} ${className}`;
 		element.setAttribute("data-index", skill.SKID);
 		element.setAttribute("draggable", "true");
-		element.innerHTML = `<div class="name">${_escapeHTML$2(sk.SkillName).substr(0, 7)}...<br/></div><div class="icon"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="24" height="24" /></div><div class="levelupcontainer"></div><div class=selectable><span class="level">` + (sk.bSeperateLv ? `<button class="currentDown"></button><span class="current">${skill.level}</span> / <span class="max">${skill.level}</span><button class="currentUp"></button>` : `<span class="current">${skill.level}</span>`) + "</span></div>";
+		element.innerHTML = `<div class="name">${_escapeHTML$4(sk.SkillName).substr(0, 7)}...<br/></div><div class="icon"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="24" height="24" /></div><div class="levelupcontainer"></div><div class=selectable><span class="level">` + (sk.bSeperateLv ? `<button class="currentDown"></button><span class="current">${skill.level}</span> / <span class="max">${skill.level}</span><button class="currentUp"></button>` : `<span class="current">${skill.level}</span>`) + "</span></div>";
 		const upBtn = element.querySelector(".level .currentUp");
 		if (upBtn) {
 			if (_rArrow) upBtn.style.backgroundImage = _rArrow;
@@ -204411,7 +204503,7 @@ var init_SkillListV0 = __esmMin((() => {
 		tr.className = `skill id${skill.SKID} ${className}`;
 		tr.setAttribute("data-index", skill.SKID);
 		tr.setAttribute("draggable", "true");
-		tr.innerHTML = `<td class="icon"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="24" height="24" /></td><td class="levelupcontainer"></td><td class=selectable><div class="name">${_escapeHTML$2(sk.SkillName)}<br/><span class="level">` + (sk.bSeperateLv ? `<button class="currentDown"></button>Lv : <span class="current">${skill.level}</span> / <span class="max">${skill.level}</span><button class="currentUp"></button>` : `Lv : <span class="current">${skill.level}</span>`) + `</span></div></td><td class="selectable type"><div class="consume">${skill.type ? `Sp : <span class="spcost">${skill.spcost}</span>` : "Passive"}</div></td>`;
+		tr.innerHTML = `<td class="icon"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="24" height="24" /></td><td class="levelupcontainer"></td><td class=selectable><div class="name">${_escapeHTML$4(sk.SkillName)}<br/><span class="level">` + (sk.bSeperateLv ? `<button class="currentDown"></button>Lv : <span class="current">${skill.level}</span> / <span class="max">${skill.level}</span><button class="currentUp"></button>` : `Lv : <span class="current">${skill.level}</span>`) + `</span></div></td><td class="selectable type"><div class="consume">${skill.type ? `Sp : <span class="spcost">${skill.spcost}</span>` : "Passive"}</div></td>`;
 		if (!skill.upgradable || !_points) levelup.style.display = "none";
 		tr.querySelector(".levelupcontainer").appendChild(levelup);
 		const upBtn = tr.querySelector(".level .currentUp");
@@ -205629,7 +205721,7 @@ var init_BasicInfo$2 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/BasicInfo/BasicInfo/BasicInfo.js
-function _getRoot$22() {
+function _getRoot$36() {
 	return BasicInfo._shadow || BasicInfo._host;
 }
 var BasicInfo, _preferences$48, BasicInfo_default;
@@ -205677,7 +205769,7 @@ var init_BasicInfo$1 = __esmMin((() => {
 	* Initialize UI
 	*/
 	BasicInfo.init = function init() {
-		const root = _getRoot$22();
+		const root = _getRoot$36();
 		root.querySelectorAll(".topbar button").forEach((btn) => {
 			btn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
 		});
@@ -205722,7 +205814,7 @@ var init_BasicInfo$1 = __esmMin((() => {
 	* Execute elements in memory
 	*/
 	BasicInfo.onAppend = function onAppend() {
-		const root = _getRoot$22();
+		const root = _getRoot$36();
 		const hostRect = this._host.getBoundingClientRect();
 		this._host.style.top = `${Math.min(Math.max(0, _preferences$48.y), Renderer.height - hostRect.height)}px`;
 		this._host.style.left = `${Math.min(Math.max(0, _preferences$48.x), Renderer.width - hostRect.width)}px`;
@@ -205744,7 +205836,7 @@ var init_BasicInfo$1 = __esmMin((() => {
 	* Once remove, save preferences
 	*/
 	BasicInfo.onRemove = function onRemove() {
-		const root = _getRoot$22();
+		const root = _getRoot$36();
 		const inner = root.querySelector("#basicinfo");
 		_preferences$48.x = parseInt(this._host.style.left, 10);
 		_preferences$48.y = parseInt(this._host.style.top, 10);
@@ -205773,7 +205865,7 @@ var init_BasicInfo$1 = __esmMin((() => {
 	* Switch window size
 	*/
 	BasicInfo.toggleMode = function toggleMode() {
-		const root = _getRoot$22();
+		const root = _getRoot$36();
 		const inner = root.querySelector("#basicinfo");
 		if (!inner) return;
 		inner.classList.toggle("small");
@@ -205797,7 +205889,7 @@ var init_BasicInfo$1 = __esmMin((() => {
 	* Toggle the list of buttons
 	*/
 	BasicInfo.toggleButtons = function toggleButtons(event) {
-		const root = _getRoot$22();
+		const root = _getRoot$36();
 		const buttons = root.querySelector(".buttons");
 		if (!buttons) return;
 		_preferences$48.buttons = buttons.style.display === "none";
@@ -205818,7 +205910,7 @@ var init_BasicInfo$1 = __esmMin((() => {
 	* @param {number} val2 (optional)
 	*/
 	BasicInfo.update = function update(type, val1, val2) {
-		const root = _getRoot$22();
+		const root = _getRoot$36();
 		if (!root) return;
 		let perc = 100;
 		let color = "blue";
@@ -205933,7 +206025,7 @@ var init_BasicInfoV0$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/BasicInfo/BasicInfoV0/BasicInfoV0.js
-function _getRoot$21() {
+function _getRoot$35() {
 	return BasicInfoV0._shadow || BasicInfoV0._host;
 }
 var BasicInfoV0, _preferences$47, BasicInfoV0_default;
@@ -205983,7 +206075,7 @@ var init_BasicInfoV0 = __esmMin((() => {
 	* Initialize UI
 	*/
 	BasicInfoV0.init = function init() {
-		const root = _getRoot$21();
+		const root = _getRoot$35();
 		root.querySelectorAll(".topbar button").forEach((btn) => {
 			btn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
 		});
@@ -206034,7 +206126,7 @@ var init_BasicInfoV0 = __esmMin((() => {
 	* Execute elements in memory
 	*/
 	BasicInfoV0.onAppend = function onAppend() {
-		const root = _getRoot$21();
+		const root = _getRoot$35();
 		const hostRect = this._host.getBoundingClientRect();
 		this._host.style.top = `${Math.min(Math.max(0, _preferences$47.y), Renderer.height - hostRect.height)}px`;
 		this._host.style.left = `${Math.min(Math.max(0, _preferences$47.x), Renderer.width - hostRect.width)}px`;
@@ -206064,7 +206156,7 @@ var init_BasicInfoV0 = __esmMin((() => {
 	* Once remove, save preferences
 	*/
 	BasicInfoV0.onRemove = function onRemove() {
-		const root = _getRoot$21();
+		const root = _getRoot$35();
 		const inner = root.querySelector("#BasicInfoV0");
 		_preferences$47.x = parseInt(this._host.style.left, 10);
 		_preferences$47.y = parseInt(this._host.style.top, 10);
@@ -206093,7 +206185,7 @@ var init_BasicInfoV0 = __esmMin((() => {
 	* Switch window size
 	*/
 	BasicInfoV0.toggleMode = function toggleMode() {
-		const root = _getRoot$21();
+		const root = _getRoot$35();
 		const inner = root.querySelector("#BasicInfoV0");
 		if (!inner) return;
 		inner.classList.toggle("small");
@@ -206118,7 +206210,7 @@ var init_BasicInfoV0 = __esmMin((() => {
 	* Toggle the list of buttons
 	*/
 	BasicInfoV0.toggleButtons = function toggleButtons(event) {
-		const root = _getRoot$21();
+		const root = _getRoot$35();
 		const buttons = root.querySelector(".buttons");
 		if (!buttons) return;
 		_preferences$47.buttons = buttons.style.display === "none";
@@ -206139,7 +206231,7 @@ var init_BasicInfoV0 = __esmMin((() => {
 	* @param {number} val2 (optional)
 	*/
 	BasicInfoV0.update = function update(type, val1, val2) {
-		const root = _getRoot$21();
+		const root = _getRoot$35();
 		if (!root) return;
 		let perc = 100;
 		let color = "blue";
@@ -207130,11 +207222,11 @@ var init_BasicInfoV3$2 = __esmMin((() => {
 //#region src/UI/Components/BasicInfo/BasicInfoV3/BasicInfoV3.css?raw
 var BasicInfoV3_default$1;
 var init_BasicInfoV3$1 = __esmMin((() => {
-	BasicInfoV3_default$1 = ":host {\r\n	width: 220px;\r\n	height: 135px;\r\n	top: 0px;\r\n	left: 0px;\r\n}\r\n\r\n#BasicInfoV3 {\r\n	position: absolute;\r\n	width: 220px;\r\n	height: 135px;\r\n	font-size: 11px;\r\n	letter-spacing: 0.03em;\r\n}\r\n#BasicInfoV3.small .large {\r\n	display: none;\r\n}\r\n#BasicInfoV3.large .small {\r\n	display: none;\r\n	border-radius: 5px;\r\n}\r\n#BasicInfoV3.small {\r\n	height: 53px;\r\n}\r\n#BasicInfoV3.large .bt_menu {\r\n	top: 135px;\r\n}\r\n#BasicInfoV3.small .bt_menu {\r\n	top: 53px;\r\n}\r\n\r\n#BasicInfoV3.large .buttons {\r\n	top: 144px;\r\n}\r\n#BasicInfoV3.small .buttons {\r\n	top: 62px;\r\n}\r\n\r\n#BasicInfoV3 .topbar .left {\r\n	position: absolute;\r\n	top: 3px;\r\n	left: 4px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n#BasicInfoV3 .topbar .right {\r\n	position: absolute;\r\n	top: 3px;\r\n	right: 2px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n\r\n/* LARGE */\r\n#BasicInfoV3 .large .title {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n}\r\n#BasicInfoV3 .large .name {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 20px;\r\n}\r\n#BasicInfoV3 .large .job {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 33px;\r\n}\r\n#BasicInfoV3 .large .hp_title {\r\n	position: absolute;\r\n	top: 50px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV3 .large .sp_title {\r\n	position: absolute;\r\n	top: 65px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV3 .large .hp_bar,\r\n#BasicInfoV3 .large .sp_bar {\r\n	position: absolute;\r\n	top: 53px;\r\n	left: 35px;\r\n	width: 135px;\r\n	height: 9px;\r\n	font-weight: normal;\r\n}\r\n#BasicInfoV3 .large .sp_bar {\r\n	top: 68px;\r\n}\r\n#BasicInfoV3 .large .hp_bar div,\r\n#BasicInfoV3 .large .sp_bar div {\r\n	width: 4px;\r\n	height: 9px;\r\n	float: left;\r\n}\r\n#BasicInfoV3 .large div.hp_bar_perc,\r\n#BasicInfoV3 .large div.sp_bar_perc {\r\n	text-align: center;\r\n	width: 127px;\r\n	position: absolute;\r\n	top: -1px;\r\n}\r\n#BasicInfoV3 .large .hp_perc {\r\n	position: absolute;\r\n	top: 50px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV3 .large .sp_perc {\r\n	position: absolute;\r\n	top: 65px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV3 .large .blvl {\r\n	position: absolute;\r\n	top: 86px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV3 .large .jlvl {\r\n	position: absolute;\r\n	top: 97px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV3 .large .bexp,\r\n#BasicInfoV3 .large .jexp {\r\n	position: absolute;\r\n	top: 89px;\r\n	left: 84px;\r\n	width: 110px;\r\n	height: 4px;\r\n	border: 1px solid #afafaf;\r\n	background-color: white;\r\n}\r\n#BasicInfoV3 .large .bexp div,\r\n#BasicInfoV3 .large .jexp div {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 0%;\r\n	height: 4px;\r\n	background-color: #4262a5;\r\n}\r\n#BasicInfoV3 .large .jexp {\r\n	top: 101px;\r\n}\r\n#BasicInfoV3 .large .extra {\r\n	position: absolute;\r\n	top: 119px;\r\n	right: -15px;\r\n	width: 100%;\r\n	padding-right: 20px;\r\n	overflow: hidden;\r\n	text-overflow: ellipsis;\r\n	text-align: right;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV3 .buttons {\r\n	position: absolute;\r\n	left: 0px;\r\n	top: 9px;\r\n	width: 220px;\r\n	height: 184px;\r\n}\r\n#BasicInfoV3 .bt_menu {\r\n	position: absolute;\r\n	left: 2px;\r\n	width: 216px;\r\n	height: 9px;\r\n}\r\n#BasicInfoV3 .buttons:hover {\r\n}\r\n#BasicInfoV3 .buttons div {\r\n	float: left;\r\n	width: 36px;\r\n	height: 36px;\r\n	border: none;\r\n	margin: 0px;\r\n}\r\n#BasicInfoV3 .buttons .clear {\r\n	clear: both;\r\n}\r\n\r\n/* REDUCED */\r\n#BasicInfoV3 .small .line1 {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV3 .small .line2 {\r\n	position: absolute;\r\n	top: 20px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV3 .small .line3 {\r\n	position: absolute;\r\n	top: 36px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV3 .toggle_btns {\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: rgba(0, 0, 0, 0);\r\n}\r\n\r\n#BasicInfoV3 .buttons div .name {\r\n	position: relative;\r\n	display: none;\r\n	z-index: 1;\r\n	top: -20px;\r\n	left: 0px;\r\n	background-color: rgba(0, 0, 0, 0.6);\r\n	text-shadow: 1px 1px black;\r\n	color: white;\r\n	padding: 5px;\r\n	white-space: nowrap;\r\n	font-size: 0.6rem;\r\n}\r\n#BasicInfoV3 .buttons div:hover .name {\r\n	display: table;\r\n}\r\n#BasicInfoV3 .buttons div .name {\r\n	display: none;\r\n}\r\n";
+	BasicInfoV3_default$1 = ":host {\r\n	width: 220px;\r\n	height: 135px;\r\n	top: 0px;\r\n	left: 0px;\r\n}\r\n\r\n#BasicInfoV3 {\r\n	position: absolute;\r\n	width: 220px;\r\n	height: 135px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n#BasicInfoV3.small .large {\r\n	display: none;\r\n}\r\n#BasicInfoV3.large .small {\r\n	display: none;\r\n	border-radius: 5px;\r\n}\r\n#BasicInfoV3.small {\r\n	height: 53px;\r\n}\r\n#BasicInfoV3.large .bt_menu {\r\n	top: 135px;\r\n}\r\n#BasicInfoV3.small .bt_menu {\r\n	top: 53px;\r\n}\r\n\r\n#BasicInfoV3.large .buttons {\r\n	top: 144px;\r\n}\r\n#BasicInfoV3.small .buttons {\r\n	top: 62px;\r\n}\r\n\r\n#BasicInfoV3 .topbar .left {\r\n	position: absolute;\r\n	top: 3px;\r\n	left: 4px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n#BasicInfoV3 .topbar .right {\r\n	position: absolute;\r\n	top: 3px;\r\n	right: 2px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n\r\n/* LARGE */\r\n#BasicInfoV3 .large .title {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n}\r\n#BasicInfoV3 .large .name {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 20px;\r\n}\r\n#BasicInfoV3 .large .job {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 33px;\r\n}\r\n#BasicInfoV3 .large .hp_title {\r\n	position: absolute;\r\n	top: 50px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV3 .large .sp_title {\r\n	position: absolute;\r\n	top: 65px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV3 .large .hp_bar,\r\n#BasicInfoV3 .large .sp_bar {\r\n	position: absolute;\r\n	top: 53px;\r\n	left: 35px;\r\n	width: 135px;\r\n	height: 9px;\r\n	font-weight: normal;\r\n}\r\n#BasicInfoV3 .large .sp_bar {\r\n	top: 68px;\r\n}\r\n#BasicInfoV3 .large .hp_bar div,\r\n#BasicInfoV3 .large .sp_bar div {\r\n	width: 4px;\r\n	height: 9px;\r\n	float: left;\r\n}\r\n#BasicInfoV3 .large div.hp_bar_perc,\r\n#BasicInfoV3 .large div.sp_bar_perc {\r\n	text-align: center;\r\n	width: 127px;\r\n	position: absolute;\r\n	top: -1px;\r\n}\r\n#BasicInfoV3 .large .hp_perc {\r\n	position: absolute;\r\n	top: 50px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV3 .large .sp_perc {\r\n	position: absolute;\r\n	top: 65px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV3 .large .blvl {\r\n	position: absolute;\r\n	top: 86px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV3 .large .jlvl {\r\n	position: absolute;\r\n	top: 97px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV3 .large .bexp,\r\n#BasicInfoV3 .large .jexp {\r\n	position: absolute;\r\n	top: 89px;\r\n	left: 84px;\r\n	width: 110px;\r\n	height: 4px;\r\n	border: 1px solid #afafaf;\r\n	background-color: white;\r\n}\r\n#BasicInfoV3 .large .bexp div,\r\n#BasicInfoV3 .large .jexp div {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 0%;\r\n	height: 4px;\r\n	background-color: #4262a5;\r\n}\r\n#BasicInfoV3 .large .jexp {\r\n	top: 101px;\r\n}\r\n#BasicInfoV3 .large .extra {\r\n	position: absolute;\r\n	top: 119px;\r\n	right: -15px;\r\n	width: 100%;\r\n	padding-right: 20px;\r\n	overflow: hidden;\r\n	text-overflow: ellipsis;\r\n	text-align: right;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV3 .buttons {\r\n	position: absolute;\r\n	left: 0px;\r\n	top: 9px;\r\n	width: 220px;\r\n	height: 184px;\r\n}\r\n#BasicInfoV3 .bt_menu {\r\n	position: absolute;\r\n	left: 2px;\r\n	width: 216px;\r\n	height: 9px;\r\n}\r\n#BasicInfoV3 .buttons:hover {\r\n}\r\n#BasicInfoV3 .buttons div {\r\n	float: left;\r\n	width: 36px;\r\n	height: 36px;\r\n	border: none;\r\n	margin: 0px;\r\n}\r\n#BasicInfoV3 .buttons .clear {\r\n	clear: both;\r\n}\r\n\r\n/* REDUCED */\r\n#BasicInfoV3 .small .line1 {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV3 .small .line2 {\r\n	position: absolute;\r\n	top: 20px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV3 .small .line3 {\r\n	position: absolute;\r\n	top: 36px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV3 .toggle_btns {\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: rgba(0, 0, 0, 0);\r\n}\r\n\r\n#BasicInfoV3 .buttons div .name {\r\n	position: relative;\r\n	display: none;\r\n	z-index: 1;\r\n	top: -20px;\r\n	left: 0px;\r\n	background-color: rgba(0, 0, 0, 0.6);\r\n	text-shadow: 1px 1px black;\r\n	color: white;\r\n	padding: 5px;\r\n	white-space: nowrap;\r\n	font-size: 0.6rem;\r\n}\r\n#BasicInfoV3 .buttons div:hover .name {\r\n	display: table;\r\n}\r\n#BasicInfoV3 .buttons div .name {\r\n	display: none;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/BasicInfo/BasicInfoV3/BasicInfoV3.js
-function _getRoot$20() {
+function _getRoot$34() {
 	return BasicInfoV3._shadow || BasicInfoV3._host;
 }
 var BasicInfoV3, _preferences$44, BasicInfoV3_default;
@@ -207189,7 +207281,7 @@ var init_BasicInfoV3 = __esmMin((() => {
 	* Initialize UI
 	*/
 	BasicInfoV3.init = function init() {
-		const root = _getRoot$20();
+		const root = _getRoot$34();
 		root.querySelectorAll(".topbar div").forEach((el) => {
 			el.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
 		});
@@ -207250,7 +207342,7 @@ var init_BasicInfoV3 = __esmMin((() => {
 	* Execute elements in memory
 	*/
 	BasicInfoV3.onAppend = function onAppend() {
-		const root = _getRoot$20();
+		const root = _getRoot$34();
 		const hostRect = this._host.getBoundingClientRect();
 		this._host.style.top = `${Math.min(Math.max(0, _preferences$44.y), Renderer.height - hostRect.height)}px`;
 		this._host.style.left = `${Math.min(Math.max(0, _preferences$44.x), Renderer.width - hostRect.width)}px`;
@@ -207285,7 +207377,7 @@ var init_BasicInfoV3 = __esmMin((() => {
 	* Once remove, save preferences
 	*/
 	BasicInfoV3.onRemove = function onRemove() {
-		const root = _getRoot$20();
+		const root = _getRoot$34();
 		const inner = root.querySelector("#BasicInfoV3");
 		const buttons = root.querySelector(".buttons");
 		_preferences$44.x = parseInt(this._host.style.left, 10);
@@ -207314,7 +207406,7 @@ var init_BasicInfoV3 = __esmMin((() => {
 	* Switch window size
 	*/
 	BasicInfoV3.toggleMode = function toggleMode() {
-		const root = _getRoot$20();
+		const root = _getRoot$34();
 		const inner = root.querySelector("#BasicInfoV3");
 		if (!inner) return;
 		inner.classList.toggle("small");
@@ -207336,7 +207428,7 @@ var init_BasicInfoV3 = __esmMin((() => {
 	* Toggle the list of buttons
 	*/
 	BasicInfoV3.toggleButtons = function toggleButtons(event) {
-		const root = _getRoot$20();
+		const root = _getRoot$34();
 		const buttons = root.querySelector(".buttons");
 		if (!buttons) return;
 		_preferences$44.buttons = buttons.style.display === "none";
@@ -207361,7 +207453,7 @@ var init_BasicInfoV3 = __esmMin((() => {
 	* @param {number} val2 (optional)
 	*/
 	BasicInfoV3.update = function update(type, val1, val2) {
-		const root = _getRoot$20();
+		const root = _getRoot$34();
 		if (!root) return;
 		let perc = 100;
 		let color = "blue";
@@ -207627,11 +207719,11 @@ var init_BasicInfoV4$2 = __esmMin((() => {
 //#region src/UI/Components/BasicInfo/BasicInfoV4/BasicInfoV4.css?raw
 var BasicInfoV4_default$1;
 var init_BasicInfoV4$1 = __esmMin((() => {
-	BasicInfoV4_default$1 = ":host {\r\n	width: 220px;\r\n	height: 135px;\r\n	top: 0px;\r\n	left: 0px;\r\n}\r\n\r\n#BasicInfoV4 {\r\n	position: absolute;\r\n	width: 220px;\r\n	height: 135px;\r\n	font-size: 11px;\r\n	letter-spacing: 0.03em;\r\n}\r\n#BasicInfoV4.small .large {\r\n	display: none;\r\n}\r\n#BasicInfoV4.large .small {\r\n	display: none;\r\n	border-radius: 5px;\r\n}\r\n#BasicInfoV4.small {\r\n	height: 53px;\r\n}\r\n#BasicInfoV4.large .bt_menu {\r\n	top: 135px;\r\n}\r\n#BasicInfoV4.small .bt_menu {\r\n	top: 53px;\r\n}\r\n\r\n#BasicInfoV4.large .buttons {\r\n	top: 144px;\r\n}\r\n#BasicInfoV4.small .buttons {\r\n	top: 62px;\r\n}\r\n\r\n#BasicInfoV4 .topbar .left {\r\n	position: absolute;\r\n	top: 3px;\r\n	left: 4px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n#BasicInfoV4 .topbar .right {\r\n	position: absolute;\r\n	top: 3px;\r\n	right: 2px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n\r\n/* LARGE */\r\n#BasicInfoV4 .large .title {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n}\r\n#BasicInfoV4 .large .name {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 20px;\r\n}\r\n#BasicInfoV4 .large .job {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 33px;\r\n}\r\n#BasicInfoV4 .large .hp_title {\r\n	position: absolute;\r\n	top: 50px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV4 .large .sp_title {\r\n	position: absolute;\r\n	top: 65px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV4 .large .hp_bar,\r\n#BasicInfoV4 .large .sp_bar {\r\n	position: absolute;\r\n	top: 53px;\r\n	left: 35px;\r\n	width: 135px;\r\n	height: 9px;\r\n	font-weight: normal;\r\n}\r\n#BasicInfoV4 .large .sp_bar {\r\n	top: 68px;\r\n}\r\n#BasicInfoV4 .large .hp_bar div,\r\n#BasicInfoV4 .large .sp_bar div {\r\n	width: 4px;\r\n	height: 9px;\r\n	float: left;\r\n}\r\n#BasicInfoV4 .large div.hp_bar_perc,\r\n#BasicInfoV4 .large div.sp_bar_perc {\r\n	text-align: center;\r\n	width: 127px;\r\n	position: absolute;\r\n	top: -1px;\r\n}\r\n#BasicInfoV4 .large .hp_perc {\r\n	position: absolute;\r\n	top: 50px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV4 .large .sp_perc {\r\n	position: absolute;\r\n	top: 65px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV4 .large .blvl {\r\n	position: absolute;\r\n	top: 86px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV4 .large .jlvl {\r\n	position: absolute;\r\n	top: 97px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV4 .large .bexp,\r\n#BasicInfoV4 .large .jexp {\r\n	position: absolute;\r\n	top: 89px;\r\n	left: 84px;\r\n	width: 110px;\r\n	height: 4px;\r\n	border: 1px solid #afafaf;\r\n	background-color: white;\r\n}\r\n#BasicInfoV4 .large .bexp div,\r\n#BasicInfoV4 .large .jexp div {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 0%;\r\n	height: 4px;\r\n	background-color: #4262a5;\r\n}\r\n#BasicInfoV4 .large .jexp {\r\n	top: 101px;\r\n}\r\n#BasicInfoV4 .large .extra {\r\n	position: absolute;\r\n	top: 119px;\r\n	right: -15px;\r\n	width: 100%;\r\n	padding-right: 20px;\r\n	overflow: hidden;\r\n	text-overflow: ellipsis;\r\n	text-align: right;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV4 .buttons {\r\n	position: absolute;\r\n	left: 0px;\r\n	top: 9px;\r\n	width: 220px;\r\n	height: 184px;\r\n}\r\n#BasicInfoV4 .bt_menu {\r\n	position: absolute;\r\n	left: 2px;\r\n	width: 216px;\r\n	height: 9px;\r\n}\r\n#BasicInfoV4 .buttons:hover {\r\n}\r\n#BasicInfoV4 .buttons button {\r\n	float: left;\r\n	width: 22px;\r\n	height: 22px;\r\n	border: none;\r\n	margin: 0px;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#BasicInfoV4 .buttons .clear {\r\n	clear: both;\r\n}\r\n\r\n/* REDUCED */\r\n#BasicInfoV4 .small .line1 {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV4 .small .line2 {\r\n	position: absolute;\r\n	top: 20px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV4 .small .line3 {\r\n	position: absolute;\r\n	top: 36px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV4 .toggle_btns {\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: rgba(0, 0, 0, 0);\r\n}\r\n\r\n#BasicInfoV4 .buttons button .name {\r\n	position: relative;\r\n	display: none;\r\n	z-index: 1;\r\n	top: -20px;\r\n	left: 0px;\r\n	background-color: rgba(0, 0, 0, 0.6);\r\n	text-shadow: 1px 1px black;\r\n	color: white;\r\n	padding: 5px;\r\n	white-space: nowrap;\r\n	font-size: 0.6rem;\r\n}\r\n#BasicInfoV4 .buttons button:hover .name {\r\n	display: table;\r\n}\r\n#BasicInfoV4 .buttons button .name {\r\n	display: none;\r\n}\r\n\r\n#BasicInfoV4 .buttons .btn_overlay {\r\n	width: 35px;\r\n	height: 40px;\r\n	border: none;\r\n	position: relative;\r\n	top: -13px;\r\n	left: -7px;\r\n	z-index: 10;\r\n	display: none;\r\n}\r\n";
+	BasicInfoV4_default$1 = ":host {\r\n	width: 220px;\r\n	height: 135px;\r\n	top: 0px;\r\n	left: 0px;\r\n}\r\n\r\n#BasicInfoV4 {\r\n	position: absolute;\r\n	width: 220px;\r\n	height: 135px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n#BasicInfoV4.small .large {\r\n	display: none;\r\n}\r\n#BasicInfoV4.large .small {\r\n	display: none;\r\n	border-radius: 5px;\r\n}\r\n#BasicInfoV4.small {\r\n	height: 53px;\r\n}\r\n#BasicInfoV4.large .bt_menu {\r\n	top: 135px;\r\n}\r\n#BasicInfoV4.small .bt_menu {\r\n	top: 53px;\r\n}\r\n\r\n#BasicInfoV4.large .buttons {\r\n	top: 144px;\r\n}\r\n#BasicInfoV4.small .buttons {\r\n	top: 62px;\r\n}\r\n\r\n#BasicInfoV4 .topbar {\r\n	height: 16px;\r\n}\r\n#BasicInfoV4 .topbar .left {\r\n	position: absolute;\r\n	top: 3px;\r\n	left: 4px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n#BasicInfoV4 .topbar .right {\r\n	position: absolute;\r\n	top: 3px;\r\n	right: 2px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n\r\n/* LARGE */\r\n#BasicInfoV4 .large .title {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n}\r\n#BasicInfoV4 .large .name {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 20px;\r\n}\r\n#BasicInfoV4 .large .job {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 33px;\r\n}\r\n#BasicInfoV4 .large .hp_title {\r\n	position: absolute;\r\n	top: 50px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV4 .large .sp_title {\r\n	position: absolute;\r\n	top: 65px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV4 .large .hp_bar,\r\n#BasicInfoV4 .large .sp_bar {\r\n	position: absolute;\r\n	top: 53px;\r\n	left: 35px;\r\n	width: 135px;\r\n	height: 9px;\r\n	font-weight: normal;\r\n}\r\n#BasicInfoV4 .large .sp_bar {\r\n	top: 68px;\r\n}\r\n#BasicInfoV4 .large .hp_bar div,\r\n#BasicInfoV4 .large .sp_bar div {\r\n	width: 4px;\r\n	height: 9px;\r\n	float: left;\r\n}\r\n#BasicInfoV4 .large div.hp_bar_perc,\r\n#BasicInfoV4 .large div.sp_bar_perc {\r\n	text-align: center;\r\n	width: 127px;\r\n	position: absolute;\r\n	top: -1px;\r\n}\r\n#BasicInfoV4 .large .hp_perc {\r\n	position: absolute;\r\n	top: 50px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV4 .large .sp_perc {\r\n	position: absolute;\r\n	top: 65px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV4 .large .blvl {\r\n	position: absolute;\r\n	top: 86px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV4 .large .jlvl {\r\n	position: absolute;\r\n	top: 97px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV4 .large .bexp,\r\n#BasicInfoV4 .large .jexp {\r\n	position: absolute;\r\n	top: 89px;\r\n	left: 84px;\r\n	width: 110px;\r\n	height: 4px;\r\n	border: 1px solid #afafaf;\r\n	background-color: white;\r\n}\r\n#BasicInfoV4 .large .bexp div,\r\n#BasicInfoV4 .large .jexp div {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 0%;\r\n	height: 4px;\r\n	background-color: #4262a5;\r\n}\r\n#BasicInfoV4 .large .jexp {\r\n	top: 101px;\r\n}\r\n#BasicInfoV4 .large .extra {\r\n	position: absolute;\r\n	top: 119px;\r\n	right: -15px;\r\n	width: 100%;\r\n	padding-right: 20px;\r\n	overflow: hidden;\r\n	text-overflow: ellipsis;\r\n	text-align: right;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV4 .buttons {\r\n	position: absolute;\r\n	left: 0px;\r\n	top: 9px;\r\n	width: 220px;\r\n	display: grid;\r\n	grid-template-columns: auto auto auto auto auto;\r\n	justify-items: center;\r\n	background-position: left bottom;\r\n}\r\n#BasicInfoV4 .bt_menu {\r\n	position: absolute;\r\n	left: 0px;\r\n	width: 219px;\r\n	height: 9px;\r\n}\r\n#BasicInfoV4 .buttons:hover {\r\n}\r\n#BasicInfoV4 .buttons button {\r\n	width: 32px;\r\n	height: 32px;\r\n	border: none;\r\n	margin: 6px;\r\n	background: transparent;\r\n}\r\n\r\n/* REDUCED */\r\n#BasicInfoV4 .small .line1 {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV4 .small .line2 {\r\n	position: absolute;\r\n	top: 20px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV4 .small .line3 {\r\n	position: absolute;\r\n	top: 36px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV4 .toggle_btns {\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: rgba(0, 0, 0, 0);\r\n}\r\n\r\n#BasicInfoV4 .buttons button .name {\r\n	pointer-events: none;\r\n	position: relative;\r\n	display: none;\r\n	z-index: 1;\r\n	top: -20px;\r\n	left: 0px;\r\n	background-color: rgba(0, 0, 0, 0.6);\r\n	text-shadow: 1px 1px black;\r\n	color: white;\r\n	padding: 5px;\r\n	white-space: nowrap;\r\n	font-size: 0.6rem;\r\n}\r\n#BasicInfoV4 .buttons button:hover .name {\r\n	display: table;\r\n}\r\n#BasicInfoV4 .buttons button .name {\r\n	display: none;\r\n}\r\n\r\n#BasicInfoV4 .buttons .btn_overlay {\r\n	pointer-events: none;\r\n	width: 35px;\r\n	height: 40px;\r\n	border: none;\r\n	position: relative;\r\n	top: -6px;\r\n	left: 0;\r\n	display: none;\r\n}\r\n#BasicInfoV4 .buttons button:active .btn_overlay {\r\n	pointer-events: none;\r\n	top: -5px;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/BasicInfo/BasicInfoV4/BasicInfoV4.js
-function _getRoot$19() {
+function _getRoot$33() {
 	return BasicInfoV4._shadow || BasicInfoV4._host;
 }
 var BasicInfoV4, _preferences$42, BasicInfoV4_default;
@@ -207687,7 +207779,7 @@ var init_BasicInfoV4 = __esmMin((() => {
 	* Initialize UI
 	*/
 	BasicInfoV4.init = function init() {
-		const root = _getRoot$19();
+		const root = _getRoot$33();
 		root.querySelectorAll(".topbar div").forEach((el) => {
 			el.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
 		});
@@ -207753,7 +207845,7 @@ var init_BasicInfoV4 = __esmMin((() => {
 	* Execute elements in memory
 	*/
 	BasicInfoV4.onAppend = function onAppend() {
-		const root = _getRoot$19();
+		const root = _getRoot$33();
 		const hostRect = this._host.getBoundingClientRect();
 		this._host.style.top = `${Math.min(Math.max(0, _preferences$42.y), Renderer.height - hostRect.height)}px`;
 		this._host.style.left = `${Math.min(Math.max(0, _preferences$42.x), Renderer.width - hostRect.width)}px`;
@@ -207794,7 +207886,7 @@ var init_BasicInfoV4 = __esmMin((() => {
 	* Once remove, save preferences
 	*/
 	BasicInfoV4.onRemove = function onRemove() {
-		const root = _getRoot$19();
+		const root = _getRoot$33();
 		const inner = root.querySelector("#BasicInfoV4");
 		const buttons = root.querySelector(".buttons");
 		_preferences$42.x = parseInt(this._host.style.left, 10);
@@ -207823,7 +207915,7 @@ var init_BasicInfoV4 = __esmMin((() => {
 	* Switch window size
 	*/
 	BasicInfoV4.toggleMode = function toggleMode() {
-		const root = _getRoot$19();
+		const root = _getRoot$33();
 		const inner = root.querySelector("#BasicInfoV4");
 		if (!inner) return;
 		inner.classList.toggle("small");
@@ -207845,7 +207937,7 @@ var init_BasicInfoV4 = __esmMin((() => {
 	* Toggle the list of buttons
 	*/
 	BasicInfoV4.toggleButtons = function toggleButtons(event) {
-		const root = _getRoot$19();
+		const root = _getRoot$33();
 		const buttons = root.querySelector(".buttons");
 		if (!buttons) return;
 		_preferences$42.buttons = buttons.style.display === "none";
@@ -207870,7 +207962,7 @@ var init_BasicInfoV4 = __esmMin((() => {
 	* @param {number} val2 (optional)
 	*/
 	BasicInfoV4.update = function update(type, val1, val2) {
-		const root = _getRoot$19();
+		const root = _getRoot$33();
 		if (!root) return;
 		let perc = 100;
 		let color = "blue";
@@ -207981,11 +208073,11 @@ var init_BasicInfoV5$2 = __esmMin((() => {
 //#region src/UI/Components/BasicInfo/BasicInfoV5/BasicInfoV5.css?raw
 var BasicInfoV5_default$1;
 var init_BasicInfoV5$1 = __esmMin((() => {
-	BasicInfoV5_default$1 = ":host {\r\n	width: 220px;\r\n	height: 150px;\r\n	top: 0px;\r\n	left: 0px;\r\n}\r\n\r\n#BasicInfoV5 {\r\n	position: absolute;\r\n	width: 220px;\r\n	height: 150px;\r\n	font-size: 11px;\r\n	letter-spacing: 0.03em;\r\n}\r\n#BasicInfoV5.small .large {\r\n	display: none;\r\n}\r\n#BasicInfoV5.large .small {\r\n	display: none;\r\n	border-radius: 5px;\r\n}\r\n#BasicInfoV5.small {\r\n	height: 70px;\r\n}\r\n#BasicInfoV5.large .bt_menu {\r\n	top: 150px;\r\n}\r\n#BasicInfoV5.small .bt_menu {\r\n	top: 70px;\r\n}\r\n\r\n#BasicInfoV5.large .buttons {\r\n	top: 159px;\r\n}\r\n#BasicInfoV5.small .buttons {\r\n	top: 79px;\r\n}\r\n\r\n#BasicInfoV5 .topbar .left {\r\n	position: absolute;\r\n	top: 3px;\r\n	left: 4px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n#BasicInfoV5 .topbar .right {\r\n	position: absolute;\r\n	top: 3px;\r\n	right: 2px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n\r\n/* LARGE */\r\n#BasicInfoV5 .large .title {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n}\r\n#BasicInfoV5 .large .name {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 20px;\r\n}\r\n#BasicInfoV5 .large .job {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 33px;\r\n}\r\n#BasicInfoV5 .large .hp_title {\r\n	position: absolute;\r\n	top: 50px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV5 .large .sp_title {\r\n	position: absolute;\r\n	top: 65px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV5 .large .ap_title {\r\n	position: absolute;\r\n	top: 80px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV5 .large .hp_bar,\r\n#BasicInfoV5 .large .sp_bar,\r\n#BasicInfoV5 .large .ap_bar {\r\n	position: absolute;\r\n	top: 53px;\r\n	left: 35px;\r\n	width: 135px;\r\n	height: 9px;\r\n	font-weight: normal;\r\n}\r\n#BasicInfoV5 .large .sp_bar {\r\n	top: 68px;\r\n}\r\n#BasicInfoV5 .large .ap_bar {\r\n	top: 83px;\r\n}\r\n#BasicInfoV5 .large .hp_bar div,\r\n#BasicInfoV5 .large .sp_bar div,\r\n#BasicInfoV5 .large .ap_bar div {\r\n	width: 4px;\r\n	height: 9px;\r\n	float: left;\r\n}\r\n#BasicInfoV5 .large div.hp_bar_perc,\r\n#BasicInfoV5 .large div.sp_bar_perc,\r\n#BasicInfoV5 .large div.ap_bar_perc {\r\n	text-align: center;\r\n	width: 127px;\r\n	position: absolute;\r\n	top: -1px;\r\n}\r\n#BasicInfoV5 .large .hp_perc {\r\n	position: absolute;\r\n	top: 50px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV5 .large .sp_perc {\r\n	position: absolute;\r\n	top: 65px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV5 .large .ap_perc {\r\n	position: absolute;\r\n	top: 80px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV5 .large .blvl {\r\n	position: absolute;\r\n	top: 101px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV5 .large .jlvl {\r\n	position: absolute;\r\n	top: 112px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV5 .large .bexp,\r\n#BasicInfoV5 .large .jexp {\r\n	position: absolute;\r\n	top: 104px;\r\n	left: 84px;\r\n	width: 110px;\r\n	height: 4px;\r\n	border: 1px solid #afafaf;\r\n	background-color: white;\r\n}\r\n#BasicInfoV5 .large .bexp div,\r\n#BasicInfoV5 .large .jexp div {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 0%;\r\n	height: 4px;\r\n	background-color: #4262a5;\r\n}\r\n#BasicInfoV5 .large .jexp {\r\n	top: 116px;\r\n}\r\n#BasicInfoV5 .large .extra {\r\n	position: absolute;\r\n	top: 134px;\r\n	right: -15px;\r\n	width: 100%;\r\n	padding-right: 20px;\r\n	overflow: hidden;\r\n	text-overflow: ellipsis;\r\n	text-align: right;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV5 .buttons {\r\n	position: absolute;\r\n	left: 0px;\r\n	top: 9px;\r\n	width: 220px;\r\n	height: 184px;\r\n}\r\n#BasicInfoV5 .bt_menu {\r\n	position: absolute;\r\n	left: 2px;\r\n	width: 216px;\r\n	height: 9px;\r\n}\r\n#BasicInfoV5 .buttons:hover {\r\n}\r\n#BasicInfoV5 .buttons button {\r\n	float: left;\r\n	width: 22px;\r\n	height: 22px;\r\n	border: none;\r\n	margin: 0px;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#BasicInfoV5 .buttons .clear {\r\n	clear: both;\r\n}\r\n\r\n/* REDUCED */\r\n#BasicInfoV5 .small .line1 {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV5 .small .line2 {\r\n	position: absolute;\r\n	top: 20px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV5 .small .line3 {\r\n	position: absolute;\r\n	top: 36px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV5 .small .line4 {\r\n	position: absolute;\r\n	top: 52px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV5 .toggle_btns {\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: rgba(0, 0, 0, 0);\r\n}\r\n\r\n#BasicInfoV5 .buttons button .name {\r\n	position: relative;\r\n	display: none;\r\n	z-index: 1;\r\n	top: -20px;\r\n	left: 0px;\r\n	background-color: rgba(0, 0, 0, 0.6);\r\n	text-shadow: 1px 1px black;\r\n	color: white;\r\n	padding: 5px;\r\n	white-space: nowrap;\r\n	font-size: 0.6rem;\r\n}\r\n#BasicInfoV5 .buttons button:hover .name {\r\n	display: table;\r\n}\r\n#BasicInfoV5 .buttons button .name {\r\n	display: none;\r\n}\r\n\r\n#BasicInfoV5 .buttons .btn_overlay {\r\n	width: 35px;\r\n	height: 40px;\r\n	border: none;\r\n	position: relative;\r\n	top: -13px;\r\n	left: -7px;\r\n	z-index: 10;\r\n	display: none;\r\n}\r\n";
+	BasicInfoV5_default$1 = ":host {\r\n	width: 220px;\r\n	height: 150px;\r\n	top: 0px;\r\n	left: 0px;\r\n}\r\n\r\n#BasicInfoV5 {\r\n	position: absolute;\r\n	width: 220px;\r\n	height: 150px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n#BasicInfoV5.small .large {\r\n	display: none;\r\n}\r\n#BasicInfoV5.large .small {\r\n	display: none;\r\n	border-radius: 5px;\r\n}\r\n#BasicInfoV5.small {\r\n	height: 70px;\r\n}\r\n#BasicInfoV5.large .bt_menu {\r\n	top: 150px;\r\n}\r\n#BasicInfoV5.small .bt_menu {\r\n	top: 70px;\r\n}\r\n\r\n#BasicInfoV5.large .buttons {\r\n	top: 160px;\r\n}\r\n#BasicInfoV5.small .buttons {\r\n	top: 80px;\r\n}\r\n\r\n#BasicInfoV5 .topbar .left {\r\n	position: absolute;\r\n	top: 3px;\r\n	left: 4px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n#BasicInfoV5 .topbar .right {\r\n	position: absolute;\r\n	top: 3px;\r\n	right: 2px;\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background: none;\r\n}\r\n\r\n/* LARGE */\r\n#BasicInfoV5 .large .title {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n}\r\n#BasicInfoV5 .large .name {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 20px;\r\n}\r\n#BasicInfoV5 .large .job {\r\n	position: absolute;\r\n	left: 10px;\r\n	top: 33px;\r\n}\r\n#BasicInfoV5 .large .hp_title {\r\n	position: absolute;\r\n	top: 50px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV5 .large .sp_title {\r\n	position: absolute;\r\n	top: 65px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV5 .large .ap_title {\r\n	position: absolute;\r\n	top: 80px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV5 .large .hp_bar,\r\n#BasicInfoV5 .large .sp_bar,\r\n#BasicInfoV5 .large .ap_bar {\r\n	position: absolute;\r\n	top: 53px;\r\n	left: 35px;\r\n	width: 135px;\r\n	height: 9px;\r\n	font-weight: normal;\r\n}\r\n#BasicInfoV5 .large .sp_bar {\r\n	top: 68px;\r\n}\r\n#BasicInfoV5 .large .ap_bar {\r\n	top: 83px;\r\n	background: linear-gradient(\r\n		to bottom,\r\n		#5a5a63 0%,\r\n		#a5a5ad 15%,\r\n		#bdc6ce 30%,\r\n		#ceced6 45%,\r\n		#d6dede 65%,\r\n		#e7e7ef 70%,\r\n		#f7f7f7 80%\r\n	);\r\n	border-radius: 15px;\r\n	border: 1px solid #b5b5b5;\r\n}\r\n#BasicInfoV5 .large .hp_bar div,\r\n#BasicInfoV5 .large .sp_bar div,\r\n#BasicInfoV5 .large .ap_bar div {\r\n	width: 4px;\r\n	height: 9px;\r\n	float: left;\r\n}\r\n#BasicInfoV5 .large div.hp_bar_perc,\r\n#BasicInfoV5 .large div.sp_bar_perc,\r\n#BasicInfoV5 .large div.ap_bar_perc {\r\n	text-align: center;\r\n	width: 127px;\r\n	position: absolute;\r\n	top: -1px;\r\n}\r\n#BasicInfoV5 .large .hp_perc {\r\n	position: absolute;\r\n	top: 50px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV5 .large .sp_perc {\r\n	position: absolute;\r\n	top: 65px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV5 .large .ap_perc {\r\n	position: absolute;\r\n	top: 80px;\r\n	right: 20px;\r\n}\r\n#BasicInfoV5 .large .blvl {\r\n	position: absolute;\r\n	top: 101px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV5 .large .jlvl {\r\n	position: absolute;\r\n	top: 112px;\r\n	left: 15px;\r\n}\r\n#BasicInfoV5 .large .bexp,\r\n#BasicInfoV5 .large .jexp {\r\n	position: absolute;\r\n	top: 104px;\r\n	left: 84px;\r\n	width: 110px;\r\n	height: 4px;\r\n	border: 1px solid #afafaf;\r\n	background-color: white;\r\n}\r\n#BasicInfoV5 .large .bexp div,\r\n#BasicInfoV5 .large .jexp div {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 0%;\r\n	height: 4px;\r\n	background-color: #4262a5;\r\n}\r\n#BasicInfoV5 .large .jexp {\r\n	top: 116px;\r\n}\r\n#BasicInfoV5 .large .extra {\r\n	position: absolute;\r\n	top: 134px;\r\n	right: -15px;\r\n	width: 100%;\r\n	padding-right: 20px;\r\n	overflow: hidden;\r\n	text-overflow: ellipsis;\r\n	text-align: right;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV5 .buttons {\r\n	position: absolute;\r\n	left: 0px;\r\n	top: 9px;\r\n	width: 220px;\r\n	height: 184px;\r\n}\r\n#BasicInfoV5 .bt_menu {\r\n	position: absolute;\r\n	left: 0px;\r\n	width: 219px;\r\n	height: 9px;\r\n}\r\n#BasicInfoV5 .buttons:hover {\r\n}\r\n#BasicInfoV5 .buttons div {\r\n	float: left;\r\n	width: 32px;\r\n	height: 32px;\r\n	border: none;\r\n	margin: 6px;\r\n}\r\n#BasicInfoV5 .buttons .clear {\r\n	clear: both;\r\n}\r\n\r\n/* REDUCED */\r\n#BasicInfoV5 .small .line1 {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 18px;\r\n	text-shadow: 1px 1px white;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV5 .small .info-container {\r\n	position: absolute;\r\n	top: 17px;\r\n	height: 60px;\r\n	width: 220px;\r\n	background-color: #ffffff;\r\n}\r\n#BasicInfoV5 .small .hpcontainer,\r\n#BasicInfoV5 .small .spcontainer {\r\n	position: absolute;\r\n	width: 130px;\r\n}\r\n#BasicInfoV5 .small .expcontainer,\r\n#BasicInfoV5 .small .apcontainer {\r\n	position: absolute;\r\n	width: 65px;\r\n	left: 140px;\r\n}\r\n#BasicInfoV5 .small .line2 {\r\n	position: absolute;\r\n	top: 3px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n}\r\n#BasicInfoV5 .small .line3 {\r\n	position: absolute;\r\n	top: 20px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n	font-weight: normal;\r\n}\r\n#BasicInfoV5 .small .line3 .hp_max_value {\r\n	display: inline-block;\r\n	width: 65px;\r\n	text-align: left;\r\n	font-weight: normal;\r\n}\r\n#BasicInfoV5 .small .line4 {\r\n	position: absolute;\r\n	top: 35px;\r\n	left: 10px;\r\n	white-space: nowrap;\r\n	font-weight: normal;\r\n}\r\n#BasicInfoV5 .small .line4 .sp_max_value {\r\n	display: inline-block;\r\n	width: 73px;\r\n	text-align: left;\r\n	font-weight: normal;\r\n}\r\n#BasicInfoV5 .toggle_btns {\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: rgba(0, 0, 0, 0);\r\n}\r\n\r\n#BasicInfoV5 .buttons div .name {\r\n	position: relative;\r\n	display: none;\r\n	z-index: 1;\r\n	top: -20px;\r\n	left: 0px;\r\n	background-color: rgba(0, 0, 0, 0.6);\r\n	text-shadow: 1px 1px black;\r\n	color: white;\r\n	padding: 5px;\r\n	white-space: nowrap;\r\n	font-size: 0.6rem;\r\n}\r\n#BasicInfoV5 .buttons div:hover .name {\r\n	display: table;\r\n}\r\n#BasicInfoV5 .buttons div .name {\r\n	display: none;\r\n}\r\n\r\n#BasicInfoV5 .buttons .btn_overlay {\r\n	width: 35px;\r\n	height: 40px;\r\n	border: none;\r\n	position: relative;\r\n	top: -13px;\r\n	left: -7px;\r\n	z-index: 10;\r\n	display: none;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/BasicInfo/BasicInfoV5/BasicInfoV5.js
-function _getRoot$18() {
+function _getRoot$32() {
 	return BasicInfoV5._shadow || BasicInfoV5._host;
 }
 var BasicInfoV5, _preferences$41, BasicInfoV5_default;
@@ -208041,7 +208133,7 @@ var init_BasicInfoV5 = __esmMin((() => {
 	* Initialize UI
 	*/
 	BasicInfoV5.init = function init() {
-		const root = _getRoot$18();
+		const root = _getRoot$32();
 		root.querySelectorAll(".topbar div").forEach((el) => {
 			el.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
 		});
@@ -208052,7 +208144,7 @@ var init_BasicInfoV5 = __esmMin((() => {
 		root.querySelectorAll(".toggle_btns").forEach((btn) => {
 			btn.addEventListener("click", (e) => BasicInfoV5.toggleButtons(e));
 		});
-		root.querySelectorAll(".buttons button").forEach((btn) => {
+		root.querySelectorAll(".buttons > div[id]").forEach((btn) => {
 			btn.addEventListener("click", () => {
 				switch (btn.id) {
 					case "item":
@@ -208107,7 +208199,7 @@ var init_BasicInfoV5 = __esmMin((() => {
 	* Execute elements in memory
 	*/
 	BasicInfoV5.onAppend = function onAppend() {
-		const root = _getRoot$18();
+		const root = _getRoot$32();
 		const hostRect = this._host.getBoundingClientRect();
 		this._host.style.top = `${Math.min(Math.max(0, _preferences$41.y), Renderer.height - hostRect.height)}px`;
 		this._host.style.left = `${Math.min(Math.max(0, _preferences$41.x), Renderer.width - hostRect.width)}px`;
@@ -208148,7 +208240,7 @@ var init_BasicInfoV5 = __esmMin((() => {
 	* Once remove, save preferences
 	*/
 	BasicInfoV5.onRemove = function onRemove() {
-		const root = _getRoot$18();
+		const root = _getRoot$32();
 		const inner = root.querySelector("#BasicInfoV5");
 		const buttons = root.querySelector(".buttons");
 		_preferences$41.x = parseInt(this._host.style.left, 10);
@@ -208177,7 +208269,7 @@ var init_BasicInfoV5 = __esmMin((() => {
 	* Switch window size
 	*/
 	BasicInfoV5.toggleMode = function toggleMode() {
-		const root = _getRoot$18();
+		const root = _getRoot$32();
 		const inner = root.querySelector("#BasicInfoV5");
 		if (!inner) return;
 		inner.classList.toggle("small");
@@ -208199,7 +208291,7 @@ var init_BasicInfoV5 = __esmMin((() => {
 	* Toggle the list of buttons
 	*/
 	BasicInfoV5.toggleButtons = function toggleButtons(event) {
-		const root = _getRoot$18();
+		const root = _getRoot$32();
 		const buttons = root.querySelector(".buttons");
 		if (!buttons) return;
 		_preferences$41.buttons = buttons.style.display === "none";
@@ -208224,7 +208316,7 @@ var init_BasicInfoV5 = __esmMin((() => {
 	* @param {number} val2 (optional)
 	*/
 	BasicInfoV5.update = function update(type, val1, val2) {
-		const root = _getRoot$18();
+		const root = _getRoot$32();
 		if (!root) return;
 		let perc = 100;
 		let color = "blue";
@@ -208718,7 +208810,7 @@ var init_WriteRodex = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Inventory/InventoryV0/InventoryV0.js
-function _getRoot$17() {
+function _getRoot$31() {
 	return InventoryV0._shadow || InventoryV0._host;
 }
 function _getBasicInfoRoot$3(ui) {
@@ -208780,7 +208872,7 @@ function onResize$10() {
 * Modify tab, filter display entries
 */
 function onSwitchTab$3() {
-	const root = _getRoot$17();
+	const root = _getRoot$31();
 	const buttons = root.querySelectorAll(".tabs button");
 	const idx = Array.from(buttons).indexOf(this);
 	_preferences$40.tab = parseInt(idx, 10);
@@ -208794,7 +208886,7 @@ function onSwitchTab$3() {
 * Hide/show inventory's content
 */
 function onToggleReduction$3() {
-	const panel = _getRoot$17().querySelector(".panel");
+	const panel = _getRoot$31().querySelector(".panel");
 	if (_realSize$4) {
 		if (panel) panel.style.display = "flex";
 		InventoryV0._host.style.height = `${_realSize$4}px`;
@@ -208809,7 +208901,7 @@ function onToggleReduction$3() {
 * Update tab, reset inventory content
 */
 function requestFilter$3() {
-	const root = _getRoot$17();
+	const root = _getRoot$31();
 	const host = root.querySelector(".scroll-host");
 	if (host) host.scrollTop = 0;
 	const content = root.querySelector(".container .content");
@@ -208880,7 +208972,7 @@ function onItemOver$14(_e) {
 	if (!item) return;
 	let quantity = " ea";
 	if (item.Options && (item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.SHADOWGEAR) && item.Options.filter((Option) => Option.index !== 0).length > 0) quantity = " Quantity";
-	const root = _getRoot$17();
+	const root = _getRoot$31();
 	const overlay = root.querySelector(".overlay");
 	const rootEl = root.querySelector("#InventoryV0") || root;
 	const itemRect = this.getBoundingClientRect();
@@ -208898,7 +208990,7 @@ function onItemOver$14(_e) {
 * Hide the item name
 */
 function onItemOut$15() {
-	const overlay = _getRoot$17().querySelector(".overlay");
+	const overlay = _getRoot$31().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 /**
@@ -209054,7 +209146,7 @@ var init_InventoryV0 = __esmMin((() => {
 	* Initialize UI
 	*/
 	InventoryV0.init = function Init() {
-		const root = _getRoot$17();
+		const root = _getRoot$31();
 		const baseBtn = root.querySelector(".titlebar .base");
 		if (baseBtn) baseBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
 		const miniBtn = root.querySelector(".titlebar .mini");
@@ -209110,7 +209202,7 @@ var init_InventoryV0 = __esmMin((() => {
 	* Apply preferences once append to body
 	*/
 	InventoryV0.onAppend = function OnAppend() {
-		const root = _getRoot$17();
+		const root = _getRoot$31();
 		if (!_preferences$40.show) this._host.style.display = "none";
 		Client.loadFile(DB.INTERFACE_PATH + "basic_interface/tab_itm_0" + (_preferences$40.tab + 1) + ".bmp", (data) => {
 			const tabSprite = root.querySelector(".tab-sprite");
@@ -209132,7 +209224,7 @@ var init_InventoryV0 = __esmMin((() => {
 	* Remove Inventory from window (and so clean up items)
 	*/
 	InventoryV0.onRemove = function OnRemove() {
-		const content = _getRoot$17().querySelector(".container .content");
+		const content = _getRoot$31().querySelector(".container .content");
 		if (content) content.innerHTML = "";
 		this.list.length = 0;
 		InventoryV0.newItems.length = 0;
@@ -209164,7 +209256,7 @@ var init_InventoryV0 = __esmMin((() => {
 				} else {
 					this._host.dispatchEvent(new Event("mouseleave"));
 					this.clearNewItems();
-					_getRoot$17().querySelectorAll(".new_item").forEach((el) => {
+					_getRoot$31().querySelectorAll(".new_item").forEach((el) => {
 						el.style.backgroundImage = "";
 					});
 					this._host.style.display = "none";
@@ -209187,7 +209279,7 @@ var init_InventoryV0 = __esmMin((() => {
 		} else {
 			this._host.dispatchEvent(new Event("mouseleave"));
 			this.clearNewItems();
-			_getRoot$17().querySelectorAll(".new_item").forEach((el) => {
+			_getRoot$31().querySelectorAll(".new_item").forEach((el) => {
 				el.style.backgroundImage = "";
 			});
 			this._host.style.display = "none";
@@ -209213,7 +209305,7 @@ var init_InventoryV0 = __esmMin((() => {
 	InventoryV0.resize = function Resize(width, height) {
 		width = Math.min(Math.max(width, 6), 8);
 		height = Math.min(Math.max(height, 2), 5);
-		const content = _getRoot$17().querySelector(".container .content");
+		const content = _getRoot$31().querySelector(".container .content");
 		if (content) content.style.width = `${width * 32}px`;
 		this._host.style.width = `${59 + width * 32}px`;
 		this._host.style.height = `${62 + height * 32}px`;
@@ -209223,7 +209315,7 @@ var init_InventoryV0 = __esmMin((() => {
 	* Force scroll clamping
 	*/
 	InventoryV0.updateScroll = function updateScroll() {
-		const root = _getRoot$17();
+		const root = _getRoot$31();
 		const hostEl = root.querySelector(".scroll-host");
 		if (!hostEl) return;
 		const contentEl = root.querySelector(".content");
@@ -209269,7 +209361,7 @@ var init_InventoryV0 = __esmMin((() => {
 	* if the item index is exist you should clear it;[skybook888]
 	*/
 	InventoryV0.setItems = function SetItems(items) {
-		const root = _getRoot$17();
+		const root = _getRoot$31();
 		for (let i = 0, count = items.length; i < count; ++i) {
 			const object = this.getItemByIndex(items[i].index);
 			if (object) this.removeItem(object.index, object.count);
@@ -209288,7 +209380,7 @@ var init_InventoryV0 = __esmMin((() => {
 	*/
 	InventoryV0.addItem = function AddItem(item) {
 		let object = this.getItemByIndex(item.index);
-		const root = _getRoot$17();
+		const root = _getRoot$31();
 		const equippedIndex = InventoryV0.equippedItems.indexOf(item.index);
 		if (equippedIndex !== -1) InventoryV0.equippedItems.splice(equippedIndex, 1);
 		else {
@@ -209340,7 +209432,7 @@ var init_InventoryV0 = __esmMin((() => {
 		}
 		if (tab === _preferences$40.tab) {
 			const it = DB.getItemInfo(item.ITID);
-			const root = _getRoot$17();
+			const root = _getRoot$31();
 			const content = root.querySelector(".container .content");
 			if (!content) return true;
 			content.insertAdjacentHTML("beforeend", `<div class="item" data-index="${item.index}" draggable="true"><div class="new_item"></div><div class="icon"></div><div class="amount"><span class="count">${item.count || 1}</span></div></div>`);
@@ -209367,7 +209459,7 @@ var init_InventoryV0 = __esmMin((() => {
 	*/
 	InventoryV0.removeItem = function RemoveItem(index, count) {
 		const item = this.getItemByIndex(index);
-		const root = _getRoot$17();
+		const root = _getRoot$31();
 		if (!item || count <= 0) return null;
 		if (item.count) {
 			item.count -= count;
@@ -209398,7 +209490,7 @@ var init_InventoryV0 = __esmMin((() => {
 		const item = this.getItemByIndex(index);
 		if (!item) return;
 		item.count = count;
-		const root = _getRoot$17();
+		const root = _getRoot$31();
 		if (item.count > 0) {
 			const countEl = root.querySelector(`.item[data-index="${item.index}"] .count`);
 			if (countEl) countEl.textContent = item.count;
@@ -209462,7 +209554,7 @@ var init_InventoryV1$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Inventory/InventoryV1/InventoryV1.js
-function _getRoot$16() {
+function _getRoot$30() {
 	return InventoryV1._shadow || InventoryV1._host;
 }
 function _getBasicInfoRoot$2(ui) {
@@ -209514,7 +209606,7 @@ function onResize$9() {
 * Modify tab, filter display entries
 */
 function onSwitchTab$2() {
-	const root = _getRoot$16();
+	const root = _getRoot$30();
 	const buttons = root.querySelectorAll(".tabs button");
 	const idx = Array.from(buttons).indexOf(this);
 	_preferences$39.tab = parseInt(idx, 10);
@@ -209558,7 +209650,7 @@ function onSwitchTab$2() {
 * Hide/show inventory's content
 */
 function onToggleReduction$2() {
-	const panel = _getRoot$16().querySelector(".panel");
+	const panel = _getRoot$30().querySelector(".panel");
 	if (_realSize$3) {
 		if (panel) panel.style.display = "flex";
 		InventoryV1._host.style.height = `${_realSize$3}px`;
@@ -209573,7 +209665,7 @@ function onToggleReduction$2() {
 * Update tab, reset inventory content
 */
 function requestFilter$2() {
-	const root = _getRoot$16();
+	const root = _getRoot$30();
 	const host = root.querySelector(".scroll-host");
 	if (host) host.scrollTop = 0;
 	const content = root.querySelector(".container .content");
@@ -209642,7 +209734,7 @@ function onItemOver$13(_e) {
 	if (!item) return;
 	let quantity = " ea";
 	if (item.Options && (item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.SHADOWGEAR) && item.Options.filter((Option) => Option.index !== 0).length > 0) quantity = " Quantity";
-	const root = _getRoot$16();
+	const root = _getRoot$30();
 	const overlay = root.querySelector(".overlay");
 	const rootEl = root.querySelector("#InventoryV1") || root;
 	const itemRect = this.getBoundingClientRect();
@@ -209660,7 +209752,7 @@ function onItemOver$13(_e) {
 * Hide the item name
 */
 function onItemOut$14() {
-	const overlay = _getRoot$16().querySelector(".overlay");
+	const overlay = _getRoot$30().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 /**
@@ -209793,7 +209885,7 @@ function onItemLock$2() {
 	InventoryV1.itemlock = _preferences$39.itemlock;
 	const lockImg = _preferences$39.itemlock ? "inventory/item_drop_lock_on.bmp" : "inventory/item_drop_lock_off.bmp";
 	Client.loadFile(DB.INTERFACE_PATH + lockImg, (data) => {
-		const lockBtn = _getRoot$16().querySelector(".item_drop_lock");
+		const lockBtn = _getRoot$30().querySelector(".item_drop_lock");
 		if (lockBtn) lockBtn.style.backgroundImage = `url(${data})`;
 	});
 }
@@ -209805,7 +209897,7 @@ function onItemCompare$2() {
 	InventoryV1.itemcomp = _preferences$39.itemcomp;
 	const compImg = _preferences$39.itemcomp ? "inventory/item_compare_on.bmp" : "inventory/item_compare_off.bmp";
 	Client.loadFile(DB.INTERFACE_PATH + compImg, (data) => {
-		const compBtn = _getRoot$16().querySelector(".item_compare");
+		const compBtn = _getRoot$30().querySelector(".item_compare");
 		if (compBtn) compBtn.style.backgroundImage = `url(${data})`;
 	});
 }
@@ -209815,7 +209907,7 @@ function onItemCompare$2() {
 function onNPCLock$2() {
 	_preferences$39.npcsalelock = !_preferences$39.npcsalelock;
 	InventoryV1.npcsalelock = _preferences$39.npcsalelock;
-	const root = _getRoot$16();
+	const root = _getRoot$30();
 	if (_preferences$39.npcsalelock) {
 		const dealOn = root.querySelector(".deallock_on");
 		if (dealOn) dealOn.style.display = "";
@@ -209913,7 +210005,7 @@ var init_InventoryV1 = __esmMin((() => {
 	* Initialize UI
 	*/
 	InventoryV1.init = function Init() {
-		const root = _getRoot$16();
+		const root = _getRoot$30();
 		const baseBtn = root.querySelector(".titlebar .base");
 		if (baseBtn) baseBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
 		const miniBtn = root.querySelector(".titlebar .mini");
@@ -210022,14 +210114,14 @@ var init_InventoryV1 = __esmMin((() => {
 		this.magnet.LEFT = _preferences$39.magnet_left;
 		this.magnet.RIGHT = _preferences$39.magnet_right;
 		_realSize$3 = _preferences$39.reduce ? 0 : this._host.getBoundingClientRect().height;
-		const miniBtnAppend = _getRoot$16().querySelector(".titlebar .mini");
+		const miniBtnAppend = _getRoot$30().querySelector(".titlebar .mini");
 		if (miniBtnAppend) miniBtnAppend.dispatchEvent(new Event("mousedown"));
 	};
 	/**
 	* Remove Inventory from window (and so clean up items)
 	*/
 	InventoryV1.onRemove = function OnRemove() {
-		const content = _getRoot$16().querySelector(".container .content");
+		const content = _getRoot$30().querySelector(".container .content");
 		if (content) content.innerHTML = "";
 		this.list.length = 0;
 		InventoryV1.newItems.length = 0;
@@ -210060,7 +210152,7 @@ var init_InventoryV1 = __esmMin((() => {
 				} else {
 					this._host.dispatchEvent(new Event("mouseleave"));
 					this.clearNewItems();
-					_getRoot$16().querySelectorAll(".new_item").forEach((el) => {
+					_getRoot$30().querySelectorAll(".new_item").forEach((el) => {
 						el.style.backgroundImage = "";
 					});
 					this._host.style.display = "none";
@@ -210083,7 +210175,7 @@ var init_InventoryV1 = __esmMin((() => {
 		} else {
 			this._host.dispatchEvent(new Event("mouseleave"));
 			this.clearNewItems();
-			_getRoot$16().querySelectorAll(".new_item").forEach((el) => {
+			_getRoot$30().querySelectorAll(".new_item").forEach((el) => {
 				el.style.backgroundImage = "";
 			});
 			this._host.style.display = "none";
@@ -210107,7 +210199,7 @@ var init_InventoryV1 = __esmMin((() => {
 	*/
 	InventoryV1.resize = function Resize(width) {
 		width = Math.min(Math.max(width, 6), 8);
-		const content = _getRoot$16().querySelector(".container .content");
+		const content = _getRoot$30().querySelector(".container .content");
 		if (content) content.style.width = `${width * 32}px`;
 		this._host.style.width = `${55 + width * 32}px`;
 		this.updateScroll();
@@ -210116,7 +210208,7 @@ var init_InventoryV1 = __esmMin((() => {
 	* Force scroll clamping
 	*/
 	InventoryV1.updateScroll = function updateScroll() {
-		const root = _getRoot$16();
+		const root = _getRoot$30();
 		const hostEl = root.querySelector(".scroll-host");
 		if (!hostEl) return;
 		const contentEl = root.querySelector(".content");
@@ -210161,7 +210253,7 @@ var init_InventoryV1 = __esmMin((() => {
 	* Add items to the list
 	*/
 	InventoryV1.setItems = function SetItems(items) {
-		const root = _getRoot$16();
+		const root = _getRoot$30();
 		for (let i = 0, count = items.length; i < count; ++i) {
 			const object = this.getItemByIndex(items[i].index);
 			if (object) this.removeItem(object.index, object.count);
@@ -210178,7 +210270,7 @@ var init_InventoryV1 = __esmMin((() => {
 	*/
 	InventoryV1.addItem = function AddItem(item) {
 		let object = this.getItemByIndex(item.index);
-		const root = _getRoot$16();
+		const root = _getRoot$30();
 		const equippedIndex = InventoryV1.equippedItems.indexOf(item.index);
 		if (equippedIndex !== -1) InventoryV1.equippedItems.splice(equippedIndex, 1);
 		else {
@@ -210229,7 +210321,7 @@ var init_InventoryV1 = __esmMin((() => {
 		}
 		if (tab === _preferences$39.tab) {
 			const it = DB.getItemInfo(item.ITID);
-			const root = _getRoot$16();
+			const root = _getRoot$30();
 			const content = root.querySelector(".container .content");
 			if (!content) return true;
 			content.insertAdjacentHTML("beforeend", `<div class="item" data-index="${item.index}" draggable="true"><div class="new_item"></div><div class="icon"></div><div class="amount"><span class="count">${item.count || 1}</span></div></div>`);
@@ -210253,7 +210345,7 @@ var init_InventoryV1 = __esmMin((() => {
 	*/
 	InventoryV1.removeItem = function RemoveItem(index, count) {
 		const item = this.getItemByIndex(index);
-		const root = _getRoot$16();
+		const root = _getRoot$30();
 		if (!item || count <= 0) return null;
 		if (item.count) {
 			item.count -= count;
@@ -210281,7 +210373,7 @@ var init_InventoryV1 = __esmMin((() => {
 		const item = this.getItemByIndex(index);
 		if (!item) return;
 		item.count = count;
-		const root = _getRoot$16();
+		const root = _getRoot$30();
 		if (item.count > 0) {
 			const countEl = root.querySelector(`.item[data-index="${item.index}"] .count`);
 			if (countEl) countEl.textContent = item.count;
@@ -210370,10 +210462,24 @@ var init_SwitchEquip$2 = __esmMin((() => {
 //#region src/UI/Components/SwitchEquip/SwitchEquip.css?raw
 var SwitchEquip_default$1;
 var init_SwitchEquip$1 = __esmMin((() => {
-	SwitchEquip_default$1 = "#SwitchEquip {\r\n	position: absolute;\r\n	width: 280px;\r\n	height: 179px;\r\n}\r\n\r\n#SwitchEquip .clear {\r\n	clear: both;\r\n}\r\n\r\n#SwitchEquip .titlebar {\r\n	position: absolute;\r\n	top: 2px;\r\n	width: 280px;\r\n	height: 17px;\r\n	background-color: transparent;\r\n	border-radius: 3px 3px 0px 0px;\r\n	text-align: center;\r\n	z-index: 99;\r\n}\r\n\r\n#SwitchEquip .panel {\r\n	background-color: white;\r\n	height: 179px;\r\n}\r\n#SwitchEquip table.swapcontent {\r\n	position: absolute;\r\n	top: 0px;\r\n	width: 280px;\r\n	height: 179px;\r\n	border-spacing: 0;\r\n}\r\n#SwitchEquip table.swapcontent.hide {\r\n	display: none;\r\n}\r\n#SwitchEquip table tbody {\r\n	position: absolute;\r\n	top: 20px;\r\n}\r\n#SwitchEquip .swapcontent {\r\n	display: inline-block;\r\n	width: 280px;\r\n	height: 179px;\r\n	border-spacing: 0;\r\n}\r\n#SwitchEquip .col1,\r\n#SwitchEquip .col3 {\r\n	width: 115px;\r\n	height: 24px;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#SwitchEquip .col1 {\r\n	background-position: 5% 50%;\r\n	min-width: 110px;\r\n}\r\n#SwitchEquip .col3 {\r\n	background-position: 95% 50%;\r\n	min-width: 110px;\r\n}\r\n\r\n#SwitchEquip .switchoverlay {\r\n	position: absolute;\r\n	display: none;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	padding: 5px;\r\n	background: rgba(0, 0, 0, 0.7);\r\n	color: white;\r\n	text-shadow: 1px 1px black;\r\n}\r\n\r\n#SwitchEquip .item button {\r\n	width: 24px;\r\n	height: 24px;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n	border: none;\r\n}\r\n#SwitchEquip .item span {\r\n	width: 80px;\r\n	height: 24px;\r\n	display: inline-block;\r\n	line-height: 12px;\r\n	word-break: break-all;\r\n	overflow: hidden;\r\n	text-shadow: 1px 1px white;\r\n}\r\n\r\n#SwitchEquip .col3 .item button,\r\n#SwitchEquip .col3 .item span {\r\n	float: right;\r\n}\r\n#SwitchEquip .col1 .item button,\r\n#SwitchEquip .col1 .item span {\r\n	float: left;\r\n}\r\n#SwitchEquip .col1 .item {\r\n	padding-left: 4px;\r\n}\r\n#SwitchEquip .col3 .item {\r\n	padding-right: 4px;\r\n}\r\n#SwitchEquip .col1 .item .itemName {\r\n	display: flex;\r\n	align-items: center;\r\n}\r\n#SwitchEquip .col3 .item .itemName {\r\n	display: flex;\r\n	align-items: center;\r\n}\r\n\r\n#SwitchEquip .ammo_container {\r\n	position: relative;\r\n}\r\n#SwitchEquip .ammo {\r\n	position: absolute;\r\n	top: 30px;\r\n}\r\n#SwitchEquip .ammo .item {\r\n	text-align: center;\r\n}\r\n#SwitchEquip .ammo .item span {\r\n	width: 45px;\r\n}\r\n#SwitchEquip .cartitems {\r\n	position: absolute;\r\n	top: 65px;\r\n	left: 14px;\r\n	width: 36px;\r\n	height: 36px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n	border: none;\r\n	display: none;\r\n}\r\n#SwitchEquip .removeOption {\r\n	position: absolute;\r\n	top: 90px;\r\n	left: 12px;\r\n	width: 36px;\r\n	height: 36px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n	border: none;\r\n	display: none;\r\n}\r\n\r\n#SwitchEquip .footer {\r\n	position: relative;\r\n	top: -30px;\r\n	height: 30px;\r\n}\r\n\r\n#SwitchEquip .footer button.closeswap {\r\n	position: absolute;\r\n	width: 43px;\r\n	height: 20px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	right: 5px;\r\n	top: 5px;\r\n}\r\n\r\n#SwitchEquip .footer button.onswap {\r\n	position: absolute;\r\n	width: 120px;\r\n	height: 20px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	left: 80px;\r\n	top: 5px;\r\n	text-align: center;\r\n}\r\n\r\n#SwitchEquip .disabled {\r\n	pointer-events: none; /* Prevents clicking */\r\n}\r\n";
+	SwitchEquip_default$1 = ":host {\r\n	width: 280px;\r\n	height: 179px;\r\n}\r\n\r\n#SwitchEquip {\r\n	position: absolute;\r\n	width: 280px;\r\n	height: 179px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#SwitchEquip .clear {\r\n	clear: both;\r\n}\r\n\r\n#SwitchEquip .titlebar {\r\n	position: absolute;\r\n	top: 2px;\r\n	width: 280px;\r\n	height: 17px;\r\n	background-color: transparent;\r\n	border-radius: 3px 3px 0px 0px;\r\n	text-align: center;\r\n	z-index: 99;\r\n}\r\n\r\n#SwitchEquip .panel {\r\n	background-color: white;\r\n	height: 179px;\r\n}\r\n#SwitchEquip table.swapcontent {\r\n	position: absolute;\r\n	top: 0px;\r\n	width: 280px;\r\n	height: 179px;\r\n	border-spacing: 0;\r\n}\r\n#SwitchEquip table.swapcontent.hide {\r\n	display: none;\r\n}\r\n#SwitchEquip table tbody {\r\n	position: absolute;\r\n	top: 20px;\r\n}\r\n#SwitchEquip .swapcontent {\r\n	display: inline-block;\r\n	width: 280px;\r\n	height: 179px;\r\n	border-spacing: 0;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#SwitchEquip .col1,\r\n#SwitchEquip .col3 {\r\n	width: 115px;\r\n	height: 24px;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#SwitchEquip .col1 {\r\n	background-position: 5% 50%;\r\n	min-width: 110px;\r\n}\r\n#SwitchEquip .col3 {\r\n	background-position: 95% 50%;\r\n	min-width: 110px;\r\n}\r\n\r\n#SwitchEquip .switchoverlay {\r\n	position: absolute;\r\n	display: none;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	padding: 5px;\r\n	background: rgba(0, 0, 0, 0.7);\r\n	color: white;\r\n	text-shadow: 1px 1px black;\r\n}\r\n\r\n#SwitchEquip .item button {\r\n	width: 24px;\r\n	height: 24px;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n	border: none;\r\n}\r\n#SwitchEquip .item span {\r\n	width: 80px;\r\n	height: 24px;\r\n	display: inline-block;\r\n	line-height: 12px;\r\n	word-break: break-all;\r\n	overflow: hidden;\r\n	text-shadow: 1px 1px white;\r\n}\r\n\r\n#SwitchEquip .col3 .item button,\r\n#SwitchEquip .col3 .item span {\r\n	float: right;\r\n}\r\n#SwitchEquip .col1 .item button,\r\n#SwitchEquip .col1 .item span {\r\n	float: left;\r\n}\r\n#SwitchEquip .col1 .item {\r\n	padding-left: 4px;\r\n}\r\n#SwitchEquip .col3 .item {\r\n	padding-right: 4px;\r\n}\r\n#SwitchEquip .col1 .item .itemName {\r\n	display: flex;\r\n	align-items: center;\r\n}\r\n#SwitchEquip .col3 .item .itemName {\r\n	display: flex;\r\n	align-items: center;\r\n}\r\n\r\n#SwitchEquip .ammo_container {\r\n	position: relative;\r\n}\r\n#SwitchEquip .ammo {\r\n	position: absolute;\r\n	top: 30px;\r\n}\r\n#SwitchEquip .ammo .item {\r\n	text-align: center;\r\n}\r\n#SwitchEquip .ammo .item span {\r\n	width: 45px;\r\n}\r\n#SwitchEquip .cartitems {\r\n	position: absolute;\r\n	top: 65px;\r\n	left: 14px;\r\n	width: 36px;\r\n	height: 36px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n	border: none;\r\n	display: none;\r\n}\r\n#SwitchEquip .removeOption {\r\n	position: absolute;\r\n	top: 90px;\r\n	left: 12px;\r\n	width: 36px;\r\n	height: 36px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n	border: none;\r\n	display: none;\r\n}\r\n\r\n#SwitchEquip .footer {\r\n	position: relative;\r\n	top: -30px;\r\n	height: 30px;\r\n}\r\n\r\n#SwitchEquip .footer button.closeswap {\r\n	position: absolute;\r\n	width: 43px;\r\n	height: 20px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	right: 5px;\r\n	top: 5px;\r\n}\r\n\r\n#SwitchEquip .footer button.onswap {\r\n	position: absolute;\r\n	width: 120px;\r\n	height: 20px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	left: 80px;\r\n	top: 5px;\r\n	text-align: center;\r\n}\r\n\r\n#SwitchEquip .disabled {\r\n	pointer-events: none; /* Prevents clicking */\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/SwitchEquip/SwitchEquip.js
+/**
+* Helper to get shadow root
+*/
+function _getRoot$29() {
+	return SwitchEquip._shadow || SwitchEquip._host;
+}
+/**
+* Escape HTML entities
+*/
+function _escapeHtml(str) {
+	const div = document.createElement("div");
+	div.appendChild(document.createTextNode(str));
+	return div.innerHTML;
+}
 /**
 * Find elements in html base on item location
 *
@@ -210411,26 +210517,28 @@ function getSelectorFromLocation$6(location) {
 function onDragOver$6(event) {
 	if (window._OBJ_DRAG_) {
 		const data = window._OBJ_DRAG_;
-		let item, selector, ui;
 		if (data.type === "item") {
-			item = data.data;
+			const item = data.data;
 			if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR) && item.IsIdentified && !item.IsDamaged) {
-				selector = getSelectorFromLocation$6("location" in item ? item.location : item.WearLocation);
-				ui = SwitchEquip.ui.find(selector);
-				Client.loadFile(DB.INTERFACE_PATH + "basic_interface/item_invert.bmp", function(_data) {
-					ui.css("backgroundImage", "url(" + _data + ")");
+				const selector = getSelectorFromLocation$6("location" in item ? item.location : item.WearLocation);
+				const el = _getRoot$29().querySelector(selector);
+				if (el) Client.loadFile(DB.INTERFACE_PATH + "basic_interface/item_invert.bmp", (_data) => {
+					el.style.backgroundImage = `url(${_data})`;
 				});
 			}
 		}
 	}
 	event.stopImmediatePropagation();
+	event.preventDefault();
 	return false;
 }
 /**
 * Drag out the window
 */
 function onDragLeave$5(event) {
-	SwitchEquip.ui.find("td").css("backgroundImage", "none");
+	_getRoot$29().querySelectorAll("td").forEach((td) => {
+		td.style.backgroundImage = "none";
+	});
 	event.stopImmediatePropagation();
 	return false;
 }
@@ -210438,14 +210546,16 @@ function onDragLeave$5(event) {
 * Drop an item in the equipment, equip it if possible
 */
 function onDrop$16(event) {
-	let item, data;
+	let data;
 	try {
-		data = JSON.parse(event.originalEvent.dataTransfer.getData("Text"));
-	} catch (e) {}
+		data = JSON.parse(event.dataTransfer.getData("Text"));
+	} catch (_e) {}
 	if (data && data.type === "item") {
-		item = data.data;
+		const item = data.data;
 		if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.AMMO) && item.IsIdentified && !item.IsDamaged) {
-			SwitchEquip.ui.find("td").css("backgroundImage", "none");
+			_getRoot$29().querySelectorAll("td").forEach((td) => {
+				td.style.backgroundImage = "none";
+			});
 			SwitchEquip.onAddSwitchEquip(item.index, "location" in item ? item.location : item.WearState);
 		}
 	}
@@ -210465,6 +210575,7 @@ function onSwitchEquipInfo(event) {
 		ItemInfo_default.setItem(item);
 	}
 	event.stopImmediatePropagation();
+	event.preventDefault();
 	return false;
 }
 /**
@@ -210473,7 +210584,8 @@ function onSwitchEquipInfo(event) {
 function onSwitchEquipUnEquip() {
 	const index = parseInt(this.getAttribute("data-index"), 10);
 	SwitchEquip.onRemoveSwitchEquip(index);
-	SwitchEquip.ui.find(".switchoverlay").hide();
+	const overlay = _getRoot$29().querySelector(".switchoverlay");
+	if (overlay) overlay.style.display = "none";
 }
 /**
 * When mouse is over an equipment, display the item name
@@ -210482,21 +210594,22 @@ function onSwitchEquipOver() {
 	const idx = parseInt(this.parentNode.getAttribute("data-index"), 10);
 	const item = SwitchEquip._list[idx];
 	if (!item) return;
-	const overlay = SwitchEquip.ui.find(".switchoverlay");
-	const pos = jquery_default(this).position();
-	if (!pos.top && !pos.left) return;
-	overlay.show();
-	overlay.css({
-		top: pos.top - 22,
-		left: pos.left - 22
-	});
-	overlay.text(DB.getItemName(item));
+	const overlay = _getRoot$29().querySelector(".switchoverlay");
+	if (!overlay) return;
+	const posTop = this.offsetTop;
+	const posLeft = this.offsetLeft;
+	if (!posTop && !posLeft) return;
+	overlay.style.display = "";
+	overlay.style.top = `${posTop - 22}px`;
+	overlay.style.left = `${posLeft - 22}px`;
+	overlay.textContent = DB.getItemName(item);
 }
 /**
 * Remove the item name
 */
 function onSwitchEquipOut() {
-	SwitchEquip.ui.find(".switchoverlay").hide();
+	const overlay = _getRoot$29().querySelector(".switchoverlay");
+	if (overlay) overlay.style.display = "none";
 }
 /**
 * Send an equipment switch request to the server.
@@ -210512,21 +210625,21 @@ var init_SwitchEquip = __esmMin((() => {
 	init_NetworkManager();
 	init_PacketStructure();
 	init_ItemType();
-	init_jquery();
 	init_Client();
 	init_SessionStorage();
 	init_Renderer();
 	init_Camera();
 	init_SpriteRenderer();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
 	init_ItemInfo();
 	init_SwitchEquip$2();
 	init_SwitchEquip$1();
 	init_Entity$1();
 	init_Equipment();
 	init_Inventory();
-	SwitchEquip = new UIComponent("SwitchEquip", SwitchEquip_default$2, SwitchEquip_default$1);
+	SwitchEquip = new GUIComponent("SwitchEquip", SwitchEquip_default$1);
+	SwitchEquip.render = () => SwitchEquip_default$2;
 	/**
 	* @var {Array} switchequipment list
 	*/
@@ -210536,20 +210649,44 @@ var init_SwitchEquip = __esmMin((() => {
 	* Initialize UI
 	*/
 	SwitchEquip.init = function init() {
-		_swapctx.push(this.ui.find("canvas")[0].getContext("2d"));
-		_swapctx.push(this.ui.find("canvas")[1].getContext("2d"));
-		this.ui.on("dragover", onDragOver$6);
-		this.ui.on("dragleave", onDragLeave$5);
-		this.ui.on("drop", onDrop$16);
-		this.ui.find(".closeswap").click(function() {
+		const root = _getRoot$29();
+		const canvases = root.querySelectorAll("canvas");
+		_swapctx.push(canvases[0].getContext("2d"));
+		_swapctx.push(canvases[1].getContext("2d"));
+		const panel = root.querySelector(".panel");
+		if (panel) {
+			panel.addEventListener("dragover", onDragOver$6);
+			panel.addEventListener("dragleave", onDragLeave$5);
+			panel.addEventListener("drop", onDrop$16);
+		}
+		const closeBtn = root.querySelector(".closeswap");
+		if (closeBtn) closeBtn.addEventListener("click", () => {
 			SwitchEquip.toggle();
 		});
-		this.ui.find(".onswap").click(function() {
+		const swapBtn = root.querySelector(".onswap");
+		if (swapBtn) swapBtn.addEventListener("click", () => {
 			SwitchEquip.RequestSwitch();
 		});
 		const currentEquipTabId = EquipmentController.getUI().getCurrentTabId();
 		SwitchEquip.showSwapTab(currentEquipTabId);
-		this.ui.find(".swapcontent").on("contextmenu", ".item", onSwitchEquipInfo).on("dblclick", ".item", onSwitchEquipUnEquip).on("mouseover", "button", onSwitchEquipOver).on("mouseout", "button", onSwitchEquipOut);
+		const swapcontents = root.querySelectorAll(".swapcontent");
+		for (const content of swapcontents) {
+			content.addEventListener("contextmenu", (e) => {
+				const item = e.target.closest(".item");
+				if (item) onSwitchEquipInfo.call(item, e);
+			});
+			content.addEventListener("dblclick", (e) => {
+				const item = e.target.closest(".item");
+				if (item) onSwitchEquipUnEquip.call(item, e);
+			});
+			content.addEventListener("mouseover", (e) => {
+				const btn = e.target.closest("button");
+				if (btn) onSwitchEquipOver.call(btn, e);
+			});
+			content.addEventListener("mouseout", (e) => {
+				if (e.target.closest("button")) onSwitchEquipOut();
+			});
+		}
 	};
 	/**
 	* Show the swap tab with the given tabId, hiding other tabs.
@@ -210557,12 +210694,14 @@ var init_SwitchEquip = __esmMin((() => {
 	* @param {string} tabId - The ID of the tab to show.
 	*/
 	SwitchEquip.showSwapTab = function showSwapTab(tabId) {
+		const root = _getRoot$29();
+		if (!root) return;
 		const swapTabId = "swap" + tabId;
 		const swapContentDivs = {
-			swapgeneral: document.getElementById("swapgeneral"),
-			swapcostume: document.getElementById("swapcostume")
+			swapgeneral: root.querySelector("#swapgeneral"),
+			swapcostume: root.querySelector("#swapcostume")
 		};
-		for (const id in swapContentDivs) if (id == swapTabId) swapContentDivs[id].classList.remove("hide");
+		for (const id in swapContentDivs) if (swapContentDivs[id]) if (id === swapTabId) swapContentDivs[id].classList.remove("hide");
 		else swapContentDivs[id].classList.add("hide");
 	};
 	/**
@@ -210571,7 +210710,8 @@ var init_SwitchEquip = __esmMin((() => {
 	SwitchEquip.onAppend = function onAppend() {
 		const currentEquipTabId = EquipmentController.getUI().getCurrentTabId();
 		SwitchEquip.showSwapTab(currentEquipTabId);
-		if (this.ui.find("canvas").is(":visible")) Renderer.render(swaprender);
+		const root = _getRoot$29();
+		if ((root ? root.querySelector("canvas") : null) && this._host.style.display !== "none") Renderer.render(swaprender);
 	};
 	/**
 	* Remove Inventory from window (and so clean up items)
@@ -210579,7 +210719,10 @@ var init_SwitchEquip = __esmMin((() => {
 	SwitchEquip.onRemove = function onRemove() {
 		Renderer.stop(swaprender);
 		SwitchEquip._list = {};
-		this.ui.find(".col1, .col3, .ammo").empty();
+		const root = _getRoot$29();
+		if (root) root.querySelectorAll(".col1, .col3, .ammo").forEach((el) => {
+			el.innerHTML = "";
+		});
 	};
 	/**
 	* Process shortcut
@@ -210598,11 +210741,14 @@ var init_SwitchEquip = __esmMin((() => {
 	* rendering or stopping the renderer based on visibility.
 	*/
 	SwitchEquip.toggle = function toggle() {
-		this.ui.toggle();
-		if (this.ui.is(":visible")) {
+		if (this._host.style.display === "none") {
+			this._host.style.display = "";
 			Renderer.render(swaprender);
 			this.focus();
-		} else Renderer.stop(swaprender);
+		} else {
+			this._host.style.display = "none";
+			Renderer.stop(swaprender);
+		}
 	};
 	/**
 	* Add an equipment to the window
@@ -210615,17 +210761,21 @@ var init_SwitchEquip = __esmMin((() => {
 		const it = DB.getItemInfo(item.ITID);
 		item.equipped = location;
 		SwitchEquip._list[item.index] = item;
-		function add3Dots(string, limit) {
-			const dots = "...";
-			if (string.length > limit) string = string.substring(0, limit) + dots;
+		const add3Dots = (string, limit) => {
+			if (string.length > limit) return string.substring(0, limit) + "...";
 			return string;
-		}
-		this.ui.find(getSelectorFromLocation$6(location)).html("<div class=\"item\" data-index=\"" + item.index + "\"><button></button><span class=\"itemName\">" + add3Dots(jquery_default.escape(DB.getItemName(item)), 19) + "</span></div>");
-		Client.loadFile(DB.INTERFACE_PATH + "item/" + it.identifiedResourceName + ".bmp", function(data) {
-			const button = this.ui.find(".item[data-index=\"" + item.index + "\"] button");
-			button.css("backgroundImage", "url(" + data + ")");
-			if (!inSwitchList) button.css("filter", "grayscale(100%)");
-		}.bind(this));
+		};
+		const root = _getRoot$29();
+		const selector = getSelectorFromLocation$6(location);
+		const el = root.querySelector(selector);
+		if (el) el.innerHTML = `<div class="item" data-index="${item.index}"><button></button><span class="itemName">${add3Dots(_escapeHtml(DB.getItemName(item)), 19)}</span></div>`;
+		Client.loadFile(DB.INTERFACE_PATH + "item/" + it.identifiedResourceName + ".bmp", (data) => {
+			const button = root.querySelector(`.item[data-index="${item.index}"] button`);
+			if (button) {
+				button.style.backgroundImage = `url(${data})`;
+				if (!inSwitchList) button.style.filter = "grayscale(100%)";
+			}
+		});
 	};
 	/**
 	* Remove equipment from window
@@ -210634,10 +210784,12 @@ var init_SwitchEquip = __esmMin((() => {
 	* @param {number} item location
 	*/
 	SwitchEquip.unEquip = function unEquip(index, location) {
+		const root = _getRoot$29();
 		const selector = getSelectorFromLocation$6(location);
 		const item = SwitchEquip._list[index];
 		item.equipped = 0;
-		this.ui.find(selector).empty();
+		const el = root.querySelector(selector);
+		if (el) el.innerHTML = "";
 		delete SwitchEquip._list[index];
 	};
 	swaprender = (function swaprenderClosure() {
@@ -210701,13 +210853,17 @@ var init_SwitchEquip = __esmMin((() => {
 	* Update the owner name for the equipment items
 	*/
 	SwitchEquip.onUpdateOwnerName = function() {
+		const root = _getRoot$29();
 		for (const index in SwitchEquip._list) {
 			const item = SwitchEquip._list[index];
 			if (item.slot && [
 				255,
 				254,
 				65280
-			].includes(item.slot.card1)) SwitchEquip.ui.find(".item[data-index=\"" + index + "\"] .itemName").text(jquery_default.escape(DB.getItemName(item)));
+			].includes(item.slot.card1)) {
+				const nameEl = root.querySelector(`.item[data-index="${index}"] .itemName`);
+				if (nameEl) nameEl.textContent = _escapeHtml(DB.getItemName(item));
+			}
 		}
 	};
 	/**
@@ -210717,7 +210873,7 @@ var init_SwitchEquip = __esmMin((() => {
 	*/
 	SwitchEquip.getNumber = function() {
 		let num = 0;
-		for (const key in SwitchEquip._list) if (SwitchEquip._list[key].location && SwitchEquip._list[key].location != EquipmentLocation_default.AMMO) num++;
+		for (const key in SwitchEquip._list) if (SwitchEquip._list[key].location && SwitchEquip._list[key].location !== EquipmentLocation_default.AMMO) num++;
 		return num;
 	};
 	/**
@@ -210740,17 +210896,18 @@ var init_SwitchEquip = __esmMin((() => {
 	*/
 	SwitchEquip.RequestSwitch = function() {
 		sendEquipSwitchRequest();
-		const button = document.getElementById("swap-button");
+		const button = _getRoot$29().querySelector("#swap-button");
+		if (!button) return;
 		button.disabled = true;
 		button.classList.add("disabled");
-		Client.loadFile(DB.INTERFACE_PATH + "swap_equipment/btn_change2_disable.bmp", function(data) {
-			button.style.backgroundImage = "url(" + data + ")";
+		Client.loadFile(DB.INTERFACE_PATH + "swap_equipment/btn_change2_disable.bmp", (data) => {
+			button.style.backgroundImage = `url(${data})`;
 		});
-		setTimeout(function() {
+		setTimeout(() => {
 			button.disabled = false;
 			button.classList.remove("disabled");
-			Client.loadFile(DB.INTERFACE_PATH + "swap_equipment/btn_change2_normal.bmp", function(data) {
-				button.style.backgroundImage = "url(" + data + ")";
+			Client.loadFile(DB.INTERFACE_PATH + "swap_equipment/btn_change2_normal.bmp", (data) => {
+				button.style.backgroundImage = `url(${data})`;
 			});
 		}, 1e4);
 	};
@@ -210775,7 +210932,7 @@ var init_InventoryV2$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Inventory/InventoryV2/InventoryV2.js
-function _getRoot$15() {
+function _getRoot$28() {
 	return InventoryV2._shadow || InventoryV2._host;
 }
 function _getBasicInfoRoot$1(ui) {
@@ -210818,7 +210975,7 @@ function onResize$8() {
 	window.addEventListener("mouseup", onMouseUp);
 }
 function onSwitchTab$1() {
-	const root = _getRoot$15();
+	const root = _getRoot$28();
 	const buttons = root.querySelectorAll(".tabs button");
 	const idx = Array.from(buttons).indexOf(this);
 	_preferences$38.tab = parseInt(idx, 10);
@@ -210859,7 +211016,7 @@ function onSwitchTab$1() {
 	}
 }
 function onToggleReduction$1() {
-	const panel = _getRoot$15().querySelector(".panel");
+	const panel = _getRoot$28().querySelector(".panel");
 	if (_realSize$2) {
 		if (panel) panel.style.display = "flex";
 		InventoryV2._host.style.height = `${_realSize$2}px`;
@@ -210871,7 +211028,7 @@ function onToggleReduction$1() {
 	}
 }
 function requestFilter$1() {
-	const root = _getRoot$15();
+	const root = _getRoot$28();
 	const host = root.querySelector(".scroll-host");
 	if (host) host.scrollTop = 0;
 	const content = root.querySelector(".container .content");
@@ -210934,7 +211091,7 @@ function onItemOver$12(_e) {
 	if (!item) return;
 	let quantity = " ea";
 	if (item.Options && (item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.SHADOWGEAR) && item.Options.filter((Option) => Option.index !== 0).length > 0) quantity = " Quantity";
-	const root = _getRoot$15();
+	const root = _getRoot$28();
 	const overlay = root.querySelector(".overlay");
 	const rootEl = root.querySelector("#InventoryV2") || root;
 	const itemRect = this.getBoundingClientRect();
@@ -210949,7 +211106,7 @@ function onItemOver$12(_e) {
 	}
 }
 function onItemOut$13() {
-	const overlay = _getRoot$15().querySelector(".overlay");
+	const overlay = _getRoot$28().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 function onItemDragStart$8(event) {
@@ -211058,7 +211215,7 @@ function onItemLock$1() {
 	InventoryV2.itemlock = _preferences$38.itemlock;
 	const lockImg = _preferences$38.itemlock ? "inventory/item_drop_lock_on.bmp" : "inventory/item_drop_lock_off.bmp";
 	Client.loadFile(DB.INTERFACE_PATH + lockImg, (data) => {
-		const btn = _getRoot$15().querySelector(".item_drop_lock");
+		const btn = _getRoot$28().querySelector(".item_drop_lock");
 		if (btn) btn.style.backgroundImage = `url(${data})`;
 	});
 }
@@ -211067,14 +211224,14 @@ function onItemCompare$1() {
 	InventoryV2.itemcomp = _preferences$38.itemcomp;
 	const compImg = _preferences$38.itemcomp ? "inventory/item_compare_on.bmp" : "inventory/item_compare_off.bmp";
 	Client.loadFile(DB.INTERFACE_PATH + compImg, (data) => {
-		const btn = _getRoot$15().querySelector(".item_compare");
+		const btn = _getRoot$28().querySelector(".item_compare");
 		if (btn) btn.style.backgroundImage = `url(${data})`;
 	});
 }
 function onNPCLock$1() {
 	_preferences$38.npcsalelock = !_preferences$38.npcsalelock;
 	InventoryV2.npcsalelock = _preferences$38.npcsalelock;
-	const root = _getRoot$15();
+	const root = _getRoot$28();
 	if (_preferences$38.npcsalelock) {
 		const dealOn = root.querySelector(".deallock_on");
 		if (dealOn) dealOn.style.display = "";
@@ -211159,7 +211316,7 @@ var init_InventoryV2 = __esmMin((() => {
 	InventoryV2.itemcomp = _preferences$38.itemcomp;
 	InventoryV2.npcsalelock = _preferences$38.npcsalelock;
 	InventoryV2.init = function Init() {
-		const root = _getRoot$15();
+		const root = _getRoot$28();
 		const baseBtn = root.querySelector(".titlebar .base");
 		if (baseBtn) baseBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
 		const miniBtn = root.querySelector(".titlebar .mini");
@@ -211260,11 +211417,11 @@ var init_InventoryV2 = __esmMin((() => {
 		this.magnet.LEFT = _preferences$38.magnet_left;
 		this.magnet.RIGHT = _preferences$38.magnet_right;
 		_realSize$2 = _preferences$38.reduce ? 0 : this._host.getBoundingClientRect().height;
-		const miniBtnAppend = _getRoot$15().querySelector(".titlebar .mini");
+		const miniBtnAppend = _getRoot$28().querySelector(".titlebar .mini");
 		if (miniBtnAppend) miniBtnAppend.dispatchEvent(new Event("mousedown"));
 	};
 	InventoryV2.onRemove = function OnRemove() {
-		const content = _getRoot$15().querySelector(".container .content");
+		const content = _getRoot$28().querySelector(".container .content");
 		if (content) content.innerHTML = "";
 		this.list.length = 0;
 		this.equipswitchlist.length = 0;
@@ -211291,7 +211448,7 @@ var init_InventoryV2 = __esmMin((() => {
 				} else {
 					this._host.dispatchEvent(new Event("mouseleave"));
 					this.clearNewItems();
-					_getRoot$15().querySelectorAll(".new_item").forEach((el) => {
+					_getRoot$28().querySelectorAll(".new_item").forEach((el) => {
 						el.style.backgroundImage = "";
 					});
 					this._host.style.display = "none";
@@ -211311,7 +211468,7 @@ var init_InventoryV2 = __esmMin((() => {
 		} else {
 			this._host.dispatchEvent(new Event("mouseleave"));
 			this.clearNewItems();
-			_getRoot$15().querySelectorAll(".new_item").forEach((el) => {
+			_getRoot$28().querySelectorAll(".new_item").forEach((el) => {
 				el.style.backgroundImage = "";
 			});
 			this._host.style.display = "none";
@@ -211327,13 +211484,13 @@ var init_InventoryV2 = __esmMin((() => {
 	};
 	InventoryV2.resize = function Resize(width) {
 		width = Math.min(Math.max(width, 6), 8);
-		const content = _getRoot$15().querySelector(".container .content");
+		const content = _getRoot$28().querySelector(".container .content");
 		if (content) content.style.width = `${width * 32}px`;
 		this._host.style.width = `${55 + width * 32}px`;
 		this.updateScroll();
 	};
 	InventoryV2.updateScroll = function updateScroll() {
-		const root = _getRoot$15();
+		const root = _getRoot$28();
 		const hostEl = root.querySelector(".scroll-host");
 		if (!hostEl) return;
 		const contentEl = root.querySelector(".content");
@@ -211363,7 +211520,7 @@ var init_InventoryV2 = __esmMin((() => {
 		return null;
 	};
 	InventoryV2.setItems = function SetItems(items) {
-		const root = _getRoot$15();
+		const root = _getRoot$28();
 		for (let i = 0, count = items.length; i < count; ++i) {
 			const object = this.getItemByIndex(items[i].index);
 			if (object) this.removeItem(object.index, object.count);
@@ -211377,7 +211534,7 @@ var init_InventoryV2 = __esmMin((() => {
 	};
 	InventoryV2.addItem = function AddItem(item) {
 		let object = this.getItemByIndex(item.index);
-		const root = _getRoot$15();
+		const root = _getRoot$28();
 		const equippedIndex = InventoryV2.equippedItems.indexOf(item.index);
 		if (equippedIndex !== -1) InventoryV2.equippedItems.splice(equippedIndex, 1);
 		else {
@@ -211424,7 +211581,7 @@ var init_InventoryV2 = __esmMin((() => {
 		if (isInSwitchList) SwitchEquip_default.equip(item, item.location, true);
 		if (tab === _preferences$38.tab) {
 			const it = DB.getItemInfo(item.ITID);
-			const root = _getRoot$15();
+			const root = _getRoot$28();
 			const content = root.querySelector(".container .content");
 			if (!content) return true;
 			content.insertAdjacentHTML("beforeend", `<div class="item" data-index="${item.index}" draggable="true"><div class="new_item"></div><div class="icon"></div><div class="switch1"></div><div class="switch2"></div><div class="amount"><span class="count">${item.count || 1}</span></div></div>`);
@@ -211458,7 +211615,7 @@ var init_InventoryV2 = __esmMin((() => {
 	};
 	InventoryV2.removeItem = function RemoveItem(index, count) {
 		const item = this.getItemByIndex(index);
-		const root = _getRoot$15();
+		const root = _getRoot$28();
 		if (!item || count <= 0) return null;
 		if (item.count) {
 			item.count -= count;
@@ -211483,7 +211640,7 @@ var init_InventoryV2 = __esmMin((() => {
 		const item = this.getItemByIndex(index);
 		if (!item) return;
 		item.count = count;
-		const root = _getRoot$15();
+		const root = _getRoot$28();
 		if (item.count > 0) {
 			const countEl = root.querySelector(`.item[data-index="${item.index}"] .count`);
 			if (countEl) countEl.textContent = item.count;
@@ -211559,7 +211716,7 @@ var init_InventoryV2 = __esmMin((() => {
 			this.equipswitchlist.splice(existingItemIndex, 1);
 		}
 		this.equipswitchlist.push(item);
-		const root = _getRoot$15();
+		const root = _getRoot$28();
 		Client.loadFile(DB.INTERFACE_PATH + "swap_equipment/bg_change.bmp", (data) => {
 			const el = root.querySelector(`.item[data-index="${item.index}"] .switch1`);
 			if (el) el.style.backgroundImage = `url(${data})`;
@@ -211579,7 +211736,7 @@ var init_InventoryV2 = __esmMin((() => {
 		}
 		const existingItemIndex = this.equipswitchlist.findIndex((existingItem) => existingItem.index === item.index);
 		if (existingItemIndex > -1) {
-			const root = _getRoot$15();
+			const root = _getRoot$28();
 			const sw1 = root.querySelector(`.item[data-index="${item.index}"] .switch1`);
 			if (sw1) sw1.style.backgroundImage = "none";
 			const sw2 = root.querySelector(`.item[data-index="${item.index}"] .switch2`);
@@ -214747,7 +214904,7 @@ var init_Enchant = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Inventory/InventoryV3/InventoryV3.js
-function _getRoot$14() {
+function _getRoot$27() {
 	return InventoryV3._shadow || InventoryV3._host;
 }
 function _getBasicInfoRoot(ui) {
@@ -214790,7 +214947,7 @@ function onResize$7() {
 	window.addEventListener("mouseup", onMouseUp);
 }
 function onSwitchTab() {
-	const root = _getRoot$14();
+	const root = _getRoot$27();
 	const buttons = root.querySelectorAll(".tabs button");
 	const idx = Array.from(buttons).indexOf(this);
 	_preferences$37.tab = parseInt(idx, 10);
@@ -214831,7 +214988,7 @@ function onSwitchTab() {
 	}
 }
 function onToggleReduction() {
-	const panel = _getRoot$14().querySelector(".panel");
+	const panel = _getRoot$27().querySelector(".panel");
 	if (_realSize$1) {
 		if (panel) panel.style.display = "flex";
 		InventoryV3._host.style.height = `${_realSize$1}px`;
@@ -214843,7 +215000,7 @@ function onToggleReduction() {
 	}
 }
 function requestFilter() {
-	const root = _getRoot$14();
+	const root = _getRoot$27();
 	const host = root.querySelector(".scroll-host");
 	if (host) host.scrollTop = 0;
 	const content = root.querySelector(".container .content");
@@ -214906,7 +215063,7 @@ function onItemOver$10(_e) {
 	if (!item) return;
 	let quantity = " ea";
 	if (item.Options && (item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.SHADOWGEAR) && item.Options.filter((Option) => Option.index !== 0).length > 0) quantity = " Quantity";
-	const root = _getRoot$14();
+	const root = _getRoot$27();
 	const overlay = root.querySelector(".overlay");
 	const rootEl = root.querySelector("#InventoryV3") || root;
 	const itemRect = this.getBoundingClientRect();
@@ -214921,7 +215078,7 @@ function onItemOver$10(_e) {
 	}
 }
 function onItemOut$11() {
-	const overlay = _getRoot$14().querySelector(".overlay");
+	const overlay = _getRoot$27().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 function onItemDragStart$5(event) {
@@ -215049,7 +215206,7 @@ function onRequestInventoryExpandResult(pkt) {
 			const item = InventoryV3.getItemById(pkt.itemId);
 			if (!item) return false;
 			const itemname = DB.getItemName(item);
-			const mcntEl = _getRoot$14().querySelector(".mcnt");
+			const mcntEl = _getRoot$27().querySelector(".mcnt");
 			const currentlimit = mcntEl ? parseInt(mcntEl.textContent, 10) : 100;
 			const newlimit = currentlimit + 10;
 			UIManager.showPromptBox(DB.getMessage(3561).replace("%s", itemname).replace("%d", currentlimit).replace("%d", newlimit), "ok", "cancel", InventoryExpandReq, InventoryExpandCancel);
@@ -215103,7 +215260,7 @@ function onItemLock() {
 	InventoryV3.itemlock = _preferences$37.itemlock;
 	const lockImg = _preferences$37.itemlock ? "inventory/item_drop_lock_on.bmp" : "inventory/item_drop_lock_off.bmp";
 	Client.loadFile(DB.INTERFACE_PATH + lockImg, (data) => {
-		const btn = _getRoot$14().querySelector(".item_drop_lock");
+		const btn = _getRoot$27().querySelector(".item_drop_lock");
 		if (btn) btn.style.backgroundImage = `url(${data})`;
 	});
 }
@@ -215112,14 +215269,14 @@ function onItemCompare() {
 	InventoryV3.itemcomp = _preferences$37.itemcomp;
 	const compImg = _preferences$37.itemcomp ? "inventory/item_compare_on.bmp" : "inventory/item_compare_off.bmp";
 	Client.loadFile(DB.INTERFACE_PATH + compImg, (data) => {
-		const btn = _getRoot$14().querySelector(".item_compare");
+		const btn = _getRoot$27().querySelector(".item_compare");
 		if (btn) btn.style.backgroundImage = `url(${data})`;
 	});
 }
 function onNPCLock() {
 	_preferences$37.npcsalelock = !_preferences$37.npcsalelock;
 	InventoryV3.npcsalelock = _preferences$37.npcsalelock;
-	const root = _getRoot$14();
+	const root = _getRoot$27();
 	if (_preferences$37.npcsalelock) {
 		const dealOn = root.querySelector(".deallock_on");
 		if (dealOn) dealOn.style.display = "";
@@ -215209,7 +215366,7 @@ var init_InventoryV3 = __esmMin((() => {
 	InventoryV3.itemcomp = _preferences$37.itemcomp;
 	InventoryV3.npcsalelock = _preferences$37.npcsalelock;
 	InventoryV3.init = function Init() {
-		const root = _getRoot$14();
+		const root = _getRoot$27();
 		const baseBtn = root.querySelector(".titlebar .base");
 		if (baseBtn) baseBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
 		const miniBtn = root.querySelector(".titlebar .mini");
@@ -215312,11 +215469,11 @@ var init_InventoryV3 = __esmMin((() => {
 		this.magnet.LEFT = _preferences$37.magnet_left;
 		this.magnet.RIGHT = _preferences$37.magnet_right;
 		_realSize$1 = _preferences$37.reduce ? 0 : this._host.getBoundingClientRect().height;
-		const miniBtnAppend = _getRoot$14().querySelector(".titlebar .mini");
+		const miniBtnAppend = _getRoot$27().querySelector(".titlebar .mini");
 		if (miniBtnAppend) miniBtnAppend.dispatchEvent(new Event("mousedown"));
 	};
 	InventoryV3.onRemove = function OnRemove() {
-		const content = _getRoot$14().querySelector(".container .content");
+		const content = _getRoot$27().querySelector(".container .content");
 		if (content) content.innerHTML = "";
 		this.list.length = 0;
 		this.equipswitchlist.length = 0;
@@ -215343,7 +215500,7 @@ var init_InventoryV3 = __esmMin((() => {
 				} else {
 					this._host.dispatchEvent(new Event("mouseleave"));
 					this.clearNewItems();
-					_getRoot$14().querySelectorAll(".new_item").forEach((el) => {
+					_getRoot$27().querySelectorAll(".new_item").forEach((el) => {
 						el.style.backgroundImage = "";
 					});
 					this._host.style.display = "none";
@@ -215363,7 +215520,7 @@ var init_InventoryV3 = __esmMin((() => {
 		} else {
 			this._host.dispatchEvent(new Event("mouseleave"));
 			this.clearNewItems();
-			_getRoot$14().querySelectorAll(".new_item").forEach((el) => {
+			_getRoot$27().querySelectorAll(".new_item").forEach((el) => {
 				el.style.backgroundImage = "";
 			});
 			this._host.style.display = "none";
@@ -215379,13 +215536,13 @@ var init_InventoryV3 = __esmMin((() => {
 	};
 	InventoryV3.resize = function Resize(width) {
 		width = Math.min(Math.max(width, 6), 8);
-		const content = _getRoot$14().querySelector(".container .content");
+		const content = _getRoot$27().querySelector(".container .content");
 		if (content) content.style.width = `${width * 32}px`;
 		this._host.style.width = `${55 + width * 32}px`;
 		this.updateScroll();
 	};
 	InventoryV3.updateScroll = function updateScroll() {
-		const root = _getRoot$14();
+		const root = _getRoot$27();
 		const hostEl = root.querySelector(".scroll-host");
 		if (!hostEl) return;
 		const contentEl = root.querySelector(".content");
@@ -215415,7 +215572,7 @@ var init_InventoryV3 = __esmMin((() => {
 		return null;
 	};
 	InventoryV3.setItems = function SetItems(items) {
-		const root = _getRoot$14();
+		const root = _getRoot$27();
 		for (let i = 0, count = items.length; i < count; ++i) {
 			const object = this.getItemByIndex(items[i].index);
 			if (object) this.removeItem(object.index, object.count);
@@ -215430,7 +215587,7 @@ var init_InventoryV3 = __esmMin((() => {
 	InventoryV3.addItem = function AddItem(item) {
 		let object = this.getItemByIndex(item.index);
 		const hasRefineFlag = Configs.get("enableRefineUI") || PacketVerManager_default.value >= 20161012;
-		const root = _getRoot$14();
+		const root = _getRoot$27();
 		const equippedIndex = InventoryV3.equippedItems.indexOf(item.index);
 		if (equippedIndex !== -1) InventoryV3.equippedItems.splice(equippedIndex, 1);
 		else {
@@ -215484,7 +215641,7 @@ var init_InventoryV3 = __esmMin((() => {
 		if (isInSwitchList) SwitchEquip_default.equip(item, item.location, true);
 		if (tab === _preferences$37.tab) {
 			const it = DB.getItemInfo(item.ITID);
-			const root = _getRoot$14();
+			const root = _getRoot$27();
 			const content = root.querySelector(".container .content");
 			if (!content) return true;
 			content.insertAdjacentHTML("beforeend", `<div class="item" data-index="${item.index}" draggable="true"><div class="new_item"></div><div class="icon"></div><div class="switch1"></div><div class="switch2"></div><div class="grade"></div><div class="amount"><span class="count">${item.count || 1}</span></div></div>`);
@@ -215522,7 +215679,7 @@ var init_InventoryV3 = __esmMin((() => {
 	};
 	InventoryV3.removeItem = function RemoveItem(index, count) {
 		const item = this.getItemByIndex(index);
-		const root = _getRoot$14();
+		const root = _getRoot$27();
 		if (!item || count <= 0) return null;
 		if (item.count) {
 			item.count -= count;
@@ -215547,7 +215704,7 @@ var init_InventoryV3 = __esmMin((() => {
 		const item = this.getItemByIndex(index);
 		if (!item) return;
 		item.count = count;
-		const root = _getRoot$14();
+		const root = _getRoot$27();
 		if (item.count > 0) {
 			const countEl = root.querySelector(`.item[data-index="${item.index}"] .count`);
 			if (countEl) countEl.textContent = item.count;
@@ -215638,7 +215795,7 @@ var init_InventoryV3 = __esmMin((() => {
 			this.equipswitchlist.splice(existingItemIndex, 1);
 		}
 		this.equipswitchlist.push(item);
-		const root = _getRoot$14();
+		const root = _getRoot$27();
 		Client.loadFile(DB.INTERFACE_PATH + "swap_equipment/bg_change.bmp", (data) => {
 			const el = root.querySelector(`.item[data-index="${item.index}"] .switch1`);
 			if (el) el.style.backgroundImage = `url(${data})`;
@@ -215658,7 +215815,7 @@ var init_InventoryV3 = __esmMin((() => {
 		}
 		const existingItemIndex = this.equipswitchlist.findIndex((existingItem) => existingItem.index === item.index);
 		if (existingItemIndex > -1) {
-			const root = _getRoot$14();
+			const root = _getRoot$27();
 			const sw1 = root.querySelector(`.item[data-index="${item.index}"] .switch1`);
 			if (sw1) sw1.style.backgroundImage = "none";
 			const sw2 = root.querySelector(`.item[data-index="${item.index}"] .switch2`);
@@ -215724,13 +215881,13 @@ var init_Inventory = __esmMin((() => {
 //#endregion
 //#region src/UI/Components/ItemInfo/ItemInfo.js
 var ItemInfo_exports = /* @__PURE__ */ __exportAll({ default: () => ItemInfo_default });
-function _getRoot$13() {
+function _getRoot$26() {
 	return ItemInfo._shadow || ItemInfo._host;
 }
 /**
 * Helper: escape HTML keeping whitelisted tags
 */
-function _escapeHTML$1(text) {
+function _escapeHTML$3(text) {
 	const div = document.createElement("div");
 	div.textContent = text;
 	return div.innerHTML;
@@ -215748,13 +215905,13 @@ function addCard(cardList, itemId, index, slotCount) {
 	const card = DB.getItemInfo(itemId);
 	if (itemId && card) {
 		file = "item/" + card.identifiedResourceName + ".bmp";
-		name = `<div class="name">${_escapeHTML$1(card.identifiedDisplayName)}</div>`;
+		name = `<div class="name">${_escapeHTML$3(card.identifiedDisplayName)}</div>`;
 	} else if (index < slotCount) file = "empty_card_slot.bmp";
 	else file = "basic_interface/coparison_disable_card_slot.bmp";
 	if (!cardList) return;
 	cardList.insertAdjacentHTML("beforeend", `<div class="item" data-index="${index}"><div class="icon"></div>${name}</div>`);
 	Client.loadFile(DB.INTERFACE_PATH + file, (data) => {
-		const element = _getRoot$13().querySelector(`.cardlist .item[data-index="${index}"] .icon`);
+		const element = _getRoot$26().querySelector(`.cardlist .item[data-index="${index}"] .icon`);
 		if (element) {
 			element.style.backgroundImage = `url(${data})`;
 			if (itemId && card) element.addEventListener("contextmenu", (e) => {
@@ -215796,7 +215953,7 @@ function onResize$6() {
 * @param {number} height
 */
 function resize$4(height) {
-	const root = _getRoot$13();
+	const root = _getRoot$26();
 	const container = root.querySelector(".container");
 	const description = root.querySelector(".description");
 	const descriptionInner = root.querySelector(".description-inner");
@@ -215810,7 +215967,7 @@ function resize$4(height) {
 	if (description) description.style.height = `${containerHeight - 45}px`;
 }
 function addEvent(item) {
-	const root = _getRoot$13();
+	const root = _getRoot$26();
 	let event = root.querySelector(".event_view");
 	if (!event) {
 		if (!validateFieldsExist(event)) event = root.querySelector(".event_view");
@@ -215838,7 +215995,7 @@ function addEvent(item) {
 	}
 }
 function updatePreviewButton(item) {
-	const previewButton = _getRoot$13().querySelector(".btn_mounting");
+	const previewButton = _getRoot$26().querySelector(".btn_mounting");
 	if (!previewButton) return;
 	if (!canPreviewItem(item)) {
 		previewButton.style.display = "none";
@@ -215878,7 +216035,7 @@ function toggleItemPreview(item) {
 	ItemPreview_default.setItem(item);
 }
 function eventsBooks() {
-	const root = _getRoot$13();
+	const root = _getRoot$26();
 	const event = root.querySelector(".event_view");
 	if (!event) return;
 	Client.getFiles(["data/sprite/book/Ã¥ÀÐ±â.spr", "data/sprite/book/Ã¥ÀÐ±â.act"], function(spr, act) {
@@ -215936,7 +216093,7 @@ function eventsBooks() {
 	});
 }
 function validateFieldsExist(event) {
-	const root = _getRoot$13();
+	const root = _getRoot$26();
 	if (!event) {
 		const validExitElement = "<div class=\"event_view\"><button class=\"view\" data-background=\"btn_view.bmp\" data-down=\"btn_view_a.bmp\" data-hover=\"btn_view_b.bmp\"></button><span class=\"overlay_open\">" + DB.getMessage(1294) + "</span><span class=\"overlay_read\">" + DB.getMessage(1295) + "</span></div>";
 		const collection = root.querySelector(".collection");
@@ -216065,7 +216222,7 @@ var init_ItemInfo = __esmMin((() => {
 	* Once append
 	*/
 	ItemInfo.onAppend = function onAppend() {
-		const descInner = _getRoot$13().querySelector(".description-inner");
+		const descInner = _getRoot$26().querySelector(".description-inner");
 		if (descInner) resize$4(descInner.offsetHeight + 45);
 	};
 	/**
@@ -216081,7 +216238,7 @@ var init_ItemInfo = __esmMin((() => {
 	* Initialize UI
 	*/
 	ItemInfo.init = function init() {
-		const root = _getRoot$13();
+		const root = _getRoot$26();
 		this._host.style.top = "200px";
 		this._host.style.left = "480px";
 		const extendBtn = root.querySelector(".extend");
@@ -216110,7 +216267,7 @@ var init_ItemInfo = __esmMin((() => {
 	*/
 	ItemInfo.setItem = function setItem(item) {
 		const it = DB.getItemInfo(item.ITID);
-		const root = _getRoot$13();
+		const root = _getRoot$26();
 		const cardList = root.querySelector(".cardlist .border");
 		const optionContainer = root.querySelector(".option-container");
 		this.item = it;
@@ -216143,7 +216300,7 @@ var init_ItemInfo = __esmMin((() => {
 		const descInner = root.querySelector(".description-inner");
 		if (descInner) {
 			const rawDesc = item.IsIdentified ? it.identifiedDescriptionName : it.unidentifiedDescriptionName;
-			descInner.innerHTML = DB.formatMsgToHtml(_escapeHTML$1(rawDesc));
+			descInner.innerHTML = DB.formatMsgToHtml(_escapeHTML$3(rawDesc));
 		}
 		if (item.HireExpireDate) {
 			const dateText = DB.formatUnixDate(item.HireExpireDate);
@@ -216270,7 +216427,7 @@ var init_EquipmentV0$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Equipment/EquipmentV0/EquipmentV0.js
-function _getRoot$12() {
+function _getRoot$25() {
 	return EquipmentV0._shadow || EquipmentV0._host;
 }
 function escapeHTML$5(str) {
@@ -216291,7 +216448,7 @@ function hideStatus$2() {
 	if (winStats.isEmbedded()) winStats.unembed();
 }
 function toggleStatus$5() {
-	const self = _getRoot$12().querySelector(".view_status");
+	const self = _getRoot$25().querySelector(".view_status");
 	const winStats = WinStatsController.getUI();
 	const isVisible = winStats.isEmbedded();
 	const state = isVisible ? "on" : "off";
@@ -216331,7 +216488,7 @@ function onDragOver$5(event) {
 			const item = data.data;
 			if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.SHADOWGEAR) && item.IsIdentified && !item.IsDamaged) {
 				const selector = getSelectorFromLocation$5("location" in item ? item.location : item.WearLocation);
-				const cells = _getRoot$12().querySelectorAll(selector);
+				const cells = _getRoot$25().querySelectorAll(selector);
 				Client.loadFile(DB.INTERFACE_PATH + "basic_interface/item_invert.bmp", (_data) => {
 					cells.forEach((c) => {
 						c.style.backgroundImage = `url(${_data})`;
@@ -216344,7 +216501,7 @@ function onDragOver$5(event) {
 	return false;
 }
 function onDragLeave$4(event) {
-	_getRoot$12().querySelectorAll("td").forEach((td) => {
+	_getRoot$25().querySelectorAll("td").forEach((td) => {
 		td.style.backgroundImage = "none";
 	});
 	event.stopImmediatePropagation();
@@ -216361,7 +216518,7 @@ function onDrop$13(event) {
 	if (data && data.type === "item") {
 		item = data.data;
 		if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.AMMO || item.type === ItemType_default.SHADOWGEAR) && item.IsIdentified && !item.IsDamaged) {
-			_getRoot$12().querySelectorAll("td").forEach((td) => {
+			_getRoot$25().querySelectorAll("td").forEach((td) => {
 				td.style.backgroundImage = "none";
 			});
 			EquipmentV0.onEquipItem(item.index, "location" in item ? item.location : item.WearState);
@@ -216384,14 +216541,14 @@ function onEquipmentInfo$4(event) {
 function onEquipmentUnEquip$4() {
 	const index = parseInt(this.getAttribute("data-index"), 10);
 	EquipmentV0.onUnEquip(index);
-	const overlay = _getRoot$12().querySelector(".overlay");
+	const overlay = _getRoot$25().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 function onEquipmentOver$4() {
 	const idx = parseInt(this.parentNode.getAttribute("data-index"), 10);
 	const item = _list$11[idx];
 	if (!item) return;
-	const root = _getRoot$12();
+	const root = _getRoot$25();
 	const overlay = root.querySelector(".overlay");
 	const rootEl = root.querySelector("#EquipmentV0") || root;
 	const btnRect = this.getBoundingClientRect();
@@ -216407,7 +216564,7 @@ function onEquipmentOver$4() {
 	}
 }
 function onEquipmentOut$4() {
-	const overlay = _getRoot$12().querySelector(".overlay");
+	const overlay = _getRoot$25().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 var EquipmentV0, _preferences$36, _list$11, _ctx$9, _showEquip$4, _btnLevelUp$4, renderCharacter$4, EquipmentV0_default;
@@ -216446,7 +216603,7 @@ var init_EquipmentV0 = __esmMin((() => {
 	_list$11 = {};
 	_showEquip$4 = false;
 	EquipmentV0.init = function init() {
-		const root = _getRoot$12();
+		const root = _getRoot$25();
 		const canvas = root.querySelector("canvas");
 		if (canvas) _ctx$9 = canvas.getContext("2d");
 		if (UIVersionManager.getEquipmentVersion() > 0) {
@@ -216521,21 +216678,21 @@ var init_EquipmentV0 = __esmMin((() => {
 		this._host.style.left = `${Math.min(Math.max(0, _preferences$36.x), Renderer.width - hostRect.width)}px`;
 		if (!_preferences$36.show) this._host.style.display = "none";
 		if (_preferences$36.reduce) {
-			const panel = _getRoot$12().querySelector(".panel");
+			const panel = _getRoot$25().querySelector(".panel");
 			if (panel) panel.style.display = "none";
 		}
 		if (UIVersionManager.getEquipmentVersion() > 0) if (_preferences$36.stats && _preferences$36.show) WinStatsController.getUI().embed(EquipmentV0._host);
 		else Client.loadFile(DB.INTERFACE_PATH + "basic_interface/viewon.bmp", (data) => {
-			const btn = _getRoot$12().querySelector(".view_status");
+			const btn = _getRoot$25().querySelector(".view_status");
 			if (btn) btn.style.backgroundImage = `url(${data})`;
 		});
-		if (_getRoot$12().querySelector("canvas") && this._host.style.display !== "none") Renderer.render(renderCharacter$4);
+		if (_getRoot$25().querySelector("canvas") && this._host.style.display !== "none") Renderer.render(renderCharacter$4);
 	};
 	EquipmentV0.onRemove = function onRemove() {
 		if (UIVersionManager.getEquipmentVersion() > 0 && _btnLevelUp$4 && _btnLevelUp$4.parentNode) _btnLevelUp$4.remove();
 		Renderer.stop(renderCharacter$4);
 		_list$11 = {};
-		const root = _getRoot$12();
+		const root = _getRoot$25();
 		root.querySelectorAll(".col1, .col3, .ammo").forEach((el) => {
 			el.innerHTML = "";
 		});
@@ -216573,7 +216730,7 @@ var init_EquipmentV0 = __esmMin((() => {
 	EquipmentV0.setEquipConfig = function setEquipConfig(on) {
 		_showEquip$4 = on;
 		Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (on ? "1" : "0") + ".bmp", (data) => {
-			const btn = _getRoot$12().querySelector(".show_equip");
+			const btn = _getRoot$25().querySelector(".show_equip");
 			if (btn) btn.style.backgroundImage = `url(${data})`;
 		});
 	};
@@ -216595,7 +216752,7 @@ var init_EquipmentV0 = __esmMin((() => {
 			if (text.length > limit) return text.substring(0, limit) + "...";
 			return text;
 		}
-		const root = _getRoot$12();
+		const root = _getRoot$25();
 		const selector = getSelectorFromLocation$5(location);
 		root.querySelectorAll(selector).forEach((cell) => {
 			cell.innerHTML = "<div class=\"item\" data-index=\"" + item.index + "\"><button></button><span class=\"itemName\">" + escapeHTML$5(add3Dots(DB.getItemName(item, {
@@ -216613,7 +216770,7 @@ var init_EquipmentV0 = __esmMin((() => {
 	};
 	EquipmentV0.unEquip = function unEquip(index, location) {
 		const selector = getSelectorFromLocation$5(location);
-		const root = _getRoot$12();
+		const root = _getRoot$25();
 		const item = _list$11[index];
 		root.querySelectorAll(selector).forEach((el) => {
 			el.innerHTML = "";
@@ -216654,7 +216811,7 @@ var init_EquipmentV0 = __esmMin((() => {
 			if (character.effectState !== _lastState || _hasCart !== character.hasCart) {
 				_lastState = character.effectState;
 				_hasCart = character.hasCart;
-				const root = _getRoot$12();
+				const root = _getRoot$25();
 				const removeOpt = root.querySelector(".removeOption");
 				const cartBtn = root.querySelector(".cartitems");
 				if (_lastState & HasAttachmentState || _hasCart) {
@@ -216682,7 +216839,7 @@ var init_EquipmentV0 = __esmMin((() => {
 		};
 	})();
 	EquipmentV0.onUpdateOwnerName = function() {
-		const root = _getRoot$12();
+		const root = _getRoot$25();
 		for (const index in _list$11) {
 			const item = _list$11[index];
 			if (item.slot && [
@@ -216725,7 +216882,7 @@ var init_EquipmentV1$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Equipment/EquipmentV1/EquipmentV1.js
-function _getRoot$11() {
+function _getRoot$24() {
 	return EquipmentV1._shadow || EquipmentV1._host;
 }
 function escapeHTML$4(str) {
@@ -216765,7 +216922,7 @@ function hideStatus$1() {
 	if (winStats.isEmbedded()) winStats.unembed();
 }
 function toggleStatus$4() {
-	const self = _getRoot$11().querySelector(".view_status");
+	const self = _getRoot$24().querySelector(".view_status");
 	const winStats = WinStatsController.getUI();
 	const isVisible = winStats.isEmbedded();
 	const state = isVisible ? "on" : "off";
@@ -216815,7 +216972,7 @@ function onDragOver$4(event) {
 			const item = data.data;
 			if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.SHADOWGEAR) && item.IsIdentified && !item.IsDamaged) {
 				const selector = getSelectorFromLocation$4("location" in item ? item.location : item.WearLocation);
-				const cells = _getRoot$11().querySelectorAll(selector);
+				const cells = _getRoot$24().querySelectorAll(selector);
 				Client.loadFile(DB.INTERFACE_PATH + "basic_interface/item_invert.bmp", (_data) => {
 					cells.forEach((c) => {
 						c.style.backgroundImage = `url(${_data})`;
@@ -216828,7 +216985,7 @@ function onDragOver$4(event) {
 	return false;
 }
 function onDragLeave$3(event) {
-	_getRoot$11().querySelectorAll("td").forEach((td) => {
+	_getRoot$24().querySelectorAll("td").forEach((td) => {
 		td.style.backgroundImage = "none";
 	});
 	event.stopImmediatePropagation();
@@ -216845,7 +217002,7 @@ function onDrop$12(event) {
 	if (data && data.type === "item") {
 		item = data.data;
 		if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.AMMO || item.type === ItemType_default.SHADOWGEAR) && item.IsIdentified && !item.IsDamaged) {
-			_getRoot$11().querySelectorAll("td").forEach((td) => {
+			_getRoot$24().querySelectorAll("td").forEach((td) => {
 				td.style.backgroundImage = "none";
 			});
 			EquipmentV1.onEquipItem(item.index, "location" in item ? item.location : item.WearState);
@@ -216868,14 +217025,14 @@ function onEquipmentInfo$3(event) {
 function onEquipmentUnEquip$3() {
 	const index = parseInt(this.getAttribute("data-index"), 10);
 	EquipmentV1.onUnEquip(index);
-	const overlay = _getRoot$11().querySelector(".overlay");
+	const overlay = _getRoot$24().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 function onEquipmentOver$3() {
 	const idx = parseInt(this.parentNode.getAttribute("data-index"), 10);
 	const item = _list$10[idx];
 	if (!item) return;
-	const root = _getRoot$11();
+	const root = _getRoot$24();
 	const overlay = root.querySelector(".overlay");
 	const rootEl = root.querySelector("#EquipmentV1") || root;
 	const btnRect = this.getBoundingClientRect();
@@ -216891,7 +217048,7 @@ function onEquipmentOver$3() {
 	}
 }
 function onEquipmentOut$3() {
-	const overlay = _getRoot$11().querySelector(".overlay");
+	const overlay = _getRoot$24().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 var EquipmentV1, _preferences$35, _list$10, _ctx$8, _showEquip$3, _btnLevelUp$3, tabLinks$3, contentDivs$3, currentTabId$3, renderCharacter$3, EquipmentV1_default;
@@ -216935,7 +217092,7 @@ var init_EquipmentV1 = __esmMin((() => {
 	contentDivs$3 = {};
 	currentTabId$3 = "general";
 	EquipmentV1.init = function init() {
-		const root = _getRoot$11();
+		const root = _getRoot$24();
 		const canvases = root.querySelectorAll("canvas");
 		if (canvases[0]) _ctx$8.push(canvases[0].getContext("2d"));
 		if (canvases[1]) _ctx$8.push(canvases[1].getContext("2d"));
@@ -217040,21 +217197,21 @@ var init_EquipmentV1 = __esmMin((() => {
 		this._host.style.left = `${Math.min(Math.max(0, _preferences$35.x), Renderer.width - hostRect.width)}px`;
 		if (!_preferences$35.show) this._host.style.display = "none";
 		if (_preferences$35.reduce) {
-			const panel = _getRoot$11().querySelector(".panel");
+			const panel = _getRoot$24().querySelector(".panel");
 			if (panel) panel.style.display = "none";
 		}
 		if (UIVersionManager.getEquipmentVersion() > 0) if (_preferences$35.stats && _preferences$35.show) WinStatsController.getUI().embed(EquipmentV1._host);
 		else Client.loadFile(DB.INTERFACE_PATH + "basic_interface/viewon.bmp", (data) => {
-			const btn = _getRoot$11().querySelector(".view_status");
+			const btn = _getRoot$24().querySelector(".view_status");
 			if (btn) btn.style.backgroundImage = `url(${data})`;
 		});
-		if (_getRoot$11().querySelector("canvas") && this._host.style.display !== "none") Renderer.render(renderCharacter$3);
+		if (_getRoot$24().querySelector("canvas") && this._host.style.display !== "none") Renderer.render(renderCharacter$3);
 	};
 	EquipmentV1.onRemove = function onRemove() {
 		if (UIVersionManager.getEquipmentVersion() > 0 && _btnLevelUp$3 && _btnLevelUp$3.parentNode) _btnLevelUp$3.remove();
 		Renderer.stop(renderCharacter$3);
 		_list$10 = {};
-		const root = _getRoot$11();
+		const root = _getRoot$24();
 		root.querySelectorAll(".col1, .col3, .ammo").forEach((el) => {
 			el.innerHTML = "";
 		});
@@ -217092,7 +217249,7 @@ var init_EquipmentV1 = __esmMin((() => {
 	EquipmentV1.setEquipConfig = function setEquipConfig(on) {
 		_showEquip$3 = on;
 		Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (on ? "1" : "0") + ".bmp", (data) => {
-			const btn = _getRoot$11().querySelector(".show_equip");
+			const btn = _getRoot$24().querySelector(".show_equip");
 			if (btn) btn.style.backgroundImage = `url(${data})`;
 		});
 	};
@@ -217111,7 +217268,7 @@ var init_EquipmentV1 = __esmMin((() => {
 			if (text.length > limit) return text.substring(0, limit) + "...";
 			return text;
 		}
-		const root = _getRoot$11();
+		const root = _getRoot$24();
 		const selector = getSelectorFromLocation$4(location);
 		root.querySelectorAll(selector).forEach((cell) => {
 			cell.innerHTML = "<div class=\"item\" data-index=\"" + item.index + "\"><button></button><span class=\"itemName\">" + escapeHTML$4(add3Dots(DB.getItemName(item, {
@@ -217129,7 +217286,7 @@ var init_EquipmentV1 = __esmMin((() => {
 	};
 	EquipmentV1.unEquip = function unEquip(index, location) {
 		const selector = getSelectorFromLocation$4(location);
-		const root = _getRoot$11();
+		const root = _getRoot$24();
 		const item = _list$10[index];
 		item.equipped = 0;
 		root.querySelectorAll(selector).forEach((el) => {
@@ -217182,7 +217339,7 @@ var init_EquipmentV1 = __esmMin((() => {
 			if (SessionStorage_default.Entity.effectState !== _lastState || _hasCart !== SessionStorage_default.Entity.hasCart) {
 				_lastState = SessionStorage_default.Entity.effectState;
 				_hasCart = SessionStorage_default.Entity.hasCart;
-				const root = _getRoot$11();
+				const root = _getRoot$24();
 				const removeOpt = root.querySelector(".removeOption");
 				const cartBtn = root.querySelector(".cartitems");
 				if (_lastState & HasAttachmentState || _hasCart) {
@@ -217219,7 +217376,7 @@ var init_EquipmentV1 = __esmMin((() => {
 		};
 	})();
 	EquipmentV1.onUpdateOwnerName = function() {
-		const root = _getRoot$11();
+		const root = _getRoot$24();
 		for (const index in _list$10) {
 			const item = _list$10[index];
 			if (item.slot && [
@@ -217259,7 +217416,7 @@ var init_EquipmentV2$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Equipment/EquipmentV2/EquipmentV2.js
-function _getRoot$10() {
+function _getRoot$23() {
 	return EquipmentV2._shadow || EquipmentV2._host;
 }
 function escapeHTML$3(str) {
@@ -217299,7 +217456,7 @@ function hideStatus() {
 	if (winStats.isEmbedded()) winStats.unembed();
 }
 function toggleStatus$3() {
-	const self = _getRoot$10().querySelector(".view_status");
+	const self = _getRoot$23().querySelector(".view_status");
 	const winStats = WinStatsController.getUI();
 	const isVisible = winStats.isEmbedded();
 	const state = isVisible ? "on" : "off";
@@ -217349,7 +217506,7 @@ function onDragOver$3(event) {
 			const item = data.data;
 			if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.SHADOWGEAR) && item.IsIdentified && !item.IsDamaged) {
 				const selector = getSelectorFromLocation$3("location" in item ? item.location : item.WearLocation);
-				const cells = _getRoot$10().querySelectorAll(selector);
+				const cells = _getRoot$23().querySelectorAll(selector);
 				Client.loadFile(DB.INTERFACE_PATH + "basic_interface/item_invert.bmp", (_data) => {
 					cells.forEach((c) => {
 						c.style.backgroundImage = `url(${_data})`;
@@ -217362,7 +217519,7 @@ function onDragOver$3(event) {
 	return false;
 }
 function onDragLeave$2(event) {
-	_getRoot$10().querySelectorAll("td").forEach((td) => {
+	_getRoot$23().querySelectorAll("td").forEach((td) => {
 		td.style.backgroundImage = "none";
 	});
 	event.stopImmediatePropagation();
@@ -217379,7 +217536,7 @@ function onDrop$11(event) {
 	if (data && data.type === "item") {
 		item = data.data;
 		if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.AMMO || item.type === ItemType_default.SHADOWGEAR) && item.IsIdentified && !item.IsDamaged) {
-			_getRoot$10().querySelectorAll("td").forEach((td) => {
+			_getRoot$23().querySelectorAll("td").forEach((td) => {
 				td.style.backgroundImage = "none";
 			});
 			EquipmentV2.onEquipItem(item.index, "location" in item ? item.location : item.WearState);
@@ -217402,14 +217559,14 @@ function onEquipmentInfo$2(event) {
 function onEquipmentUnEquip$2() {
 	const index = parseInt(this.getAttribute("data-index"), 10);
 	EquipmentV2.onUnEquip(index);
-	const overlay = _getRoot$10().querySelector(".overlay");
+	const overlay = _getRoot$23().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 function onEquipmentOver$2() {
 	const idx = parseInt(this.parentNode.getAttribute("data-index"), 10);
 	const item = _list$9[idx];
 	if (!item) return;
-	const root = _getRoot$10();
+	const root = _getRoot$23();
 	const overlay = root.querySelector(".overlay");
 	const rootEl = root.querySelector("#EquipmentV2") || root;
 	const btnRect = this.getBoundingClientRect();
@@ -217425,7 +217582,7 @@ function onEquipmentOver$2() {
 	}
 }
 function onEquipmentOut$2() {
-	const overlay = _getRoot$10().querySelector(".overlay");
+	const overlay = _getRoot$23().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 var EquipmentV2, _preferences$34, _list$9, _ctx$7, _showEquip$2, _btnLevelUp$2, tabLinks$2, contentDivs$2, currentTabId$2, renderCharacter$2, EquipmentV2_default;
@@ -217469,7 +217626,7 @@ var init_EquipmentV2 = __esmMin((() => {
 	contentDivs$2 = {};
 	currentTabId$2 = "general";
 	EquipmentV2.init = function init() {
-		const root = _getRoot$10();
+		const root = _getRoot$23();
 		const canvases = root.querySelectorAll("canvas");
 		if (canvases[0]) _ctx$7.push(canvases[0].getContext("2d"));
 		if (canvases[1]) _ctx$7.push(canvases[1].getContext("2d"));
@@ -217574,21 +217731,21 @@ var init_EquipmentV2 = __esmMin((() => {
 		this._host.style.left = `${Math.min(Math.max(0, _preferences$34.x), Renderer.width - hostRect.width)}px`;
 		if (!_preferences$34.show) this._host.style.display = "none";
 		if (_preferences$34.reduce) {
-			const panel = _getRoot$10().querySelector(".panel");
+			const panel = _getRoot$23().querySelector(".panel");
 			if (panel) panel.style.display = "none";
 		}
 		if (UIVersionManager.getEquipmentVersion() > 0) if (_preferences$34.stats && _preferences$34.show) WinStatsController.getUI().embed(EquipmentV2._host);
 		else Client.loadFile(DB.INTERFACE_PATH + "basic_interface/viewon.bmp", (data) => {
-			const btn = _getRoot$10().querySelector(".view_status");
+			const btn = _getRoot$23().querySelector(".view_status");
 			if (btn) btn.style.backgroundImage = `url(${data})`;
 		});
-		if (_getRoot$10().querySelector("canvas") && this._host.style.display !== "none") Renderer.render(renderCharacter$2);
+		if (_getRoot$23().querySelector("canvas") && this._host.style.display !== "none") Renderer.render(renderCharacter$2);
 	};
 	EquipmentV2.onRemove = function onRemove() {
 		if (UIVersionManager.getEquipmentVersion() > 0 && _btnLevelUp$2 && _btnLevelUp$2.parentNode) _btnLevelUp$2.remove();
 		Renderer.stop(renderCharacter$2);
 		_list$9 = {};
-		const root = _getRoot$10();
+		const root = _getRoot$23();
 		root.querySelectorAll(".col1, .col3, .ammo").forEach((el) => {
 			el.innerHTML = "";
 		});
@@ -217626,7 +217783,7 @@ var init_EquipmentV2 = __esmMin((() => {
 	EquipmentV2.setEquipConfig = function setEquipConfig(on) {
 		_showEquip$2 = on;
 		Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (on ? "1" : "0") + ".bmp", (data) => {
-			const btn = _getRoot$10().querySelector(".show_equip");
+			const btn = _getRoot$23().querySelector(".show_equip");
 			if (btn) btn.style.backgroundImage = `url(${data})`;
 		});
 	};
@@ -217645,7 +217802,7 @@ var init_EquipmentV2 = __esmMin((() => {
 			if (text.length > limit) return text.substring(0, limit) + "...";
 			return text;
 		}
-		const root = _getRoot$10();
+		const root = _getRoot$23();
 		const selector = getSelectorFromLocation$3(location);
 		root.querySelectorAll(selector).forEach((cell) => {
 			cell.innerHTML = "<div class=\"item\" data-index=\"" + item.index + "\"><button></button><span class=\"itemName\">" + escapeHTML$3(add3Dots(DB.getItemName(item, {
@@ -217663,7 +217820,7 @@ var init_EquipmentV2 = __esmMin((() => {
 	};
 	EquipmentV2.unEquip = function unEquip(index, location) {
 		const selector = getSelectorFromLocation$3(location);
-		const root = _getRoot$10();
+		const root = _getRoot$23();
 		const item = _list$9[index];
 		item.equipped = 0;
 		root.querySelectorAll(selector).forEach((el) => {
@@ -217716,7 +217873,7 @@ var init_EquipmentV2 = __esmMin((() => {
 			if (SessionStorage_default.Entity.effectState !== _lastState || _hasCart !== SessionStorage_default.Entity.hasCart) {
 				_lastState = SessionStorage_default.Entity.effectState;
 				_hasCart = SessionStorage_default.Entity.hasCart;
-				const root = _getRoot$10();
+				const root = _getRoot$23();
 				const removeOpt = root.querySelector(".removeOption");
 				const cartBtn = root.querySelector(".cartitems");
 				if (_lastState & HasAttachmentState || _hasCart) {
@@ -217753,7 +217910,7 @@ var init_EquipmentV2 = __esmMin((() => {
 		};
 	})();
 	EquipmentV2.onUpdateOwnerName = function() {
-		const root = _getRoot$10();
+		const root = _getRoot$23();
 		for (const index in _list$9) {
 			const item = _list$9[index];
 			if (item.slot && [
@@ -217793,7 +217950,7 @@ var init_EquipmentV3$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Equipment/EquipmentV3/EquipmentV3.js
-function _getRoot$9() {
+function _getRoot$22() {
 	return EquipmentV3._shadow || EquipmentV3._host;
 }
 function escapeHTML$2(str) {
@@ -217803,7 +217960,7 @@ function escapeHTML$2(str) {
 }
 function showTab$1() {
 	const selectedId = getHash$1(this.getAttribute("href"));
-	const root = _getRoot$9();
+	const root = _getRoot$22();
 	for (const id in contentDivs$1) if (id === selectedId) {
 		tabLinks$1[id].className = "tab selected";
 		if (contentDivs$1[id]) contentDivs$1[id].className = "content";
@@ -217847,7 +218004,7 @@ function onRemoveOption$2() {
 	Network.sendPacket(pkt);
 }
 function toggleStatus$2() {
-	const self = _getRoot$9().querySelector(".view_status");
+	const self = _getRoot$22().querySelector(".view_status");
 	const winStatsUI = WinStatsController.getUI();
 	const statusHost = winStatsUI._host || winStatsUI.ui;
 	const isVisible = statusHost ? statusHost.style ? statusHost.style.display !== "none" : true : false;
@@ -217892,7 +218049,7 @@ function onDragOver$2(event) {
 			const item = data.data;
 			if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.SHADOWGEAR) && item.IsIdentified && !item.IsDamaged) {
 				const selector = getSelectorFromLocation$2("location" in item ? item.location : item.WearLocation);
-				const cells = _getRoot$9().querySelectorAll(selector);
+				const cells = _getRoot$22().querySelectorAll(selector);
 				Client.loadFile(DB.INTERFACE_PATH + "basic_interface/item_invert.bmp", (_data) => {
 					cells.forEach((c) => {
 						c.style.backgroundImage = `url(${_data})`;
@@ -217905,7 +218062,7 @@ function onDragOver$2(event) {
 	return false;
 }
 function onDragLeave$1(event) {
-	_getRoot$9().querySelectorAll("td").forEach((td) => {
+	_getRoot$22().querySelectorAll("td").forEach((td) => {
 		td.style.backgroundImage = "none";
 	});
 	event.stopImmediatePropagation();
@@ -217922,7 +218079,7 @@ function onDrop$10(event) {
 	if (data && data.type === "item") {
 		item = data.data;
 		if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.AMMO || item.type === ItemType_default.SHADOWGEAR) && item.IsIdentified && !item.IsDamaged) {
-			_getRoot$9().querySelectorAll("td").forEach((td) => {
+			_getRoot$22().querySelectorAll("td").forEach((td) => {
 				td.style.backgroundImage = "none";
 			});
 			EquipmentV3.onEquipItem(item.index, "location" in item ? item.location : item.WearState);
@@ -217945,14 +218102,14 @@ function onEquipmentInfo$1(event) {
 function onEquipmentUnEquip$1() {
 	const index = parseInt(this.getAttribute("data-index"), 10);
 	EquipmentV3.onUnEquip(index);
-	const overlay = _getRoot$9().querySelector(".overlay");
+	const overlay = _getRoot$22().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 function onEquipmentOver$1() {
 	const idx = parseInt(this.parentNode.getAttribute("data-index"), 10);
 	const item = EquipmentV3._itemlist[idx];
 	if (!item) return;
-	const root = _getRoot$9();
+	const root = _getRoot$22();
 	const overlay = root.querySelector(".overlay");
 	const rootEl = root.querySelector("#EquipmentV3") || root;
 	const btnRect = this.getBoundingClientRect();
@@ -217968,7 +218125,7 @@ function onEquipmentOver$1() {
 	}
 }
 function onEquipmentOut$1() {
-	const overlay = _getRoot$9().querySelector(".overlay");
+	const overlay = _getRoot$22().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 function onSwtichEquip$1() {
@@ -218027,7 +218184,7 @@ var init_EquipmentV3 = __esmMin((() => {
 	currentTabId$1 = "general";
 	_currentTitleId$1 = 0;
 	EquipmentV3.init = function init() {
-		const root = _getRoot$9();
+		const root = _getRoot$22();
 		const canvases = root.querySelectorAll("canvas");
 		if (canvases[0]) _ctx$6.push(canvases[0].getContext("2d"));
 		if (canvases[1]) _ctx$6.push(canvases[1].getContext("2d"));
@@ -218134,20 +218291,20 @@ var init_EquipmentV3 = __esmMin((() => {
 		this._host.style.left = `${Math.min(Math.max(0, _preferences$33.x), Renderer.width - hostRect.width)}px`;
 		if (!_preferences$33.show) this._host.style.display = "none";
 		if (_preferences$33.reduce) {
-			const panel = _getRoot$9().querySelector(".panel");
+			const panel = _getRoot$22().querySelector(".panel");
 			if (panel) panel.style.display = "none";
 		}
 		if (UIVersionManager.getEquipmentVersion() > 0) {
 			if (!_preferences$33.stats) {
-				const statusComp = _getRoot$9().querySelector(".status_component");
+				const statusComp = _getRoot$22().querySelector(".status_component");
 				if (statusComp) statusComp.style.display = "none";
 				Client.loadFile(DB.INTERFACE_PATH + "basic_interface/viewon.bmp", (data) => {
-					const btn = _getRoot$9().querySelector(".view_status");
+					const btn = _getRoot$22().querySelector(".view_status");
 					if (btn) btn.style.backgroundImage = `url(${data})`;
 				});
 			}
 		}
-		if (_getRoot$9().querySelector("canvas") && this._host.style.display !== "none") Renderer.render(renderCharacter$1);
+		if (_getRoot$22().querySelector("canvas") && this._host.style.display !== "none") Renderer.render(renderCharacter$1);
 		SwitchEquip_default.append(switchappend$1);
 		if (SwitchEquip_default.ui) {
 			const switchHost = SwitchEquip_default._host || SwitchEquip_default.ui;
@@ -218158,7 +218315,7 @@ var init_EquipmentV3 = __esmMin((() => {
 		if (UIVersionManager.getEquipmentVersion() > 0 && _btnLevelUp$1 && _btnLevelUp$1.parentNode) _btnLevelUp$1.remove();
 		Renderer.stop(renderCharacter$1);
 		EquipmentV3._itemlist = {};
-		const root = _getRoot$9();
+		const root = _getRoot$22();
 		root.querySelectorAll(".col1, .col3, .ammo").forEach((el) => {
 			el.innerHTML = "";
 		});
@@ -218194,7 +218351,7 @@ var init_EquipmentV3 = __esmMin((() => {
 	EquipmentV3.setEquipConfig = function setEquipConfig(on) {
 		_showEquip$1 = on;
 		Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (on ? "1" : "0") + ".bmp", (data) => {
-			const btn = _getRoot$9().querySelector(".show_equip");
+			const btn = _getRoot$22().querySelector(".show_equip");
 			if (btn) btn.style.backgroundImage = `url(${data})`;
 		});
 	};
@@ -218213,7 +218370,7 @@ var init_EquipmentV3 = __esmMin((() => {
 			if (text.length > limit) return text.substring(0, limit) + "...";
 			return text;
 		}
-		const root = _getRoot$9();
+		const root = _getRoot$22();
 		const selector = getSelectorFromLocation$2(location);
 		root.querySelectorAll(selector).forEach((cell) => {
 			cell.innerHTML = "<div class=\"item\" data-index=\"" + item.index + "\"><button><div class=\"grade\"></div></button><span class=\"itemName\">" + escapeHTML$2(add3Dots(DB.getItemName(item, {
@@ -218239,7 +218396,7 @@ var init_EquipmentV3 = __esmMin((() => {
 	};
 	EquipmentV3.unEquip = function unEquip(index, location) {
 		const selector = getSelectorFromLocation$2(location);
-		const root = _getRoot$9();
+		const root = _getRoot$22();
 		const item = EquipmentV3._itemlist[index];
 		item.equipped = 0;
 		root.querySelectorAll(selector).forEach((el) => {
@@ -218292,7 +218449,7 @@ var init_EquipmentV3 = __esmMin((() => {
 			if (SessionStorage_default.Entity.effectState !== _lastState || _hasCart !== SessionStorage_default.Entity.hasCart) {
 				_lastState = SessionStorage_default.Entity.effectState;
 				_hasCart = SessionStorage_default.Entity.hasCart;
-				const root = _getRoot$9();
+				const root = _getRoot$22();
 				const removeOpt = root.querySelector(".removeOption");
 				const cartBtn = root.querySelector(".cartitems");
 				if (_lastState & HasAttachmentState || _hasCart) {
@@ -218329,7 +218486,7 @@ var init_EquipmentV3 = __esmMin((() => {
 		};
 	})();
 	EquipmentV3.onUpdateOwnerName = function() {
-		const root = _getRoot$9();
+		const root = _getRoot$22();
 		for (const index in EquipmentV3._itemlist) {
 			const item = EquipmentV3._itemlist[index];
 			if (item.slot && [
@@ -218347,7 +218504,7 @@ var init_EquipmentV3 = __esmMin((() => {
 		return num;
 	};
 	EquipmentV3.loadTitles = function() {
-		const titleList = _getRoot$9().querySelector("#title_list");
+		const titleList = _getRoot$22().querySelector("#title_list");
 		if (!titleList) return;
 		titleList.innerHTML = "";
 		const removeTitleText = DB.getMessage(2686) || "Remove Title";
@@ -218418,7 +218575,7 @@ var init_EquipmentV4$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Equipment/EquipmentV4/EquipmentV4.js
-function _getRoot$8() {
+function _getRoot$21() {
 	return EquipmentV4._shadow || EquipmentV4._host;
 }
 function escapeHTML$1(str) {
@@ -218428,7 +218585,7 @@ function escapeHTML$1(str) {
 }
 function showTab() {
 	const selectedId = getHash(this.getAttribute("href"));
-	const root = _getRoot$8();
+	const root = _getRoot$21();
 	for (const id in contentDivs) if (id === selectedId) {
 		tabLinks[id].className = "tab selected";
 		if (contentDivs[id]) contentDivs[id].className = "content";
@@ -218495,7 +218652,7 @@ function onRemoveOption$1() {
 	Network.sendPacket(pkt);
 }
 function toggleStatus$1() {
-	const self = _getRoot$8().querySelector(".view_status");
+	const self = _getRoot$21().querySelector(".view_status");
 	const winStatsUI = WinStatsController.getUI();
 	const statusHost = winStatsUI._host || winStatsUI.ui;
 	const isVisible = statusHost ? statusHost.style ? statusHost.style.display !== "none" : true : false;
@@ -218543,7 +218700,7 @@ function onDragOver$1(event) {
 			const item = data.data;
 			if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.SHADOWGEAR) && item.IsIdentified && !item.IsDamaged) {
 				const selector = getSelectorFromLocation$1("location" in item ? item.location : item.WearLocation);
-				const cells = _getRoot$8().querySelectorAll(selector);
+				const cells = _getRoot$21().querySelectorAll(selector);
 				Client.loadFile(DB.INTERFACE_PATH + "basic_interface/item_invert.bmp", (_data) => {
 					cells.forEach((c) => {
 						c.style.backgroundImage = `url(${_data})`;
@@ -218556,7 +218713,7 @@ function onDragOver$1(event) {
 	return false;
 }
 function onDragLeave(event) {
-	_getRoot$8().querySelectorAll("td").forEach((td) => {
+	_getRoot$21().querySelectorAll("td").forEach((td) => {
 		td.style.backgroundImage = "none";
 	});
 	event.stopImmediatePropagation();
@@ -218573,7 +218730,7 @@ function onDrop$9(event) {
 	if (data && data.type === "item") {
 		item = data.data;
 		if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.AMMO || item.type === ItemType_default.SHADOWGEAR) && item.IsIdentified && !item.IsDamaged) {
-			_getRoot$8().querySelectorAll("td").forEach((td) => {
+			_getRoot$21().querySelectorAll("td").forEach((td) => {
 				td.style.backgroundImage = "none";
 			});
 			EquipmentV4.onEquipItem(item.index, "location" in item ? item.location : item.WearState);
@@ -218596,14 +218753,14 @@ function onEquipmentInfo(event) {
 function onEquipmentUnEquip() {
 	const index = parseInt(this.getAttribute("data-index"), 10);
 	EquipmentV4.onUnEquip(index);
-	const overlay = _getRoot$8().querySelector(".overlay");
+	const overlay = _getRoot$21().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 function onEquipmentOver() {
 	const idx = parseInt(this.parentNode.getAttribute("data-index"), 10);
 	const item = EquipmentV4._itemlist[idx];
 	if (!item) return;
-	const root = _getRoot$8();
+	const root = _getRoot$21();
 	const overlay = root.querySelector(".overlay");
 	const rootEl = root.querySelector("#EquipmentV4") || root;
 	const btnRect = this.getBoundingClientRect();
@@ -218619,7 +218776,7 @@ function onEquipmentOver() {
 	}
 }
 function onEquipmentOut() {
-	const overlay = _getRoot$8().querySelector(".overlay");
+	const overlay = _getRoot$21().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 function onSwtichEquip() {
@@ -218680,7 +218837,7 @@ var init_EquipmentV4 = __esmMin((() => {
 	contentDivs = {};
 	currentTabId = "general";
 	EquipmentV4.init = function init() {
-		const root = _getRoot$8();
+		const root = _getRoot$21();
 		const canvases = root.querySelectorAll("canvas");
 		if (canvases[0]) _ctx$5.push(canvases[0].getContext("2d"));
 		if (canvases[1]) _ctx$5.push(canvases[1].getContext("2d"));
@@ -218816,7 +218973,7 @@ var init_EquipmentV4 = __esmMin((() => {
 		EquipmentV4.setDamageMotion(savedMotion);
 	};
 	EquipmentV4.loadTitles = function() {
-		const titleList = _getRoot$8().querySelector("#title_list");
+		const titleList = _getRoot$21().querySelector("#title_list");
 		if (!titleList) return;
 		titleList.innerHTML = "";
 		const removeTitleText = DB.getMessage(2686) || "Remove Title";
@@ -218864,20 +219021,20 @@ var init_EquipmentV4 = __esmMin((() => {
 		this._host.style.left = `${Math.min(Math.max(0, _preferences$32.x), Renderer.width - hostRect.width)}px`;
 		if (!_preferences$32.show) this._host.style.display = "none";
 		if (_preferences$32.reduce) {
-			const panel = _getRoot$8().querySelector(".panel");
+			const panel = _getRoot$21().querySelector(".panel");
 			if (panel) panel.style.display = "none";
 		}
 		if (UIVersionManager.getEquipmentVersion() > 0) {
 			if (!_preferences$32.stats) {
-				const statusComp = _getRoot$8().querySelector(".status_component");
+				const statusComp = _getRoot$21().querySelector(".status_component");
 				if (statusComp) statusComp.style.display = "none";
 				Client.loadFile(DB.INTERFACE_PATH + "basic_interface/viewon.bmp", (data) => {
-					const btn = _getRoot$8().querySelector(".view_status");
+					const btn = _getRoot$21().querySelector(".view_status");
 					if (btn) btn.style.backgroundImage = `url(${data})`;
 				});
 			}
 		}
-		if (_getRoot$8().querySelector("canvas") && this._host.style.display !== "none") Renderer.render(renderCharacter);
+		if (_getRoot$21().querySelector("canvas") && this._host.style.display !== "none") Renderer.render(renderCharacter);
 		SwitchEquip_default.append(switchappend);
 		if (SwitchEquip_default.ui) {
 			const switchHost = SwitchEquip_default._host || SwitchEquip_default.ui;
@@ -218888,7 +219045,7 @@ var init_EquipmentV4 = __esmMin((() => {
 		if (UIVersionManager.getEquipmentVersion() > 0 && _btnLevelUp && _btnLevelUp.parentNode) _btnLevelUp.remove();
 		Renderer.stop(renderCharacter);
 		EquipmentV4._itemlist = {};
-		const root = _getRoot$8();
+		const root = _getRoot$21();
 		root.querySelectorAll(".col1, .col3, .ammo").forEach((el) => {
 			el.innerHTML = "";
 		});
@@ -218924,14 +219081,14 @@ var init_EquipmentV4 = __esmMin((() => {
 	EquipmentV4.setEquipConfig = function setEquipConfig(on) {
 		_showEquip = on;
 		Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (on ? "1" : "0") + ".bmp", (data) => {
-			const btn = _getRoot$8().querySelector(".show_equip");
+			const btn = _getRoot$21().querySelector(".show_equip");
 			if (btn) btn.style.backgroundImage = `url(${data})`;
 		});
 	};
 	EquipmentV4.setCostumeConfig = function setCostumeConfig(on) {
 		_hideCostume = on;
 		Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (on ? "0" : "1") + ".bmp", (data) => {
-			const btn = _getRoot$8().querySelector(".show_costume");
+			const btn = _getRoot$21().querySelector(".show_costume");
 			if (btn) btn.style.backgroundImage = `url(${data})`;
 		});
 	};
@@ -218949,7 +219106,7 @@ var init_EquipmentV4 = __esmMin((() => {
 			if (text.length > limit) return text.substring(0, limit) + "...";
 			return text;
 		}
-		const root = _getRoot$8();
+		const root = _getRoot$21();
 		const selector = getSelectorFromLocation$1(location);
 		root.querySelectorAll(selector).forEach((cell) => {
 			cell.innerHTML = "<div class=\"item\" data-index=\"" + item.index + "\"><button><div class=\"grade\"></div></button><span class=\"itemName\">" + escapeHTML$1(add3Dots(DB.getItemName(item, {
@@ -218975,7 +219132,7 @@ var init_EquipmentV4 = __esmMin((() => {
 	};
 	EquipmentV4.unEquip = function unEquip(index, location) {
 		const selector = getSelectorFromLocation$1(location);
-		const root = _getRoot$8();
+		const root = _getRoot$21();
 		const item = EquipmentV4._itemlist[index];
 		item.equipped = 0;
 		root.querySelectorAll(selector).forEach((el) => {
@@ -219028,7 +219185,7 @@ var init_EquipmentV4 = __esmMin((() => {
 			if (SessionStorage_default.Entity.effectState !== _lastState || _hasCart !== SessionStorage_default.Entity.hasCart) {
 				_lastState = SessionStorage_default.Entity.effectState;
 				_hasCart = SessionStorage_default.Entity.hasCart;
-				const root = _getRoot$8();
+				const root = _getRoot$21();
 				const removeOpt = root.querySelector(".removeOption");
 				const cartBtn = root.querySelector(".cartitems");
 				if (_lastState & HasAttachmentState || _hasCart) {
@@ -219065,7 +219222,7 @@ var init_EquipmentV4 = __esmMin((() => {
 		};
 	})();
 	EquipmentV4.onUpdateOwnerName = function() {
-		const root = _getRoot$8();
+		const root = _getRoot$21();
 		for (const index in EquipmentV4._itemlist) {
 			const item = EquipmentV4._itemlist[index];
 			if (item.slot && [
@@ -219083,7 +219240,7 @@ var init_EquipmentV4 = __esmMin((() => {
 		return num;
 	};
 	EquipmentV4.setDamageSkin = function setDamageSkin(skinId) {
-		const root = _getRoot$8();
+		const root = _getRoot$21();
 		const buttons = root.querySelectorAll("#damageskin .skin-option");
 		const buttonSelected = root.querySelector(`#damageskin .skin-option[data-skin="${skinId}"]`);
 		GraphicsSettings.damageSkin = skinId;
@@ -219112,7 +219269,7 @@ var init_EquipmentV4 = __esmMin((() => {
 	EquipmentV4.setDamageMotion = function setDamageMotion(motionId) {
 		GraphicsSettings.damageMotion = motionId;
 		GraphicsSettings.save();
-		_getRoot$8().querySelectorAll(".motion-check").forEach((btn) => {
+		_getRoot$21().querySelectorAll(".motion-check").forEach((btn) => {
 			const bgImage = parseInt(btn.getAttribute("data-motion"), 10) === motionId ? "checkbox_1.bmp" : "checkbox_0.bmp";
 			Client.loadFile(DB.INTERFACE_PATH + bgImage, (data) => {
 				btn.style.backgroundImage = `url(${data})`;
@@ -221475,7 +221632,7 @@ function _root(comp) {
 /**
 * Helper: escape HTML
 */
-function _escapeHTML(text) {
+function _escapeHTML$2(text) {
 	const div = document.createElement("div");
 	div.textContent = text;
 	return div.innerHTML;
@@ -221698,7 +221855,7 @@ function createSkillListMH(type) {
 		tr.className = `skill id${skill.SKID} ${className}`;
 		tr.setAttribute("data-index", skill.SKID);
 		tr.setAttribute("draggable", "true");
-		tr.innerHTML = `<td class="icon"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="24" height="24" /></td><td class="levelupcontainer"></td><td class=selectable><div class="name">${_escapeHTML(sk.SkillName)}<br/><span class="level">` + (sk.bSeperateLv ? `<button class="currentDown"></button>Lv : <span class="current">${skill.level}</span> / <span class="max">${skill.level}</span><button class="currentUp"></button>` : `Lv : <span class="current">${skill.level}</span>`) + `</span></div></td><td class="selectable type"><div class="consume">${skill.type ? `Sp : <span class="spcost">${skill.spcost}</span>` : "Passive"}</div></td>`;
+		tr.innerHTML = `<td class="icon"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="24" height="24" /></td><td class="levelupcontainer"></td><td class=selectable><div class="name">${_escapeHTML$2(sk.SkillName)}<br/><span class="level">` + (sk.bSeperateLv ? `<button class="currentDown"></button>Lv : <span class="current">${skill.level}</span> / <span class="max">${skill.level}</span><button class="currentUp"></button>` : `Lv : <span class="current">${skill.level}</span>`) + `</span></div></td><td class="selectable type"><div class="consume">${skill.type ? `Sp : <span class="spcost">${skill.spcost}</span>` : "Passive"}</div></td>`;
 		if (!skill.upgradable || !this.points) levelup.style.display = "none";
 		tr.querySelector(".levelupcontainer").appendChild(levelup);
 		const currentUp = tr.querySelector(".level .currentUp");
@@ -244702,14 +244859,14 @@ var ShortCut_exports = /* @__PURE__ */ __exportAll({ default: () => ShortCut_def
 /**
 * Helper to get the shadow root
 */
-function _getRoot$7() {
+function _getRoot$20() {
 	return ShortCut._shadow || ShortCut._host;
 }
 /**
 * Update tooltip for empty slots with hotkey only
 */
 function updateEmptySlotTooltips() {
-	const containers = _getRoot$7().querySelectorAll(".container");
+	const containers = _getRoot$20().querySelectorAll(".container");
 	for (let i = 0; i < containers.length; ++i) if (!_list$5[i] || !_list$5[i].isSkill && !_list$5[i].ID) {
 		const hotkey = getHotKeyString(i);
 		if (hotkey) containers[i].setAttribute("data-tooltip", hotkey);
@@ -244782,7 +244939,7 @@ function getHotKeyString(index) {
 function onContainerMouseEnter(event) {
 	const tooltipText = event.currentTarget.getAttribute("data-tooltip");
 	if (tooltipText) {
-		const tooltip = _getRoot$7().querySelector(".shortcut-tooltip");
+		const tooltip = _getRoot$20().querySelector(".shortcut-tooltip");
 		const hostRect = ShortCut._host.getBoundingClientRect();
 		tooltip.textContent = tooltipText;
 		tooltip.classList.add("show");
@@ -244800,7 +244957,7 @@ function onContainerMouseEnter(event) {
 * Hide fixed tooltip on container leave
 */
 function onContainerMouseLeave() {
-	const tooltip = _getRoot$7().querySelector(".shortcut-tooltip");
+	const tooltip = _getRoot$20().querySelector(".shortcut-tooltip");
 	if (tooltip) tooltip.classList.remove("show");
 }
 /**
@@ -244839,7 +244996,7 @@ function onResize$3(event) {
 function setDelayOnIndex(index, delay) {
 	if (_list$5[index].Delay && _list$5[index].Delay >= Renderer.tick + delay) return;
 	_list$5[index].Delay = Renderer.tick + delay;
-	const ui = _getRoot$7().querySelector(`.container[data-index="${index}"]`);
+	const ui = _getRoot$20().querySelector(`.container[data-index="${index}"]`);
 	if (!ui) return;
 	const existing = ui.querySelector(".cooldown-overlay");
 	if (existing) existing.remove();
@@ -245198,7 +245355,7 @@ var init_ShortCut = __esmMin((() => {
 	* Initialize UI
 	*/
 	ShortCut.init = function init() {
-		const root = _getRoot$7();
+		const root = _getRoot$20();
 		const resizeBtn = root.querySelector(".resize");
 		if (resizeBtn) resizeBtn.addEventListener("mousedown", onResize$3);
 		const closeBtn = root.querySelector(".close");
@@ -245266,7 +245423,7 @@ var init_ShortCut = __esmMin((() => {
 	* When removed, clean up
 	*/
 	ShortCut.onRemove = function onRemove() {
-		const tooltip = _getRoot$7().querySelector(".shortcut-tooltip");
+		const tooltip = _getRoot$20().querySelector(".shortcut-tooltip");
 		if (tooltip) tooltip.classList.remove("show");
 		_preferences$24.y = parseInt(this._host.style.top, 10);
 		_preferences$24.x = parseInt(this._host.style.left, 10);
@@ -245283,7 +245440,7 @@ var init_ShortCut = __esmMin((() => {
 	*/
 	ShortCut.clean = function clean() {
 		_list$5.length = 0;
-		_getRoot$7().querySelectorAll(".container").forEach((el) => {
+		_getRoot$20().querySelectorAll(".container").forEach((el) => {
 			el.innerHTML = "";
 		});
 	};
@@ -245327,7 +245484,7 @@ var init_ShortCut = __esmMin((() => {
 	*/
 	ShortCut.setList = function setList(list) {
 		let skill;
-		_getRoot$7().querySelectorAll(".container").forEach((el) => {
+		_getRoot$20().querySelectorAll(".container").forEach((el) => {
 			el.innerHTML = "";
 		});
 		_list$5.length = list.length;
@@ -245348,7 +245505,7 @@ var init_ShortCut = __esmMin((() => {
 	* Called when hotkey settings change
 	*/
 	ShortCut.updateAllTooltips = function updateAllTooltips() {
-		const root = _getRoot$7();
+		const root = _getRoot$20();
 		for (let i = 0, size = _list$5.length; i < size; ++i) {
 			const container = root.querySelector(`.container[data-index="${i}"]`);
 			if (!container) continue;
@@ -245383,7 +245540,7 @@ var init_ShortCut = __esmMin((() => {
 	*/
 	ShortCut.addElement = function addElement(index, isSkill, ID, count) {
 		let file, name;
-		const ui = _getRoot$7().querySelector(`.container[data-index="${index}"]`);
+		const ui = _getRoot$20().querySelector(`.container[data-index="${index}"]`);
 		if (!ui) return;
 		ui.innerHTML = "";
 		if (!_list$5[index]) _list$5[index] = {};
@@ -245446,7 +245603,7 @@ var init_ShortCut = __esmMin((() => {
 	*/
 	ShortCut.removeElement = function removeElement(isSkill, ID, row, amount) {
 		if (!ID) return;
-		const root = _getRoot$7();
+		const root = _getRoot$20();
 		for (let i = row * 9, count = Math.min(_list$5.length, row * 9 + 9); i < count; ++i) if (_list$5[i] && _list$5[i].isSkill == isSkill && _list$5[i].ID === ID && (!isSkill || _list$5[i].count == amount)) {
 			const container = root.querySelector(`.container[data-index="${i}"]`);
 			if (container) container.innerHTML = "";
@@ -245523,6 +245680,15 @@ var init_ShortCut = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/JoystickUI/JoystickUIRenderer.js
+/**
+* Get internal shadow root
+* @returns {ShadowRoot|HTMLElement}
+*/
+function _getShadow() {
+	if (!ui) return null;
+	const host = ui[0];
+	return host.shadowRoot || host;
+}
 function setupUIHide() {
 	let lastMouseX = 0;
 	let lastMouseY = 0;
@@ -245541,26 +245707,29 @@ function setupUIHide() {
 }
 function attach(root) {
 	ui = root;
-	setIndicator = ui.find(".set-indicator");
 	setupUIHide();
 }
 function updateJoystickSlot(joystickSlotIndex, shortcutIndex) {
 	const item = ShortCut_default.getList()[shortcutIndex];
-	const $icon = ui.find(".slot").eq(joystickSlotIndex).find(".icon");
-	const $img = $icon.find(".img");
-	const $amount = $icon.find(".amount");
+	const shadow = _getShadow();
+	if (!shadow) return;
+	const slot = shadow.querySelectorAll(".slot")[joystickSlotIndex];
+	if (!slot) return;
+	const icon = slot.querySelector(".icon");
+	const img = icon.querySelector(".img");
+	const amount = icon.querySelector(".amount");
 	if (!item || item.ID === 0) {
-		$icon.hide();
-		$img.css("backgroundImage", "none");
-		$amount.text("");
+		icon.style.display = "none";
+		img.style.backgroundImage = "none";
+		amount.textContent = "";
 		return;
 	}
-	$icon.show();
+	icon.style.display = "block";
 	if (item.isSkill && item.count) {
 		const skillInfo = SkillInfo[item.ID];
 		if (skillInfo) Client.loadFile(DB.INTERFACE_PATH + "item/" + skillInfo.Name + ".bmp", function(url) {
-			$img.css("backgroundImage", "url(" + url + ")");
-			$amount.text(item.count);
+			img.style.backgroundImage = "url(" + url + ")";
+			amount.textContent = item.count;
 		});
 	} else {
 		const inventoryItem = InventoryController.getUI().getItemById(item.ID);
@@ -245570,8 +245739,8 @@ function updateJoystickSlot(joystickSlotIndex, shortcutIndex) {
 			let count = inventoryItem.count;
 			if ((inventoryItem.type === ItemType_default.WEAPON || inventoryItem.type === ItemType_default.ARMOR || inventoryItem.type === ItemType_default.SHADOWGEAR) && count) count = 1;
 			Client.loadFile(DB.INTERFACE_PATH + "item/" + fileName + ".bmp", function(url) {
-				$img.css("backgroundImage", "url(" + url + ")");
-				$amount.text(count);
+				img.style.backgroundImage = "url(" + url + ")";
+				amount.textContent = count;
 			});
 		}
 	}
@@ -245602,15 +245771,22 @@ function sync() {
 	}
 }
 function updateSetIndicator() {
-	if (!setIndicator) return;
-	ui.find(".set-btn").removeClass("active");
-	ui.find(".set-btn:nth-child(" + JoystickSetManager_default.getCurrentSet() + ")").addClass("active");
+	const shadow = _getShadow();
+	if (!shadow) return;
+	shadow.querySelectorAll(".set-btn").forEach((el) => el.classList.remove("active"));
+	const currentSet = JoystickSetManager_default.getCurrentSet();
+	const activeBtn = shadow.querySelector(`.set-btn:nth-child(${currentSet})`);
+	if (activeBtn) activeBtn.classList.add("active");
 }
 function updateVisuals(buttons) {
-	if (!ui) return;
-	ui.find(".group-container").removeClass("active");
+	const shadow = _getShadow();
+	if (!shadow) return;
+	shadow.querySelectorAll(".group-container").forEach((el) => el.classList.remove("active"));
 	const activeGroup = JoystickShortcutMapper_default.getGroup(buttons);
-	if (activeGroup !== "") ui.find("[data-group=\"" + activeGroup + "\"]").addClass("active");
+	if (activeGroup !== "") {
+		const active = shadow.querySelector(`[data-group="${activeGroup}"]`);
+		if (active) active.classList.add("active");
+	}
 }
 function show() {
 	if (ui && !ui.is(":visible")) ui.show();
@@ -245622,7 +245798,7 @@ function dispose() {
 	hide();
 	jquery_default(document).off("mousemove.joystick");
 }
-var ui, setIndicator, JoystickUIRenderer_default;
+var ui, JoystickUIRenderer_default;
 var init_JoystickUIRenderer = __esmMin((() => {
 	init_ShortCut();
 	init_Inventory();
@@ -245636,7 +245812,6 @@ var init_JoystickUIRenderer = __esmMin((() => {
 	init_JoystickInputService();
 	init_SkillInfo();
 	ui = null;
-	setIndicator = null;
 	JoystickUIRenderer_default = {
 		attach,
 		dispose,
@@ -246161,7 +246336,7 @@ var init_JoystickSelectionUI$2 = __esmMin((() => {
 //#region src/UI/Components/JoystickUI/JoystickSelectionUI.css?raw
 var JoystickSelectionUI_default$1;
 var init_JoystickSelectionUI$1 = __esmMin((() => {
-	JoystickSelectionUI_default$1 = "#shortcut-selection {\r\n	position: fixed;\r\n	top: 50%;\r\n	left: 50%;\r\n	transform: translate(-50%, -50%);\r\n	background: rgba(0, 0, 0, 0.95);\r\n	border: 2px solid #fff;\r\n	padding: 20px;\r\n	z-index: 10000;\r\n	color: white;\r\n	min-width: 780px;\r\n	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);\r\n	border-radius: 8px;\r\n	display: none;\r\n	/* Hidden by default */\r\n}\r\n\r\n#shortcut-selection h3 {\r\n	margin-top: 0;\r\n	margin-bottom: 10px;\r\n	text-align: center;\r\n}\r\n\r\n#shortcut-selection .tab-buttons {\r\n	display: flex;\r\n	gap: 5px;\r\n	margin-bottom: 10px;\r\n}\r\n\r\n#shortcut-selection .tab-btn {\r\n	padding: 5px 10px;\r\n	border: 1px solid #fff;\r\n	color: white;\r\n	cursor: pointer;\r\n	background: #666;\r\n	flex: 1;\r\n}\r\n\r\n#shortcut-selection .tab-btn.active {\r\n	background: #ff6600;\r\n}\r\n\r\n#shortcut-selection .shortcut-grid {\r\n	display: grid;\r\n	grid-template-columns: repeat(9, 1fr);\r\n	gap: 8px;\r\n	justify-content: center;\r\n	padding: 10px;\r\n	background: rgba(255, 255, 255, 0.05);\r\n	border-radius: 5px;\r\n}\r\n\r\n#shortcut-selection .slot-btn {\r\n	width: 75px;\r\n	height: 60px;\r\n	border: 2px solid #555;\r\n	background: #555;\r\n	display: flex;\r\n	align-items: center;\r\n	justify-content: center;\r\n	font-weight: bold;\r\n	cursor: pointer;\r\n	color: white;\r\n	transition: all 0.1s;\r\n	border-radius: 5px;\r\n	text-align: center;\r\n	line-height: 1.2;\r\n	padding: 5px;\r\n	box-sizing: border-box;\r\n}\r\n\r\n#shortcut-selection .slot-btn.empty {\r\n	background: #222;\r\n}\r\n\r\n#shortcut-selection .slot-btn.selected {\r\n	background: #ff6600;\r\n	border-color: #fff;\r\n}\r\n\r\n#shortcut-selection .footer-instructions {\r\n	margin-top: 15px;\r\n	text-align: center;\r\n	opacity: 0.8;\r\n}\r\n";
+	JoystickSelectionUI_default$1 = ":host {\r\n	top: 50%;\r\n	left: 50%;\r\n	transform: translate(-50%, -50%);\r\n	z-index: 10000;\r\n	display: none;\r\n}\r\n\r\n#shortcut-selection {\r\n	position: absolute;\r\n	top: 0;\r\n	left: 0;\r\n	background: rgba(0, 0, 0, 0.95);\r\n	border: 2px solid #fff;\r\n	padding: 20px;\r\n	color: white;\r\n	min-width: 780px;\r\n	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);\r\n	border-radius: 8px;\r\n}\r\n\r\n#shortcut-selection h3 {\r\n	margin-top: 0;\r\n	margin-bottom: 10px;\r\n	text-align: center;\r\n}\r\n\r\n#shortcut-selection .tab-buttons {\r\n	display: flex;\r\n	gap: 5px;\r\n	margin-bottom: 10px;\r\n}\r\n\r\n#shortcut-selection .tab-btn {\r\n	padding: 5px 10px;\r\n	border: 1px solid #fff;\r\n	color: white;\r\n	cursor: pointer;\r\n	background: #666;\r\n	flex: 1;\r\n}\r\n\r\n#shortcut-selection .tab-btn.active {\r\n	background: #ff6600;\r\n}\r\n\r\n#shortcut-selection .shortcut-grid {\r\n	display: grid;\r\n	grid-template-columns: repeat(9, 1fr);\r\n	gap: 8px;\r\n	justify-content: center;\r\n	padding: 10px;\r\n	background: rgba(255, 255, 255, 0.05);\r\n	border-radius: 5px;\r\n}\r\n\r\n#shortcut-selection .slot-btn {\r\n	width: 75px;\r\n	height: 60px;\r\n	border: 2px solid #555;\r\n	background: #555;\r\n	display: flex;\r\n	align-items: center;\r\n	justify-content: center;\r\n	font-weight: bold;\r\n	cursor: pointer;\r\n	color: white;\r\n	transition: all 0.1s;\r\n	border-radius: 5px;\r\n	text-align: center;\r\n	line-height: 1.2;\r\n	padding: 5px;\r\n	box-sizing: border-box;\r\n}\r\n\r\n#shortcut-selection .slot-btn.empty {\r\n	background: #222;\r\n}\r\n\r\n#shortcut-selection .slot-btn.selected {\r\n	background: #ff6600;\r\n	border-color: #fff;\r\n}\r\n\r\n#shortcut-selection .footer-instructions {\r\n	margin-top: 15px;\r\n	text-align: center;\r\n	opacity: 0.8;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/JoystickUI/JoystickSelectionUI.js
@@ -246173,6 +246348,13 @@ function setClickInterval() {
 }
 function isLocked() {
 	return clickLock$1 !== null;
+}
+/**
+* Get internal root (shadow)
+* @returns {ShadowRoot|HTMLElement}
+*/
+function _getRoot$19() {
+	return JoystickSelectionUI._shadow || JoystickSelectionUI._host;
 }
 function getJoystickComboForSlot(slotIndex) {
 	return {
@@ -246215,36 +246397,48 @@ function getJoystickComboForSlot(slotIndex) {
 	}[slotIndex];
 }
 function updateGrid() {
-	const grid = JoystickSelectionUI.ui.find(".shortcut-grid");
-	grid.empty();
+	const grid = _getRoot$19().querySelector(".shortcut-grid");
+	if (!grid) return;
+	grid.innerHTML = "";
 	const startIdx = currentTab * 9;
 	for (let i = 0; i < 9; i++) {
 		const globalIndex = startIdx + i;
 		const slot = ShortCut_default.getList()[globalIndex];
 		const isEmpty = !slot || !slot.isSkill && !slot.ID;
-		const displayText = getJoystickComboForSlot(globalIndex) || i + 1;
-		const slotDiv = jquery_default("<div class=\"slot-btn\" data-index=\"" + i + "\">" + displayText + "</div>");
-		if (isEmpty) slotDiv.addClass("empty");
-		grid.append(slotDiv);
+		const displayText = getJoystickComboForSlot(globalIndex) || (i + 1).toString();
+		const slotDiv = document.createElement("div");
+		slotDiv.className = "slot-btn";
+		slotDiv.dataset.index = i;
+		slotDiv.textContent = displayText;
+		if (isEmpty) slotDiv.classList.add("empty");
+		grid.appendChild(slotDiv);
 	}
 	updateSelection();
 }
 function updateSelection() {
-	const grid = JoystickSelectionUI.ui.find(".shortcut-grid");
-	grid.find(".slot-btn").removeClass("selected");
-	grid.find(".slot-btn[data-index=\"" + slotInTab + "\"]").addClass("selected");
+	const grid = _getRoot$19().querySelector(".shortcut-grid");
+	if (!grid) return;
+	grid.querySelectorAll(".slot-btn").forEach((el) => el.classList.remove("selected"));
+	const selected = grid.querySelector(`.slot-btn[data-index="${slotInTab}"]`);
+	if (selected) selected.classList.add("selected");
 }
 function updateTabButtons() {
-	const tabButtons = JoystickSelectionUI.ui.find(".tab-buttons");
-	tabButtons.find(".tab-btn").removeClass("active");
-	tabButtons.find(".tab-btn[data-tab=\"" + currentTab + "\"]").addClass("active");
+	const tabButtons = _getRoot$19().querySelector(".tab-buttons");
+	if (!tabButtons) return;
+	tabButtons.querySelectorAll(".tab-btn").forEach((el) => el.classList.remove("active"));
+	const active = tabButtons.querySelector(`.tab-btn[data-tab="${currentTab}"]`);
+	if (active) active.classList.add("active");
 }
 function createTabButtons() {
-	const tabButtons = JoystickSelectionUI.ui.find(".tab-buttons");
-	tabButtons.empty();
+	const tabButtons = _getRoot$19().querySelector(".tab-buttons");
+	if (!tabButtons) return;
+	tabButtons.innerHTML = "";
 	for (let t = 0; t < 4; t++) {
-		const tabBtn = jquery_default("<button class=\"tab-btn\" data-tab=\"" + t + "\">Tab " + (t + 1) + "</button>");
-		tabButtons.append(tabBtn);
+		const tabBtn = document.createElement("button");
+		tabBtn.className = "tab-btn";
+		tabBtn.dataset.tab = t;
+		tabBtn.textContent = `Tab ${t + 1}`;
+		tabButtons.appendChild(tabBtn);
 	}
 }
 function selectSlot() {
@@ -246258,13 +246452,13 @@ function selectSlot() {
 }
 var JoystickSelectionUI, currentTab, slotInTab, itemData, clickLock$1, JoystickSelectionUI_default;
 var init_JoystickSelectionUI = __esmMin((() => {
+	init_GUIComponent();
 	init_UIManager();
-	init_UIComponent();
 	init_ShortCut();
-	init_jquery();
 	init_JoystickSelectionUI$2();
 	init_JoystickSelectionUI$1();
-	JoystickSelectionUI = new UIComponent("JoystickSelectionUI", JoystickSelectionUI_default$2, JoystickSelectionUI_default$1);
+	JoystickSelectionUI = new GUIComponent("JoystickSelectionUI", JoystickSelectionUI_default$1);
+	JoystickSelectionUI.render = () => JoystickSelectionUI_default$2;
 	currentTab = 0;
 	slotInTab = 0;
 	itemData = null;
@@ -246339,9 +246533,10 @@ var init_JoystickSelectionUI = __esmMin((() => {
 		}
 		return false;
 	};
-	JoystickSelectionUI.onAppend = function() {
+	JoystickSelectionUI.init = function() {
 		createTabButtons();
-		this.ui.hide();
+		this._host.style.position = "fixed";
+		this._host.style.display = "none";
 	};
 	JoystickSelectionUI.showSelection = function(data) {
 		itemData = data;
@@ -246350,15 +246545,15 @@ var init_JoystickSelectionUI = __esmMin((() => {
 		updateGrid();
 		updateTabButtons();
 		this.focus();
-		this.ui.show();
-		this.ui.css("display", "block");
+		this._host.style.display = "block";
+		this._fixPositionOverflow();
 	};
 	JoystickSelectionUI.hideSelection = function() {
-		this.ui.hide();
+		this._host.style.display = "none";
 		itemData = null;
 	};
 	JoystickSelectionUI.active = function() {
-		return this.ui && this.ui.is(":visible");
+		return this._host && this._host.style.display !== "none";
 	};
 	JoystickSelectionUI_default = UIManager.addComponent(JoystickSelectionUI);
 }));
@@ -246790,23 +246985,24 @@ var init_JoystickUI$2 = __esmMin((() => {
 //#region src/UI/Components/JoystickUI/JoystickUI.css?raw
 var JoystickUI_default$1;
 var init_JoystickUI$1 = __esmMin((() => {
-	JoystickUI_default$1 = "#JoystickUI {\r\n	position: absolute;\r\n	bottom: 20px;\r\n	left: 50%;\r\n	transform: translateX(-50%);\r\n	display: flex;\r\n	flex-direction: column;\r\n	align-items: center;\r\n	z-index: 1000;\r\n	pointer-events: none;\r\n}\r\n\r\n#JoystickUI .set-indicator {\r\n	margin-bottom: 5px;\r\n	background: rgba(0, 0, 0, 0.5);\r\n	border-radius: 4px;\r\n	padding: 2px;\r\n	pointer-events: auto;\r\n}\r\n\r\n#JoystickUI .set-btn {\r\n	display: inline-block;\r\n	padding: 2px 10px;\r\n	color: #ccc;\r\n	font-family: sans-serif;\r\n	border-radius: 3px;\r\n	cursor: pointer;\r\n}\r\n\r\n#JoystickUI .set-btn.active {\r\n	background-color: #d32f2f;\r\n	color: white;\r\n	font-weight: bold;\r\n}\r\n\r\n#JoystickUI .hotkey-bar {\r\n	display: flex;\r\n	gap: 4px;\r\n	align-items: flex-end;\r\n}\r\n\r\n#JoystickUI .group-container {\r\n	background: linear-gradient(to bottom, rgba(60, 60, 60, 0.9), rgba(30, 30, 30, 0.9));\r\n	border: 1px solid #555;\r\n	border-radius: 6px;\r\n	width: 110px;\r\n	height: 100px;\r\n	position: relative;\r\n	pointer-events: auto;\r\n	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n#JoystickUI .group-header {\r\n	background: rgba(255, 255, 255, 0.1);\r\n	color: #e0e0e0;\r\n	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n	font-size: 14px;\r\n	font-weight: bold;\r\n	text-align: center;\r\n	padding: 2px 0;\r\n	border-bottom: 1px solid #555;\r\n	text-shadow: 1px 1px 2px black;\r\n}\r\n\r\n#JoystickUI .cross-layout {\r\n	position: relative;\r\n	width: 100%;\r\n	height: 75px;\r\n}\r\n\r\n#JoystickUI .slot {\r\n	position: absolute;\r\n	width: 32px;\r\n	height: 32px;\r\n	background-color: rgba(0, 0, 0, 0.6);\r\n	border: 1px solid #777;\r\n	border-radius: 3px;\r\n	display: flex;\r\n	justify-content: center;\r\n	align-items: center;\r\n	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);\r\n	transition: background 0.2s;\r\n}\r\n\r\n#JoystickUI .slot:active {\r\n	background-color: rgba(144, 238, 144, 0.3);\r\n	border-color: #90ee90;\r\n}\r\n\r\n#JoystickUI .slot.top {\r\n	top: 2px;\r\n	left: 50%;\r\n	transform: translateX(-60%);\r\n}\r\n\r\n#JoystickUI .slot.bottom {\r\n	bottom: 2px;\r\n	left: 50%;\r\n	transform: translateX(-60%);\r\n}\r\n\r\n#JoystickUI .slot.left {\r\n	top: 50%;\r\n	left: 2px;\r\n	transform: translateY(-60%);\r\n}\r\n\r\n#JoystickUI .slot.right {\r\n	top: 50%;\r\n	right: 4px;\r\n	transform: translateY(-60%);\r\n}\r\n\r\n#JoystickUI .key-label {\r\n	position: absolute;\r\n	top: 1px;\r\n	left: 3px;\r\n	font-weight: bold;\r\n	color: #fff;\r\n	text-shadow: 1px 1px 0 #000;\r\n	z-index: 2;\r\n	pointer-events: none;\r\n}\r\n\r\n#JoystickUI .group-container.active {\r\n	border-color: #00ff00;\r\n	background: linear-gradient(to bottom, rgba(80, 100, 80, 0.95), rgba(40, 60, 40, 0.95));\r\n	box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);\r\n	transform: translateY(-2px);\r\n	z-index: 10;\r\n}\r\n\r\n#JoystickUI .icon {\r\n	position: relative;\r\n}\r\n\r\n#JoystickUI .icon .img {\r\n	width: 24px;\r\n	height: 24px;\r\n	background-repeat: no-repeat;\r\n	border: none;\r\n	background-color: transparent;\r\n}\r\n\r\n#JoystickUI .icon .name {\r\n	display: none;\r\n	z-index: 1;\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	background-color: rgba(0, 0, 0, 0.6);\r\n	text-shadow: 1px 1px black;\r\n	color: white;\r\n	padding: 5px;\r\n	white-space: nowrap;\r\n}\r\n\r\n#JoystickUI .icon:hover .name {\r\n	display: block;\r\n}\r\n\r\n#JoystickUI .icon.hide .name {\r\n	display: none;\r\n}\r\n\r\n#JoystickUI .icon .amount {\r\n	position: absolute;\r\n	right: 1px;\r\n	top: 20px;\r\n	text-shadow: 1px 1px 0px white;\r\n	text-align: right;\r\n	font-weight: bold;\r\n}\r\n";
+	JoystickUI_default$1 = ":host {\r\n	position: absolute;\r\n	bottom: 20px;\r\n	left: 50%;\r\n	transform: translateX(-50%);\r\n	z-index: 1000;\r\n	pointer-events: none;\r\n}\r\n\r\n#JoystickUI {\r\n	display: flex;\r\n	flex-direction: column;\r\n	align-items: center;\r\n}\r\n\r\n#JoystickUI .set-indicator {\r\n	margin-bottom: 5px;\r\n	background: rgba(0, 0, 0, 0.5);\r\n	border-radius: 4px;\r\n	padding: 2px;\r\n	pointer-events: auto;\r\n}\r\n\r\n#JoystickUI .set-btn {\r\n	display: inline-block;\r\n	padding: 2px 10px;\r\n	color: #ccc;\r\n	font-family: sans-serif;\r\n	border-radius: 3px;\r\n	cursor: pointer;\r\n}\r\n\r\n#JoystickUI .set-btn.active {\r\n	background-color: #d32f2f;\r\n	color: white;\r\n	font-weight: bold;\r\n}\r\n\r\n#JoystickUI .hotkey-bar {\r\n	display: flex;\r\n	gap: 4px;\r\n	align-items: flex-end;\r\n}\r\n\r\n#JoystickUI .group-container {\r\n	background: linear-gradient(to bottom, rgba(60, 60, 60, 0.9), rgba(30, 30, 30, 0.9));\r\n	border: 1px solid #555;\r\n	border-radius: 6px;\r\n	width: 110px;\r\n	height: 100px;\r\n	position: relative;\r\n	pointer-events: auto;\r\n	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n#JoystickUI .group-header {\r\n	background: rgba(255, 255, 255, 0.1);\r\n	color: #e0e0e0;\r\n	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n	font-size: 14px;\r\n	font-weight: bold;\r\n	text-align: center;\r\n	padding: 2px 0;\r\n	border-bottom: 1px solid #555;\r\n	text-shadow: 1px 1px 2px black;\r\n}\r\n\r\n#JoystickUI .cross-layout {\r\n	position: relative;\r\n	width: 100%;\r\n	height: 75px;\r\n}\r\n\r\n#JoystickUI .slot {\r\n	position: absolute;\r\n	width: 32px;\r\n	height: 32px;\r\n	background-color: rgba(0, 0, 0, 0.6);\r\n	border: 1px solid #777;\r\n	border-radius: 3px;\r\n	display: flex;\r\n	justify-content: center;\r\n	align-items: center;\r\n	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);\r\n	transition: background 0.2s;\r\n}\r\n\r\n#JoystickUI .slot:active {\r\n	background-color: rgba(144, 238, 144, 0.3);\r\n	border-color: #90ee90;\r\n}\r\n\r\n#JoystickUI .slot.top {\r\n	top: 2px;\r\n	left: 50%;\r\n	transform: translateX(-60%);\r\n}\r\n\r\n#JoystickUI .slot.bottom {\r\n	bottom: 2px;\r\n	left: 50%;\r\n	transform: translateX(-60%);\r\n}\r\n\r\n#JoystickUI .slot.left {\r\n	top: 50%;\r\n	left: 2px;\r\n	transform: translateY(-60%);\r\n}\r\n\r\n#JoystickUI .slot.right {\r\n	top: 50%;\r\n	right: 4px;\r\n	transform: translateY(-60%);\r\n}\r\n\r\n#JoystickUI .key-label {\r\n	position: absolute;\r\n	top: 1px;\r\n	left: 3px;\r\n	font-weight: bold;\r\n	color: #fff;\r\n	text-shadow: 1px 1px 0 #000;\r\n	z-index: 2;\r\n	pointer-events: none;\r\n}\r\n\r\n#JoystickUI .group-container.active {\r\n	border-color: #00ff00;\r\n	background: linear-gradient(to bottom, rgba(80, 100, 80, 0.95), rgba(40, 60, 40, 0.95));\r\n	box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);\r\n	transform: translateY(-2px);\r\n	z-index: 10;\r\n}\r\n\r\n#JoystickUI .icon {\r\n	position: relative;\r\n}\r\n\r\n#JoystickUI .icon .img {\r\n	width: 24px;\r\n	height: 24px;\r\n	background-repeat: no-repeat;\r\n	border: none;\r\n	background-color: transparent;\r\n}\r\n\r\n#JoystickUI .icon .name {\r\n	display: none;\r\n	z-index: 1;\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	background-color: rgba(0, 0, 0, 0.6);\r\n	text-shadow: 1px 1px black;\r\n	color: white;\r\n	padding: 5px;\r\n	white-space: nowrap;\r\n}\r\n\r\n#JoystickUI .icon:hover .name {\r\n	display: block;\r\n}\r\n\r\n#JoystickUI .icon.hide .name {\r\n	display: none;\r\n}\r\n\r\n#JoystickUI .icon .amount {\r\n	position: absolute;\r\n	right: 1px;\r\n	top: 20px;\r\n	text-shadow: 1px 1px 0px white;\r\n	text-align: right;\r\n	font-weight: bold;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/JoystickUI/JoystickUI.js
 var JoystickUI, JoystickUI_default;
 var init_JoystickUI = __esmMin((() => {
+	init_GUIComponent();
 	init_UIManager();
-	init_UIComponent();
 	init_JoystickModule();
 	init_JoystickSelectionUI();
 	init_JoystickUI$2();
 	init_JoystickUI$1();
 	init_JoystickUIRenderer();
-	JoystickUI = new UIComponent("JoystickUI", JoystickUI_default$2, JoystickUI_default$1);
+	JoystickUI = new GUIComponent("JoystickUI", JoystickUI_default$1);
+	JoystickUI.render = () => JoystickUI_default$2;
 	JoystickUI.onAppend = function() {
 		JoystickUIRenderer_default.attach(this.ui);
-		this.ui.hide();
+		this._host.style.display = "none";
 		JoystickSelectionUI_default.append();
 	};
 	JoystickUI.onRemove = function() {
@@ -246816,10 +247012,10 @@ var init_JoystickUI = __esmMin((() => {
 		JoystickModule_default.prepare();
 	};
 	JoystickUI.show = function() {
-		this.ui.show();
+		this._host.style.display = "block";
 	};
 	JoystickUI.hide = function() {
-		this.ui.hide();
+		this._host.style.display = "none";
 	};
 	JoystickUI_default = UIManager.addComponent(JoystickUI);
 }));
@@ -248180,7 +248376,7 @@ var init_PetInformations$1 = __esmMin((() => {
 /**
 * Helper to get the shadow root
 */
-function _getRoot$6() {
+function _getRoot$18() {
 	return PetInformations._shadow || PetInformations._host;
 }
 var PetInformations, _preferences$23, petAutoFeeding, PetInformations_default;
@@ -248209,7 +248405,7 @@ var init_PetInformations = __esmMin((() => {
 	*/
 	PetInformations.init = function init() {
 		this.draggable(".titlebar");
-		const root = _getRoot$6();
+		const root = _getRoot$18();
 		const closeBtn = root.querySelector(".close");
 		if (closeBtn) {
 			closeBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
@@ -248254,7 +248450,7 @@ var init_PetInformations = __esmMin((() => {
 		});
 	};
 	PetInformations.onAppend = function onAppend() {
-		const root = _getRoot$6();
+		const root = _getRoot$18();
 		Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (petAutoFeeding ? "1" : "0") + ".bmp", (data) => {
 			const el = root.querySelector(".pet_auto_feed");
 			if (el) el.style.backgroundImage = `url(${data})`;
@@ -248296,7 +248492,7 @@ var init_PetInformations = __esmMin((() => {
 	* @param {object} pet info
 	*/
 	PetInformations.setInformations = function setInformations(info) {
-		const root = _getRoot$6();
+		const root = _getRoot$18();
 		const nameInput = root.querySelector(".name");
 		if (nameInput) nameInput.value = info.szName;
 		const levelEl = root.querySelector(".level");
@@ -248352,12 +248548,12 @@ var init_PetInformations = __esmMin((() => {
 	* @param {number} intimacy
 	*/
 	PetInformations.setIntimacy = function setIntimacy(val) {
-		const el = _getRoot$6().querySelector(".intimacy");
+		const el = _getRoot$18().querySelector(".intimacy");
 		if (el) el.textContent = DB.getMessage(val < 100 ? 672 : val < 250 ? 673 : val < 600 ? 669 : val < 900 ? 674 : 675);
 	};
 	PetInformations.setFeedConfig = function setFeedConfig(flag) {
 		petAutoFeeding = flag;
-		const root = _getRoot$6();
+		const root = _getRoot$18();
 		if (root) Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (petAutoFeeding ? "1" : "0") + ".bmp", (data) => {
 			const el = root.querySelector(".pet_auto_feed");
 			if (el) el.style.backgroundImage = `url(${data})`;
@@ -248369,7 +248565,7 @@ var init_PetInformations = __esmMin((() => {
 	* @param {number} hunger
 	*/
 	PetInformations.setHunger = function setHunger(val) {
-		const el = _getRoot$6().querySelector(".hunger");
+		const el = _getRoot$18().querySelector(".hunger");
 		if (el) el.textContent = DB.getMessage(val < 10 ? 667 : val < 25 ? 668 : val < 75 ? 669 : val < 90 ? 670 : 671);
 	};
 	/**
@@ -248804,56 +249000,54 @@ var init_Trade$1 = __esmMin((() => {
 //#region src/UI/Components/NpcBox/NpcBox.html?raw
 var NpcBox_default$2;
 var init_NpcBox$2 = __esmMin((() => {
-	NpcBox_default$2 = "<div id=\"NpcBox\">\r\n	<div class=\"border\">\r\n		<div class=\"content\"></div>\r\n		<div class=\"btns\">\r\n			<button\r\n				class=\"btn close\"\r\n				data-background=\"btn_close.bmp\"\r\n				data-hover=\"btn_close_a.bmp\"\r\n				data-down=\"btn_close_b.bmp\"\r\n			></button>\r\n			<button\r\n				class=\"btn next\"\r\n				data-background=\"btn_next.bmp\"\r\n				data-hover=\"btn_next_a.bmp\"\r\n				data-down=\"btn_next_b.bmp\"\r\n			></button>\r\n		</div>\r\n	</div>\r\n</div>\r\n";
+	NpcBox_default$2 = "<div id=\"NpcBox\">\r\n	<div class=\"border\">\r\n		<div class=\"content\"></div>\r\n		<div class=\"btns\">\r\n			<ui-button class=\"btn close\" bg=\"btn_close.bmp\" hover=\"btn_close_a.bmp\" down=\"btn_close_b.bmp\"></ui-button>\r\n			<ui-button class=\"btn next\" bg=\"btn_next.bmp\" hover=\"btn_next_a.bmp\" down=\"btn_next_b.bmp\"></ui-button>\r\n		</div>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/NpcBox/NpcBox.css?raw
 var NpcBox_default$1;
 var init_NpcBox$1 = __esmMin((() => {
-	NpcBox_default$1 = "#NpcBox {\r\n	position: absolute;\r\n	top: 100px;\r\n	left: 100px;\r\n	width: 276px;\r\n	height: 176px;\r\n	border-radius: 5px;\r\n	background: white;\r\n	padding: 2px;\r\n	line-height: 18px;\r\n	letter-spacing: 0px;\r\n}\r\n#NpcBox .border {\r\n	border: 1px solid #c1c6c2;\r\n	width: 264px;\r\n	height: 164px;\r\n	padding: 5px;\r\n	border-radius: 5px;\r\n}\r\n#NpcBox .content {\r\n	white-space: pre-wrap;\r\n	background-color: #eff4f0;\r\n	width: 254px;\r\n	height: 130px;\r\n	overflow-y: auto;\r\n	padding: 5px;\r\n}\r\n#NpcBox .btns {\r\n	position: absolute;\r\n	bottom: 2px;\r\n	right: 8px;\r\n}\r\n#NpcBox .btn {\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	bottom: 4px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n	display: none;\r\n}\r\n\r\n.item-link {\r\n	color: #0070c0;\r\n	cursor: pointer;\r\n}\r\n\r\n.item-link:hover {\r\n	color: #00a0ff;\r\n}\r\n\r\n.navi-link {\r\n	color: #c00000;\r\n	cursor: pointer;\r\n	text-decoration: underline;\r\n}\r\n\r\n.navi-link:hover {\r\n	color: #ff0000;\r\n}\r\n";
+	NpcBox_default$1 = ":host {\r\n	width: 276px;\r\n	height: 176px;\r\n	top: 100px;\r\n	left: 100px;\r\n}\r\n\r\n#NpcBox {\r\n	position: absolute;\r\n	width: 276px;\r\n	height: 176px;\r\n	border-radius: 5px;\r\n	background: white;\r\n	padding: 2px;\r\n	line-height: 18px;\r\n	letter-spacing: 0px;\r\n}\r\n#NpcBox .border {\r\n	border: 1px solid #c1c6c2;\r\n	width: 264px;\r\n	height: 164px;\r\n	padding: 5px;\r\n	border-radius: 5px;\r\n}\r\n#NpcBox .content {\r\n	white-space: pre-wrap;\r\n	background-color: #eff4f0;\r\n	width: 254px;\r\n	height: 130px;\r\n	overflow-y: auto;\r\n	padding: 5px;\r\n}\r\n#NpcBox .btns {\r\n	position: absolute;\r\n	bottom: 2px;\r\n	right: 8px;\r\n}\r\n#NpcBox .btn {\r\n	width: 42px;\r\n	height: 20px;\r\n	bottom: 4px;\r\n	display: none;\r\n}\r\n\r\n.item-link {\r\n	color: #0070c0;\r\n	cursor: pointer;\r\n}\r\n\r\n.item-link:hover {\r\n	color: #00a0ff;\r\n}\r\n\r\n.navi-link {\r\n	color: #c00000;\r\n	cursor: pointer;\r\n	text-decoration: underline;\r\n}\r\n\r\n.navi-link:hover {\r\n	color: #ff0000;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/NpcBox/NpcBox.js
 /**
-* Process NAVI tags in text (<NAVI>Display Name<INFO>mapname,x,y,0,000,flag</INFO></NAVI>)
-* @param {string} text - The text to process
-* @returns {string} HTML with processed NAVI tags
+* Helper to get shadow root
+*/
+function _getRoot$17() {
+	return NpcBox._shadow || NpcBox._host;
+}
+/**
+* Process NAVI tags in text
 */
 function processNAVITags(text) {
 	if (!text) return "";
 	text = String(text);
-	return text.replace(/<NAVI>([^<]+)<INFO>([^<]+)<\/INFO><\/NAVI>/g, function(match, displayName, naviInfo) {
-		return "<span class=\"navi-link\" data-navi-info=\"" + naviInfo + "\" data-navi-name=\"" + displayName + "\">" + displayName + "</span>";
+	return text.replace(/<NAVI>([^<]+)<INFO>([^<]+)<\/INFO><\/NAVI>/g, (match, displayName, naviInfo) => {
+		return `<span class="navi-link" data-navi-info="${naviInfo}" data-navi-name="${displayName}">${displayName}</span>`;
 	});
 }
 /**
-* Process ITEM tags in text (<ITEM>Name<INFO>ID</INFO></ITEM>)
-* @param {string} text - The text to process
-* @returns {string} HTML with processed item tags
+* Process ITEM tags in text
 */
 function processItemTags(text) {
 	if (!text) return "";
 	if (typeof text !== "string") text = String(text);
-	return text.replace(/<(ITEMLINK|ITEM)>([\s\S]*?)<INFO>([\s\S]*?)<\/INFO><\/\1>/g, function(match, tag, itemName, itemId) {
-		return "<span class=\"item-link\" data-item-id=\"" + itemId + "\">" + itemName + "</span>";
+	return text.replace(/<(ITEMLINK|ITEM)>([\s\S]*?)<INFO>([\s\S]*?)<\/INFO><\/\1>/g, (match, tag, itemName, itemId) => {
+		return `<span class="item-link" data-item-id="${itemId}">${itemName}</span>`;
 	});
 }
 /**
 * Process color codes in text (^RRGGBB)
-* @param {string} text - The text to process
-* @returns {string} HTML with color spans
 */
 function processColorCodes(text) {
 	if (!text) return "";
 	text = String(text);
-	return text.replace(/\^([0-9A-Fa-f]{6})/g, function(match, color) {
-		return "<span style=\"color:#" + color + "\">";
+	return text.replace(/\^([0-9A-Fa-f]{6})/g, (match, color) => {
+		return `<span style="color:#${color}">`;
 	}).replace(/\^000000/g, "</span>");
 }
 /**
-* Process all text formatting (color codes, NAVI tags, and item tags)
-* @param {string} text - The text to process
-* @returns {string} Fully processed HTML
+* Process all text formatting
 */
 function processText(text) {
 	if (!text) return "";
@@ -248864,16 +249058,21 @@ function processText(text) {
 }
 var NpcBox, _needCleanUp, NpcBox_default;
 var init_NpcBox = __esmMin((() => {
-	init_jquery();
 	init_KeyEventHandler();
 	init_Renderer();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
+	init_Elements();
 	init_ItemInfo();
 	init_Navigation();
 	init_NpcBox$2();
 	init_NpcBox$1();
-	NpcBox = new UIComponent("NpcBox", NpcBox_default$2, NpcBox_default$1);
+	NpcBox = new GUIComponent("NpcBox", NpcBox_default$1);
+	NpcBox.render = () => NpcBox_default$2;
+	/**
+	* Freeze mouse — NPC dialog blocks interaction
+	*/
+	NpcBox.mouseMode = GUIComponent.MouseMode.FREEZE;
 	_needCleanUp = false;
 	/**
 	* @var {integer} NPC GID
@@ -248883,40 +249082,45 @@ var init_NpcBox = __esmMin((() => {
 	* Initialize Component
 	*/
 	NpcBox.init = function init() {
-		this.ui.css({
-			top: Math.max(100, Renderer.height / 2 - 200),
-			left: Math.max(Renderer.width / 3, 20)
-		});
-		this.ui.find(".next").click(NpcBox.next.bind(this));
-		this.ui.find(".close").click(NpcBox.close.bind(this));
-		this.ui.find(".content").mousedown(function(event) {
-			event.stopImmediatePropagation();
-		});
-		this.ui.on("click", ".item-link", function(event) {
-			const itemId = parseInt(jquery_default(this).data("item-id"), 10);
-			if (!itemId) return;
-			if (ItemInfo_default.uid === itemId) {
-				ItemInfo_default.remove();
+		this._host.style.top = `${Math.max(100, Renderer.height / 2 - 200)}px`;
+		this._host.style.left = `${Math.max(Renderer.width / 3, 20)}px`;
+		const root = _getRoot$17();
+		const nextBtn = root.querySelector(".next");
+		if (nextBtn) nextBtn.addEventListener("click", () => NpcBox.next());
+		const closeBtn = root.querySelector(".close");
+		if (closeBtn) closeBtn.addEventListener("click", () => NpcBox.close());
+		const content = root.querySelector(".content");
+		if (content) content.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
+		root.addEventListener("click", (e) => {
+			const itemLink = e.target.closest(".item-link");
+			if (itemLink) {
+				const itemId = parseInt(itemLink.dataset.itemId, 10);
+				if (!itemId) return;
+				if (ItemInfo_default.uid === itemId) {
+					ItemInfo_default.remove();
+					return;
+				}
+				ItemInfo_default.append();
+				ItemInfo_default.uid = itemId;
+				ItemInfo_default.setItem({
+					ITID: itemId,
+					IsIdentified: true
+				});
 				return;
 			}
-			ItemInfo_default.append();
-			ItemInfo_default.uid = itemId;
-			ItemInfo_default.setItem({
-				ITID: itemId,
-				IsIdentified: true
-			});
-		});
-		this.ui.on("click", ".navi-link", function(event) {
-			const naviInfo = jquery_default(this).data("navi-info");
-			const displayName = jquery_default(this).data("navi-name");
-			if (!naviInfo) return;
-			if (Navigation_default.uid === naviInfo && Navigation_default.ui.is(":visible")) {
-				Navigation_default.hide();
-				return;
+			const naviLink = e.target.closest(".navi-link");
+			if (naviLink) {
+				const naviInfo = naviLink.dataset.naviInfo;
+				const displayName = naviLink.dataset.naviName;
+				if (!naviInfo) return;
+				if (Navigation_default.uid === naviInfo && Navigation_default._host && Navigation_default._host.style.display !== "none") {
+					Navigation_default.hide();
+					return;
+				}
+				Navigation_default.show();
+				Navigation_default.uid = naviInfo;
+				Navigation_default.setNaviInfo(naviInfo, displayName);
 			}
-			Navigation_default.show();
-			Navigation_default.uid = naviInfo;
-			Navigation_default.setNaviInfo(naviInfo, displayName);
 		});
 		this.draggable();
 	};
@@ -248924,9 +249128,13 @@ var init_NpcBox = __esmMin((() => {
 	* Once NPC Box is removed from HTML, clean up data
 	*/
 	NpcBox.onRemove = function onRemove() {
-		this.ui.find(".next").hide();
-		this.ui.find(".close").hide();
-		this.ui.find(".content").text("");
+		const root = _getRoot$17();
+		const nextBtn = root.querySelector(".next");
+		if (nextBtn) nextBtn.style.display = "none";
+		const closeBtn = root.querySelector(".close");
+		if (closeBtn) closeBtn.style.display = "none";
+		const content = root.querySelector(".content");
+		if (content) content.textContent = "";
 		_needCleanUp = false;
 		NpcBox.ownerID = 0;
 		const cutin = document.getElementById("cutin");
@@ -248936,24 +249144,31 @@ var init_NpcBox = __esmMin((() => {
 	* Add support for Enter key
 	*/
 	NpcBox.onKeyDown = function onKeyDown(event) {
-		if (!this.ui.is(":visible")) return true;
+		if (this._host.style.display === "none") return true;
+		const root = _getRoot$17();
 		switch (event.which) {
 			case KEYS.SPACE:
-			case KEYS.ENTER:
-				if (this.ui.find(".next").is(":visible")) {
+			case KEYS.ENTER: {
+				const nextBtn = root.querySelector(".next");
+				if (nextBtn && nextBtn.style.display !== "none") {
 					this.next();
 					break;
-				} else if (this.ui.find(".close").is(":visible")) {
+				}
+				const closeBtn = root.querySelector(".close");
+				if (closeBtn && closeBtn.style.display !== "none") {
 					this.close();
 					break;
 				}
 				return true;
-			case KEYS.ESCAPE:
-				if (this.ui.find(".close").is(":visible")) {
+			}
+			case KEYS.ESCAPE: {
+				const closeBtn = root.querySelector(".close");
+				if (closeBtn && closeBtn.style.display !== "none") {
 					this.close();
 					break;
 				}
 				return true;
+			}
 			default: return true;
 		}
 		event.stopImmediatePropagation();
@@ -248965,14 +249180,16 @@ var init_NpcBox = __esmMin((() => {
 	* @param {string} text to display
 	* @param {number} gid - npc id
 	*/
-	NpcBox.setText = function SetText(text, gid) {
-		const content = this.ui.find(".content");
+	NpcBox.setText = function setText(text, gid) {
+		const content = _getRoot$17().querySelector(".content");
 		NpcBox.ownerID = gid;
 		if (_needCleanUp) {
 			_needCleanUp = false;
-			content.text("");
+			content.textContent = "";
 		}
-		content.append(jquery_default("<div/>").html(processText(text)));
+		const div = document.createElement("div");
+		div.innerHTML = processText(text);
+		content.appendChild(div);
 	};
 	/**
 	* Add next button
@@ -248981,7 +249198,8 @@ var init_NpcBox = __esmMin((() => {
 	*/
 	NpcBox.addNext = function addNext(gid) {
 		NpcBox.ownerID = gid;
-		this.ui.find(".next").show();
+		const nextBtn = _getRoot$17().querySelector(".next");
+		if (nextBtn) nextBtn.style.display = "block";
 	};
 	/**
 	* Add close button
@@ -248990,29 +249208,32 @@ var init_NpcBox = __esmMin((() => {
 	*/
 	NpcBox.addClose = function addClose(gid) {
 		NpcBox.ownerID = gid;
-		this.ui.find(".close").show();
+		const closeBtn = _getRoot$17().querySelector(".close");
+		if (closeBtn) closeBtn.style.display = "block";
 	};
 	/**
 	* Press "next" button
 	*/
-	NpcBox.next = function Next() {
+	NpcBox.next = function next() {
 		_needCleanUp = true;
-		this.ui.find(".next").hide();
+		const nextBtn = _getRoot$17().querySelector(".next");
+		if (nextBtn) nextBtn.style.display = "none";
 		this.onNextPressed(NpcBox.ownerID);
 	};
 	/**
 	* Press "close" button
 	*/
-	NpcBox.close = function Close() {
+	NpcBox.close = function close() {
 		_needCleanUp = true;
-		this.ui.find(".close").hide();
+		const closeBtn = _getRoot$17().querySelector(".close");
+		if (closeBtn) closeBtn.style.display = "none";
 		this.onClosePressed(NpcBox.ownerID);
 	};
 	/**
 	* Callback
 	*/
-	NpcBox.onClosePressed = function OnClosePressed() {};
-	NpcBox.onNextPressed = function OnNextPressed() {};
+	NpcBox.onClosePressed = function onClosePressed() {};
+	NpcBox.onNextPressed = function onNextPressed() {};
 	NpcBox_default = UIManager.addComponent(NpcBox);
 }));
 //#endregion
@@ -271047,7 +271268,7 @@ var init_wasmoon_lua5_1 = __esmMin((() => {
 	import_lodash = /* @__PURE__ */ __toESM(require_lodash(), 1);
 	exports$2 = {};
 	_documentCurrentScript = typeof document !== "undefined" ? document.currentScript : null;
-	lodash__namespace = /* @__PURE__ */ _interopNamespaceDefault(import_lodash.default);
+	lodash__namespace = /*#__PURE__*/ _interopNamespaceDefault(import_lodash.default);
 	JsType = class JsType {
 		static create(name, is) {
 			return new JsType(name, is);
@@ -299497,7 +299718,7 @@ var init_bson = __esmMin((() => {
 	Object.freeze(onDemand);
 	MAXSIZE = 1024 * 1024 * 17;
 	buffer = ByteUtils.allocate(MAXSIZE);
-	bson = /* @__PURE__ */ Object.freeze({
+	bson = /*#__PURE__*/ Object.freeze({
 		__proto__: null,
 		BSONError,
 		BSONOffsetError,
@@ -312068,10 +312289,26 @@ var init_MobileUI$2 = __esmMin((() => {
 //#region src/UI/Components/MobileUI/MobileUI.css?raw
 var MobileUI_default$1;
 var init_MobileUI$1 = __esmMin((() => {
-	MobileUI_default$1 = "#MobileUI * {\r\n	z-index: 1000;\r\n}\r\n\r\n#MobileUI .buttonBar,\r\n#MobileUI #toggleUIButton {\r\n	position: absolute;\r\n}\r\n\r\n#MobileUI #toggleUIButton {\r\n	top: 3px;\r\n	left: 3px;\r\n	width: 25px;\r\n	height: 25px;\r\n}\r\n\r\n#MobileUI .buttons {\r\n	background: rgba(193, 193, 193, 0.33);\r\n	border-radius: 6px;\r\n	border: 1px solid grey;\r\n	font-size: 16px;\r\n	font-weight: bold;\r\n}\r\n\r\n#MobileUI .mobileKeys {\r\n	visibility: inherit;\r\n}\r\n\r\n#MobileUI .horizontal {\r\n	margin: 0px 15px;\r\n}\r\n\r\n#MobileUI .vertical {\r\n	margin: 15px 0px;\r\n}\r\n\r\n#MobileUI .disabled {\r\n	visibility: hidden;\r\n}\r\n\r\n#MobileUI #topBar {\r\n	left: 50%;\r\n	top: 3px;\r\n	transform: translate(-50%, 0);\r\n}\r\n\r\n#MobileUI #leftBar {\r\n	left: 5px;\r\n	bottom: 35%;\r\n	transform: translate(0, 50%);\r\n}\r\n\r\n#MobileUI #rightBar {\r\n	right: 5px;\r\n	bottom: 35%;\r\n	transform: translate(0, 50%);\r\n}\r\n\r\n#MobileUI #rightBar .buttons {\r\n	float: right;\r\n}\r\n\r\n#MobileUI .active {\r\n	background: linear-gradient(135deg, rgba(144, 238, 144, 0.5), rgba(193, 255, 193, 0.8));\r\n	border: 2px solid rgba(144, 238, 144, 0.8); /* Soft border */\r\n	box-shadow: 0px 4px 8px rgba(144, 238, 144, 0.4); /* Glowing effect */\r\n	border-radius: 8px; /* Smooth edges */\r\n	animation: pulse 1.5s infinite; /* Subtle pulsing animation */\r\n	transition:\r\n		background 0.3s ease,\r\n		box-shadow 0.3s ease,\r\n		transform 0.3s ease; /* Smooth transition for hover */\r\n}\r\n\r\n#MobileUI #toggleUIButton:active {\r\n	background: linear-gradient(135deg, rgba(144, 238, 144, 0.5), rgba(193, 255, 193, 0.8));\r\n	border: 2px solid rgba(144, 238, 144, 0.8); /* Soft border */\r\n	box-shadow: 0px 4px 8px rgba(144, 238, 144, 0.4); /* Glowing effect */\r\n	border-radius: 8px; /* Smooth edges */\r\n	animation: pulse 1.5s infinite; /* Subtle pulsing animation */\r\n	transition:\r\n		background 0.3s ease,\r\n		box-shadow 0.3s ease,\r\n		transform 0.3s ease; /* Smooth transition for hover */\r\n}\r\n\r\n@keyframes pulse {\r\n	0% {\r\n		box-shadow: 0px 4px 8px rgba(144, 238, 144, 0.4);\r\n	}\r\n	50% {\r\n		box-shadow: 0px 6px 12px rgba(144, 238, 144, 0.6);\r\n	}\r\n	100% {\r\n		box-shadow: 0px 4px 8px rgba(144, 238, 144, 0.4);\r\n	}\r\n}\r\n\r\n#MobileUI .pressed {\r\n	background: rgba(193, 255, 255, 0.33);\r\n}\r\n\r\n#MobileUI .primary {\r\n	width: 45px;\r\n	height: 45px;\r\n}\r\n\r\n#MobileUI .secondary {\r\n	width: 30px;\r\n	height: 30px;\r\n}\r\n\r\n/* Container for all buttons -MicromeX */\r\n#buttonContainer {\r\n	display: flex;\r\n	flex-direction: column;\r\n	align-items: center;\r\n	position: absolute;\r\n	bottom: 10%;\r\n	right: 10%;\r\n	width: 150px;\r\n	height: 150px;\r\n	z-index: 1000;\r\n}\r\n\r\n/* Attack Button (center and larger) -MicromeX */\r\n#MobileUI .atkButton {\r\n	position: absolute;\r\n	width: 70px; /* Reduced size */\r\n	height: 70px;\r\n	background-color: #f44336;\r\n	border: 1px solid #666;\r\n	border-radius: 50%;\r\n	font-size: 28px; /* Adjusted font size */\r\n	color: white;\r\n	display: flex;\r\n	justify-content: center;\r\n	align-items: center;\r\n	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Adjusted shadow for smaller size */\r\n	cursor: pointer;\r\n}\r\n\r\n/* Functional Buttons (around the attack button) -MicromeX */\r\n#MobileUI .pickupButton {\r\n	position: absolute;\r\n	width: 40px; /* Reduced size */\r\n	height: 40px;\r\n	background: rgba(193, 193, 193, 0.33);\r\n	border: 1px solid #666;\r\n	border-radius: 50%;\r\n	font-size: 25px; /* Adjusted font size */\r\n	color: rgb(0, 0, 0);\r\n	display: flex;\r\n	justify-content: center;\r\n	align-items: center;\r\n	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);\r\n	cursor: pointer;\r\n}\r\n\r\n#MobileUI .talktonpcButton {\r\n	position: absolute;\r\n	width: 40px; /* Reduced size */\r\n	height: 40px;\r\n	background: rgba(193, 193, 193, 0.33);\r\n	border: 1px solid #666;\r\n	border-radius: 50%;\r\n	font-size: 25px; /* Adjusted font size */\r\n	color: rgb(0, 0, 0);\r\n	display: flex;\r\n	justify-content: center;\r\n	align-items: center;\r\n	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);\r\n	cursor: pointer;\r\n}\r\n\r\n#MobileUI .switchshorcutButton {\r\n	position: absolute;\r\n	width: 40px; /* Reduced size */\r\n	height: 40px;\r\n	background: rgba(193, 193, 193, 0.33);\r\n	border: 1px solid #666;\r\n	border-radius: 50%;\r\n	font-size: 25px; /* Adjusted font size */\r\n	font-weight: bold;\r\n	color: rgb(0, 0, 0);\r\n	display: flex;\r\n	justify-content: center;\r\n	align-items: center;\r\n	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);\r\n	cursor: pointer;\r\n}\r\n\r\n/* Functional Buttons (smaller and proportional) -MicromeX */\r\n#MobileUI .FButton {\r\n	position: absolute;\r\n	width: 30px; /* Reduced size */\r\n	height: 30px;\r\n	background: rgba(193, 193, 193, 0.33);\r\n	border: 1px solid #666;\r\n	border-radius: 50%;\r\n	font-size: 15px; /* Adjusted font size */\r\n	font-weight: bold;\r\n	color: rgb(0, 0, 0);\r\n	display: flex;\r\n	justify-content: center;\r\n	align-items: center;\r\n	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);\r\n	cursor: pointer;\r\n}\r\n\r\n/* Positioning Buttons Around Attack Button -MicromeX */\r\n#f1Button {\r\n	top: 97%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#f2Button {\r\n	top: 78%;\r\n	left: 24%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#f3Button {\r\n	top: 56%;\r\n	left: 24%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#f4Button {\r\n	top: 37%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#f5Button {\r\n	top: 30%;\r\n	left: 57%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#f6Button {\r\n	top: 37%;\r\n	left: 80%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#f7Button {\r\n	top: 7%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#f8Button {\r\n	top: 7%;\r\n	left: 57%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#f9Button {\r\n	top: 7%;\r\n	left: 80%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n/* Positioning Buttons Around Attack Button -MicromeX */\r\n#n1Button {\r\n	top: 97%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#n2Button {\r\n	top: 78%;\r\n	left: 24%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#n3Button {\r\n	top: 56%;\r\n	left: 24%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#n4Button {\r\n	top: 37%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#n5Button {\r\n	top: 30%;\r\n	left: 57%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#n6Button {\r\n	top: 37%;\r\n	left: 80%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#n7Button {\r\n	top: 7%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#n8Button {\r\n	top: 7%;\r\n	left: 57%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#n9Button {\r\n	top: 7%;\r\n	left: 80%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n/* Positioning Buttons Around Attack Button -MicromeX */\r\n#qButton {\r\n	top: 97%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#wButton {\r\n	top: 78%;\r\n	left: 24%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#eButton {\r\n	top: 56%;\r\n	left: 24%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#rButton {\r\n	top: 37%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#tButton {\r\n	top: 30%;\r\n	left: 57%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#yButton {\r\n	top: 37%;\r\n	left: 80%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#uButton {\r\n	top: 7%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#iButton {\r\n	top: 7%;\r\n	left: 57%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#oButton {\r\n	top: 7%;\r\n	left: 80%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n/* Positioning Buttons Around Attack Button -MicromeX */\r\n#aButton {\r\n	top: 97%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#sButton {\r\n	top: 78%;\r\n	left: 24%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#dButton {\r\n	top: 56%;\r\n	left: 24%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#fButton {\r\n	top: 37%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#gButton {\r\n	top: 30%;\r\n	left: 57%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#hButton {\r\n	top: 37%;\r\n	left: 80%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#jButton {\r\n	top: 7%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#kButton {\r\n	top: 7%;\r\n	left: 57%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#lButton {\r\n	top: 7%;\r\n	left: 80%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n/* Pickup Button (slightly below attackButton) -MicromeX */\r\n#attackButton {\r\n	bottom: -10%;\r\n	left: 60%;\r\n	transform: translate(-50%, 0);\r\n}\r\n/* Pickup Button (slightly below attackButton) -MicromeX */\r\n#pickupButton {\r\n	bottom: 10%;\r\n	left: 105%;\r\n	transform: translate(-50%, 0);\r\n}\r\n\r\n/* TalkToNpc Button (slightly below attackButton) -MicromeX */\r\n#talktonpcButton {\r\n	bottom: -23%;\r\n	left: 105%;\r\n	transform: translate(-50%, 0);\r\n}\r\n/* TalkToNpc Button (slightly below attackButton) -MicromeX */\r\n#switchshorcutButton {\r\n	bottom: 43%;\r\n	left: 105%;\r\n	transform: translate(-50%, 0);\r\n}\r\n\r\n/* Hover Effect for Buttons -MicromeX */\r\n#f1Button:active,\r\n#f2Button:active,\r\n#f3Button:active,\r\n#f4Button:active,\r\n#f5Button:active,\r\n#f6Button:active,\r\n#f7Button:active,\r\n#f8Button:active,\r\n#f9Button:active,\r\n#n1Button:active,\r\n#n2Button:active,\r\n#n3Button:active,\r\n#n4Button:active,\r\n#n5Button:active,\r\n#n6Button:active,\r\n#n7Button:active,\r\n#n8Button:active,\r\n#n9Button:active,\r\n#qButton:active,\r\n#wButton:active,\r\n#eButton:active,\r\n#rButton:active,\r\n#tButton:active,\r\n#yButton:active,\r\n#uButton:active,\r\n#iButton:active,\r\n#oButton:active,\r\n#aButton:active,\r\n#sButton:active,\r\n#dButton:active,\r\n#fButton:active,\r\n#gButton:active,\r\n#hButton:active,\r\n#jButton:active,\r\n#kButton:active,\r\n#lButton:active,\r\n#switchshorcutButton:active,\r\n#pickupButton:active {\r\n	background: linear-gradient(135deg, rgba(144, 238, 144, 0.5), rgba(193, 255, 193, 0.8));\r\n	border: 2px solid rgba(144, 238, 144, 0.8); /* Soft border -MicromeX */\r\n	box-shadow: 0px 4px 8px rgba(144, 238, 144, 0.4); /* Glowing effect -MicromeX */\r\n	border-radius: 50%; /* Smooth edges */\r\n	animation: pulse 1.5s infinite; /* Subtle pulsing animation */\r\n	transition:\r\n		background 0.3s ease,\r\n		box-shadow 0.3s ease,\r\n		transform 0.3s ease; /* Smooth transition for hover -MicromeX */\r\n}\r\n\r\n#talktonpcButton:active {\r\n	background: linear-gradient(135deg, rgba(144, 238, 144, 0.5), rgba(193, 255, 193, 0.8));\r\n	border: 2px solid rgba(144, 238, 144, 0.8); /* Soft border -MicromeX */\r\n	box-shadow: 0px 4px 8px rgba(144, 238, 144, 0.4); /* Glowing effect -MicromeX */\r\n	border-radius: 50%; /* Smooth edges */\r\n	animation: pulse 1.5s infinite; /* Subtle pulsing animation -MicromeX */\r\n	transition:\r\n		background 0.3s ease,\r\n		box-shadow 0.3s ease,\r\n		transform 0.3s ease; /* Smooth transition for hover -MicromeX */\r\n}\r\n\r\n#attackButton:active {\r\n	background-color: #4caf50; /* Green color on active state */\r\n	box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */\r\n	border: 2px solid #388e3c; /* Add a darker green border for contrast */\r\n	transition:\r\n		transform 0.2s ease,\r\n		background-color 0.2s ease,\r\n		box-shadow 0.2s ease,\r\n		border 0.2s ease; /* Smooth transition for multiple properties */\r\n}\r\n\r\n/* Joystick container -MicromeX */\r\n.joystick-container {\r\n	position: absolute;\r\n	bottom: 7%; /* Adjusted for better fit */\r\n	left: 10%; /* Adjusted for better fit */\r\n	width: 100px; /* Reduced size */\r\n	height: 100px; /* Reduced size */\r\n	z-index: 1000;\r\n}\r\n\r\n/* Joystick base -MicromeX */\r\n.joystick-base {\r\n	position: relative;\r\n	width: 100%;\r\n	height: 100%;\r\n	background: rgba(193, 193, 193, 0.33);\r\n	border-radius: 50%;\r\n	display: flex;\r\n	justify-content: center;\r\n	align-items: center;\r\n}\r\n\r\n/* Joystick thumb -MicromeX */\r\n.joystick-thumb {\r\n	position: absolute;\r\n	width: 40px; /* Reduced size */\r\n	height: 40px; /* Reduced size */\r\n	background: radial-gradient(circle, rgba(236, 240, 241, 1) 70%, rgba(189, 195, 199, 1) 100%);\r\n	border-radius: 50%;\r\n	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4); /* Adjusted shadow for smaller size */\r\n	touch-action: none; /* Prevent scrolling -MicromeX */\r\n	cursor: grab;\r\n}\r\n";
+	MobileUI_default$1 = ":host {\r\n	width: 100%;\r\n	height: 100%;\r\n	pointer-events: none;\r\n}\r\n\r\n#MobileUI {\r\n	position: absolute;\r\n	top: 0;\r\n	left: 0;\r\n	width: 100%;\r\n	height: 100%;\r\n	pointer-events: none;\r\n}\r\n\r\n#MobileUI button,\r\n#MobileUI .joystick-base {\r\n	pointer-events: auto;\r\n}\r\n\r\n#MobileUI * {\r\n	z-index: 1000;\r\n}\r\n\r\n#MobileUI .buttonBar,\r\n#MobileUI #toggleUIButton {\r\n	position: absolute;\r\n}\r\n\r\n#MobileUI #toggleUIButton {\r\n	top: 1%;\r\n	left: 1%;\r\n	width: 6.5vmin;\r\n	height: 6.5vmin;\r\n}\r\n\r\n#MobileUI .buttons {\r\n	background: rgba(193, 193, 193, 0.33);\r\n	border-radius: 6px;\r\n	border: 1px solid grey;\r\n	font-size: 4vmin;\r\n	font-weight: bold;\r\n}\r\n\r\n#MobileUI .mobileKeys {\r\n	visibility: inherit;\r\n}\r\n\r\n#MobileUI .horizontal {\r\n	margin: 0 3.5vmin;\r\n}\r\n\r\n#MobileUI .vertical {\r\n	margin: 3.5vmin 0;\r\n}\r\n\r\n#MobileUI .disabled {\r\n	visibility: hidden;\r\n}\r\n\r\n#MobileUI #topBar {\r\n	left: 50%;\r\n	top: 1%;\r\n	transform: translate(-50%, 0);\r\n}\r\n\r\n#MobileUI #leftBar {\r\n	left: 1%;\r\n	bottom: 35%;\r\n	transform: translate(0, 50%);\r\n}\r\n\r\n#MobileUI #rightBar {\r\n	right: 1%;\r\n	bottom: 35%;\r\n	transform: translate(0, 50%);\r\n}\r\n\r\n#MobileUI #rightBar .buttons {\r\n	float: right;\r\n}\r\n\r\n#MobileUI .active {\r\n	background: linear-gradient(135deg, rgba(144, 238, 144, 0.5), rgba(193, 255, 193, 0.8));\r\n	border: 2px solid rgba(144, 238, 144, 0.8);\r\n	box-shadow: 0px 4px 8px rgba(144, 238, 144, 0.4);\r\n	border-radius: 8px;\r\n	animation: pulse 1.5s infinite;\r\n	transition:\r\n		background 0.3s ease,\r\n		box-shadow 0.3s ease,\r\n		transform 0.3s ease;\r\n}\r\n\r\n#MobileUI #toggleUIButton:active {\r\n	background: linear-gradient(135deg, rgba(144, 238, 144, 0.5), rgba(193, 255, 193, 0.8));\r\n	border: 2px solid rgba(144, 238, 144, 0.8);\r\n	box-shadow: 0px 4px 8px rgba(144, 238, 144, 0.4);\r\n	border-radius: 8px;\r\n	animation: pulse 1.5s infinite;\r\n	transition:\r\n		background 0.3s ease,\r\n		box-shadow 0.3s ease,\r\n		transform 0.3s ease;\r\n}\r\n\r\n@keyframes pulse {\r\n	0% {\r\n		box-shadow: 0px 4px 8px rgba(144, 238, 144, 0.4);\r\n	}\r\n	50% {\r\n		box-shadow: 0px 6px 12px rgba(144, 238, 144, 0.6);\r\n	}\r\n	100% {\r\n		box-shadow: 0px 4px 8px rgba(144, 238, 144, 0.4);\r\n	}\r\n}\r\n\r\n#MobileUI .pressed {\r\n	background: rgba(193, 255, 255, 0.33);\r\n}\r\n\r\n#MobileUI .primary {\r\n	width: 11vmin;\r\n	height: 11vmin;\r\n}\r\n\r\n#MobileUI .secondary {\r\n	width: 7.5vmin;\r\n	height: 7.5vmin;\r\n}\r\n\r\n/* Container for all buttons -MicromeX */\r\n#MobileUI #buttonContainer {\r\n	display: flex;\r\n	flex-direction: column;\r\n	align-items: center;\r\n	position: absolute;\r\n	bottom: 10%;\r\n	right: 10%;\r\n	width: 37.5vmin;\r\n	height: 37.5vmin;\r\n	z-index: 1000;\r\n}\r\n\r\n/* Attack Button (center and larger) -MicromeX */\r\n#MobileUI .atkButton {\r\n	position: absolute;\r\n	width: 17.5vmin;\r\n	height: 17.5vmin;\r\n	background-color: #f44336;\r\n	border: 1px solid #666;\r\n	border-radius: 50%;\r\n	font-size: 7vmin;\r\n	color: white;\r\n	display: flex;\r\n	justify-content: center;\r\n	align-items: center;\r\n	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);\r\n	cursor: pointer;\r\n}\r\n\r\n/* Functional Buttons (around the attack button) -MicromeX */\r\n#MobileUI .pickupButton {\r\n	position: absolute;\r\n	width: 10vmin;\r\n	height: 10vmin;\r\n	background: rgba(193, 193, 193, 0.33);\r\n	border: 1px solid #666;\r\n	border-radius: 50%;\r\n	font-size: 6.25vmin;\r\n	color: rgb(0, 0, 0);\r\n	display: flex;\r\n	justify-content: center;\r\n	align-items: center;\r\n	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);\r\n	cursor: pointer;\r\n}\r\n\r\n#MobileUI .talktonpcButton {\r\n	position: absolute;\r\n	width: 10vmin;\r\n	height: 10vmin;\r\n	background: rgba(193, 193, 193, 0.33);\r\n	border: 1px solid #666;\r\n	border-radius: 50%;\r\n	font-size: 6.25vmin;\r\n	color: rgb(0, 0, 0);\r\n	display: flex;\r\n	justify-content: center;\r\n	align-items: center;\r\n	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);\r\n	cursor: pointer;\r\n}\r\n\r\n#MobileUI .switchshorcutButton {\r\n	position: absolute;\r\n	width: 10vmin;\r\n	height: 10vmin;\r\n	background: rgba(193, 193, 193, 0.33);\r\n	border: 1px solid #666;\r\n	border-radius: 50%;\r\n	font-size: 6.25vmin;\r\n	font-weight: bold;\r\n	color: rgb(0, 0, 0);\r\n	display: flex;\r\n	justify-content: center;\r\n	align-items: center;\r\n	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);\r\n	cursor: pointer;\r\n}\r\n\r\n/* Functional Buttons (smaller and proportional) -MicromeX */\r\n#MobileUI .FButton {\r\n	position: absolute;\r\n	width: 7.5vmin;\r\n	height: 7.5vmin;\r\n	background: rgba(193, 193, 193, 0.33);\r\n	border: 1px solid #666;\r\n	border-radius: 50%;\r\n	font-size: 3.75vmin;\r\n	font-weight: bold;\r\n	color: rgb(0, 0, 0);\r\n	display: flex;\r\n	justify-content: center;\r\n	align-items: center;\r\n	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);\r\n	cursor: pointer;\r\n}\r\n\r\n/* Positioning Buttons Around Attack Button -MicromeX */\r\n#MobileUI #f1Button {\r\n	top: 97%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #f2Button {\r\n	top: 78%;\r\n	left: 24%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #f3Button {\r\n	top: 56%;\r\n	left: 24%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #f4Button {\r\n	top: 37%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #f5Button {\r\n	top: 30%;\r\n	left: 57%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #f6Button {\r\n	top: 37%;\r\n	left: 80%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #f7Button {\r\n	top: 7%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #f8Button {\r\n	top: 7%;\r\n	left: 57%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #f9Button {\r\n	top: 7%;\r\n	left: 80%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n/* Positioning Buttons Around Attack Button -MicromeX */\r\n#MobileUI #n1Button {\r\n	top: 97%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #n2Button {\r\n	top: 78%;\r\n	left: 24%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #n3Button {\r\n	top: 56%;\r\n	left: 24%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #n4Button {\r\n	top: 37%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #n5Button {\r\n	top: 30%;\r\n	left: 57%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #n6Button {\r\n	top: 37%;\r\n	left: 80%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #n7Button {\r\n	top: 7%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #n8Button {\r\n	top: 7%;\r\n	left: 57%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #n9Button {\r\n	top: 7%;\r\n	left: 80%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n/* Positioning Buttons Around Attack Button -MicromeX */\r\n#MobileUI #qButton {\r\n	top: 97%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #wButton {\r\n	top: 78%;\r\n	left: 24%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #eButton {\r\n	top: 56%;\r\n	left: 24%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #rButton {\r\n	top: 37%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #tButton {\r\n	top: 30%;\r\n	left: 57%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #yButton {\r\n	top: 37%;\r\n	left: 80%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #uButton {\r\n	top: 7%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #iButton {\r\n	top: 7%;\r\n	left: 57%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #oButton {\r\n	top: 7%;\r\n	left: 80%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n/* Positioning Buttons Around Attack Button -MicromeX */\r\n#MobileUI #aButton {\r\n	top: 97%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #sButton {\r\n	top: 78%;\r\n	left: 24%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #dButton {\r\n	top: 56%;\r\n	left: 24%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #fButton {\r\n	top: 37%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #gButton {\r\n	top: 30%;\r\n	left: 57%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #hButton {\r\n	top: 37%;\r\n	left: 80%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #jButton {\r\n	top: 7%;\r\n	left: 35%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #kButton {\r\n	top: 7%;\r\n	left: 57%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n#MobileUI #lButton {\r\n	top: 7%;\r\n	left: 80%;\r\n	transform: translate(-50%, -50%);\r\n}\r\n/* Pickup Button (slightly below attackButton) -MicromeX */\r\n#MobileUI #attackButton {\r\n	bottom: -10%;\r\n	left: 60%;\r\n	transform: translate(-50%, 0);\r\n}\r\n/* Pickup Button (slightly below attackButton) -MicromeX */\r\n#MobileUI #pickupButton {\r\n	bottom: 10%;\r\n	left: 105%;\r\n	transform: translate(-50%, 0);\r\n}\r\n\r\n/* TalkToNpc Button (slightly below attackButton) -MicromeX */\r\n#MobileUI #talktonpcButton {\r\n	bottom: -23%;\r\n	left: 105%;\r\n	transform: translate(-50%, 0);\r\n}\r\n/* TalkToNpc Button (slightly below attackButton) -MicromeX */\r\n#MobileUI #switchshorcutButton {\r\n	bottom: 43%;\r\n	left: 105%;\r\n	transform: translate(-50%, 0);\r\n}\r\n\r\n/* Hover Effect for Buttons -MicromeX */\r\n#MobileUI #f1Button:active,\r\n#MobileUI #f2Button:active,\r\n#MobileUI #f3Button:active,\r\n#MobileUI #f4Button:active,\r\n#MobileUI #f5Button:active,\r\n#MobileUI #f6Button:active,\r\n#MobileUI #f7Button:active,\r\n#MobileUI #f8Button:active,\r\n#MobileUI #f9Button:active,\r\n#MobileUI #n1Button:active,\r\n#MobileUI #n2Button:active,\r\n#MobileUI #n3Button:active,\r\n#MobileUI #n4Button:active,\r\n#MobileUI #n5Button:active,\r\n#MobileUI #n6Button:active,\r\n#MobileUI #n7Button:active,\r\n#MobileUI #n8Button:active,\r\n#MobileUI #n9Button:active,\r\n#MobileUI #qButton:active,\r\n#MobileUI #wButton:active,\r\n#MobileUI #eButton:active,\r\n#MobileUI #rButton:active,\r\n#MobileUI #tButton:active,\r\n#MobileUI #yButton:active,\r\n#MobileUI #uButton:active,\r\n#MobileUI #iButton:active,\r\n#MobileUI #oButton:active,\r\n#MobileUI #aButton:active,\r\n#MobileUI #sButton:active,\r\n#MobileUI #dButton:active,\r\n#MobileUI #fButton:active,\r\n#MobileUI #gButton:active,\r\n#MobileUI #hButton:active,\r\n#MobileUI #jButton:active,\r\n#MobileUI #kButton:active,\r\n#MobileUI #lButton:active,\r\n#MobileUI #switchshorcutButton:active,\r\n#MobileUI #pickupButton:active {\r\n	background: linear-gradient(135deg, rgba(144, 238, 144, 0.5), rgba(193, 255, 193, 0.8));\r\n	border: 2px solid rgba(144, 238, 144, 0.8);\r\n	box-shadow: 0px 4px 8px rgba(144, 238, 144, 0.4);\r\n	border-radius: 50%;\r\n	animation: pulse 1.5s infinite;\r\n	transition:\r\n		background 0.3s ease,\r\n		box-shadow 0.3s ease,\r\n		transform 0.3s ease;\r\n}\r\n\r\n#MobileUI #talktonpcButton:active {\r\n	background: linear-gradient(135deg, rgba(144, 238, 144, 0.5), rgba(193, 255, 193, 0.8));\r\n	border: 2px solid rgba(144, 238, 144, 0.8);\r\n	box-shadow: 0px 4px 8px rgba(144, 238, 144, 0.4);\r\n	border-radius: 50%;\r\n	animation: pulse 1.5s infinite;\r\n	transition:\r\n		background 0.3s ease,\r\n		box-shadow 0.3s ease,\r\n		transform 0.3s ease;\r\n}\r\n\r\n#MobileUI #attackButton:active {\r\n	background-color: #4caf50;\r\n	box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);\r\n	border: 2px solid #388e3c;\r\n	transition:\r\n		transform 0.2s ease,\r\n		background-color 0.2s ease,\r\n		box-shadow 0.2s ease,\r\n		border 0.2s ease;\r\n}\r\n\r\n/* Joystick container -MicromeX */\r\n#MobileUI .joystick-container {\r\n	position: absolute;\r\n	bottom: 7%;\r\n	left: 10%;\r\n	width: 25vmin;\r\n	height: 25vmin;\r\n	z-index: 1000;\r\n}\r\n\r\n/* Joystick base -MicromeX */\r\n#MobileUI .joystick-base {\r\n	position: relative;\r\n	width: 100%;\r\n	height: 100%;\r\n	background: rgba(193, 193, 193, 0.33);\r\n	border-radius: 50%;\r\n	display: flex;\r\n	justify-content: center;\r\n	align-items: center;\r\n}\r\n\r\n/* Joystick thumb -MicromeX */\r\n#MobileUI .joystick-thumb {\r\n	position: absolute;\r\n	width: 10vmin;\r\n	height: 10vmin;\r\n	background: radial-gradient(circle, rgba(236, 240, 241, 1) 70%, rgba(189, 195, 199, 1) 100%);\r\n	border-radius: 50%;\r\n	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);\r\n	touch-action: none;\r\n	cursor: grab;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/MobileUI/MobileUI.js
+/**
+* Helper to get shadow root
+*/
+function _getRoot$16() {
+	return MobileUI._shadow || MobileUI._host;
+}
+/**
+* Helper to bind click+touchstart on an element
+*/
+function bindButton(root, selector, handler) {
+	const el = root.querySelector(selector);
+	if (el) {
+		el.addEventListener("click", handler);
+		el.addEventListener("touchstart", handler);
+	}
+}
 /**
 * Logs the key press to the console and performs the key press action.
 * @param {number} keyCode - The key code of the pressed key.
@@ -312103,73 +312340,98 @@ function keyPress(k) {
 * Toggles MobileUI button bars visibility (and thus buttons)
 */
 function toggleButtons() {
+	const root = _getRoot$16();
 	if (showButtons) {
-		MobileUI.ui.find("#topBar").addClass("disabled");
-		MobileUI.ui.find("#leftBar").addClass("disabled");
-		MobileUI.ui.find("#rightBar").addClass("disabled");
-		MobileUI.ui.find("#joystickContainer").addClass("disabled");
-		MobileUI.ui.find("#buttonContainer").addClass("disabled");
-		MobileUI.ui.find("#attackButton").addClass("disabled");
-		MobileUI.ui.find("#pickupButton").addClass("disabled");
-		MobileUI.ui.find("#talktonpcButton").addClass("disabled");
-		MobileUI.ui.find("#switchshorcutButton").addClass("disabled");
-		MobileUI.ui.find("#f1Button").addClass("disabled");
-		MobileUI.ui.find("#f2Button").addClass("disabled");
-		MobileUI.ui.find("#f3Button").addClass("disabled");
-		MobileUI.ui.find("#f4Button").addClass("disabled");
-		MobileUI.ui.find("#f5Button").addClass("disabled");
-		MobileUI.ui.find("#f5Button").addClass("disabled");
-		MobileUI.ui.find("#f7Button").addClass("disabled");
-		MobileUI.ui.find("#f8Button").addClass("disabled");
-		MobileUI.ui.find("#f9Button").addClass("disabled");
-		MobileUI.ui.find("#n1Button").addClass("disabled");
-		MobileUI.ui.find("#n2Button").addClass("disabled");
-		MobileUI.ui.find("#n3Button").addClass("disabled");
-		MobileUI.ui.find("#n4Button").addClass("disabled");
-		MobileUI.ui.find("#n5Button").addClass("disabled");
-		MobileUI.ui.find("#n6Button").addClass("disabled");
-		MobileUI.ui.find("#n7Button").addClass("disabled");
-		MobileUI.ui.find("#n8Button").addClass("disabled");
-		MobileUI.ui.find("#n9Button").addClass("disabled");
-		MobileUI.ui.find("#qButton").addClass("disabled");
-		MobileUI.ui.find("#wButton").addClass("disabled");
-		MobileUI.ui.find("#eButton").addClass("disabled");
-		MobileUI.ui.find("#rButton").addClass("disabled");
-		MobileUI.ui.find("#tButton").addClass("disabled");
-		MobileUI.ui.find("#yButton").addClass("disabled");
-		MobileUI.ui.find("#uButton").addClass("disabled");
-		MobileUI.ui.find("#iButton").addClass("disabled");
-		MobileUI.ui.find("#oButton").addClass("disabled");
-		MobileUI.ui.find("#aButton").addClass("disabled");
-		MobileUI.ui.find("#sButton").addClass("disabled");
-		MobileUI.ui.find("#dButton").addClass("disabled");
-		MobileUI.ui.find("#fButton").addClass("disabled");
-		MobileUI.ui.find("#gButton").addClass("disabled");
-		MobileUI.ui.find("#hButton").addClass("disabled");
-		MobileUI.ui.find("#jButton").addClass("disabled");
-		MobileUI.ui.find("#kButton").addClass("disabled");
-		MobileUI.ui.find("#lButton").addClass("disabled");
+		[
+			"#topBar",
+			"#leftBar",
+			"#rightBar",
+			"#joystickContainer",
+			"#buttonContainer",
+			"#attackButton",
+			"#pickupButton",
+			"#talktonpcButton",
+			"#switchshorcutButton"
+		].forEach((sel) => {
+			const el = root.querySelector(sel);
+			if (el) el.classList.add("disabled");
+		});
+		for (let i = 1; i <= 9; i++) {
+			const fBtn = root.querySelector(`#f${i}Button`);
+			if (fBtn) fBtn.classList.add("disabled");
+		}
+		[
+			"n",
+			"q",
+			"w",
+			"e",
+			"r",
+			"t",
+			"y",
+			"u",
+			"i",
+			"o",
+			"a",
+			"s",
+			"d",
+			"f",
+			"g",
+			"h",
+			"j",
+			"k",
+			"l"
+		].forEach((key) => {
+			const btn = root.querySelector(`#${key}Button`) || root.querySelector(`#${key}${key === "n" ? "" : "B"}utton`);
+			if (btn) btn.classList.add("disabled");
+		});
+		for (let i = 1; i <= 9; i++) {
+			const nBtn = root.querySelector(`#n${i}Button`);
+			if (nBtn) nBtn.classList.add("disabled");
+		}
+		[
+			"q",
+			"w",
+			"e",
+			"r",
+			"t",
+			"y",
+			"u",
+			"i",
+			"o",
+			"a",
+			"s",
+			"d",
+			"f",
+			"g",
+			"h",
+			"j",
+			"k",
+			"l"
+		].forEach((key) => {
+			const btn = root.querySelector(`#${key}Button`);
+			if (btn) btn.classList.add("disabled");
+		});
 		if (SessionStorage_default.TouchTargeting) toggleTouchTargeting();
 		showButtons = false;
 	} else {
-		MobileUI.ui.find("#topBar").removeClass("disabled");
-		MobileUI.ui.find("#leftBar").removeClass("disabled");
-		MobileUI.ui.find("#rightBar").removeClass("disabled");
-		MobileUI.ui.find("#joystickContainer").removeClass("disabled");
-		MobileUI.ui.find("#buttonContainer").removeClass("disabled");
-		MobileUI.ui.find("#attackButton").removeClass("disabled");
-		MobileUI.ui.find("#pickupButton").removeClass("disabled");
-		MobileUI.ui.find("#talktonpcButton").removeClass("disabled");
-		MobileUI.ui.find("#switchshorcutButton").removeClass("disabled");
-		MobileUI.ui.find("#f1Button").removeClass("disabled");
-		MobileUI.ui.find("#f2Button").removeClass("disabled");
-		MobileUI.ui.find("#f3Button").removeClass("disabled");
-		MobileUI.ui.find("#f4Button").removeClass("disabled");
-		MobileUI.ui.find("#f5Button").removeClass("disabled");
-		MobileUI.ui.find("#f6Button").removeClass("disabled");
-		MobileUI.ui.find("#f7Button").removeClass("disabled");
-		MobileUI.ui.find("#f8Button").removeClass("disabled");
-		MobileUI.ui.find("#f9Button").removeClass("disabled");
+		[
+			"#topBar",
+			"#leftBar",
+			"#rightBar",
+			"#joystickContainer",
+			"#buttonContainer",
+			"#attackButton",
+			"#pickupButton",
+			"#talktonpcButton",
+			"#switchshorcutButton"
+		].forEach((sel) => {
+			const el = root.querySelector(sel);
+			if (el) el.classList.remove("disabled");
+		});
+		for (let i = 1; i <= 9; i++) {
+			const fBtn = root.querySelector(`#f${i}Button`);
+			if (fBtn) fBtn.classList.remove("disabled");
+		}
 		showButtons = true;
 	}
 }
@@ -312177,6 +312439,7 @@ function toggleButtons() {
 * Toggles switch skill
 */
 function switchSkillButtons() {
+	const root = _getRoot$16();
 	const skillSets = [
 		[
 			"#f1Button",
@@ -312224,11 +312487,13 @@ function switchSkillButtons() {
 		]
 	];
 	const nextSetIndex = ((switchSkillButtons.currentSetIndex || 0) + 1) % skillSets.length;
-	skillSets.flat().forEach((button) => {
-		MobileUI.ui.find(button).addClass("disabled");
+	skillSets.flat().forEach((selector) => {
+		const el = root.querySelector(selector);
+		if (el) el.classList.add("disabled");
 	});
-	skillSets[nextSetIndex].forEach((button) => {
-		MobileUI.ui.find(button).removeClass("disabled");
+	skillSets[nextSetIndex].forEach((selector) => {
+		const el = root.querySelector(selector);
+		if (el) el.classList.remove("disabled");
 	});
 	switchSkillButtons.currentSetIndex = nextSetIndex;
 }
@@ -312236,22 +312501,24 @@ function switchSkillButtons() {
 * Toggles status view
 */
 function toggleStatus() {
-	jquery_default("#StatusIcons").toggle();
+	const statusIcons = document.querySelector("#StatusIcons");
+	if (statusIcons) statusIcons.style.display = statusIcons.style.display === "none" ? "" : "none";
 }
 /**
 * Toggles touch targeting
 */
 function toggleTouchTargeting() {
+	const root = _getRoot$16();
 	if (SessionStorage_default.TouchTargeting) {
-		MobileUI.ui.find("#toggleTargetingButton").removeClass("active");
-		MobileUI.ui.find("#toggleAutoFollowButton").addClass("disabled");
-		MobileUI.ui.find("#toggleAutoTargetButton").addClass("disabled");
+		root.querySelector("#toggleTargetingButton").classList.remove("active");
+		root.querySelector("#toggleAutoFollowButton").classList.add("disabled");
+		root.querySelector("#toggleAutoTargetButton").classList.add("disabled");
 		if (SessionStorage_default.AutoTargeting) toggleAutoTargeting();
 		SessionStorage_default.TouchTargeting = false;
 	} else {
-		MobileUI.ui.find("#toggleTargetingButton").addClass("active");
-		MobileUI.ui.find("#toggleAutoFollowButton").removeClass("disabled");
-		MobileUI.ui.find("#toggleAutoTargetButton").removeClass("disabled");
+		root.querySelector("#toggleTargetingButton").classList.add("active");
+		root.querySelector("#toggleAutoFollowButton").classList.remove("disabled");
+		root.querySelector("#toggleAutoTargetButton").classList.remove("disabled");
 		SessionStorage_default.TouchTargeting = true;
 	}
 }
@@ -312259,11 +312526,12 @@ function toggleTouchTargeting() {
 * Toggles automatic targeting
 */
 function toggleAutoTargeting() {
+	const root = _getRoot$16();
 	if (SessionStorage_default.AutoTargeting) {
-		MobileUI.ui.find("#toggleAutoTargetButton").removeClass("active");
+		root.querySelector("#toggleAutoTargetButton").classList.remove("active");
 		SessionStorage_default.AutoTargeting = false;
 	} else {
-		MobileUI.ui.find("#toggleAutoTargetButton").addClass("active");
+		root.querySelector("#toggleAutoTargetButton").classList.add("active");
 		SessionStorage_default.AutoTargeting = true;
 		autoTarget();
 	}
@@ -312272,13 +312540,14 @@ function toggleAutoTargeting() {
 * Toggles auto follow
 */
 function toggleAutoFollow() {
+	const root = _getRoot$16();
 	if (SessionStorage_default.autoFollow) {
-		MobileUI.ui.find("#toggleAutoFollowButton").removeClass("active");
+		root.querySelector("#toggleAutoFollowButton").classList.remove("active");
 		SessionStorage_default.autoFollow = false;
 	} else {
 		const entityFocus = EntityManager.getFocusEntity();
 		if (entityFocus) {
-			MobileUI.ui.find("#toggleAutoFollowButton").addClass("active");
+			root.querySelector("#toggleAutoFollowButton").classList.add("active");
 			SessionStorage_default.autoFollow = true;
 			SessionStorage_default.autoFollowTarget = entityFocus;
 			onAutoFollow$1();
@@ -312354,6 +312623,7 @@ function stopPropagation$9(event) {
 * Auto follow logic
 */
 function onAutoFollow$1() {
+	const root = _getRoot$16();
 	if (SessionStorage_default.autoFollow) {
 		const player = SessionStorage_default.Entity;
 		const target = SessionStorage_default.autoFollowTarget;
@@ -312370,7 +312640,7 @@ function onAutoFollow$1() {
 			}
 		}
 		Events.setTimeout(onAutoFollow$1, 500);
-	} else MobileUI.ui.find("#toggleAutoFollowButton").removeClass("active");
+	} else root.querySelector("#toggleAutoFollowButton").classList.remove("active");
 }
 /**
 * Picks up the nearest item - MicromeX
@@ -312404,17 +312674,17 @@ function pickUpItem() {
 * Joystick handling for both mouse and touch input - MicromeX
 */
 function setupJoystick() {
-	const joystickBase = document.getElementById("joystickBase");
-	const joystickThumb = document.getElementById("joystickThumb");
-	maxDistance = joystickBase.offsetWidth / 2;
-	joystickThumb.addEventListener("mousedown", startDrag);
-	joystickThumb.addEventListener("touchstart", startDrag);
+	const root = _getRoot$16();
+	_joystickBase = root.querySelector("#joystickBase");
+	_joystickThumb = root.querySelector("#joystickThumb");
+	maxDistance = _joystickBase.offsetWidth / 2;
+	_joystickThumb.addEventListener("mousedown", startDrag);
+	_joystickThumb.addEventListener("touchstart", startDrag);
 }
 function startDrag(event) {
 	event.preventDefault();
-	const joystickBase = document.getElementById("joystickBase");
 	const touch = event.touches ? event.touches[0] : event;
-	const rect = joystickBase.getBoundingClientRect();
+	const rect = _joystickBase.getBoundingClientRect();
 	centerX = rect.left + rect.width / 2;
 	centerY = rect.top + rect.height / 2;
 	document.addEventListener("mousemove", moveJoystick);
@@ -312425,7 +312695,6 @@ function startDrag(event) {
 	startMovement();
 }
 function moveJoystick(event) {
-	const joystickThumb = document.getElementById("joystickThumb");
 	const deadZone = 15;
 	const touch = event.touches ? event.touches[0] : event;
 	const deltaX = touch.clientX - centerX;
@@ -312434,7 +312703,7 @@ function moveJoystick(event) {
 	const angle = Math.atan2(deltaY, deltaX);
 	const offsetX = Math.cos(angle) * distance;
 	const offsetY = Math.sin(angle) * distance;
-	joystickThumb.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+	_joystickThumb.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 	if (distance < deadZone) {
 		normalizedX = 0;
 		normalizedY = 0;
@@ -312444,8 +312713,7 @@ function moveJoystick(event) {
 	normalizedY = -offsetY / maxDistance;
 }
 function stopDrag() {
-	const joystickThumb = document.getElementById("joystickThumb");
-	joystickThumb.style.transform = "translate(0, 0)";
+	_joystickThumb.style.transform = "translate(0, 0)";
 	normalizedX = 0;
 	normalizedY = 0;
 	stopMovement();
@@ -312474,7 +312742,6 @@ function stopMovement() {
 * @param {number} x - Normalized x-axis input (-1 to 1)
 * @param {number} y - Normalized y-axis input (-1 to 1)
 * @param {number} tileSize - The size of each tile in the game world
-* @returns {Promise} Resolves when the character finishes moving
 */
 function moveCharacter(x, y, tileSize) {
 	const player = SessionStorage_default.Entity;
@@ -312503,7 +312770,7 @@ function moveCharacter(x, y, tileSize) {
 * Talk to NPC Button Function - MicromeX
 */
 function setupTalkToNpcButton() {
-	const talkButton = document.getElementById("talktonpcButton");
+	const talkButton = _getRoot$16().querySelector("#talktonpcButton");
 	function findNearestNpc() {
 		const player = SessionStorage_default.Entity;
 		if (!player) return null;
@@ -312560,8 +312827,8 @@ function checkFreeCell$2(x, y, range, out) {
 function isFreeCell$2(x, y) {
 	if (!(Altitude.getCellType(x, y) & Altitude.TYPE.WALKABLE)) return false;
 	let free = true;
-	EntityManager.forEach(function(entity) {
-		if (entity.objecttype != entity.constructor.TYPE_EFFECT && entity.objecttype != entity.constructor.TYPE_UNIT && entity.objecttype != entity.constructor.TYPE_TRAP && Math.round(entity.position[0]) === x && Math.round(entity.position[1]) === y) {
+	EntityManager.forEach((entity) => {
+		if (entity.objecttype !== entity.constructor.TYPE_EFFECT && entity.objecttype !== entity.constructor.TYPE_UNIT && entity.objecttype !== entity.constructor.TYPE_TRAP && Math.round(entity.position[0]) === x && Math.round(entity.position[1]) === y) {
 			free = false;
 			return false;
 		}
@@ -312569,12 +312836,11 @@ function isFreeCell$2(x, y) {
 	});
 	return free;
 }
-var vec2, mat2, direction, rotate, targetPos, movementTimer, MobileUI, _preferences$22, showButtons, C_AUTOTARGET_DELAY, centerX, centerY, maxDistance, normalizedX, normalizedY, MobileUI_default;
+var vec2, mat2, direction, rotate, targetPos, movementTimer, MobileUI, _preferences$22, showButtons, C_AUTOTARGET_DELAY, centerX, centerY, maxDistance, normalizedX, normalizedY, _joystickBase, _joystickThumb, MobileUI_default;
 var init_MobileUI = __esmMin((() => {
-	init_jquery();
 	init_Context();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
 	init_Preferences$1();
 	init_SessionStorage();
 	init_Renderer();
@@ -312596,7 +312862,8 @@ var init_MobileUI = __esmMin((() => {
 	rotate = mat2.create();
 	targetPos = [0, 0];
 	movementTimer = null;
-	MobileUI = new UIComponent("MobileUI", MobileUI_default$2, MobileUI_default$1);
+	MobileUI = new GUIComponent("MobileUI", MobileUI_default$1);
+	MobileUI.render = () => MobileUI_default$2;
 	_preferences$22 = Preferences.get("MobileUI", {
 		x: 0,
 		y: 0,
@@ -312610,219 +312877,124 @@ var init_MobileUI = __esmMin((() => {
 	maxDistance = 0;
 	normalizedX = 0;
 	normalizedY = 0;
+	_joystickBase = null;
+	_joystickThumb = null;
 	/**
 	* Initialize UI
 	*/
 	MobileUI.init = function init() {
-		this.ui.find("#toggleUIButton").on("click touchstart", function(e) {
+		const root = _getRoot$16();
+		bindButton(root, "#toggleUIButton", (e) => {
 			toggleButtons();
 			stopPropagation$9(e);
 		});
-		this.ui.find("#fullscreenButton").on("click touchstart", function(e) {
+		bindButton(root, "#fullscreenButton", (e) => {
 			toggleFullScreen();
 			stopPropagation$9(e);
 		});
-		this.ui.find("#f1Button").on("click touchstart", function(e) {
-			logKeyPress(112);
-			stopPropagation$9(e);
+		const fKeyMap = [
+			["#f1Button", 112],
+			["#f2Button", 113],
+			["#f3Button", 114],
+			["#f4Button", 115],
+			["#f5Button", 116],
+			["#f6Button", 117],
+			["#f7Button", 118],
+			["#f8Button", 119],
+			["#f9Button", 120]
+		];
+		const nKeyMap = [
+			["#n1Button", 49],
+			["#n2Button", 50],
+			["#n3Button", 51],
+			["#n4Button", 52],
+			["#n5Button", 53],
+			["#n6Button", 54],
+			["#n7Button", 55],
+			["#n8Button", 56],
+			["#n9Button", 57]
+		];
+		const letterKeyMap = [
+			["#qButton", 81],
+			["#wButton", 87],
+			["#eButton", 69],
+			["#rButton", 82],
+			["#tButton", 84],
+			["#yButton", 89],
+			["#uButton", 85],
+			["#iButton", 73],
+			["#oButton", 89],
+			["#aButton", 65],
+			["#sButton", 83],
+			["#dButton", 68],
+			["#fButton", 70],
+			["#gButton", 71],
+			["#hButton", 72],
+			["#jButton", 74],
+			["#kButton", 75],
+			["#lButton", 76]
+		];
+		[
+			...fKeyMap,
+			...nKeyMap,
+			...letterKeyMap
+		].forEach(([selector, keyCode]) => {
+			bindButton(root, selector, (e) => {
+				logKeyPress(keyCode);
+				stopPropagation$9(e);
+			});
 		});
-		this.ui.find("#f2Button").on("click touchstart", function(e) {
-			logKeyPress(113);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#f3Button").on("click touchstart", function(e) {
-			logKeyPress(114);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#f4Button").on("click touchstart", function(e) {
-			logKeyPress(115);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#f5Button").on("click touchstart", function(e) {
-			logKeyPress(116);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#f6Button").on("click touchstart", function(e) {
-			logKeyPress(117);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#f7Button").on("click touchstart", function(e) {
-			logKeyPress(118);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#f8Button").on("click touchstart", function(e) {
-			logKeyPress(119);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#f9Button").on("click touchstart", function(e) {
-			logKeyPress(120);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#n1Button").on("click touchstart", function(e) {
-			logKeyPress(49);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#n2Button").on("click touchstart", function(e) {
-			logKeyPress(50);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#n3Button").on("click touchstart", function(e) {
-			logKeyPress(51);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#n4Button").on("click touchstart", function(e) {
-			logKeyPress(52);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#n5Button").on("click touchstart", function(e) {
-			logKeyPress(53);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#n6Button").on("click touchstart", function(e) {
-			logKeyPress(54);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#n7Button").on("click touchstart", function(e) {
-			logKeyPress(55);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#n8Button").on("click touchstart", function(e) {
-			logKeyPress(56);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#n9Button").on("click touchstart", function(e) {
-			logKeyPress(57);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#qButton").on("click touchstart", function(e) {
-			logKeyPress(81);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#wButton").on("click touchstart", function(e) {
-			logKeyPress(87);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#eButton").on("click touchstart", function(e) {
-			logKeyPress(69);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#rButton").on("click touchstart", function(e) {
-			logKeyPress(82);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#tButton").on("click touchstart", function(e) {
-			logKeyPress(84);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#yButton").on("click touchstart", function(e) {
-			logKeyPress(89);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#uButton").on("click touchstart", function(e) {
-			logKeyPress(85);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#iButton").on("click touchstart", function(e) {
-			logKeyPress(73);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#oButton").on("click touchstart", function(e) {
-			logKeyPress(89);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#aButton").on("click touchstart", function(e) {
-			logKeyPress(65);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#sButton").on("click touchstart", function(e) {
-			logKeyPress(83);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#dButton").on("click touchstart", function(e) {
-			logKeyPress(68);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#fButton").on("click touchstart", function(e) {
-			logKeyPress(70);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#gButton").on("click touchstart", function(e) {
-			logKeyPress(71);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#hButton").on("click touchstart", function(e) {
-			logKeyPress(72);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#jButton").on("click touchstart", function(e) {
-			logKeyPress(74);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#kButton").on("click touchstart", function(e) {
-			logKeyPress(75);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#lButton").on("click touchstart", function(e) {
-			logKeyPress(76);
-			stopPropagation$9(e);
-		});
-		this.ui.find("#f10Button").on("click touchstart", function(e) {
+		bindButton(root, "#f10Button", (e) => {
 			logKeyPress(121);
 			stopPropagation$9(e);
 		});
-		this.ui.find("#f12Button").on("click touchstart", function(e) {
+		bindButton(root, "#f12Button", (e) => {
 			logKeyPress(123);
 			stopPropagation$9(e);
 		});
-		this.ui.find("#insButton").on("click touchstart", function(e) {
+		bindButton(root, "#insButton", (e) => {
 			logKeyPress(45);
 			stopPropagation$9(e);
 		});
-		this.ui.find("#toggleStatusButton").on("click touchstart", function(e) {
+		bindButton(root, "#toggleStatusButton", (e) => {
 			toggleStatus();
 			stopPropagation$9(e);
 		});
-		this.ui.find("#toggleTargetingButton").on("click touchstart", function(e) {
+		bindButton(root, "#toggleTargetingButton", (e) => {
 			toggleTouchTargeting();
 			stopPropagation$9(e);
 		});
-		this.ui.find("#toggleAutoFollowButton").on("click touchstart", function(e) {
+		bindButton(root, "#toggleAutoFollowButton", (e) => {
 			toggleAutoFollow();
 			stopPropagation$9(e);
 		});
-		this.ui.find("#toggleAutoTargetButton").on("click touchstart", function(e) {
+		bindButton(root, "#toggleAutoTargetButton", (e) => {
 			toggleAutoTargeting();
 			stopPropagation$9(e);
 		});
-		this.ui.find("#attackButton").on("click touchstart", function(e) {
+		bindButton(root, "#attackButton", (e) => {
 			attackTargeted();
 			stopPropagation$9(e);
 		});
-		this.ui.find("#pickupButton").on("click touchstart", function(e) {
+		bindButton(root, "#pickupButton", (e) => {
 			pickUpItem();
 			stopPropagation$9(e);
 		});
-		this.ui.find("#switchshorcutButton").on("click touchstart", function(e) {
+		bindButton(root, "#switchshorcutButton", (e) => {
 			switchSkillButtons();
 			stopPropagation$9(e);
 		});
-		this.ui.find(".buttons").on("mousedown", function(e) {
-			jquery_default(e.target).addClass("pressed");
-		}).on("touchstart", function(e) {
-			jquery_default(e.target).addClass("pressed");
-		}).on("mouseup", function(e) {
-			jquery_default(e.target).removeClass("pressed");
-		}).on("touchend", function(e) {
-			jquery_default(e.target).removeClass("pressed");
+		root.querySelectorAll(".buttons").forEach((btn) => {
+			btn.addEventListener("mousedown", (e) => e.target.classList.add("pressed"));
+			btn.addEventListener("touchstart", (e) => e.target.classList.add("pressed"));
+			btn.addEventListener("mouseup", (e) => e.target.classList.remove("pressed"));
+			btn.addEventListener("touchend", (e) => e.target.classList.remove("pressed"));
 		});
-		this.ui.find(".FButton").on("mousedown", function(e) {
-			jquery_default(e.target).addClass("pressed");
-		}).on("touchstart", function(e) {
-			jquery_default(e.target).addClass("pressed");
-		}).on("mouseup", function(e) {
-			jquery_default(e.target).removeClass("pressed");
-		}).on("touchend", function(e) {
-			jquery_default(e.target).removeClass("pressed");
+		root.querySelectorAll(".FButton").forEach((btn) => {
+			btn.addEventListener("mousedown", (e) => e.target.classList.add("pressed"));
+			btn.addEventListener("touchstart", (e) => e.target.classList.add("pressed"));
+			btn.addEventListener("mouseup", (e) => e.target.classList.remove("pressed"));
+			btn.addEventListener("touchend", (e) => e.target.classList.remove("pressed"));
 		});
 		setupJoystick();
 		setupTalkToNpcButton();
@@ -312831,15 +313003,11 @@ var init_MobileUI = __esmMin((() => {
 	* Apply preferences once append to body
 	*/
 	MobileUI.onAppend = function onAppend() {
-		if (SessionStorage_default.isTouchDevice) this.ui.show();
-		else this.ui.hide();
-		this.ui.css({
-			top: 0,
-			left: 0,
-			zIndex: 1e3,
-			width: Renderer.width,
-			height: Renderer.height
-		});
+		if (SessionStorage_default.isTouchDevice) this._host.style.display = "block";
+		else this._host.style.display = "none";
+		this._host.style.top = "0px";
+		this._host.style.left = "0px";
+		this._host.style.zIndex = "1000";
 	};
 	/**
 	* Process shortcut
@@ -312882,7 +313050,7 @@ var init_MobileUI = __esmMin((() => {
 	* Shows MobileUI
 	*/
 	MobileUI.show = function show() {
-		this.ui.show();
+		this._host.style.display = "block";
 	};
 	MobileUI_default = UIManager.addComponent(MobileUI);
 }));
@@ -315136,7 +315304,7 @@ var init_Vending$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Vending/Vending.js
-function _getRoot$5() {
+function _getRoot$15() {
 	return Vending._shadow || Vending._host;
 }
 function escapeHtml(text) {
@@ -315203,7 +315371,7 @@ function addItem$1(content, item, isinput) {
 		container.innerHTML = `<div class="item output" draggable="true" data-index="${item.index}"><div class="icon"></div><div class="amount">${amountText}</div>` + eaHtml + `<div class="name">${escapeHtml(DB.getItemName(item))}</div><div class="price">${textPrice} ${price}</div></div>`;
 		itemObj = container;
 		if (_type$3 === Vending.Type.BUYING_STORE) {
-			const limitInput = _getRoot$5().querySelector(".limitZeny");
+			const limitInput = _getRoot$15().querySelector(".limitZeny");
 			let limit = parseInt(limitInput.value, 10);
 			limit += item.count * item.price;
 			limitInput.value = limit;
@@ -315274,7 +315442,7 @@ function onDrop$5(event) {
 		return;
 	}
 	if (data.type !== "item" || data.from !== "Vending" || data.container === this.className) return;
-	const fromContent = _getRoot$5().querySelector(`.${data.container} .content`);
+	const fromContent = _getRoot$15().querySelector(`.${data.container} .content`);
 	const toContent = this.querySelector(".content");
 	requestMoveItem$1(data.index, fromContent, toContent, this.className === "OutputWindow");
 }
@@ -315293,7 +315461,7 @@ function onItemInfo$11(event) {
 }
 function onItemSelected$1() {
 	if (_type$3 === Vending.Type.BUY || _type$3 === Vending.Type.VENDING_STORE) return;
-	const root = _getRoot$5();
+	const root = _getRoot$15();
 	const inputWin = root.querySelector(".InputWindow");
 	let from, to;
 	if (inputWin.contains(this)) {
@@ -315306,7 +315474,7 @@ function onItemSelected$1() {
 	requestMoveItem$1(parseInt(this.getAttribute("data-index"), 10), from.querySelector(".content"), to.querySelector(".content"), from === inputWin);
 }
 function onItemFocus$1() {
-	_getRoot$5().querySelectorAll(".item.selected").forEach((el) => el.classList.remove("selected"));
+	_getRoot$15().querySelectorAll(".item.selected").forEach((el) => el.classList.remove("selected"));
 	this.classList.add("selected");
 }
 function onScroll$4(event) {
@@ -315319,7 +315487,7 @@ function onScroll$4(event) {
 	event.preventDefault();
 }
 function onDragStart$1(event) {
-	const root = _getRoot$5();
+	const root = _getRoot$15();
 	const inputWin = root.querySelector(".InputWindow");
 	const outputWin = root.querySelector(".OutputWindow");
 	const container = (inputWin.contains(this) ? inputWin : outputWin).className;
@@ -315336,7 +315504,7 @@ function onDragStart$1(event) {
 	}));
 }
 function onResizeInput() {
-	const inputWin = _getRoot$5().querySelector(".InputWindow");
+	const inputWin = _getRoot$15().querySelector(".InputWindow");
 	const content = inputWin.querySelector(".container .content");
 	const top = inputWin.offsetTop;
 	let lastHeight = 0;
@@ -315371,14 +315539,14 @@ function onItemOver$8() {
 	const idx = parseInt(this.getAttribute("data-index"), 10);
 	const item = _type$3 === Vending.Type.VENDING_STORE ? CartItems_default.getItemByIndex(idx) : InventoryController.getUI().getItemByIndex(idx);
 	if (!item) return;
-	const overlay = _getRoot$5().querySelector(".overlay");
+	const overlay = _getRoot$15().querySelector(".overlay");
 	overlay.style.display = "";
 	overlay.style.top = `${this.offsetTop - 20}px`;
 	overlay.style.left = `${this.offsetLeft - 10}px`;
 	overlay.textContent = `${DB.getItemName(item)} ${item.count || 1} ea`;
 }
 function onItemOut$9() {
-	const overlay = _getRoot$5().querySelector(".overlay");
+	const overlay = _getRoot$15().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 var Vending, _preferences$21, _input$1, _output$1, _slots$4, _type$3, transferItem$1, Vending_default;
@@ -315429,7 +315597,7 @@ var init_Vending = __esmMin((() => {
 	_slots$4 = 0;
 	Vending.captureKeyEvents = true;
 	Vending.init = function init() {
-		const root = _getRoot$5();
+		const root = _getRoot$15();
 		const sellBtn = root.querySelector(".btn.sell");
 		if (sellBtn) {
 			sellBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
@@ -315519,7 +315687,7 @@ var init_Vending = __esmMin((() => {
 		});
 	};
 	Vending.onAppend = function onAppend() {
-		const root = _getRoot$5();
+		const root = _getRoot$15();
 		const inputWin = root.querySelector(".InputWindow");
 		const outputWin = root.querySelector(".OutputWindow");
 		const inputContent = inputWin.querySelector(".content");
@@ -315533,7 +315701,7 @@ var init_Vending = __esmMin((() => {
 		this._host.style.display = "none";
 	};
 	Vending.setType = function setType(type) {
-		const root = _getRoot$5();
+		const root = _getRoot$15();
 		const winBuyEls = root.querySelectorAll(".WinBuy");
 		const winSellEls = root.querySelectorAll(".WinSell");
 		switch (type) {
@@ -315561,7 +315729,7 @@ var init_Vending = __esmMin((() => {
 	};
 	Vending.onRemove = function onRemove() {
 		VendingModelMessage_default.onRemove();
-		const root = _getRoot$5();
+		const root = _getRoot$15();
 		const inputWin = root.querySelector(".InputWindow");
 		const outputWin = root.querySelector(".OutputWindow");
 		_input$1.length = 0;
@@ -315594,7 +315762,7 @@ var init_Vending = __esmMin((() => {
 		return true;
 	};
 	Vending.setList = function setList(items) {
-		const root = _getRoot$5();
+		const root = _getRoot$15();
 		root.querySelectorAll(".content").forEach((el) => {
 			el.innerHTML = "";
 		});
@@ -315641,7 +315809,7 @@ var init_Vending = __esmMin((() => {
 		if (Vending.isOpen) return;
 		_slots$4 = pkt.itemcount;
 		this.setList(CartItems_default.list);
-		const root = _getRoot$5();
+		const root = _getRoot$15();
 		root.querySelector(".add_shop").style.height = `${32 * _slots$4}px`;
 		root.querySelector(".shopname").value = "";
 		this._host.style.display = "";
@@ -315657,7 +315825,7 @@ var init_Vending = __esmMin((() => {
 			if (isItemStackable(item) && DB.isBuyable(item.ITID)) buyable.push(item);
 		}
 		this.setList(buyable);
-		const root = _getRoot$5();
+		const root = _getRoot$15();
 		root.querySelector(".add_shop").style.height = `${32 * _slots$4}px`;
 		root.querySelector(".shopname").value = "";
 		this._host.style.display = "";
@@ -315671,7 +315839,7 @@ var init_Vending = __esmMin((() => {
 	Vending.onSubmit = function onSubmit() {
 		const output = [];
 		const count = _output$1.length;
-		const root = _getRoot$5();
+		const root = _getRoot$15();
 		const shopname = root.querySelector(".shopname").value;
 		let limitZeny;
 		let ctr = 0;
@@ -316965,7 +317133,7 @@ var init_ShortCuts$1 = __esmMin((() => {
 /**
 * Helper to get the shadow root
 */
-function _getRoot$4() {
+function _getRoot$14() {
 	return ShortCuts._shadow || ShortCuts._host;
 }
 /**
@@ -316991,7 +317159,7 @@ function executeFlag(value) {
 	Network.sendPacket(pkt);
 }
 function loadValuesAlt() {
-	const root = _getRoot$4();
+	const root = _getRoot$14();
 	const length = Object.keys(_MACRO_INIT).length - 3;
 	for (let index = 0; index < length; index++) {
 		const element = _MACRO_INIT[`Num_${index}`];
@@ -317000,7 +317168,7 @@ function loadValuesAlt() {
 	}
 }
 function addValuesAlt() {
-	_getRoot$4().querySelectorAll(".macro input").forEach((input) => {
+	_getRoot$14().querySelectorAll(".macro input").forEach((input) => {
 		input.addEventListener("blur", () => {
 			const index = input.id.split("macro_")[1];
 			_MACRO_INIT[`Num_${index}`] = input.value;
@@ -317103,7 +317271,7 @@ var init_ShortCuts = __esmMin((() => {
 	* Initialize UI
 	*/
 	ShortCuts.init = function init() {
-		const root = _getRoot$4();
+		const root = _getRoot$14();
 		root.querySelectorAll(".footer button").forEach((btn) => {
 			btn.addEventListener("mousedown", () => {
 				if (btn.classList.contains("emoticons")) Emoticons_default.onShortCut({ cmd: "TOGGLE" });
@@ -317142,7 +317310,7 @@ var init_ShortCuts = __esmMin((() => {
 	* Remove ShortCuts from window (and so clean up items)
 	*/
 	ShortCuts.onRemove = function onRemove() {
-		const content = _getRoot$4().querySelector(".container .content");
+		const content = _getRoot$14().querySelector(".container .content");
 		if (content) content.innerHTML = "";
 		this.list.length = 0;
 		document.querySelectorAll(".ItemInfo").forEach((el) => el.remove());
@@ -317171,7 +317339,7 @@ var init_ShortCuts = __esmMin((() => {
 					this._host.style.display = "";
 					this._fixPositionOverflow();
 				} else this._host.style.display = "none";
-				_getRoot$4().querySelectorAll(".macro_").forEach((el) => el.classList.remove("input_macro_focus"));
+				_getRoot$14().querySelectorAll(".macro_").forEach((el) => el.classList.remove("input_macro_focus"));
 				if (this._host.style.display !== "none") this.focus();
 				break;
 			case "EXECUTE_MACRO_1":
@@ -317242,7 +317410,7 @@ var init_ShortCuts = __esmMin((() => {
 	ShortCuts.resize = function resize(width, height) {
 		width = Math.min(Math.max(width, 6), 9);
 		height = Math.min(Math.max(height, 2), 6);
-		const content = _getRoot$4().querySelector(".container .content");
+		const content = _getRoot$14().querySelector(".container .content");
 		if (content) {
 			content.style.width = `${width * 32 + 13}px`;
 			content.style.height = `${height * 32}px`;
@@ -317269,7 +317437,7 @@ var init_StatusIcons$1 = __esmMin((() => {
 /**
 * Helper to get the shadow root
 */
-function _getRoot$3() {
+function _getRoot$13() {
 	return StatusIcons._shadow || StatusIcons._host;
 }
 function addResizedStatusIcon(img, index) {
@@ -317305,7 +317473,7 @@ function addResizedStatusIcon(img, index) {
 * Used when one element is removed.
 */
 function resetElementsPosition() {
-	const elements = _getRoot$3().querySelectorAll(".state");
+	const elements = _getRoot$13().querySelectorAll(".state");
 	const count = elements.length;
 	let x = 0;
 	let y = 0;
@@ -317372,7 +317540,7 @@ function createElement(index) {
 * @param {CanvasElement}
 */
 function addElement$4(element) {
-	const root = _getRoot$3();
+	const root = _getRoot$13();
 	const elements = root.querySelectorAll(".state");
 	const max = (Renderer.height - 166) / 36 | 0;
 	const count = elements.length;
@@ -317473,7 +317641,7 @@ var init_StatusIcons = __esmMin((() => {
 	* Clean up component
 	*/
 	StatusIcons.clean = function clean() {
-		const container = _getRoot$3().querySelector("#StatusIcons");
+		const container = _getRoot$13().querySelector("#StatusIcons");
 		if (container) container.innerHTML = "";
 		_status = {};
 		ScreenEffectManager.clean();
@@ -321016,7 +321184,7 @@ var init_PvPTimer$1 = __esmMin((() => {
 /**
 * Helper to get the shadow root
 */
-function _getRoot$2() {
+function _getRoot$12() {
 	return PvPTimer._shadow || PvPTimer._host;
 }
 /**
@@ -321131,7 +321299,7 @@ var init_PvPTimer = __esmMin((() => {
 			_timeAtkAct = aAct;
 			_timeAtkSpr = aSpr;
 		});
-		const root = _getRoot$2();
+		const root = _getRoot$12();
 		_timerCanvas = root.querySelector(".pvp-timer-canvas");
 		_taCanvas = root.querySelector(".pvp-timeattack-canvas");
 		if (!_timerCanvas || !_taCanvas) return;
@@ -321191,7 +321359,7 @@ var init_PvPCount$1 = __esmMin((() => {
 /**
 * Helper to get the shadow root
 */
-function _getRoot$1() {
+function _getRoot$11() {
 	return PvPCount._shadow || PvPCount._host;
 }
 /**
@@ -321273,7 +321441,7 @@ var init_PvPCount = __esmMin((() => {
 			_rankfontAct = rAct;
 			_rankfontSpr = rSpr;
 		});
-		_rankCanvas = _getRoot$1().querySelector(".pvp-rank-canvas");
+		_rankCanvas = _getRoot$11().querySelector(".pvp-rank-canvas");
 		if (!_rankCanvas) return;
 		_rankCanvas.width = RANK_W;
 		_rankCanvas.height = RANK_H;
@@ -322947,106 +323115,133 @@ var init_MapState = __esmMin((() => {
 //#region src/UI/Components/NpcMenu/NpcMenu.html?raw
 var NpcMenu_default$2;
 var init_NpcMenu$2 = __esmMin((() => {
-	NpcMenu_default$2 = "<div id=\"NpcMenu\">\r\n	<div class=\"container\">\r\n		<div class=\"middle\">\r\n			<span class=\"title\"></span>\r\n			<div class=\"content\"></div>\r\n		</div>\r\n		<button\r\n			class=\"btn cancel\"\r\n			data-background=\"btn_cancel.bmp\"\r\n			data-hover=\"btn_cancel_a.bmp\"\r\n			data-down=\"btn_cancel_b.bmp\"\r\n		></button>\r\n		<button class=\"btn ok\" data-background=\"btn_ok.bmp\" data-hover=\"btn_ok_a.bmp\" data-down=\"btn_ok_b.bmp\"></button>\r\n	</div>\r\n</div>\r\n";
+	NpcMenu_default$2 = "<div id=\"NpcMenu\">\r\n	<div class=\"container\">\r\n		<div class=\"middle\">\r\n			<span class=\"title\"></span>\r\n			<div class=\"content\"></div>\r\n		</div>\r\n		<ui-button class=\"btn cancel\" bg=\"btn_cancel.bmp\" hover=\"btn_cancel_a.bmp\" down=\"btn_cancel_b.bmp\"></ui-button>\r\n		<ui-button class=\"btn ok\" bg=\"btn_ok.bmp\" hover=\"btn_ok_a.bmp\" down=\"btn_ok_b.bmp\"></ui-button>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/NpcMenu/NpcMenu.css?raw
 var NpcMenu_default$1;
 var init_NpcMenu$1 = __esmMin((() => {
-	NpcMenu_default$1 = "#NpcMenu {\r\n	position: absolute;\r\n	border-radius: 5px;\r\n	width: 276px;\r\n	height: 116px;\r\n	background-color: white;\r\n	padding: 2px;\r\n	left: 100px;\r\n	top: 285px;\r\n}\r\n\r\n#NpcMenu .title {\r\n	white-space: nowrap;\r\n	overflow: hidden;\r\n	display: block;\r\n	width: 260px;\r\n	padding-left: 3px;\r\n	padding-top: 3px;\r\n}\r\n\r\n#NpcMenu .container {\r\n	border-radius: 5px;\r\n	border: 1px solid #c1c6c2;\r\n	width: 269px;\r\n	height: 109px;\r\n	padding-left: 5px;\r\n	padding-top: 5px;\r\n}\r\n\r\n#NpcMenu .middle {\r\n	overflow-x: hidden;\r\n	overflow-y: scroll;\r\n}\r\n\r\n#NpcMenu .content {\r\n	white-space: pre-wrap;\r\n	background-color: #f9f9f9;\r\n	width: 260px;\r\n	height: 80px;\r\n	padding-left: 3px;\r\n	margin-top: 5px;\r\n}\r\n\r\n#NpcMenu .content div {\r\n	width: auto;\r\n	height: 17px;\r\n	display: block;\r\n	padding-top: 3px;\r\n	padding-left: 5px;\r\n}\r\n\r\n#NpcMenu .content div.selected {\r\n	background-color: #cde0ff;\r\n}\r\n\r\n#NpcMenu .btn {\r\n	background-color: transparent;\r\n	position: absolute;\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	bottom: 5px;\r\n}\r\n\r\n#NpcMenu .cancel {\r\n	right: 4px;\r\n}\r\n\r\n#NpcMenu .ok {\r\n	right: 50px;\r\n}\r\n";
+	NpcMenu_default$1 = ":host {\r\n	width: 276px;\r\n	height: 116px;\r\n	top: 285px;\r\n	left: 100px;\r\n}\r\n\r\n#NpcMenu {\r\n	position: absolute;\r\n	border-radius: 5px;\r\n	width: 276px;\r\n	height: 116px;\r\n	background-color: white;\r\n	padding: 2px;\r\n}\r\n\r\n#NpcMenu .title {\r\n	white-space: nowrap;\r\n	overflow: hidden;\r\n	display: block;\r\n	width: 260px;\r\n	padding-left: 3px;\r\n	padding-top: 3px;\r\n}\r\n\r\n#NpcMenu .container {\r\n	border-radius: 5px;\r\n	border: 1px solid #c1c6c2;\r\n	width: 269px;\r\n	height: 109px;\r\n	padding-left: 5px;\r\n	padding-top: 5px;\r\n}\r\n\r\n#NpcMenu .middle {\r\n	overflow-x: hidden;\r\n	overflow-y: scroll;\r\n}\r\n\r\n#NpcMenu .content {\r\n	white-space: pre-wrap;\r\n	background-color: #f9f9f9;\r\n	width: 260px;\r\n	height: 80px;\r\n	padding-left: 3px;\r\n	margin-top: 5px;\r\n}\r\n\r\n#NpcMenu .content div {\r\n	width: auto;\r\n	height: 17px;\r\n	display: block;\r\n	padding-top: 3px;\r\n	padding-left: 5px;\r\n}\r\n\r\n#NpcMenu .content div.selected {\r\n	background-color: #cde0ff;\r\n}\r\n\r\n#NpcMenu .btn {\r\n	position: absolute;\r\n	width: 42px;\r\n	height: 20px;\r\n	bottom: 5px;\r\n}\r\n\r\n#NpcMenu .cancel {\r\n	right: 4px;\r\n}\r\n\r\n#NpcMenu .ok {\r\n	right: 50px;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/NpcMenu/NpcMenu.js
 /**
+* Helper to get shadow root
+*/
+function _getRoot$10() {
+	return NpcMenu._shadow || NpcMenu._host;
+}
+/**
+* Helper: escape HTML
+*/
+function _escapeHTML$1(text) {
+	const div = document.createElement("div");
+	div.textContent = text;
+	return div.innerHTML;
+}
+/**
 * Submit an index
 */
 function validate() {
-	this.onSelectMenu(_ownerID, _index$4 + 1);
+	NpcMenu.onSelectMenu(_ownerID, _index$4 + 1);
 }
 /**
 * Pressed cancel, client send "255" as value
 */
 function cancel$9() {
-	this.onSelectMenu(_ownerID, 255);
+	NpcMenu.onSelectMenu(_ownerID, 255);
 }
 /**
 * Select an index, change background color
 */
-function selectIndex($this) {
-	this.ui.find(".content div").removeClass("selected");
-	$this.addClass("selected");
-	_index$4 = parseInt($this.data("index"), 10);
+function selectIndex(div) {
+	_getRoot$10().querySelector(".content").querySelectorAll("div").forEach((d) => d.classList.remove("selected"));
+	div.classList.add("selected");
+	_index$4 = parseInt(div.dataset.index, 10);
 }
 var NpcMenu, _index$4, _ownerID, NpcMenu_default;
 var init_NpcMenu = __esmMin((() => {
-	init_jquery();
 	init_KeyEventHandler();
+	init_DBManager();
 	init_Renderer();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
+	init_Elements();
 	init_NpcMenu$2();
 	init_NpcMenu$1();
-	NpcMenu = new UIComponent("NpcMenu", NpcMenu_default$2, NpcMenu_default$1);
+	NpcMenu = new GUIComponent("NpcMenu", NpcMenu_default$1);
+	NpcMenu.render = () => NpcMenu_default$2;
+	/**
+	* Freeze mouse — NPC menu blocks interaction
+	*/
+	NpcMenu.mouseMode = GUIComponent.MouseMode.FREEZE;
 	_index$4 = 0;
 	_ownerID = 0;
 	/**
 	* Initialize component
 	*/
 	NpcMenu.init = function init() {
-		this.ui.find(".ok").click(validate.bind(this));
-		this.ui.find(".cancel").click(cancel$9.bind(this));
-		this.ui.css({
-			top: Math.max(376, Renderer.height / 2 + 76),
-			left: Math.max(Renderer.width / 3, 20)
-		});
+		const root = _getRoot$10();
+		const okBtn = root.querySelector(".ok");
+		if (okBtn) okBtn.addEventListener("click", () => validate());
+		const cancelBtn = root.querySelector(".cancel");
+		if (cancelBtn) cancelBtn.addEventListener("click", () => cancel$9());
+		this._host.style.top = `${Math.max(376, Renderer.height / 2 + 76)}px`;
+		this._host.style.left = `${Math.max(Renderer.width / 3, 20)}px`;
 		this.draggable();
-		const self = this;
-		this.ui.find(".content").on("mousedown", "div", function(event) {
-			selectIndex.call(self, jquery_default(this));
-		}).on("dblclick", "div", validate.bind(this)).mousedown(function(event) {
-			event.stopImmediatePropagation();
-			return false;
-		});
+		const content = root.querySelector(".content");
+		if (content) {
+			content.addEventListener("mousedown", (e) => {
+				const div = e.target.closest("div");
+				if (div && content.contains(div)) selectIndex(div);
+				e.stopImmediatePropagation();
+			});
+			content.addEventListener("dblclick", (e) => {
+				const div = e.target.closest("div");
+				if (div && content.contains(div)) validate();
+			});
+		}
 	};
 	/**
 	* Clean up events
 	*/
 	NpcMenu.onRemove = function onRemove() {
-		this.ui.find(".content").empty();
+		const content = _getRoot$10().querySelector(".content");
+		if (content) content.innerHTML = "";
 	};
 	/**
 	* Bind KeyDown event
 	*/
 	NpcMenu.onKeyDown = function onKeyDown(event) {
-		let count, top;
-		let content;
-		if (!this.ui.is(":visible")) return true;
+		if (this._host.style.display === "none") return true;
+		const content = _getRoot$10().querySelector(".content");
 		switch (event.which) {
 			case KEYS.SPACE:
 			case KEYS.ENTER:
-				validate.call(this);
+				validate();
 				break;
 			case KEYS.ESCAPE:
-				cancel$9.call(this);
+				cancel$9();
 				break;
-			case KEYS.UP:
-				count = this.ui.find(".content div").length;
+			case KEYS.UP: {
+				const divs = content.querySelectorAll("div");
 				_index$4 = Math.max(_index$4 - 1, 0);
-				this.ui.find(".content div").removeClass("selected");
-				this.ui.find(".content div:eq(" + _index$4 + ")").addClass("selected");
-				content = this.ui.find(".content")[0];
-				top = _index$4 * 20;
+				divs.forEach((d) => d.classList.remove("selected"));
+				if (divs[_index$4]) divs[_index$4].classList.add("selected");
+				const top = _index$4 * 20;
 				if (top < content.scrollTop) content.scrollTop = top;
 				break;
-			case KEYS.DOWN:
-				count = this.ui.find(".content div").length;
+			}
+			case KEYS.DOWN: {
+				const divs = content.querySelectorAll("div");
+				const count = divs.length;
 				_index$4 = Math.min(_index$4 + 1, count - 1);
-				this.ui.find(".content div").removeClass("selected");
-				this.ui.find(".content div:eq(" + _index$4 + ")").addClass("selected");
-				content = this.ui.find(".content")[0];
-				top = _index$4 * 20;
+				divs.forEach((d) => d.classList.remove("selected"));
+				if (divs[_index$4]) divs[_index$4].classList.add("selected");
+				const top = _index$4 * 20;
 				if (top >= content.scrollTop + 80) content.scrollTop = top - 60;
 				break;
+			}
 			default: return true;
 		}
 		event.stopImmediatePropagation();
@@ -323058,20 +323253,26 @@ var init_NpcMenu = __esmMin((() => {
 	* @param {string} menu
 	* @param {number} gid - npc id
 	*/
-	NpcMenu.setMenu = function SetMenu(menu, gid) {
-		const content = this.ui.find(".content");
+	NpcMenu.setMenu = function setMenu(menu, gid) {
+		const content = _getRoot$10().querySelector(".content");
 		const list = menu.split(":");
-		let i, j, count;
 		_ownerID = gid;
 		_index$4 = 0;
-		content.empty();
-		for (i = 0, j = 0, count = list.length; i < count; ++i) if (list[i].length) jquery_default("<div/>").text(list[i]).data("index", j++).appendTo(content);
-		content.find("div:first").addClass("selected");
+		content.innerHTML = "";
+		let j = 0;
+		for (let i = 0, count = list.length; i < count; ++i) if (list[i].length) {
+			const div = document.createElement("div");
+			div.innerHTML = DB.formatMsgToHtml(_escapeHTML$1(list[i]));
+			div.dataset.index = j++;
+			content.appendChild(div);
+		}
+		const first = content.querySelector("div");
+		if (first) first.classList.add("selected");
 	};
 	/**
 	* Abstract callback to define
 	*/
-	NpcMenu.onSelectMenu = function OnSelectMenu() {};
+	NpcMenu.onSelectMenu = function onSelectMenu() {};
 	NpcMenu_default = UIManager.addComponent(NpcMenu);
 }));
 //#endregion
@@ -328694,7 +328895,7 @@ var init_Sense$1 = __esmMin((() => {
 /**
 * Helper to get the shadow root
 */
-function _getRoot() {
+function _getRoot$9() {
 	return Sense._shadow || Sense._host;
 }
 /**
@@ -328742,7 +328943,7 @@ var init_Sense = __esmMin((() => {
 		this._host.style.top = `${(Renderer.height - 120) / 1.5 - 120}px`;
 		this._host.style.left = `${(Renderer.width - 280) / 2}px`;
 		this._host.style.zIndex = "100";
-		const root = _getRoot();
+		const root = _getRoot$9();
 		const closeBtn = root.querySelector(".close");
 		if (closeBtn) {
 			closeBtn.addEventListener("mousedown", (e) => {
@@ -328788,7 +328989,7 @@ var init_Sense = __esmMin((() => {
 	* @param {object} pkt
 	*/
 	Sense.setWindow = function setWindow(pkt) {
-		const root = _getRoot();
+		const root = _getRoot$9();
 		root.querySelector(".header .title").textContent = DB.getMessage(406);
 		_model$2.entity.set({
 			job: pkt.job,
@@ -329399,7 +329600,10 @@ function SkillEngine() {
 	Network.hookPacket(PACKET.ZC.SKILLINFO_LIST2, onSkillList$2);
 	Network.hookPacket(PACKET.ZC.SKILLINFO_UPDATE, onSkillUpdate$2);
 	Network.hookPacket(PACKET.ZC.SKILLINFO_UPDATE2, onSkillUpdate$2);
+	Network.hookPacket(PACKET.ZC.SKILLINFO_UPDATE3, onSkillUpdate$2);
 	Network.hookPacket(PACKET.ZC.ADD_SKILL, onSkillAdded);
+	Network.hookPacket(PACKET.ZC.ADD_SKILL2, onSkillAdded);
+	Network.hookPacket(PACKET.ZC.ADD_SKILL3, onSkillAdded);
 	Network.hookPacket(PACKET.ZC.SHORTCUT_KEY_LIST, onShortCutList);
 	Network.hookPacket(PACKET.ZC.SHORTCUT_KEY_LIST_V2, onShortCutList);
 	Network.hookPacket(PACKET.ZC.SHORTCUT_KEY_LIST_V3, onShortCutList);
@@ -330792,16 +330996,66 @@ var init_Mercenary = __esmMin((() => {
 //#region src/UI/Components/NpcStore/NpcStore.html?raw
 var NpcStore_default$2;
 var init_NpcStore$2 = __esmMin((() => {
-	NpcStore_default$2 = "<div id=\"NpcStore\">\r\n	<div class=\"InputWindow\">\r\n		<div class=\"titlebar\" data-background=\"basic_interface/titlebar_mid.bmp\">\r\n			<div class=\"text\">\r\n				<span class=\"WinSell\" data-text=\"185\">Available Items for selling</span>\r\n				<span class=\"WinBuy\" data-text=\"186\">Shop Items</span>\r\n				<span class=\"WinVendingStore\">\r\n					<span data-text=\"227\">Merchant Shop</span> - <span class=\"seller\"></span>\r\n				</span>\r\n				<span class=\"WinBuyingStore\">\r\n					<span data-text=\"1737\">Items wanted</span> - <span class=\"seller\"></span>\r\n				</span>\r\n			</div>\r\n		</div>\r\n		<div class=\"container\" data-background=\"basic_interface/itemwin_left.bmp\">\r\n			<div class=\"content\"></div>\r\n		</div>\r\n		<div class=\"footer\" data-background=\"basic_interface/btnbar_mid2.bmp\">\r\n			<div class=\"cashuser WinCash\">\r\n				[<span class=\"buyer\"></span>]'s Points: <span class=\"cashpoints\"></span>\r\n				<span class=\"unity\">Point(s)</span>\r\n			</div>\r\n			<div class=\"WinBuyingStore limitZeny\"><span class=\"priceLimit\">Price limit: %s Zeny</span></div>\r\n			<div class=\"ask_quantity WinSell\">\r\n				<button class=\"selectall\" data-background=\"checkbox_0.bmp\" data-preload=\"checkbox_1.bmp\"></button>\r\n				<span data-text=\"295\">Don't ask the Quantity of Items</span>\r\n			</div>\r\n			<button class=\"resize\" data-background=\"btn_resize.bmp\"></button>\r\n		</div>\r\n	</div>\r\n\r\n	<div class=\"OutputWindow\">\r\n		<div class=\"titlebar\" data-background=\"basic_interface/titlebar_mid.bmp\">\r\n			<div class=\"text\">\r\n				<span class=\"WinSell WinBuyingStore\" data-text=\"168\">Selling Items</span>\r\n				<span class=\"WinBuy WinVendingStore\" data-text=\"166\">Buying Items</span>\r\n			</div>\r\n		</div>\r\n		<div class=\"container\" data-background=\"basic_interface/itemwin_left.bmp\">\r\n			<div class=\"content\" data-background=\"basic_interface/itemwin_mid.bmp\"></div>\r\n		</div>\r\n		<div class=\"footer\" data-background=\"basic_interface/btnbar_mid2.bmp\">\r\n			<div class=\"total\">Total : <span class=\"result\"></span> <span class=\"unity\">Zeny</span></div>\r\n			<div class=\"totalP WinCash\">Total : <span class=\"resultP\"></span> <span class=\"unity\">Point</span></div>\r\n			<button\r\n				class=\"btn sell WinSell WinBuyingStore\"\r\n				data-background=\"btn_sell.bmp\"\r\n				data-hover=\"btn_sell_a.bmp\"\r\n				data-down=\"btn_sell_b.bmp\"\r\n			></button>\r\n			<button\r\n				class=\"btn buy WinBuy WinVendingStore\"\r\n				data-background=\"btn_buy.bmp\"\r\n				data-hover=\"btn_buy_a.bmp\"\r\n				data-down=\"btn_buy_b.bmp\"\r\n			></button>\r\n			<button\r\n				class=\"btn cancel\"\r\n				data-background=\"btn_cancel.bmp\"\r\n				data-hover=\"btn_cancel_a.bmp\"\r\n				data-down=\"btn_cancel_b.bmp\"\r\n			></button>\r\n			<button class=\"resize\" data-background=\"btn_resize.bmp\"></button>\r\n		</div>\r\n	</div>\r\n\r\n	<div class=\"AvailableItemsWindow\">\r\n		<div class=\"titlebar\" data-background=\"basic_interface/titlebar_mid.bmp\">\r\n			<div class=\"text\">\r\n				<span class=\"WinBuyingStore\">\r\n					<span data-text=\"1733\">Available Items</span>\r\n				</span>\r\n			</div>\r\n		</div>\r\n		<div class=\"container\" data-background=\"basic_interface/itemwin_left.bmp\">\r\n			<div class=\"content contentAvailable\" data-background=\"basic_interface/itemwin_mid.bmp\"></div>\r\n		</div>\r\n		<div class=\"footer\" data-background=\"basic_interface/btnbar_mid2.bmp\">\r\n			<button class=\"resize\" data-background=\"btn_resize.bmp\"></button>\r\n		</div>\r\n	</div>\r\n\r\n	<div class=\"PurchaseResult\">\r\n		<div class=\"titlebar\" data-background=\"basic_interface/titlebar_mid.bmp\">\r\n			<div class=\"text\">\r\n				<span class=\"WinBuy\" data-text=\"2530\"></span>\r\n			</div>\r\n		</div>\r\n		<div class=\"container\" data-background=\"basic_interface/itemwin_left.bmp\">\r\n			<div class=\"content\" data-background=\"basic_interface/itemwin_mid.bmp\"></div>\r\n		</div>\r\n		<div class=\"footer\" data-background=\"basic_interface/btnbar_mid2.bmp\">\r\n			<div class=\"total\">Total : <span class=\"result\"></span> <span class=\"unity\">Zeny</span></div>\r\n			<button\r\n				class=\"btn ok\"\r\n				data-background=\"btn_ok.bmp\"\r\n				data-hover=\"btn_ok_a.bmp\"\r\n				data-down=\"btn_ok_b.bmp\"\r\n			></button>\r\n			<button class=\"resize\" data-background=\"btn_resize.bmp\"></button>\r\n		</div>\r\n	</div>\r\n</div>\r\n";
+	NpcStore_default$2 = "<div id=\"NpcStore\">\r\n	<div class=\"InputWindow\">\r\n		<div class=\"titlebar\">\r\n			<ui-image src=\"basic_interface/titlebar_mid.bmp\"></ui-image>\r\n			<div class=\"text\">\r\n				<span class=\"WinSell\"><ui-text msg=\"185\">Available Items for selling</ui-text></span>\r\n				<span class=\"WinBuy\"><ui-text msg=\"186\">Shop Items</ui-text></span>\r\n				<span class=\"WinVendingStore\">\r\n					<ui-text msg=\"227\">Merchant Shop</ui-text> - <span class=\"seller\"></span>\r\n				</span>\r\n				<span class=\"WinBuyingStore\">\r\n					<ui-text msg=\"1737\">Items wanted</ui-text> - <span class=\"seller\"></span>\r\n				</span>\r\n			</div>\r\n		</div>\r\n		<div class=\"container\">\r\n			<ui-image src=\"basic_interface/itemwin_left.bmp\"></ui-image>\r\n			<div class=\"content\"></div>\r\n		</div>\r\n		<div class=\"footer\">\r\n			<ui-image src=\"basic_interface/btnbar_mid2.bmp\"></ui-image>\r\n			<div class=\"cashuser WinCash\">\r\n				[<span class=\"buyer\"></span>]'s Points: <span class=\"cashpoints\"></span>\r\n				<span class=\"unity\">Point(s)</span>\r\n			</div>\r\n			<div class=\"WinBuyingStore limitZeny\"><span class=\"priceLimit\">Price limit: %s Zeny</span></div>\r\n			<div class=\"ask_quantity WinSell\">\r\n				<button class=\"selectall\"></button>\r\n				<ui-text msg=\"295\">Don't ask the Quantity of Items</ui-text>\r\n			</div>\r\n			<ui-button class=\"resize\" bg=\"btn_resize.bmp\"></ui-button>\r\n		</div>\r\n	</div>\r\n\r\n	<div class=\"OutputWindow\">\r\n		<div class=\"titlebar\">\r\n			<ui-image src=\"basic_interface/titlebar_mid.bmp\"></ui-image>\r\n			<div class=\"text\">\r\n				<span class=\"WinSell WinBuyingStore\"><ui-text msg=\"168\">Selling Items</ui-text></span>\r\n				<span class=\"WinBuy WinVendingStore\"><ui-text msg=\"166\">Buying Items</ui-text></span>\r\n			</div>\r\n		</div>\r\n		<div class=\"container\">\r\n			<ui-image src=\"basic_interface/itemwin_left.bmp\"></ui-image>\r\n			<div class=\"content\">\r\n				<ui-image src=\"basic_interface/itemwin_mid.bmp\"></ui-image>\r\n			</div>\r\n		</div>\r\n		<div class=\"footer\">\r\n			<ui-image src=\"basic_interface/btnbar_mid2.bmp\"></ui-image>\r\n			<div class=\"total\">Total : <span class=\"result\"></span> <span class=\"unity\">Zeny</span></div>\r\n			<div class=\"totalP WinCash\">Total : <span class=\"resultP\"></span> <span class=\"unity\">Point</span></div>\r\n			<ui-button\r\n				class=\"btn sell WinSell WinBuyingStore\"\r\n				bg=\"btn_sell.bmp\"\r\n				hover=\"btn_sell_a.bmp\"\r\n				down=\"btn_sell_b.bmp\"\r\n			></ui-button>\r\n			<ui-button\r\n				class=\"btn buy WinBuy WinVendingStore\"\r\n				bg=\"btn_buy.bmp\"\r\n				hover=\"btn_buy_a.bmp\"\r\n				down=\"btn_buy_b.bmp\"\r\n			></ui-button>\r\n			<ui-button\r\n				class=\"btn cancel\"\r\n				bg=\"btn_cancel.bmp\"\r\n				hover=\"btn_cancel_a.bmp\"\r\n				down=\"btn_cancel_b.bmp\"\r\n			></ui-button>\r\n			<ui-button class=\"resize\" bg=\"btn_resize.bmp\"></ui-button>\r\n		</div>\r\n	</div>\r\n\r\n	<div class=\"AvailableItemsWindow\">\r\n		<div class=\"titlebar\">\r\n			<ui-image src=\"basic_interface/titlebar_mid.bmp\"></ui-image>\r\n			<div class=\"text\">\r\n				<span class=\"WinBuyingStore\">\r\n					<ui-text msg=\"1733\">Available Items</ui-text>\r\n				</span>\r\n			</div>\r\n		</div>\r\n		<div class=\"container\">\r\n			<ui-image src=\"basic_interface/itemwin_left.bmp\"></ui-image>\r\n			<div class=\"content contentAvailable\">\r\n				<ui-image src=\"basic_interface/itemwin_mid.bmp\"></ui-image>\r\n			</div>\r\n		</div>\r\n		<div class=\"footer\">\r\n			<ui-image src=\"basic_interface/btnbar_mid2.bmp\"></ui-image>\r\n			<ui-button class=\"resize\" bg=\"btn_resize.bmp\"></ui-button>\r\n		</div>\r\n	</div>\r\n\r\n	<div class=\"PurchaseResult\">\r\n		<div class=\"titlebar\">\r\n			<ui-image src=\"basic_interface/titlebar_mid.bmp\"></ui-image>\r\n			<div class=\"text\">\r\n				<span class=\"WinBuy\"><ui-text msg=\"2530\"></ui-text></span>\r\n			</div>\r\n		</div>\r\n		<div class=\"container\">\r\n			<ui-image src=\"basic_interface/itemwin_left.bmp\"></ui-image>\r\n			<div class=\"content\">\r\n				<ui-image src=\"basic_interface/itemwin_mid.bmp\"></ui-image>\r\n			</div>\r\n		</div>\r\n		<div class=\"footer\">\r\n			<ui-image src=\"basic_interface/btnbar_mid2.bmp\"></ui-image>\r\n			<div class=\"total\">Total : <span class=\"result\"></span> <span class=\"unity\">Zeny</span></div>\r\n			<ui-button class=\"btn ok\" bg=\"btn_ok.bmp\" hover=\"btn_ok_a.bmp\" down=\"btn_ok_b.bmp\"></ui-button>\r\n			<ui-button class=\"resize\" bg=\"btn_resize.bmp\"></ui-button>\r\n		</div>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/NpcStore/NpcStore.css?raw
 var NpcStore_default$1;
 var init_NpcStore$1 = __esmMin((() => {
-	NpcStore_default$1 = "#NpcStore {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 100%;\r\n	height: 100%;\r\n}\r\n#NpcStore .titlebar {\r\n	width: 100%;\r\n	height: 17px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 3px 3px 0px 0px;\r\n	text-shadow: 1px 1px white;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n#NpcStore .titlebar .text {\r\n	position: relative;\r\n	top: 2px;\r\n	left: 15px;\r\n	white-space: nowrap;\r\n}\r\n#NpcStore .footer {\r\n	width: 100%;\r\n	height: 27px;\r\n	background-repeat: repeat-x;\r\n	background-color: transparent;\r\n	position: relative;\r\n	border-radius: 0px 0px 3px 3px;\r\n	position: relative;\r\n}\r\n#NpcStore .resize {\r\n	position: absolute;\r\n	right: 1px;\r\n	bottom: 1px;\r\n	width: 13px;\r\n	height: 13px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#NpcStore .btn {\r\n	width: 42px;\r\n	height: 20px;\r\n	border: none;\r\n	margin: 0;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#NpcStore .selectall {\r\n	vertical-align: 2px;\r\n	width: 10px;\r\n	height: 10px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#NpcStore .ask_quantity {\r\n	padding-top: 7px;\r\n	padding-left: 20px;\r\n}\r\n\r\n#NpcStore .container {\r\n	padding-left: 16px;\r\n	border-right: 1px solid #ccc;\r\n	background: white;\r\n	background-repeat: repeat-y;\r\n	padding-right: 2px;\r\n	padding-top: 5px;\r\n	padding-bottom: 5px;\r\n}\r\n#NpcStore .content {\r\n	overflow-y: auto;\r\n	overflow-x: hidden;\r\n	width: 100%;\r\n	height: 100%;\r\n	min-height: 65px;\r\n	background-color: transparent;\r\n	background-repeat: repeat-y;\r\n	background-attachment: local;\r\n}\r\n#NpcStore .content.contentAvailable {\r\n	background-repeat: repeat;\r\n	overflow-y: unset;\r\n}\r\n#NpcStore .content .item {\r\n	display: block;\r\n	position: relative;\r\n	height: 28px;\r\n	padding-top: 4px;\r\n}\r\n\r\n#NpcStore .content .item.expanded-barter {\r\n	padding-bottom: 30px !important;\r\n}\r\n\r\n#NpcStore .content .item.selected {\r\n	background-color: #346ae180;\r\n}\r\n#NpcStore .content .item.itemAvailable {\r\n	display: block;\r\n	float: left;\r\n	width: 28px;\r\n	position: relative;\r\n	height: 28px;\r\n	padding-top: 4px;\r\n}\r\n#NpcStore .content .item.itemAvailable.selected {\r\n	background-color: transparent;\r\n}\r\n\r\n#NpcStore .content .item .icon {\r\n	position: absolute;\r\n	top: 6px;\r\n	left: 4px;\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#NpcStore .content .item .amount {\r\n	position: absolute;\r\n	white-space: nowrap;\r\n	top: 18px;\r\n	left: 18px;\r\n	text-align: left;\r\n	text-shadow: -1px -1px white;\r\n}\r\n#NpcStore .content .item .amountBuying {\r\n	position: absolute;\r\n	white-space: nowrap;\r\n	top: 13px;\r\n	left: 160px;\r\n	text-align: left;\r\n	text-shadow: -1px -1px white;\r\n	color: red;\r\n}\r\n#NpcStore .content .item .name {\r\n	position: absolute;\r\n	top: 13px;\r\n	left: 32px;\r\n	width: 115px;\r\n	white-space: nowrap;\r\n}\r\n#NpcStore .content .item .price {\r\n	position: absolute;\r\n	top: 13px;\r\n	right: 16px;\r\n	white-space: nowrap;\r\n	text-align: right;\r\n}\r\n#NpcStore .content .item .unity {\r\n	position: absolute;\r\n	top: 13px;\r\n	right: 2px;\r\n	width: 10px;\r\n}\r\n\r\n#NpcStore .footer .total,\r\n#NpcStore .footer .totalP,\r\n#NpcStore .footer .cashuser {\r\n	padding-left: 10px;\r\n	padding-top: 8px;\r\n}\r\n#NpcStore .footer .total,\r\n#NpcStore .footer .totalP,\r\n#NpcStore .footer .limitZeny {\r\n	padding-left: 10px;\r\n	padding-top: 8px;\r\n}\r\n#NpcStore .InputWindow,\r\n#NpcStore .OutputWindow,\r\n#NpcStore .AvailableItemsWindow,\r\n#NpcStore .PurchaseResult {\r\n	width: 280px;\r\n	position: absolute;\r\n	z-index: 50;\r\n}\r\n#NpcStore .btn.buy,\r\n#NpcStore .btn.sell {\r\n	position: absolute;\r\n	top: 4px;\r\n	right: 62px;\r\n}\r\n#NpcStore .btn.ok {\r\n	position: absolute;\r\n	top: 4px;\r\n	right: 20px;\r\n}\r\n#NpcStore .btn.cancel {\r\n	position: absolute;\r\n	top: 4px;\r\n	right: 15px;\r\n}\r\n\r\n#NpcStore .content .item .nameOverlay {\r\n	position: relative;\r\n	display: none;\r\n	top: -17px;\r\n	left: 0px;\r\n	background-color: rgba(0, 0, 0, 0.6);\r\n	text-shadow: 1px 1px black;\r\n	color: white;\r\n	padding: 5px;\r\n	white-space: nowrap;\r\n	font-size: 0.6rem;\r\n}\r\n#NpcStore .content .item:hover .nameOverlay {\r\n	display: table;\r\n}\r\n#NpcStore .content .item .nameOverlay {\r\n	display: none;\r\n}\r\n\r\n#NpcStore .content .item .currency_icon {\r\n	position: absolute;\r\n	top: 6px;\r\n	left: 200px;\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#NpcStore .content .item .currency_amount {\r\n	position: absolute;\r\n	white-space: nowrap;\r\n	top: 18px;\r\n	right: 13px;\r\n	text-align: left;\r\n	text-shadow: -1px -1px white;\r\n}\r\n#NpcStore .content .item .currency_nameOverlay {\r\n	position: relative;\r\n	display: none;\r\n	top: -17px;\r\n	left: 0px;\r\n	background-color: rgba(0, 0, 0, 0.6);\r\n	text-shadow: 1px 1px black;\r\n	color: white;\r\n	padding: 5px;\r\n	white-space: nowrap;\r\n	font-size: 0.6rem;\r\n}\r\n#NpcStore .content .item:hover .currency_nameOverlay {\r\n	display: table;\r\n}\r\n#NpcStore .content .item .currency_nameOverlay {\r\n	display: none;\r\n}\r\n\r\n#NpcStore .currency_section {\r\n	display: flex;\r\n	height: 25px;\r\n	position: relative;\r\n	left: 30px;\r\n	width: 200px;\r\n}\r\n#NpcStore .currency_slot {\r\n	width: 24px;\r\n	padding-right: 15px;\r\n}\r\n#NpcStore .expanded_currency_holder {\r\n	height: 27px;\r\n	width: 30px;\r\n	position: relative;\r\n}\r\n#NpcStore .expanded_currency_icon {\r\n	height: 24px;\r\n	width: 24px;\r\n	position: relative;\r\n	left: 5px;\r\n}\r\n#NpcStore .expanded_currency_amount {\r\n	position: relative;\r\n	white-space: nowrap;\r\n	top: -10px;\r\n	left: 15px;\r\n	text-align: left;\r\n	text-shadow: -1px -1px white;\r\n}\r\n#NpcStore .expanded_currency_refinelvl {\r\n	position: relative;\r\n	white-space: nowrap;\r\n	top: -43px;\r\n	left: 12px;\r\n	text-align: left;\r\n	color: white;\r\n	font-weight: 850;\r\n	-webkit-text-stroke: 1px red;\r\n}\r\n#NpcStore .expanded_price {\r\n	position: relative;\r\n	top: -10px;\r\n	left: 215px;\r\n	white-space: nowrap;\r\n	text-align: right;\r\n	width: 80px;\r\n}\r\n#NpcStore .content .item .expanded_currency_nameOverlay {\r\n	position: relative;\r\n	visibility: hidden;\r\n	opacity: 0;\r\n	top: -17px;\r\n	left: 0px;\r\n	background-color: rgba(0, 0, 0, 0.6);\r\n	text-shadow: 1px 1px black;\r\n	color: white;\r\n	padding: 5px;\r\n	white-space: nowrap;\r\n	font-size: 0.6rem;\r\n	transition:\r\n		opacity 0.2s ease-in-out,\r\n		visibility 0.2s ease-in-out;\r\n	pointer-events: none;\r\n	z-index: 10;\r\n}\r\n#NpcStore .content .item:hover .expanded_currency_nameOverlay {\r\n	visibility: visible;\r\n	opacity: 1;\r\n}\r\n";
+	NpcStore_default$1 = ":host {\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 100%;\r\n	height: 100%;\r\n}\r\n\r\n#NpcStore {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 0px;\r\n	width: 100%;\r\n	height: 100%;\r\n}\r\n#NpcStore .titlebar {\r\n	width: 100%;\r\n	height: 17px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 3px 3px 0px 0px;\r\n	text-shadow: 1px 1px white;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n#NpcStore .titlebar .text {\r\n	position: relative;\r\n	top: 2px;\r\n	left: 15px;\r\n	white-space: nowrap;\r\n}\r\n#NpcStore .footer {\r\n	width: 100%;\r\n	height: 27px;\r\n	background-repeat: repeat-x;\r\n	background-color: transparent;\r\n	position: relative;\r\n	border-radius: 0px 0px 3px 3px;\r\n}\r\n#NpcStore .resize {\r\n	position: absolute;\r\n	right: 1px;\r\n	bottom: 1px;\r\n	width: 13px;\r\n	height: 13px;\r\n}\r\n#NpcStore .btn {\r\n	width: 42px;\r\n	height: 20px;\r\n	margin: 0;\r\n}\r\n#NpcStore .selectall {\r\n	display: inline-block;\r\n	vertical-align: 2px;\r\n	width: 10px;\r\n	height: 10px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n	cursor: pointer;\r\n}\r\n#NpcStore .ask_quantity {\r\n	padding-top: 7px;\r\n	padding-left: 20px;\r\n}\r\n\r\n#NpcStore .container {\r\n	padding-left: 16px;\r\n	border-right: 1px solid #ccc;\r\n	background: white;\r\n	background-repeat: repeat-y;\r\n	padding-right: 2px;\r\n	padding-top: 5px;\r\n	padding-bottom: 5px;\r\n}\r\n#NpcStore .content {\r\n	overflow-y: auto;\r\n	overflow-x: hidden;\r\n	width: 100%;\r\n	height: 100%;\r\n	min-height: 65px;\r\n	background-color: transparent;\r\n	background-repeat: repeat-y;\r\n	background-attachment: local;\r\n}\r\n#NpcStore .content.contentAvailable {\r\n	background-repeat: repeat;\r\n	overflow-y: unset;\r\n}\r\n#NpcStore .content .item {\r\n	display: block;\r\n	position: relative;\r\n	height: 28px;\r\n	padding-top: 4px;\r\n}\r\n\r\n#NpcStore .content .item.expanded-barter {\r\n	padding-bottom: 30px !important;\r\n}\r\n\r\n#NpcStore .content .item.selected {\r\n	background-color: #346ae180;\r\n}\r\n#NpcStore .content .item.itemAvailable {\r\n	display: block;\r\n	float: left;\r\n	width: 28px;\r\n	position: relative;\r\n	height: 28px;\r\n	padding-top: 4px;\r\n}\r\n#NpcStore .content .item.itemAvailable.selected {\r\n	background-color: transparent;\r\n}\r\n\r\n#NpcStore .content .item .icon {\r\n	position: absolute;\r\n	top: 6px;\r\n	left: 4px;\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#NpcStore .content .item .amount {\r\n	position: absolute;\r\n	white-space: nowrap;\r\n	top: 18px;\r\n	left: 18px;\r\n	text-align: left;\r\n	text-shadow: -1px -1px white;\r\n}\r\n#NpcStore .content .item .amountBuying {\r\n	position: absolute;\r\n	white-space: nowrap;\r\n	top: 13px;\r\n	left: 160px;\r\n	text-align: left;\r\n	text-shadow: -1px -1px white;\r\n	color: red;\r\n}\r\n#NpcStore .content .item .name {\r\n	position: absolute;\r\n	top: 13px;\r\n	left: 32px;\r\n	width: 115px;\r\n	white-space: nowrap;\r\n}\r\n#NpcStore .content .item .price {\r\n	position: absolute;\r\n	top: 13px;\r\n	right: 16px;\r\n	white-space: nowrap;\r\n	text-align: right;\r\n}\r\n#NpcStore .content .item .unity {\r\n	position: absolute;\r\n	top: 13px;\r\n	right: 2px;\r\n	width: 10px;\r\n}\r\n\r\n#NpcStore .footer .total,\r\n#NpcStore .footer .totalP,\r\n#NpcStore .footer .cashuser {\r\n	padding-left: 10px;\r\n	padding-top: 8px;\r\n}\r\n#NpcStore .footer .total,\r\n#NpcStore .footer .totalP,\r\n#NpcStore .footer .limitZeny {\r\n	padding-left: 10px;\r\n	padding-top: 8px;\r\n}\r\n#NpcStore .InputWindow,\r\n#NpcStore .OutputWindow,\r\n#NpcStore .AvailableItemsWindow,\r\n#NpcStore .PurchaseResult {\r\n	width: 280px;\r\n	position: absolute;\r\n	z-index: 50;\r\n	pointer-events: auto;\r\n}\r\n#NpcStore .btn.buy,\r\n#NpcStore .btn.sell {\r\n	position: absolute;\r\n	top: 4px;\r\n	right: 62px;\r\n}\r\n#NpcStore .btn.ok {\r\n	position: absolute;\r\n	top: 4px;\r\n	right: 20px;\r\n}\r\n#NpcStore .btn.cancel {\r\n	position: absolute;\r\n	top: 4px;\r\n	right: 15px;\r\n}\r\n\r\n#NpcStore .content .item .nameOverlay {\r\n	position: relative;\r\n	display: none;\r\n	top: -17px;\r\n	left: 0px;\r\n	background-color: rgba(0, 0, 0, 0.6);\r\n	text-shadow: 1px 1px black;\r\n	color: white;\r\n	padding: 5px;\r\n	white-space: nowrap;\r\n	font-size: 0.6rem;\r\n}\r\n#NpcStore .content .item:hover .nameOverlay {\r\n	display: table;\r\n}\r\n#NpcStore .content .item .nameOverlay {\r\n	display: none;\r\n}\r\n\r\n#NpcStore .content .item .currency_icon {\r\n	position: absolute;\r\n	top: 6px;\r\n	left: 200px;\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#NpcStore .content .item .currency_amount {\r\n	position: absolute;\r\n	white-space: nowrap;\r\n	top: 18px;\r\n	right: 13px;\r\n	text-align: left;\r\n	text-shadow: -1px -1px white;\r\n}\r\n#NpcStore .content .item .currency_nameOverlay {\r\n	position: relative;\r\n	display: none;\r\n	top: -17px;\r\n	left: 0px;\r\n	background-color: rgba(0, 0, 0, 0.6);\r\n	text-shadow: 1px 1px black;\r\n	color: white;\r\n	padding: 5px;\r\n	white-space: nowrap;\r\n	font-size: 0.6rem;\r\n}\r\n#NpcStore .content .item:hover .currency_nameOverlay {\r\n	display: table;\r\n}\r\n#NpcStore .content .item .currency_nameOverlay {\r\n	display: none;\r\n}\r\n\r\n#NpcStore .currency_section {\r\n	display: flex;\r\n	height: 25px;\r\n	position: relative;\r\n	left: 30px;\r\n	width: 200px;\r\n}\r\n#NpcStore .currency_slot {\r\n	width: 24px;\r\n	padding-right: 15px;\r\n}\r\n#NpcStore .expanded_currency_holder {\r\n	height: 27px;\r\n	width: 30px;\r\n	position: relative;\r\n}\r\n#NpcStore .expanded_currency_icon {\r\n	height: 24px;\r\n	width: 24px;\r\n	position: relative;\r\n	left: 5px;\r\n}\r\n#NpcStore .expanded_currency_amount {\r\n	position: relative;\r\n	white-space: nowrap;\r\n	top: -10px;\r\n	left: 15px;\r\n	text-align: left;\r\n	text-shadow: -1px -1px white;\r\n}\r\n#NpcStore .expanded_currency_refinelvl {\r\n	position: relative;\r\n	white-space: nowrap;\r\n	top: -43px;\r\n	left: 12px;\r\n	text-align: left;\r\n	color: white;\r\n	font-weight: 850;\r\n	-webkit-text-stroke: 1px red;\r\n}\r\n#NpcStore .expanded_price {\r\n	position: relative;\r\n	top: -10px;\r\n	left: 215px;\r\n	white-space: nowrap;\r\n	text-align: right;\r\n	width: 80px;\r\n}\r\n#NpcStore .content .item .expanded_currency_nameOverlay {\r\n	position: relative;\r\n	visibility: hidden;\r\n	opacity: 0;\r\n	top: -17px;\r\n	left: 0px;\r\n	background-color: rgba(0, 0, 0, 0.6);\r\n	text-shadow: 1px 1px black;\r\n	color: white;\r\n	padding: 5px;\r\n	white-space: nowrap;\r\n	font-size: 0.6rem;\r\n	transition:\r\n		opacity 0.2s ease-in-out,\r\n		visibility 0.2s ease-in-out;\r\n	pointer-events: none;\r\n	z-index: 10;\r\n}\r\n#NpcStore .content .item:hover .expanded_currency_nameOverlay {\r\n	visibility: visible;\r\n	opacity: 1;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/NpcStore/NpcStore.js
+/**
+* Helper to get shadow root
+*/
+function _getRoot$8() {
+	return NpcStore._shadow || NpcStore._host;
+}
+/**
+* Make a sub-window element draggable by its handle
+*/
+function _makeDraggable(element, handle) {
+	handle.addEventListener("mousedown", (e) => {
+		if (e.which !== 1) return;
+		const offsetX = element.offsetLeft - e.pageX;
+		const offsetY = element.offsetTop - e.pageY;
+		const onMove = (ev) => {
+			element.style.left = `${ev.pageX + offsetX}px`;
+			element.style.top = `${ev.pageY + offsetY}px`;
+		};
+		const onUp = (ev) => {
+			if (ev.which === 1) {
+				window.removeEventListener("mousemove", onMove);
+				window.removeEventListener("mouseup", onUp);
+			}
+		};
+		window.addEventListener("mousemove", onMove);
+		window.addEventListener("mouseup", onUp);
+		e.stopImmediatePropagation();
+	});
+}
+/**
+* Helper: escape HTML
+*/
+function _escapeHTML(text) {
+	const div = document.createElement("div");
+	div.textContent = text;
+	return div.innerHTML;
+}
+/**
+* Helper to show/hide elements by selector
+*/
+function _hideAll(root, selector) {
+	root.querySelectorAll(selector).forEach((el) => {
+		el.style.display = "none";
+	});
+}
+function _showAll(root, selector) {
+	root.querySelectorAll(selector).forEach((el) => {
+		el.style.display = "";
+	});
+}
 /**
 * Prettify zeny : 1000000 -> 1,000,000
 *
@@ -330815,7 +331069,7 @@ function prettyZeny(val, useStyle) {
 	const count = list.length;
 	let str = "";
 	for (i = 0; i < count; i++) str = list[count - i - 1] + (i && i % 3 === 0 ? "," : "") + str;
-	if (useStyle) str = "<span style=\"" + [
+	if (useStyle) str = `<span style="${[
 		"color:#000000; text-shadow:1px 0px #00ffff;",
 		"color:#0000ff; text-shadow:1px 0px #ce00ce;",
 		"color:#0000ff; text-shadow:1px 0px #00ffff;",
@@ -330826,19 +331080,19 @@ function prettyZeny(val, useStyle) {
 		"color:#ff0000;",
 		"color:#000000; text-shadow:1px 0px #cece63;",
 		"color:#ff0000; text-shadow:1px 0px #ff007b;"
-	][count - 1] + "\">" + str + "</span>";
+	][count - 1]}">${str}</span>`;
 	return str;
 }
 /**
 * Add item to the list
 *
-* @param {jQuery} content element
+* @param {Element} content element
 * @param {Item} item info
 */
 function addItem(content, item) {
 	const it = DB.getItemInfo(item.ITID);
 	const currencyit = DB.getItemInfo(item.currencyITID);
-	const element = content.find(".item[data-index=" + item.index + "]:first");
+	const element = content.querySelector(`.item[data-index="${item.index}"]`);
 	let price;
 	let amountText;
 	let currency_item;
@@ -330847,70 +331101,84 @@ function addItem(content, item) {
 		currency_item.ITID = item.currencyITID;
 	}
 	if (item.count === 0) {
-		if (element.length) element.remove();
+		if (element) element.remove();
 		return;
 	}
-	if (element.length) {
-		amountText = _type == NpcStore.Type.BUYING_STORE && !content.hasClass("contentAvailable") ? " ea." : "";
-		element.find(".amount").text(isFinite(item.count) ? item.count + amountText : "");
+	if (element) {
+		amountText = _type === NpcStore.Type.BUYING_STORE && !content.classList.contains("contentAvailable") ? " ea." : "";
+		const amountEl = element.querySelector(".amount");
+		if (amountEl) amountEl.textContent = isFinite(item.count) ? item.count + amountText : "";
 		return;
 	}
-	if (!content.hasClass("contentAvailable") && _type !== NpcStore.Type.BARTER_MARKET && _type !== NpcStore.Type.BARTER_MARKET_EXTENDED) {
+	if (!content.classList.contains("contentAvailable") && _type !== NpcStore.Type.BARTER_MARKET && _type !== NpcStore.Type.BARTER_MARKET_EXTENDED) {
 		price = prettyZeny(item.price, _type === NpcStore.Type.VENDING_STORE || _type === NpcStore.Type.BUYING_STORE);
 		if ("discountprice" in item && item.price !== item.discountprice) price += " -> " + prettyZeny(item.discountprice);
 		else if ("overchargeprice" in item && item.price !== item.overchargeprice) price += " -> " + prettyZeny(item.overchargeprice);
-		const buyingClass = _type == NpcStore.Type.BUYING_STORE ? " amountBuying" : "";
-		amountText = _type == NpcStore.Type.BUYING_STORE ? " ea." : "";
-		content.append("<div class=\"item\" draggable=\"true\" data-index=\"" + item.index + "\"><div class=\"icon\"></div><div class=\"amount" + buyingClass + "\">" + (isFinite(item.count) ? item.count : _type === NpcStore.Type.BUYING_STORE ? 0 : "") + amountText + "</div><div class=\"name\">" + jquery_default.escape(DB.getItemName(item)) + "</div><div class=\"price\">" + price + "</div><div class=\"unity\">Z</div></div>");
-	} else if (_type === NpcStore.Type.BARTER_MARKET) content.append("<div class=\"item\" draggable=\"true\" data-index=\"" + item.index + "\" data-weight=\"" + item.weight + "\" data-location=\"" + item.location + "\" data-viewSprite=\"" + item.viewSprite + "\"><div class=\"icon\"></div><div class=\"amount\">" + (isFinite(item.count) ? item.count : "") + "</div><div class=\"name\">" + jquery_default.escape(DB.getItemName(item)) + "</div><div class=\"currency_icon\" data-item=\"" + item.currencyITID + "\"></div><div class=\"currency_amount\">" + item.currencyamount + "</div><div class=\"currency_nameOverlay\">" + jquery_default.escape(DB.getItemName(currency_item)) + " " + item.currencyamount + " ea</div></div>");
-	else if (_type === NpcStore.Type.BARTER_MARKET_EXTENDED) {
+		const buyingClass = _type === NpcStore.Type.BUYING_STORE ? " amountBuying" : "";
+		amountText = _type === NpcStore.Type.BUYING_STORE ? " ea." : "";
+		const html = `<div class="item" draggable="true" data-index="${item.index}"><div class="icon"></div><div class="amount${buyingClass}">` + (isFinite(item.count) ? item.count : _type === NpcStore.Type.BUYING_STORE ? 0 : "") + amountText + `</div><div class="name">${_escapeHTML(DB.getItemName(item))}</div><div class="price">${price}</div><div class="unity">Z</div></div>`;
+		content.insertAdjacentHTML("beforeend", html);
+	} else if (_type === NpcStore.Type.BARTER_MARKET) {
+		const html = `<div class="item" draggable="true" data-index="${item.index}" data-weight="${item.weight}" data-location="${item.location}" data-viewSprite="${item.viewSprite}"><div class="icon"></div><div class="amount">${isFinite(item.count) ? item.count : ""}</div><div class="name">${_escapeHTML(DB.getItemName(item))}</div><div class="currency_icon" data-item="${item.currencyITID}"></div><div class="currency_amount">${item.currencyamount}</div><div class="currency_nameOverlay">${_escapeHTML(DB.getItemName(currency_item))} ${item.currencyamount} ea</div></div>`;
+		content.insertAdjacentHTML("beforeend", html);
+	} else if (_type === NpcStore.Type.BARTER_MARKET_EXTENDED) {
 		let currencySlotsHTML = "";
 		let currencyOverlay = "";
-		if (item.currencyList && item.currencyList.length > 0) {
-			for (let i = 0; i < item.currencyList.length; i++) if (i < item.currencyList.length) {
-				const currency = item.currencyList[i];
-				const currencyItem = DB.getItemInfo(currency.ITID);
-				currencySlotsHTML += "<div class=\"currency_slot\" data-item=\"" + currency.ITID + "\"><div class=\"expanded_currency_holder\"><div class=\"expanded_currency_icon\"></div></div><div class=\"expanded_currency_amount\">" + currency.amount + "</div>" + (currency.refine_level > 0 ? "<div class=\"expanded_currency_refinelvl\">+" + currency.refine_level + "</div>" : "") + "</div>";
-				currencyOverlay += "" + jquery_default.escape(currencyItem.identifiedDisplayName) + " " + currency.amount + " ea<br>";
-			}
+		if (item.currencyList && item.currencyList.length > 0) for (let i = 0; i < item.currencyList.length; i++) {
+			const currency = item.currencyList[i];
+			const currencyItem = DB.getItemInfo(currency.ITID);
+			currencySlotsHTML += `<div class="currency_slot" data-item="${currency.ITID}"><div class="expanded_currency_holder"><div class="expanded_currency_icon"></div></div><div class="expanded_currency_amount">${currency.amount}</div>` + (currency.refine_level > 0 ? `<div class="expanded_currency_refinelvl">+${currency.refine_level}</div>` : "") + `</div>`;
+			currencyOverlay += `${_escapeHTML(currencyItem.identifiedDisplayName)} ${currency.amount} ea<br>`;
 		}
-		content.append("<div class=\"item expanded-barter\" draggable=\"true\" data-index=\"" + item.index + "\" data-weight=\"" + item.weight + "\" data-location=\"" + item.location + "\" data-viewSprite=\"" + item.viewSprite + "\"><div class=\"expanded_currency_holder\"><div class=\"icon\"></div></div><div class=\"amount\">" + (isFinite(item.count) ? item.count : "") + "</div><div class=\"name\">" + jquery_default.escape(DB.getItemName(item)) + "</div><div class=\"currency_section\">" + currencySlotsHTML + "</div><div class=\"expanded_price\">" + item.price + "z</div><div class=\"expanded_currency_nameOverlay\">" + currencyOverlay + "</div></div>");
+		const html = `<div class="item expanded-barter" draggable="true" data-index="${item.index}" data-weight="${item.weight}" data-location="${item.location}" data-viewSprite="${item.viewSprite}"><div class="expanded_currency_holder"><div class="icon"></div></div><div class="amount">${isFinite(item.count) ? item.count : ""}</div><div class="name">${_escapeHTML(DB.getItemName(item))}</div><div class="currency_section">${currencySlotsHTML}</div><div class="expanded_price">${item.price}z</div><div class="expanded_currency_nameOverlay">${currencyOverlay}</div></div>`;
+		content.insertAdjacentHTML("beforeend", html);
 		if (item.currencyList && item.currencyList.length > 0) for (let i = 0; i < item.currencyList.length; i++) {
 			const currency = item.currencyList[i];
 			const currencyItem = DB.getItemInfo(currency.ITID);
 			Client.loadFile(DB.INTERFACE_PATH + "item/" + currencyItem.identifiedResourceName + ".bmp", function(data) {
-				content.find(`.currency_slot[data-item="${currency.ITID}"] .expanded_currency_icon`).css("backgroundImage", `url(${data})`);
+				content.querySelectorAll(`.currency_slot[data-item="${currency.ITID}"] .expanded_currency_icon`).forEach((icon) => {
+					icon.style.backgroundImage = `url(${data})`;
+				});
 			});
 		}
-	} else content.append("<div class=\"item itemAvailable\" draggable=\"true\" data-index=\"" + item.index + "\"><div class=\"icon\"></div><div class=\"amount\">" + (isFinite(item.count) ? item.count : "") + "</div><div class=\"nameOverlay\">" + jquery_default.escape(DB.getItemName(item)) + "</div></div>");
+	} else {
+		const html = `<div class="item itemAvailable" draggable="true" data-index="${item.index}"><div class="icon"></div><div class="amount">${isFinite(item.count) ? item.count : ""}</div><div class="nameOverlay">${_escapeHTML(DB.getItemName(item))}</div></div>`;
+		content.insertAdjacentHTML("beforeend", html);
+	}
 	Client.loadFile(DB.INTERFACE_PATH + "item/" + (item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName) + ".bmp", function(data) {
-		content.find(".item[data-index=\"" + item.index + "\"] .icon").css("backgroundImage", "url(" + data + ")");
+		content.querySelectorAll(`.item[data-index="${item.index}"] .icon`).forEach((icon) => {
+			icon.style.backgroundImage = `url(${data})`;
+		});
 	});
 	Client.loadFile(DB.INTERFACE_PATH + "basic_interface/itemwin_mid.bmp", function(data) {
-		content.find(".expanded_currency_holder").css("backgroundImage", "url(" + data + ")");
+		content.querySelectorAll(".expanded_currency_holder").forEach((holder) => {
+			holder.style.backgroundImage = `url(${data})`;
+		});
 	});
 	Client.loadFile(DB.INTERFACE_PATH + "item/" + (item.IsIdentified ? currencyit.identifiedResourceName : currencyit.unidentifiedResourceName) + ".bmp", function(data) {
-		content.find(".item[data-index=\"" + item.index + "\"] .currency_icon").css("backgroundImage", "url(" + data + ")");
+		content.querySelectorAll(`.item[data-index="${item.index}"] .currency_icon`).forEach((icon) => {
+			icon.style.backgroundImage = `url(${data})`;
+		});
 	});
 }
 /**
 * Resize the content
 *
-* @param {jQueryElement} content
+* @param {Element} content
 * @param {number} height
 */
 function resize(content, height) {
 	height = Math.min(Math.max(height, 2), 9);
-	content.css("height", height * 32);
+	content.style.height = `${height * 32}px`;
 }
 /**
 * Resizing window
 *
-* @param {jQueryElement} ui element
+* @param {Element} ui element
 */
 function onResize(ui) {
-	const top = ui.position().top;
-	const content = ui.find(".content:first");
+	const top = ui.offsetTop;
+	const content = ui.querySelector(".content");
 	let lastHeight = 0;
 	function resizing() {
 		let h = Math.floor((Mouse.screen.y - top - 20) / 32);
@@ -330920,20 +331188,16 @@ function onResize(ui) {
 		lastHeight = h;
 	}
 	const interval = setInterval(resizing, 30);
-	jquery_default(window).on("mouseup.resize", function(event) {
+	function onMouseUp(event) {
 		if (event.which === 1) {
 			clearInterval(interval);
-			jquery_default(window).off("mouseup.resize");
+			window.removeEventListener("mouseup", onMouseUp);
 		}
-	});
+	}
+	window.addEventListener("mouseup", onMouseUp);
 }
 /**
 * Request move item from box to another
-*
-* @param {number} item index
-* @param {jQueryElement} from the content
-* @param {jQueryElement} to the content
-* @param {boolean} add the content to the output box ?
 */
 function requestMoveItem(index, fromContent, toContent, isAdding) {
 	let count;
@@ -330942,7 +331206,7 @@ function requestMoveItem(index, fromContent, toContent, isAdding) {
 	if (isAdding) count = isFinite(_input[index].count) ? _input[index].count : 1;
 	else count = _output[index].count;
 	if ((_type === NpcStore.Type.BUY || _type === NpcStore.Type.VENDING_STORE) && !isStackable && isAdding) {
-		if (toContent.find(".item[data-index=\"" + item.index + "\"]:first").length) return false;
+		if (toContent.querySelector(`.item[data-index="${item.index}"]`)) return false;
 	}
 	if (item.count === 1 || _type === NpcStore.Type.SELL && _preferences$6.select_all || !isStackable) {
 		transferItem(fromContent, toContent, isAdding, index, isFinite(item.count) ? item.count : 1);
@@ -330957,19 +331221,19 @@ function requestMoveItem(index, fromContent, toContent, isAdding) {
 }
 /**
 * Drop an input in the InputWindow or OutputWindow
-*
-* @param {jQueryEvent} event
 */
 function onDrop(event) {
 	let data;
+	event.preventDefault();
 	event.stopImmediatePropagation();
 	try {
-		data = JSON.parse(event.originalEvent.dataTransfer.getData("Text"));
-	} catch (e) {
+		data = JSON.parse(event.dataTransfer.getData("Text"));
+	} catch (_e) {
 		return false;
 	}
 	if (data.type !== "item" || data.from !== "NpcStore" || data.container === this.className) return false;
-	requestMoveItem(data.index, jquery_default("." + data.container + " .content"), jquery_default(this).find(".content"), this.className === "OutputWindow");
+	const root = _getRoot$8();
+	requestMoveItem(data.index, root.querySelector("." + data.container + " .content"), this.querySelector(".content"), this.className.indexOf("OutputWindow") !== -1);
 	return false;
 }
 /**
@@ -330994,49 +331258,55 @@ function onItemInfo(event) {
 function onItemSelected() {
 	let from, to;
 	if ((_type === NpcStore.Type.BUY || _type === NpcStore.Type.VENDING_STORE) && !SessionStorage_default.isTouchDevice) return;
-	const input = NpcStore.ui.find(".InputWindow:first");
-	if (jquery_default.contains(input.get(0), this)) {
+	const root = _getRoot$8();
+	const input = root.querySelector(".InputWindow");
+	if (input.contains(this)) {
 		from = input;
-		to = NpcStore.ui.find(".OutputWindow:first");
+		to = root.querySelector(".OutputWindow");
 	} else {
-		from = NpcStore.ui.find(".OutputWindow:first");
+		from = root.querySelector(".OutputWindow");
 		to = input;
 	}
-	requestMoveItem(parseInt(this.getAttribute("data-index"), 10), from.find(".content:first"), to.find(".content:first"), from === input);
+	requestMoveItem(parseInt(this.getAttribute("data-index"), 10), from.querySelector(".content"), to.querySelector(".content"), from === input);
 }
 /**
 * Focus an item
 */
 function onItemFocus() {
-	NpcStore.ui.find(".item.selected").removeClass("selected");
-	jquery_default(this).addClass("selected");
+	_getRoot$8().querySelectorAll(".item.selected").forEach((el) => el.classList.remove("selected"));
+	this.classList.add("selected");
 }
 /**
 * Update scroll by block (32px)
 */
 function onScroll(event) {
 	let delta;
-	if (event.originalEvent.wheelDelta) {
-		delta = event.originalEvent.wheelDelta / 120;
-		if (window.opera) delta = -delta;
-	} else if (event.originalEvent.detail) delta = -event.originalEvent.detail;
+	if (event.deltaY) delta = event.deltaY > 0 ? -1 : 1;
+	else if (event.wheelDelta) delta = event.wheelDelta / 120;
+	else if (event.detail) delta = -event.detail;
 	this.scrollTop = Math.floor(this.scrollTop / 32) * 32 - delta * 32;
-	return false;
+	event.preventDefault();
 }
 /**
 * Start dragging an item
 */
 function onDragStart(event) {
-	const InputWindow = NpcStore.ui.find(".InputWindow:first").get(0);
-	const OutputWindow = NpcStore.ui.find(".OutputWindow:first").get(0);
-	const AvailableItemsWindow = NpcStore.ui.find(".AvailableItemsWindow:first").get(0);
-	const container = (jquery_default.contains(InputWindow, this) ? InputWindow : jquery_default.contains(AvailableItemsWindow, this) ? AvailableItemsWindow : OutputWindow).className;
+	const root = _getRoot$8();
+	const InputWindow = root.querySelector(".InputWindow");
+	const OutputWindow = root.querySelector(".OutputWindow");
+	const AvailableItemsWindow = root.querySelector(".AvailableItemsWindow");
+	let container;
+	if (InputWindow.contains(this)) container = InputWindow.className;
+	else if (AvailableItemsWindow.contains(this)) container = AvailableItemsWindow.className;
+	else container = OutputWindow.className;
 	const img = new Image();
-	const url = this.firstChild.style.backgroundImage.match(/\(([^\)]+)/)[1].replace(/"/g, "");
-	img.decoding = "async";
-	img.src = url;
-	event.originalEvent.dataTransfer.setDragImage(img, 12, 12);
-	event.originalEvent.dataTransfer.setData("Text", JSON.stringify(window._OBJ_DRAG_ = {
+	const match = this.firstChild.style.backgroundImage.match(/url\(["']?([^"')]+)["']?\)/);
+	if (match) {
+		img.decoding = "async";
+		img.src = match[1];
+		event.dataTransfer.setDragImage(img, 12, 12);
+	}
+	event.dataTransfer.setData("Text", JSON.stringify(window._OBJ_DRAG_ = {
 		type: "item",
 		from: "NpcStore",
 		container,
@@ -331044,17 +331314,16 @@ function onDragStart(event) {
 	}));
 }
 /**
-* Option to automatically buy/sell alls items instead of specify the amount
+* Option to automatically buy/sell all items instead of specify the amount
 */
 function onToggleSelectAmount() {
 	_preferences$6.select_all = !_preferences$6.select_all;
 	Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (_preferences$6.select_all ? 1 : 0) + ".bmp", function(data) {
-		this.style.backgroundImage = "url(" + data + ")";
+		this.style.backgroundImage = `url(${data})`;
 	}.bind(this));
 }
 /**
-* Returns the current preference for NPCStore Type, or initialize from defaults
-* @returns {_preferences[_type]}
+* Returns the current preference for NPCStore Type
 */
 function getCurrentPref() {
 	if (!_preferences$6[_type]) _preferences$6[_type] = JSON.parse(JSON.stringify(initialPreferences[_type] || initialPreferences.DEFAULT));
@@ -331062,7 +331331,6 @@ function getCurrentPref() {
 }
 var NpcStore, initialPreferences, _preferences$6, _input, _output, _type, _closePacketSent, transferItem, NpcStore_default;
 var init_NpcStore = __esmMin((() => {
-	init_jquery();
 	init_DBManager();
 	init_ItemType();
 	init_Client();
@@ -331074,14 +331342,16 @@ var init_NpcStore = __esmMin((() => {
 	init_PacketStructure();
 	init_KeyEventHandler();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
+	init_Elements();
 	init_ItemInfo();
 	init_InputBox();
 	init_ChatBox();
 	init_Inventory();
 	init_NpcStore$2();
 	init_NpcStore$1();
-	NpcStore = new UIComponent("NpcStore", NpcStore_default$2, NpcStore_default$1);
+	NpcStore = new GUIComponent("NpcStore", NpcStore_default$1);
+	NpcStore.render = () => NpcStore_default$2;
 	/**
 	* @let {enum} Store type
 	*/
@@ -331098,7 +331368,7 @@ var init_NpcStore = __esmMin((() => {
 	/**
 	* Freeze the mouse
 	*/
-	NpcStore.mouseMode = UIComponent.MouseMode.FREEZE;
+	NpcStore.mouseMode = GUIComponent.MouseMode.FREEZE;
 	initialPreferences = {
 		[NpcStore.Type.BARTER_MARKET_EXTENDED]: {
 			inputWindow: {
@@ -331157,40 +331427,71 @@ var init_NpcStore = __esmMin((() => {
 	* Initialize component
 	*/
 	NpcStore.init = function init() {
-		const ui = this.ui;
-		const InputWindow = ui.find(".InputWindow");
-		const OutputWindow = ui.find(".OutputWindow");
-		const AvailableItemsWindow = ui.find(".AvailableItemsWindow");
-		const PurchaseResult = ui.find(".PurchaseResult");
-		ui.find(".btn.cancel").click(this.remove.bind(this));
-		ui.find(".btn.buy, .btn.sell").click(this.submit.bind(this));
-		ui.find(".selectall").mousedown(onToggleSelectAmount);
-		InputWindow.find(".resize").mousedown(function() {
-			onResize(InputWindow);
+		const root = _getRoot$8();
+		root.querySelector(".btn.cancel").addEventListener("click", () => this.remove());
+		root.querySelector(".btn.buy").addEventListener("click", () => this.submit());
+		root.querySelector(".btn.sell").addEventListener("click", () => this.submit());
+		const selectall = root.querySelector(".selectall");
+		if (selectall) selectall.addEventListener("mousedown", function() {
+			onToggleSelectAmount.call(this);
 		});
-		OutputWindow.find(".resize").mousedown(function() {
-			onResize(OutputWindow);
+		const InputWindow = root.querySelector(".InputWindow");
+		const OutputWindow = root.querySelector(".OutputWindow");
+		const AvailableItemsWindow = root.querySelector(".AvailableItemsWindow");
+		const PurchaseResult = root.querySelector(".PurchaseResult");
+		InputWindow.querySelector(".resize").addEventListener("mousedown", () => onResize(InputWindow));
+		OutputWindow.querySelector(".resize").addEventListener("mousedown", () => onResize(OutputWindow));
+		AvailableItemsWindow.querySelector(".resize").addEventListener("mousedown", () => onResize(AvailableItemsWindow));
+		PurchaseResult.querySelector(".resize").addEventListener("mousedown", () => onResize(PurchaseResult));
+		root.querySelectorAll(".content").forEach((content) => {
+			content.addEventListener("wheel", function(event) {
+				onScroll.call(this, event);
+			});
+			content.addEventListener("contextmenu", (e) => {
+				const icon = e.target.closest(".icon");
+				if (icon) {
+					e.preventDefault();
+					e.stopImmediatePropagation();
+					onItemInfo.call(icon, e);
+				}
+			});
+			content.addEventListener("dblclick", (e) => {
+				const item = e.target.closest(".item");
+				if (item) onItemSelected.call(item);
+			});
+			content.addEventListener("mousedown", (e) => {
+				const item = e.target.closest(".item");
+				if (item) onItemFocus.call(item);
+			});
 		});
-		AvailableItemsWindow.find(".resize").mousedown(function() {
-			onResize(AvailableItemsWindow);
+		root.addEventListener("dragstart", (e) => {
+			const item = e.target.closest(".item");
+			if (item) onDragStart.call(item, e);
 		});
-		PurchaseResult.find(".resize").mousedown(function() {
-			onResize(PurchaseResult);
+		root.addEventListener("dragend", (e) => {
+			if (e.target.closest(".item")) delete window._OBJ_DRAG_;
 		});
-		ui.find(".content").on("mousewheel DOMMouseScroll", onScroll).on("contextmenu", ".icon", onItemInfo).on("dblclick", ".item", onItemSelected).on("mousedown", ".item", onItemFocus).on("dragstart", ".item", onDragStart).on("dragend", ".item", function() {
-			delete window._OBJ_DRAG_;
+		[
+			InputWindow,
+			OutputWindow,
+			AvailableItemsWindow
+		].forEach((win) => {
+			win.addEventListener("drop", function(event) {
+				onDrop.call(this, event);
+			});
+			win.addEventListener("dragover", (e) => {
+				e.preventDefault();
+				e.stopImmediatePropagation();
+			});
+			win.addEventListener("mousedown", () => {
+				NpcStore.focus();
+			});
 		});
-		ui.find(".InputWindow, .OutputWindow, .AvailableItemsWindow").on("drop", onDrop).on("dragover", function(event) {
-			event.stopImmediatePropagation();
-			return false;
-		}).on("mousedown", function() {
-			NpcStore.focus();
-		});
-		this.draggable.call({ ui: InputWindow }, InputWindow.find(".titlebar"));
-		this.draggable.call({ ui: OutputWindow }, OutputWindow.find(".titlebar"));
-		this.draggable.call({ ui: AvailableItemsWindow }, AvailableItemsWindow.find(".titlebar"));
-		this.draggable.call({ ui: PurchaseResult }, PurchaseResult.find(".titlebar"));
-		ui.find(".btn.ok").click(function() {
+		_makeDraggable(InputWindow, InputWindow.querySelector(".titlebar"));
+		_makeDraggable(OutputWindow, OutputWindow.querySelector(".titlebar"));
+		_makeDraggable(AvailableItemsWindow, AvailableItemsWindow.querySelector(".titlebar"));
+		_makeDraggable(PurchaseResult, PurchaseResult.querySelector(".titlebar"));
+		root.querySelector(".btn.ok").addEventListener("click", () => {
 			NpcStore.closeStore();
 		});
 	};
@@ -331200,47 +331501,51 @@ var init_NpcStore = __esmMin((() => {
 	NpcStore.onAppend = function onAppend() {
 		_closePacketSent = false;
 		Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (_preferences$6.select_all ? 1 : 0) + ".bmp", function(data) {
-			this.ui.find(".selectall:first").css("backgroundImage", "url(" + data + ")");
-		}.bind(this));
-		const events = jquery_default._data(window, "events").keydown;
-		events.unshift(events.pop());
+			const selectall = _getRoot$8().querySelector(".selectall");
+			if (selectall) selectall.style.backgroundImage = `url(${data})`;
+		});
 	};
 	/**
 	* Released movement and save preferences
 	*/
 	NpcStore.onRemove = function onRemove() {
-		const InputWindow = this.ui.find(".InputWindow");
-		const OutputWindow = this.ui.find(".OutputWindow");
-		const AvailableItemsWindow = this.ui.find(".AvailableItemsWindow");
-		const PurchaseResult = this.ui.find(".PurchaseResult");
+		const root = _getRoot$8();
+		const InputWindow = root.querySelector(".InputWindow");
+		const OutputWindow = root.querySelector(".OutputWindow");
+		const AvailableItemsWindow = root.querySelector(".AvailableItemsWindow");
+		const PurchaseResult = root.querySelector(".PurchaseResult");
 		_input.length = 0;
 		_output.length = 0;
 		const currentPref = getCurrentPref();
-		currentPref.inputWindow.x = parseInt(InputWindow.css("left"), 10);
-		currentPref.inputWindow.y = parseInt(InputWindow.css("top"), 10);
-		currentPref.inputWindow.height = InputWindow.find(".content").height() / 32 | 0;
-		currentPref.outputWindow.x = parseInt(OutputWindow.css("left"), 10);
-		currentPref.outputWindow.y = parseInt(OutputWindow.css("top"), 10);
-		currentPref.outputWindow.height = OutputWindow.find(".content").height() / 32 | 0;
-		currentPref.AvailableItemsWindow.x = parseInt(AvailableItemsWindow.css("left"), 10);
-		currentPref.AvailableItemsWindow.y = parseInt(AvailableItemsWindow.css("top"), 10);
-		currentPref.AvailableItemsWindow.height = AvailableItemsWindow.find(".content").height() / 32 | 0;
-		currentPref.PurchaseResult.x = parseInt(PurchaseResult.css("left"), 10);
-		currentPref.PurchaseResult.y = parseInt(PurchaseResult.css("top"), 10);
-		currentPref.PurchaseResult.height = PurchaseResult.find(".content").height() / 32 | 0;
+		currentPref.inputWindow.x = parseInt(InputWindow.style.left, 10);
+		currentPref.inputWindow.y = parseInt(InputWindow.style.top, 10);
+		currentPref.inputWindow.height = InputWindow.querySelector(".content").offsetHeight / 32 | 0;
+		currentPref.outputWindow.x = parseInt(OutputWindow.style.left, 10);
+		currentPref.outputWindow.y = parseInt(OutputWindow.style.top, 10);
+		currentPref.outputWindow.height = OutputWindow.querySelector(".content").offsetHeight / 32 | 0;
+		currentPref.AvailableItemsWindow.x = parseInt(AvailableItemsWindow.style.left, 10);
+		currentPref.AvailableItemsWindow.y = parseInt(AvailableItemsWindow.style.top, 10);
+		currentPref.AvailableItemsWindow.height = AvailableItemsWindow.querySelector(".content").offsetHeight / 32 | 0;
+		currentPref.PurchaseResult.x = parseInt(PurchaseResult.style.left, 10);
+		currentPref.PurchaseResult.y = parseInt(PurchaseResult.style.top, 10);
+		currentPref.PurchaseResult.height = PurchaseResult.querySelector(".content").offsetHeight / 32 | 0;
 		_preferences$6.save();
-		this.ui.find(".content").empty();
-		this.ui.find(".total .result").text(0);
-		this.ui.find(".totalP .resultP").text(0);
+		root.querySelectorAll(".content").forEach((c) => {
+			c.innerHTML = "";
+		});
+		root.querySelectorAll(".total .result").forEach((r) => {
+			r.textContent = "0";
+		});
+		root.querySelectorAll(".totalP .resultP").forEach((r) => {
+			r.textContent = "0";
+		});
 		if (!_closePacketSent) NpcStore.StoreClosePacket(_type);
 	};
 	/**
 	* Key Listener
-	*
-	* Remove the UI when Escape key is pressed
 	*/
 	NpcStore.onKeyDown = function onKeyDown(event) {
-		if ((event.which === KEYS.ESCAPE || event.key === "Escape") && this.ui.is(":visible")) this.remove();
+		if ((event.which === KEYS.ESCAPE || event.key === "Escape") && this._host.style.display !== "none") this.remove();
 	};
 	/**
 	* Specify the type of the shop
@@ -331248,65 +331553,62 @@ var init_NpcStore = __esmMin((() => {
 	* @param {number} type (see NpcStore.Type.*)
 	*/
 	NpcStore.setType = function setType(type) {
+		const root = _getRoot$8();
 		switch (type) {
 			case NpcStore.Type.BUY:
 			case NpcStore.Type.MARKETSHOP:
-				this.ui.find(".WinSell, .WinVendingStore, .WinCash, .WinBuyingStore, .AvailableItemsWindow, .PurchaseResult").hide();
-				this.ui.find(".WinBuy").show();
+				_hideAll(root, ".WinSell, .WinVendingStore, .WinCash, .WinBuyingStore, .AvailableItemsWindow, .PurchaseResult");
+				_showAll(root, ".WinBuy");
 				break;
 			case NpcStore.Type.SELL:
-				this.ui.find(".WinBuy, .WinVendingStore, .WinCash, .WinBuyingStore, .AvailableItemsWindow, .PurchaseResult").hide();
-				this.ui.find(".WinSell").show();
+				_hideAll(root, ".WinBuy, .WinVendingStore, .WinCash, .WinBuyingStore, .AvailableItemsWindow, .PurchaseResult");
+				_showAll(root, ".WinSell");
 				break;
 			case NpcStore.Type.VENDING_STORE:
-				this.ui.find(".WinBuy, .WinSell, .WinCash, .WinBuyingStore, .AvailableItemsWindow, .PurchaseResult").hide();
-				this.ui.find(".WinVendingStore").show();
+				_hideAll(root, ".WinBuy, .WinSell, .WinCash, .WinBuyingStore, .AvailableItemsWindow, .PurchaseResult");
+				_showAll(root, ".WinVendingStore");
 				break;
 			case NpcStore.Type.BUYING_STORE:
-				this.ui.find(".WinBuy, .WinSell, .WinCash, .WinVendingStore, .PurchaseResult").hide();
-				this.ui.find(".WinBuyingStore, .AvailableItemsWindow").show();
-				this.ui.find(".content").css("height", "160px");
-				this.ui.find(".contentAvailable").css("height", "65px");
+				_hideAll(root, ".WinBuy, .WinSell, .WinCash, .WinVendingStore, .PurchaseResult");
+				_showAll(root, ".WinBuyingStore, .AvailableItemsWindow");
+				root.querySelectorAll(".content").forEach((c) => {
+					c.style.height = "160px";
+				});
+				root.querySelectorAll(".contentAvailable").forEach((c) => {
+					c.style.height = "65px";
+				});
 				break;
 			case NpcStore.Type.BARTER_MARKET:
 			case NpcStore.Type.BARTER_MARKET_EXTENDED:
-				this.ui.find(".WinSell, .WinVendingStore, .WinCash, .WinBuyingStore, .AvailableItemsWindow, .PurchaseResult").hide();
-				this.ui.find(".WinBuy").show();
-				this.ui.find(".total").hide();
+				_hideAll(root, ".WinSell, .WinVendingStore, .WinCash, .WinBuyingStore, .AvailableItemsWindow, .PurchaseResult");
+				_showAll(root, ".WinBuy");
+				_hideAll(root, ".total");
 				break;
 			case NpcStore.Type.CASH_SHOP:
-				this.ui.find(".WinSell, .WinVendingStore, .WinBuyingStore, .AvailableItemsWindow, .PurchaseResult, .total").hide();
-				this.ui.find(".WinBuy").show();
+				_hideAll(root, ".WinSell, .WinVendingStore, .WinBuyingStore, .AvailableItemsWindow, .PurchaseResult, .total");
+				_showAll(root, ".WinBuy");
 				break;
 		}
 		_type = type;
 		const currentPref = getCurrentPref();
-		const InputWindow = this.ui.find(".InputWindow");
-		const OutputWindow = this.ui.find(".OutputWindow");
-		const AvailableItemsWindow = this.ui.find(".AvailableItemsWindow");
-		const PurchaseResult = this.ui.find(".PurchaseResult");
-		InputWindow.css({
-			top: currentPref.inputWindow.y,
-			left: currentPref.inputWindow.x
-		});
-		OutputWindow.css({
-			top: currentPref.outputWindow.y,
-			left: currentPref.outputWindow.x
-		});
-		AvailableItemsWindow.css({
-			top: currentPref.AvailableItemsWindow.y,
-			left: currentPref.AvailableItemsWindow.x
-		});
-		PurchaseResult.css({
-			top: currentPref.PurchaseResult.y,
-			left: currentPref.PurchaseResult.x
-		});
-		resize(InputWindow.find(".content"), currentPref.inputWindow.height);
-		resize(OutputWindow.find(".content"), currentPref.outputWindow.height);
-		resize(AvailableItemsWindow.find(".content"), currentPref.AvailableItemsWindow.height);
-		resize(PurchaseResult.find(".content"), currentPref.PurchaseResult.height);
-		InputWindow.css("width", currentPref.inputWindow.width);
-		OutputWindow.css("width", currentPref.outputWindow.width);
+		const InputWindow = root.querySelector(".InputWindow");
+		const OutputWindow = root.querySelector(".OutputWindow");
+		const AvailableItemsWindow = root.querySelector(".AvailableItemsWindow");
+		const PurchaseResult = root.querySelector(".PurchaseResult");
+		InputWindow.style.top = `${currentPref.inputWindow.y}px`;
+		InputWindow.style.left = `${currentPref.inputWindow.x}px`;
+		OutputWindow.style.top = `${currentPref.outputWindow.y}px`;
+		OutputWindow.style.left = `${currentPref.outputWindow.x}px`;
+		AvailableItemsWindow.style.top = `${currentPref.AvailableItemsWindow.y}px`;
+		AvailableItemsWindow.style.left = `${currentPref.AvailableItemsWindow.x}px`;
+		PurchaseResult.style.top = `${currentPref.PurchaseResult.y}px`;
+		PurchaseResult.style.left = `${currentPref.PurchaseResult.x}px`;
+		resize(InputWindow.querySelector(".content"), currentPref.inputWindow.height);
+		resize(OutputWindow.querySelector(".content"), currentPref.outputWindow.height);
+		resize(AvailableItemsWindow.querySelector(".content"), currentPref.AvailableItemsWindow.height);
+		resize(PurchaseResult.querySelector(".content"), currentPref.PurchaseResult.height);
+		InputWindow.style.width = `${currentPref.inputWindow.width}px`;
+		OutputWindow.style.width = `${currentPref.outputWindow.width}px`;
 	};
 	/**
 	* Add items to list
@@ -331316,13 +331618,20 @@ var init_NpcStore = __esmMin((() => {
 	NpcStore.setList = function setList(items) {
 		let i, count;
 		let it, item, out;
-		this.ui.find(".content").empty();
-		this.ui.find(".total .result").text(0);
-		this.ui.find(".totalP .resultP").text(0);
+		const root = _getRoot$8();
+		root.querySelectorAll(".content").forEach((c) => {
+			c.innerHTML = "";
+		});
+		root.querySelectorAll(".total .result").forEach((r) => {
+			r.textContent = "0";
+		});
+		root.querySelectorAll(".totalP .resultP").forEach((r) => {
+			r.textContent = "0";
+		});
 		_input.length = 0;
 		_output.length = 0;
-		const content = this.ui.find(".InputWindow .content");
-		const availableContent = this.ui.find(".AvailableItemsWindow .content");
+		const content = root.querySelector(".InputWindow .content");
+		const availableContent = root.querySelector(".AvailableItemsWindow .content");
 		switch (_type) {
 			case NpcStore.Type.BUY:
 			case NpcStore.Type.VENDING_STORE:
@@ -331332,7 +331641,7 @@ var init_NpcStore = __esmMin((() => {
 					if (!("index" in items[i])) items[i].index = i;
 					items[i].count = items[i].count || Infinity;
 					items[i].IsIdentified = true;
-					out = jquery_default.extend({}, items[i]);
+					out = Object.assign({}, items[i]);
 					out.count = 0;
 					addItem(content, items[i]);
 					_input[items[i].index] = items[i];
@@ -331344,17 +331653,17 @@ var init_NpcStore = __esmMin((() => {
 					if (!("index" in items[i])) items[i].index = i;
 					items[i].count = items[i].count || Infinity;
 					items[i].IsIdentified = true;
-					out = jquery_default.extend({}, items[i]);
+					out = Object.assign({}, items[i]);
 					out.count = 0;
 					addItem(content, items[i]);
 					it = InventoryController.getUI().getItemById(items[i].ITID);
 					if (it) {
-						item = jquery_default.extend({}, it);
+						item = Object.assign({}, it);
 						item.ITID = it.ITID;
 						item.price = items[i].price;
 						item.count = "count" in item ? item.count : 1;
 						item.maxCount = isFinite(items[i].count) ? items[i].count : 0;
-						out = jquery_default.extend({}, item);
+						out = Object.assign({}, item);
 						out.count = 0;
 						addItem(availableContent, item);
 						_input[item.index] = item;
@@ -331368,7 +331677,7 @@ var init_NpcStore = __esmMin((() => {
 					if (!("index" in items[i])) items[i].index = i;
 					items[i].count = items[i].count || Infinity;
 					items[i].IsIdentified = true;
-					out = jquery_default.extend({}, items[i]);
+					out = Object.assign({}, items[i]);
 					out.count = 0;
 					addItem(content, items[i]);
 					_input[items[i].index] = items[i];
@@ -331380,11 +331689,11 @@ var init_NpcStore = __esmMin((() => {
 				for (i = 0, count = items.length; i < count; ++i) {
 					it = InventoryController.getUI().getItemByIndex(items[i].index);
 					if (InventoryVersion !== "InventoryV0" ? it && (!InventoryController.getUI().npcsalelock || it.PlaceETCTab < 1) : it) {
-						item = jquery_default.extend({}, it);
+						item = Object.assign({}, it);
 						item.price = items[i].price;
 						item.overchargeprice = items[i].overchargeprice;
 						item.count = "count" in item ? item.count : 1;
-						out = jquery_default.extend({}, item);
+						out = Object.assign({}, item);
 						out.count = 0;
 						addItem(content, item);
 						_input[item.index] = item;
@@ -331398,7 +331707,8 @@ var init_NpcStore = __esmMin((() => {
 	NpcStore.setPriceLimit = function setPriceLimit(price) {
 		const prettyPrice = prettyZeny(price);
 		const result = DB.getMessage(1735).replace("%s", prettyPrice);
-		this.ui.find(".priceLimit").text(result);
+		const priceLimit = _getRoot$8().querySelector(".priceLimit");
+		if (priceLimit) priceLimit.textContent = result;
 	};
 	/**
 	* Submit data to send items
@@ -331408,8 +331718,11 @@ var init_NpcStore = __esmMin((() => {
 		const count = _output.length;
 		for (let i = 0; i < count; ++i) if (_output[i] && _output[i].count) output.push(_output[i]);
 		NpcStore.onSubmit(output);
-		this.ui.find(".OutputWindow").find(".content").empty();
-		this.ui.find(".totalP .resultP").text(0);
+		const root = _getRoot$8();
+		const outputContent = root.querySelector(".OutputWindow .content");
+		if (outputContent) outputContent.innerHTML = "";
+		const resultP = root.querySelector(".totalP .resultP");
+		if (resultP) resultP.textContent = "0";
 		for (let i = 0; i < count; ++i) if (_output[i] && _output[i].count) _output[i].count = 0;
 	};
 	/**
@@ -331421,9 +331734,14 @@ var init_NpcStore = __esmMin((() => {
 		let i, total = 0;
 		const count = _output.length;
 		for (i = 0; i < count; ++i) if (_output[i]) total += (_output[i].discountprice || _output[i].overchargeprice || _output[i].price) * _output[i].count;
-		this.ui.find(".total .result").text(prettyZeny(total));
-		this.ui.find(".totalP .resultP").text(prettyZeny(total));
-		if (_type === NpcStore.Type.BARTER_MARKET) this.ui.find(".total").hide();
+		const root = _getRoot$8();
+		root.querySelectorAll(".total .result").forEach((r) => {
+			r.textContent = prettyZeny(total);
+		});
+		root.querySelectorAll(".totalP .resultP").forEach((r) => {
+			r.textContent = prettyZeny(total);
+		});
+		if (_type === NpcStore.Type.BARTER_MARKET) _hideAll(root, ".total");
 		return total;
 	};
 	/**
@@ -331454,6 +331772,7 @@ var init_NpcStore = __esmMin((() => {
 		return function(fromContent, toContent, isAdding, index, count) {
 			const inputItem = _input[index];
 			const outputItem = _output[index];
+			const root = _getRoot$8();
 			if (isAdding) {
 				if ((_type === NpcStore.Type.BUY || _type === NpcStore.Type.VENDING_STORE || _type === NpcStore.Type.MARKETSHOP) && NpcStore.calculateCost() + (inputItem.discountprice || inputItem.price) * count > SessionStorage_default.zeny) {
 					ChatBox_default.addText(DB.getMessage(55), ChatBox_default.TYPE.ERROR, ChatBox_default.FILTER.PUBLIC_LOG);
@@ -331462,10 +331781,10 @@ var init_NpcStore = __esmMin((() => {
 				const originalCount = outputItem.count;
 				outputItem.count = Math.min(outputItem.count + count, inputItem.count);
 				if (_type === NpcStore.Type.BARTER_MARKET) {
-					const inputCurrency = NpcStore.ui.find(`.InputWindow .item[data-index="${index}"]`);
-					const inputCurrencyDiv = NpcStore.ui.find(`.InputWindow .item[data-index="${index}"] .currency_amount`);
-					const currencyItemWeight = parseInt(inputCurrency.attr("data-weight"), 10);
-					const currencyAmount = parseInt(inputCurrencyDiv.text(), 10);
+					const inputCurrency = root.querySelector(`.InputWindow .item[data-index="${index}"]`);
+					const inputCurrencyDiv = root.querySelector(`.InputWindow .item[data-index="${index}"] .currency_amount`);
+					const currencyItemWeight = parseInt(inputCurrency.getAttribute("data-weight"), 10);
+					const currencyAmount = parseInt(inputCurrencyDiv.textContent, 10);
 					const additionalWeight = currencyItemWeight * (outputItem.count - originalCount);
 					if (SessionStorage_default.Character.weight + NpcStore.calculateWeight() + additionalWeight > SessionStorage_default.Character.max_weight) {
 						ChatBox_default.addText(DB.getMessage(56), ChatBox_default.TYPE.ERROR, ChatBox_default.FILTER.PUBLIC_LOG);
@@ -331476,11 +331795,11 @@ var init_NpcStore = __esmMin((() => {
 					updateTmpItem(inputItem, outputItem);
 					addItem(fromContent, tmpItem);
 					addItem(toContent, outputItem);
-					const outputCurrencyDiv = NpcStore.ui.find(`.OutputWindow .item[data-index="${index}"] .currency_amount`);
-					const currencyItemDiv = NpcStore.ui.find(`.OutputWindow .item[data-index="${index}"] .currency_icon`);
-					const currencyItem = parseInt(currencyItemDiv.attr("data-item"), 10);
+					const outputCurrencyDiv = root.querySelector(`.OutputWindow .item[data-index="${index}"] .currency_amount`);
+					const currencyItemDiv = root.querySelector(`.OutputWindow .item[data-index="${index}"] .currency_icon`);
+					const currencyItem = parseInt(currencyItemDiv.getAttribute("data-item"), 10);
 					const currencyTotal = currencyAmount * outputItem.count;
-					outputCurrencyDiv.text(currencyTotal);
+					outputCurrencyDiv.textContent = currencyTotal;
 					outputItem.shopIndex = index;
 					outputItem.matcurrency = currencyItem;
 					outputItem.matcurrencyamount = currencyTotal;
@@ -331498,12 +331817,12 @@ var init_NpcStore = __esmMin((() => {
 				if (!count) return;
 				outputItem.count -= count;
 				if (_type === NpcStore.Type.BARTER_MARKET) {
-					const inputCurrency = NpcStore.ui.find(`.InputWindow .item[data-index="${index}"]`);
-					outputItem.total_weight = parseInt(inputCurrency.attr("data-weight"), 10) * outputItem.count;
-					const inputCurrencyDiv = NpcStore.ui.find(`.InputWindow .item[data-index="${index}"] .currency_amount`);
-					const outputCurrencyDiv = NpcStore.ui.find(`.OutputWindow .item[data-index="${index}"] .currency_amount`);
-					const currencyTotal = parseInt(inputCurrencyDiv.text(), 10) * outputItem.count;
-					outputCurrencyDiv.text(currencyTotal);
+					const inputCurrency = root.querySelector(`.InputWindow .item[data-index="${index}"]`);
+					outputItem.total_weight = parseInt(inputCurrency.getAttribute("data-weight"), 10) * outputItem.count;
+					const inputCurrencyDiv = root.querySelector(`.InputWindow .item[data-index="${index}"] .currency_amount`);
+					const outputCurrencyDiv = root.querySelector(`.OutputWindow .item[data-index="${index}"] .currency_amount`);
+					const currencyTotal = parseInt(inputCurrencyDiv.textContent, 10) * outputItem.count;
+					outputCurrencyDiv.textContent = currencyTotal;
 					outputItem.matcurrencyamount = currencyTotal;
 				}
 				updateTmpItem(inputItem, outputItem);
@@ -331519,16 +331838,17 @@ var init_NpcStore = __esmMin((() => {
 	*/
 	NpcStore.closeStore = function() {
 		NpcStore.remove();
-		this.ui.find(".total").show();
+		_getRoot$8().querySelectorAll(".total").forEach((el) => {
+			el.style.display = "";
+		});
 	};
 	/**
 	* Handles packet to close store based on the store type
-	*
-	* @param {String} type - The store type (e.g., NpcStore.Type.MARKETSHOP, etc.)
 	*/
 	NpcStore.StoreClosePacket = function(type) {
-		const inputWindow = NpcStore.ui.find(".InputWindow");
-		const outputWindow = NpcStore.ui.find(".OutputWindow");
+		const root = _getRoot$8();
+		const inputWindow = root.querySelector(".InputWindow");
+		const outputWindow = root.querySelector(".OutputWindow");
 		InputBox_default.remove();
 		let pkt;
 		if (PacketVerManager_default.value < 20131223) if (type === NpcStore.Type.SELL) pkt = new PACKET.CZ.PC_SELL_ITEMLIST();
@@ -331536,8 +331856,8 @@ var init_NpcStore = __esmMin((() => {
 		else switch (type) {
 			case NpcStore.Type.MARKETSHOP:
 				pkt = new PACKET.CZ.NPC_MARKET_CLOSE();
-				inputWindow.show();
-				outputWindow.show();
+				inputWindow.style.display = "";
+				outputWindow.style.display = "";
 				break;
 			case NpcStore.Type.BARTER_MARKET:
 				pkt = new PACKET.CZ.NPC_BARTER_MARKET_CLOSE();
@@ -331558,30 +331878,27 @@ var init_NpcStore = __esmMin((() => {
 	};
 	/**
 	* Returns Npc Store Type
-	* @returns {_type}
 	*/
 	NpcStore.getCurrentType = function() {
 		return _type;
 	};
 	/**
 	* Update Marketshop Result UI
-	*
-	* @param {Array.<PACKET.ZC.NPC_MARKET_PURCHASE_RESULT.Item>} itemList
-	* @param {Array.<PACKET.ZC.NPC_MARKET_PURCHASE_RESULT2.Item>} itemList
 	*/
 	NpcStore.onMarketShopResultUI = function(itemList) {
-		const InputWindow = NpcStore.ui.find(".InputWindow");
-		const OutputWindow = NpcStore.ui.find(".OutputWindow");
-		const OutputWindowcontent = OutputWindow.find(".content");
-		const resultUI = NpcStore.ui.find(".PurchaseResult");
-		const resultUIcontent = resultUI.find(".content");
-		InputWindow.hide();
-		OutputWindow.hide();
-		resultUI.show();
-		resultUIcontent.empty();
+		const root = _getRoot$8();
+		const InputWindow = root.querySelector(".InputWindow");
+		const OutputWindow = root.querySelector(".OutputWindow");
+		const OutputWindowContent = OutputWindow.querySelector(".content");
+		const resultUI = root.querySelector(".PurchaseResult");
+		const resultUIContent = resultUI.querySelector(".content");
+		InputWindow.style.display = "none";
+		OutputWindow.style.display = "none";
+		resultUI.style.display = "block";
+		resultUIContent.innerHTML = "";
 		if (!itemList || itemList.length === 0) return;
-		resultUIcontent.append(OutputWindowcontent.children().clone());
-		resultUI.find(".resize").off("mousedown").on("mousedown", function() {
+		resultUIContent.innerHTML = OutputWindowContent.innerHTML;
+		resultUI.querySelector(".resize").addEventListener("mousedown", () => {
 			onResize(resultUI);
 		});
 	};
@@ -335023,23 +335340,29 @@ var init_PincodeWindow = __esmMin((() => {
 //#region src/UI/Components/CharSelect/CharSelect/CharSelect.html?raw
 var CharSelect_default$2;
 var init_CharSelect$3 = __esmMin((() => {
-	CharSelect_default$2 = "<div id=\"charselect\" data-background=\"login_interface/win_select.bmp\">\r\n	<!-- BOX -->\r\n	<div class=\"box_select\" data-background=\"login_interface/box_select.bmp\"></div>\r\n	<canvas class=\"slot1\" width=\"126\" height=\"132\"></canvas>\r\n	<canvas class=\"slot2\" width=\"126\" height=\"132\"></canvas>\r\n	<canvas class=\"slot3\" width=\"126\" height=\"132\"></canvas>\r\n\r\n	<!-- Arrows -->\r\n	<button class=\"arrow left\" data-background=\"scroll1left.bmp\"></button>\r\n	<button class=\"arrow right\" data-background=\"scroll1right.bmp\"></button>\r\n\r\n	<!-- Slots infos -->\r\n	<div class=\"slotinfo\">\r\n		<span class=\"number\" data-text=\"2004\">0 / 27</span>\r\n		<span class=\"content\"></span>\r\n	</div>\r\n\r\n	<!-- Pages infos -->\r\n	<div class=\"pageinfo\"><span class=\"current\">1</span> / <span class=\"count\">9</span></div>\r\n\r\n	<!-- Characters infos -->\r\n	<div class=\"charinfo\">\r\n		<div class=\"name\"></div>\r\n		<div class=\"job\"></div>\r\n		<div class=\"lvl\"></div>\r\n		<div class=\"exp\"></div>\r\n		<div class=\"hp\"></div>\r\n		<div class=\"sp\"></div>\r\n		<div class=\"map\"></div>\r\n		<div class=\"str\"></div>\r\n		<div class=\"agi\"></div>\r\n		<div class=\"vit\"></div>\r\n		<div class=\"int\"></div>\r\n		<div class=\"dex\"></div>\r\n		<div class=\"luk\"></div>\r\n	</div>\r\n\r\n	<!-- Buttons -->\r\n	<div class=\"btns\">\r\n		<button\r\n			class=\"btn delete\"\r\n			data-background=\"btn_del.bmp\"\r\n			data-hover=\"btn_del_a.bmp\"\r\n			data-down=\"btn_del_b.bmp\"\r\n		></button>\r\n		<button\r\n			class=\"btn cancel\"\r\n			data-background=\"btn_cancel.bmp\"\r\n			data-hover=\"btn_cancel_a.bmp\"\r\n			data-down=\"btn_cancel_b.bmp\"\r\n		></button>\r\n		<button class=\"btn ok\" data-background=\"btn_ok.bmp\" data-hover=\"btn_ok_a.bmp\" data-down=\"btn_ok_b.bmp\"></button>\r\n		<button\r\n			class=\"btn make\"\r\n			data-background=\"btn_make.bmp\"\r\n			data-hover=\"btn_make_a.bmp\"\r\n			data-down=\"btn_make_b.bmp\"\r\n		></button>\r\n	</div>\r\n</div>\r\n";
+	CharSelect_default$2 = "<div id=\"charselect\">\r\n	<ui-image src=\"login_interface/win_select.bmp\"></ui-image>\r\n	<!-- BOX -->\r\n	<div class=\"box_select\"><ui-image src=\"login_interface/box_select.bmp\"></ui-image></div>\r\n	<canvas class=\"slot1\" width=\"126\" height=\"132\"></canvas>\r\n	<canvas class=\"slot2\" width=\"126\" height=\"132\"></canvas>\r\n	<canvas class=\"slot3\" width=\"126\" height=\"132\"></canvas>\r\n\r\n	<!-- Arrows -->\r\n	<ui-button class=\"arrow left\" bg=\"scroll1left.bmp\"></ui-button>\r\n	<ui-button class=\"arrow right\" bg=\"scroll1right.bmp\"></ui-button>\r\n\r\n	<!-- Slots infos -->\r\n	<div class=\"slotinfo\">\r\n		<span class=\"number\">0 / 27</span>\r\n		<span class=\"content\"></span>\r\n	</div>\r\n\r\n	<!-- Pages infos -->\r\n	<div class=\"pageinfo\"><span class=\"current\">1</span> / <span class=\"count\">9</span></div>\r\n\r\n	<!-- Characters infos -->\r\n	<div class=\"charinfo\">\r\n		<div class=\"name\"></div>\r\n		<div class=\"job\"></div>\r\n		<div class=\"lvl\"></div>\r\n		<div class=\"exp\"></div>\r\n		<div class=\"hp\"></div>\r\n		<div class=\"sp\"></div>\r\n		<div class=\"map\"></div>\r\n		<div class=\"str\"></div>\r\n		<div class=\"agi\"></div>\r\n		<div class=\"vit\"></div>\r\n		<div class=\"int\"></div>\r\n		<div class=\"dex\"></div>\r\n		<div class=\"luk\"></div>\r\n	</div>\r\n\r\n	<!-- Buttons -->\r\n	<div class=\"btns\">\r\n		<ui-button class=\"btn delete\" bg=\"btn_del.bmp\" hover=\"btn_del_a.bmp\" down=\"btn_del_b.bmp\"></ui-button>\r\n		<ui-button class=\"btn cancel\" bg=\"btn_cancel.bmp\" hover=\"btn_cancel_a.bmp\" down=\"btn_cancel_b.bmp\"></ui-button>\r\n		<ui-button class=\"btn ok\" bg=\"btn_ok.bmp\" hover=\"btn_ok_a.bmp\" down=\"btn_ok_b.bmp\"></ui-button>\r\n		<ui-button class=\"btn make\" bg=\"btn_make.bmp\" hover=\"btn_make_a.bmp\" down=\"btn_make_b.bmp\"></ui-button>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/CharSelect/CharSelect/CharSelect.css?raw
 var CharSelect_default$1;
 var init_CharSelect$2 = __esmMin((() => {
-	CharSelect_default$1 = "#charselect {\r\n	position: absolute;\r\n	width: 576px;\r\n	height: 342px;\r\n	z-index: 100;\r\n}\r\n\r\n/** Box **/\r\n#charselect .box_select {\r\n	position: absolute;\r\n	width: 139px;\r\n	height: 144px;\r\n	top: 40px;\r\n	margin-left: -5px;\r\n}\r\n#charselect canvas {\r\n	position: absolute;\r\n	top: 44px;\r\n}\r\n#charselect .slot1 {\r\n	left: 60px;\r\n}\r\n#charselect .slot2 {\r\n	left: 224px;\r\n}\r\n#charselect .slot3 {\r\n	left: 386px;\r\n}\r\n\r\n/** Arrow **/\r\n#charselect .arrow {\r\n	position: absolute;\r\n	top: 105px;\r\n	width: 13px;\r\n	height: 13px;\r\n	border: 0;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#charselect .arrow.left {\r\n	left: 40px;\r\n}\r\n#charselect .arrow.right {\r\n	right: 40px;\r\n}\r\n\r\n/** Slot info **/\r\n#charselect .slotinfo {\r\n	position: absolute;\r\n	top: 195px;\r\n	right: 10px;\r\n	height: 20px;\r\n	display: block;\r\n	border: 1px solid #c6cee7;\r\n	border-radius: 4px;\r\n	padding-left: 10px;\r\n	padding-right: 10px;\r\n}\r\n#charselect .slotinfo .number {\r\n	color: #58709e;\r\n	font-weight: bold;\r\n	margin-right: 10px;\r\n}\r\n#charselect .slotinfo .content {\r\n	color: #555;\r\n	top: 6px;\r\n	right: 8px;\r\n}\r\n\r\n/** Page info **/\r\n#charselect .pageinfo {\r\n	position: absolute;\r\n	left: 275px;\r\n	top: 185px;\r\n	font-weight: bold;\r\n	color: #646464;\r\n}\r\n#charselect .pageinfo .current {\r\n	color: #fe3b7d;\r\n}\r\n\r\n/** Characters infos **/\r\n#charselect .charinfo {\r\n	position: absolute;\r\n	width: 285px;\r\n	top: 204px;\r\n	left: 16px;\r\n}\r\n#charselect .charinfo div {\r\n	position: absolute;\r\n	width: 90px;\r\n	height: 13px;\r\n}\r\n#charselect .charinfo .name {\r\n	left: 52px;\r\n	top: 2px;\r\n	white-space: nowrap;\r\n}\r\n#charselect .charinfo .job {\r\n	left: 52px;\r\n	top: 18px;\r\n}\r\n#charselect .charinfo .lvl {\r\n	left: 52px;\r\n	top: 34px;\r\n}\r\n#charselect .charinfo .exp {\r\n	left: 52px;\r\n	top: 50px;\r\n}\r\n#charselect .charinfo .hp {\r\n	left: 52px;\r\n	top: 66px;\r\n}\r\n#charselect .charinfo .sp {\r\n	left: 52px;\r\n	top: 82px;\r\n}\r\n#charselect .charinfo .map {\r\n	left: 52px;\r\n	top: 98px;\r\n	width: 238px;\r\n}\r\n#charselect .charinfo .str {\r\n	left: 200px;\r\n	top: 2px;\r\n}\r\n#charselect .charinfo .agi {\r\n	left: 200px;\r\n	top: 18px;\r\n}\r\n#charselect .charinfo .vit {\r\n	left: 200px;\r\n	top: 34px;\r\n}\r\n#charselect .charinfo .int {\r\n	left: 200px;\r\n	top: 50px;\r\n}\r\n#charselect .charinfo .dex {\r\n	left: 200px;\r\n	top: 66px;\r\n}\r\n#charselect .charinfo .luk {\r\n	left: 200px;\r\n	top: 82px;\r\n}\r\n\r\n/** Buttons **/\r\n#charselect .btns {\r\n	position: absolute;\r\n	bottom: 4px;\r\n	width: 100%;\r\n	height: 20px;\r\n}\r\n#charselect .btn {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#charselect .ok,\r\n#charselect .make {\r\n	right: 50px;\r\n}\r\n#charselect .cancel {\r\n	right: 4px;\r\n}\r\n#charselect .delete {\r\n	left: 4px;\r\n}\r\n";
+	CharSelect_default$1 = ":host {\r\n	width: 576px;\r\n	height: 342px;\r\n}\r\n\r\n#charselect {\r\n	position: absolute;\r\n	width: 576px;\r\n	height: 342px;\r\n}\r\n\r\n/** Box **/\r\n#charselect .box_select {\r\n	position: absolute;\r\n	width: 139px;\r\n	height: 144px;\r\n	top: 40px;\r\n	margin-left: -5px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#charselect canvas {\r\n	position: absolute;\r\n	top: 44px;\r\n}\r\n#charselect .slot1 {\r\n	left: 60px;\r\n}\r\n#charselect .slot2 {\r\n	left: 224px;\r\n}\r\n#charselect .slot3 {\r\n	left: 386px;\r\n}\r\n\r\n/** Arrow **/\r\n#charselect .arrow {\r\n	position: absolute;\r\n	top: 105px;\r\n	width: 13px;\r\n	height: 13px;\r\n}\r\n#charselect .arrow.left {\r\n	left: 40px;\r\n}\r\n#charselect .arrow.right {\r\n	right: 40px;\r\n}\r\n\r\n/** Slot info **/\r\n#charselect .slotinfo {\r\n	position: absolute;\r\n	top: 195px;\r\n	right: 10px;\r\n	height: 20px;\r\n	display: block;\r\n	border: 1px solid #c6cee7;\r\n	border-radius: 4px;\r\n	padding-left: 10px;\r\n	padding-right: 10px;\r\n}\r\n#charselect .slotinfo .number {\r\n	color: #58709e;\r\n	font-weight: bold;\r\n	margin-right: 10px;\r\n}\r\n#charselect .slotinfo .content {\r\n	color: #555;\r\n	top: 6px;\r\n	right: 8px;\r\n}\r\n\r\n/** Page info **/\r\n#charselect .pageinfo {\r\n	position: absolute;\r\n	left: 275px;\r\n	top: 185px;\r\n	font-weight: bold;\r\n	color: #646464;\r\n}\r\n#charselect .pageinfo .current {\r\n	color: #fe3b7d;\r\n}\r\n\r\n/** Characters infos **/\r\n#charselect .charinfo {\r\n	position: absolute;\r\n	width: 285px;\r\n	top: 204px;\r\n	left: 16px;\r\n}\r\n#charselect .charinfo div {\r\n	position: absolute;\r\n	width: 90px;\r\n	height: 13px;\r\n}\r\n#charselect .charinfo .name {\r\n	left: 52px;\r\n	top: 2px;\r\n	white-space: nowrap;\r\n}\r\n#charselect .charinfo .job {\r\n	left: 52px;\r\n	top: 18px;\r\n}\r\n#charselect .charinfo .lvl {\r\n	left: 52px;\r\n	top: 34px;\r\n}\r\n#charselect .charinfo .exp {\r\n	left: 52px;\r\n	top: 50px;\r\n}\r\n#charselect .charinfo .hp {\r\n	left: 52px;\r\n	top: 66px;\r\n}\r\n#charselect .charinfo .sp {\r\n	left: 52px;\r\n	top: 82px;\r\n}\r\n#charselect .charinfo .map {\r\n	left: 52px;\r\n	top: 98px;\r\n	width: 238px;\r\n}\r\n#charselect .charinfo .str {\r\n	left: 200px;\r\n	top: 2px;\r\n}\r\n#charselect .charinfo .agi {\r\n	left: 200px;\r\n	top: 18px;\r\n}\r\n#charselect .charinfo .vit {\r\n	left: 200px;\r\n	top: 34px;\r\n}\r\n#charselect .charinfo .int {\r\n	left: 200px;\r\n	top: 50px;\r\n}\r\n#charselect .charinfo .dex {\r\n	left: 200px;\r\n	top: 66px;\r\n}\r\n#charselect .charinfo .luk {\r\n	left: 200px;\r\n	top: 82px;\r\n}\r\n\r\n/** Buttons **/\r\n#charselect .btns {\r\n	position: absolute;\r\n	bottom: 4px;\r\n	width: 100%;\r\n	height: 20px;\r\n}\r\n#charselect .btn {\r\n	position: absolute;\r\n	width: 42px;\r\n	height: 20px;\r\n}\r\n\r\n#charselect .ok,\r\n#charselect .make {\r\n	right: 50px;\r\n}\r\n#charselect .cancel {\r\n	right: 4px;\r\n}\r\n#charselect .delete {\r\n	left: 4px;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/CharSelect/CharSelect/CharSelect.js
+/**
+* Helper to get shadow root
+*/
+function _getRoot$7() {
+	return CharSelect._shadow || CharSelect._host;
+}
 /**
 * Generic method to handle mousedown on arrow
 *
 * @param {number} value to move
 */
 function genericArrowDown$2(value) {
-	return function(event) {
+	return (event) => {
 		moveCursorTo$3((_index$3 + _maxSlots$3 + value) % _maxSlots$3);
 		event.stopImmediatePropagation();
 		return false;
@@ -335051,7 +335374,7 @@ function genericArrowDown$2(value) {
 * @param {number} value to move
 */
 function genericCanvasDown$3(value) {
-	return function(event) {
+	return (event) => {
 		moveCursorTo$3(Math.floor(_index$3 / 3) * 3 + value);
 		event.stopImmediatePropagation();
 		return false;
@@ -335061,7 +335384,7 @@ function genericCanvasDown$3(value) {
 * Press "cancel" or ESCAPE key
 */
 function cancel$7() {
-	if (_disable_UI$3 === false) UIManager.showPromptBox(DB.getMessage(17), "ok", "cancel", function() {
+	if (_disable_UI$3 === false) UIManager.showPromptBox(DB.getMessage(17), "ok", "cancel", () => {
 		CharSelect.onExitRequest();
 	}, null);
 }
@@ -335100,8 +335423,8 @@ function suppress$3() {
 * @param {number} index
 */
 function moveCursorTo$3(index) {
-	const ui = CharSelect.ui;
-	const $charinfo = ui.find(".charinfo");
+	const root = _getRoot$7();
+	const charinfo = root.querySelector(".charinfo");
 	let entity = _entitySlots$3[_index$3];
 	if (entity) entity.setAction({
 		action: entity.ACTION.IDLE,
@@ -335110,14 +335433,18 @@ function moveCursorTo$3(index) {
 		repeat: true
 	});
 	_index$3 = (index + _maxSlots$3) % _maxSlots$3;
-	ui.find(".box_select").removeClass("slot1 slot2 slot3").addClass("slot" + (_index$3 % 3 + 1));
-	ui.find(".pageinfo .current").text(Math.floor(_index$3 / 3) + 1);
+	const boxSelect = root.querySelector(".box_select");
+	boxSelect.classList.remove("slot1", "slot2", "slot3");
+	boxSelect.classList.add(`slot${_index$3 % 3 + 1}`);
+	root.querySelector(".pageinfo .current").textContent = Math.floor(_index$3 / 3) + 1;
 	entity = _entitySlots$3[_index$3];
 	if (!entity) {
-		$charinfo.find("div").empty();
-		ui.find(".make").show();
-		ui.find(".delete").hide();
-		ui.find(".ok").hide();
+		charinfo.querySelectorAll("div").forEach((div) => {
+			div.textContent = "";
+		});
+		root.querySelector(".make").style.display = "block";
+		root.querySelector(".delete").style.display = "none";
+		root.querySelector(".ok").style.display = "none";
 		return;
 	}
 	entity.setAction({
@@ -335126,33 +335453,32 @@ function moveCursorTo$3(index) {
 		play: true,
 		repeat: true
 	});
-	ui.find(".make").hide();
-	ui.find(".delete").show();
-	ui.find(".ok").show();
+	root.querySelector(".make").style.display = "none";
+	root.querySelector(".delete").style.display = "block";
+	root.querySelector(".ok").style.display = "block";
 	const info = _slots$3[_index$3];
-	$charinfo.find(".name").text(info.name);
-	$charinfo.find(".job").text(MonsterTable_default[info.job] || "");
-	$charinfo.find(".lvl").text(info.level);
-	$charinfo.find(".exp").text(info.exp);
-	$charinfo.find(".hp").text(info.hp);
-	$charinfo.find(".sp").text(info.sp);
-	$charinfo.find(".map").text(DB.getMapName(info.lastMap, "") || "");
-	$charinfo.find(".str").text(info.Str);
-	$charinfo.find(".agi").text(info.Agi);
-	$charinfo.find(".vit").text(info.Vit);
-	$charinfo.find(".int").text(info.Int);
-	$charinfo.find(".dex").text(info.Dex);
-	$charinfo.find(".luk").text(info.Luk);
+	charinfo.querySelector(".name").textContent = info.name;
+	charinfo.querySelector(".job").textContent = MonsterTable_default[info.job] || "";
+	charinfo.querySelector(".lvl").textContent = info.level;
+	charinfo.querySelector(".exp").textContent = info.exp;
+	charinfo.querySelector(".hp").textContent = info.hp;
+	charinfo.querySelector(".sp").textContent = info.sp;
+	charinfo.querySelector(".map").textContent = DB.getMapName(info.lastMap, "") || "";
+	charinfo.querySelector(".str").textContent = info.Str;
+	charinfo.querySelector(".agi").textContent = info.Agi;
+	charinfo.querySelector(".vit").textContent = info.Vit;
+	charinfo.querySelector(".int").textContent = info.Int;
+	charinfo.querySelector(".dex").textContent = info.Dex;
+	charinfo.querySelector(".luk").textContent = info.Luk;
 }
 /**
 * Render sprites to canvas
 */
 function render$7() {
-	let i;
 	Camera.direction = 4;
 	const idx = Math.floor(_index$3 / 3) * 3;
 	const count = _ctx$3.length;
-	for (i = 0; i < count; ++i) {
+	for (let i = 0; i < count; ++i) {
 		_ctx$3[i].clearRect(0, 0, _ctx$3[i].canvas.width, _ctx$3[i].canvas.height);
 		if (_entitySlots$3[idx + i]) {
 			SpriteRenderer.bind2DContext(_ctx$3[i], 63, 130);
@@ -335172,10 +335498,12 @@ var init_CharSelect$1 = __esmMin((() => {
 	init_StatusState();
 	init_Camera();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
+	init_Elements();
 	init_CharSelect$3();
 	init_CharSelect$2();
-	CharSelect = new UIComponent("CharSelect", CharSelect_default$2, CharSelect_default$1);
+	CharSelect = new GUIComponent("CharSelect", CharSelect_default$1);
+	CharSelect.render = () => CharSelect_default$2;
 	_preferences$4 = Preferences.get("CharSelect", { index: 0 }, 1);
 	_maxSlots$3 = 27;
 	_list$3 = [];
@@ -335188,36 +335516,36 @@ var init_CharSelect$1 = __esmMin((() => {
 	/**
 	* Initialize UI
 	*/
-	CharSelect.init = function Init() {
-		const ui = this.ui;
-		ui.css({
-			top: (Renderer.height - 342) / 2,
-			left: (Renderer.width - 576) / 2
-		});
-		ui.find(".ok").click(connect$3);
-		ui.find(".cancel").click(cancel$7);
-		ui.find(".make").click(create$7);
-		ui.find(".delete").click(suppress$3);
-		ui.find(".arrow.left").mousedown(genericArrowDown$2(-1));
-		ui.find(".arrow.right").mousedown(genericArrowDown$2(1));
-		ui.find(".slot1").mousedown(genericCanvasDown$3(0));
-		ui.find(".slot2").mousedown(genericCanvasDown$3(1));
-		ui.find(".slot3").mousedown(genericCanvasDown$3(2));
-		ui.find("canvas").dblclick(function() {
-			if (_slots$3[_index$3]) connect$3();
-			else create$7();
-		}).each(function() {
-			_ctx$3.push(this.getContext("2d"));
-		});
+	CharSelect.init = function init() {
+		const root = _getRoot$7();
 		this.draggable();
+		root.querySelector(".ok").addEventListener("click", connect$3);
+		root.querySelector(".cancel").addEventListener("click", cancel$7);
+		root.querySelector(".make").addEventListener("click", create$7);
+		root.querySelector(".delete").addEventListener("click", suppress$3);
+		root.querySelector(".arrow.left").addEventListener("mousedown", genericArrowDown$2(-1));
+		root.querySelector(".arrow.right").addEventListener("mousedown", genericArrowDown$2(1));
+		root.querySelector(".slot1").addEventListener("mousedown", genericCanvasDown$3(0));
+		root.querySelector(".slot2").addEventListener("mousedown", genericCanvasDown$3(1));
+		root.querySelector(".slot3").addEventListener("mousedown", genericCanvasDown$3(2));
+		root.querySelectorAll("canvas").forEach((canvas) => {
+			canvas.addEventListener("dblclick", () => {
+				if (_slots$3[_index$3]) connect$3();
+				else create$7();
+			});
+			_ctx$3.push(canvas.getContext("2d"));
+		});
 	};
 	/**
 	* Once append to body
 	*/
 	CharSelect.onAppend = function onAppend() {
+		const root = _getRoot$7();
+		this._host.style.top = `${(Renderer.height - 342) / 2}px`;
+		this._host.style.left = `${(Renderer.width - 576) / 2}px`;
 		_index$3 = _preferences$4.index;
-		this.ui.find(".slotinfo .number").text(_list$3.length + " / " + _maxSlots$3);
-		this.ui.find(".pageinfo .count").text(_maxSlots$3 / 3);
+		root.querySelector(".slotinfo .number").textContent = `${_list$3.length} / ${_maxSlots$3}`;
+		root.querySelector(".pageinfo .count").textContent = _maxSlots$3 / 3;
 		moveCursorTo$3(_index$3);
 		Renderer.render(render$7);
 	};
@@ -335235,7 +335563,7 @@ var init_CharSelect$1 = __esmMin((() => {
 	* @param {object} event
 	*/
 	CharSelect.onKeyDown = function onKeyDown(event) {
-		if (!this.ui.is(":visible")) return true;
+		if (this._host.style.display === "none") return true;
 		switch (event.which) {
 			case KEYS.ESCAPE:
 				cancel$7();
@@ -335264,6 +335592,7 @@ var init_CharSelect$1 = __esmMin((() => {
 	* @param {object} pkt - packet structure
 	*/
 	CharSelect.setInfo = function setInfo(pkt) {
+		const root = _getRoot$7();
 		_maxSlots$3 = Math.floor(pkt.TotalSlotNum + pkt.PremiumStartSlot || 9);
 		_sex$3 = pkt.sex;
 		_slots$3.length = 0;
@@ -335273,8 +335602,8 @@ var init_CharSelect$1 = __esmMin((() => {
 			CharSelect.addCharacter(pkt.charInfo[i]);
 			_maxSlots$3 = Math.max(_maxSlots$3, Math.floor(pkt.charInfo[i].CharNum / 3 + 1) * 3);
 		}
-		this.ui.find(".slotinfo .number").text(_list$3.length + " / " + _maxSlots$3);
-		this.ui.find(".pageinfo .count").text(_maxSlots$3 / 3);
+		root.querySelector(".slotinfo .number").textContent = `${_list$3.length} / ${_maxSlots$3}`;
+		root.querySelector(".pageinfo .count").textContent = _maxSlots$3 / 3;
 		moveCursorTo$3(_index$3);
 	};
 	/**
@@ -335282,11 +335611,12 @@ var init_CharSelect$1 = __esmMin((() => {
 	*
 	* @param {number} error id
 	*/
-	CharSelect.deleteAnswer = function DeleteAnswer(error) {
+	CharSelect.deleteAnswer = function deleteAnswer(error) {
 		this.on("keydown");
 		switch (error) {
 			case -2: return;
 			case -1: {
+				const root = _getRoot$7();
 				delete _slots$3[_index$3];
 				delete _entitySlots$3[_index$3];
 				let i = 0;
@@ -335296,7 +335626,7 @@ var init_CharSelect$1 = __esmMin((() => {
 					--count;
 				} else i++;
 				moveCursorTo$3(_index$3);
-				this.ui.find(".slotinfo .number").text(_list$3.length + " / " + _maxSlots$3);
+				root.querySelector(".slotinfo .number").textContent = `${_list$3.length} / ${_maxSlots$3}`;
 				return;
 			}
 			default:
@@ -335339,35 +335669,41 @@ var init_CharSelect$1 = __esmMin((() => {
 //#region src/UI/Components/CharSelect/CharSelectV2/CharSelectV2.html?raw
 var CharSelectV2_default$2;
 var init_CharSelectV2$2 = __esmMin((() => {
-	CharSelectV2_default$2 = "<div id=\"CharSelectV2\" data-background=\"login_interface/win_select2.bmp\">\r\n	<!-- BOX -->\r\n	<div class=\"box_select\" data-background=\"login_interface/box_select.bmp\"></div>\r\n	<canvas class=\"slot1\" width=\"126\" height=\"132\"></canvas>\r\n	<canvas class=\"slot2\" width=\"126\" height=\"132\"></canvas>\r\n	<canvas class=\"slot3\" width=\"126\" height=\"132\"></canvas>\r\n	<div class=\"timedelete slot1 hidden\"></div>\r\n	<div class=\"timedelete slot2 hidden\"></div>\r\n	<div class=\"timedelete slot3 hidden\"></div>\r\n\r\n	<!-- Arrows -->\r\n	<button class=\"arrow left\" data-background=\"scroll1left.bmp\"></button>\r\n	<button class=\"arrow right\" data-background=\"scroll1right.bmp\"></button>\r\n\r\n	<!-- Slots infos -->\r\n	<div class=\"slotinfo\">\r\n		<span class=\"number\" data-text=\"2004\">0 / 27</span>\r\n		<span class=\"content\"></span>\r\n	</div>\r\n\r\n	<!-- Pages infos -->\r\n	<div class=\"pageinfo\"><span class=\"current\">1</span> / <span class=\"count\">9</span></div>\r\n\r\n	<!-- Characters infos -->\r\n	<div class=\"charinfo\">\r\n		<div class=\"name\"></div>\r\n		<div class=\"job\"></div>\r\n		<div class=\"lvl\"></div>\r\n		<div class=\"exp\"></div>\r\n		<div class=\"hp\"></div>\r\n		<div class=\"sp\"></div>\r\n		<div class=\"map\"></div>\r\n		<div class=\"str\"></div>\r\n		<div class=\"agi\"></div>\r\n		<div class=\"vit\"></div>\r\n		<div class=\"int\"></div>\r\n		<div class=\"dex\"></div>\r\n		<div class=\"luk\"></div>\r\n	</div>\r\n\r\n	<!-- Buttons -->\r\n	<div class=\"btns\">\r\n		<button\r\n			class=\"btn delete\"\r\n			data-background=\"btn_del_res.bmp\"\r\n			data-hover=\"btn_del_res_a.bmp\"\r\n			data-down=\"btn_del_res_b.bmp\"\r\n		></button>\r\n		<button\r\n			class=\"btn canceldelete\"\r\n			data-background=\"btn_cancel_res.bmp\"\r\n			data-hover=\"btn_cancel_res_a.bmp\"\r\n			data-down=\"btn_cancel_res_b.bmp\"\r\n		></button>\r\n		<button\r\n			class=\"btn finaldelete\"\r\n			data-background=\"btn_del.bmp\"\r\n			data-hover=\"btn_del_a.bmp\"\r\n			data-down=\"btn_del_b.bmp\"\r\n		></button>\r\n		<button\r\n			class=\"btn cancel\"\r\n			data-background=\"btn_cancel.bmp\"\r\n			data-hover=\"btn_cancel_a.bmp\"\r\n			data-down=\"btn_cancel_b.bmp\"\r\n		></button>\r\n		<button class=\"btn ok\" data-background=\"btn_ok.bmp\" data-hover=\"btn_ok_a.bmp\" data-down=\"btn_ok_b.bmp\"></button>\r\n		<button\r\n			class=\"btn make\"\r\n			data-background=\"btn_make.bmp\"\r\n			data-hover=\"btn_make_a.bmp\"\r\n			data-down=\"btn_make_b.bmp\"\r\n		></button>\r\n	</div>\r\n</div>\r\n";
+	CharSelectV2_default$2 = "<div id=\"CharSelectV2\">\r\n	<ui-image src=\"login_interface/win_select2.bmp\"></ui-image>\r\n	<!-- BOX -->\r\n	<div class=\"box_select\"><ui-image src=\"login_interface/box_select.bmp\"></ui-image></div>\r\n	<canvas class=\"slot1\" width=\"126\" height=\"132\"></canvas>\r\n	<canvas class=\"slot2\" width=\"126\" height=\"132\"></canvas>\r\n	<canvas class=\"slot3\" width=\"126\" height=\"132\"></canvas>\r\n	<div class=\"timedelete slot1 hidden\"></div>\r\n	<div class=\"timedelete slot2 hidden\"></div>\r\n	<div class=\"timedelete slot3 hidden\"></div>\r\n\r\n	<!-- Arrows -->\r\n	<ui-button class=\"arrow left\" bg=\"scroll1left.bmp\"></ui-button>\r\n	<ui-button class=\"arrow right\" bg=\"scroll1right.bmp\"></ui-button>\r\n\r\n	<!-- Slots infos -->\r\n	<div class=\"slotinfo\">\r\n		<span class=\"number\">0 / 27</span>\r\n		<span class=\"content\"></span>\r\n	</div>\r\n\r\n	<!-- Pages infos -->\r\n	<div class=\"pageinfo\"><span class=\"current\">1</span> / <span class=\"count\">9</span></div>\r\n\r\n	<!-- Characters infos -->\r\n	<div class=\"charinfo\">\r\n		<div class=\"name\"></div>\r\n		<div class=\"job\"></div>\r\n		<div class=\"lvl\"></div>\r\n		<div class=\"exp\"></div>\r\n		<div class=\"hp\"></div>\r\n		<div class=\"sp\"></div>\r\n		<div class=\"map\"></div>\r\n		<div class=\"str\"></div>\r\n		<div class=\"agi\"></div>\r\n		<div class=\"vit\"></div>\r\n		<div class=\"int\"></div>\r\n		<div class=\"dex\"></div>\r\n		<div class=\"luk\"></div>\r\n	</div>\r\n\r\n	<!-- Buttons -->\r\n	<div class=\"btns\">\r\n		<ui-button\r\n			class=\"btn delete\"\r\n			bg=\"btn_del_res.bmp\"\r\n			hover=\"btn_del_res_a.bmp\"\r\n			down=\"btn_del_res_b.bmp\"\r\n		></ui-button>\r\n		<ui-button\r\n			class=\"btn canceldelete\"\r\n			bg=\"btn_cancel_res.bmp\"\r\n			hover=\"btn_cancel_res_a.bmp\"\r\n			down=\"btn_cancel_res_b.bmp\"\r\n		></ui-button>\r\n		<ui-button class=\"btn finaldelete\" bg=\"btn_del.bmp\" hover=\"btn_del_a.bmp\" down=\"btn_del_b.bmp\"></ui-button>\r\n		<ui-button class=\"btn cancel\" bg=\"btn_cancel.bmp\" hover=\"btn_cancel_a.bmp\" down=\"btn_cancel_b.bmp\"></ui-button>\r\n		<ui-button class=\"btn ok\" bg=\"btn_ok.bmp\" hover=\"btn_ok_a.bmp\" down=\"btn_ok_b.bmp\"></ui-button>\r\n		<ui-button class=\"btn make\" bg=\"btn_make.bmp\" hover=\"btn_make_a.bmp\" down=\"btn_make_b.bmp\"></ui-button>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/CharSelect/CharSelectV2/CharSelectV2.css?raw
 var CharSelectV2_default$1;
 var init_CharSelectV2$1 = __esmMin((() => {
-	CharSelectV2_default$1 = "#CharSelectV2 {\r\n	position: absolute;\r\n	width: 576px;\r\n	height: 358px;\r\n	z-index: 100;\r\n}\r\n\r\n/** Box **/\r\n#CharSelectV2 .box_select {\r\n	position: absolute;\r\n	width: 139px;\r\n	height: 144px;\r\n	top: 40px;\r\n	margin-left: -5px;\r\n}\r\n#CharSelectV2 canvas {\r\n	position: absolute;\r\n	top: 44px;\r\n}\r\n#CharSelectV2 .slot1 {\r\n	left: 60px;\r\n}\r\n#CharSelectV2 .slot2 {\r\n	left: 224px;\r\n}\r\n#CharSelectV2 .slot3 {\r\n	left: 386px;\r\n}\r\n\r\n/** Arrow **/\r\n#CharSelectV2 .arrow {\r\n	position: absolute;\r\n	top: 105px;\r\n	width: 13px;\r\n	height: 13px;\r\n	border: 0;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#CharSelectV2 .arrow.left {\r\n	left: 40px;\r\n}\r\n#CharSelectV2 .arrow.right {\r\n	right: 40px;\r\n}\r\n\r\n/** Slot info **/\r\n#CharSelectV2 .slotinfo {\r\n	position: absolute;\r\n	top: 195px;\r\n	right: 10px;\r\n	height: 20px;\r\n	display: block;\r\n	border: 1px solid #c6cee7;\r\n	border-radius: 4px;\r\n	padding-left: 10px;\r\n	padding-right: 10px;\r\n}\r\n#CharSelectV2 .slotinfo .number {\r\n	color: #58709e;\r\n	font-weight: bold;\r\n	margin-right: 10px;\r\n}\r\n#CharSelectV2 .slotinfo .content {\r\n	color: #555;\r\n	top: 6px;\r\n	right: 8px;\r\n}\r\n\r\n/** Page info **/\r\n#CharSelectV2 .pageinfo {\r\n	position: absolute;\r\n	left: 275px;\r\n	top: 185px;\r\n	font-weight: bold;\r\n	color: #646464;\r\n}\r\n#CharSelectV2 .pageinfo .current {\r\n	color: #fe3b7d;\r\n}\r\n\r\n/** Characters infos **/\r\n#CharSelectV2 .charinfo {\r\n	position: absolute;\r\n	width: 285px;\r\n	top: 204px;\r\n	left: 16px;\r\n}\r\n#CharSelectV2 .charinfo div {\r\n	position: absolute;\r\n	width: 90px;\r\n	height: 13px;\r\n}\r\n#CharSelectV2 .charinfo .name {\r\n	left: 52px;\r\n	top: 2px;\r\n	white-space: nowrap;\r\n}\r\n#CharSelectV2 .charinfo .job {\r\n	left: 52px;\r\n	top: 18px;\r\n}\r\n#CharSelectV2 .charinfo .lvl {\r\n	left: 52px;\r\n	top: 34px;\r\n}\r\n#CharSelectV2 .charinfo .exp {\r\n	left: 52px;\r\n	top: 50px;\r\n}\r\n#CharSelectV2 .charinfo .hp {\r\n	left: 52px;\r\n	top: 66px;\r\n}\r\n#CharSelectV2 .charinfo .sp {\r\n	left: 52px;\r\n	top: 82px;\r\n}\r\n#CharSelectV2 .charinfo .map {\r\n	left: 52px;\r\n	top: 98px;\r\n	width: 238px;\r\n}\r\n#CharSelectV2 .charinfo .str {\r\n	left: 200px;\r\n	top: 2px;\r\n}\r\n#CharSelectV2 .charinfo .agi {\r\n	left: 200px;\r\n	top: 18px;\r\n}\r\n#CharSelectV2 .charinfo .vit {\r\n	left: 200px;\r\n	top: 34px;\r\n}\r\n#CharSelectV2 .charinfo .int {\r\n	left: 200px;\r\n	top: 50px;\r\n}\r\n#CharSelectV2 .charinfo .dex {\r\n	left: 200px;\r\n	top: 66px;\r\n}\r\n#CharSelectV2 .charinfo .luk {\r\n	left: 200px;\r\n	top: 82px;\r\n}\r\n\r\n/** Buttons **/\r\n#CharSelectV2 .btns {\r\n	position: absolute;\r\n	bottom: 4px;\r\n	width: 100%;\r\n	height: 20px;\r\n}\r\n#CharSelectV2 .btn {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#CharSelectV2 .ok,\r\n#charselect .make {\r\n	right: 50px;\r\n}\r\n#CharSelectV2 .cancel {\r\n	right: 4px;\r\n}\r\n#CharSelectV2 .delete {\r\n	left: 4px;\r\n	width: 67px;\r\n}\r\n#CharSelectV2 .canceldelete {\r\n	left: 50px;\r\n	width: 67px;\r\n}\r\n#CharSelectV2 .finaldelete {\r\n	left: 4px;\r\n}\r\n#CharSelectV2 .timedelete {\r\n	position: absolute;\r\n	height: 20px;\r\n	width: 120px;\r\n	top: 75px;\r\n}\r\n#CharSelectV2 .timedelete.waitdelete {\r\n	color: blue;\r\n}\r\n#CharSelectV2 .timedelete.candelete {\r\n	color: red;\r\n}\r\n#CharSelectV2 .timedelete.slot1 {\r\n	left: 63px;\r\n}\r\n#CharSelectV2 .timedelete.slot2 {\r\n	left: 227px;\r\n}\r\n#CharSelectV2 .timedelete.slot3 {\r\n	left: 389px;\r\n}\r\n";
+	CharSelectV2_default$1 = ":host {\r\n	width: 576px;\r\n	height: 358px;\r\n}\r\n\r\n#CharSelectV2 {\r\n	position: absolute;\r\n	width: 576px;\r\n	height: 358px;\r\n}\r\n\r\n/** Box **/\r\n#CharSelectV2 .box_select {\r\n	position: absolute;\r\n	width: 139px;\r\n	height: 144px;\r\n	top: 40px;\r\n	margin-left: -5px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#CharSelectV2 canvas {\r\n	position: absolute;\r\n	top: 44px;\r\n}\r\n#CharSelectV2 .slot1 {\r\n	left: 60px;\r\n}\r\n#CharSelectV2 .slot2 {\r\n	left: 224px;\r\n}\r\n#CharSelectV2 .slot3 {\r\n	left: 386px;\r\n}\r\n\r\n/** Arrow **/\r\n#CharSelectV2 .arrow {\r\n	position: absolute;\r\n	top: 105px;\r\n	width: 13px;\r\n	height: 13px;\r\n}\r\n#CharSelectV2 .arrow.left {\r\n	left: 40px;\r\n}\r\n#CharSelectV2 .arrow.right {\r\n	right: 40px;\r\n}\r\n\r\n/** Slot info **/\r\n#CharSelectV2 .slotinfo {\r\n	position: absolute;\r\n	top: 195px;\r\n	right: 10px;\r\n	height: 20px;\r\n	display: block;\r\n	border: 1px solid #c6cee7;\r\n	border-radius: 4px;\r\n	padding-left: 10px;\r\n	padding-right: 10px;\r\n}\r\n#CharSelectV2 .slotinfo .number {\r\n	color: #58709e;\r\n	font-weight: bold;\r\n	margin-right: 10px;\r\n}\r\n#CharSelectV2 .slotinfo .content {\r\n	color: #555;\r\n	top: 6px;\r\n	right: 8px;\r\n}\r\n\r\n/** Page info **/\r\n#CharSelectV2 .pageinfo {\r\n	position: absolute;\r\n	left: 275px;\r\n	top: 185px;\r\n	font-weight: bold;\r\n	color: #646464;\r\n}\r\n#CharSelectV2 .pageinfo .current {\r\n	color: #fe3b7d;\r\n}\r\n\r\n/** Characters infos **/\r\n#CharSelectV2 .charinfo {\r\n	position: absolute;\r\n	width: 285px;\r\n	top: 204px;\r\n	left: 16px;\r\n}\r\n#CharSelectV2 .charinfo div {\r\n	position: absolute;\r\n	width: 90px;\r\n	height: 13px;\r\n}\r\n#CharSelectV2 .charinfo .name {\r\n	left: 52px;\r\n	top: 2px;\r\n	white-space: nowrap;\r\n}\r\n#CharSelectV2 .charinfo .job {\r\n	left: 52px;\r\n	top: 18px;\r\n}\r\n#CharSelectV2 .charinfo .lvl {\r\n	left: 52px;\r\n	top: 34px;\r\n}\r\n#CharSelectV2 .charinfo .exp {\r\n	left: 52px;\r\n	top: 50px;\r\n}\r\n#CharSelectV2 .charinfo .hp {\r\n	left: 52px;\r\n	top: 66px;\r\n}\r\n#CharSelectV2 .charinfo .sp {\r\n	left: 52px;\r\n	top: 82px;\r\n}\r\n#CharSelectV2 .charinfo .map {\r\n	left: 52px;\r\n	top: 98px;\r\n	width: 238px;\r\n}\r\n#CharSelectV2 .charinfo .str {\r\n	left: 200px;\r\n	top: 2px;\r\n}\r\n#CharSelectV2 .charinfo .agi {\r\n	left: 200px;\r\n	top: 18px;\r\n}\r\n#CharSelectV2 .charinfo .vit {\r\n	left: 200px;\r\n	top: 34px;\r\n}\r\n#CharSelectV2 .charinfo .int {\r\n	left: 200px;\r\n	top: 50px;\r\n}\r\n#CharSelectV2 .charinfo .dex {\r\n	left: 200px;\r\n	top: 66px;\r\n}\r\n#CharSelectV2 .charinfo .luk {\r\n	left: 200px;\r\n	top: 82px;\r\n}\r\n\r\n/** Buttons **/\r\n#CharSelectV2 .btns {\r\n	position: absolute;\r\n	bottom: 4px;\r\n	width: 100%;\r\n	height: 20px;\r\n}\r\n#CharSelectV2 .btn {\r\n	position: absolute;\r\n	width: 42px;\r\n	height: 20px;\r\n}\r\n\r\n#CharSelectV2 .ok,\r\n#CharSelectV2 .make {\r\n	right: 50px;\r\n}\r\n#CharSelectV2 .cancel {\r\n	right: 4px;\r\n}\r\n#CharSelectV2 .delete {\r\n	left: 4px;\r\n	width: 67px;\r\n}\r\n#CharSelectV2 .canceldelete {\r\n	left: 50px;\r\n	width: 67px;\r\n}\r\n#CharSelectV2 .finaldelete {\r\n	left: 4px;\r\n}\r\n#CharSelectV2 .timedelete {\r\n	position: absolute;\r\n	height: 20px;\r\n	width: 120px;\r\n	top: 75px;\r\n}\r\n#CharSelectV2 .timedelete.waitdelete {\r\n	color: blue;\r\n}\r\n#CharSelectV2 .timedelete.candelete {\r\n	color: red;\r\n}\r\n#CharSelectV2 .timedelete.slot1 {\r\n	left: 63px;\r\n}\r\n#CharSelectV2 .timedelete.slot2 {\r\n	left: 227px;\r\n}\r\n#CharSelectV2 .timedelete.slot3 {\r\n	left: 389px;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/CharSelect/CharSelectV2/CharSelectV2.js
 /**
-* Generic method to handle mousedown on arrow
-*
-* @param {number} value to move
+* Helper to get shadow root
 */
-function genericArrowDown$1(value) {
-	return function(event) {
-		moveCursorTo$2((_index$2 + _maxSlots$2 + value) % _maxSlots$2);
-		event.stopImmediatePropagation();
-		return false;
-	};
+function _getRoot$6() {
+	return CharSelectV2._shadow || CharSelectV2._host;
 }
 /**
 * Generic method to handle mousedown on arrow
 *
 * @param {number} value to move
 */
+function genericArrowDown$1(value) {
+	return (event) => {
+		moveCursorTo$2((_index$2 + _maxSlots$2 + value) % _maxSlots$2);
+		event.stopImmediatePropagation();
+		return false;
+	};
+}
+/**
+* Generic method to handle mousedown on canvas
+*
+* @param {number} value to move
+*/
 function genericCanvasDown$2(value) {
-	return function(event) {
+	return (event) => {
 		moveCursorTo$2(Math.floor(_index$2 / 3) * 3 + value);
 		event.stopImmediatePropagation();
 		return false;
@@ -335377,7 +335713,7 @@ function genericCanvasDown$2(value) {
 * Press "cancel" or ESCAPE key
 */
 function cancel$6() {
-	if (_disable_UI$2 === false) UIManager.showPromptBox(DB.getMessage(17), "ok", "cancel", function() {
+	if (_disable_UI$2 === false) UIManager.showPromptBox(DB.getMessage(17), "ok", "cancel", () => {
 		CharSelectV2.onExitRequest();
 	}, null);
 }
@@ -335417,26 +335753,29 @@ function formatDatetime$1(epoch) {
 * Update UI and add timer
 */
 function requestdelete$2(index, timer) {
+	const root = _getRoot$6();
 	const entity = _entitySlots$2[index];
 	let action;
-	const countdown = CharSelectV2.ui.find(".timedelete.slot" + (index % 3 + 1));
+	const countdown = root.querySelector(`.timedelete.slot${index % 3 + 1}`);
 	if (countdown) {
-		countdown.attr("data-datetime", timer);
-		countdown.text(formatDatetime$1(timer));
-		countdown.show();
+		countdown.dataset.datetime = timer;
+		countdown.textContent = formatDatetime$1(timer);
+		countdown.style.display = "block";
 		if (Math.floor(Date.now() / 1e3) > timer) {
-			countdown.removeClass("waitdelete").addClass("candelete");
+			countdown.classList.remove("waitdelete");
+			countdown.classList.add("candelete");
 			action = entity.ACTION.DIE;
 		} else {
-			countdown.removeClass("candelete").addClass("waitdelete");
+			countdown.classList.remove("candelete");
+			countdown.classList.add("waitdelete");
 			action = entity.ACTION.SIT;
 		}
 	}
 	entity.action = action;
-	CharSelectV2.ui.find(".delete").hide();
-	CharSelectV2.ui.find(".canceldelete").show();
-	if (Math.floor(Date.now() / 1e3) > timer) CharSelectV2.ui.find(".finaldelete").show();
-	else CharSelectV2.ui.find(".finaldelete").hide();
+	root.querySelector(".delete").style.display = "none";
+	root.querySelector(".canceldelete").style.display = "block";
+	if (Math.floor(Date.now() / 1e3) > timer) root.querySelector(".finaldelete").style.display = "block";
+	else root.querySelector(".finaldelete").style.display = "none";
 }
 /**
 * Cancel reservation of character for deletion
@@ -335444,16 +335783,17 @@ function requestdelete$2(index, timer) {
 */
 function removedelete$2() {
 	if (_slots$2[_index$2]) {
+		const root = _getRoot$6();
 		_slots$2[_index$2].DeleteDate = 0;
 		_entitySlots$2[_index$2].action = _entitySlots$2[_index$2].ACTION.READYFIGHT;
 		render$6();
-		const countdown = CharSelectV2.ui.find(".timedelete.slot" + (_index$2 % 3 + 1));
-		countdown.attr("data-datetime", 0);
-		countdown.text(formatDatetime$1(""));
-		countdown.hide();
-		CharSelectV2.ui.find(".canceldelete").hide();
-		CharSelectV2.ui.find(".finaldelete").hide();
-		CharSelectV2.ui.find(".delete").show();
+		const countdown = root.querySelector(`.timedelete.slot${_index$2 % 3 + 1}`);
+		countdown.dataset.datetime = 0;
+		countdown.textContent = formatDatetime$1("");
+		countdown.style.display = "none";
+		root.querySelector(".canceldelete").style.display = "none";
+		root.querySelector(".finaldelete").style.display = "none";
+		root.querySelector(".delete").style.display = "block";
 		CharSelectV2.onCancelDeleteRequest(_slots$2[_index$2].GID);
 	}
 }
@@ -335485,8 +335825,8 @@ function suppress$2() {
 * @param {number} index
 */
 function moveCursorTo$2(index) {
-	const ui = CharSelectV2.ui;
-	const $charinfo = ui.find(".charinfo");
+	const root = _getRoot$6();
+	const charinfo = root.querySelector(".charinfo");
 	let entity = _entitySlots$2[_index$2];
 	let info = _slots$2[_index$2];
 	let action;
@@ -335501,67 +335841,76 @@ function moveCursorTo$2(index) {
 		});
 	}
 	_index$2 = (index + _maxSlots$2) % _maxSlots$2;
-	ui.find(".box_select").removeClass("slot1 slot2 slot3").addClass("slot" + (_index$2 % 3 + 1));
-	ui.find(".pageinfo .current").text(Math.floor(_index$2 / 3) + 1);
+	const boxSelect = root.querySelector(".box_select");
+	boxSelect.classList.remove("slot1", "slot2", "slot3");
+	boxSelect.classList.add(`slot${_index$2 % 3 + 1}`);
+	root.querySelector(".pageinfo .current").textContent = Math.floor(_index$2 / 3) + 1;
 	for (let i = 0; i < 3; i++) {
 		const tmpIndex = _index$2 - _index$2 % 3 + i;
 		info = _slots$2[tmpIndex];
 		entity = _entitySlots$2[tmpIndex];
-		const countdown = CharSelectV2.ui.find(".timedelete.slot" + (tmpIndex % 3 + 1));
+		const countdown = root.querySelector(`.timedelete.slot${tmpIndex % 3 + 1}`);
 		if (info && entity) if (info.DeleteDate && PacketVerManager_default.value >= 20100803) {
-			countdown.attr("data-datetime", info.DeleteDate);
-			countdown.text(formatDatetime$1(info.DeleteDate));
-			countdown.show();
-			if (Math.floor(Date.now() / 1e3) > info.DeleteDate) countdown.removeClass("waitdelete").addClass("candelete");
-			else countdown.removeClass("candelete").addClass("waitdelete");
+			countdown.dataset.datetime = info.DeleteDate;
+			countdown.textContent = formatDatetime$1(info.DeleteDate);
+			countdown.style.display = "block";
+			if (Math.floor(Date.now() / 1e3) > info.DeleteDate) {
+				countdown.classList.remove("waitdelete");
+				countdown.classList.add("candelete");
+			} else {
+				countdown.classList.remove("candelete");
+				countdown.classList.add("waitdelete");
+			}
 			entity.action = entity.ACTION.SIT;
 		} else {
-			countdown.attr("data-datetime", 0);
-			countdown.text(formatDatetime$1(""));
-			countdown.hide();
+			countdown.dataset.datetime = 0;
+			countdown.textContent = formatDatetime$1("");
+			countdown.style.display = "none";
 			entity.action = entity.ACTION.IDLE;
 		}
 		else {
-			countdown.attr("data-datetime", 0);
-			countdown.text(formatDatetime$1(""));
-			countdown.hide();
+			countdown.dataset.datetime = 0;
+			countdown.textContent = formatDatetime$1("");
+			countdown.style.display = "none";
 		}
 	}
 	entity = _entitySlots$2[_index$2];
 	if (!entity) {
-		$charinfo.find("div").empty();
-		ui.find(".make").show();
-		ui.find(".delete").hide();
-		ui.find(".canceldelete").hide();
-		ui.find(".finaldelete").hide();
-		ui.find(".ok").hide();
+		charinfo.querySelectorAll("div").forEach((div) => {
+			div.textContent = "";
+		});
+		root.querySelector(".make").style.display = "block";
+		root.querySelector(".delete").style.display = "none";
+		root.querySelector(".canceldelete").style.display = "none";
+		root.querySelector(".finaldelete").style.display = "none";
+		root.querySelector(".ok").style.display = "none";
 		return;
 	}
 	info = _slots$2[_index$2];
 	if (info.DeleteDate && PacketVerManager_default.value >= 20100803) {
-		ui.find(".delete").hide();
-		ui.find(".canceldelete").show();
+		root.querySelector(".delete").style.display = "none";
+		root.querySelector(".canceldelete").style.display = "block";
 		if (Math.floor(Date.now() / 1e3) > info.DeleteDate) {
-			ui.find(".finaldelete").show();
+			root.querySelector(".finaldelete").style.display = "block";
 			action = entity.ACTION.DIE;
 		} else {
-			ui.find(".finaldelete").hide();
+			root.querySelector(".finaldelete").style.display = "none";
 			action = entity.ACTION.SIT;
 		}
-		ui.find(".make").hide();
-		ui.find(".ok").show();
+		root.querySelector(".make").style.display = "none";
+		root.querySelector(".ok").style.display = "block";
 	} else {
 		if (PacketVerManager_default.value >= 20100803) {
-			ui.find(".delete").show();
-			ui.find(".canceldelete").hide();
-			ui.find(".finaldelete").hide();
+			root.querySelector(".delete").style.display = "block";
+			root.querySelector(".canceldelete").style.display = "none";
+			root.querySelector(".finaldelete").style.display = "none";
 		} else {
-			ui.find(".delete").hide();
-			ui.find(".canceldelete").hide();
-			ui.find(".finaldelete").show();
+			root.querySelector(".delete").style.display = "none";
+			root.querySelector(".canceldelete").style.display = "none";
+			root.querySelector(".finaldelete").style.display = "block";
 		}
-		ui.find(".make").hide();
-		ui.find(".ok").show();
+		root.querySelector(".make").style.display = "none";
+		root.querySelector(".ok").style.display = "block";
 		action = entity.ACTION.READYFIGHT;
 	}
 	entity.setAction({
@@ -335570,29 +335919,28 @@ function moveCursorTo$2(index) {
 		play: true,
 		repeat: true
 	});
-	$charinfo.find(".name").text(info.name);
-	$charinfo.find(".job").text(MonsterTable_default[info.job] || "");
-	$charinfo.find(".lvl").text(info.level);
-	$charinfo.find(".exp").text(info.exp);
-	$charinfo.find(".hp").text(info.hp);
-	$charinfo.find(".sp").text(info.sp);
-	$charinfo.find(".map").text(DB.getMapName(info.lastMap, "") || "");
-	$charinfo.find(".str").text(info.Str);
-	$charinfo.find(".agi").text(info.Agi);
-	$charinfo.find(".vit").text(info.Vit);
-	$charinfo.find(".int").text(info.Int);
-	$charinfo.find(".dex").text(info.Dex);
-	$charinfo.find(".luk").text(info.Luk);
+	charinfo.querySelector(".name").textContent = info.name;
+	charinfo.querySelector(".job").textContent = MonsterTable_default[info.job] || "";
+	charinfo.querySelector(".lvl").textContent = info.level;
+	charinfo.querySelector(".exp").textContent = info.exp;
+	charinfo.querySelector(".hp").textContent = info.hp;
+	charinfo.querySelector(".sp").textContent = info.sp;
+	charinfo.querySelector(".map").textContent = DB.getMapName(info.lastMap, "") || "";
+	charinfo.querySelector(".str").textContent = info.Str;
+	charinfo.querySelector(".agi").textContent = info.Agi;
+	charinfo.querySelector(".vit").textContent = info.Vit;
+	charinfo.querySelector(".int").textContent = info.Int;
+	charinfo.querySelector(".dex").textContent = info.Dex;
+	charinfo.querySelector(".luk").textContent = info.Luk;
 }
 /**
 * Render sprites to canvas
 */
 function render$6() {
-	let i;
 	Camera.direction = 4;
 	const idx = Math.floor(_index$2 / 3) * 3;
 	const count = _ctx$2.length;
-	for (i = 0; i < count; ++i) {
+	for (let i = 0; i < count; ++i) {
 		_ctx$2[i].clearRect(0, 0, _ctx$2[i].canvas.width, _ctx$2[i].canvas.height);
 		if (_entitySlots$2[idx + i]) {
 			SpriteRenderer.bind2DContext(_ctx$2[i], 63, 130);
@@ -335612,11 +335960,13 @@ var init_CharSelectV2 = __esmMin((() => {
 	init_StatusState();
 	init_Camera();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
+	init_Elements();
 	init_PacketVerManager();
 	init_CharSelectV2$2();
 	init_CharSelectV2$1();
-	CharSelectV2 = new UIComponent("CharSelectV2", CharSelectV2_default$2, CharSelectV2_default$1);
+	CharSelectV2 = new GUIComponent("CharSelectV2", CharSelectV2_default$1);
+	CharSelectV2.render = () => CharSelectV2_default$2;
 	_preferences$3 = Preferences.get("CharSelectV2", { index: 0 }, 1);
 	_maxSlots$2 = 27;
 	_list$2 = [];
@@ -335629,38 +335979,38 @@ var init_CharSelectV2 = __esmMin((() => {
 	/**
 	* Initialize UI
 	*/
-	CharSelectV2.init = function Init() {
-		const ui = this.ui;
-		ui.css({
-			top: (Renderer.height - 358) / 2,
-			left: (Renderer.width - 576) / 2
-		});
-		ui.find(".ok").click(connect$2);
-		ui.find(".cancel").click(cancel$6);
-		ui.find(".make").click(create$6);
-		ui.find(".delete").click(reserve$2);
-		ui.find(".canceldelete").click(removedelete$2);
-		ui.find(".finaldelete").click(suppress$2);
-		ui.find(".arrow.left").mousedown(genericArrowDown$1(-1));
-		ui.find(".arrow.right").mousedown(genericArrowDown$1(1));
-		ui.find(".slot1").mousedown(genericCanvasDown$2(0));
-		ui.find(".slot2").mousedown(genericCanvasDown$2(1));
-		ui.find(".slot3").mousedown(genericCanvasDown$2(2));
-		ui.find("canvas").dblclick(function() {
-			if (_slots$2[_index$2]) connect$2();
-			else create$6();
-		}).each(function() {
-			_ctx$2.push(this.getContext("2d"));
-		});
+	CharSelectV2.init = function init() {
+		const root = _getRoot$6();
 		this.draggable();
+		root.querySelector(".ok").addEventListener("click", connect$2);
+		root.querySelector(".cancel").addEventListener("click", cancel$6);
+		root.querySelector(".make").addEventListener("click", create$6);
+		root.querySelector(".delete").addEventListener("click", reserve$2);
+		root.querySelector(".canceldelete").addEventListener("click", removedelete$2);
+		root.querySelector(".finaldelete").addEventListener("click", suppress$2);
+		root.querySelector(".arrow.left").addEventListener("mousedown", genericArrowDown$1(-1));
+		root.querySelector(".arrow.right").addEventListener("mousedown", genericArrowDown$1(1));
+		root.querySelector(".slot1").addEventListener("mousedown", genericCanvasDown$2(0));
+		root.querySelector(".slot2").addEventListener("mousedown", genericCanvasDown$2(1));
+		root.querySelector(".slot3").addEventListener("mousedown", genericCanvasDown$2(2));
+		root.querySelectorAll("canvas").forEach((canvas) => {
+			canvas.addEventListener("dblclick", () => {
+				if (_slots$2[_index$2]) connect$2();
+				else create$6();
+			});
+			_ctx$2.push(canvas.getContext("2d"));
+		});
 	};
 	/**
 	* Once append to body
 	*/
 	CharSelectV2.onAppend = function onAppend() {
+		const root = _getRoot$6();
+		this._host.style.top = `${(Renderer.height - 358) / 2}px`;
+		this._host.style.left = `${(Renderer.width - 576) / 2}px`;
 		_index$2 = _preferences$3.index;
-		this.ui.find(".slotinfo .number").text(_list$2.length + " / " + _maxSlots$2);
-		this.ui.find(".pageinfo .count").text(_maxSlots$2 / 3);
+		root.querySelector(".slotinfo .number").textContent = `${_list$2.length} / ${_maxSlots$2}`;
+		root.querySelector(".pageinfo .count").textContent = _maxSlots$2 / 3;
 		moveCursorTo$2(_index$2);
 		Renderer.render(render$6);
 	};
@@ -335668,9 +336018,13 @@ var init_CharSelectV2 = __esmMin((() => {
 	* Stop rendering
 	*/
 	CharSelectV2.onRemove = function onRemove() {
+		const root = _getRoot$6();
 		_preferences$3.index = _index$2;
 		_preferences$3.save();
-		this.ui.find(".timedelete").hide().text("");
+		root.querySelectorAll(".timedelete").forEach((el) => {
+			el.style.display = "none";
+			el.textContent = "";
+		});
 		Renderer.stop();
 	};
 	/**
@@ -335679,7 +336033,7 @@ var init_CharSelectV2 = __esmMin((() => {
 	* @param {object} event
 	*/
 	CharSelectV2.onKeyDown = function onKeyDown(event) {
-		if (!this.ui.is(":visible")) return true;
+		if (this._host.style.display === "none") return true;
 		switch (event.which) {
 			case KEYS.ESCAPE:
 				cancel$6();
@@ -335708,6 +336062,7 @@ var init_CharSelectV2 = __esmMin((() => {
 	* @param {object} pkt - packet structure
 	*/
 	CharSelectV2.setInfo = function setInfo(pkt) {
+		const root = _getRoot$6();
 		_maxSlots$2 = Math.floor(pkt.TotalSlotNum + pkt.PremiumStartSlot || 9);
 		_sex$2 = pkt.sex;
 		_slots$2.length = 0;
@@ -335717,8 +336072,8 @@ var init_CharSelectV2 = __esmMin((() => {
 			CharSelectV2.addCharacter(pkt.charInfo[i]);
 			_maxSlots$2 = Math.max(_maxSlots$2, Math.floor(pkt.charInfo[i].CharNum / 3 + 1) * 3);
 		}
-		this.ui.find(".slotinfo .number").text(_list$2.length + " / " + _maxSlots$2);
-		this.ui.find(".pageinfo .count").text(_maxSlots$2 / 3);
+		root.querySelector(".slotinfo .number").textContent = `${_list$2.length} / ${_maxSlots$2}`;
+		root.querySelector(".pageinfo .count").textContent = _maxSlots$2 / 3;
 		moveCursorTo$2(_index$2);
 	};
 	/**
@@ -335726,12 +336081,13 @@ var init_CharSelectV2 = __esmMin((() => {
 	*
 	* @param {number} error id
 	*/
-	CharSelectV2.deleteAnswer = function DeleteAnswer(error) {
+	CharSelectV2.deleteAnswer = function deleteAnswer(error) {
 		this.on("keydown");
 		if (PacketVerManager_default.value >= 20100803) switch (error) {
 			case -1:
 			case -2: return;
 			case 1: {
+				const root = _getRoot$6();
 				delete _slots$2[_index$2];
 				delete _entitySlots$2[_index$2];
 				let i = 0;
@@ -335741,7 +336097,7 @@ var init_CharSelectV2 = __esmMin((() => {
 					--count;
 				} else i++;
 				moveCursorTo$2(_index$2);
-				this.ui.find(".slotinfo .number").text(_list$2.length + " / " + _maxSlots$2);
+				root.querySelector(".slotinfo .number").textContent = `${_list$2.length} / ${_maxSlots$2}`;
 				return;
 			}
 			default:
@@ -335766,6 +336122,7 @@ var init_CharSelectV2 = __esmMin((() => {
 		else switch (error) {
 			case -2: return;
 			case -1: {
+				const root = _getRoot$6();
 				delete _slots$2[_index$2];
 				delete _entitySlots$2[_index$2];
 				let i = 0;
@@ -335775,7 +336132,7 @@ var init_CharSelectV2 = __esmMin((() => {
 					--count;
 				} else i++;
 				moveCursorTo$2(_index$2);
-				this.ui.find(".slotinfo .number").text(_list$2.length + " / " + _maxSlots$2);
+				root.querySelector(".slotinfo .number").textContent = `${_list$2.length} / ${_maxSlots$2}`;
 				return;
 			}
 			default:
@@ -335790,6 +336147,7 @@ var init_CharSelectV2 = __esmMin((() => {
 	* @param {object} character data
 	*/
 	CharSelectV2.addCharacter = function addCharacter(character) {
+		const root = _getRoot$6();
 		if (!("sex" in character) || character.sex === 99) character.sex = _sex$2;
 		if (character.DeleteDate) {
 			const now = Math.floor(Date.now() / 1e3);
@@ -335801,14 +336159,14 @@ var init_CharSelectV2 = __esmMin((() => {
 		_entitySlots$2[character.CharNum].set(character);
 		_entitySlots$2[character.CharNum].effectState = _entitySlots$2[character.CharNum]._effectState & ~StatusState_default.EffectState.INVISIBLE;
 		if (PacketVerManager_default.value >= 20100803) {
-			if (_slots$2[character.CharNum].DeleteDate && Math.floor(_index$2 / 3) == Math.floor(character.CharNum / 3)) {
+			if (_slots$2[character.CharNum].DeleteDate && Math.floor(_index$2 / 3) === Math.floor(character.CharNum / 3)) {
 				const slotNum = (character.CharNum + _maxSlots$2) % _maxSlots$2 + 1;
-				const countdown = this.ui.find(".timedelete.slot" + slotNum);
+				const countdown = root.querySelector(`.timedelete.slot${slotNum}`);
 				const entity = _entitySlots$2[character.CharNum];
 				if (countdown) {
-					countdown.attr("data-datetime", _slots$2[character.CharNum].DeleteDate);
-					countdown.text(formatDatetime$1(_slots$2[character.CharNum].DeleteDate));
-					countdown.show();
+					countdown.dataset.datetime = _slots$2[character.CharNum].DeleteDate;
+					countdown.textContent = formatDatetime$1(_slots$2[character.CharNum].DeleteDate);
+					countdown.style.display = "block";
 				}
 				entity.setAction({
 					action: entity.ACTION.SIT,
@@ -335841,7 +336199,7 @@ var init_CharSelectV2 = __esmMin((() => {
 	*
 	* @param {object} pkt - packet structure
 	*/
-	CharSelectV2.reqdeleteAnswer = function ReqDelAnswer(pkt) {
+	CharSelectV2.reqdeleteAnswer = function reqdeleteAnswer(pkt) {
 		this.on("keydown");
 		const now = Math.floor(Date.now() / 1e3);
 		const result = typeof pkt.Result === "undefined" ? -1 : pkt.Result;
@@ -335870,28 +336228,42 @@ var init_CharSelectV2 = __esmMin((() => {
 //#region src/UI/Components/CharSelect/CharSelectV3/CharSelectV3.html?raw
 var CharSelectV3_default$2;
 var init_CharSelectV3$2 = __esmMin((() => {
-	CharSelectV3_default$2 = "<div id=\"CharSelectV3\" data-background=\"select_character/bg_select_character.bmp\">\r\n	<!-- BOX -->\r\n	<div class=\"box_select\" data-background=\"select_character/select_mark.bmp\"></div>\r\n	<canvas class=\"slot1\" width=\"133\" height=\"132\"></canvas>\r\n	<canvas class=\"slot2\" width=\"133\" height=\"132\"></canvas>\r\n	<canvas class=\"slot3\" width=\"133\" height=\"132\"></canvas>\r\n	<div class=\"timedelete slot1 hidden\"></div>\r\n	<div class=\"timedelete slot2 hidden\"></div>\r\n	<div class=\"timedelete slot3 hidden\"></div>\r\n	<button\r\n		class=\"make1\"\r\n		type=\"submit\"\r\n		data-background=\"select_character/btn_add_out.bmp\"\r\n		data-hover=\"select_character/btn_add_over.bmp\"\r\n		data-down=\"select_character/btn_add_press.bmp\"\r\n	></button>\r\n	<button\r\n		class=\"make2\"\r\n		type=\"submit\"\r\n		data-background=\"select_character/btn_add_out.bmp\"\r\n		data-hover=\"select_character/btn_add_over.bmp\"\r\n		data-down=\"select_character/btn_add_press.bmp\"\r\n	></button>\r\n	<button\r\n		class=\"make3\"\r\n		type=\"submit\"\r\n		data-background=\"select_character/btn_add_out.bmp\"\r\n		data-hover=\"select_character/btn_add_over.bmp\"\r\n		data-down=\"select_character/btn_add_press.bmp\"\r\n	></button>\r\n\r\n	<!-- Arrows -->\r\n	<button\r\n		class=\"arrow left\"\r\n		type=\"submit\"\r\n		data-background=\"select_character/chr_arrow_l_out.bmp\"\r\n		data-hover=\"select_character/chr_arrow_l_over.bmp\"\r\n		data-down=\"select_character/chr_arrow_l_press.bmp\"\r\n	></button>\r\n	<button\r\n		class=\"arrow right\"\r\n		type=\"submit\"\r\n		data-background=\"select_character/chr_arrow_r_out.bmp\"\r\n		data-hover=\"select_character/chr_arrow_r_over.bmp\"\r\n		data-down=\"select_character/chr_arrow_r_press.bmp\"\r\n	></button>\r\n\r\n	<!-- Slots infos -->\r\n	<div class=\"slotinfo\">\r\n		<span class=\"number\" data-text=\"2004\">0 / 27</span>\r\n		<span class=\"content\"></span>\r\n	</div>\r\n	<!-- Pages infos -->\r\n	<div class=\"pageinfo\">\r\n		<div class=\"pagebtn\"></div>\r\n	</div>\r\n	<!-- Characters infos -->\r\n	<div class=\"charinfo\">\r\n		<div class=\"name\"></div>\r\n		<div class=\"job\"></div>\r\n		<div class=\"lvl\"></div>\r\n		<div class=\"exp\"></div>\r\n		<div class=\"hp\"></div>\r\n		<div class=\"sp\"></div>\r\n		<div class=\"map\"></div>\r\n		<div class=\"str\"></div>\r\n		<div class=\"agi\"></div>\r\n		<div class=\"vit\"></div>\r\n		<div class=\"int\"></div>\r\n		<div class=\"dex\"></div>\r\n		<div class=\"luk\"></div>\r\n	</div>\r\n	<!-- Buttons -->\r\n	<div class=\"btns\">\r\n		<button\r\n			class=\"btn delete\"\r\n			data-background=\"btn_del_res.bmp\"\r\n			data-hover=\"btn_del_res_a.bmp\"\r\n			data-down=\"btn_del_res_b.bmp\"\r\n		></button>\r\n		<button\r\n			class=\"btn canceldelete\"\r\n			data-background=\"btn_cancel_res.bmp\"\r\n			data-hover=\"btn_cancel_res_a.bmp\"\r\n			data-down=\"btn_cancel_res_b.bmp\"\r\n		></button>\r\n		<button\r\n			class=\"btn finaldelete\"\r\n			data-background=\"btn_del.bmp\"\r\n			data-hover=\"btn_del_a.bmp\"\r\n			data-down=\"btn_del_b.bmp\"\r\n		></button>\r\n		<button\r\n			class=\"btn cancel\"\r\n			data-background=\"btn_cancel.bmp\"\r\n			data-hover=\"btn_cancel_a.bmp\"\r\n			data-down=\"btn_cancel_b.bmp\"\r\n		></button>\r\n		<button class=\"btn ok\" data-background=\"btn_ok.bmp\" data-hover=\"btn_ok_a.bmp\" data-down=\"btn_ok_b.bmp\"></button>\r\n		<button\r\n			class=\"btn make\"\r\n			data-background=\"btn_make.bmp\"\r\n			data-hover=\"btn_make_a.bmp\"\r\n			data-down=\"btn_make_b.bmp\"\r\n		></button>\r\n	</div>\r\n</div>\r\n";
+	CharSelectV3_default$2 = "<div id=\"CharSelectV3\">\r\n	<ui-image src=\"select_character/bg_select_character.bmp\"></ui-image>\r\n	<!-- BOX -->\r\n	<div class=\"box_select\"><ui-image src=\"select_character/select_mark.bmp\"></ui-image></div>\r\n	<canvas class=\"slot1\" width=\"133\" height=\"132\"></canvas>\r\n	<canvas class=\"slot2\" width=\"133\" height=\"132\"></canvas>\r\n	<canvas class=\"slot3\" width=\"133\" height=\"132\"></canvas>\r\n	<div class=\"timedelete slot1 hidden\"></div>\r\n	<div class=\"timedelete slot2 hidden\"></div>\r\n	<div class=\"timedelete slot3 hidden\"></div>\r\n	<ui-button\r\n		class=\"make1\"\r\n		bg=\"select_character/btn_add_out.bmp\"\r\n		hover=\"select_character/btn_add_over.bmp\"\r\n		down=\"select_character/btn_add_press.bmp\"\r\n	></ui-button>\r\n	<ui-button\r\n		class=\"make2\"\r\n		bg=\"select_character/btn_add_out.bmp\"\r\n		hover=\"select_character/btn_add_over.bmp\"\r\n		down=\"select_character/btn_add_press.bmp\"\r\n	></ui-button>\r\n	<ui-button\r\n		class=\"make3\"\r\n		bg=\"select_character/btn_add_out.bmp\"\r\n		hover=\"select_character/btn_add_over.bmp\"\r\n		down=\"select_character/btn_add_press.bmp\"\r\n	></ui-button>\r\n\r\n	<!-- Arrows -->\r\n	<ui-button\r\n		class=\"arrow left\"\r\n		bg=\"select_character/chr_arrow_l_out.bmp\"\r\n		hover=\"select_character/chr_arrow_l_over.bmp\"\r\n		down=\"select_character/chr_arrow_l_press.bmp\"\r\n	></ui-button>\r\n	<ui-button\r\n		class=\"arrow right\"\r\n		bg=\"select_character/chr_arrow_r_out.bmp\"\r\n		hover=\"select_character/chr_arrow_r_over.bmp\"\r\n		down=\"select_character/chr_arrow_r_press.bmp\"\r\n	></ui-button>\r\n\r\n	<!-- Slots infos -->\r\n	<div class=\"slotinfo\">\r\n		<span class=\"number\">0 / 27</span>\r\n		<span class=\"content\"></span>\r\n	</div>\r\n	<!-- Pages infos -->\r\n	<div class=\"pageinfo\">\r\n		<div class=\"pagebtn\"></div>\r\n	</div>\r\n	<!-- Characters infos -->\r\n	<div class=\"charinfo\">\r\n		<div class=\"name\"></div>\r\n		<div class=\"job\"></div>\r\n		<div class=\"lvl\"></div>\r\n		<div class=\"exp\"></div>\r\n		<div class=\"hp\"></div>\r\n		<div class=\"sp\"></div>\r\n		<div class=\"map\"></div>\r\n		<div class=\"str\"></div>\r\n		<div class=\"agi\"></div>\r\n		<div class=\"vit\"></div>\r\n		<div class=\"int\"></div>\r\n		<div class=\"dex\"></div>\r\n		<div class=\"luk\"></div>\r\n	</div>\r\n	<!-- Buttons -->\r\n	<div class=\"btns\">\r\n		<ui-button\r\n			class=\"btn delete\"\r\n			bg=\"btn_del_res.bmp\"\r\n			hover=\"btn_del_res_a.bmp\"\r\n			down=\"btn_del_res_b.bmp\"\r\n		></ui-button>\r\n		<ui-button\r\n			class=\"btn canceldelete\"\r\n			bg=\"btn_cancel_res.bmp\"\r\n			hover=\"btn_cancel_res_a.bmp\"\r\n			down=\"btn_cancel_res_b.bmp\"\r\n		></ui-button>\r\n		<ui-button class=\"btn finaldelete\" bg=\"btn_del.bmp\" hover=\"btn_del_a.bmp\" down=\"btn_del_b.bmp\"></ui-button>\r\n		<ui-button class=\"btn cancel\" bg=\"btn_cancel.bmp\" hover=\"btn_cancel_a.bmp\" down=\"btn_cancel_b.bmp\"></ui-button>\r\n		<ui-button class=\"btn ok\" bg=\"btn_ok.bmp\" hover=\"btn_ok_a.bmp\" down=\"btn_ok_b.bmp\"></ui-button>\r\n		<ui-button class=\"btn make\" bg=\"btn_make.bmp\" hover=\"btn_make_a.bmp\" down=\"btn_make_b.bmp\"></ui-button>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/CharSelect/CharSelectV3/CharSelectV3.css?raw
 var CharSelectV3_default$1;
 var init_CharSelectV3$1 = __esmMin((() => {
-	CharSelectV3_default$1 = "#CharSelectV3 {\r\n	position: absolute;\r\n	width: 576px;\r\n	height: 358px;\r\n	z-index: 100;\r\n}\r\n\r\n/** Box **/\r\n#CharSelectV3 .box_select {\r\n	position: absolute;\r\n	width: 134px;\r\n	height: 144px;\r\n	top: 30px;\r\n}\r\n#CharSelectV3 canvas {\r\n	position: absolute;\r\n	top: 35px;\r\n}\r\n#CharSelectV3 .slot1 {\r\n	left: 57px;\r\n}\r\n#CharSelectV3 .slot2 {\r\n	left: 220px;\r\n}\r\n#CharSelectV3 .slot3 {\r\n	left: 386px;\r\n}\r\n\r\n#CharSelectV3 .make1 {\r\n	position: absolute;\r\n	top: 84px;\r\n	left: 107px;\r\n	width: 32px;\r\n	height: 32px;\r\n	border: 0;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#CharSelectV3 .make2 {\r\n	position: absolute;\r\n	top: 84px;\r\n	left: 270px;\r\n	width: 32px;\r\n	height: 32px;\r\n	border: 0;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#CharSelectV3 .make3 {\r\n	position: absolute;\r\n	top: 84px;\r\n	left: 436px;\r\n	width: 32px;\r\n	height: 32px;\r\n	border: 0;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n\r\n/** Arrow **/\r\n#CharSelectV3 .arrow {\r\n	position: absolute;\r\n	top: 95px;\r\n	width: 14px;\r\n	height: 20px;\r\n	border: 0;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#CharSelectV3 .arrow.left {\r\n	left: 40px;\r\n}\r\n#CharSelectV3 .arrow.right {\r\n	right: 40px;\r\n}\r\n\r\n/** Slot info **/\r\n#CharSelectV3 .slotinfo {\r\n	position: absolute;\r\n	top: 180px;\r\n	right: 40px;\r\n	height: 20px;\r\n	display: block;\r\n	padding-left: 10px;\r\n	padding-right: 10px;\r\n}\r\n#CharSelectV3 .slotinfo .number {\r\n	/*color: #58709e;\r\n    font-weight: bold;*/\r\n	margin-right: 10px;\r\n}\r\n#CharSelectV3 .slotinfo .content {\r\n	color: #555;\r\n	top: 6px;\r\n	right: 8px;\r\n}\r\n\r\n/** Page info **/\r\n#CharSelectV3 .pageinfo {\r\n	position: absolute;\r\n	top: 180px;\r\n}\r\n\r\n/** Characters infos **/\r\n#CharSelectV3 .charinfo {\r\n	position: absolute;\r\n	width: 285px;\r\n	top: 204px;\r\n	left: 16px;\r\n}\r\n#CharSelectV3 .charinfo div {\r\n	position: absolute;\r\n	width: 90px;\r\n	height: 13px;\r\n}\r\n#CharSelectV3 .charinfo .name {\r\n	left: 95px;\r\n	top: -4px;\r\n	white-space: nowrap;\r\n}\r\n#CharSelectV3 .charinfo .job {\r\n	left: 95px;\r\n	top: 12px;\r\n}\r\n#CharSelectV3 .charinfo .lvl {\r\n	left: 95px;\r\n	top: 30px;\r\n}\r\n#CharSelectV3 .charinfo .exp {\r\n	left: 95px;\r\n	top: 47px;\r\n}\r\n#CharSelectV3 .charinfo .hp {\r\n	left: 95px;\r\n	top: 64px;\r\n}\r\n#CharSelectV3 .charinfo .sp {\r\n	left: 95px;\r\n	top: 81px;\r\n}\r\n#CharSelectV3 .charinfo .map {\r\n	left: 95px;\r\n	top: 104px;\r\n	width: 238px;\r\n}\r\n#CharSelectV3 .charinfo .str {\r\n	left: 250px;\r\n	top: -4px;\r\n}\r\n#CharSelectV3 .charinfo .agi {\r\n	left: 250px;\r\n	top: 12px;\r\n}\r\n#CharSelectV3 .charinfo .vit {\r\n	left: 250px;\r\n	top: 30px;\r\n}\r\n#CharSelectV3 .charinfo .int {\r\n	left: 250px;\r\n	top: 47px;\r\n}\r\n#CharSelectV3 .charinfo .dex {\r\n	left: 250px;\r\n	top: 64px;\r\n}\r\n#CharSelectV3 .charinfo .luk {\r\n	left: 250px;\r\n	top: 81px;\r\n}\r\n\r\n/** Buttons **/\r\n#CharSelectV3 .btns {\r\n	position: absolute;\r\n	bottom: 4px;\r\n	width: 100%;\r\n	height: 20px;\r\n}\r\n#CharSelectV3 .btn {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#CharSelectV3 .ok,\r\n#charselect .make {\r\n	right: 50px;\r\n}\r\n#CharSelectV3 .cancel {\r\n	right: 4px;\r\n}\r\n#CharSelectV3 .delete {\r\n	left: 4px;\r\n	width: 67px;\r\n}\r\n#CharSelectV3 .canceldelete {\r\n	left: 50px;\r\n	width: 67px;\r\n}\r\n#CharSelectV3 .finaldelete {\r\n	left: 4px;\r\n}\r\n#CharSelectV3 .timedelete {\r\n	position: absolute;\r\n	height: 20px;\r\n	width: 120px;\r\n	top: 75px;\r\n}\r\n#CharSelectV3 .timedelete.waitdelete {\r\n	color: blue;\r\n}\r\n#CharSelectV3 .timedelete.candelete {\r\n	color: red;\r\n}\r\n#CharSelectV3 .timedelete.slot1 {\r\n	left: 63px;\r\n}\r\n#CharSelectV3 .timedelete.slot2 {\r\n	left: 227px;\r\n}\r\n#CharSelectV3 .timedelete.slot3 {\r\n	left: 389px;\r\n}\r\n";
+	CharSelectV3_default$1 = ":host {\r\n	width: 576px;\r\n	height: 358px;\r\n}\r\n\r\n#CharSelectV3 {\r\n	position: absolute;\r\n	width: 576px;\r\n	height: 358px;\r\n}\r\n\r\n/** Box **/\r\n#CharSelectV3 .box_select {\r\n	position: absolute;\r\n	width: 134px;\r\n	height: 144px;\r\n	top: 30px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#CharSelectV3 canvas {\r\n	position: absolute;\r\n	top: 35px;\r\n}\r\n#CharSelectV3 .slot1 {\r\n	left: 57px;\r\n}\r\n#CharSelectV3 .slot2 {\r\n	left: 220px;\r\n}\r\n#CharSelectV3 .slot3 {\r\n	left: 386px;\r\n}\r\n\r\n#CharSelectV3 .make1 {\r\n	position: absolute;\r\n	top: 84px;\r\n	left: 107px;\r\n	width: 32px;\r\n	height: 32px;\r\n}\r\n#CharSelectV3 .make2 {\r\n	position: absolute;\r\n	top: 84px;\r\n	left: 270px;\r\n	width: 32px;\r\n	height: 32px;\r\n}\r\n#CharSelectV3 .make3 {\r\n	position: absolute;\r\n	top: 84px;\r\n	left: 436px;\r\n	width: 32px;\r\n	height: 32px;\r\n}\r\n\r\n/** Arrow **/\r\n#CharSelectV3 .arrow {\r\n	position: absolute;\r\n	top: 95px;\r\n	width: 14px;\r\n	height: 20px;\r\n}\r\n#CharSelectV3 .arrow.left {\r\n	left: 40px;\r\n}\r\n#CharSelectV3 .arrow.right {\r\n	right: 40px;\r\n}\r\n\r\n/** Slot info **/\r\n#CharSelectV3 .slotinfo {\r\n	position: absolute;\r\n	top: 180px;\r\n	right: 40px;\r\n	height: 20px;\r\n	display: block;\r\n	padding-left: 10px;\r\n	padding-right: 10px;\r\n}\r\n#CharSelectV3 .slotinfo .number {\r\n	/*color: #58709e;\r\n    font-weight: bold;*/\r\n	margin-right: 10px;\r\n}\r\n#CharSelectV3 .slotinfo .content {\r\n	color: #555;\r\n	top: 6px;\r\n	right: 8px;\r\n}\r\n\r\n/** Page info **/\r\n#CharSelectV3 .pageinfo {\r\n	position: absolute;\r\n	top: 180px;\r\n}\r\n\r\n#CharSelectV3 .pageinfo .pagebtn .btn_pageinfo {\r\n	border: 0;\r\n	width: 8px;\r\n	height: 8px;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n\r\n/** Characters infos **/\r\n#CharSelectV3 .charinfo {\r\n	position: absolute;\r\n	width: 285px;\r\n	top: 204px;\r\n	left: 16px;\r\n}\r\n#CharSelectV3 .charinfo div {\r\n	position: absolute;\r\n	width: 90px;\r\n	height: 13px;\r\n}\r\n#CharSelectV3 .charinfo .name {\r\n	left: 95px;\r\n	top: -4px;\r\n	white-space: nowrap;\r\n}\r\n#CharSelectV3 .charinfo .job {\r\n	left: 95px;\r\n	top: 12px;\r\n}\r\n#CharSelectV3 .charinfo .lvl {\r\n	left: 95px;\r\n	top: 30px;\r\n}\r\n#CharSelectV3 .charinfo .exp {\r\n	left: 95px;\r\n	top: 47px;\r\n}\r\n#CharSelectV3 .charinfo .hp {\r\n	left: 95px;\r\n	top: 64px;\r\n}\r\n#CharSelectV3 .charinfo .sp {\r\n	left: 95px;\r\n	top: 81px;\r\n}\r\n#CharSelectV3 .charinfo .map {\r\n	left: 95px;\r\n	top: 104px;\r\n	width: 238px;\r\n}\r\n#CharSelectV3 .charinfo .str {\r\n	left: 250px;\r\n	top: -4px;\r\n}\r\n#CharSelectV3 .charinfo .agi {\r\n	left: 250px;\r\n	top: 12px;\r\n}\r\n#CharSelectV3 .charinfo .vit {\r\n	left: 250px;\r\n	top: 30px;\r\n}\r\n#CharSelectV3 .charinfo .int {\r\n	left: 250px;\r\n	top: 47px;\r\n}\r\n#CharSelectV3 .charinfo .dex {\r\n	left: 250px;\r\n	top: 64px;\r\n}\r\n#CharSelectV3 .charinfo .luk {\r\n	left: 250px;\r\n	top: 81px;\r\n}\r\n\r\n/** Buttons **/\r\n#CharSelectV3 .btns {\r\n	position: absolute;\r\n	bottom: 4px;\r\n	width: 100%;\r\n	height: 20px;\r\n}\r\n#CharSelectV3 .btn {\r\n	position: absolute;\r\n	width: 42px;\r\n	height: 20px;\r\n}\r\n\r\n#CharSelectV3 .ok,\r\n#CharSelectV3 .make {\r\n	right: 50px;\r\n}\r\n#CharSelectV3 .cancel {\r\n	right: 4px;\r\n}\r\n#CharSelectV3 .delete {\r\n	left: 4px;\r\n	width: 67px;\r\n}\r\n#CharSelectV3 .canceldelete {\r\n	left: 50px;\r\n	width: 67px;\r\n}\r\n#CharSelectV3 .finaldelete {\r\n	left: 4px;\r\n}\r\n#CharSelectV3 .timedelete {\r\n	position: absolute;\r\n	height: 20px;\r\n	width: 120px;\r\n	top: 75px;\r\n}\r\n#CharSelectV3 .timedelete.waitdelete {\r\n	color: blue;\r\n}\r\n#CharSelectV3 .timedelete.candelete {\r\n	color: red;\r\n}\r\n#CharSelectV3 .timedelete.slot1 {\r\n	left: 63px;\r\n}\r\n#CharSelectV3 .timedelete.slot2 {\r\n	left: 227px;\r\n}\r\n#CharSelectV3 .timedelete.slot3 {\r\n	left: 389px;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/CharSelect/CharSelectV3/CharSelectV3.js
-function drawBall(btnList, index, sel) {
-	btnList.append("<button class=\"btn_pageinfo" + index + "\" data-background=\"select_character/page_ball_empty.bmp\" data-hover=\"select_character/page_ball_empty.bmp\" data-down=\"select_character/page_ball_fill.bmp\"></button><img width=\"8px\" />");
-	if (!sel) Client.loadFile(DB.INTERFACE_PATH + "select_character/page_ball_empty.bmp", function(data) {
-		btnList.find(".btn_pageinfo" + index).css("backgroundImage", "url(\"" + data + "\")");
+/**
+* Helper to get shadow root
+*/
+function _getRoot$5() {
+	return CharSelectV3._shadow || CharSelectV3._host;
+}
+function drawBall(btnContainer, index, sel) {
+	const btn = document.createElement("button");
+	btn.className = `btn_pageinfo btn_pageinfo${index}`;
+	btn.style.border = "0";
+	btn.style.width = "8px";
+	btn.style.height = "8px";
+	btn.style.backgroundColor = "transparent";
+	btn.style.backgroundRepeat = "no-repeat";
+	btn.style.cursor = "pointer";
+	const img = document.createElement("img");
+	img.width = 8;
+	const imagePath = sel ? "select_character/page_ball_fill.bmp" : "select_character/page_ball_empty.bmp";
+	Client.loadFile(DB.INTERFACE_PATH + imagePath, (data) => {
+		btn.style.backgroundImage = `url("${data}")`;
 	});
-	else Client.loadFile(DB.INTERFACE_PATH + "select_character/page_ball_fill.bmp", function(data) {
-		btnList.find(".btn_pageinfo" + index).css("backgroundImage", "url(\"" + data + "\")");
+	btn.addEventListener("click", () => {
+		moveCursorTo$1((index - 1) * 3);
 	});
-	btnList.find(".btn_pageinfo" + index).css("border", "0");
-	btnList.find(".btn_pageinfo" + index).css("width", "8px");
-	btnList.find(".btn_pageinfo" + index).css("height", "8px");
-	btnList.find(".btn_pageinfo" + index).css("background-color", "transparent");
+	btnContainer.appendChild(btn);
+	btnContainer.appendChild(img);
 }
 /**
 * Generic method to handle mousedown on arrow
@@ -335899,19 +336271,19 @@ function drawBall(btnList, index, sel) {
 * @param {number} value to move
 */
 function genericArrowDown(value) {
-	return function(event) {
+	return (event) => {
 		moveCursorTo$1((_index$1 + _maxSlots$1 + value) % _maxSlots$1);
 		event.stopImmediatePropagation();
 		return false;
 	};
 }
 /**
-* Generic method to handle mousedown on arrow
+* Generic method to handle mousedown on canvas
 *
 * @param {number} value to move
 */
 function genericCanvasDown$1(value) {
-	return function(event) {
+	return (event) => {
 		moveCursorTo$1(Math.floor(_index$1 / 3) * 3 + value);
 		event.stopImmediatePropagation();
 		return false;
@@ -335921,7 +336293,7 @@ function genericCanvasDown$1(value) {
 * Press "cancel" or ESCAPE key
 */
 function cancel$5() {
-	if (_disable_UI$1 === false) UIManager.showPromptBox(DB.getMessage(17), "ok", "cancel", function() {
+	if (_disable_UI$1 === false) UIManager.showPromptBox(DB.getMessage(17), "ok", "cancel", () => {
 		CharSelectV3.onExitRequest();
 	}, null);
 }
@@ -335961,26 +336333,29 @@ function formatDatetime(epoch) {
 * Update UI and add timer
 */
 function requestdelete$1(index, timer) {
+	const root = _getRoot$5();
 	const entity = _entitySlots$1[index];
 	let action;
-	const countdown = CharSelectV3.ui.find(".timedelete.slot" + (index % 3 + 1));
+	const countdown = root.querySelector(`.timedelete.slot${index % 3 + 1}`);
 	if (countdown) {
-		countdown.attr("data-datetime", timer);
-		countdown.text(formatDatetime(timer));
-		countdown.show();
+		countdown.dataset.datetime = timer;
+		countdown.textContent = formatDatetime(timer);
+		countdown.style.display = "block";
 		if (Math.floor(Date.now() / 1e3) > timer) {
-			countdown.removeClass("waitdelete").addClass("candelete");
+			countdown.classList.remove("waitdelete");
+			countdown.classList.add("candelete");
 			action = entity.ACTION.DIE;
 		} else {
-			countdown.removeClass("candelete").addClass("waitdelete");
+			countdown.classList.remove("candelete");
+			countdown.classList.add("waitdelete");
 			action = entity.ACTION.SIT;
 		}
 	}
 	entity.action = action;
-	CharSelectV3.ui.find(".delete").hide();
-	CharSelectV3.ui.find(".canceldelete").show();
-	if (Math.floor(Date.now() / 1e3) > timer) CharSelectV3.ui.find(".finaldelete").show();
-	else CharSelectV3.ui.find(".finaldelete").hide();
+	root.querySelector(".delete").style.display = "none";
+	root.querySelector(".canceldelete").style.display = "block";
+	if (Math.floor(Date.now() / 1e3) > timer) root.querySelector(".finaldelete").style.display = "block";
+	else root.querySelector(".finaldelete").style.display = "none";
 }
 /**
 * Cancel reservation of character for deletion
@@ -335988,16 +336363,17 @@ function requestdelete$1(index, timer) {
 */
 function removedelete$1() {
 	if (_slots$1[_index$1]) {
+		const root = _getRoot$5();
 		_slots$1[_index$1].DeleteDate = 0;
 		_entitySlots$1[_index$1].action = _entitySlots$1[_index$1].ACTION.READYFIGHT;
 		render$5();
-		const countdown = CharSelectV3.ui.find(".timedelete.slot" + (_index$1 % 3 + 1));
-		countdown.attr("data-datetime", 0);
-		countdown.text(formatDatetime(""));
-		countdown.hide();
-		CharSelectV3.ui.find(".canceldelete").hide();
-		CharSelectV3.ui.find(".finaldelete").hide();
-		CharSelectV3.ui.find(".delete").show();
+		const countdown = root.querySelector(`.timedelete.slot${_index$1 % 3 + 1}`);
+		countdown.dataset.datetime = 0;
+		countdown.textContent = formatDatetime("");
+		countdown.style.display = "none";
+		root.querySelector(".canceldelete").style.display = "none";
+		root.querySelector(".finaldelete").style.display = "none";
+		root.querySelector(".delete").style.display = "block";
 		CharSelectV3.onCancelDeleteRequest(_slots$1[_index$1].GID);
 	}
 }
@@ -336029,8 +336405,8 @@ function suppress$1() {
 * @param {number} index
 */
 function moveCursorTo$1(index) {
-	const ui = CharSelectV3.ui;
-	const $charinfo = ui.find(".charinfo");
+	const root = _getRoot$5();
+	const charinfo = root.querySelector(".charinfo");
 	let entity = _entitySlots$1[_index$1];
 	let info = _slots$1[_index$1];
 	let action;
@@ -336045,70 +336421,79 @@ function moveCursorTo$1(index) {
 		});
 	}
 	_index$1 = (index + _maxSlots$1) % _maxSlots$1;
-	ui.find(".box_select").removeClass("slot1 slot2 slot3").addClass("slot" + (_index$1 % 3 + 1));
-	ui.find(".pageinfo .pagebtn").text("");
-	for (let i = 1; i <= _maxSlots$1 / 3; i++) if (Math.floor(_index$1 / 3) + 1 === i) drawBall(ui.find(".pageinfo .pagebtn"), i, true);
-	else drawBall(ui.find(".pageinfo .pagebtn"), i, false);
-	ui.find(".pageinfo").css("left", 576 / 2 - _maxSlots$1 / 3 * 8);
+	const boxSelect = root.querySelector(".box_select");
+	boxSelect.classList.remove("slot1", "slot2", "slot3");
+	boxSelect.classList.add(`slot${_index$1 % 3 + 1}`);
+	const pagebtn = root.querySelector(".pageinfo .pagebtn");
+	pagebtn.textContent = "";
+	for (let i = 1; i <= _maxSlots$1 / 3; i++) drawBall(pagebtn, i, Math.floor(_index$1 / 3) + 1 === i);
+	root.querySelector(".pageinfo").style.left = `${576 / 2 - _maxSlots$1 / 3 * 8}px`;
 	let mix = (index + 1) % 3 === 0 ? index + 1 - 3 : index + 1 - (index + 1) % 3;
 	mix = mix >= _maxSlots$1 ? 0 : mix;
 	for (let i = 1; i <= 3; i++) {
-		ui.find(".make" + i).hide();
-		if (!_entitySlots$1[mix + (i - 1)]) ui.find(".make" + i).show();
+		root.querySelector(`.make${i}`).style.display = "none";
+		if (!_entitySlots$1[mix + (i - 1)]) root.querySelector(`.make${i}`).style.display = "block";
 	}
 	for (let i = 0; i < 3; i++) {
 		const tmpIndex = _index$1 - _index$1 % 3 + i;
 		info = _slots$1[tmpIndex];
 		entity = _entitySlots$1[tmpIndex];
-		const countdown = CharSelectV3.ui.find(".timedelete.slot" + (tmpIndex % 3 + 1));
+		const countdown = root.querySelector(`.timedelete.slot${tmpIndex % 3 + 1}`);
 		if (info && entity) if (info.DeleteDate) {
-			countdown.attr("data-datetime", info.DeleteDate);
-			countdown.text(formatDatetime(info.DeleteDate));
-			countdown.show();
-			if (Math.floor(Date.now() / 1e3) > info.DeleteDate) countdown.removeClass("waitdelete").addClass("candelete");
-			else countdown.removeClass("candelete").addClass("waitdelete");
+			countdown.dataset.datetime = info.DeleteDate;
+			countdown.textContent = formatDatetime(info.DeleteDate);
+			countdown.style.display = "block";
+			if (Math.floor(Date.now() / 1e3) > info.DeleteDate) {
+				countdown.classList.remove("waitdelete");
+				countdown.classList.add("candelete");
+			} else {
+				countdown.classList.remove("candelete");
+				countdown.classList.add("waitdelete");
+			}
 			entity.action = entity.ACTION.SIT;
 		} else {
-			countdown.attr("data-datetime", 0);
-			countdown.text(formatDatetime(""));
-			countdown.hide();
+			countdown.dataset.datetime = 0;
+			countdown.textContent = formatDatetime("");
+			countdown.style.display = "none";
 			entity.action = entity.ACTION.IDLE;
 		}
 		else {
-			countdown.attr("data-datetime", 0);
-			countdown.text(formatDatetime(""));
-			countdown.hide();
+			countdown.dataset.datetime = 0;
+			countdown.textContent = formatDatetime("");
+			countdown.style.display = "none";
 		}
 	}
 	entity = _entitySlots$1[_index$1];
 	if (!entity) {
-		$charinfo.find("div").empty();
-		ui.find(".make").show();
-		ui.find(".delete").hide();
-		ui.find(".canceldelete").hide();
-		ui.find(".finaldelete").hide();
-		ui.find(".ok").hide();
+		charinfo.querySelectorAll("div").forEach((div) => {
+			div.textContent = "";
+		});
+		root.querySelector(".make").style.display = "block";
+		root.querySelector(".delete").style.display = "none";
+		root.querySelector(".canceldelete").style.display = "none";
+		root.querySelector(".finaldelete").style.display = "none";
+		root.querySelector(".ok").style.display = "none";
 		return;
 	}
 	info = _slots$1[_index$1];
 	if (info.DeleteDate) {
-		ui.find(".delete").hide();
-		ui.find(".canceldelete").show();
+		root.querySelector(".delete").style.display = "none";
+		root.querySelector(".canceldelete").style.display = "block";
 		if (Math.floor(Date.now() / 1e3) > info.DeleteDate) {
-			ui.find(".finaldelete").show();
+			root.querySelector(".finaldelete").style.display = "block";
 			action = entity.ACTION.DIE;
 		} else {
-			ui.find(".finaldelete").hide();
+			root.querySelector(".finaldelete").style.display = "none";
 			action = entity.ACTION.SIT;
 		}
-		ui.find(".make").hide();
-		ui.find(".ok").show();
+		root.querySelector(".make").style.display = "none";
+		root.querySelector(".ok").style.display = "block";
 	} else {
-		ui.find(".delete").show();
-		ui.find(".canceldelete").hide();
-		ui.find(".finaldelete").hide();
-		ui.find(".make").hide();
-		ui.find(".ok").show();
+		root.querySelector(".delete").style.display = "block";
+		root.querySelector(".canceldelete").style.display = "none";
+		root.querySelector(".finaldelete").style.display = "none";
+		root.querySelector(".make").style.display = "none";
+		root.querySelector(".ok").style.display = "block";
 		action = entity.ACTION.READYFIGHT;
 	}
 	entity.setAction({
@@ -336117,30 +336502,28 @@ function moveCursorTo$1(index) {
 		play: true,
 		repeat: true
 	});
-	info = _slots$1[_index$1];
-	$charinfo.find(".name").text(info.name);
-	$charinfo.find(".job").text(MonsterTable_default[info.job] || "");
-	$charinfo.find(".lvl").text(info.level);
-	$charinfo.find(".exp").text(info.exp);
-	$charinfo.find(".hp").text(info.hp);
-	$charinfo.find(".sp").text(info.sp);
-	$charinfo.find(".map").text(DB.getMapName(info.lastMap, "") || "");
-	$charinfo.find(".str").text(info.Str);
-	$charinfo.find(".agi").text(info.Agi);
-	$charinfo.find(".vit").text(info.Vit);
-	$charinfo.find(".int").text(info.Int);
-	$charinfo.find(".dex").text(info.Dex);
-	$charinfo.find(".luk").text(info.Luk);
+	charinfo.querySelector(".name").textContent = info.name;
+	charinfo.querySelector(".job").textContent = MonsterTable_default[info.job] || "";
+	charinfo.querySelector(".lvl").textContent = info.level;
+	charinfo.querySelector(".exp").textContent = info.exp;
+	charinfo.querySelector(".hp").textContent = info.hp;
+	charinfo.querySelector(".sp").textContent = info.sp;
+	charinfo.querySelector(".map").textContent = DB.getMapName(info.lastMap, "") || "";
+	charinfo.querySelector(".str").textContent = info.Str;
+	charinfo.querySelector(".agi").textContent = info.Agi;
+	charinfo.querySelector(".vit").textContent = info.Vit;
+	charinfo.querySelector(".int").textContent = info.Int;
+	charinfo.querySelector(".dex").textContent = info.Dex;
+	charinfo.querySelector(".luk").textContent = info.Luk;
 }
 /**
 * Render sprites to canvas
 */
 function render$5() {
-	let i;
 	Camera.direction = 4;
 	const idx = Math.floor(_index$1 / 3) * 3;
 	const count = _ctx$1.length;
-	for (i = 0; i < count; ++i) {
+	for (let i = 0; i < count; ++i) {
 		_ctx$1[i].clearRect(0, 0, _ctx$1[i].canvas.width, _ctx$1[i].canvas.height);
 		if (_entitySlots$1[idx + i]) {
 			SpriteRenderer.bind2DContext(_ctx$1[i], 63, 130);
@@ -336161,11 +336544,13 @@ var init_CharSelectV3 = __esmMin((() => {
 	init_StatusState();
 	init_Camera();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
+	init_Elements();
 	init_PacketVerManager();
 	init_CharSelectV3$2();
 	init_CharSelectV3$1();
-	CharSelectV3 = new UIComponent("CharSelectV3", CharSelectV3_default$2, CharSelectV3_default$1);
+	CharSelectV3 = new GUIComponent("CharSelectV3", CharSelectV3_default$1);
+	CharSelectV3.render = () => CharSelectV3_default$2;
 	_preferences$2 = Preferences.get("CharSelectV3", { index: 0 }, 1);
 	_maxSlots$1 = 27;
 	_list$1 = [];
@@ -336178,50 +336563,49 @@ var init_CharSelectV3 = __esmMin((() => {
 	/**
 	* Initialize UI
 	*/
-	CharSelectV3.init = function Init() {
-		const ui = this.ui;
-		ui.css({
-			top: (Renderer.height - 358) / 2,
-			left: (Renderer.width - 576) / 2
-		});
-		ui.find(".ok").click(connect$1);
-		ui.find(".cancel").click(cancel$5);
-		ui.find(".make").click(create$5);
-		ui.find(".delete").click(reserve$1);
-		ui.find(".canceldelete").click(removedelete$1);
-		ui.find(".finaldelete").click(suppress$1);
-		ui.find(".arrow.left").mousedown(genericArrowDown(-1));
-		ui.find(".arrow.right").mousedown(genericArrowDown(1));
-		ui.find(".slot1").mousedown(genericCanvasDown$1(0));
-		ui.find(".slot2").mousedown(genericCanvasDown$1(1));
-		ui.find(".slot3").mousedown(genericCanvasDown$1(2));
-		ui.find(".make1").mousedown(function(e) {
+	CharSelectV3.init = function init() {
+		const root = _getRoot$5();
+		this.draggable();
+		root.querySelector(".ok").addEventListener("click", connect$1);
+		root.querySelector(".cancel").addEventListener("click", cancel$5);
+		root.querySelector(".make").addEventListener("click", create$5);
+		root.querySelector(".delete").addEventListener("click", reserve$1);
+		root.querySelector(".canceldelete").addEventListener("click", removedelete$1);
+		root.querySelector(".finaldelete").addEventListener("click", suppress$1);
+		root.querySelector(".arrow.left").addEventListener("mousedown", genericArrowDown(-1));
+		root.querySelector(".arrow.right").addEventListener("mousedown", genericArrowDown(1));
+		root.querySelector(".slot1").addEventListener("mousedown", genericCanvasDown$1(0));
+		root.querySelector(".slot2").addEventListener("mousedown", genericCanvasDown$1(1));
+		root.querySelector(".slot3").addEventListener("mousedown", genericCanvasDown$1(2));
+		root.querySelector(".make1").addEventListener("mousedown", (e) => {
 			genericCanvasDown$1(0)(e);
 			create$5();
 		});
-		ui.find(".make2").mousedown(function(e) {
+		root.querySelector(".make2").addEventListener("mousedown", (e) => {
 			genericCanvasDown$1(1)(e);
 			create$5();
 		});
-		ui.find(".make3").mousedown(function(e) {
+		root.querySelector(".make3").addEventListener("mousedown", (e) => {
 			genericCanvasDown$1(2)(e);
 			create$5();
 		});
-		ui.find("canvas").dblclick(function() {
-			if (_slots$1[_index$1]) connect$1();
-			else create$5();
-		}).each(function() {
-			_ctx$1.push(this.getContext("2d"));
+		root.querySelectorAll("canvas").forEach((canvas) => {
+			canvas.addEventListener("dblclick", () => {
+				if (_slots$1[_index$1]) connect$1();
+				else create$5();
+			});
+			_ctx$1.push(canvas.getContext("2d"));
 		});
-		this.draggable();
 	};
 	/**
 	* Once append to body
 	*/
 	CharSelectV3.onAppend = function onAppend() {
+		const root = _getRoot$5();
+		this._host.style.top = `${(Renderer.height - 358) / 2}px`;
+		this._host.style.left = `${(Renderer.width - 576) / 2}px`;
 		_index$1 = _preferences$2.index;
-		this.ui.find(".slotinfo .number").text(_list$1.length + " / " + _maxSlots$1);
-		this.ui.find(".pageinfo .count").text(_maxSlots$1 / 3);
+		root.querySelector(".slotinfo .number").textContent = `${_list$1.length} / ${_maxSlots$1}`;
 		moveCursorTo$1(_index$1);
 		Renderer.render(render$5);
 	};
@@ -336229,9 +336613,13 @@ var init_CharSelectV3 = __esmMin((() => {
 	* Stop rendering
 	*/
 	CharSelectV3.onRemove = function onRemove() {
+		const root = _getRoot$5();
 		_preferences$2.index = _index$1;
 		_preferences$2.save();
-		this.ui.find(".timedelete").hide().text("");
+		root.querySelectorAll(".timedelete").forEach((el) => {
+			el.style.display = "none";
+			el.textContent = "";
+		});
 		Renderer.stop();
 	};
 	/**
@@ -336240,7 +336628,7 @@ var init_CharSelectV3 = __esmMin((() => {
 	* @param {object} event
 	*/
 	CharSelectV3.onKeyDown = function onKeyDown(event) {
-		if (!this.ui.is(":visible")) return true;
+		if (this._host.style.display === "none") return true;
 		switch (event.which) {
 			case KEYS.ESCAPE:
 				cancel$5();
@@ -336269,6 +336657,7 @@ var init_CharSelectV3 = __esmMin((() => {
 	* @param {object} pkt - packet structure
 	*/
 	CharSelectV3.setInfo = function setInfo(pkt) {
+		const root = _getRoot$5();
 		_maxSlots$1 = Math.floor(pkt.TotalSlotNum + pkt.PremiumStartSlot || 9);
 		_sex$1 = pkt.sex;
 		_slots$1.length = 0;
@@ -336278,7 +336667,7 @@ var init_CharSelectV3 = __esmMin((() => {
 			CharSelectV3.addCharacter(pkt.charInfo[i]);
 			_maxSlots$1 = Math.max(_maxSlots$1, Math.floor(pkt.charInfo[i].CharNum / 3 + 1) * 3);
 		}
-		this.ui.find(".slotinfo .number").text(_list$1.length + " / " + _maxSlots$1);
+		root.querySelector(".slotinfo .number").textContent = `${_list$1.length} / ${_maxSlots$1}`;
 		moveCursorTo$1(_index$1);
 	};
 	/**
@@ -336286,7 +336675,8 @@ var init_CharSelectV3 = __esmMin((() => {
 	*
 	* @param {number} error id
 	*/
-	CharSelectV3.deleteAnswer = function DeleteAnswer(error) {
+	CharSelectV3.deleteAnswer = function deleteAnswer(error) {
+		const root = _getRoot$5();
 		this.on("keydown");
 		switch (error) {
 			case -1:
@@ -336301,7 +336691,7 @@ var init_CharSelectV3 = __esmMin((() => {
 					--count;
 				} else i++;
 				moveCursorTo$1(_index$1);
-				this.ui.find(".slotinfo .number").text(_list$1.length + " / " + _maxSlots$1);
+				root.querySelector(".slotinfo .number").textContent = `${_list$1.length} / ${_maxSlots$1}`;
 				return;
 			}
 			default:
@@ -336330,6 +336720,7 @@ var init_CharSelectV3 = __esmMin((() => {
 	* @param {object} character data
 	*/
 	CharSelectV3.addCharacter = function addCharacter(character) {
+		const root = _getRoot$5();
 		if (!("sex" in character) || character.sex === 99) character.sex = _sex$1;
 		if (character.DeleteDate) {
 			const now = Math.floor(Date.now() / 1e3);
@@ -336340,14 +336731,14 @@ var init_CharSelectV3 = __esmMin((() => {
 		_entitySlots$1[character.CharNum] = new Entity();
 		_entitySlots$1[character.CharNum].set(character);
 		_entitySlots$1[character.CharNum].effectState = _entitySlots$1[character.CharNum]._effectState & ~StatusState_default.EffectState.INVISIBLE;
-		if (_slots$1[character.CharNum].DeleteDate && Math.floor(_index$1 / 3) == Math.floor(character.CharNum / 3)) {
+		if (_slots$1[character.CharNum].DeleteDate && Math.floor(_index$1 / 3) === Math.floor(character.CharNum / 3)) {
 			const slotNum = (character.CharNum + _maxSlots$1) % _maxSlots$1 + 1;
-			const countdown = this.ui.find(".timedelete.slot" + slotNum);
+			const countdown = root.querySelector(`.timedelete.slot${slotNum}`);
 			const entity = _entitySlots$1[character.CharNum];
 			if (countdown) {
-				countdown.attr("data-datetime", _slots$1[character.CharNum].DeleteDate);
-				countdown.text(formatDatetime(_slots$1[character.CharNum].DeleteDate));
-				countdown.show();
+				countdown.dataset.datetime = _slots$1[character.CharNum].DeleteDate;
+				countdown.textContent = formatDatetime(_slots$1[character.CharNum].DeleteDate);
+				countdown.style.display = "block";
 			}
 			entity.setAction({
 				action: entity.ACTION.SIT,
@@ -336379,7 +336770,7 @@ var init_CharSelectV3 = __esmMin((() => {
 	*
 	* @param {object} pkt - packet structure
 	*/
-	CharSelectV3.reqdeleteAnswer = function ReqDelAnswer(pkt) {
+	CharSelectV3.reqdeleteAnswer = function reqdeleteAnswer(pkt) {
 		this.on("keydown");
 		const now = Math.floor(Date.now() / 1e3);
 		const result = typeof pkt.Result === "undefined" ? -1 : pkt.Result;
@@ -336408,16 +336799,22 @@ var init_CharSelectV3 = __esmMin((() => {
 //#region src/UI/Components/CharSelect/CharSelectV4/CharSelectV4.html?raw
 var CharSelectV4_default$2;
 var init_CharSelectV4$2 = __esmMin((() => {
-	CharSelectV4_default$2 = "<div id=\"CharSelectV4\">\r\n	<div class=\"char_select_container\">\r\n		<!--Cancel Button-->\r\n		<button\r\n			class=\"btn cancel\"\r\n			type=\"submit\"\r\n			data-background=\"select_character_ver3/bt_close2_normal.bmp\"\r\n			data-hover=\"select_character_ver3/bt_close2_over.bmp\"\r\n			data-down=\"select_character_ver3/bt_close2_press.bmp\"\r\n		></button>\r\n		<!-- BOX -->\r\n		<div class=\"char_list\">\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot0\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot0 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot1\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot1 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot2\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot2 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot3\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot3 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot4\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot4 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot5\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot5 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot6\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot6 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot7\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot7 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot8\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot8 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot9\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot9 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot10\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot10 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot11\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot11 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot12\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot12 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot13\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot13 hidden\"></div>\r\n			</div>\r\n\r\n			<div\r\n				class=\"char_canvas\"\r\n				data-hover=\"select_character_ver3/img_slot_over.bmp\"\r\n				data-down=\"select_character_ver3/img_slot_press.bmp\"\r\n			>\r\n				<canvas\r\n					id=\"slot14\"\r\n					width=\"157\"\r\n					height=\"195\"\r\n					data-background=\"select_character_ver3/img_slot2_normal.bmp\"\r\n				></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot14 hidden\"></div>\r\n			</div>\r\n		</div>\r\n\r\n		<!-- Characters infos -->\r\n		<div class=\"charinfo\" data-background=\"select_character_ver3/img_info.bmp\">\r\n			<div class=\"job\"></div>\r\n			<div class=\"lvl\"></div>\r\n			<div class=\"exp\"></div>\r\n			<div class=\"hp\"></div>\r\n			<div class=\"sp\"></div>\r\n			<div class=\"map\"></div>\r\n			<div class=\"str\"></div>\r\n			<div class=\"agi\"></div>\r\n			<div class=\"vit\"></div>\r\n			<div class=\"int\"></div>\r\n			<div class=\"dex\"></div>\r\n			<div class=\"luk\"></div>\r\n			<button\r\n				class=\"btn delete\"\r\n				data-background=\"select_character_ver3/bt_info_normal.bmp\"\r\n				data-hover=\"select_character_ver3/bt_info_over.bmp\"\r\n				data-down=\"select_character_ver3/bt_info_press.bmp\"\r\n				data-text=\"3339\"\r\n			></button>\r\n			<button\r\n				class=\"btn canceldelete\"\r\n				data-background=\"select_character_ver3/bt_info_normal.bmp\"\r\n				data-hover=\"select_character_ver3/bt_info_over.bmp\"\r\n				data-down=\"select_character_ver3/bt_info_press.bmp\"\r\n				data-text=\"3340\"\r\n			></button>\r\n			<button\r\n				class=\"btn finaldelete\"\r\n				data-background=\"select_character_ver3/bt_info_normal.bmp\"\r\n				data-hover=\"select_character_ver3/bt_info_over.bmp\"\r\n				data-down=\"select_character_ver3/bt_info_press.bmp\"\r\n				data-text=\"3342\"\r\n			></button>\r\n			<button\r\n				class=\"btn ok\"\r\n				data-background=\"select_character_ver3/bt_gamestart_off.bmp\"\r\n				data-hover=\"select_character_ver3/bt_gamestart_over.bmp\"\r\n				data-down=\"select_character_ver3/bt_gamestart_press.bmp\"\r\n				data-text=\"3341\"\r\n			></button>\r\n			<!-- Pages infos -->\r\n			<div class=\"pageinfo\"><span class=\"current\">1</span> / <span class=\"count\">9</span></div>\r\n		</div>\r\n	</div>\r\n</div>\r\n";
+	CharSelectV4_default$2 = "<div id=\"CharSelectV4\">\r\n	<div class=\"char_select_container\">\r\n		<!--Cancel Button-->\r\n		<ui-button\r\n			class=\"btn cancel\"\r\n			bg=\"select_character_ver3/bt_close2_normal.bmp\"\r\n			hover=\"select_character_ver3/bt_close2_over.bmp\"\r\n			down=\"select_character_ver3/bt_close2_press.bmp\"\r\n		></ui-button>\r\n		<!-- BOX -->\r\n		<div class=\"char_list\">\r\n			<div class=\"char_canvas\">\r\n				<canvas id=\"slot0\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot0 hidden\"></div>\r\n			</div>\r\n\r\n			<div class=\"char_canvas\">\r\n				<canvas id=\"slot1\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot1 hidden\"></div>\r\n			</div>\r\n\r\n			<div class=\"char_canvas\">\r\n				<canvas id=\"slot2\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot2 hidden\"></div>\r\n			</div>\r\n\r\n			<div class=\"char_canvas\">\r\n				<canvas id=\"slot3\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot3 hidden\"></div>\r\n			</div>\r\n\r\n			<div class=\"char_canvas\">\r\n				<canvas id=\"slot4\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot4 hidden\"></div>\r\n			</div>\r\n\r\n			<div class=\"char_canvas\">\r\n				<canvas id=\"slot5\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot5 hidden\"></div>\r\n			</div>\r\n\r\n			<div class=\"char_canvas\">\r\n				<canvas id=\"slot6\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot6 hidden\"></div>\r\n			</div>\r\n\r\n			<div class=\"char_canvas\">\r\n				<canvas id=\"slot7\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot7 hidden\"></div>\r\n			</div>\r\n\r\n			<div class=\"char_canvas\">\r\n				<canvas id=\"slot8\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot8 hidden\"></div>\r\n			</div>\r\n\r\n			<div class=\"char_canvas\">\r\n				<canvas id=\"slot9\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot9 hidden\"></div>\r\n			</div>\r\n\r\n			<div class=\"char_canvas\">\r\n				<canvas id=\"slot10\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot10 hidden\"></div>\r\n			</div>\r\n\r\n			<div class=\"char_canvas\">\r\n				<canvas id=\"slot11\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot11 hidden\"></div>\r\n			</div>\r\n\r\n			<div class=\"char_canvas\">\r\n				<canvas id=\"slot12\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot12 hidden\"></div>\r\n			</div>\r\n\r\n			<div class=\"char_canvas\">\r\n				<canvas id=\"slot13\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot13 hidden\"></div>\r\n			</div>\r\n\r\n			<div class=\"char_canvas\">\r\n				<canvas id=\"slot14\" width=\"157\" height=\"195\"></canvas>\r\n				<div class=\"name\"></div>\r\n				<div class=\"job_icon\"></div>\r\n				<div class=\"timedelete slot14 hidden\"></div>\r\n			</div>\r\n		</div>\r\n\r\n		<!-- Characters infos -->\r\n		<div class=\"charinfo\">\r\n			<div class=\"job\"></div>\r\n			<div class=\"lvl\"></div>\r\n			<div class=\"exp\"></div>\r\n			<div class=\"hp\"></div>\r\n			<div class=\"sp\"></div>\r\n			<div class=\"map\"></div>\r\n			<div class=\"str\"></div>\r\n			<div class=\"agi\"></div>\r\n			<div class=\"vit\"></div>\r\n			<div class=\"int\"></div>\r\n			<div class=\"dex\"></div>\r\n			<div class=\"luk\"></div>\r\n			<ui-button\r\n				class=\"btn delete\"\r\n				bg=\"select_character_ver3/bt_info_normal.bmp\"\r\n				hover=\"select_character_ver3/bt_info_over.bmp\"\r\n				down=\"select_character_ver3/bt_info_press.bmp\"\r\n			>\r\n				<ui-text msg=\"3339\"></ui-text>\r\n			</ui-button>\r\n			<ui-button\r\n				class=\"btn canceldelete\"\r\n				bg=\"select_character_ver3/bt_info_normal.bmp\"\r\n				hover=\"select_character_ver3/bt_info_over.bmp\"\r\n				down=\"select_character_ver3/bt_info_press.bmp\"\r\n			>\r\n				<ui-text msg=\"3340\"></ui-text>\r\n			</ui-button>\r\n			<ui-button\r\n				class=\"btn finaldelete\"\r\n				bg=\"select_character_ver3/bt_info_normal.bmp\"\r\n				hover=\"select_character_ver3/bt_info_over.bmp\"\r\n				down=\"select_character_ver3/bt_info_press.bmp\"\r\n			>\r\n				<ui-text msg=\"3342\"></ui-text>\r\n			</ui-button>\r\n			<ui-button\r\n				class=\"btn ok\"\r\n				bg=\"select_character_ver3/bt_gamestart_off.bmp\"\r\n				hover=\"select_character_ver3/bt_gamestart_over.bmp\"\r\n				down=\"select_character_ver3/bt_gamestart_press.bmp\"\r\n			>\r\n				<ui-text msg=\"3341\"></ui-text>\r\n			</ui-button>\r\n			<!-- Pages infos -->\r\n			<div class=\"pageinfo\"><span class=\"current\">1</span> / <span class=\"count\">9</span></div>\r\n		</div>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/CharSelect/CharSelectV4/CharSelectV4.css?raw
 var CharSelectV4_default$1;
 var init_CharSelectV4$1 = __esmMin((() => {
-	CharSelectV4_default$1 = "#CharSelectV4 {\r\n	position: absolute;\r\n	min-width: 100%;\r\n	min-height: 100%;\r\n	z-index: 100;\r\n	top: 0;\r\n	left: 0;\r\n	display: flex;\r\n	justify-content: center;\r\n	align-items: center;\r\n	flex-direction: column;\r\n}\r\n\r\n#CharSelectV4 .char_select_container {\r\n	position: absolute;\r\n	display: flex;\r\n	flex-direction: row;\r\n	background-color: rgba(0, 0, 0, 0.1);\r\n	border-radius: 5px;\r\n	padding-top: 20px;\r\n	padding-left: 5px;\r\n}\r\n\r\n/** Box **/\r\n#CharSelectV4 .char_list {\r\n	flex: 1;\r\n	max-width: 800px;\r\n	min-width: 157px;\r\n	height: 595px;\r\n	max-height: 80vh;\r\n	display: flex;\r\n	flex-direction: row;\r\n	flex-wrap: wrap;\r\n	overflow-y: auto;\r\n}\r\n\r\n#CharSelectV4 .box_select {\r\n	position: absolute;\r\n	width: 157px;\r\n	height: 159px;\r\n	top: 40px;\r\n	margin-left: -5px;\r\n}\r\n#CharSelectV4 .char_canvas {\r\n	width: 157px;\r\n	height: 195px;\r\n	position: relative;\r\n	z-index: 10;\r\n}\r\n#CharSelectV4 .char_canvas .name {\r\n	position: absolute;\r\n	bottom: 17px;\r\n	width: 100%;\r\n	text-align: center;\r\n	font-weight: bold;\r\n	color: #15154a;\r\n}\r\n\r\n#CharSelectV4 .char_canvas .job_icon {\r\n	position: absolute;\r\n	top: 15px;\r\n	right: 12px;\r\n	width: 25px;\r\n	height: 25px;\r\n}\r\n\r\n/** Slot info **/\r\n#CharSelectV4 .slotinfo {\r\n	position: absolute;\r\n	top: 195px;\r\n	right: 10px;\r\n	height: 20px;\r\n	display: block;\r\n	border: 1px solid #c6cee7;\r\n	border-radius: 4px;\r\n	padding-left: 10px;\r\n	padding-right: 10px;\r\n}\r\n#CharSelectV4 .slotinfo .number {\r\n	color: #58709e;\r\n	font-weight: bold;\r\n	margin-right: 10px;\r\n}\r\n#CharSelectV4 .slotinfo .content {\r\n	color: #555;\r\n	top: 6px;\r\n	right: 8px;\r\n}\r\n\r\n/** Page info **/\r\n#CharSelectV4 .pageinfo {\r\n	position: absolute;\r\n	left: 275px;\r\n	top: 185px;\r\n	font-weight: bold;\r\n	color: #646464;\r\n}\r\n#CharSelectV4 .pageinfo .current {\r\n	color: #fe3b7d;\r\n}\r\n\r\n/** Characters infos **/\r\n#CharSelectV4 .charinfo {\r\n	height: 585px;\r\n	max-height: 80vh;\r\n	width: 185px;\r\n	background-repeat: no-repeat;\r\n	margin-top: 10px;\r\n	margin-left: 10px;\r\n	position: relative;\r\n}\r\n#CharSelectV4 .charinfo div {\r\n	position: absolute;\r\n	width: 90px;\r\n	height: 13px;\r\n}\r\n#CharSelectV4 .charinfo .name {\r\n	left: 52px;\r\n	top: 2px;\r\n	white-space: nowrap;\r\n}\r\n#CharSelectV4 .charinfo .job {\r\n	left: 60px;\r\n	top: 105px;\r\n}\r\n#CharSelectV4 .charinfo .lvl {\r\n	left: 60px;\r\n	top: 123px;\r\n}\r\n#CharSelectV4 .charinfo .exp {\r\n	left: 60px;\r\n	top: 140px;\r\n}\r\n#CharSelectV4 .charinfo .hp {\r\n	left: 60px;\r\n	top: 157px;\r\n}\r\n#CharSelectV4 .charinfo .sp {\r\n	left: 60px;\r\n	top: 174px;\r\n}\r\n#CharSelectV4 .charinfo .map {\r\n	left: 60px;\r\n	top: 89px;\r\n	white-space: nowrap;\r\n	overflow: hidden;\r\n	text-overflow: ellipsis;\r\n}\r\n#CharSelectV4 .charinfo .str {\r\n	left: 60px;\r\n	top: 191px;\r\n}\r\n#CharSelectV4 .charinfo .agi {\r\n	left: 60px;\r\n	top: 208px;\r\n}\r\n#CharSelectV4 .charinfo .vit {\r\n	left: 60px;\r\n	top: 225px;\r\n}\r\n#CharSelectV4 .charinfo .int {\r\n	left: 60px;\r\n	top: 242px;\r\n}\r\n#CharSelectV4 .charinfo .dex {\r\n	left: 60px;\r\n	top: 259px;\r\n}\r\n#CharSelectV4 .charinfo .luk {\r\n	left: 60px;\r\n	top: 276px;\r\n}\r\n\r\n/** Buttons **/\r\n#CharSelectV4 .btn.delete {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 131px;\r\n	height: 24px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#CharSelectV4 .btn.canceldelete {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 131px;\r\n	height: 24px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#CharSelectV4 .btn.finaldelete {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 131px;\r\n	height: 24px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#CharSelectV4 .btn.ok {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 165px;\r\n	height: 110px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n	color: white;\r\n	padding-top: 20px;\r\n}\r\n#CharSelectV4 .btn.ok:hover {\r\n	text-shadow: #000 1px 1px;\r\n}\r\n\r\n#CharSelectV4 .ok,\r\n#CharSelectV4 .make {\r\n	right: 15px;\r\n	top: 380px;\r\n}\r\n#CharSelectV4 .cancel {\r\n	position: absolute;\r\n	top: 5px;\r\n	right: 5px;\r\n	width: 17px;\r\n	height: 18px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#CharSelectV4 .delete {\r\n	right: 33px;\r\n	top: 300px;\r\n}\r\n\r\n#CharSelectV4 .canceldelete {\r\n	right: 33px;\r\n	top: 300px;\r\n}\r\n\r\n#CharSelectV4 .finaldelete {\r\n	right: 33px;\r\n	top: 330px;\r\n}\r\n\r\n#CharSelectV4 .timedelete {\r\n	position: relative;\r\n	height: 20px;\r\n	width: 100px;\r\n	top: -150px;\r\n	left: 55px;\r\n}\r\n\r\n#CharSelectV4 .hidden {\r\n	display: none;\r\n}\r\n";
+	CharSelectV4_default$1 = ":host {\r\n	min-width: 100%;\r\n	min-height: 100%;\r\n}\r\n\r\n#CharSelectV4 {\r\n	position: absolute;\r\n	min-width: 100%;\r\n	min-height: 100%;\r\n	top: 0;\r\n	left: 0;\r\n	display: flex;\r\n	justify-content: center;\r\n	align-items: center;\r\n	flex-direction: column;\r\n}\r\n\r\n#CharSelectV4 .char_select_container {\r\n	position: absolute;\r\n	display: flex;\r\n	flex-direction: row;\r\n	background-color: rgba(0, 0, 0, 0.1);\r\n	border-radius: 5px;\r\n	padding-top: 20px;\r\n	padding-left: 5px;\r\n}\r\n\r\n/** Box **/\r\n#CharSelectV4 .char_list {\r\n	flex: 1;\r\n	max-width: 800px;\r\n	min-width: 157px;\r\n	height: 595px;\r\n	max-height: 80vh;\r\n	display: flex;\r\n	flex-direction: row;\r\n	flex-wrap: wrap;\r\n	overflow-y: auto;\r\n}\r\n\r\n#CharSelectV4 .box_select {\r\n	position: absolute;\r\n	width: 157px;\r\n	height: 159px;\r\n	top: 40px;\r\n	margin-left: -5px;\r\n}\r\n#CharSelectV4 .char_canvas {\r\n	width: 157px;\r\n	height: 195px;\r\n	position: relative;\r\n	z-index: 10;\r\n}\r\n#CharSelectV4 .char_canvas .name {\r\n	position: absolute;\r\n	bottom: 17px;\r\n	width: 100%;\r\n	text-align: center;\r\n	font-weight: bold;\r\n	color: #15154a;\r\n}\r\n\r\n#CharSelectV4 .char_canvas .job_icon {\r\n	position: absolute;\r\n	top: 15px;\r\n	right: 12px;\r\n	width: 25px;\r\n	height: 25px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n/** Slot info **/\r\n#CharSelectV4 .slotinfo {\r\n	position: absolute;\r\n	top: 195px;\r\n	right: 10px;\r\n	height: 20px;\r\n	display: block;\r\n	border: 1px solid #c6cee7;\r\n	border-radius: 4px;\r\n	padding-left: 10px;\r\n	padding-right: 10px;\r\n}\r\n#CharSelectV4 .slotinfo .number {\r\n	color: #58709e;\r\n	font-weight: bold;\r\n	margin-right: 10px;\r\n}\r\n#CharSelectV4 .slotinfo .content {\r\n	color: #555;\r\n	top: 6px;\r\n	right: 8px;\r\n}\r\n\r\n/** Page info **/\r\n#CharSelectV4 .pageinfo {\r\n	position: absolute;\r\n	left: 275px;\r\n	top: 185px;\r\n	font-weight: bold;\r\n	color: #646464;\r\n}\r\n#CharSelectV4 .pageinfo .current {\r\n	color: #fe3b7d;\r\n}\r\n\r\n/** Characters infos **/\r\n#CharSelectV4 .charinfo {\r\n	height: 585px;\r\n	max-height: 80vh;\r\n	width: 185px;\r\n	background-repeat: no-repeat;\r\n	margin-top: 10px;\r\n	margin-left: 10px;\r\n	position: relative;\r\n}\r\n#CharSelectV4 .charinfo div {\r\n	position: absolute;\r\n	width: 90px;\r\n	height: 13px;\r\n}\r\n#CharSelectV4 .charinfo .name {\r\n	left: 52px;\r\n	top: 2px;\r\n	white-space: nowrap;\r\n}\r\n#CharSelectV4 .charinfo .job {\r\n	left: 60px;\r\n	top: 105px;\r\n}\r\n#CharSelectV4 .charinfo .lvl {\r\n	left: 60px;\r\n	top: 123px;\r\n}\r\n#CharSelectV4 .charinfo .exp {\r\n	left: 60px;\r\n	top: 140px;\r\n}\r\n#CharSelectV4 .charinfo .hp {\r\n	left: 60px;\r\n	top: 157px;\r\n}\r\n#CharSelectV4 .charinfo .sp {\r\n	left: 60px;\r\n	top: 174px;\r\n}\r\n#CharSelectV4 .charinfo .map {\r\n	left: 60px;\r\n	top: 89px;\r\n	white-space: nowrap;\r\n	overflow: hidden;\r\n	text-overflow: ellipsis;\r\n}\r\n#CharSelectV4 .charinfo .str {\r\n	left: 60px;\r\n	top: 191px;\r\n}\r\n#CharSelectV4 .charinfo .agi {\r\n	left: 60px;\r\n	top: 208px;\r\n}\r\n#CharSelectV4 .charinfo .vit {\r\n	left: 60px;\r\n	top: 225px;\r\n}\r\n#CharSelectV4 .charinfo .int {\r\n	left: 60px;\r\n	top: 242px;\r\n}\r\n#CharSelectV4 .charinfo .dex {\r\n	left: 60px;\r\n	top: 259px;\r\n}\r\n#CharSelectV4 .charinfo .luk {\r\n	left: 60px;\r\n	top: 276px;\r\n}\r\n\r\n/** Buttons **/\r\n#CharSelectV4 .btn.delete {\r\n	position: absolute;\r\n	width: 131px;\r\n	height: 24px;\r\n}\r\n\r\n#CharSelectV4 .btn.canceldelete {\r\n	position: absolute;\r\n	width: 131px;\r\n	height: 24px;\r\n}\r\n\r\n#CharSelectV4 .btn.finaldelete {\r\n	position: absolute;\r\n	width: 131px;\r\n	height: 24px;\r\n}\r\n\r\n#CharSelectV4 .btn.ok {\r\n	position: absolute;\r\n	width: 165px;\r\n	height: 110px;\r\n	color: white;\r\n	padding-top: 20px;\r\n}\r\n#CharSelectV4 .btn.ok:hover {\r\n	text-shadow: #000 1px 1px;\r\n}\r\n\r\n#CharSelectV4 .ok,\r\n#CharSelectV4 .make {\r\n	right: 15px;\r\n	top: 380px;\r\n}\r\n#CharSelectV4 .cancel {\r\n	position: absolute;\r\n	top: 5px;\r\n	right: 5px;\r\n	width: 17px;\r\n	height: 18px;\r\n}\r\n#CharSelectV4 .delete {\r\n	right: 33px;\r\n	top: 300px;\r\n}\r\n\r\n#CharSelectV4 .canceldelete {\r\n	right: 33px;\r\n	top: 300px;\r\n}\r\n\r\n#CharSelectV4 .finaldelete {\r\n	right: 33px;\r\n	top: 330px;\r\n}\r\n\r\n#CharSelectV4 .timedelete {\r\n	position: relative;\r\n	height: 20px;\r\n	width: 100px;\r\n	top: -150px;\r\n	left: 55px;\r\n}\r\n\r\n#CharSelectV4 .hidden {\r\n	display: none;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/CharSelect/CharSelectV4/CharSelectV4.js
+/**
+* Helper to get shadow root
+*/
+function _getRoot$4() {
+	return CharSelectV4._shadow || CharSelectV4._host;
+}
 /**
 * Format delay duration
 */
@@ -336432,7 +336829,7 @@ function formatDuration(seconds) {
 * Countdown for delay in deletion
 */
 function updateAllVisibleCountdowns() {
-	if (CharSelectV4.ui) document.querySelectorAll(".timedelete:not(.hidden)").forEach((countdownDiv) => {
+	_getRoot$4().querySelectorAll(".timedelete:not(.hidden)").forEach((countdownDiv) => {
 		const deleteReservedDuration = parseInt(countdownDiv.dataset.duration, 10);
 		const updatedDuration = Math.max(0, deleteReservedDuration - 1);
 		countdownDiv.textContent = formatDuration(updatedDuration);
@@ -336461,16 +336858,17 @@ function stopCountdownInterval() {
 * Update UI and add timer
 */
 function requestdelete(index, timer) {
+	const root = _getRoot$4();
 	_entitySlots[index].action = 2;
-	const countdown = document.querySelector(".timedelete.slot" + index);
+	const countdown = root.querySelector(`.timedelete.slot${index}`);
 	if (countdown) {
-		countdown.setAttribute("data-duration", timer);
+		countdown.dataset.duration = timer;
 		countdown.classList.remove("hidden");
 		countdown.style.display = "block";
 	}
-	CharSelectV4.ui.find(".delete").hide();
-	CharSelectV4.ui.find(".canceldelete").show();
-	CharSelectV4.ui.find(".finaldelete").show();
+	root.querySelector(".delete").style.display = "none";
+	root.querySelector(".canceldelete").style.display = "block";
+	root.querySelector(".finaldelete").style.display = "block";
 }
 /**
 * Cancel reservation of character for deletion
@@ -336478,28 +336876,29 @@ function requestdelete(index, timer) {
 */
 function removedelete() {
 	if (_slots[_index]) {
+		const root = _getRoot$4();
 		_slots[_index].DeleteDate = 0;
 		_entitySlots[_index].action = 0;
 		render$4();
-		const countdown = document.querySelector(".timedelete.slot" + _index);
+		const countdown = root.querySelector(`.timedelete.slot${_index}`);
 		if (countdown) {
-			countdown.setAttribute("data-duration", 0);
+			countdown.dataset.duration = 0;
 			countdown.classList.add("hidden");
 			countdown.style.display = "none";
 		}
-		CharSelectV4.ui.find(".canceldelete").hide();
-		CharSelectV4.ui.find(".finaldelete").hide();
-		CharSelectV4.ui.find(".delete").show();
+		root.querySelector(".canceldelete").style.display = "none";
+		root.querySelector(".finaldelete").style.display = "none";
+		root.querySelector(".delete").style.display = "block";
 		CharSelectV4.onCancelDeleteRequest(_slots[_index].GID);
 	}
 }
 /**
-* Generic method to handle mousedown on arrow
+* Generic method to handle mousedown on canvas
 *
 * @param {number} value to move
 */
 function genericCanvasDown(value) {
-	return function(event) {
+	return (event) => {
 		moveCursorTo(value);
 		event.stopImmediatePropagation();
 		return false;
@@ -336510,7 +336909,7 @@ function genericCanvasDown(value) {
 */
 function cancel$4() {
 	if (_disable_UI === false) {
-		UIManager.showPromptBox(DB.getMessage(17), "ok", "cancel", function() {
+		UIManager.showPromptBox(DB.getMessage(17), "ok", "cancel", () => {
 			CharSelectV4.onExitRequest();
 			CharSelectV4.clearAllSlots();
 		}, null);
@@ -336564,25 +336963,28 @@ function suppress() {
 * @param {number} index
 */
 function moveCursorTo(index) {
-	const ui = CharSelectV4.ui;
-	const $charinfo = ui.find(".charinfo");
-	let entity = _slots[_index];
+	const root = _getRoot$4();
+	const charinfo = root.querySelector(".charinfo");
 	const prevIndex = _index;
+	let entity = _slots[_index];
 	shouldRunBackgroundChange = false;
-	if (entity) Client.loadFile(DB.INTERFACE_PATH + "select_character_ver3/img_slot_normal.bmp", function(dataURI) {
-		ui.find("#slot" + prevIndex).css("backgroundImage", "url(" + dataURI + ")");
+	if (entity) Client.loadFile(`${DB.INTERFACE_PATH}select_character_ver3/img_slot_normal.bmp`, (dataURI) => {
+		const prevSlot = root.querySelector(`#slot${prevIndex}`);
+		if (prevSlot) prevSlot.style.backgroundImage = `url(${dataURI})`;
 	});
 	const slotIndex = _index = index > _maxSlots ? _maxSlots : index < 0 ? 0 : index;
 	entity = _slots[_index];
 	if (!entity) {
-		$charinfo.find("div").empty();
-		ui.find(".delete").hide();
-		ui.find(".canceldelete").hide();
-		ui.find(".finaldelete").hide();
-		ui.find(".ok").hide();
-		const countdown = document.querySelector(".timedelete.slot" + _index);
+		charinfo.querySelectorAll("div").forEach((div) => {
+			div.textContent = "";
+		});
+		root.querySelector(".delete").style.display = "none";
+		root.querySelector(".canceldelete").style.display = "none";
+		root.querySelector(".finaldelete").style.display = "none";
+		root.querySelector(".ok").style.display = "none";
+		const countdown = root.querySelector(`.timedelete.slot${_index}`);
 		if (countdown) {
-			countdown.setAttribute("data-duration", 0);
+			countdown.dataset.duration = 0;
 			countdown.classList.add("hidden");
 			countdown.style.display = "none";
 		}
@@ -336594,54 +336996,49 @@ function moveCursorTo(index) {
 	if (shouldRunBackgroundChange === true) changeBackgroundEverySecond();
 	const info = _slots[_index];
 	if (info.DeleteDate) {
-		ui.find(".delete").hide();
-		ui.find(".canceldelete").show();
-		ui.find(".finaldelete").show();
+		root.querySelector(".delete").style.display = "none";
+		root.querySelector(".canceldelete").style.display = "block";
+		root.querySelector(".finaldelete").style.display = "block";
 	} else {
-		ui.find(".canceldelete").hide();
-		ui.find(".finaldelete").hide();
-		ui.find(".delete").show();
+		root.querySelector(".canceldelete").style.display = "none";
+		root.querySelector(".finaldelete").style.display = "none";
+		root.querySelector(".delete").style.display = "block";
 	}
-	ui.find(".ok").show();
-	$charinfo.find(".map").text(DB.getMapName(info.lastMap, "") || "");
-	$charinfo.find(".job").text(MonsterTable_default[info.job] || "");
-	$charinfo.find(".lvl").text(info.level);
-	$charinfo.find(".exp").text(info.exp);
-	$charinfo.find(".hp").text(info.hp);
-	$charinfo.find(".sp").text(info.sp);
-	$charinfo.find(".str").text(info.Str);
-	$charinfo.find(".agi").text(info.Agi);
-	$charinfo.find(".vit").text(info.Vit);
-	$charinfo.find(".int").text(info.Int);
-	$charinfo.find(".dex").text(info.Dex);
-	$charinfo.find(".luk").text(info.Luk);
+	root.querySelector(".ok").style.display = "block";
+	charinfo.querySelector(".map").textContent = DB.getMapName(info.lastMap, "") || "";
+	charinfo.querySelector(".job").textContent = MonsterTable_default[info.job] || "";
+	charinfo.querySelector(".lvl").textContent = info.level;
+	charinfo.querySelector(".exp").textContent = info.exp;
+	charinfo.querySelector(".hp").textContent = info.hp;
+	charinfo.querySelector(".sp").textContent = info.sp;
+	charinfo.querySelector(".str").textContent = info.Str;
+	charinfo.querySelector(".agi").textContent = info.Agi;
+	charinfo.querySelector(".vit").textContent = info.Vit;
+	charinfo.querySelector(".int").textContent = info.Int;
+	charinfo.querySelector(".dex").textContent = info.Dex;
+	charinfo.querySelector(".luk").textContent = info.Luk;
 }
 function changeBackgroundEverySecond() {
-	if (CharSelectV4.ui) {
-		const backgroundchange = CharSelectV4.ui.find("#slot" + _curindex);
-		if (backgroundchange && shouldRunBackgroundChange === true) {
-			Client.loadFile(DB.INTERFACE_PATH + "select_character_ver3/img_slot_select" + img + ".bmp", function(dataURI) {
-				backgroundchange.css({
-					backgroundImage: "url(" + dataURI + ")",
-					width: "157px",
-					height: "197px",
-					"background-size": "contain",
-					"background-repeat": "no-repeat"
-				});
-			});
-			img = (img + 1) % 8;
-		}
+	const backgroundchange = _getRoot$4().querySelector(`#slot${_curindex}`);
+	if (backgroundchange && shouldRunBackgroundChange === true) {
+		Client.loadFile(`${DB.INTERFACE_PATH}select_character_ver3/img_slot_select${img}.bmp`, (dataURI) => {
+			backgroundchange.style.backgroundImage = `url(${dataURI})`;
+			backgroundchange.style.width = "157px";
+			backgroundchange.style.height = "197px";
+			backgroundchange.style.backgroundSize = "contain";
+			backgroundchange.style.backgroundRepeat = "no-repeat";
+		});
+		img = (img + 1) % 8;
 	}
 }
 /**
 * Render sprites to canvas
 */
 function render$4() {
-	let i;
 	Camera.direction = 4;
 	const idx = Math.floor(_index / _maxSlots) * _maxSlots;
 	const count = _ctx.length;
-	for (i = 0; i < count; ++i) {
+	for (let i = 0; i < count; ++i) {
 		_ctx[i].clearRect(0, 0, _ctx[i].canvas.width, _ctx[i].canvas.height);
 		if (_entitySlots[idx + i]) {
 			SpriteRenderer.bind2DContext(_ctx[i], 78, 157);
@@ -336662,12 +337059,13 @@ var init_CharSelectV4 = __esmMin((() => {
 	init_StatusState();
 	init_Camera();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
+	init_Elements();
 	init_CharSelectV4$2();
 	init_CharSelectV4$1();
 	init_Client();
-	init_jquery();
-	CharSelectV4 = new UIComponent("CharSelectV4", CharSelectV4_default$2, CharSelectV4_default$1);
+	CharSelectV4 = new GUIComponent("CharSelectV4", CharSelectV4_default$1);
+	CharSelectV4.render = () => CharSelectV4_default$2;
 	_preferences$1 = Preferences.get("CharSelectV4", { index: 0 }, 1);
 	_maxSlots = 15;
 	_list = [];
@@ -336683,34 +337081,33 @@ var init_CharSelectV4 = __esmMin((() => {
 	/**
 	* Initialize UI
 	*/
-	CharSelectV4.init = function Init() {
-		const ui = this.ui;
-		ui.find(".ok").click(connect);
-		ui.find(".cancel").click(cancel$4);
-		ui.find(".delete").click(reserve);
-		ui.find(".canceldelete").click(removedelete);
-		ui.find(".finaldelete").click(suppress);
-		ui.find("#slot0").mousedown(genericCanvasDown(0));
-		ui.find("#slot1").mousedown(genericCanvasDown(1));
-		ui.find("#slot2").mousedown(genericCanvasDown(2));
-		ui.find("#slot3").mousedown(genericCanvasDown(3));
-		ui.find("#slot4").mousedown(genericCanvasDown(4));
-		ui.find("#slot5").mousedown(genericCanvasDown(5));
-		ui.find("#slot6").mousedown(genericCanvasDown(6));
-		ui.find("#slot7").mousedown(genericCanvasDown(7));
-		ui.find("#slot8").mousedown(genericCanvasDown(8));
-		ui.find("#slot9").mousedown(genericCanvasDown(9));
-		ui.find("#slot10").mousedown(genericCanvasDown(10));
-		ui.find("#slot11").mousedown(genericCanvasDown(11));
-		ui.find("#slot12").mousedown(genericCanvasDown(12));
-		ui.find("#slot13").mousedown(genericCanvasDown(13));
-		ui.find("#slot14").mousedown(genericCanvasDown(14));
-		ui.find("canvas").dblclick(function() {
-			if (_slots[_index]) connect();
-			else create$4();
-		}).each(function() {
-			_ctx.push(this.getContext("2d"));
+	CharSelectV4.init = function init() {
+		const root = _getRoot$4();
+		root.querySelector(".ok").addEventListener("click", connect);
+		root.querySelector(".cancel").addEventListener("click", cancel$4);
+		root.querySelector(".delete").addEventListener("click", reserve);
+		root.querySelector(".canceldelete").addEventListener("click", removedelete);
+		root.querySelector(".finaldelete").addEventListener("click", suppress);
+		for (let i = 0; i < 15; i++) {
+			const slot = root.querySelector(`#slot${i}`);
+			if (slot) slot.addEventListener("mousedown", genericCanvasDown(i));
+		}
+		root.querySelectorAll("canvas").forEach((canvas) => {
+			canvas.addEventListener("dblclick", () => {
+				if (_slots[_index]) connect();
+				else create$4();
+			});
+			_ctx.push(canvas.getContext("2d"));
 		});
+		Client.loadFile(`${DB.INTERFACE_PATH}select_character_ver3/img_info.bmp`, (dataURI) => {
+			root.querySelector(".charinfo").style.backgroundImage = `url(${dataURI})`;
+		});
+		for (let i = 0; i < 15; i++) {
+			const slotCanvas = root.querySelector(`#slot${i}`);
+			if (slotCanvas) Client.loadFile(`${DB.INTERFACE_PATH}select_character_ver3/img_slot2_normal.bmp`, (dataURI) => {
+				slotCanvas.style.backgroundImage = `url(${dataURI})`;
+			});
+		}
 	};
 	_bgInterval = null;
 	/**
@@ -336718,7 +337115,7 @@ var init_CharSelectV4 = __esmMin((() => {
 	*/
 	CharSelectV4.onAppend = function onAppend() {
 		CharSelectV4.updateCharSlot();
-		if (CharSelectV4.ui) startCountdownInterval();
+		startCountdownInterval();
 		moveCursorTo(_index);
 		_bgInterval = setInterval(changeBackgroundEverySecond, 250);
 		Renderer.render(render$4);
@@ -336742,7 +337139,7 @@ var init_CharSelectV4 = __esmMin((() => {
 	* @param {object} event
 	*/
 	CharSelectV4.onKeyDown = function onKeyDown(event) {
-		if (!this.ui.is(":visible")) return true;
+		if (this._host.style.display === "none") return true;
 		switch (event.which) {
 			case KEYS.ESCAPE:
 				cancel$4();
@@ -336782,7 +337179,7 @@ var init_CharSelectV4 = __esmMin((() => {
 	*
 	* @param {object} pkt - packet structure
 	*/
-	CharSelectV4.reqdeleteAnswer = function ReqDelAnswer(pkt) {
+	CharSelectV4.reqdeleteAnswer = function reqdeleteAnswer(pkt) {
 		this.on("keydown");
 		const deleteReservedDate = pkt.DeleteReservedDate;
 		const result = typeof pkt.Result === "undefined" ? -1 : pkt.Result;
@@ -336808,7 +337205,7 @@ var init_CharSelectV4 = __esmMin((() => {
 	*
 	* @param {number} error id
 	*/
-	CharSelectV4.deleteAnswer = function DeleteAnswer(error) {
+	CharSelectV4.deleteAnswer = function deleteAnswer(error) {
 		this.on("keydown");
 		switch (error) {
 			case -1:
@@ -336880,39 +337277,44 @@ var init_CharSelectV4 = __esmMin((() => {
 	CharSelectV4.onConnectRequest = function onConnectRequest() {};
 	CharSelectV4.onCancelDeleteRequest = function onCancelDeleteRequest() {};
 	CharSelectV4.updateCharSlot = function updateCharSlot(slotId) {
+		const root = _getRoot$4();
 		let start = 0;
 		let loopMax = Math.max(_maxSlots, _slots.length);
 		if (typeof slotId !== "undefined") {
 			start = slotId;
 			loopMax = slotId + 1;
 		}
+		const charCanvases = root.querySelectorAll(".char_canvas");
+		const jobIcons = root.querySelectorAll(".job_icon");
 		for (let i = start; i < loopMax; ++i) {
-			jquery_default(CharSelectV4.ui.find(".char_canvas")[i]).find(".name").html(_slots[i] ? _slots[i].name : "");
+			if (charCanvases[i]) charCanvases[i].querySelector(".name").innerHTML = _slots[i] ? _slots[i].name : "";
 			if (!_slots[i]) {
-				const slotNum = i;
-				jquery_default(CharSelectV4.ui.find(".job_icon")[slotNum]).css("background-image", "");
-				if (CharSelectV4.ui.find("#slot" + slotNum)) Client.loadFile(DB.INTERFACE_PATH + "select_character_ver3/img_slot2_normal.bmp", function(dataURI) {
-					CharSelectV4.ui.find("#slot" + slotNum).css("backgroundImage", "url(" + dataURI + ")");
+				if (jobIcons[i]) jobIcons[i].style.backgroundImage = "";
+				const slotCanvas = root.querySelector(`#slot${i}`);
+				if (slotCanvas) Client.loadFile(`${DB.INTERFACE_PATH}select_character_ver3/img_slot2_normal.bmp`, (dataURI) => {
+					slotCanvas.style.backgroundImage = `url(${dataURI})`;
 				});
-				const countdown = document.querySelector(".timedelete.slot" + slotNum);
+				const countdown = root.querySelector(`.timedelete.slot${i}`);
 				if (countdown) {
-					countdown.setAttribute("data-duration", 0);
+					countdown.dataset.duration = 0;
 					countdown.classList.add("hidden");
 					countdown.style.display = "none";
 				}
 			} else {
-				Client.loadFile(DB.INTERFACE_PATH + "select_character_ver3/img_slot_normal.bmp", function(dataURI) {
-					CharSelectV4.ui.find("#slot" + i).css("backgroundImage", "url(" + dataURI + ")");
+				const slotCanvas = root.querySelector(`#slot${i}`);
+				if (slotCanvas) Client.loadFile(`${DB.INTERFACE_PATH}select_character_ver3/img_slot_normal.bmp`, (dataURI) => {
+					slotCanvas.style.backgroundImage = `url(${dataURI})`;
 				});
-				const slotJobIcon = jquery_default(CharSelectV4.ui.find(".job_icon")[i]);
-				Client.loadFile(DB.INTERFACE_PATH + "renewalparty/icon_jobs_" + _slots[i].job + ".bmp", function(dataURI) {
-					slotJobIcon.css("backgroundImage", "url(" + dataURI + ")");
-				});
+				if (jobIcons[i]) {
+					const slotJobIcon = jobIcons[i];
+					Client.loadFile(`${DB.INTERFACE_PATH}renewalparty/icon_jobs_${_slots[i].job}.bmp`, (dataURI) => {
+						slotJobIcon.style.backgroundImage = `url(${dataURI})`;
+					});
+				}
 				if (_slots[i].DeleteDate) {
-					const slotNum = i;
-					const countdown = document.querySelector(".timedelete.slot" + slotNum);
+					const countdown = root.querySelector(`.timedelete.slot${i}`);
 					if (countdown) {
-						countdown.setAttribute("data-duration", _slots[i].DeleteDate);
+						countdown.dataset.duration = _slots[i].DeleteDate;
 						countdown.classList.remove("hidden");
 						countdown.style.display = "block";
 					}
@@ -336956,16 +337358,22 @@ var init_CharSelect = __esmMin((() => {
 //#region src/UI/Components/CharCreate/CharCreate/CharCreate.html?raw
 var CharCreate_default$2;
 var init_CharCreate$3 = __esmMin((() => {
-	CharCreate_default$2 = "<div id=\"charcreate\" data-background=\"login_interface/win_make.bmp\">\r\n	<div class=\"chargen\">\r\n		<button class=\"left\" data-background=\"scroll1left.bmp\"></button>\r\n		<button class=\"up\" data-background=\"scroll0up.bmp\"></button>\r\n		<button class=\"right\" data-background=\"scroll1right.bmp\"></button>\r\n		<canvas width=\"65\" height=\"110\"></canvas>\r\n	</div>\r\n	<input type=\"text\" value=\"\" />\r\n\r\n	<div class=\"graph\">\r\n		<button\r\n			class=\"str\"\r\n			data-background=\"login_interface/arw-str0.bmp\"\r\n			data-down=\"login_interface/arw-str1.bmp\"\r\n		></button>\r\n		<button\r\n			class=\"agi\"\r\n			data-background=\"login_interface/arw-agi0.bmp\"\r\n			data-down=\"login_interface/arw-agi1.bmp\"\r\n		></button>\r\n		<button\r\n			class=\"vit\"\r\n			data-background=\"login_interface/arw-vit0.bmp\"\r\n			data-down=\"login_interface/arw-vit1.bmp\"\r\n		></button>\r\n		<button\r\n			class=\"int\"\r\n			data-background=\"login_interface/arw-int0.bmp\"\r\n			data-down=\"login_interface/arw-int1.bmp\"\r\n		></button>\r\n		<button\r\n			class=\"dex\"\r\n			data-background=\"login_interface/arw-dex0.bmp\"\r\n			data-down=\"login_interface/arw-dex1.bmp\"\r\n		></button>\r\n		<button\r\n			class=\"luk\"\r\n			data-background=\"login_interface/arw-luk0.bmp\"\r\n			data-down=\"login_interface/arw-luk1.bmp\"\r\n		></button>\r\n		<canvas width=\"158\" height=\"158\"></canvas>\r\n	</div>\r\n\r\n	<div class=\"info\">\r\n		<div class=\"str\">5</div>\r\n		<div class=\"agi\">5</div>\r\n		<div class=\"vit\">5</div>\r\n		<div class=\"int\">5</div>\r\n		<div class=\"dex\">5</div>\r\n		<div class=\"luk\">5</div>\r\n	</div>\r\n\r\n	<div class=\"btns\">\r\n		<button\r\n			class=\"btn cancel\"\r\n			data-background=\"btn_cancel.bmp\"\r\n			data-hover=\"btn_cancel_a.bmp\"\r\n			data-down=\"btn_cancel_b.bmp\"\r\n		></button>\r\n		<button\r\n			class=\"btn make\"\r\n			data-background=\"btn_make.bmp\"\r\n			data-hover=\"btn_make_a.bmp\"\r\n			data-down=\"btn_make_b.bmp\"\r\n		></button>\r\n	</div>\r\n</div>\r\n";
+	CharCreate_default$2 = "<div id=\"charcreate\">\r\n	<ui-image src=\"login_interface/win_make.bmp\"></ui-image>\r\n	<div class=\"chargen\">\r\n		<ui-button class=\"left\" bg=\"scroll1left.bmp\"></ui-button>\r\n		<ui-button class=\"up\" bg=\"scroll0up.bmp\"></ui-button>\r\n		<ui-button class=\"right\" bg=\"scroll1right.bmp\"></ui-button>\r\n		<canvas width=\"65\" height=\"110\"></canvas>\r\n	</div>\r\n	<input type=\"text\" data-background=\"login_interface/name-edit.bmp\" value=\"\" />\r\n\r\n	<div class=\"graph\">\r\n		<ui-button class=\"str\" bg=\"login_interface/arw-str0.bmp\" down=\"login_interface/arw-str1.bmp\"></ui-button>\r\n		<ui-button class=\"agi\" bg=\"login_interface/arw-agi0.bmp\" down=\"login_interface/arw-agi1.bmp\"></ui-button>\r\n		<ui-button class=\"vit\" bg=\"login_interface/arw-vit0.bmp\" down=\"login_interface/arw-vit1.bmp\"></ui-button>\r\n		<ui-button class=\"int\" bg=\"login_interface/arw-int0.bmp\" down=\"login_interface/arw-int1.bmp\"></ui-button>\r\n		<ui-button class=\"dex\" bg=\"login_interface/arw-dex0.bmp\" down=\"login_interface/arw-dex1.bmp\"></ui-button>\r\n		<ui-button class=\"luk\" bg=\"login_interface/arw-luk0.bmp\" down=\"login_interface/arw-luk1.bmp\"></ui-button>\r\n		<canvas width=\"158\" height=\"158\"></canvas>\r\n	</div>\r\n\r\n	<div class=\"info\">\r\n		<div class=\"str\">5</div>\r\n		<div class=\"agi\">5</div>\r\n		<div class=\"vit\">5</div>\r\n		<div class=\"int\">5</div>\r\n		<div class=\"dex\">5</div>\r\n		<div class=\"luk\">5</div>\r\n	</div>\r\n\r\n	<div class=\"btns\">\r\n		<ui-button class=\"btn cancel\" bg=\"btn_cancel.bmp\" hover=\"btn_cancel_a.bmp\" down=\"btn_cancel_b.bmp\"></ui-button>\r\n		<ui-button class=\"btn make\" bg=\"btn_make.bmp\" hover=\"btn_make_a.bmp\" down=\"btn_make_b.bmp\"></ui-button>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/CharCreate/CharCreate/CharCreate.css?raw
 var CharCreate_default$1;
 var init_CharCreate$2 = __esmMin((() => {
-	CharCreate_default$1 = "#charcreate {\r\n	position: absolute;\r\n	width: 576px;\r\n	height: 342px;\r\n}\r\n\r\n/** Name **/\r\n#charcreate input {\r\n	position: absolute;\r\n	top: 244px;\r\n	left: 62px;\r\n	width: 97px;\r\n	height: 14px;\r\n	padding-top: 2px;\r\n	padding-left: 3px;\r\n	background-color: transparent;\r\n	border: 0;\r\n}\r\n\r\n/** Chargen **/\r\n#charcreate .chargen button {\r\n	position: absolute;\r\n	width: 13px;\r\n	height: 13px;\r\n	border: 0;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#charcreate .chargen .left {\r\n	top: 135px;\r\n	left: 47px;\r\n}\r\n#charcreate .chargen .up {\r\n	top: 105px;\r\n	left: 87px;\r\n}\r\n#charcreate .chargen .right {\r\n	top: 135px;\r\n	left: 127px;\r\n}\r\n#charcreate .chargen canvas {\r\n	position: absolute;\r\n	top: 120px;\r\n	left: 62px;\r\n}\r\n\r\n/** Graph buttons **/\r\n#charcreate .graph button {\r\n	position: absolute;\r\n	width: 36px;\r\n	height: 36px;\r\n	border: 0;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#charcreate .graph .str {\r\n	top: 50px;\r\n	left: 270px;\r\n}\r\n#charcreate .graph .int {\r\n	top: 243px;\r\n	left: 270px;\r\n}\r\n#charcreate .graph .vit {\r\n	top: 104px;\r\n	left: 348px;\r\n}\r\n#charcreate .graph .dex {\r\n	top: 190px;\r\n	left: 191px;\r\n}\r\n#charcreate .graph .agi {\r\n	top: 103px;\r\n	left: 191px;\r\n}\r\n#charcreate .graph .luk {\r\n	top: 190px;\r\n	left: 348px;\r\n}\r\n#charcreate .graph canvas {\r\n	position: absolute;\r\n	left: 209px;\r\n	top: 86px;\r\n}\r\n\r\n/** Stats infos **/\r\n#charcreate .info {\r\n	position: absolute;\r\n	top: 40px;\r\n	left: 480px;\r\n}\r\n#charcreate .info div {\r\n	position: absolute;\r\n	left: 0px;\r\n}\r\n#charcreate .info .str {\r\n	top: 0px;\r\n}\r\n#charcreate .info .agi {\r\n	top: 16px;\r\n}\r\n#charcreate .info .vit {\r\n	top: 32px;\r\n}\r\n#charcreate .info .int {\r\n	top: 48px;\r\n}\r\n#charcreate .info .dex {\r\n	top: 64px;\r\n}\r\n#charcreate .info .luk {\r\n	top: 80px;\r\n}\r\n\r\n/** Buttons **/\r\n#charcreate .btns {\r\n	position: absolute;\r\n	bottom: 4px;\r\n	width: 100%;\r\n	height: 20px;\r\n}\r\n#charcreate .btn {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#charcreate .make {\r\n	right: 50px;\r\n}\r\n#charcreate .cancel {\r\n	right: 4px;\r\n}\r\n";
+	CharCreate_default$1 = ":host {\r\n	width: 576px;\r\n	height: 342px;\r\n}\r\n\r\n#charcreate {\r\n	position: absolute;\r\n	width: 576px;\r\n	height: 342px;\r\n}\r\n\r\n/** Name **/\r\n#charcreate input {\r\n	position: absolute;\r\n	top: 244px;\r\n	left: 62px;\r\n	width: 97px;\r\n	height: 14px;\r\n	padding-top: 2px;\r\n	padding-left: 3px;\r\n	background-color: transparent;\r\n	border: 0;\r\n}\r\n\r\n/** Chargen **/\r\n#charcreate .chargen ui-button {\r\n	position: absolute;\r\n	width: 13px;\r\n	height: 13px;\r\n}\r\n#charcreate .chargen .left {\r\n	top: 135px;\r\n	left: 47px;\r\n}\r\n#charcreate .chargen .up {\r\n	top: 105px;\r\n	left: 87px;\r\n}\r\n#charcreate .chargen .right {\r\n	top: 135px;\r\n	left: 127px;\r\n}\r\n#charcreate .chargen canvas {\r\n	position: absolute;\r\n	top: 120px;\r\n	left: 62px;\r\n}\r\n\r\n/** Graph buttons **/\r\n#charcreate .graph ui-button {\r\n	position: absolute;\r\n	width: 36px;\r\n	height: 36px;\r\n}\r\n#charcreate .graph .str {\r\n	top: 50px;\r\n	left: 270px;\r\n}\r\n#charcreate .graph .int {\r\n	top: 243px;\r\n	left: 270px;\r\n}\r\n#charcreate .graph .vit {\r\n	top: 104px;\r\n	left: 348px;\r\n}\r\n#charcreate .graph .dex {\r\n	top: 190px;\r\n	left: 191px;\r\n}\r\n#charcreate .graph .agi {\r\n	top: 103px;\r\n	left: 191px;\r\n}\r\n#charcreate .graph .luk {\r\n	top: 190px;\r\n	left: 348px;\r\n}\r\n#charcreate .graph canvas {\r\n	position: absolute;\r\n	left: 209px;\r\n	top: 86px;\r\n}\r\n\r\n/** Stats infos **/\r\n#charcreate .info {\r\n	position: absolute;\r\n	top: 40px;\r\n	left: 480px;\r\n}\r\n#charcreate .info div {\r\n	position: absolute;\r\n	left: 0px;\r\n}\r\n#charcreate .info .str {\r\n	top: 0px;\r\n}\r\n#charcreate .info .agi {\r\n	top: 16px;\r\n}\r\n#charcreate .info .vit {\r\n	top: 32px;\r\n}\r\n#charcreate .info .int {\r\n	top: 48px;\r\n}\r\n#charcreate .info .dex {\r\n	top: 64px;\r\n}\r\n#charcreate .info .luk {\r\n	top: 80px;\r\n}\r\n\r\n/** Buttons **/\r\n#charcreate .btns {\r\n	position: absolute;\r\n	bottom: 4px;\r\n	width: 100%;\r\n	height: 20px;\r\n}\r\n#charcreate .btn {\r\n	position: absolute;\r\n	width: 42px;\r\n	height: 20px;\r\n}\r\n#charcreate .make {\r\n	right: 50px;\r\n}\r\n#charcreate .cancel {\r\n	right: 4px;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/CharCreate/CharCreate/CharCreate.js
+/**
+* Helper to get shadow root
+*/
+function _getRoot$3() {
+	return CharCreate._shadow || CharCreate._host;
+}
 /**
 * Generic function to get a direct proxy to updateCharacter
 *
@@ -336973,7 +337381,7 @@ var init_CharCreate$2 = __esmMin((() => {
 * @param {number} value
 */
 function updateCharacterGeneric$2(type, value) {
-	return function(event) {
+	return (event) => {
 		updateCharacter$3(type, value);
 		event.stopImmediatePropagation();
 		return false;
@@ -336983,8 +337391,8 @@ function updateCharacterGeneric$2(type, value) {
 * Send back informations to send the packet
 */
 function create$3() {
-	const ui = CharCreate.ui;
-	CharCreate.onCharCreationRequest(ui.find("input").val(), parseInt(ui.find(".info .str").text(), 10), parseInt(ui.find(".info .agi").text(), 10), parseInt(ui.find(".info .vit").text(), 10), parseInt(ui.find(".info .int").text(), 10), parseInt(ui.find(".info .dex").text(), 10), parseInt(ui.find(".info .luk").text(), 10), _chargen$2.entity.head, _chargen$2.entity.headpalette);
+	const root = _getRoot$3();
+	CharCreate.onCharCreationRequest(root.querySelector("input").value, parseInt(root.querySelector(".info .str").textContent, 10), parseInt(root.querySelector(".info .agi").textContent, 10), parseInt(root.querySelector(".info .vit").textContent, 10), parseInt(root.querySelector(".info .int").textContent, 10), parseInt(root.querySelector(".info .dex").textContent, 10), parseInt(root.querySelector(".info .luk").textContent, 10), _chargen$2.entity.head, _chargen$2.entity.headpalette);
 }
 /**
 * Exit the window
@@ -337018,7 +337426,8 @@ function updateCharacter$3(type, increment) {
 * Update the stats and polygon
 */
 function updateStats() {
-	if (CharCreate.ui.find(".info ." + this.className).text() === "9") return;
+	const root = _getRoot$3();
+	if (root.querySelector(`.info .${this.className}`).textContent === "9") return;
 	const group = {
 		str: "int",
 		int: "str",
@@ -337027,14 +337436,15 @@ function updateStats() {
 		luk: "agi",
 		agi: "luk"
 	};
-	CharCreate.ui.find(".info ." + this.className)[0].textContent++;
-	CharCreate.ui.find(".info ." + group[this.className])[0].textContent--;
+	root.querySelector(`.info .${this.className}`).textContent++;
+	root.querySelector(`.info .${group[this.className]}`).textContent--;
 	updateGraphic();
 }
 /**
 * Update the polygon
 */
 function updateGraphic() {
+	const root = _getRoot$3();
 	const ctx = _graph;
 	const width = ctx.canvas.width;
 	const height = ctx.canvas.height;
@@ -337054,10 +337464,10 @@ function updateGraphic() {
 	ctx.fillStyle = "#7b94ce";
 	ctx.translate(x, y);
 	ctx.beginPath();
-	ctx.moveTo(0, Math.floor(y / 10 * (parseInt(CharCreate.ui.find(".info ." + list[5]).text()) + 1)));
+	ctx.moveTo(0, Math.floor(y / 10 * (parseInt(root.querySelector(`.info .${list[5]}`).textContent) + 1)));
 	for (i = 0; i < 6; i++) {
 		ctx.rotate(60 * Math.PI / 180);
-		ctx.lineTo(0, Math.floor(y / 10 * (parseInt(CharCreate.ui.find(".info ." + list[i]).text()) + 1)));
+		ctx.lineTo(0, Math.floor(y / 10 * (parseInt(root.querySelector(`.info .${list[i]}`).textContent) + 1)));
 	}
 	ctx.closePath();
 	ctx.fill();
@@ -337084,10 +337494,12 @@ var init_CharCreate$1 = __esmMin((() => {
 	init_SpriteRenderer();
 	init_Camera();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
+	init_Elements();
 	init_CharCreate$3();
 	init_CharCreate$2();
-	CharCreate = new UIComponent("CharCreate", CharCreate_default$2, CharCreate_default$1);
+	CharCreate = new GUIComponent("CharCreate", CharCreate_default$1);
+	CharCreate.render = () => CharCreate_default$2;
 	_accountSex$3 = 0;
 	_chargen$2 = {
 		entity: new Entity(),
@@ -337099,23 +337511,25 @@ var init_CharCreate$1 = __esmMin((() => {
 	* Initialize UI
 	*/
 	CharCreate.init = function init() {
-		_graph = this.ui.find(".graph canvas")[0].getContext("2d");
-		_chargen$2.ctx = this.ui.find(".chargen canvas")[0].getContext("2d");
-		this.ui.css({
-			top: (Renderer.height - 342) / 2,
-			left: (Renderer.width - 576) / 2
-		});
+		const root = _getRoot$3();
+		_graph = root.querySelector(".graph canvas").getContext("2d");
+		_chargen$2.ctx = root.querySelector(".chargen canvas").getContext("2d");
 		this.draggable();
-		this.ui.find(".chargen .left").mousedown(updateCharacterGeneric$2("head", -1));
-		this.ui.find(".chargen .right").mousedown(updateCharacterGeneric$2("head", 1));
-		this.ui.find(".chargen .up").mousedown(updateCharacterGeneric$2("headpalette", 1));
-		this.ui.find(".graph button").mousedown(updateStats);
-		this.ui.find("input").mousedown(function(event) {
-			this.focus();
+		root.querySelector(".chargen .left").addEventListener("mousedown", updateCharacterGeneric$2("head", -1));
+		root.querySelector(".chargen .right").addEventListener("mousedown", updateCharacterGeneric$2("head", 1));
+		root.querySelector(".chargen .up").addEventListener("mousedown", updateCharacterGeneric$2("headpalette", 1));
+		root.querySelectorAll(".graph button").forEach((btn) => {
+			btn.addEventListener("mousedown", function(event) {
+				updateStats.call(this, event);
+			});
+		});
+		const input = root.querySelector("input");
+		input.addEventListener("mousedown", (event) => {
+			input.focus();
 			event.stopImmediatePropagation();
 		});
-		this.ui.find(".cancel").click(cancel$3);
-		this.ui.find(".make").click(create$3);
+		root.querySelector(".cancel").addEventListener("click", cancel$3);
+		root.querySelector(".make").addEventListener("click", create$3);
 	};
 	/**
 	* Setter for AccountSex
@@ -337129,6 +337543,8 @@ var init_CharCreate$1 = __esmMin((() => {
 	* Once add to HTML, start rendering
 	*/
 	CharCreate.onAppend = function onAppend() {
+		this._host.style.top = `${(Renderer.height - 342) / 2}px`;
+		this._host.style.left = `${(Renderer.width - 576) / 2}px`;
 		_chargen$2.render = true;
 		_chargen$2.entity.set({
 			sex: _accountSex$3,
@@ -337136,7 +337552,9 @@ var init_CharCreate$1 = __esmMin((() => {
 			head: 2,
 			action: 0
 		});
-		this.ui.find("input").val("").focus();
+		const input = _getRoot$3().querySelector("input");
+		input.value = "";
+		input.focus();
 		Renderer.render(render$3);
 		updateGraphic();
 	};
@@ -337154,7 +337572,7 @@ var init_CharCreate$1 = __esmMin((() => {
 	* @return {boolean}
 	*/
 	CharCreate.onKeyDown = function onKeyDown(event) {
-		if ((event.which === KEYS.ESCAPE || event.key === "Escape") && this.ui.is(":visible")) {
+		if ((event.which === KEYS.ESCAPE || event.key === "Escape") && this._host.style.display !== "none") {
 			event.stopImmediatePropagation();
 			cancel$3();
 			return false;
@@ -337175,16 +337593,22 @@ var init_CharCreate$1 = __esmMin((() => {
 //#region src/UI/Components/CharCreate/CharCreatev2/CharCreatev2.html?raw
 var CharCreatev2_default$2;
 var init_CharCreatev2$2 = __esmMin((() => {
-	CharCreatev2_default$2 = "<div id=\"charcreate_v2\">\r\n	<div class=\"header\">\r\n		<div class=\"corner left\" data-background=\"basic_interface/titlebar_left.bmp\" />\r\n		<div class=\"center\" data-background=\"basic_interface/titlebar_mid.bmp\" />\r\n		<div class=\"corner right\" data-background=\"basic_interface/titlebar_right.bmp\" />\r\n\r\n		<div class=\"title\" data-text=\"2368\" />\r\n	</div>\r\n\r\n	<div class=\"content\" data-background=\"login_interface/win_make2.bmp\">\r\n		<canvas width=\"65\" height=\"110\"></canvas>\r\n\r\n		<input type=\"text\" data-background=\"login_interface/name-edit.bmp\" value=\"\" />\r\n\r\n		<button class=\"styleleft\" data-background=\"scroll1left.bmp\"></button>\r\n		<button class=\"styleright\" data-background=\"scroll1right.bmp\"></button>\r\n\r\n		<button class=\"colorleft\" data-background=\"scroll1left.bmp\"></button>\r\n		<button class=\"colorright\" data-background=\"scroll1right.bmp\"></button>\r\n	</div>\r\n\r\n	<div class=\"footer\">\r\n		<div class=\"corner left\" data-background=\"basic_interface/btnbar_left2.bmp\" />\r\n		<div class=\"center\" data-background=\"basic_interface/btnbar_mid2.bmp\"></div>\r\n		<div class=\"corner right\" data-background=\"basic_interface/btnbar_right2.bmp\" />\r\n\r\n		<div class=\"btns\">\r\n			<button\r\n				class=\"btn cancel\"\r\n				data-background=\"btn_cancel.bmp\"\r\n				data-hover=\"btn_cancel_a.bmp\"\r\n				data-down=\"btn_cancel_b.bmp\"\r\n			></button>\r\n			<button\r\n				class=\"btn make\"\r\n				data-background=\"btn_make.bmp\"\r\n				data-hover=\"btn_make_a.bmp\"\r\n				data-down=\"btn_make_b.bmp\"\r\n			></button>\r\n		</div>\r\n	</div>\r\n</div>\r\n";
+	CharCreatev2_default$2 = "<div id=\"charcreate_v2\">\r\n	<div class=\"header\">\r\n		<div class=\"corner left\"><ui-image src=\"basic_interface/titlebar_left.bmp\"></ui-image></div>\r\n		<div class=\"center\"><ui-image src=\"basic_interface/titlebar_mid.bmp\"></ui-image></div>\r\n		<div class=\"corner right\"><ui-image src=\"basic_interface/titlebar_right.bmp\"></ui-image></div>\r\n\r\n		<div class=\"title\"><ui-text msg=\"2368\"></ui-text></div>\r\n	</div>\r\n\r\n	<div class=\"content\">\r\n		<ui-image src=\"login_interface/win_make2.bmp\"></ui-image>\r\n		<canvas width=\"65\" height=\"110\"></canvas>\r\n\r\n		<input type=\"text\" data-background=\"login_interface/name-edit.bmp\" value=\"\" />\r\n\r\n		<ui-button class=\"styleleft\" bg=\"scroll1left.bmp\"></ui-button>\r\n		<ui-button class=\"styleright\" bg=\"scroll1right.bmp\"></ui-button>\r\n\r\n		<ui-button class=\"colorleft\" bg=\"scroll1left.bmp\"></ui-button>\r\n		<ui-button class=\"colorright\" bg=\"scroll1right.bmp\"></ui-button>\r\n	</div>\r\n\r\n	<div class=\"footer\">\r\n		<div class=\"corner left\"><ui-image src=\"basic_interface/btnbar_left2.bmp\"></ui-image></div>\r\n		<div class=\"center\"><ui-image src=\"basic_interface/btnbar_mid2.bmp\"></ui-image></div>\r\n		<div class=\"corner right\"><ui-image src=\"basic_interface/btnbar_right2.bmp\"></ui-image></div>\r\n\r\n		<div class=\"btns\">\r\n			<ui-button\r\n				class=\"btn cancel\"\r\n				bg=\"btn_cancel.bmp\"\r\n				hover=\"btn_cancel_a.bmp\"\r\n				down=\"btn_cancel_b.bmp\"\r\n			></ui-button>\r\n			<ui-button class=\"btn make\" bg=\"btn_make.bmp\" hover=\"btn_make_a.bmp\" down=\"btn_make_b.bmp\"></ui-button>\r\n		</div>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/CharCreate/CharCreatev2/CharCreatev2.css?raw
 var CharCreatev2_default$1;
 var init_CharCreatev2$1 = __esmMin((() => {
-	CharCreatev2_default$1 = "#charcreate_v2 {\r\n	position: absolute;\r\n	width: 150px;\r\n	height: 286px;\r\n}\r\n\r\n#charcreate_v2 .header {\r\n	width: 150px;\r\n	height: 17px;\r\n}\r\n#charcreate_v2 .header .corner {\r\n	position: absolute;\r\n	width: 12px;\r\n	height: 17px;\r\n}\r\n#charcreate_v2 .header .corner.left {\r\n	top: 0px;\r\n	left: 0px;\r\n}\r\n#charcreate_v2 .header .corner.right {\r\n	top: 0px;\r\n	right: 0px;\r\n}\r\n#charcreate_v2 .header .center {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 12px;\r\n	width: 128px;\r\n	height: 17px;\r\n}\r\n#charcreate_v2 .header .title {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 12px;\r\n	font-size: 13px;\r\n}\r\n\r\n#charcreate_v2 .content {\r\n	width: 150px;\r\n	height: 240px;\r\n}\r\n\r\n#charcreate_v2 .footer {\r\n	width: 150px;\r\n	height: 29px;\r\n}\r\n#charcreate_v2 .footer .corner {\r\n	position: absolute;\r\n	width: 21px;\r\n	height: 29px;\r\n}\r\n#charcreate_v2 .footer .corner.left {\r\n	bottom: 0px;\r\n	left: 0px;\r\n}\r\n#charcreate_v2 .footer .corner.right {\r\n	bottom: 0px;\r\n	right: 0px;\r\n}\r\n#charcreate_v2 .footer .center {\r\n	position: absolute;\r\n	bottom: 0px;\r\n	left: 21px;\r\n	width: 118px;\r\n	height: 29px;\r\n}\r\n\r\n/** Name **/\r\n#charcreate_v2 .content input {\r\n	position: absolute;\r\n	top: 142px;\r\n	left: 40px;\r\n	width: 96px;\r\n	height: 18px;\r\n	padding-top: 2px;\r\n	padding-left: 3px;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n	border: 0;\r\n}\r\n\r\n/** Chargen **/\r\n#charcreate_v2 .content button {\r\n	position: absolute;\r\n	width: 13px;\r\n	height: 13px;\r\n	border: 0;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#charcreate_v2 .content .styleleft {\r\n	top: 190px;\r\n	left: 15px;\r\n}\r\n#charcreate_v2 .content .styleright {\r\n	top: 190px;\r\n	left: 125px;\r\n}\r\n#charcreate_v2 .content .colorleft {\r\n	top: 230px;\r\n	left: 15px;\r\n}\r\n#charcreate_v2 .content .colorright {\r\n	top: 230px;\r\n	left: 125px;\r\n}\r\n\r\n#charcreate_v2 .content canvas {\r\n	position: absolute;\r\n	top: 25px;\r\n	left: 40px;\r\n}\r\n\r\n/** Buttons **/\r\n#charcreate_v2 .footer .btns {\r\n	position: absolute;\r\n	bottom: 4px;\r\n	width: 100%;\r\n	height: 20px;\r\n}\r\n#charcreate_v2 .footer .btn {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#charcreate_v2 .footer .make {\r\n	right: 50px;\r\n}\r\n#charcreate_v2 .footer .cancel {\r\n	right: 4px;\r\n}\r\n";
+	CharCreatev2_default$1 = ":host {\r\n	width: 150px;\r\n	height: 286px;\r\n}\r\n\r\n#charcreate_v2 {\r\n	position: absolute;\r\n	width: 150px;\r\n	height: 286px;\r\n}\r\n\r\n#charcreate_v2 .header {\r\n	width: 150px;\r\n	height: 17px;\r\n}\r\n#charcreate_v2 .header .corner {\r\n	position: absolute;\r\n	width: 12px;\r\n	height: 17px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#charcreate_v2 .header .corner.left {\r\n	top: 0px;\r\n	left: 0px;\r\n}\r\n#charcreate_v2 .header .corner.right {\r\n	top: 0px;\r\n	right: 0px;\r\n}\r\n#charcreate_v2 .header .center {\r\n	position: absolute;\r\n	top: 0px;\r\n	left: 12px;\r\n	width: 128px;\r\n	height: 17px;\r\n}\r\n#charcreate_v2 .header .title {\r\n	position: absolute;\r\n	top: 2px;\r\n	left: 12px;\r\n	font-size: 13px;\r\n}\r\n\r\n#charcreate_v2 .content {\r\n	width: 150px;\r\n	height: 240px;\r\n}\r\n\r\n#charcreate_v2 .footer {\r\n	width: 150px;\r\n	height: 29px;\r\n}\r\n#charcreate_v2 .footer .corner {\r\n	position: absolute;\r\n	width: 21px;\r\n	height: 29px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#charcreate_v2 .footer .corner.left {\r\n	bottom: 0px;\r\n	left: 0px;\r\n}\r\n#charcreate_v2 .footer .corner.right {\r\n	bottom: 0px;\r\n	right: 0px;\r\n}\r\n#charcreate_v2 .footer .center {\r\n	position: absolute;\r\n	bottom: 0px;\r\n	left: 21px;\r\n	width: 118px;\r\n	height: 29px;\r\n}\r\n\r\n/** Name **/\r\n#charcreate_v2 .content input {\r\n	position: absolute;\r\n	top: 142px;\r\n	left: 40px;\r\n	width: 96px;\r\n	height: 18px;\r\n	padding-top: 2px;\r\n	padding-left: 3px;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n	border: 0;\r\n}\r\n\r\n/** Chargen **/\r\n#charcreate_v2 .content ui-button {\r\n	position: absolute;\r\n	width: 13px;\r\n	height: 13px;\r\n}\r\n\r\n#charcreate_v2 .content .styleleft {\r\n	top: 190px;\r\n	left: 15px;\r\n}\r\n#charcreate_v2 .content .styleright {\r\n	top: 190px;\r\n	left: 125px;\r\n}\r\n#charcreate_v2 .content .colorleft {\r\n	top: 230px;\r\n	left: 15px;\r\n}\r\n#charcreate_v2 .content .colorright {\r\n	top: 230px;\r\n	left: 125px;\r\n}\r\n\r\n#charcreate_v2 .content canvas {\r\n	position: absolute;\r\n	top: 25px;\r\n	left: 40px;\r\n}\r\n\r\n/** Buttons **/\r\n#charcreate_v2 .footer .btns {\r\n	position: absolute;\r\n	bottom: 4px;\r\n	width: 100%;\r\n	height: 20px;\r\n}\r\n#charcreate_v2 .footer .btn {\r\n	position: absolute;\r\n	width: 42px;\r\n	height: 20px;\r\n}\r\n#charcreate_v2 .footer .make {\r\n	right: 50px;\r\n}\r\n#charcreate_v2 .footer .cancel {\r\n	right: 4px;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/CharCreate/CharCreatev2/CharCreatev2.js
+/**
+* Helper to get shadow root
+*/
+function _getRoot$2() {
+	return CharCreatev2._shadow || CharCreatev2._host;
+}
 /**
 * Generic function to get a direct proxy to updateCharacter
 *
@@ -337192,7 +337616,7 @@ var init_CharCreatev2$1 = __esmMin((() => {
 * @param {number} value
 */
 function updateCharacterGeneric$1(type, value) {
-	return function(event) {
+	return (event) => {
 		updateCharacter$2(type, value);
 		event.stopImmediatePropagation();
 		return false;
@@ -337202,8 +337626,8 @@ function updateCharacterGeneric$1(type, value) {
 * Send back informations to send the packet
 */
 function create$2() {
-	const ui = CharCreatev2.ui;
-	CharCreatev2.onCharCreationRequest(ui.find("input").val(), 1, 1, 1, 1, 1, 1, _chargen$1.entity.head, _chargen$1.entity.headpalette);
+	const root = _getRoot$2();
+	CharCreatev2.onCharCreationRequest(root.querySelector("input").value, 1, 1, 1, 1, 1, 1, _chargen$1.entity.head, _chargen$1.entity.headpalette);
 }
 /**
 * Exit the window
@@ -337254,10 +337678,12 @@ var init_CharCreatev2 = __esmMin((() => {
 	init_SpriteRenderer();
 	init_Camera();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
+	init_Elements();
 	init_CharCreatev2$2();
 	init_CharCreatev2$1();
-	CharCreatev2 = new UIComponent("CharCreatev2", CharCreatev2_default$2, CharCreatev2_default$1);
+	CharCreatev2 = new GUIComponent("CharCreatev2", CharCreatev2_default$1);
+	CharCreatev2.render = () => CharCreatev2_default$2;
 	_accountSex$2 = 0;
 	_chargen$1 = {
 		entity: new Entity(),
@@ -337269,22 +337695,20 @@ var init_CharCreatev2 = __esmMin((() => {
 	* Initialize UI
 	*/
 	CharCreatev2.init = function init() {
-		_chargen$1.ctx = this.ui.find(".content canvas")[0].getContext("2d");
-		this.ui.css({
-			top: (Renderer.height - 286) / 2,
-			left: (Renderer.width - 150) / 2
-		});
+		const root = _getRoot$2();
+		_chargen$1.ctx = root.querySelector(".content canvas").getContext("2d");
 		this.draggable();
-		this.ui.find(".content .styleleft").mousedown(updateCharacterGeneric$1("head", -1));
-		this.ui.find(".content .styleright").mousedown(updateCharacterGeneric$1("head", 1));
-		this.ui.find(".content .colorleft").mousedown(updateCharacterGeneric$1("headpalette", -1));
-		this.ui.find(".content .colorright").mousedown(updateCharacterGeneric$1("headpalette", 1));
-		this.ui.find("input").mousedown(function(event) {
-			this.focus();
+		root.querySelector(".content .styleleft").addEventListener("mousedown", updateCharacterGeneric$1("head", -1));
+		root.querySelector(".content .styleright").addEventListener("mousedown", updateCharacterGeneric$1("head", 1));
+		root.querySelector(".content .colorleft").addEventListener("mousedown", updateCharacterGeneric$1("headpalette", -1));
+		root.querySelector(".content .colorright").addEventListener("mousedown", updateCharacterGeneric$1("headpalette", 1));
+		const input = root.querySelector("input");
+		input.addEventListener("mousedown", (event) => {
+			input.focus();
 			event.stopImmediatePropagation();
 		});
-		this.ui.find(".cancel").click(cancel$2);
-		this.ui.find(".make").click(create$2);
+		root.querySelector(".cancel").addEventListener("click", cancel$2);
+		root.querySelector(".make").addEventListener("click", create$2);
 	};
 	/**
 	* Setter for AccountSex
@@ -337298,6 +337722,8 @@ var init_CharCreatev2 = __esmMin((() => {
 	* Once add to HTML, start rendering
 	*/
 	CharCreatev2.onAppend = function onAppend() {
+		this._host.style.top = `${(Renderer.height - 286) / 2}px`;
+		this._host.style.left = `${(Renderer.width - 150) / 2}px`;
 		_chargen$1.render = true;
 		_chargen$1.entity.set({
 			sex: _accountSex$2,
@@ -337305,7 +337731,9 @@ var init_CharCreatev2 = __esmMin((() => {
 			head: 2,
 			action: 0
 		});
-		this.ui.find("input").val("").focus();
+		const input = _getRoot$2().querySelector("input");
+		input.value = "";
+		input.focus();
 		Renderer.render(render$2);
 	};
 	/**
@@ -337322,7 +337750,7 @@ var init_CharCreatev2 = __esmMin((() => {
 	* @return {boolean}
 	*/
 	CharCreatev2.onKeyDown = function onKeyDown(event) {
-		if ((event.which === KEYS.ESCAPE || event.key === "Escape") && this.ui.is(":visible")) {
+		if ((event.which === KEYS.ESCAPE || event.key === "Escape") && this._host.style.display !== "none") {
 			event.stopImmediatePropagation();
 			cancel$2();
 			return false;
@@ -337343,24 +337771,27 @@ var init_CharCreatev2 = __esmMin((() => {
 //#region src/UI/Components/CharCreate/CharCreatev3/CharCreatev3.html?raw
 var CharCreatev3_default$2;
 var init_CharCreatev3$2 = __esmMin((() => {
-	CharCreatev3_default$2 = "<div id=\"charcreate_v3\" data-background=\"make_character/bg_create_character.bmp\">\r\n	<button\r\n		class=\"button close\"\r\n		data-background=\"basic_interface/sys_close_off.bmp\"\r\n		data-hover=\"basic_interface/sys_close_on.bmp\"\r\n	></button>\r\n\r\n	<div class=\"race_select\">\r\n		<div class=\"race human\">\r\n			<input type=\"radio\" name=\"race\" id=\"human\" checked class=\"radio\" />\r\n			<label\r\n				for=\"human\"\r\n				class=\"label\"\r\n				data-background=\"make_character/img_human_off.bmp\"\r\n				data-hover=\"make_character/img_human_on.bmp\"\r\n				data-down=\"make_character/img_human_on.bmp\"\r\n			>\r\n				<div class=\"title\"></div>\r\n				<div class=\"desc\"></div>\r\n				<div class=\"jobs\"></div>\r\n				<div class=\"chargen\">\r\n					<canvas id=\"canvas_human\" width=\"65\" height=\"110\" style=\"pointer-events: none\"></canvas>\r\n				</div>\r\n			</label>\r\n		</div>\r\n\r\n		<div class=\"race doram\">\r\n			<input type=\"radio\" name=\"race\" id=\"doram\" class=\"radio\" />\r\n			<label\r\n				for=\"doram\"\r\n				class=\"label\"\r\n				data-background=\"make_character/img_doram_off.bmp\"\r\n				data-hover=\"make_character/img_doram_on.bmp\"\r\n				data-down=\"make_character/img_doram_on.bmp\"\r\n			>\r\n				<div class=\"title\"></div>\r\n				<div class=\"desc\"></div>\r\n				<div class=\"jobs\"></div>\r\n				<div class=\"chargen\">\r\n					<canvas id=\"canvas_doram\" width=\"65\" height=\"110\" style=\"pointer-events: none\"></canvas>\r\n				</div>\r\n			</label>\r\n		</div>\r\n	</div>\r\n	<div id=\"style\">\r\n		<div class=\"model\">\r\n			<canvas id=\"canvas_model\" width=\"65\" height=\"110\" style=\"pointer-events: none\"></canvas>\r\n		</div>\r\n\r\n		<button\r\n			class=\"rot_left\"\r\n			data-background=\"make_character/chr_arrow_rotate_l_out.bmp\"\r\n			data-hover=\"make_character/chr_arrow_rotate_l_over.bmp\"\r\n			data-down=\"make_character/chr_arrow_rotate_l_press.bmp\"\r\n		></button>\r\n		<button\r\n			class=\"rot_right\"\r\n			data-background=\"make_character/chr_arrow_rotate_r_out.bmp\"\r\n			data-hover=\"make_character/chr_arrow_rotate_r_over.bmp\"\r\n			data-down=\"make_character/chr_arrow_rotate_r_press.bmp\"\r\n		></button>\r\n\r\n		<input type=\"text\" id=\"char_name\" maxlength=\"24\" />\r\n\r\n		<div class=\"category gender\">\r\n			<div\r\n				id=\"male_container\"\r\n				class=\"button container left\"\r\n				data-background=\"make_character/btn_gender_m_press.bmp\"\r\n			>\r\n				<input type=\"radio\" name=\"gender\" id=\"male\" checked class=\"gender_button radio\" />\r\n				<label\r\n					for=\"male\"\r\n					class=\"button male\"\r\n					data-hover=\"make_character/btn_gender_m_over.bmp\"\r\n					data-down=\"make_character/btn_gender_m_press.bmp\"\r\n				>\r\n				</label>\r\n			</div>\r\n			<div\r\n				id=\"female_container\"\r\n				class=\"button container right\"\r\n				data-background=\"make_character/btn_gender_f_out.bmp\"\r\n			>\r\n				<input type=\"radio\" name=\"gender\" id=\"female\" class=\"gender_button radio\" />\r\n				<label\r\n					for=\"female\"\r\n					class=\"button female\"\r\n					data-hover=\"make_character/btn_gender_f_over.bmp\"\r\n					data-down=\"make_character/btn_gender_f_press.bmp\"\r\n				>\r\n				</label>\r\n			</div>\r\n		</div>\r\n\r\n		<div class=\"category hairstyle\">\r\n			<button\r\n				class=\"button left\"\r\n				data-background=\"make_character/arrow_box_l_out.bmp\"\r\n				data-hover=\"make_character/arrow_box_l_over.bmp\"\r\n				data-down=\"make_character/arrow_box_l_press.bmp\"\r\n			></button>\r\n			<button\r\n				class=\"button right\"\r\n				data-background=\"make_character/arrow_box_r_out.bmp\"\r\n				data-hover=\"make_character/arrow_box_r_over.bmp\"\r\n				data-down=\"make_character/arrow_box_r_press.bmp\"\r\n			></button>\r\n		</div>\r\n\r\n		<div class=\"category haircolor\">\r\n			<button\r\n				class=\"button left\"\r\n				data-background=\"make_character/arrow_box_l_out.bmp\"\r\n				data-hover=\"make_character/arrow_box_l_over.bmp\"\r\n				data-down=\"make_character/arrow_box_l_press.bmp\"\r\n			></button>\r\n			<button\r\n				class=\"button right\"\r\n				data-background=\"make_character/arrow_box_r_out.bmp\"\r\n				data-hover=\"make_character/arrow_box_r_over.bmp\"\r\n				data-down=\"make_character/arrow_box_r_press.bmp\"\r\n			></button>\r\n		</div>\r\n	</div>\r\n\r\n	<button\r\n		class=\"button make\"\r\n		data-background=\"make_character/btn_create_out.bmp\"\r\n		data-hover=\"make_character/btn_create_over.bmp\"\r\n		data-down=\"make_character/btn_create_press.bmp\"\r\n	></button>\r\n</div>\r\n";
+	CharCreatev3_default$2 = "<div id=\"charcreate_v3\">\r\n	<ui-image src=\"make_character/bg_create_character.bmp\"></ui-image>\r\n	<ui-button\r\n		class=\"button close\"\r\n		bg=\"basic_interface/sys_close_off.bmp\"\r\n		hover=\"basic_interface/sys_close_on.bmp\"\r\n	></ui-button>\r\n\r\n	<div class=\"race_select\">\r\n		<div class=\"race human\">\r\n			<input type=\"radio\" name=\"race\" id=\"human\" checked class=\"radio\" />\r\n			<label\r\n				for=\"human\"\r\n				class=\"label\"\r\n				data-background=\"make_character/img_human_off.bmp\"\r\n				data-hover=\"make_character/img_human_on.bmp\"\r\n				data-down=\"make_character/img_human_on.bmp\"\r\n			>\r\n				<div class=\"title\"></div>\r\n				<div class=\"desc\"></div>\r\n				<div class=\"jobs\"></div>\r\n				<div class=\"chargen\">\r\n					<canvas id=\"canvas_human\" width=\"65\" height=\"110\" style=\"pointer-events: none\"></canvas>\r\n				</div>\r\n			</label>\r\n		</div>\r\n\r\n		<div class=\"race doram\">\r\n			<input type=\"radio\" name=\"race\" id=\"doram\" class=\"radio\" />\r\n			<label\r\n				for=\"doram\"\r\n				class=\"label\"\r\n				data-background=\"make_character/img_doram_off.bmp\"\r\n				data-hover=\"make_character/img_doram_on.bmp\"\r\n				data-down=\"make_character/img_doram_on.bmp\"\r\n			>\r\n				<div class=\"title\"></div>\r\n				<div class=\"desc\"></div>\r\n				<div class=\"jobs\"></div>\r\n				<div class=\"chargen\">\r\n					<canvas id=\"canvas_doram\" width=\"65\" height=\"110\" style=\"pointer-events: none\"></canvas>\r\n				</div>\r\n			</label>\r\n		</div>\r\n	</div>\r\n	<div id=\"style\">\r\n		<div class=\"model\">\r\n			<canvas id=\"canvas_model\" width=\"65\" height=\"110\" style=\"pointer-events: none\"></canvas>\r\n		</div>\r\n\r\n		<ui-button\r\n			class=\"rot_left\"\r\n			bg=\"make_character/chr_arrow_rotate_l_out.bmp\"\r\n			hover=\"make_character/chr_arrow_rotate_l_over.bmp\"\r\n			down=\"make_character/chr_arrow_rotate_l_press.bmp\"\r\n		></ui-button>\r\n		<ui-button\r\n			class=\"rot_right\"\r\n			bg=\"make_character/chr_arrow_rotate_r_out.bmp\"\r\n			hover=\"make_character/chr_arrow_rotate_r_over.bmp\"\r\n			down=\"make_character/chr_arrow_rotate_r_press.bmp\"\r\n		></ui-button>\r\n\r\n		<input type=\"text\" id=\"char_name\" maxlength=\"24\" />\r\n\r\n		<div class=\"category gender\">\r\n			<div\r\n				id=\"male_container\"\r\n				class=\"button container left\"\r\n				data-background=\"make_character/btn_gender_m_press.bmp\"\r\n			>\r\n				<input type=\"radio\" name=\"gender\" id=\"male\" checked class=\"gender_button radio\" />\r\n				<label\r\n					for=\"male\"\r\n					class=\"button male\"\r\n					data-hover=\"make_character/btn_gender_m_over.bmp\"\r\n					data-down=\"make_character/btn_gender_m_press.bmp\"\r\n				>\r\n				</label>\r\n			</div>\r\n			<div\r\n				id=\"female_container\"\r\n				class=\"button container right\"\r\n				data-background=\"make_character/btn_gender_f_out.bmp\"\r\n			>\r\n				<input type=\"radio\" name=\"gender\" id=\"female\" class=\"gender_button radio\" />\r\n				<label\r\n					for=\"female\"\r\n					class=\"button female\"\r\n					data-hover=\"make_character/btn_gender_f_over.bmp\"\r\n					data-down=\"make_character/btn_gender_f_press.bmp\"\r\n				>\r\n				</label>\r\n			</div>\r\n		</div>\r\n\r\n		<div class=\"category hairstyle\">\r\n			<ui-button\r\n				class=\"button left\"\r\n				bg=\"make_character/arrow_box_l_out.bmp\"\r\n				hover=\"make_character/arrow_box_l_over.bmp\"\r\n				down=\"make_character/arrow_box_l_press.bmp\"\r\n			></ui-button>\r\n			<ui-button\r\n				class=\"button right\"\r\n				bg=\"make_character/arrow_box_r_out.bmp\"\r\n				hover=\"make_character/arrow_box_r_over.bmp\"\r\n				down=\"make_character/arrow_box_r_press.bmp\"\r\n			></ui-button>\r\n		</div>\r\n\r\n		<div class=\"category haircolor\">\r\n			<ui-button\r\n				class=\"button left\"\r\n				bg=\"make_character/arrow_box_l_out.bmp\"\r\n				hover=\"make_character/arrow_box_l_over.bmp\"\r\n				down=\"make_character/arrow_box_l_press.bmp\"\r\n			></ui-button>\r\n			<ui-button\r\n				class=\"button right\"\r\n				bg=\"make_character/arrow_box_r_out.bmp\"\r\n				hover=\"make_character/arrow_box_r_over.bmp\"\r\n				down=\"make_character/arrow_box_r_press.bmp\"\r\n			></ui-button>\r\n		</div>\r\n	</div>\r\n\r\n	<ui-button\r\n		class=\"button make\"\r\n		bg=\"make_character/btn_create_out.bmp\"\r\n		hover=\"make_character/btn_create_over.bmp\"\r\n		down=\"make_character/btn_create_press.bmp\"\r\n	></ui-button>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/CharCreate/CharCreatev3/CharCreatev3.css?raw
 var CharCreatev3_default$1;
 var init_CharCreatev3$1 = __esmMin((() => {
-	CharCreatev3_default$1 = "#charcreate_v3 {\r\n	position: absolute;\r\n	width: 576px;\r\n	height: 358px;\r\n}\r\n\r\n#charcreate_v3 .radio {\r\n	display: none;\r\n}\r\n\r\n#charcreate_v3 .title {\r\n	position: absolute;\r\n	left: 45px;\r\n	top: 15px;\r\n	height: 20px;\r\n	width: 200px;\r\n}\r\n\r\n/** Race **/\r\n#charcreate_v3 .race_select .label {\r\n	position: absolute;\r\n	width: 358px;\r\n	height: 138px;\r\n	outline: none;\r\n	background-repeat: no-repeat;\r\n}\r\n#charcreate_v3 .race_select .title {\r\n	position: absolute;\r\n	color: white;\r\n	top: 14px;\r\n	left: 34px;\r\n	height: 20px;\r\n	width: 45px;\r\n}\r\n#charcreate_v3 .race_select .desc {\r\n	position: absolute;\r\n	top: 22px;\r\n	left: 90px;\r\n	height: 60px;\r\n	width: 248px;\r\n	font-size: 14px;\r\n	line-height: 20px;\r\n}\r\n#charcreate_v3 .race_select .jobs {\r\n	position: absolute;\r\n	top: 102px;\r\n	left: 120px;\r\n	height: 26px;\r\n	width: 226px;\r\n}\r\n#charcreate_v3 .race_select .chargen canvas {\r\n	position: absolute;\r\n	top: 16px;\r\n	left: 16px;\r\n}\r\n\r\n#charcreate_v3 .race_select .human .label {\r\n	top: 32px;\r\n	left: 20px;\r\n}\r\n#charcreate_v3 .race_select .doram .label {\r\n	top: 177px;\r\n	left: 20px;\r\n}\r\n\r\n/* Style */\r\n#charcreate_v3 #style {\r\n	position: relative;\r\n	left: 395px;\r\n	top: 30px;\r\n	width: 200px;\r\n	height: 270px;\r\n}\r\n#charcreate_v3 #style .button {\r\n	position: absolute;\r\n	height: 20px;\r\n	width: 38px;\r\n}\r\n\r\n/** Style Model **/\r\n#charcreate_v3 #style .model {\r\n	position: absolute;\r\n	top: 15px;\r\n	left: 30px;\r\n	width: 100px;\r\n}\r\n#charcreate_v3 #style .model canvas {\r\n	position: relative;\r\n	top: -5px;\r\n	left: 17px;\r\n}\r\n\r\n/** Char Name **/\r\n#charcreate_v3 #char_name {\r\n	position: absolute;\r\n	height: 16px;\r\n	width: 110px;\r\n	top: 134px;\r\n	left: 43px;\r\n	border: 0px;\r\n	background-color: transparent;\r\n}\r\n\r\n/** Buttons **/\r\n#charcreate_v3 #style .rot_left {\r\n	position: absolute;\r\n	top: 70px;\r\n	left: 30px;\r\n	height: 20px;\r\n	width: 20px;\r\n	border-width: 0px;\r\n}\r\n#charcreate_v3 #style .rot_right {\r\n	position: absolute;\r\n	top: 70px;\r\n	left: 110px;\r\n	height: 20px;\r\n	width: 20px;\r\n	border-width: 0px;\r\n}\r\n\r\n#charcreate_v3 #style .category {\r\n	position: absolute;\r\n	left: 80px;\r\n	height: 20px;\r\n	width: 78px;\r\n}\r\n#charcreate_v3 #style .category .button {\r\n	position: absolute;\r\n	top: 0px;\r\n	height: 20px;\r\n	width: 38px;\r\n	white-space: nowrap;\r\n	border: 0;\r\n}\r\n#charcreate_v3 #style .category .button.left {\r\n	left: 0px;\r\n}\r\n#charcreate_v3 #style .category .button.right {\r\n	left: 40px;\r\n}\r\n\r\n#charcreate_v3 #style .gender {\r\n	top: 164px;\r\n}\r\n#charcreate_v3 #style .gender .container .gender_button {\r\n	display: none;\r\n}\r\n#charcreate_v3 #style .hairstyle {\r\n	top: 186px;\r\n}\r\n#charcreate_v3 #style .haircolor {\r\n	top: 208px;\r\n}\r\n\r\n#charcreate_v3 .button.make {\r\n	position: absolute;\r\n	top: 280px;\r\n	left: 445px;\r\n	width: 68px;\r\n	height: 20px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n	border: 0;\r\n}\r\n#charcreate_v3 .button.close {\r\n	position: absolute;\r\n	top: 3px;\r\n	right: 3px;\r\n	width: 11px;\r\n	height: 11px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n	border: 0;\r\n}\r\n";
+	CharCreatev3_default$1 = ":host {\r\n	width: 576px;\r\n	height: 358px;\r\n}\r\n\r\n#charcreate_v3 {\r\n	position: absolute;\r\n	width: 576px;\r\n	height: 358px;\r\n}\r\n\r\n#charcreate_v3 .radio {\r\n	display: none;\r\n}\r\n\r\n#charcreate_v3 .title {\r\n	position: absolute;\r\n	left: 45px;\r\n	top: 15px;\r\n	height: 20px;\r\n	width: 200px;\r\n}\r\n\r\n/** Race **/\r\n#charcreate_v3 .race_select .label {\r\n	position: absolute;\r\n	width: 358px;\r\n	height: 138px;\r\n	outline: none;\r\n	background-repeat: no-repeat;\r\n}\r\n#charcreate_v3 .race_select .title {\r\n	position: absolute;\r\n	color: white;\r\n	top: 14px;\r\n	left: 34px;\r\n	height: 20px;\r\n	width: 45px;\r\n}\r\n#charcreate_v3 .race_select .desc {\r\n	position: absolute;\r\n	top: 22px;\r\n	left: 90px;\r\n	height: 60px;\r\n	width: 248px;\r\n	font-size: 14px;\r\n	line-height: 20px;\r\n}\r\n#charcreate_v3 .race_select .jobs {\r\n	position: absolute;\r\n	top: 102px;\r\n	left: 120px;\r\n	height: 26px;\r\n	width: 226px;\r\n}\r\n#charcreate_v3 .race_select .chargen canvas {\r\n	position: absolute;\r\n	top: 16px;\r\n	left: 16px;\r\n}\r\n\r\n#charcreate_v3 .race_select .human .label {\r\n	top: 32px;\r\n	left: 20px;\r\n}\r\n#charcreate_v3 .race_select .doram .label {\r\n	top: 177px;\r\n	left: 20px;\r\n}\r\n\r\n/* Style */\r\n#charcreate_v3 #style {\r\n	position: relative;\r\n	left: 395px;\r\n	top: 30px;\r\n	width: 200px;\r\n	height: 270px;\r\n}\r\n#charcreate_v3 #style .button {\r\n	position: absolute;\r\n	height: 20px;\r\n	width: 38px;\r\n}\r\n\r\n/** Style Model **/\r\n#charcreate_v3 #style .model {\r\n	position: absolute;\r\n	top: 15px;\r\n	left: 30px;\r\n	width: 100px;\r\n}\r\n#charcreate_v3 #style .model canvas {\r\n	position: relative;\r\n	top: -5px;\r\n	left: 17px;\r\n}\r\n\r\n/** Char Name **/\r\n#charcreate_v3 #char_name {\r\n	position: absolute;\r\n	height: 16px;\r\n	width: 110px;\r\n	top: 134px;\r\n	left: 43px;\r\n	border: 0px;\r\n	background-color: transparent;\r\n}\r\n\r\n/** Buttons **/\r\n#charcreate_v3 #style .rot_left {\r\n	position: absolute;\r\n	top: 70px;\r\n	left: 30px;\r\n	height: 20px;\r\n	width: 20px;\r\n}\r\n#charcreate_v3 #style .rot_right {\r\n	position: absolute;\r\n	top: 70px;\r\n	left: 110px;\r\n	height: 20px;\r\n	width: 20px;\r\n}\r\n\r\n#charcreate_v3 #style .category {\r\n	position: absolute;\r\n	left: 80px;\r\n	height: 20px;\r\n	width: 78px;\r\n}\r\n#charcreate_v3 #style .category .button {\r\n	position: absolute;\r\n	top: 0px;\r\n	height: 20px;\r\n	width: 38px;\r\n	white-space: nowrap;\r\n	border: 0;\r\n}\r\n#charcreate_v3 #style .category .button.left {\r\n	left: 0px;\r\n}\r\n#charcreate_v3 #style .category .button.right {\r\n	left: 40px;\r\n}\r\n\r\n#charcreate_v3 #style .gender {\r\n	top: 164px;\r\n}\r\n#charcreate_v3 #style .gender .container .gender_button {\r\n	display: none;\r\n}\r\n#charcreate_v3 #style .hairstyle {\r\n	top: 186px;\r\n}\r\n#charcreate_v3 #style .haircolor {\r\n	top: 208px;\r\n}\r\n\r\n#charcreate_v3 .button.make {\r\n	position: absolute;\r\n	top: 280px;\r\n	left: 445px;\r\n	width: 68px;\r\n	height: 20px;\r\n}\r\n#charcreate_v3 .button.close {\r\n	position: absolute;\r\n	top: 3px;\r\n	right: 3px;\r\n	width: 11px;\r\n	height: 11px;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/CharCreate/CharCreatev3/CharCreatev3.js
 /**
-* Update model race
+* Helper to get shadow root
 */
+function _getRoot$1() {
+	return CharCreatev3._shadow || CharCreatev3._host;
+}
 /**
 * Send back informations to send the packet
 */
 function create$1() {
-	const charname = CharCreatev3.ui.find("#char_name").val();
+	const charname = _getRoot$1().querySelector("#char_name").value;
 	CharCreatev3.onCharCreationRequest(charname, 1, 1, 1, 1, 1, 1, _model$1.entity.head, _model$1.entity.headpalette, _model$1.entity.job, _model$1.entity.sex);
 }
 function setDefault() {
@@ -337380,22 +337811,23 @@ function cancel$1() {
 * @param {number} value
 */
 function updateCharacter$1(type, value) {
+	const root = _getRoot$1();
 	switch (type) {
 		case TYPE.GENDER:
 			_model$1.entity.sex = value;
 			if (_model$1.entity.sex == GENDER.MALE) {
-				Client.loadFile(DB.INTERFACE_PATH + "make_character/btn_gender_m_press.bmp", function(dataURI) {
-					CharCreatev3.ui.find("#male_container").css("backgroundImage", "url(" + dataURI + ")");
+				Client.loadFile(`${DB.INTERFACE_PATH}make_character/btn_gender_m_press.bmp`, (dataURI) => {
+					root.querySelector("#male_container").style.backgroundImage = `url(${dataURI})`;
 				});
-				Client.loadFile(DB.INTERFACE_PATH + "make_character/btn_gender_f_out.bmp", function(dataURI) {
-					CharCreatev3.ui.find("#female_container").css("backgroundImage", "url(" + dataURI + ")");
+				Client.loadFile(`${DB.INTERFACE_PATH}make_character/btn_gender_f_out.bmp`, (dataURI) => {
+					root.querySelector("#female_container").style.backgroundImage = `url(${dataURI})`;
 				});
 			} else {
-				Client.loadFile(DB.INTERFACE_PATH + "make_character/btn_gender_m_out.bmp", function(dataURI) {
-					CharCreatev3.ui.find("#male_container").css("backgroundImage", "url(" + dataURI + ")");
+				Client.loadFile(`${DB.INTERFACE_PATH}make_character/btn_gender_m_out.bmp`, (dataURI) => {
+					root.querySelector("#male_container").style.backgroundImage = `url(${dataURI})`;
 				});
-				Client.loadFile(DB.INTERFACE_PATH + "make_character/btn_gender_f_press.bmp", function(dataURI) {
-					CharCreatev3.ui.find("#female_container").css("backgroundImage", "url(" + dataURI + ")");
+				Client.loadFile(`${DB.INTERFACE_PATH}make_character/btn_gender_f_press.bmp`, (dataURI) => {
+					root.querySelector("#female_container").style.backgroundImage = `url(${dataURI})`;
 				});
 			}
 			break;
@@ -337403,14 +337835,14 @@ function updateCharacter$1(type, value) {
 			_model$1.entity.job = value;
 			_model$1.entity.head = 1;
 			if (_model$1.entity.job === RACE.HUMAN) {
-				Client.loadFile(RACE_MARK, function(dataURI) {
-					CharCreatev3.ui.find(".race_select .human label").css("backgroundImage", "url(" + dataURI + ")");
+				Client.loadFile(RACE_MARK, (dataURI) => {
+					root.querySelector(".race_select .human label").style.backgroundImage = `url(${dataURI})`;
 				});
-				CharCreatev3.ui.find(".race_select .doram label").css("backgroundImage", "none");
+				root.querySelector(".race_select .doram label").style.backgroundImage = "none";
 			} else {
-				CharCreatev3.ui.find(".race_select .human label").css("backgroundImage", "none");
-				Client.loadFile(RACE_MARK, function(dataURI) {
-					CharCreatev3.ui.find(".race_select .doram label").css("backgroundImage", "url(" + dataURI + ")");
+				root.querySelector(".race_select .human label").style.backgroundImage = "none";
+				Client.loadFile(RACE_MARK, (dataURI) => {
+					root.querySelector(".race_select .doram label").style.backgroundImage = `url(${dataURI})`;
 				});
 			}
 			break;
@@ -337469,7 +337901,7 @@ function render$1(tick) {
 	SpriteRenderer.bind2DContext(_model$1.ctx, 32, 115);
 	_model$1.ctx.clearRect(0, 0, _model$1.ctx.canvas.width, _model$1.ctx.canvas.height);
 	_model$1.entity.renderEntity();
-	CharCreatev3.ui.find("#char_name").focus();
+	_getRoot$1().querySelector("#char_name").focus();
 }
 var CharCreatev3, _accountSex$1, TYPE, GENDER, RACE, DIRECTION, VALUE, CAP, RACE_MARK, _human, _doram$1, _model$1, CharCreatev3_default;
 var init_CharCreatev3 = __esmMin((() => {
@@ -337479,11 +337911,13 @@ var init_CharCreatev3 = __esmMin((() => {
 	init_Entity$1();
 	init_SpriteRenderer();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
+	init_Elements();
 	init_CharCreatev3$2();
 	init_CharCreatev3$1();
 	init_Client();
-	CharCreatev3 = new UIComponent("CharCreatev3", CharCreatev3_default$2, CharCreatev3_default$1);
+	CharCreatev3 = new GUIComponent("CharCreatev3", CharCreatev3_default$1);
+	CharCreatev3.render = () => CharCreatev3_default$2;
 	_accountSex$1 = 0;
 	TYPE = {
 		RACE: 1,
@@ -337531,7 +337965,7 @@ var init_CharCreatev3 = __esmMin((() => {
 			}
 		}
 	};
-	RACE_MARK = DB.INTERFACE_PATH + "make_character/select_mark_cha_create.bmp";
+	RACE_MARK = `${DB.INTERFACE_PATH}make_character/select_mark_cha_create.bmp`;
 	_human = {
 		entity: new Entity(),
 		ctx: null,
@@ -337554,64 +337988,62 @@ var init_CharCreatev3 = __esmMin((() => {
 	* Initialize UI
 	*/
 	CharCreatev3.init = function init() {
-		_human.ctx = this.ui.find("#canvas_human")[0].getContext("2d");
-		_doram$1.ctx = this.ui.find("#canvas_doram")[0].getContext("2d");
-		_model$1.ctx = this.ui.find("#canvas_model")[0].getContext("2d");
-		this.ui.css({
-			top: (Renderer.height - 342) / 2,
-			left: (Renderer.width - 576) / 2
-		});
+		const root = _getRoot$1();
+		_human.ctx = root.querySelector("#canvas_human").getContext("2d");
+		_doram$1.ctx = root.querySelector("#canvas_doram").getContext("2d");
+		_model$1.ctx = root.querySelector("#canvas_model").getContext("2d");
 		this.draggable();
-		const radioInputs = document.querySelectorAll("input[type=\"radio\"]");
-		const labels = document.querySelectorAll("label");
+		const radioInputs = root.querySelectorAll("input[type=\"radio\"]");
+		const labels = root.querySelectorAll("label");
 		radioInputs.forEach((input) => {
 			input.classList.add("event_add_cursor");
 		});
 		labels.forEach((label) => {
 			label.classList.add("event_add_cursor");
 		});
-		this.ui.find(".race_select #human").click(function() {
+		root.querySelector(".race_select #human").addEventListener("click", () => {
 			updateCharacter$1(TYPE.RACE, RACE.HUMAN);
 		});
-		this.ui.find(".race_select #doram").click(function() {
+		root.querySelector(".race_select #doram").addEventListener("click", () => {
 			updateCharacter$1(TYPE.RACE, RACE.DORAM);
 		});
-		this.ui.find("#style .rot_left").click(function() {
+		root.querySelector("#style .rot_left").addEventListener("click", () => {
 			updateCharacter$1(TYPE.DIRECTION, DIRECTION.LEFT);
 		});
-		this.ui.find("#style .rot_right").click(function() {
+		root.querySelector("#style .rot_right").addEventListener("click", () => {
 			updateCharacter$1(TYPE.DIRECTION, DIRECTION.RIGHT);
 		});
-		this.ui.find("#style .gender .button.male").click(function() {
+		root.querySelector("#style .gender .button.male").addEventListener("click", () => {
 			updateCharacter$1(TYPE.GENDER, GENDER.MALE);
 		});
-		this.ui.find("#style .gender .button.female").click(function() {
+		root.querySelector("#style .gender .button.female").addEventListener("click", () => {
 			updateCharacter$1(TYPE.GENDER, GENDER.FEMALE);
 		});
-		this.ui.find("#style .hairstyle .left").click(function() {
+		root.querySelector("#style .hairstyle .left").addEventListener("click", () => {
 			updateCharacter$1(TYPE.HEAD, VALUE.DECREASE);
 		});
-		this.ui.find("#style .hairstyle .right").click(function() {
+		root.querySelector("#style .hairstyle .right").addEventListener("click", () => {
 			updateCharacter$1(TYPE.HEAD, VALUE.INCREASE);
 		});
-		this.ui.find("#style .haircolor .left").click(function() {
+		root.querySelector("#style .haircolor .left").addEventListener("click", () => {
 			updateCharacter$1(TYPE.HEADPALETTE, VALUE.DECREASE);
 		});
-		this.ui.find("#style .haircolor .right").click(function() {
+		root.querySelector("#style .haircolor .right").addEventListener("click", () => {
 			updateCharacter$1(TYPE.HEADPALETTE, VALUE.INCREASE);
 		});
-		this.ui.find("#char_name").click(function(event) {
-			this.focus();
+		const charNameInput = root.querySelector("#char_name");
+		charNameInput.addEventListener("click", (event) => {
+			charNameInput.focus();
 			event.stopImmediatePropagation();
 		});
-		this.ui.find(".button.close").click(cancel$1);
-		this.ui.find(".button.make").click(create$1);
-		this.ui.find(".race_select .human .title").text(DB.getMessage(3016));
-		this.ui.find(".race_select .human .desc").text(DB.getMessage(3020));
-		this.ui.find(".race_select .human .jobs").text(DB.getMessage(3017));
-		this.ui.find(".race_select .doram .title").text(DB.getMessage(3018));
-		this.ui.find(".race_select .doram .desc").text(DB.getMessage(3021));
-		this.ui.find(".race_select .doram .jobs").text(DB.getMessage(3019));
+		root.querySelector(".button.close").addEventListener("click", cancel$1);
+		root.querySelector(".button.make").addEventListener("click", create$1);
+		root.querySelector(".race_select .human .title").textContent = DB.getMessage(3016);
+		root.querySelector(".race_select .human .desc").textContent = DB.getMessage(3020);
+		root.querySelector(".race_select .human .jobs").textContent = DB.getMessage(3017);
+		root.querySelector(".race_select .doram .title").textContent = DB.getMessage(3018);
+		root.querySelector(".race_select .doram .desc").textContent = DB.getMessage(3021);
+		root.querySelector(".race_select .doram .jobs").textContent = DB.getMessage(3019);
 	};
 	/**
 	* Setter for AccountSex
@@ -337625,6 +338057,8 @@ var init_CharCreatev3 = __esmMin((() => {
 	* Once add to HTML, start rendering
 	*/
 	CharCreatev3.onAppend = function onAppend() {
+		this._host.style.top = `${(Renderer.height - 342) / 2}px`;
+		this._host.style.left = `${(Renderer.width - 576) / 2}px`;
 		_human.entity.set({
 			sex: _accountSex$1,
 			job: RACE.HUMAN,
@@ -337650,7 +338084,9 @@ var init_CharCreatev3 = __esmMin((() => {
 			direction: 4
 		});
 		_model$1.render = true;
-		this.ui.find("#char_name").val("").focus();
+		const charNameInput = _getRoot$1().querySelector("#char_name");
+		charNameInput.value = "";
+		charNameInput.focus();
 		setDefault();
 		Renderer.render(render$1);
 	};
@@ -337668,7 +338104,7 @@ var init_CharCreatev3 = __esmMin((() => {
 	* @return {boolean}
 	*/
 	CharCreatev3.onKeyDown = function onKeyDown(event) {
-		if ((event.which === KEYS.ESCAPE || event.key === "Escape") && this.ui.is(":visible")) {
+		if ((event.which === KEYS.ESCAPE || event.key === "Escape") && this._host.style.display !== "none") {
 			event.stopImmediatePropagation();
 			cancel$1();
 			return false;
@@ -337689,25 +338125,33 @@ var init_CharCreatev3 = __esmMin((() => {
 //#region src/UI/Components/CharCreate/CharCreatev4/CharCreatev4.html?raw
 var CharCreatev4_default$2;
 var init_CharCreatev4$2 = __esmMin((() => {
-	CharCreatev4_default$2 = "<div id=\"charcreate_v4\" data-background=\"make_character_ver2/bg_makebg.bmp\">\r\n	<div class=\"title\"></div>\r\n	<div>\r\n		<div class=\"human\">\r\n			<input type=\"radio\" name=\"race\" id=\"human_race\" checked class=\"race\" />\r\n			<label\r\n				for=\"human_race\"\r\n				class=\"human_label\"\r\n				data-background=\"make_character_ver2/img_human_off.bmp\"\r\n				data-hover=\"make_character_ver2/img_human_on.bmp\"\r\n				data-down=\"make_character_ver2/img_human_on.bmp\"\r\n			>\r\n				<div class=\"human_title\"></div>\r\n				<div class=\"human_desc\"></div>\r\n				<div class=\"chargen\">\r\n					<canvas id=\"human\" width=\"65\" height=\"110\" style=\"pointer-events: none\"></canvas>\r\n				</div>\r\n			</label>\r\n		</div>\r\n\r\n		<div class=\"doram\">\r\n			<input type=\"radio\" name=\"race\" id=\"doram_race\" class=\"race\" />\r\n			<label\r\n				for=\"doram_race\"\r\n				class=\"doram_label\"\r\n				data-background=\"make_character_ver2/img_doram_off.bmp\"\r\n				data-hover=\"make_character_ver2/img_doram_on.bmp\"\r\n				data-down=\"make_character_ver2/img_doram_on.bmp\"\r\n			>\r\n				<div class=\"doram_title\"></div>\r\n				<div class=\"doram_desc\"></div>\r\n				<div class=\"chargen_doram\">\r\n					<canvas id=\"doram\" width=\"65\" height=\"110\" style=\"pointer-events: none\"></canvas>\r\n				</div>\r\n			</label>\r\n		</div>\r\n	</div>\r\n	<div id=\"style\">\r\n		<div class=\"gender\">\r\n			<div id=\"male_container\" data-background=\"make_character_ver2/bt_male_on.bmp\">\r\n				<input type=\"radio\" name=\"gender\" id=\"male\" checked class=\"gender_button\" />\r\n				<label\r\n					for=\"male\"\r\n					class=\"male_button\"\r\n					data-hover=\"make_character_ver2/bt_male_over.bmp\"\r\n					data-down=\"make_character_ver2/bt_male_press.bmp\"\r\n				>\r\n				</label>\r\n			</div>\r\n			<div id=\"female_container\" data-background=\"make_character_ver2/bt_female_off.bmp\">\r\n				<input type=\"radio\" name=\"gender\" id=\"female\" class=\"gender_button\" />\r\n				<label\r\n					for=\"female\"\r\n					class=\"female_button\"\r\n					data-hover=\"make_character_ver2/bt_female_over.bmp\"\r\n					data-down=\"make_character_ver2/bt_female_press.bmp\"\r\n				>\r\n				</label>\r\n			</div>\r\n		</div>\r\n		<div class=\"model\">\r\n			<canvas id=\"style_model\" width=\"65\" height=\"110\" style=\"pointer-events: none\"></canvas>\r\n		</div>\r\n		<button\r\n			class=\"rot_left\"\r\n			data-background=\"make_character_ver2/bt_leftturn_normal.bmp\"\r\n			data-hover=\"make_character_ver2/bt_leftturn_over.bmp\"\r\n			data-down=\"make_character_ver2/bt_leftturn_press.bmp\"\r\n		></button>\r\n		<button\r\n			class=\"rot_right\"\r\n			data-background=\"make_character_ver2/bt_rightturn_normal.bmp\"\r\n			data-hover=\"make_character_ver2/bt_rightturn_over.bmp\"\r\n			data-down=\"make_character_ver2/bt_rightturn_press.bmp\"\r\n		></button>\r\n		<input type=\"text\" id=\"char_name\" maxlength=\"24\" />\r\n	</div>\r\n\r\n	<div id=\"hair_setting\">\r\n		<div class=\"hair_style_title\"></div>\r\n		<div class=\"hair_styles\">\r\n			<div id=\"human_male\" class=\"hair-style\">\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style1\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"1_human_male\" checked class=\"hstyle\" />\r\n						<label\r\n							for=\"1_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle01.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style2\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"2_human_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"2_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle02.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style3\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"3_human_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"3_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle03.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style4\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"4_human_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"4_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle04.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style5\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"5_human_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"5_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle05.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style6\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"6_human_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"6_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle06.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style7\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"7_human_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"7_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle07.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style8\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"8_human_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"8_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle08.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style9\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"9_human_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"9_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle09.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style10\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"10_human_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"10_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle10.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style11\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"11_human_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"11_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle11.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style12\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"12_human_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"12_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle12.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style13\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"13_human_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"13_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle13.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style14\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"14_human_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"14_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle14.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style15\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"15_human_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"15_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle15.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style16\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"16_human_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"16_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle16.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style17\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"17_human_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"17_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle17.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style18\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"18_human_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"18_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle18.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style19\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"19_human_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"19_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle19.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style20\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"20_human_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"20_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle20.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style21\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"21_human_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"21_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle21.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style22\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"22_human_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"22_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle22.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style23\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"23_human_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"23_human_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle23.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style24\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n				</div>\r\n			</div>\r\n			<div id=\"human_female\" class=\"hair-style\">\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style1\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"1_human_female\" checked class=\"hstyle\" />\r\n						<label\r\n							for=\"1_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl01.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style2\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"2_human_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"2_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl02.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style3\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"3_human_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"3_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl03.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style4\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"4_human_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"4_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl04.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style5\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"5_human_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"5_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl05.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style6\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"6_human_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"6_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl06.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style7\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"7_human_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"7_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl07.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style8\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"8_human_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"8_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl08.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style9\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"9_human_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"9_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl09.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style10\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"10_human_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"10_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl10.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style11\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"11_human_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"11_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl11.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style12\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"12_human_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"12_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl12.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style13\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"13_human_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"13_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl13.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style14\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"14_human_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"14_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl14.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style15\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"15_human_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"15_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl15.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style16\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"16_human_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"16_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl16.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style17\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"17_human_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"17_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl17.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style18\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"18_human_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"18_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl18.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style19\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"19_human_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"19_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl19.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style20\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"20_human_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"20_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl20.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style21\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"21_human_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"21_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl21.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style22\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"22_human_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"22_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl22.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style23\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"23_human_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"23_human_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_girl23.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style24\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n				</div>\r\n			</div>\r\n			<div id=\"doram_male\" class=\"hair-style\">\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style1\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"1_doram_male\" checked class=\"hstyle\" />\r\n						<label\r\n							for=\"1_doram_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_doramboy01.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style2\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"2_doram_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"2_doram_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_doramboy02.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style3\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"3_doram_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"3_doram_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_doramboy03.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style4\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"4_doram_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"4_doram_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_doramboy04.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style5\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"5_doram_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"5_doram_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_doramboy05.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style6\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"6_doram_male\" class=\"hstyle\" />\r\n						<label\r\n							for=\"6_doram_male\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_doramboy06.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style7\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style8\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style9\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style10\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style11\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style12\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style13\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style14\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style15\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style16\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style17\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style18\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style19\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style20\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style21\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style22\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style23\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style24\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n				</div>\r\n			</div>\r\n			<div id=\"doram_female\" class=\"hair-style\">\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style1\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"1_doram_female\" checked class=\"hstyle\" />\r\n						<label\r\n							for=\"1_doram_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_doramgirl01.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style2\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"2_doram_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"2_doram_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_doramgirl02.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style3\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"3_doram_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"3_doram_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_doramgirl03.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style4\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"4_doram_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"4_doram_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_doramgirl04.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style5\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"5_doram_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"5_doram_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_doramgirl05.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style6\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					>\r\n						<input type=\"radio\" name=\"hstyle\" id=\"6_doram_female\" class=\"hstyle\" />\r\n						<label\r\n							for=\"6_doram_female\"\r\n							class=\"hstyle_button\"\r\n							data-background=\"make_character_ver2/img_hairstyle_doramgirl06.bmp\"\r\n						>\r\n						</label>\r\n					</div>\r\n					<div\r\n						class=\"styleCol style7\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style8\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style9\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style10\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style11\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style12\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style13\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style14\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style15\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style16\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style17\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style18\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style19\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style20\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div\r\n						class=\"styleCol style21\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style22\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style23\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n					<div\r\n						class=\"styleCol style24\"\r\n						data-background=\"make_character_ver2/bt_hairstyle_normal.bmp\"\r\n						data-hover=\"make_character_ver2/bt_hairstyle_over.bmp\"\r\n						data-down=\"make_character_ver2/bt_hairstyle_press.bmp\"\r\n					></div>\r\n				</div>\r\n			</div>\r\n		</div>\r\n		<div class=\"hair_color_title\"></div>\r\n		<div class=\"hair_colors\">\r\n			<div class=\"haircolor_row\">\r\n				<div class=\"colorCol cstyle00\" data-background=\"make_character_ver2/color01_on.bmp\">\r\n					<input type=\"radio\" name=\"hcolor\" id=\"0_color\" checked class=\"hcolor\" />\r\n					<label\r\n						for=\"0_color\"\r\n						class=\"hcolor_button\"\r\n						data-hover=\"make_character_ver2/color01_over.bmp\"\r\n						data-down=\"make_character_ver2/color01_press.bmp\"\r\n					>\r\n					</label>\r\n				</div>\r\n				<div class=\"colorCol cstyle01\" data-background=\"make_character_ver2/color02_off.bmp\">\r\n					<input type=\"radio\" name=\"hcolor\" id=\"1_color\" class=\"hcolor\" />\r\n					<label\r\n						for=\"1_color\"\r\n						class=\"hcolor_button\"\r\n						data-hover=\"make_character_ver2/color02_over.bmp\"\r\n						data-down=\"make_character_ver2/color02_press.bmp\"\r\n					>\r\n					</label>\r\n				</div>\r\n				<div class=\"colorCol cstyle02\" data-background=\"make_character_ver2/color03_off.bmp\">\r\n					<input type=\"radio\" name=\"hcolor\" id=\"2_color\" class=\"hcolor\" />\r\n					<label\r\n						for=\"2_color\"\r\n						class=\"hcolor_button\"\r\n						data-hover=\"make_character_ver2/color03_over.bmp\"\r\n						data-down=\"make_character_ver2/color03_press.bmp\"\r\n					>\r\n					</label>\r\n				</div>\r\n				<div class=\"colorCol cstyle03\" data-background=\"make_character_ver2/color04_off.bmp\">\r\n					<input type=\"radio\" name=\"hcolor\" id=\"3_color\" class=\"hcolor\" />\r\n					<label\r\n						for=\"3_color\"\r\n						class=\"hcolor_button\"\r\n						data-hover=\"make_character_ver2/color04_over.bmp\"\r\n						data-down=\"make_character_ver2/color04_press.bmp\"\r\n					>\r\n					</label>\r\n				</div>\r\n				<div class=\"colorCol cstyle04\" data-background=\"make_character_ver2/color05_off.bmp\">\r\n					<input type=\"radio\" name=\"hcolor\" id=\"4_color\" class=\"hcolor\" />\r\n					<label\r\n						for=\"4_color\"\r\n						class=\"hcolor_button\"\r\n						data-hover=\"make_character_ver2/color05_over.bmp\"\r\n						data-down=\"make_character_ver2/color05_press.bmp\"\r\n					>\r\n					</label>\r\n				</div>\r\n			</div>\r\n			<div class=\"haircolor_row\">\r\n				<div class=\"colorCol cstyle05\" data-background=\"make_character_ver2/color06_off.bmp\">\r\n					<input type=\"radio\" name=\"hcolor\" id=\"5_color\" class=\"hcolor\" />\r\n					<label\r\n						for=\"5_color\"\r\n						class=\"hcolor_button\"\r\n						data-hover=\"make_character_ver2/color06_over.bmp\"\r\n						data-down=\"make_character_ver2/color06_press.bmp\"\r\n					>\r\n					</label>\r\n				</div>\r\n				<div class=\"colorCol cstyle06\" data-background=\"make_character_ver2/color07_off.bmp\">\r\n					<input type=\"radio\" name=\"hcolor\" id=\"6_color\" class=\"hcolor\" />\r\n					<label\r\n						for=\"6_color\"\r\n						class=\"hcolor_button\"\r\n						data-hover=\"make_character_ver2/color07_over.bmp\"\r\n						data-down=\"make_character_ver2/color07_press.bmp\"\r\n					>\r\n					</label>\r\n				</div>\r\n				<div class=\"colorCol cstyle07\" data-background=\"make_character_ver2/color08_off.bmp\">\r\n					<input type=\"radio\" name=\"hcolor\" id=\"7_color\" class=\"hcolor\" />\r\n					<label\r\n						for=\"7_color\"\r\n						class=\"hcolor_button\"\r\n						data-hover=\"make_character_ver2/color08_over.bmp\"\r\n						data-down=\"make_character_ver2/color08_press.bmp\"\r\n					>\r\n					</label>\r\n				</div>\r\n				<div class=\"colorCol cstyle08\" data-background=\"make_character_ver2/color09_off.bmp\">\r\n					<input type=\"radio\" name=\"hcolor\" id=\"8_color\" class=\"hcolor\" />\r\n					<label\r\n						for=\"8_color\"\r\n						class=\"hcolor_button\"\r\n						data-hover=\"make_character_ver2/color09_over.bmp\"\r\n						data-down=\"make_character_ver2/color09_press.bmp\"\r\n					>\r\n					</label>\r\n				</div>\r\n			</div>\r\n		</div>\r\n	</div>\r\n\r\n	<div class=\"btns\">\r\n		<button\r\n			class=\"btn cancel\"\r\n			data-background=\"make_character_ver2/bt_close_normal.bmp\"\r\n			data-hover=\"make_character_ver2/bt_close_over.bmp\"\r\n			data-down=\"make_character_ver2/bt_close_press.bmp\"\r\n		></button>\r\n		<button\r\n			class=\"btn make\"\r\n			data-background=\"make_character_ver2/bt_make_normal.bmp\"\r\n			data-hover=\"make_character_ver2/bt_make_over.bmp\"\r\n			data-down=\"make_character_ver2/bt_make_press.bmp\"\r\n		></button>\r\n		<button\r\n			class=\"btn return\"\r\n			data-background=\"make_character_ver2/bt_make_normal.bmp\"\r\n			data-hover=\"make_character_ver2/bt_make_over.bmp\"\r\n			data-down=\"make_character_ver2/bt_make_press.bmp\"\r\n		></button>\r\n	</div>\r\n</div>\r\n";
+	CharCreatev4_default$2 = "<div id=\"charcreate_v4\">\r\n	<ui-image src=\"make_character_ver2/bg_makebg.bmp\"></ui-image>\r\n	<div class=\"title\"></div>\r\n	<div>\r\n		<div class=\"human\">\r\n			<input type=\"radio\" name=\"race\" id=\"human_race\" checked class=\"race\" />\r\n			<label for=\"human_race\" class=\"human_label\">\r\n				<div class=\"human_title\"></div>\r\n				<div class=\"human_desc\"></div>\r\n				<div class=\"chargen\">\r\n					<canvas id=\"human\" width=\"65\" height=\"110\" style=\"pointer-events: none\"></canvas>\r\n				</div>\r\n			</label>\r\n		</div>\r\n\r\n		<div class=\"doram\">\r\n			<input type=\"radio\" name=\"race\" id=\"doram_race\" class=\"race\" />\r\n			<label for=\"doram_race\" class=\"doram_label\">\r\n				<div class=\"doram_title\"></div>\r\n				<div class=\"doram_desc\"></div>\r\n				<div class=\"chargen_doram\">\r\n					<canvas id=\"doram\" width=\"65\" height=\"110\" style=\"pointer-events: none\"></canvas>\r\n				</div>\r\n			</label>\r\n		</div>\r\n	</div>\r\n	<div id=\"style\">\r\n		<div class=\"gender\">\r\n			<div id=\"male_container\" data-background=\"make_character_ver2/bt_male_on.bmp\">\r\n				<input type=\"radio\" name=\"gender\" id=\"male\" checked class=\"gender_button\" />\r\n				<label for=\"male\" class=\"male_button\"> </label>\r\n			</div>\r\n			<div id=\"female_container\" data-background=\"make_character_ver2/bt_female_off.bmp\">\r\n				<input type=\"radio\" name=\"gender\" id=\"female\" class=\"gender_button\" />\r\n				<label for=\"female\" class=\"female_button\"> </label>\r\n			</div>\r\n		</div>\r\n		<div class=\"model\">\r\n			<canvas id=\"style_model\" width=\"65\" height=\"110\" style=\"pointer-events: none\"></canvas>\r\n		</div>\r\n		<ui-button\r\n			class=\"rot_left\"\r\n			bg=\"make_character_ver2/bt_leftturn_normal.bmp\"\r\n			hover=\"make_character_ver2/bt_leftturn_over.bmp\"\r\n			down=\"make_character_ver2/bt_leftturn_press.bmp\"\r\n		></ui-button>\r\n		<ui-button\r\n			class=\"rot_right\"\r\n			bg=\"make_character_ver2/bt_rightturn_normal.bmp\"\r\n			hover=\"make_character_ver2/bt_rightturn_over.bmp\"\r\n			down=\"make_character_ver2/bt_rightturn_press.bmp\"\r\n		></ui-button>\r\n		<input type=\"text\" id=\"char_name\" maxlength=\"24\" />\r\n	</div>\r\n\r\n	<div id=\"hair_setting\">\r\n		<div class=\"hair_style_title\"></div>\r\n		<div class=\"hair_styles\">\r\n			<div id=\"human_male\" class=\"hair-style\">\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style1\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"1_human_male\" checked class=\"hstyle\" />\r\n						<label for=\"1_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle01.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style2\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"2_human_male\" class=\"hstyle\" />\r\n						<label for=\"2_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle02.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style3\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"3_human_male\" class=\"hstyle\" />\r\n						<label for=\"3_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle03.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style4\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"4_human_male\" class=\"hstyle\" />\r\n						<label for=\"4_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle04.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style5\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"5_human_male\" class=\"hstyle\" />\r\n						<label for=\"5_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle05.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style6\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"6_human_male\" class=\"hstyle\" />\r\n						<label for=\"6_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle06.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style7\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"7_human_male\" class=\"hstyle\" />\r\n						<label for=\"7_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle07.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style8\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"8_human_male\" class=\"hstyle\" />\r\n						<label for=\"8_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle08.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style9\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"9_human_male\" class=\"hstyle\" />\r\n						<label for=\"9_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle09.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style10\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"10_human_male\" class=\"hstyle\" />\r\n						<label for=\"10_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle10.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style11\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"11_human_male\" class=\"hstyle\" />\r\n						<label for=\"11_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle11.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style12\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"12_human_male\" class=\"hstyle\" />\r\n						<label for=\"12_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle12.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style13\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"13_human_male\" class=\"hstyle\" />\r\n						<label for=\"13_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle13.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style14\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"14_human_male\" class=\"hstyle\" />\r\n						<label for=\"14_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle14.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style15\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"15_human_male\" class=\"hstyle\" />\r\n						<label for=\"15_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle15.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style16\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"16_human_male\" class=\"hstyle\" />\r\n						<label for=\"16_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle16.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style17\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"17_human_male\" class=\"hstyle\" />\r\n						<label for=\"17_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle17.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style18\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"18_human_male\" class=\"hstyle\" />\r\n						<label for=\"18_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle18.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style19\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"19_human_male\" class=\"hstyle\" />\r\n						<label for=\"19_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle19.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style20\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"20_human_male\" class=\"hstyle\" />\r\n						<label for=\"20_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle20.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style21\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"21_human_male\" class=\"hstyle\" />\r\n						<label for=\"21_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle21.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style22\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"22_human_male\" class=\"hstyle\" />\r\n						<label for=\"22_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle22.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style23\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"23_human_male\" class=\"hstyle\" />\r\n						<label for=\"23_human_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle23.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style24\"></div>\r\n				</div>\r\n			</div>\r\n			<div id=\"human_female\" class=\"hair-style\">\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style1\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"1_human_female\" checked class=\"hstyle\" />\r\n						<label for=\"1_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl01.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style2\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"2_human_female\" class=\"hstyle\" />\r\n						<label for=\"2_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl02.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style3\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"3_human_female\" class=\"hstyle\" />\r\n						<label for=\"3_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl03.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style4\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"4_human_female\" class=\"hstyle\" />\r\n						<label for=\"4_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl04.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style5\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"5_human_female\" class=\"hstyle\" />\r\n						<label for=\"5_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl05.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style6\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"6_human_female\" class=\"hstyle\" />\r\n						<label for=\"6_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl06.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style7\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"7_human_female\" class=\"hstyle\" />\r\n						<label for=\"7_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl07.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style8\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"8_human_female\" class=\"hstyle\" />\r\n						<label for=\"8_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl08.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style9\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"9_human_female\" class=\"hstyle\" />\r\n						<label for=\"9_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl09.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style10\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"10_human_female\" class=\"hstyle\" />\r\n						<label for=\"10_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl10.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style11\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"11_human_female\" class=\"hstyle\" />\r\n						<label for=\"11_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl11.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style12\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"12_human_female\" class=\"hstyle\" />\r\n						<label for=\"12_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl12.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style13\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"13_human_female\" class=\"hstyle\" />\r\n						<label for=\"13_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl13.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style14\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"14_human_female\" class=\"hstyle\" />\r\n						<label for=\"14_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl14.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style15\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"15_human_female\" class=\"hstyle\" />\r\n						<label for=\"15_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl15.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style16\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"16_human_female\" class=\"hstyle\" />\r\n						<label for=\"16_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl16.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style17\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"17_human_female\" class=\"hstyle\" />\r\n						<label for=\"17_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl17.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style18\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"18_human_female\" class=\"hstyle\" />\r\n						<label for=\"18_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl18.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style19\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"19_human_female\" class=\"hstyle\" />\r\n						<label for=\"19_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl19.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style20\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"20_human_female\" class=\"hstyle\" />\r\n						<label for=\"20_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl20.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style21\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"21_human_female\" class=\"hstyle\" />\r\n						<label for=\"21_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl21.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style22\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"22_human_female\" class=\"hstyle\" />\r\n						<label for=\"22_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl22.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style23\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"23_human_female\" class=\"hstyle\" />\r\n						<label for=\"23_human_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_girl23.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style24\"></div>\r\n				</div>\r\n			</div>\r\n			<div id=\"doram_male\" class=\"hair-style\">\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style1\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"1_doram_male\" checked class=\"hstyle\" />\r\n						<label for=\"1_doram_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_doramboy01.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style2\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"2_doram_male\" class=\"hstyle\" />\r\n						<label for=\"2_doram_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_doramboy02.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style3\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"3_doram_male\" class=\"hstyle\" />\r\n						<label for=\"3_doram_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_doramboy03.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style4\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"4_doram_male\" class=\"hstyle\" />\r\n						<label for=\"4_doram_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_doramboy04.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style5\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"5_doram_male\" class=\"hstyle\" />\r\n						<label for=\"5_doram_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_doramboy05.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style6\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"6_doram_male\" class=\"hstyle\" />\r\n						<label for=\"6_doram_male\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_doramboy06.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style7\"></div>\r\n					<div class=\"styleCol style8\"></div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style9\"></div>\r\n					<div class=\"styleCol style10\"></div>\r\n					<div class=\"styleCol style11\"></div>\r\n					<div class=\"styleCol style12\"></div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style13\"></div>\r\n					<div class=\"styleCol style14\"></div>\r\n					<div class=\"styleCol style15\"></div>\r\n					<div class=\"styleCol style16\"></div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style17\"></div>\r\n					<div class=\"styleCol style18\"></div>\r\n					<div class=\"styleCol style19\"></div>\r\n					<div class=\"styleCol style20\"></div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style21\"></div>\r\n					<div class=\"styleCol style22\"></div>\r\n					<div class=\"styleCol style23\"></div>\r\n					<div class=\"styleCol style24\"></div>\r\n				</div>\r\n			</div>\r\n			<div id=\"doram_female\" class=\"hair-style\">\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style1\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"1_doram_female\" checked class=\"hstyle\" />\r\n						<label for=\"1_doram_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_doramgirl01.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style2\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"2_doram_female\" class=\"hstyle\" />\r\n						<label for=\"2_doram_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_doramgirl02.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style3\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"3_doram_female\" class=\"hstyle\" />\r\n						<label for=\"3_doram_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_doramgirl03.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style4\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"4_doram_female\" class=\"hstyle\" />\r\n						<label for=\"4_doram_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_doramgirl04.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style5\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"5_doram_female\" class=\"hstyle\" />\r\n						<label for=\"5_doram_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_doramgirl05.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style6\">\r\n						<input type=\"radio\" name=\"hstyle\" id=\"6_doram_female\" class=\"hstyle\" />\r\n						<label for=\"6_doram_female\" class=\"hstyle_button\">\r\n							<ui-image src=\"make_character_ver2/img_hairstyle_doramgirl06.bmp\"></ui-image>\r\n						</label>\r\n					</div>\r\n					<div class=\"styleCol style7\"></div>\r\n					<div class=\"styleCol style8\"></div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style9\"></div>\r\n					<div class=\"styleCol style10\"></div>\r\n					<div class=\"styleCol style11\"></div>\r\n					<div class=\"styleCol style12\"></div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style13\"></div>\r\n					<div class=\"styleCol style14\"></div>\r\n					<div class=\"styleCol style15\"></div>\r\n					<div class=\"styleCol style16\"></div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style17\"></div>\r\n					<div class=\"styleCol style18\"></div>\r\n					<div class=\"styleCol style19\"></div>\r\n					<div class=\"styleCol style20\"></div>\r\n				</div>\r\n				<div class=\"hairstyle_row\">\r\n					<div class=\"styleCol style21\"></div>\r\n					<div class=\"styleCol style22\"></div>\r\n					<div class=\"styleCol style23\"></div>\r\n					<div class=\"styleCol style24\"></div>\r\n				</div>\r\n			</div>\r\n		</div>\r\n		<div class=\"hair_color_title\"></div>\r\n		<div class=\"hair_colors\">\r\n			<div class=\"haircolor_row\">\r\n				<div class=\"colorCol cstyle00\">\r\n					<input type=\"radio\" name=\"hcolor\" id=\"0_color\" checked class=\"hcolor\" />\r\n					<label for=\"0_color\" class=\"hcolor_button\"> </label>\r\n				</div>\r\n				<div class=\"colorCol cstyle01\">\r\n					<input type=\"radio\" name=\"hcolor\" id=\"1_color\" class=\"hcolor\" />\r\n					<label for=\"1_color\" class=\"hcolor_button\"> </label>\r\n				</div>\r\n				<div class=\"colorCol cstyle02\">\r\n					<input type=\"radio\" name=\"hcolor\" id=\"2_color\" class=\"hcolor\" />\r\n					<label for=\"2_color\" class=\"hcolor_button\"> </label>\r\n				</div>\r\n				<div class=\"colorCol cstyle03\">\r\n					<input type=\"radio\" name=\"hcolor\" id=\"3_color\" class=\"hcolor\" />\r\n					<label for=\"3_color\" class=\"hcolor_button\"> </label>\r\n				</div>\r\n				<div class=\"colorCol cstyle04\">\r\n					<input type=\"radio\" name=\"hcolor\" id=\"4_color\" class=\"hcolor\" />\r\n					<label for=\"4_color\" class=\"hcolor_button\"> </label>\r\n				</div>\r\n			</div>\r\n			<div class=\"haircolor_row\">\r\n				<div class=\"colorCol cstyle05\">\r\n					<input type=\"radio\" name=\"hcolor\" id=\"5_color\" class=\"hcolor\" />\r\n					<label for=\"5_color\" class=\"hcolor_button\"> </label>\r\n				</div>\r\n				<div class=\"colorCol cstyle06\">\r\n					<input type=\"radio\" name=\"hcolor\" id=\"6_color\" class=\"hcolor\" />\r\n					<label for=\"6_color\" class=\"hcolor_button\"> </label>\r\n				</div>\r\n				<div class=\"colorCol cstyle07\">\r\n					<input type=\"radio\" name=\"hcolor\" id=\"7_color\" class=\"hcolor\" />\r\n					<label for=\"7_color\" class=\"hcolor_button\"> </label>\r\n				</div>\r\n				<div class=\"colorCol cstyle08\">\r\n					<input type=\"radio\" name=\"hcolor\" id=\"8_color\" class=\"hcolor\" />\r\n					<label for=\"8_color\" class=\"hcolor_button\"> </label>\r\n				</div>\r\n			</div>\r\n		</div>\r\n	</div>\r\n\r\n	<div class=\"btns\">\r\n		<ui-button\r\n			class=\"btn cancel\"\r\n			bg=\"make_character_ver2/bt_close_normal.bmp\"\r\n			hover=\"make_character_ver2/bt_close_over.bmp\"\r\n			down=\"make_character_ver2/bt_close_press.bmp\"\r\n		></ui-button>\r\n		<ui-button\r\n			class=\"btn make\"\r\n			bg=\"make_character_ver2/bt_make_normal.bmp\"\r\n			hover=\"make_character_ver2/bt_make_over.bmp\"\r\n			down=\"make_character_ver2/bt_make_press.bmp\"\r\n		></ui-button>\r\n		<ui-button\r\n			class=\"btn return\"\r\n			bg=\"make_character_ver2/bt_make_normal.bmp\"\r\n			hover=\"make_character_ver2/bt_make_over.bmp\"\r\n			down=\"make_character_ver2/bt_make_press.bmp\"\r\n		></ui-button>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/CharCreate/CharCreatev4/CharCreatev4.css?raw
 var CharCreatev4_default$1;
 var init_CharCreatev4$1 = __esmMin((() => {
-	CharCreatev4_default$1 = "#charcreate_v4 {\r\n	position: absolute;\r\n	width: 794px;\r\n	height: 422px;\r\n}\r\n\r\n#charcreate_v4 .title {\r\n	position: absolute;\r\n	left: 45px;\r\n	top: 15px;\r\n	height: 20px;\r\n	width: 200px;\r\n}\r\n\r\n#charcreate_v4 .human::before,\r\n.doram::before,\r\n.human::after,\r\n.doram::after {\r\n	content: '';\r\n	display: table;\r\n}\r\n#charcreate_v4 .human::after,\r\n.doram::after {\r\n	clear: both;\r\n}\r\n#charcreate_v4 .race {\r\n	display: none;\r\n}\r\n\r\n/** Name\r\n#charcreate_v4 input { position:absolute; top:244px; left:62px; width: 97px; height:14px; padding-top:2px; padding-left:3px; background-color:transparent; border:0; }\r\n**/\r\n\r\n/** Human Race **/\r\n#charcreate_v4 .human_label {\r\n	position: absolute;\r\n	width: 370px;\r\n	height: 170px;\r\n	top: 35px;\r\n	left: 20px;\r\n	outline: none;\r\n	background-repeat: no-repeat;\r\n}\r\n#charcreate_v4 .human_title {\r\n	position: absolute;\r\n	color: white;\r\n	top: 22px;\r\n	left: 45px;\r\n	height: 20px;\r\n	width: 50px;\r\n}\r\n#charcreate_v4 .human_desc {\r\n	position: relative;\r\n	top: 22px;\r\n	left: 110px;\r\n	height: 60px;\r\n	width: 220px;\r\n}\r\n/** Human Chargen **/\r\n.human .chargen canvas {\r\n	position: absolute;\r\n	top: 40px;\r\n	left: 25px;\r\n}\r\n\r\n/** Doram Race **/\r\n#charcreate_v4 .doram_label {\r\n	position: absolute;\r\n	width: 370px;\r\n	height: 170px;\r\n	top: 210px;\r\n	left: 20px;\r\n	outline: none;\r\n	background-repeat: no-repeat;\r\n}\r\n#charcreate_v4 .doram_title {\r\n	position: absolute;\r\n	color: white;\r\n	top: 22px;\r\n	left: 45px;\r\n	height: 20px;\r\n	width: 50px;\r\n}\r\n#charcreate_v4 .doram_desc {\r\n	position: relative;\r\n	top: 22px;\r\n	left: 110px;\r\n	height: 60px;\r\n	width: 220px;\r\n}\r\n/** Doram Chargen **/\r\n.doram .chargen_doram canvas {\r\n	position: absolute;\r\n	top: 40px;\r\n	left: 25px;\r\n}\r\n\r\n/* Style */\r\n#charcreate_v4 #style {\r\n	position: relative;\r\n	left: 395px;\r\n	top: 30px;\r\n	width: 200px;\r\n	height: 270px;\r\n}\r\n#charcreate_v4 .gender_button {\r\n	display: none;\r\n}\r\n\r\n#charcreate_v4 #style .gender {\r\n	position: absolute;\r\n	top: 25px;\r\n	left: 40px;\r\n	height: 26px;\r\n	width: 130px;\r\n}\r\n#charcreate_v4 #male_container {\r\n	position: relative;\r\n	height: 25px;\r\n	width: 62px;\r\n	white-space: nowrap;\r\n}\r\n#charcreate_v4 #female_container {\r\n	position: relative;\r\n	left: 61px;\r\n	top: -25px;\r\n	height: 25px;\r\n	width: 62px;\r\n	white-space: nowrap;\r\n}\r\n\r\n#charcreate_v4 #style .male_button {\r\n	position: absolute;\r\n	height: 25px;\r\n	width: 62px;\r\n}\r\n#charcreate_v4 #style .female_button {\r\n	position: absolute;\r\n	height: 25px;\r\n	width: 62px;\r\n}\r\n\r\n/** Style Model **/\r\n#charcreate_v4 .model {\r\n	position: relative;\r\n	top: 115px;\r\n	left: 55px;\r\n	width: 100px;\r\n}\r\n#charcreate_v4 .model canvas {\r\n	position: relative;\r\n	top: -5px;\r\n	left: 17px;\r\n}\r\n\r\n/** Buttons **/\r\n#charcreate_v4 #style .rot_left {\r\n	position: relative;\r\n	top: 40px;\r\n	left: 30px;\r\n	height: 23px;\r\n	width: 22px;\r\n	border-width: 0px;\r\n}\r\n#charcreate_v4 #style .rot_right {\r\n	position: relative;\r\n	top: 40px;\r\n	left: 130px;\r\n	height: 23px;\r\n	width: 22px;\r\n	border-width: 0px;\r\n}\r\n\r\n/** Char Name **/\r\n#charcreate_v4 #char_name {\r\n	position: relative;\r\n	height: 20px;\r\n	width: 140px;\r\n	top: 115px;\r\n	left: -20px;\r\n	border-width: 0px;\r\n}\r\n\r\n/** Hair Settings **/\r\n#charcreate_v4 #hair_setting {\r\n	position: absolute;\r\n	top: 35px;\r\n	left: 600px;\r\n	height: 380px;\r\n	width: 185px;\r\n}\r\n\r\n#charcreate_v4 .hair_style_title {\r\n	position: relative;\r\n	height: 15px;\r\n	width: 60px;\r\n	top: 10px;\r\n	left: 10px;\r\n}\r\n\r\n#charcreate_v4 .hairstyle_row {\r\n	position: relative;\r\n	display: flex;\r\n	top: 10px;\r\n	left: 10px;\r\n}\r\n#charcreate_v4 .styleCol {\r\n	position: relative;\r\n	width: 36px;\r\n	height: 37px;\r\n	white-space: nowrap;\r\n}\r\n\r\n#charcreate_v4 .hstyle {\r\n	display: none;\r\n}\r\n#charcreate_v4 .hstyle_button {\r\n	position: absolute;\r\n	width: 36px;\r\n	height: 37px;\r\n}\r\n#charcreate_v4 .hair-styles {\r\n	position: relative; /* Make the container a positioning context */\r\n	width: 100px; /* Adjust the width as needed */\r\n	height: 100px; /* Adjust the height as needed */\r\n}\r\n#charcreate_v4 .hair-style {\r\n	position: absolute;\r\n	height: 225px;\r\n	top: 12px;\r\n	left: -2px;\r\n	display: none;\r\n}\r\n\r\n#charcreate_v4 .hair_color_title {\r\n	position: relative;\r\n	height: 20px;\r\n	width: 60px;\r\n	top: 230px;\r\n	left: 10px;\r\n}\r\n\r\n#charcreate_v4 .hair_colors {\r\n	position: absolute;\r\n	top: 265px;\r\n	left: 15px;\r\n}\r\n#charcreate_v4 .haircolor_row {\r\n	position: relative;\r\n	display: flex;\r\n}\r\n#charcreate_v4 .colorCol {\r\n	position: relative;\r\n	width: 22px;\r\n	height: 22px;\r\n	white-space: nowrap;\r\n	margin: 2px 2px;\r\n}\r\n#charcreate_v4 .hcolor {\r\n	display: none;\r\n}\r\n#charcreate_v4 .hcolor_button {\r\n	position: absolute;\r\n	width: 22px;\r\n	height: 22px;\r\n}\r\n\r\n#charcreate_v4 .btns {\r\n	position: absolute;\r\n	bottom: 4px;\r\n	width: 100%;\r\n	height: 20px;\r\n}\r\n#charcreate_v4 .btn {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#charcreate_v4 .make {\r\n	right: 25px;\r\n	top: -20px;\r\n	height: 27px;\r\n	width: 152px;\r\n}\r\n#charcreate_v4 .cancel {\r\n	right: -15px;\r\n	top: -389px;\r\n}\r\n#charcreate_v4 .return {\r\n	width: 152px;\r\n	height: 27px;\r\n	top: -20px;\r\n	left: 25px;\r\n}\r\n";
+	CharCreatev4_default$1 = ":host {\r\n	width: 794px;\r\n	height: 422px;\r\n}\r\n\r\n#charcreate_v4 {\r\n	position: absolute;\r\n	width: 794px;\r\n	height: 422px;\r\n}\r\n\r\n#charcreate_v4 .title {\r\n	position: absolute;\r\n	left: 45px;\r\n	top: 15px;\r\n	height: 20px;\r\n	width: 200px;\r\n}\r\n\r\n#charcreate_v4 .human::before,\r\n#charcreate_v4 .doram::before,\r\n#charcreate_v4 .human::after,\r\n#charcreate_v4 .doram::after {\r\n	content: '';\r\n	display: table;\r\n}\r\n#charcreate_v4 .human::after,\r\n#charcreate_v4 .doram::after {\r\n	clear: both;\r\n}\r\n#charcreate_v4 .race {\r\n	display: none;\r\n}\r\n\r\n/** Human Race **/\r\n#charcreate_v4 .human_label {\r\n	position: absolute;\r\n	width: 370px;\r\n	height: 170px;\r\n	top: 35px;\r\n	left: 20px;\r\n	outline: none;\r\n	background-repeat: no-repeat;\r\n}\r\n#charcreate_v4 .human_title {\r\n	position: absolute;\r\n	color: white;\r\n	top: 22px;\r\n	left: 45px;\r\n	height: 20px;\r\n	width: 50px;\r\n}\r\n#charcreate_v4 .human_desc {\r\n	position: relative;\r\n	top: 22px;\r\n	left: 110px;\r\n	height: 60px;\r\n	width: 220px;\r\n}\r\n/** Human Chargen **/\r\n#charcreate_v4 .human .chargen canvas {\r\n	position: absolute;\r\n	top: 40px;\r\n	left: 25px;\r\n}\r\n\r\n/** Doram Race **/\r\n#charcreate_v4 .doram_label {\r\n	position: absolute;\r\n	width: 370px;\r\n	height: 170px;\r\n	top: 210px;\r\n	left: 20px;\r\n	outline: none;\r\n	background-repeat: no-repeat;\r\n}\r\n#charcreate_v4 .doram_title {\r\n	position: absolute;\r\n	color: white;\r\n	top: 22px;\r\n	left: 45px;\r\n	height: 20px;\r\n	width: 50px;\r\n}\r\n#charcreate_v4 .doram_desc {\r\n	position: relative;\r\n	top: 22px;\r\n	left: 110px;\r\n	height: 60px;\r\n	width: 220px;\r\n}\r\n/** Doram Chargen **/\r\n#charcreate_v4 .doram .chargen_doram canvas {\r\n	position: absolute;\r\n	top: 40px;\r\n	left: 25px;\r\n}\r\n\r\n/* Style */\r\n#charcreate_v4 #style {\r\n	position: relative;\r\n	left: 395px;\r\n	top: 30px;\r\n	width: 200px;\r\n	height: 270px;\r\n}\r\n#charcreate_v4 .gender_button {\r\n	display: none;\r\n}\r\n\r\n#charcreate_v4 #style .gender {\r\n	position: absolute;\r\n	top: 25px;\r\n	left: 40px;\r\n	height: 26px;\r\n	width: 130px;\r\n}\r\n#charcreate_v4 #male_container {\r\n	position: relative;\r\n	height: 25px;\r\n	width: 62px;\r\n	white-space: nowrap;\r\n}\r\n#charcreate_v4 #female_container {\r\n	position: relative;\r\n	left: 61px;\r\n	top: -25px;\r\n	height: 25px;\r\n	width: 62px;\r\n	white-space: nowrap;\r\n}\r\n\r\n#charcreate_v4 #style .male_button {\r\n	position: absolute;\r\n	height: 25px;\r\n	width: 62px;\r\n}\r\n#charcreate_v4 #style .female_button {\r\n	position: absolute;\r\n	height: 25px;\r\n	width: 62px;\r\n}\r\n\r\n/** Style Model **/\r\n#charcreate_v4 .model {\r\n	position: relative;\r\n	top: 115px;\r\n	left: 55px;\r\n	width: 100px;\r\n}\r\n#charcreate_v4 .model canvas {\r\n	position: relative;\r\n	top: -5px;\r\n	left: 17px;\r\n}\r\n\r\n/** Buttons **/\r\n#charcreate_v4 #style .rot_left {\r\n	position: relative;\r\n	top: 40px;\r\n	left: 30px;\r\n	height: 23px;\r\n	width: 22px;\r\n}\r\n#charcreate_v4 #style .rot_right {\r\n	position: relative;\r\n	top: 40px;\r\n	left: 130px;\r\n	height: 23px;\r\n	width: 22px;\r\n}\r\n\r\n/** Char Name **/\r\n#charcreate_v4 #char_name {\r\n	position: relative;\r\n	height: 20px;\r\n	width: 140px;\r\n	top: 115px;\r\n	left: -20px;\r\n	border-width: 0px;\r\n}\r\n\r\n/** Hair Settings **/\r\n#charcreate_v4 #hair_setting {\r\n	position: absolute;\r\n	top: 35px;\r\n	left: 600px;\r\n	height: 380px;\r\n	width: 185px;\r\n}\r\n\r\n#charcreate_v4 .hair_style_title {\r\n	position: relative;\r\n	height: 15px;\r\n	width: 60px;\r\n	top: 10px;\r\n	left: 10px;\r\n}\r\n\r\n#charcreate_v4 .hairstyle_row {\r\n	position: relative;\r\n	display: flex;\r\n	top: 10px;\r\n	left: 10px;\r\n}\r\n#charcreate_v4 .styleCol {\r\n	position: relative;\r\n	width: 36px;\r\n	height: 37px;\r\n	white-space: nowrap;\r\n}\r\n\r\n#charcreate_v4 .hstyle {\r\n	display: none;\r\n}\r\n#charcreate_v4 .hstyle_button {\r\n	position: absolute;\r\n	width: 36px;\r\n	height: 37px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#charcreate_v4 .hair-styles {\r\n	position: relative;\r\n	width: 100px;\r\n	height: 100px;\r\n}\r\n#charcreate_v4 .hair-style {\r\n	position: absolute;\r\n	height: 225px;\r\n	top: 12px;\r\n	left: -2px;\r\n	display: none;\r\n}\r\n\r\n#charcreate_v4 .hair_color_title {\r\n	position: relative;\r\n	height: 20px;\r\n	width: 60px;\r\n	top: 230px;\r\n	left: 10px;\r\n}\r\n\r\n#charcreate_v4 .hair_colors {\r\n	position: absolute;\r\n	top: 265px;\r\n	left: 15px;\r\n}\r\n#charcreate_v4 .haircolor_row {\r\n	position: relative;\r\n	display: flex;\r\n}\r\n#charcreate_v4 .colorCol {\r\n	position: relative;\r\n	width: 22px;\r\n	height: 22px;\r\n	white-space: nowrap;\r\n	margin: 2px 2px;\r\n}\r\n#charcreate_v4 .hcolor {\r\n	display: none;\r\n}\r\n#charcreate_v4 .hcolor_button {\r\n	position: absolute;\r\n	width: 22px;\r\n	height: 22px;\r\n}\r\n\r\n#charcreate_v4 .btns {\r\n	position: absolute;\r\n	bottom: 4px;\r\n	width: 100%;\r\n	height: 20px;\r\n}\r\n#charcreate_v4 .btn {\r\n	position: absolute;\r\n	width: 42px;\r\n	height: 20px;\r\n}\r\n#charcreate_v4 .make {\r\n	right: 25px;\r\n	top: -20px;\r\n	height: 27px;\r\n	width: 152px;\r\n}\r\n#charcreate_v4 .cancel {\r\n	right: -15px;\r\n	top: -389px;\r\n}\r\n#charcreate_v4 .return {\r\n	width: 152px;\r\n	height: 27px;\r\n	top: -20px;\r\n	left: 25px;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/CharCreate/CharCreatev4/CharCreatev4.js
 /**
+* Helper to get shadow root
+*/
+function _getRoot() {
+	return CharCreatev4._shadow || CharCreatev4._host;
+}
+/**
 * Update model hairstyle
 */
-function updateHStyle(event) {
+function updateHStyle(target) {
+	const root = _getRoot();
 	const type = "head";
-	const value = parseInt(CharCreatev4.ui.find(event.currentTarget).attr("for"));
+	const value = parseInt(target.getAttribute("for"));
 	_prevhead = _model.entity.head;
-	Client.loadFile(DB.INTERFACE_PATH + "make_character_ver2/bt_hairstyle_normal.bmp", function(dataURI) {
-		CharCreatev4.ui.find(".style" + _prevhead).css("backgroundImage", "url(" + dataURI + ")");
+	Client.loadFile(`${DB.INTERFACE_PATH}make_character_ver2/bt_hairstyle_normal.bmp`, (dataURI) => {
+		const el = root.querySelector(`.style${_prevhead}`);
+		if (el) el.style.backgroundImage = `url(${dataURI})`;
 	});
 	_curhead = value;
 	updateCharacter(type, value);
@@ -337715,12 +338159,14 @@ function updateHStyle(event) {
 /**
 * Update model haircolor
 */
-function updateHColor(event) {
+function updateHColor(target) {
+	const root = _getRoot();
 	const type = "headpalette";
-	const value = parseInt(CharCreatev4.ui.find(event.currentTarget).attr("for"));
+	const value = parseInt(target.getAttribute("for"));
 	_prevcolor = _model.entity.headpalette;
-	Client.loadFile(DB.INTERFACE_PATH + "make_character_ver2/color0" + (parseInt(_prevcolor) + 1) + "_off.bmp", function(dataURI) {
-		CharCreatev4.ui.find(".cstyle0" + _prevcolor).css("backgroundImage", "url(" + dataURI + ")");
+	Client.loadFile(`${DB.INTERFACE_PATH}make_character_ver2/color0${parseInt(_prevcolor) + 1}_off.bmp`, (dataURI) => {
+		const el = root.querySelector(`.cstyle0${_prevcolor}`);
+		if (el) el.style.backgroundImage = `url(${dataURI})`;
 	});
 	_curcolor = value;
 	updateCharacter(type, value);
@@ -337729,29 +338175,31 @@ function updateHColor(event) {
 * Update model race
 */
 function updateRace() {
-	const select = CharCreatev4.ui.find(".race").filter(":checked");
+	const root = _getRoot();
+	const select = root.querySelector(".race:checked");
 	const type = "race";
 	let value = 0;
-	if (select[0].id === "human_race") {
-		Client.loadFile(DB.INTERFACE_PATH + "make_character_ver2/img_human_on.bmp", function(dataURI) {
-			CharCreatev4.ui.find(".human_label").css("backgroundImage", "url(" + dataURI + ")");
+	if (select && select.id === "human_race") {
+		Client.loadFile(`${DB.INTERFACE_PATH}make_character_ver2/img_human_on.bmp`, (dataURI) => {
+			root.querySelector(".human_label").style.backgroundImage = `url(${dataURI})`;
 		});
-		Client.loadFile(DB.INTERFACE_PATH + "make_character_ver2/img_doram_off.bmp", function(dataURI) {
-			CharCreatev4.ui.find(".doram_label").css("backgroundImage", "url(" + dataURI + ")");
+		Client.loadFile(`${DB.INTERFACE_PATH}make_character_ver2/img_doram_off.bmp`, (dataURI) => {
+			root.querySelector(".doram_label").style.backgroundImage = `url(${dataURI})`;
 		});
 		value = 0;
 	}
-	if (select[0].id === "doram_race") {
-		Client.loadFile(DB.INTERFACE_PATH + "make_character_ver2/img_human_off.bmp", function(dataURI) {
-			CharCreatev4.ui.find(".human_label").css("backgroundImage", "url(" + dataURI + ")");
+	if (select && select.id === "doram_race") {
+		Client.loadFile(`${DB.INTERFACE_PATH}make_character_ver2/img_human_off.bmp`, (dataURI) => {
+			root.querySelector(".human_label").style.backgroundImage = `url(${dataURI})`;
 		});
-		Client.loadFile(DB.INTERFACE_PATH + "make_character_ver2/img_doram_on.bmp", function(dataURI) {
-			CharCreatev4.ui.find(".doram_label").css("backgroundImage", "url(" + dataURI + ")");
+		Client.loadFile(`${DB.INTERFACE_PATH}make_character_ver2/img_doram_on.bmp`, (dataURI) => {
+			root.querySelector(".doram_label").style.backgroundImage = `url(${dataURI})`;
 		});
 		value = 4218;
 	}
-	for (let i = 1; i <= 24; i++) Client.loadFile(DB.INTERFACE_PATH + "make_character_ver2/bt_hairstyle_normal.bmp", function(dataURI) {
-		CharCreatev4.ui.find(".style" + i).css("backgroundImage", "url(" + dataURI + ")");
+	for (let i = 1; i <= 24; i++) Client.loadFile(`${DB.INTERFACE_PATH}make_character_ver2/bt_hairstyle_normal.bmp`, (dataURI) => {
+		const el = root.querySelector(`.style${i}`);
+		if (el) el.style.backgroundImage = `url(${dataURI})`;
 	});
 	_prevhead = 1;
 	_curhead = 1;
@@ -337765,12 +338213,13 @@ function updateRace() {
 * @param {number} value
 */
 function updateCharacterGeneric(type, value) {
-	return function(event) {
+	return () => {
 		if (type === "gender") updateHstyleList(type, value);
 		updateCharacter(type, value);
 	};
 }
 function updateHstyleList(type, value) {
+	const root = _getRoot();
 	switch (type) {
 		case "gender":
 			if (value === 1) _gender = "male";
@@ -337781,39 +338230,50 @@ function updateHstyleList(type, value) {
 			else _race = "doram";
 			break;
 	}
-	Client.loadFile(DB.INTERFACE_PATH + "make_character_ver2/bt_male_off.bmp", function(dataURI) {
-		CharCreatev4.ui.find("#male_container").css("backgroundImage", "url(" + dataURI + ")");
+	Client.loadFile(`${DB.INTERFACE_PATH}make_character_ver2/bt_male_off.bmp`, (dataURI) => {
+		root.querySelector("#male_container").style.backgroundImage = `url(${dataURI})`;
 	});
-	Client.loadFile(DB.INTERFACE_PATH + "make_character_ver2/bt_female_off.bmp", function(dataURI) {
-		CharCreatev4.ui.find("#female_container").css("backgroundImage", "url(" + dataURI + ")");
+	Client.loadFile(`${DB.INTERFACE_PATH}make_character_ver2/bt_female_off.bmp`, (dataURI) => {
+		root.querySelector("#female_container").style.backgroundImage = `url(${dataURI})`;
 	});
-	Client.loadFile(DB.INTERFACE_PATH + "make_character_ver2/bt_" + _gender + "_on.bmp", function(dataURI) {
-		CharCreatev4.ui.find("#" + _gender + "_container").css("backgroundImage", "url(" + dataURI + ")");
+	Client.loadFile(`${DB.INTERFACE_PATH}make_character_ver2/bt_${_gender}_on.bmp`, (dataURI) => {
+		root.querySelector(`#${_gender}_container`).style.backgroundImage = `url(${dataURI})`;
 	});
-	CharCreatev4.ui.find(".hair-style").css("display", "none");
-	CharCreatev4.ui.find("#" + _race + "_" + _gender).css("display", "block");
+	root.querySelectorAll(".hair-style").forEach((el) => {
+		el.style.display = "none";
+	});
+	const hairStyleEl = root.querySelector(`#${_race}_${_gender}`);
+	if (hairStyleEl) hairStyleEl.style.display = "block";
 }
 /**
 * Send back informations to send the packet
 */
 function create() {
-	const ui = CharCreatev4.ui;
-	CharCreatev4.onCharCreationRequest(ui.find("#char_name").val(), 1, 1, 1, 1, 1, 1, _model.entity.head, _model.entity.headpalette, _model.entity.job, _model.entity.sex);
+	const root = _getRoot();
+	CharCreatev4.onCharCreationRequest(root.querySelector("#char_name").value, 1, 1, 1, 1, 1, 1, _model.entity.head, _model.entity.headpalette, _model.entity.job, _model.entity.sex);
 }
 function cleanup() {
+	const root = _getRoot();
 	_race = "human";
 	_gender = "male";
 	_prevhead = 1;
 	_curhead = 1;
 	_prevcolor = 0;
 	_curcolor = 0;
-	CharCreatev4.ui.find("#human_race").prop("checked", true);
-	CharCreatev4.ui.find("#male").prop("checked", true);
-	CharCreatev4.ui.find(".hstyle").prop("checked", false);
-	CharCreatev4.ui.find("#1_human_male").prop("checked", true);
-	CharCreatev4.ui.find("#0_color").prop("checked", true);
-	for (let i = 0; i <= 8; i++) Client.loadFile(DB.INTERFACE_PATH + "make_character_ver2/color0" + (i + 1) + "_off.bmp", function(dataURI) {
-		CharCreatev4.ui.find(".cstyle0" + i).css("backgroundImage", "url(" + dataURI + ")");
+	const humanRace = root.querySelector("#human_race");
+	if (humanRace) humanRace.checked = true;
+	const maleInput = root.querySelector("#male");
+	if (maleInput) maleInput.checked = true;
+	root.querySelectorAll(".hstyle").forEach((el) => {
+		el.checked = false;
+	});
+	const defaultHstyle = root.querySelector("#1_human_male");
+	if (defaultHstyle) defaultHstyle.checked = true;
+	const defaultColor = root.querySelector("#0_color");
+	if (defaultColor) defaultColor.checked = true;
+	for (let i = 0; i <= 8; i++) Client.loadFile(`${DB.INTERFACE_PATH}make_character_ver2/color0${i + 1}_off.bmp`, (dataURI) => {
+		const el = root.querySelector(`.cstyle0${i}`);
+		if (el) el.style.backgroundImage = `url(${dataURI})`;
 	});
 	updateCharacter("default", 0);
 }
@@ -337840,13 +338300,8 @@ function updateCharacter(type, increment) {
 			_model.entity.head = 1;
 			break;
 		case "direction":
-			if (increment === 0) {
-				const dir = _model.entity.direction + 1;
-				_model.entity.direction = dir;
-			} else {
-				const dir = _model.entity.direction - 1;
-				_model.entity.direction = dir;
-			}
+			if (increment === 0) _model.entity.direction = _model.entity.direction + 1;
+			else _model.entity.direction = _model.entity.direction - 1;
 			break;
 		case "head":
 			_prevhead = _model.entity.head;
@@ -337867,6 +338322,7 @@ function updateCharacter(type, increment) {
 * Rendering the Character
 */
 function render(tick) {
+	const root = _getRoot();
 	if (_race === "human") {
 		if (_chargen.tick + 500 < tick) {
 			_chargen.entity.set({
@@ -337894,21 +338350,24 @@ function render(tick) {
 	SpriteRenderer.bind2DContext(_model.ctx, 32, 115);
 	_model.ctx.clearRect(0, 0, _model.ctx.canvas.width, _model.ctx.canvas.height);
 	_model.entity.renderEntity();
-	CharCreatev4.ui.find("#char_name").focus();
-	Client.loadFile(DB.INTERFACE_PATH + "make_character_ver2/img_" + _race + "_on.bmp", function(dataURI) {
-		CharCreatev4.ui.find("." + _race + "_label").css("backgroundImage", "url(" + dataURI + ")");
+	root.querySelector("#char_name").focus();
+	Client.loadFile(`${DB.INTERFACE_PATH}make_character_ver2/img_${_race}_on.bmp`, (dataURI) => {
+		root.querySelector(`.${_race}_label`).style.backgroundImage = `url(${dataURI})`;
 	});
-	Client.loadFile(DB.INTERFACE_PATH + "make_character_ver2/bt_" + _gender + "_on.bmp", function(dataURI) {
-		CharCreatev4.ui.find("#" + _gender + "_container").css("backgroundImage", "url(" + dataURI + ")");
+	Client.loadFile(`${DB.INTERFACE_PATH}make_character_ver2/bt_${_gender}_on.bmp`, (dataURI) => {
+		root.querySelector(`#${_gender}_container`).style.backgroundImage = `url(${dataURI})`;
 	});
-	Client.loadFile(DB.INTERFACE_PATH + "make_character_ver2/color0" + (parseInt(_curcolor) + 1) + "_on.bmp", function(dataURI) {
-		CharCreatev4.ui.find(".cstyle0" + _curcolor).css("backgroundImage", "url(" + dataURI + ")");
+	Client.loadFile(`${DB.INTERFACE_PATH}make_character_ver2/color0${parseInt(_curcolor) + 1}_on.bmp`, (dataURI) => {
+		const el = root.querySelector(`.cstyle0${_curcolor}`);
+		if (el) el.style.backgroundImage = `url(${dataURI})`;
 	});
-	Client.loadFile(DB.INTERFACE_PATH + "make_character_ver2/bt_hairstyle_normal.bmp", function(dataURI) {
-		CharCreatev4.ui.find(".style" + _prevhead).css("backgroundImage", "url(" + dataURI + ")");
+	Client.loadFile(`${DB.INTERFACE_PATH}make_character_ver2/bt_hairstyle_normal.bmp`, (dataURI) => {
+		const el = root.querySelector(`.style${_prevhead}`);
+		if (el) el.style.backgroundImage = `url(${dataURI})`;
 	});
-	Client.loadFile(DB.INTERFACE_PATH + "make_character_ver2/bt_hairstyle_select.bmp", function(dataURI) {
-		CharCreatev4.ui.find(".style" + _curhead).css("backgroundImage", "url(" + dataURI + ")");
+	Client.loadFile(`${DB.INTERFACE_PATH}make_character_ver2/bt_hairstyle_select.bmp`, (dataURI) => {
+		const el = root.querySelector(`.style${_curhead}`);
+		if (el) el.style.backgroundImage = `url(${dataURI})`;
 	});
 }
 var CharCreatev4, _accountSex, _race, _gender, _prevhead, _curhead, _prevcolor, _curcolor, _chargen, _doram, _model, CharCreatev4_default;
@@ -337919,11 +338378,13 @@ var init_CharCreatev4 = __esmMin((() => {
 	init_Entity$1();
 	init_SpriteRenderer();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
+	init_Elements();
 	init_CharCreatev4$2();
 	init_CharCreatev4$1();
 	init_Client();
-	CharCreatev4 = new UIComponent("CharCreatev4", CharCreatev4_default$2, CharCreatev4_default$1);
+	CharCreatev4 = new GUIComponent("CharCreatev4", CharCreatev4_default$1);
+	CharCreatev4.render = () => CharCreatev4_default$2;
 	_accountSex = 0;
 	_race = "human";
 	_gender = "male";
@@ -337953,13 +338414,10 @@ var init_CharCreatev4 = __esmMin((() => {
 	* Initialize UI
 	*/
 	CharCreatev4.init = function init() {
-		_chargen.ctx = this.ui.find("#human")[0].getContext("2d");
-		_doram.ctx = this.ui.find("#doram")[0].getContext("2d");
-		_model.ctx = this.ui.find("#style_model")[0].getContext("2d");
-		this.ui.css({
-			top: (Renderer.height - 342) / 2,
-			left: (Renderer.width - 576) / 2
-		});
+		const root = _getRoot();
+		_chargen.ctx = root.querySelector("#human").getContext("2d");
+		_doram.ctx = root.querySelector("#doram").getContext("2d");
+		_model.ctx = root.querySelector("#style_model").getContext("2d");
 		this.draggable();
 		_race = "human";
 		_gender = "male";
@@ -337967,37 +338425,47 @@ var init_CharCreatev4 = __esmMin((() => {
 		_curhead = 1;
 		_prevcolor = 0;
 		_curcolor = 0;
-		const radioInputs = document.querySelectorAll("input[type=\"radio\"]");
-		const labels = document.querySelectorAll("label");
+		const radioInputs = root.querySelectorAll("input[type=\"radio\"]");
+		const labels = root.querySelectorAll("label");
 		radioInputs.forEach((input) => {
 			input.classList.add("event_add_cursor");
 		});
 		labels.forEach((label) => {
 			label.classList.add("event_add_cursor");
 		});
-		this.ui.find(".gender .male_button").mousedown(updateCharacterGeneric("gender", 1));
-		this.ui.find(".gender .female_button").mousedown(updateCharacterGeneric("gender", 0));
-		this.ui.find("#style .rot_left").mousedown(updateCharacterGeneric("direction", 0));
-		this.ui.find("#style .rot_right").mousedown(updateCharacterGeneric("direction", 1));
-		this.ui.find(".race").click(updateRace);
-		this.ui.on("click", ".hstyle_button", updateHStyle);
-		this.ui.on("click", ".hcolor_button", updateHColor);
-		this.ui.find("#char_name").mousedown(function(event) {
-			this.focus();
+		root.querySelector(".gender .male_button").addEventListener("mousedown", updateCharacterGeneric("gender", 1));
+		root.querySelector(".gender .female_button").addEventListener("mousedown", updateCharacterGeneric("gender", 0));
+		root.querySelector("#style .rot_left").addEventListener("mousedown", updateCharacterGeneric("direction", 0));
+		root.querySelector("#style .rot_right").addEventListener("mousedown", updateCharacterGeneric("direction", 1));
+		root.querySelectorAll(".race").forEach((el) => {
+			el.addEventListener("click", updateRace);
+		});
+		root.addEventListener("click", (event) => {
+			const hstyleBtn = event.target.closest(".hstyle_button");
+			if (hstyleBtn) {
+				updateHStyle(hstyleBtn);
+				return;
+			}
+			const hcolorBtn = event.target.closest(".hcolor_button");
+			if (hcolorBtn) updateHColor(hcolorBtn);
+		});
+		const charNameInput = root.querySelector("#char_name");
+		charNameInput.addEventListener("mousedown", (event) => {
+			charNameInput.focus();
 			event.stopImmediatePropagation();
 		});
-		this.ui.find(".cancel").click(cancel);
-		this.ui.find(".return").click(cancel);
-		this.ui.find(".make").click(create);
-		this.ui.find(".title").text(DB.getMessage(3355));
-		this.ui.find(".human_title").text(DB.getMessage(3016));
-		this.ui.find(".human_desc").text(DB.getMessage(3020));
-		this.ui.find(".doram_title").text(DB.getMessage(3018));
-		this.ui.find(".doram_desc").text(DB.getMessage(3021));
-		this.ui.find(".hair_style_title").text(DB.getMessage(3346));
-		this.ui.find(".hair_color_title").text(DB.getMessage(3347));
-		this.ui.find(".return").text(DB.getMessage(3351));
-		this.ui.find(".make").text(DB.getMessage(3345));
+		root.querySelector(".cancel").addEventListener("click", cancel);
+		root.querySelector(".return").addEventListener("click", cancel);
+		root.querySelector(".make").addEventListener("click", create);
+		root.querySelector(".title").textContent = DB.getMessage(3355);
+		root.querySelector(".human_title").textContent = DB.getMessage(3016);
+		root.querySelector(".human_desc").textContent = DB.getMessage(3020);
+		root.querySelector(".doram_title").textContent = DB.getMessage(3018);
+		root.querySelector(".doram_desc").textContent = DB.getMessage(3021);
+		root.querySelector(".hair_style_title").textContent = DB.getMessage(3346);
+		root.querySelector(".hair_color_title").textContent = DB.getMessage(3347);
+		root.querySelector(".return").textContent = DB.getMessage(3351);
+		root.querySelector(".make").textContent = DB.getMessage(3345);
 	};
 	/**
 	* Setter for AccountSex
@@ -338011,6 +338479,8 @@ var init_CharCreatev4 = __esmMin((() => {
 	* Once add to HTML, start rendering
 	*/
 	CharCreatev4.onAppend = function onAppend() {
+		this._host.style.top = `${(Renderer.height - 342) / 2}px`;
+		this._host.style.left = `${(Renderer.width - 576) / 2}px`;
 		_chargen.render = true;
 		_chargen.entity.set({
 			sex: _accountSex,
@@ -338036,7 +338506,9 @@ var init_CharCreatev4 = __esmMin((() => {
 			action: 0,
 			direction: 4
 		});
-		this.ui.find("#char_name").val("").focus();
+		const charNameInput = _getRoot().querySelector("#char_name");
+		charNameInput.value = "";
+		charNameInput.focus();
 		_race = "human";
 		_gender = "male";
 		updateRace();
@@ -338057,7 +338529,7 @@ var init_CharCreatev4 = __esmMin((() => {
 	* @return {boolean}
 	*/
 	CharCreatev4.onKeyDown = function onKeyDown(event) {
-		if ((event.which === KEYS.ESCAPE || event.key === "Escape") && this.ui.is(":visible")) {
+		if ((event.which === KEYS.ESCAPE || event.key === "Escape") && this._host.style.display !== "none") {
 			event.stopImmediatePropagation();
 			cancel();
 			return false;
