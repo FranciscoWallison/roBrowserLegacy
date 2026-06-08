@@ -153067,7 +153067,7 @@ var init_MakeReadBook$2 = __esmMin((() => {
 //#region src/UI/Components/MakeReadBook/MakeReadBook.css?raw
 var MakeReadBook_default$1;
 var init_MakeReadBook$1 = __esmMin((() => {
-	MakeReadBook_default$1 = "#MakeReadBook {\r\n	width: 555px;\r\n	height: 455px;\r\n	position: absolute;\r\n}\r\n\r\n#MakeReadBook .titlebar {\r\n	width: 100%;\r\n	height: 17px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 3px 3px 0px 0px;\r\n}\r\n#MakeReadBook .titlebar .base {\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n	vertical-align: middle;\r\n}\r\n#MakeReadBook .titlebar .text {\r\n	text-shadow: 1px 1px white;\r\n	vertical-align: -2px;\r\n	white-space: nowrap;\r\n	/* chrome bug */\r\n	display: inline-block;\r\n	height: 13px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n\r\n#MakeReadBook .titlebar .title {\r\n	margin-left: 3px;\r\n	text-align: center;\r\n}\r\n\r\n#MakeReadBook #textBook {\r\n	margin: 0;\r\n	margin-top: -25px;\r\n	width: 500px;\r\n	white-space: break-spaces;\r\n}\r\n\r\n#MakeReadBook .panel {\r\n	height: 415px;\r\n	display: block;\r\n}\r\n#MakeReadBook .body {\r\n	flex: 1;\r\n	background-repeat: repeat-x;\r\n	border-radius: 0px 0px 0px 5px;\r\n	padding: 0px 0px 0px 30px;\r\n	white-space: pre-wrap;\r\n}\r\n#MakeReadBook .head {\r\n	display: flex;\r\n	text-align: center;\r\n	flex: 1;\r\n	background-repeat: repeat-x;\r\n	border-radius: 0px 0px 0px 5px;\r\n	width: 535px;\r\n	height: 25px;\r\n}\r\n#MakeReadBook .footer {\r\n	flex: 1;\r\n	background-repeat: repeat-x;\r\n	border-radius: 0px 0px 0px 5px;\r\n	position: absolute;\r\n	bottom: 4px;\r\n	width: 555px;\r\n	height: 25px;\r\n}\r\n#MakeReadBook .event_book {\r\n	flex: 1;\r\n}\r\n#MakeReadBook .clone_book {\r\n	position: absolute;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n	border: none;\r\n	right: 4px;\r\n	top: 10%;\r\n}\r\n#MakeReadBook .highlighter {\r\n	margin-left: 10px;\r\n	margin-top: 5px;\r\n}\r\n#MakeReadBook #highlighter {\r\n	text-align: left;\r\n}\r\n#MakeReadBook #next_previous {\r\n	text-align: right;\r\n	text-align: right;\r\n	margin-top: 5px;\r\n	margin-right: -10px;\r\n}\r\n\r\n#MakeReadBook .bookmark {\r\n	pointer-events: none;\r\n	position: absolute;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	background: rgba(0, 0, 0, 0.5);\r\n	color: white;\r\n	text-shadow: black 1px 1px;\r\n	top: 8px;\r\n	left: 11px;\r\n	text-align: center;\r\n	padding: 3px 4px 1px 4px;\r\n	display: none;\r\n}\r\n#MakeReadBook .previous {\r\n	pointer-events: none;\r\n	position: absolute;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	background: rgba(0, 0, 0, 0.5);\r\n	color: white;\r\n	text-shadow: black 1px 1px;\r\n	top: 6px;\r\n	right: 12px;\r\n	text-align: center;\r\n	padding: 3px 4px 1px 4px;\r\n	display: none;\r\n}\r\n#MakeReadBook .next {\r\n	pointer-events: none;\r\n	position: absolute;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	background: rgba(0, 0, 0, 0.5);\r\n	color: white;\r\n	text-shadow: black 1px 1px;\r\n	top: 6px;\r\n	right: -10px;\r\n	text-align: center;\r\n	padding: 3px 4px 1px 4px;\r\n	display: none;\r\n}\r\n\r\n/* resto */\r\n\r\n#MakeReadBook .alt_ {\r\n	border: none;\r\n	background-color: #e7e7e7;\r\n	width: 75%;\r\n	height: 15px;\r\n	margin-left: 5%;\r\n	margin-top: 5px;\r\n	padding-left: 5px;\r\n}\r\n#MakeReadBook .input_alt_focus {\r\n	background-color: rgb(205, 224, 255) !important;\r\n}\r\n";
+	MakeReadBook_default$1 = ":host {\r\n	width: 555px;\r\n	height: 455px;\r\n	top: 0px;\r\n	left: 0px;\r\n}\r\n\r\n#MakeReadBook {\r\n	position: absolute;\r\n	width: 555px;\r\n}\r\n\r\n#MakeReadBook .titlebar {\r\n	width: 100%;\r\n	height: 17px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 3px 3px 0px 0px;\r\n}\r\n#MakeReadBook .titlebar .text {\r\n	text-shadow: 1px 1px white;\r\n	vertical-align: -2px;\r\n	white-space: nowrap;\r\n	display: inline-block;\r\n	height: 13px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n\r\n#MakeReadBook .titlebar .title {\r\n	margin-left: 3px;\r\n	text-align: center;\r\n}\r\n\r\n#MakeReadBook #textBook {\r\n	margin: 0;\r\n	margin-top: -25px;\r\n	width: 500px;\r\n	white-space: break-spaces;\r\n}\r\n\r\n#MakeReadBook .panel {\r\n	height: 415px;\r\n	display: block;\r\n}\r\n#MakeReadBook .body {\r\n	flex: 1;\r\n	background-repeat: repeat-x;\r\n	border-radius: 0px 0px 0px 5px;\r\n	padding: 0px 0px 0px 30px;\r\n	white-space: pre-wrap;\r\n}\r\n#MakeReadBook .head {\r\n	display: flex;\r\n	text-align: center;\r\n	flex: 1;\r\n	background-repeat: repeat-x;\r\n	border-radius: 0px 0px 0px 5px;\r\n	width: 535px;\r\n	height: 25px;\r\n}\r\n#MakeReadBook .footer {\r\n	flex: 1;\r\n	background-repeat: repeat-x;\r\n	border-radius: 0px 0px 0px 5px;\r\n	position: absolute;\r\n	bottom: 4px;\r\n	width: 555px;\r\n	height: 25px;\r\n}\r\n#MakeReadBook .event_book {\r\n	flex: 1;\r\n}\r\n#MakeReadBook .clone_book {\r\n	position: absolute;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n	border: none;\r\n	right: 4px;\r\n	top: 10%;\r\n}\r\n#MakeReadBook .highlighter {\r\n	margin-left: 10px;\r\n	margin-top: 5px;\r\n}\r\n#MakeReadBook #highlighter {\r\n	text-align: left;\r\n}\r\n#MakeReadBook #next_previous {\r\n	text-align: right;\r\n	margin-top: 5px;\r\n	margin-right: -10px;\r\n}\r\n\r\n#MakeReadBook .bookmark {\r\n	pointer-events: none;\r\n	position: absolute;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	background: rgba(0, 0, 0, 0.5);\r\n	color: white;\r\n	text-shadow: black 1px 1px;\r\n	top: 8px;\r\n	left: 11px;\r\n	text-align: center;\r\n	padding: 3px 4px 1px 4px;\r\n	display: none;\r\n}\r\n#MakeReadBook .previous {\r\n	pointer-events: none;\r\n	position: absolute;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	background: rgba(0, 0, 0, 0.5);\r\n	color: white;\r\n	text-shadow: black 1px 1px;\r\n	top: 6px;\r\n	right: 12px;\r\n	text-align: center;\r\n	padding: 3px 4px 1px 4px;\r\n	display: none;\r\n}\r\n#MakeReadBook .next {\r\n	pointer-events: none;\r\n	position: absolute;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	background: rgba(0, 0, 0, 0.5);\r\n	color: white;\r\n	text-shadow: black 1px 1px;\r\n	top: 6px;\r\n	right: -10px;\r\n	text-align: center;\r\n	padding: 3px 4px 1px 4px;\r\n	display: none;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/Announce/Announce.html?raw
@@ -153083,7 +153083,7 @@ var init_Announce$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Announce/Announce.js
-function _getRoot$41() {
+function _getRoot$50() {
 	return Announce._shadow || Announce._host;
 }
 var Announce, _timer$2, _life$1, Announce_default;
@@ -153110,7 +153110,7 @@ var init_Announce = __esmMin((() => {
 	* Initialize component
 	*/
 	Announce.init = function init() {
-		const root = _getRoot$41();
+		const root = _getRoot$50();
 		this.canvas = root.querySelector("canvas");
 		this.ctx = this.canvas.getContext("2d");
 	};
@@ -153200,6 +153200,12 @@ var init_Announce = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/MakeReadBook/MakeReadBook.js
+/**
+* Helper to get shadow root
+*/
+function _getRoot$49() {
+	return MakeReadBook._shadow || MakeReadBook._host;
+}
 async function repeatedGreetingsLoop(book_information) {
 	const text1 = book_information.split("\n");
 	for (let i = 0; i < text1.length; i++) {
@@ -153243,21 +153249,29 @@ function cleanTextColor(text) {
 */
 function onClose$16(e) {
 	try {
-		e.stopImmediatePropagation();
-	} catch (error) {}
+		if (e) e.stopImmediatePropagation();
+	} catch (_error) {}
 	_BOOK_INFORMATION["book_open"] = false;
 	_BOOK_INFORMATION.save();
 	if (_preferences$71.show) MakeReadBook.onRemove();
 }
 function page() {
-	MakeReadBook.ui.find("#textBook").text("");
-	const textBody = MakeReadBook.ui.find("#textBook");
-	for (let i = _BOOK_INFORMATION["page"] * 1; i < _BOOK_INFORMATION["pagesize"] && i < (_BOOK_INFORMATION["page"] + 1) * 1; i++) textBody.text(CodepageManager.decodeString(_BOOK_INFORMATION["contents"][i]));
-	MakeReadBook.ui.find("#pageBook").text("(" + (_BOOK_INFORMATION["page"] + 1) + "/" + Math.ceil(_BOOK_INFORMATION["pagesize"] / 1) + ")");
+	const root = _getRoot$49();
+	const textBook = root.querySelector("#textBook");
+	if (textBook) textBook.innerHTML = "";
+	for (let i = _BOOK_INFORMATION["page"] * 1; i < _BOOK_INFORMATION["pagesize"] && i < (_BOOK_INFORMATION["page"] + 1) * 1; i++) if (textBook) {
+		const decoded = CodepageManager.decodeString(_BOOK_INFORMATION["contents"][i]);
+		textBook.innerHTML = DB.formatMsgToHtml(decoded);
+	}
+	const pageBook = root.querySelector("#pageBook");
+	if (pageBook) pageBook.textContent = `(${_BOOK_INFORMATION["page"] + 1}/${Math.ceil(_BOOK_INFORMATION["pagesize"] / 1)})`;
 }
 function adjustButtons$1() {
-	MakeReadBook.ui.find(".next_btn").prop("disabled", _BOOK_INFORMATION["pagesize"] <= 1 || _BOOK_INFORMATION["page"] > _BOOK_INFORMATION["pagesize"] / 1 - 1);
-	MakeReadBook.ui.find(".previous_btn").prop("disabled", _BOOK_INFORMATION["pagesize"] <= 1 || _BOOK_INFORMATION["page"] == 0);
+	const root = _getRoot$49();
+	const nextBtn = root.querySelector(".next_btn");
+	if (nextBtn) nextBtn.disabled = _BOOK_INFORMATION["pagesize"] <= 1 || _BOOK_INFORMATION["page"] > _BOOK_INFORMATION["pagesize"] / 1 - 1;
+	const prevBtn = root.querySelector(".previous_btn");
+	if (prevBtn) prevBtn.disabled = _BOOK_INFORMATION["pagesize"] <= 1 || _BOOK_INFORMATION["page"] == 0;
 }
 var sleepNow, MakeReadBook, _BOOK_INFORMATION, _preferences$71, MakeReadBook_default;
 var init_MakeReadBook = __esmMin((() => {
@@ -153265,7 +153279,8 @@ var init_MakeReadBook = __esmMin((() => {
 	init_Preferences$1();
 	init_Renderer();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
+	init_Elements();
 	init_MakeReadBook$2();
 	init_MakeReadBook$1();
 	init_Sprite();
@@ -153274,7 +153289,8 @@ var init_MakeReadBook = __esmMin((() => {
 	init_Announce();
 	init_ChatBox();
 	sleepNow = (delay) => new Promise((resolve) => setTimeout(resolve, delay));
-	MakeReadBook = new UIComponent("MakeReadBook", MakeReadBook_default$2, MakeReadBook_default$1);
+	MakeReadBook = new GUIComponent("MakeReadBook", MakeReadBook_default$1);
+	MakeReadBook.render = () => MakeReadBook_default$2;
 	_BOOK_INFORMATION = Preferences.get("_BOOK_INFORMATION", {
 		itid: 0,
 		title: "",
@@ -153302,9 +153318,11 @@ var init_MakeReadBook = __esmMin((() => {
 		magnet_right: false
 	}, 1);
 	MakeReadBook.startBook = function startBook(inforBook, item) {
-		_BOOK_INFORMATION["title"] = DB.getItemInfo(item.ITID).identifiedDisplayName;
-		const addColor = inforBook.substr(1, 7);
-		const lineValidtext = inforBook.substr(7).split("\n");
+		const it = DB.getItemInfo(item.ITID);
+		const bookText = inforBook instanceof Uint8Array ? Array.from(inforBook, (b) => String.fromCharCode(b)).join("") : inforBook;
+		_BOOK_INFORMATION["title"] = it.identifiedDisplayName;
+		const addColor = bookText.substr(1, 7);
+		const lineValidtext = bookText.substr(7).split("\n");
 		const defoutValue = 15;
 		let coutIndeNewText = 0;
 		let coutNewIndex = 0;
@@ -153336,62 +153354,76 @@ var init_MakeReadBook = __esmMin((() => {
 	};
 	MakeReadBook.openBook = function openBook() {
 		MakeReadBook.append();
-		this.ui.find(".panel").css("background-color", "#" + _BOOK_INFORMATION["color"]);
-		this.ui.find(".footer").css("background-color", "#" + _BOOK_INFORMATION["color"]);
-		this.ui.find("#titleBook").text(_BOOK_INFORMATION["title"]);
+		const root = _getRoot$49();
+		const panel = root.querySelector(".panel");
+		if (panel) panel.style.backgroundColor = `#${_BOOK_INFORMATION["color"]}`;
+		const footer = root.querySelector(".footer");
+		if (footer) footer.style.backgroundColor = `#${_BOOK_INFORMATION["color"]}`;
+		const titleBook = root.querySelector("#titleBook");
+		if (titleBook) titleBook.textContent = _BOOK_INFORMATION["title"];
 		Client.getFiles([
 			"data/sprite/book/Ã¥´Ý±â.spr",
 			"data/sprite/book/Ã¥°¥ÇÇ.spr",
 			"data/sprite/book/Ã¥¿ÞÂÊ.spr",
 			"data/sprite/book/Ã¥¿À¸¥ÂÊ.spr"
-		], function(spr_close, spr_highlighter, spr_previous, spr_next) {
+		], (spr_close, spr_highlighter, spr_previous, spr_next) => {
+			const innerRoot = _getRoot$49();
 			const canvas = new SPR(spr_close).getCanvasFromFrame(0);
 			canvas.className = "clone_book event_add_cursor";
-			MakeReadBook.ui.find(".footer").find("canvas").remove();
-			MakeReadBook.ui.find(".footer").append(canvas);
-			MakeReadBook.ui.find(".clone_book").click(onClose$16);
+			const footerEl = innerRoot.querySelector(".footer");
+			footerEl.querySelectorAll("canvas").forEach((c) => c.remove());
+			footerEl.appendChild(canvas);
+			canvas.addEventListener("click", onClose$16);
 			const canvas2 = new SPR(spr_highlighter).getCanvasFromFrame(0);
 			canvas2.className = "highlighter event_add_cursor";
-			MakeReadBook.ui.find("#highlighter").find("canvas").remove();
-			MakeReadBook.ui.find("#highlighter").append(canvas2);
-			const highlighter = MakeReadBook.ui.find(".highlighter");
-			highlighter.mouseover(function(e) {
+			const highlighterEl = innerRoot.querySelector("#highlighter");
+			highlighterEl.querySelectorAll("canvas").forEach((c) => c.remove());
+			highlighterEl.appendChild(canvas2);
+			canvas2.addEventListener("mouseover", (e) => {
 				e.stopImmediatePropagation();
-				MakeReadBook.ui.find(".bookmark").show();
-			}).mouseout(function(e) {
-				e.stopImmediatePropagation();
-				MakeReadBook.ui.find(".bookmark").hide();
+				const bookmark = innerRoot.querySelector(".bookmark");
+				if (bookmark) bookmark.style.display = "block";
 			});
-			highlighter.click(function(e) {
+			canvas2.addEventListener("mouseout", (e) => {
+				e.stopImmediatePropagation();
+				const bookmark = innerRoot.querySelector(".bookmark");
+				if (bookmark) bookmark.style.display = "none";
+			});
+			canvas2.addEventListener("click", (e) => {
 				e.stopImmediatePropagation();
 				_BOOK_INFORMATION["bookmark_activated"] = true;
 				_BOOK_INFORMATION["bookmark_activated_page"] = _BOOK_INFORMATION["page"];
 				_BOOK_INFORMATION.save();
 			});
-			MakeReadBook.ui.find("#next_previous").find("canvas").remove();
+			const nextPrevEl = innerRoot.querySelector("#next_previous");
+			nextPrevEl.querySelectorAll("canvas").forEach((c) => c.remove());
 			const canvas3 = new SPR(spr_previous).getCanvasFromFrame(0);
 			canvas3.className = "previous_btn event_add_cursor";
-			MakeReadBook.ui.find("#next_previous").append(canvas3);
-			const previous_btn = MakeReadBook.ui.find(".previous_btn");
-			previous_btn.mouseover(function(e) {
+			nextPrevEl.appendChild(canvas3);
+			canvas3.addEventListener("mouseover", (e) => {
 				e.stopImmediatePropagation();
-				MakeReadBook.ui.find(".previous").show();
-			}).mouseout(function(e) {
+				const prev = innerRoot.querySelector(".previous");
+				if (prev) prev.style.display = "block";
+			});
+			canvas3.addEventListener("mouseout", (e) => {
 				e.stopImmediatePropagation();
-				MakeReadBook.ui.find(".previous").hide();
+				const prev = innerRoot.querySelector(".previous");
+				if (prev) prev.style.display = "none";
 			});
 			const canvas4 = new SPR(spr_next).getCanvasFromFrame(0);
 			canvas4.className = "next_btn event_add_cursor";
-			MakeReadBook.ui.find("#next_previous").append(canvas4);
-			const next_btn = MakeReadBook.ui.find(".next_btn");
-			next_btn.mouseover(function(e) {
+			nextPrevEl.appendChild(canvas4);
+			canvas4.addEventListener("mouseover", (e) => {
 				e.stopImmediatePropagation();
-				MakeReadBook.ui.find(".next").show();
-			}).mouseout(function(e) {
-				e.stopImmediatePropagation();
-				MakeReadBook.ui.find(".next").hide();
+				const next = innerRoot.querySelector(".next");
+				if (next) next.style.display = "block";
 			});
-			next_btn.click(function(e) {
+			canvas4.addEventListener("mouseout", (e) => {
+				e.stopImmediatePropagation();
+				const next = innerRoot.querySelector(".next");
+				if (next) next.style.display = "none";
+			});
+			canvas4.addEventListener("click", (e) => {
 				e.stopImmediatePropagation();
 				if (_BOOK_INFORMATION["page"] < _BOOK_INFORMATION["pagesize"] / 1 - 1) {
 					_BOOK_INFORMATION["page"]++;
@@ -153400,7 +153432,7 @@ var init_MakeReadBook = __esmMin((() => {
 					_BOOK_INFORMATION.save();
 				}
 			});
-			previous_btn.click(function(e) {
+			canvas3.addEventListener("click", (e) => {
 				e.stopImmediatePropagation();
 				if (_BOOK_INFORMATION["page"] > 0) {
 					_BOOK_INFORMATION["page"]--;
@@ -153424,35 +153456,32 @@ var init_MakeReadBook = __esmMin((() => {
 	* Apply preferences once append to body
 	*/
 	MakeReadBook.onAppend = function OnAppend() {
-		this.ui.show();
-		this.ui.css({
-			top: Math.min(Math.max(0, _preferences$71.y), Renderer.height - this.ui.height()),
-			left: Math.min(Math.max(0, _preferences$71.x), Renderer.width - this.ui.width())
-		});
+		this._host.style.display = "";
+		this._host.style.top = `${Math.min(Math.max(0, _preferences$71.y), Renderer.height - 455)}px`;
+		this._host.style.left = `${Math.min(Math.max(0, _preferences$71.x), Renderer.width - 555)}px`;
 		_BOOK_INFORMATION["book_open"] = true;
 		_BOOK_INFORMATION.save();
-		_preferences$71.show = this.ui.is(":visible");
+		_preferences$71.show = true;
 		_preferences$71.save();
-		this.draggable(this.ui.find(".titlebar"));
+		const root = _getRoot$49();
+		this.draggable(root.querySelector(".titlebar"));
 	};
 	/**
 	* Remove MakeReadBook from window (and so clean up items)
 	*/
 	MakeReadBook.onRemove = function OnRemove() {
 		try {
-			if (_preferences$71.show) this.ui.hide();
-			_preferences$71.show = this.ui.is(":visible");
+			if (_preferences$71.show) this._host.style.display = "none";
+			_preferences$71.show = this._host.style.display !== "none";
 			_preferences$71.reduce = false;
-			_preferences$71.y = parseInt(this.ui.css("top"), 10);
-			_preferences$71.x = parseInt(this.ui.css("left"), 10);
-			_preferences$71.width = Math.floor((this.ui.width() - 25) / 32);
-			_preferences$71.height = Math.floor((this.ui.height() - 20) / 32);
+			_preferences$71.y = parseInt(this._host.style.top, 10) || 0;
+			_preferences$71.x = parseInt(this._host.style.left, 10) || 0;
 			_preferences$71.magnet_top = this.magnet.TOP;
 			_preferences$71.magnet_bottom = this.magnet.BOTTOM;
 			_preferences$71.magnet_left = this.magnet.LEFT;
 			_preferences$71.magnet_right = this.magnet.RIGHT;
 			_preferences$71.save();
-		} catch (error) {
+		} catch (_error) {
 			_preferences$71.show = false;
 			_preferences$71.save();
 		}
@@ -153466,10 +153495,8 @@ var init_MakeReadBook = __esmMin((() => {
 	MakeReadBook.resize = function Resize(width, height) {
 		width = Math.min(Math.max(width, 6), 9);
 		height = Math.min(Math.max(height, 2), 6);
-		this.ui.css({
-			width: 55 + width * 32,
-			height: 50 + height * 32
-		});
+		this._host.style.width = `${55 + width * 32}px`;
+		this._host.style.height = `${50 + height * 32}px`;
 	};
 	MakeReadBook_default = UIManager.addComponent(MakeReadBook);
 }));
@@ -154028,14 +154055,14 @@ var init_InputBox$1 = __esmMin((() => {
 /**
 * Helper to get shadow root
 */
-function _getRoot$40() {
+function _getRoot$48() {
 	return InputBox._shadow || InputBox._host;
 }
 /**
 * Validate input
 */
 function validate$1() {
-	const root = _getRoot$40();
+	const root = _getRoot$48();
 	const input = root.querySelector("input");
 	let text = input ? input.value : "";
 	if (!InputBox.isPersistent || text.length) {
@@ -154071,7 +154098,7 @@ var init_InputBox = __esmMin((() => {
 		this.draggable();
 		this._host.style.top = `${(Renderer.height - 120) / 1.5 - 49}px`;
 		this._host.style.left = `${(Renderer.width - 280) / 2 + 1}px`;
-		const root = _getRoot$40();
+		const root = _getRoot$48();
 		const btn = root.querySelector("ui-button");
 		if (btn) btn.addEventListener("click", () => validate$1());
 		const input = root.querySelector("input");
@@ -154092,7 +154119,7 @@ var init_InputBox = __esmMin((() => {
 	* Input Post-Render callback
 	*/
 	InputBox.onAppend = function onAppend() {
-		const input = _getRoot$40().querySelector("input");
+		const input = _getRoot$48().querySelector("input");
 		if (input) {
 			input.focus();
 			if (input.value) input.select();
@@ -154102,7 +154129,7 @@ var init_InputBox = __esmMin((() => {
 	* Remove data from UI
 	*/
 	InputBox.onRemove = function onRemove() {
-		const root = _getRoot$40();
+		const root = _getRoot$48();
 		const input = root.querySelector("input");
 		if (input) {
 			input.value = "";
@@ -154146,7 +154173,7 @@ var init_InputBox = __esmMin((() => {
 	*/
 	InputBox.setType = function setType(type, isPersistent, defaultVal, itemId = null) {
 		this.isPersistent = !!isPersistent;
-		const root = _getRoot$40();
+		const root = _getRoot$48();
 		const innerRoot = root.querySelector("#inputbox");
 		const textEl = root.querySelector(".text");
 		const input = root.querySelector("input");
@@ -155410,15 +155437,15 @@ var init_Storage$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/CartItems/CartItems.js
-function _getRoot$39() {
+function _getRoot$47() {
 	return CartItems._shadow || CartItems._host;
 }
 /**
 * Extend inventory window size
 */
 function onResize$15() {
-	const content = _getRoot$39().querySelector(".container .content");
-	const hideEl = _getRoot$39().querySelector(".hide");
+	const content = _getRoot$47().querySelector(".container .content");
+	const hideEl = _getRoot$47().querySelector(".hide");
 	const top = CartItems._host.offsetTop;
 	const left = CartItems._host.offsetLeft;
 	let lastWidth = 0;
@@ -155450,7 +155477,7 @@ function onResize$15() {
 * Hide/show inventory's content
 */
 function onToggleReduction$4() {
-	const panel = _getRoot$39().querySelector(".panel");
+	const panel = _getRoot$47().querySelector(".panel");
 	if (_realSize$5) {
 		if (panel) panel.style.display = "block";
 		CartItems._host.style.height = `${_realSize$5}px`;
@@ -155522,7 +155549,7 @@ function onItemOver$17(_e) {
 	if (!item) return;
 	let quantity = " ea";
 	if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR) && item.Options && item.Options.filter((Option) => Option.index !== 0).length > 0) quantity = " Quantity";
-	const root = _getRoot$39();
+	const root = _getRoot$47();
 	const overlay = root.querySelector(".overlay");
 	const rootEl = root.querySelector("#cartitems") || root;
 	const itemRect = this.getBoundingClientRect();
@@ -155540,7 +155567,7 @@ function onItemOver$17(_e) {
 * Hide the item name
 */
 function onItemOut$18() {
-	const overlay = _getRoot$39().querySelector(".overlay");
+	const overlay = _getRoot$47().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 /**
@@ -155668,7 +155695,7 @@ var init_CartItems = __esmMin((() => {
 	* Initialize UI
 	*/
 	CartItems.init = function Init() {
-		const root = _getRoot$39();
+		const root = _getRoot$47();
 		const baseBtn = root.querySelector(".titlebar .base");
 		if (baseBtn) baseBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
 		const miniBtn = root.querySelector(".titlebar .mini");
@@ -155721,14 +155748,14 @@ var init_CartItems = __esmMin((() => {
 		this._host.style.top = `${Math.min(Math.max(0, _preferences$68.y), Renderer.height - hostRect.height)}px`;
 		this._host.style.left = `${Math.min(Math.max(0, _preferences$68.x), Renderer.width - hostRect.width)}px`;
 		_realSize$5 = _preferences$68.reduce ? 0 : hostRect.height;
-		const miniBtn = _getRoot$39().querySelector(".titlebar .mini");
+		const miniBtn = _getRoot$47().querySelector(".titlebar .mini");
 		if (miniBtn) miniBtn.dispatchEvent(new Event("mousedown"));
 	};
 	/**
 	* Remove Inventory from window (and so clean up items)
 	*/
 	CartItems.onRemove = function OnRemove() {
-		const content = _getRoot$39().querySelector(".container .content");
+		const content = _getRoot$47().querySelector(".container .content");
 		if (content) content.innerHTML = "";
 		this.list.length = 0;
 		document.querySelectorAll(".ItemInfo").forEach((el) => el.remove());
@@ -155772,7 +155799,7 @@ var init_CartItems = __esmMin((() => {
 	CartItems.resize = function Resize(width, height) {
 		width = Math.min(Math.max(width, 6), 9);
 		height = Math.min(Math.max(height, 2), 6);
-		const content = _getRoot$39().querySelector(".container .content");
+		const content = _getRoot$47().querySelector(".container .content");
 		if (content) {
 			content.style.width = `${width * 32 + 13}px`;
 			content.style.height = `${height * 32}px`;
@@ -155814,7 +155841,7 @@ var init_CartItems = __esmMin((() => {
 		}
 	};
 	CartItems.setCartInfo = function SetCartInfo(curCount, maxCount, curWeight, maxWeight) {
-		const root = _getRoot$39();
+		const root = _getRoot$47();
 		const ncnt = root.querySelector(".ncnt");
 		const mcnt = root.querySelector(".mcnt");
 		const nwt = root.querySelector(".nwt");
@@ -155833,7 +155860,7 @@ var init_CartItems = __esmMin((() => {
 		let object = this.getItemByIndex(item.index);
 		if (object) {
 			object.count += item.count;
-			const countEl = _getRoot$39().querySelector(`.item[data-index="${item.index}"] .count`);
+			const countEl = _getRoot$47().querySelector(`.item[data-index="${item.index}"] .count`);
 			if (countEl) countEl.textContent = object.count;
 			return;
 		}
@@ -155848,7 +155875,7 @@ var init_CartItems = __esmMin((() => {
 	CartItems.addItemSub = function AddItemSub(item) {
 		if (item.WearState && item.type !== ItemType_default.AMMO && item.type !== ItemType_default.CARD) return false;
 		const it = DB.getItemInfo(item.ITID);
-		const root = _getRoot$39();
+		const root = _getRoot$47();
 		const content = root.querySelector(".container .content");
 		if (!content) return true;
 		content.insertAdjacentHTML("beforeend", `<div class="item" data-index="${item.index}" draggable="true"><div class="icon"></div><div class="grade"></div><div class="amount"><span class="count">${item.count || 1}</span></div></div>`);
@@ -155877,13 +155904,13 @@ var init_CartItems = __esmMin((() => {
 		if (item.count) {
 			item.count -= count;
 			if (item.count > 0) {
-				const countEl = _getRoot$39().querySelector(`.item[data-index="${item.index}"] .count`);
+				const countEl = _getRoot$47().querySelector(`.item[data-index="${item.index}"] .count`);
 				if (countEl) countEl.textContent = item.count;
 				return item;
 			}
 		}
 		this.list.splice(this.list.indexOf(item), 1);
-		const root = _getRoot$39();
+		const root = _getRoot$47();
 		const el = root.querySelector(`.item[data-index="${item.index}"]`);
 		if (el) el.remove();
 		const content = root.querySelector(".container .content");
@@ -155903,7 +155930,7 @@ var init_CartItems = __esmMin((() => {
 		const item = this.getItemByIndex(index);
 		if (!item) return;
 		item.count = count;
-		const root = _getRoot$39();
+		const root = _getRoot$47();
 		if (item.count > 0) {
 			const countEl = root.querySelector(`.item[data-index="${item.index}"] .count`);
 			if (countEl) countEl.textContent = item.count;
@@ -190883,7 +190910,7 @@ var init_SkillTargetSelection$1 = __esmMin((() => {
 /**
 * Helper to get the shadow root
 */
-function _getRoot$38() {
+function _getRoot$46() {
 	return SkillTargetSelection._shadow || SkillTargetSelection._host;
 }
 /**
@@ -191032,7 +191059,7 @@ var init_SkillTargetSelection = __esmMin((() => {
 	* Initialize component
 	*/
 	SkillTargetSelection.init = function init() {
-		const root = _getRoot$38();
+		const root = _getRoot$46();
 		_skillName = root.querySelector(".skill-name");
 		_description = root.querySelector(".skill-description");
 		_skillLevel = root.querySelector(".skill-level");
@@ -197951,7 +197978,7 @@ function _formatROText(value) {
 /**
 * Helper to get the shadow root
 */
-function _getRoot$37() {
+function _getRoot$45() {
 	return SkillDescription$1._shadow || SkillDescription$1._host;
 }
 var _allowedTags, SkillDescription$1, SkillDescription_default;
@@ -197991,7 +198018,7 @@ var init_SkillDescription = __esmMin((() => {
 	* Initialize UI
 	*/
 	SkillDescription$1.init = function init() {
-		const closeBtn = _getRoot$37().querySelector(".close");
+		const closeBtn = _getRoot$45().querySelector(".close");
 		if (closeBtn) {
 			closeBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
 			closeBtn.addEventListener("click", () => SkillDescription$1.remove());
@@ -198005,7 +198032,7 @@ var init_SkillDescription = __esmMin((() => {
 	*/
 	SkillDescription$1.setSkill = function setSkill(id) {
 		this.uid = id;
-		const content = _getRoot$37().querySelector(".content");
+		const content = _getRoot$45().querySelector(".content");
 		if (content) content.innerHTML = _formatROText(DB.getSkillDescription(id));
 		const hostWidth = this._host.getBoundingClientRect().width;
 		const hostHeight = this._host.getBoundingClientRect().height;
@@ -205721,7 +205748,7 @@ var init_BasicInfo$2 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/BasicInfo/BasicInfo/BasicInfo.js
-function _getRoot$36() {
+function _getRoot$44() {
 	return BasicInfo._shadow || BasicInfo._host;
 }
 var BasicInfo, _preferences$48, BasicInfo_default;
@@ -205769,7 +205796,7 @@ var init_BasicInfo$1 = __esmMin((() => {
 	* Initialize UI
 	*/
 	BasicInfo.init = function init() {
-		const root = _getRoot$36();
+		const root = _getRoot$44();
 		root.querySelectorAll(".topbar button").forEach((btn) => {
 			btn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
 		});
@@ -205814,7 +205841,7 @@ var init_BasicInfo$1 = __esmMin((() => {
 	* Execute elements in memory
 	*/
 	BasicInfo.onAppend = function onAppend() {
-		const root = _getRoot$36();
+		const root = _getRoot$44();
 		const hostRect = this._host.getBoundingClientRect();
 		this._host.style.top = `${Math.min(Math.max(0, _preferences$48.y), Renderer.height - hostRect.height)}px`;
 		this._host.style.left = `${Math.min(Math.max(0, _preferences$48.x), Renderer.width - hostRect.width)}px`;
@@ -205836,7 +205863,7 @@ var init_BasicInfo$1 = __esmMin((() => {
 	* Once remove, save preferences
 	*/
 	BasicInfo.onRemove = function onRemove() {
-		const root = _getRoot$36();
+		const root = _getRoot$44();
 		const inner = root.querySelector("#basicinfo");
 		_preferences$48.x = parseInt(this._host.style.left, 10);
 		_preferences$48.y = parseInt(this._host.style.top, 10);
@@ -205865,7 +205892,7 @@ var init_BasicInfo$1 = __esmMin((() => {
 	* Switch window size
 	*/
 	BasicInfo.toggleMode = function toggleMode() {
-		const root = _getRoot$36();
+		const root = _getRoot$44();
 		const inner = root.querySelector("#basicinfo");
 		if (!inner) return;
 		inner.classList.toggle("small");
@@ -205889,7 +205916,7 @@ var init_BasicInfo$1 = __esmMin((() => {
 	* Toggle the list of buttons
 	*/
 	BasicInfo.toggleButtons = function toggleButtons(event) {
-		const root = _getRoot$36();
+		const root = _getRoot$44();
 		const buttons = root.querySelector(".buttons");
 		if (!buttons) return;
 		_preferences$48.buttons = buttons.style.display === "none";
@@ -205910,7 +205937,7 @@ var init_BasicInfo$1 = __esmMin((() => {
 	* @param {number} val2 (optional)
 	*/
 	BasicInfo.update = function update(type, val1, val2) {
-		const root = _getRoot$36();
+		const root = _getRoot$44();
 		if (!root) return;
 		let perc = 100;
 		let color = "blue";
@@ -206025,7 +206052,7 @@ var init_BasicInfoV0$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/BasicInfo/BasicInfoV0/BasicInfoV0.js
-function _getRoot$35() {
+function _getRoot$43() {
 	return BasicInfoV0._shadow || BasicInfoV0._host;
 }
 var BasicInfoV0, _preferences$47, BasicInfoV0_default;
@@ -206075,7 +206102,7 @@ var init_BasicInfoV0 = __esmMin((() => {
 	* Initialize UI
 	*/
 	BasicInfoV0.init = function init() {
-		const root = _getRoot$35();
+		const root = _getRoot$43();
 		root.querySelectorAll(".topbar button").forEach((btn) => {
 			btn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
 		});
@@ -206126,7 +206153,7 @@ var init_BasicInfoV0 = __esmMin((() => {
 	* Execute elements in memory
 	*/
 	BasicInfoV0.onAppend = function onAppend() {
-		const root = _getRoot$35();
+		const root = _getRoot$43();
 		const hostRect = this._host.getBoundingClientRect();
 		this._host.style.top = `${Math.min(Math.max(0, _preferences$47.y), Renderer.height - hostRect.height)}px`;
 		this._host.style.left = `${Math.min(Math.max(0, _preferences$47.x), Renderer.width - hostRect.width)}px`;
@@ -206156,7 +206183,7 @@ var init_BasicInfoV0 = __esmMin((() => {
 	* Once remove, save preferences
 	*/
 	BasicInfoV0.onRemove = function onRemove() {
-		const root = _getRoot$35();
+		const root = _getRoot$43();
 		const inner = root.querySelector("#BasicInfoV0");
 		_preferences$47.x = parseInt(this._host.style.left, 10);
 		_preferences$47.y = parseInt(this._host.style.top, 10);
@@ -206185,7 +206212,7 @@ var init_BasicInfoV0 = __esmMin((() => {
 	* Switch window size
 	*/
 	BasicInfoV0.toggleMode = function toggleMode() {
-		const root = _getRoot$35();
+		const root = _getRoot$43();
 		const inner = root.querySelector("#BasicInfoV0");
 		if (!inner) return;
 		inner.classList.toggle("small");
@@ -206210,7 +206237,7 @@ var init_BasicInfoV0 = __esmMin((() => {
 	* Toggle the list of buttons
 	*/
 	BasicInfoV0.toggleButtons = function toggleButtons(event) {
-		const root = _getRoot$35();
+		const root = _getRoot$43();
 		const buttons = root.querySelector(".buttons");
 		if (!buttons) return;
 		_preferences$47.buttons = buttons.style.display === "none";
@@ -206231,7 +206258,7 @@ var init_BasicInfoV0 = __esmMin((() => {
 	* @param {number} val2 (optional)
 	*/
 	BasicInfoV0.update = function update(type, val1, val2) {
-		const root = _getRoot$35();
+		const root = _getRoot$43();
 		if (!root) return;
 		let perc = 100;
 		let color = "blue";
@@ -207226,7 +207253,7 @@ var init_BasicInfoV3$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/BasicInfo/BasicInfoV3/BasicInfoV3.js
-function _getRoot$34() {
+function _getRoot$42() {
 	return BasicInfoV3._shadow || BasicInfoV3._host;
 }
 var BasicInfoV3, _preferences$44, BasicInfoV3_default;
@@ -207281,7 +207308,7 @@ var init_BasicInfoV3 = __esmMin((() => {
 	* Initialize UI
 	*/
 	BasicInfoV3.init = function init() {
-		const root = _getRoot$34();
+		const root = _getRoot$42();
 		root.querySelectorAll(".topbar div").forEach((el) => {
 			el.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
 		});
@@ -207342,7 +207369,7 @@ var init_BasicInfoV3 = __esmMin((() => {
 	* Execute elements in memory
 	*/
 	BasicInfoV3.onAppend = function onAppend() {
-		const root = _getRoot$34();
+		const root = _getRoot$42();
 		const hostRect = this._host.getBoundingClientRect();
 		this._host.style.top = `${Math.min(Math.max(0, _preferences$44.y), Renderer.height - hostRect.height)}px`;
 		this._host.style.left = `${Math.min(Math.max(0, _preferences$44.x), Renderer.width - hostRect.width)}px`;
@@ -207377,7 +207404,7 @@ var init_BasicInfoV3 = __esmMin((() => {
 	* Once remove, save preferences
 	*/
 	BasicInfoV3.onRemove = function onRemove() {
-		const root = _getRoot$34();
+		const root = _getRoot$42();
 		const inner = root.querySelector("#BasicInfoV3");
 		const buttons = root.querySelector(".buttons");
 		_preferences$44.x = parseInt(this._host.style.left, 10);
@@ -207406,7 +207433,7 @@ var init_BasicInfoV3 = __esmMin((() => {
 	* Switch window size
 	*/
 	BasicInfoV3.toggleMode = function toggleMode() {
-		const root = _getRoot$34();
+		const root = _getRoot$42();
 		const inner = root.querySelector("#BasicInfoV3");
 		if (!inner) return;
 		inner.classList.toggle("small");
@@ -207428,7 +207455,7 @@ var init_BasicInfoV3 = __esmMin((() => {
 	* Toggle the list of buttons
 	*/
 	BasicInfoV3.toggleButtons = function toggleButtons(event) {
-		const root = _getRoot$34();
+		const root = _getRoot$42();
 		const buttons = root.querySelector(".buttons");
 		if (!buttons) return;
 		_preferences$44.buttons = buttons.style.display === "none";
@@ -207453,7 +207480,7 @@ var init_BasicInfoV3 = __esmMin((() => {
 	* @param {number} val2 (optional)
 	*/
 	BasicInfoV3.update = function update(type, val1, val2) {
-		const root = _getRoot$34();
+		const root = _getRoot$42();
 		if (!root) return;
 		let perc = 100;
 		let color = "blue";
@@ -207723,7 +207750,7 @@ var init_BasicInfoV4$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/BasicInfo/BasicInfoV4/BasicInfoV4.js
-function _getRoot$33() {
+function _getRoot$41() {
 	return BasicInfoV4._shadow || BasicInfoV4._host;
 }
 var BasicInfoV4, _preferences$42, BasicInfoV4_default;
@@ -207779,7 +207806,7 @@ var init_BasicInfoV4 = __esmMin((() => {
 	* Initialize UI
 	*/
 	BasicInfoV4.init = function init() {
-		const root = _getRoot$33();
+		const root = _getRoot$41();
 		root.querySelectorAll(".topbar div").forEach((el) => {
 			el.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
 		});
@@ -207845,7 +207872,7 @@ var init_BasicInfoV4 = __esmMin((() => {
 	* Execute elements in memory
 	*/
 	BasicInfoV4.onAppend = function onAppend() {
-		const root = _getRoot$33();
+		const root = _getRoot$41();
 		const hostRect = this._host.getBoundingClientRect();
 		this._host.style.top = `${Math.min(Math.max(0, _preferences$42.y), Renderer.height - hostRect.height)}px`;
 		this._host.style.left = `${Math.min(Math.max(0, _preferences$42.x), Renderer.width - hostRect.width)}px`;
@@ -207886,7 +207913,7 @@ var init_BasicInfoV4 = __esmMin((() => {
 	* Once remove, save preferences
 	*/
 	BasicInfoV4.onRemove = function onRemove() {
-		const root = _getRoot$33();
+		const root = _getRoot$41();
 		const inner = root.querySelector("#BasicInfoV4");
 		const buttons = root.querySelector(".buttons");
 		_preferences$42.x = parseInt(this._host.style.left, 10);
@@ -207915,7 +207942,7 @@ var init_BasicInfoV4 = __esmMin((() => {
 	* Switch window size
 	*/
 	BasicInfoV4.toggleMode = function toggleMode() {
-		const root = _getRoot$33();
+		const root = _getRoot$41();
 		const inner = root.querySelector("#BasicInfoV4");
 		if (!inner) return;
 		inner.classList.toggle("small");
@@ -207937,7 +207964,7 @@ var init_BasicInfoV4 = __esmMin((() => {
 	* Toggle the list of buttons
 	*/
 	BasicInfoV4.toggleButtons = function toggleButtons(event) {
-		const root = _getRoot$33();
+		const root = _getRoot$41();
 		const buttons = root.querySelector(".buttons");
 		if (!buttons) return;
 		_preferences$42.buttons = buttons.style.display === "none";
@@ -207962,7 +207989,7 @@ var init_BasicInfoV4 = __esmMin((() => {
 	* @param {number} val2 (optional)
 	*/
 	BasicInfoV4.update = function update(type, val1, val2) {
-		const root = _getRoot$33();
+		const root = _getRoot$41();
 		if (!root) return;
 		let perc = 100;
 		let color = "blue";
@@ -208077,7 +208104,7 @@ var init_BasicInfoV5$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/BasicInfo/BasicInfoV5/BasicInfoV5.js
-function _getRoot$32() {
+function _getRoot$40() {
 	return BasicInfoV5._shadow || BasicInfoV5._host;
 }
 var BasicInfoV5, _preferences$41, BasicInfoV5_default;
@@ -208133,7 +208160,7 @@ var init_BasicInfoV5 = __esmMin((() => {
 	* Initialize UI
 	*/
 	BasicInfoV5.init = function init() {
-		const root = _getRoot$32();
+		const root = _getRoot$40();
 		root.querySelectorAll(".topbar div").forEach((el) => {
 			el.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
 		});
@@ -208199,7 +208226,7 @@ var init_BasicInfoV5 = __esmMin((() => {
 	* Execute elements in memory
 	*/
 	BasicInfoV5.onAppend = function onAppend() {
-		const root = _getRoot$32();
+		const root = _getRoot$40();
 		const hostRect = this._host.getBoundingClientRect();
 		this._host.style.top = `${Math.min(Math.max(0, _preferences$41.y), Renderer.height - hostRect.height)}px`;
 		this._host.style.left = `${Math.min(Math.max(0, _preferences$41.x), Renderer.width - hostRect.width)}px`;
@@ -208240,7 +208267,7 @@ var init_BasicInfoV5 = __esmMin((() => {
 	* Once remove, save preferences
 	*/
 	BasicInfoV5.onRemove = function onRemove() {
-		const root = _getRoot$32();
+		const root = _getRoot$40();
 		const inner = root.querySelector("#BasicInfoV5");
 		const buttons = root.querySelector(".buttons");
 		_preferences$41.x = parseInt(this._host.style.left, 10);
@@ -208269,7 +208296,7 @@ var init_BasicInfoV5 = __esmMin((() => {
 	* Switch window size
 	*/
 	BasicInfoV5.toggleMode = function toggleMode() {
-		const root = _getRoot$32();
+		const root = _getRoot$40();
 		const inner = root.querySelector("#BasicInfoV5");
 		if (!inner) return;
 		inner.classList.toggle("small");
@@ -208291,7 +208318,7 @@ var init_BasicInfoV5 = __esmMin((() => {
 	* Toggle the list of buttons
 	*/
 	BasicInfoV5.toggleButtons = function toggleButtons(event) {
-		const root = _getRoot$32();
+		const root = _getRoot$40();
 		const buttons = root.querySelector(".buttons");
 		if (!buttons) return;
 		_preferences$41.buttons = buttons.style.display === "none";
@@ -208316,7 +208343,7 @@ var init_BasicInfoV5 = __esmMin((() => {
 	* @param {number} val2 (optional)
 	*/
 	BasicInfoV5.update = function update(type, val1, val2) {
-		const root = _getRoot$32();
+		const root = _getRoot$40();
 		if (!root) return;
 		let perc = 100;
 		let color = "blue";
@@ -208810,8 +208837,21 @@ var init_WriteRodex = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Inventory/InventoryV0/InventoryV0.js
-function _getRoot$31() {
+function _getRoot$39() {
 	return InventoryV0._shadow || InventoryV0._host;
+}
+function _sanitizeHtml$10(str) {
+	const whitelist = [
+		"font",
+		"i",
+		"b"
+	];
+	const div = document.createElement("div");
+	div.innerHTML = str;
+	div.querySelectorAll("*").forEach((el) => {
+		if (!whitelist.includes(el.tagName.toLowerCase())) el.replaceWith(...el.childNodes);
+	});
+	return div.innerHTML;
 }
 function _getBasicInfoRoot$3(ui) {
 	return ui._shadow || ui._host || document;
@@ -208872,7 +208912,7 @@ function onResize$10() {
 * Modify tab, filter display entries
 */
 function onSwitchTab$3() {
-	const root = _getRoot$31();
+	const root = _getRoot$39();
 	const buttons = root.querySelectorAll(".tabs button");
 	const idx = Array.from(buttons).indexOf(this);
 	_preferences$40.tab = parseInt(idx, 10);
@@ -208886,7 +208926,7 @@ function onSwitchTab$3() {
 * Hide/show inventory's content
 */
 function onToggleReduction$3() {
-	const panel = _getRoot$31().querySelector(".panel");
+	const panel = _getRoot$39().querySelector(".panel");
 	if (_realSize$4) {
 		if (panel) panel.style.display = "flex";
 		InventoryV0._host.style.height = `${_realSize$4}px`;
@@ -208901,7 +208941,7 @@ function onToggleReduction$3() {
 * Update tab, reset inventory content
 */
 function requestFilter$3() {
-	const root = _getRoot$31();
+	const root = _getRoot$39();
 	const host = root.querySelector(".scroll-host");
 	if (host) host.scrollTop = 0;
 	const content = root.querySelector(".container .content");
@@ -208972,7 +209012,7 @@ function onItemOver$14(_e) {
 	if (!item) return;
 	let quantity = " ea";
 	if (item.Options && (item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.SHADOWGEAR) && item.Options.filter((Option) => Option.index !== 0).length > 0) quantity = " Quantity";
-	const root = _getRoot$31();
+	const root = _getRoot$39();
 	const overlay = root.querySelector(".overlay");
 	const rootEl = root.querySelector("#InventoryV0") || root;
 	const itemRect = this.getBoundingClientRect();
@@ -208981,7 +209021,7 @@ function onItemOver$14(_e) {
 		overlay.style.display = "block";
 		overlay.style.top = `${itemRect.top - rootRect.top}px`;
 		overlay.style.left = `${itemRect.left - rootRect.left + 35}px`;
-		overlay.textContent = `${DB.getItemName(item)}: ${item.count || 1}${quantity}`;
+		overlay.innerHTML = _sanitizeHtml$10(`${DB.getItemName(item)}: ${item.count || 1}${quantity}`);
 		if (item.IsIdentified) overlay.classList.remove("grey");
 		else overlay.classList.add("grey");
 	}
@@ -208990,7 +209030,7 @@ function onItemOver$14(_e) {
 * Hide the item name
 */
 function onItemOut$15() {
-	const overlay = _getRoot$31().querySelector(".overlay");
+	const overlay = _getRoot$39().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 /**
@@ -209146,7 +209186,7 @@ var init_InventoryV0 = __esmMin((() => {
 	* Initialize UI
 	*/
 	InventoryV0.init = function Init() {
-		const root = _getRoot$31();
+		const root = _getRoot$39();
 		const baseBtn = root.querySelector(".titlebar .base");
 		if (baseBtn) baseBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
 		const miniBtn = root.querySelector(".titlebar .mini");
@@ -209202,7 +209242,7 @@ var init_InventoryV0 = __esmMin((() => {
 	* Apply preferences once append to body
 	*/
 	InventoryV0.onAppend = function OnAppend() {
-		const root = _getRoot$31();
+		const root = _getRoot$39();
 		if (!_preferences$40.show) this._host.style.display = "none";
 		Client.loadFile(DB.INTERFACE_PATH + "basic_interface/tab_itm_0" + (_preferences$40.tab + 1) + ".bmp", (data) => {
 			const tabSprite = root.querySelector(".tab-sprite");
@@ -209224,7 +209264,7 @@ var init_InventoryV0 = __esmMin((() => {
 	* Remove Inventory from window (and so clean up items)
 	*/
 	InventoryV0.onRemove = function OnRemove() {
-		const content = _getRoot$31().querySelector(".container .content");
+		const content = _getRoot$39().querySelector(".container .content");
 		if (content) content.innerHTML = "";
 		this.list.length = 0;
 		InventoryV0.newItems.length = 0;
@@ -209256,7 +209296,7 @@ var init_InventoryV0 = __esmMin((() => {
 				} else {
 					this._host.dispatchEvent(new Event("mouseleave"));
 					this.clearNewItems();
-					_getRoot$31().querySelectorAll(".new_item").forEach((el) => {
+					_getRoot$39().querySelectorAll(".new_item").forEach((el) => {
 						el.style.backgroundImage = "";
 					});
 					this._host.style.display = "none";
@@ -209279,7 +209319,7 @@ var init_InventoryV0 = __esmMin((() => {
 		} else {
 			this._host.dispatchEvent(new Event("mouseleave"));
 			this.clearNewItems();
-			_getRoot$31().querySelectorAll(".new_item").forEach((el) => {
+			_getRoot$39().querySelectorAll(".new_item").forEach((el) => {
 				el.style.backgroundImage = "";
 			});
 			this._host.style.display = "none";
@@ -209305,7 +209345,7 @@ var init_InventoryV0 = __esmMin((() => {
 	InventoryV0.resize = function Resize(width, height) {
 		width = Math.min(Math.max(width, 6), 8);
 		height = Math.min(Math.max(height, 2), 5);
-		const content = _getRoot$31().querySelector(".container .content");
+		const content = _getRoot$39().querySelector(".container .content");
 		if (content) content.style.width = `${width * 32}px`;
 		this._host.style.width = `${59 + width * 32}px`;
 		this._host.style.height = `${62 + height * 32}px`;
@@ -209315,7 +209355,7 @@ var init_InventoryV0 = __esmMin((() => {
 	* Force scroll clamping
 	*/
 	InventoryV0.updateScroll = function updateScroll() {
-		const root = _getRoot$31();
+		const root = _getRoot$39();
 		const hostEl = root.querySelector(".scroll-host");
 		if (!hostEl) return;
 		const contentEl = root.querySelector(".content");
@@ -209361,7 +209401,7 @@ var init_InventoryV0 = __esmMin((() => {
 	* if the item index is exist you should clear it;[skybook888]
 	*/
 	InventoryV0.setItems = function SetItems(items) {
-		const root = _getRoot$31();
+		const root = _getRoot$39();
 		for (let i = 0, count = items.length; i < count; ++i) {
 			const object = this.getItemByIndex(items[i].index);
 			if (object) this.removeItem(object.index, object.count);
@@ -209380,7 +209420,7 @@ var init_InventoryV0 = __esmMin((() => {
 	*/
 	InventoryV0.addItem = function AddItem(item) {
 		let object = this.getItemByIndex(item.index);
-		const root = _getRoot$31();
+		const root = _getRoot$39();
 		const equippedIndex = InventoryV0.equippedItems.indexOf(item.index);
 		if (equippedIndex !== -1) InventoryV0.equippedItems.splice(equippedIndex, 1);
 		else {
@@ -209432,7 +209472,7 @@ var init_InventoryV0 = __esmMin((() => {
 		}
 		if (tab === _preferences$40.tab) {
 			const it = DB.getItemInfo(item.ITID);
-			const root = _getRoot$31();
+			const root = _getRoot$39();
 			const content = root.querySelector(".container .content");
 			if (!content) return true;
 			content.insertAdjacentHTML("beforeend", `<div class="item" data-index="${item.index}" draggable="true"><div class="new_item"></div><div class="icon"></div><div class="amount"><span class="count">${item.count || 1}</span></div></div>`);
@@ -209459,7 +209499,7 @@ var init_InventoryV0 = __esmMin((() => {
 	*/
 	InventoryV0.removeItem = function RemoveItem(index, count) {
 		const item = this.getItemByIndex(index);
-		const root = _getRoot$31();
+		const root = _getRoot$39();
 		if (!item || count <= 0) return null;
 		if (item.count) {
 			item.count -= count;
@@ -209490,7 +209530,7 @@ var init_InventoryV0 = __esmMin((() => {
 		const item = this.getItemByIndex(index);
 		if (!item) return;
 		item.count = count;
-		const root = _getRoot$31();
+		const root = _getRoot$39();
 		if (item.count > 0) {
 			const countEl = root.querySelector(`.item[data-index="${item.index}"] .count`);
 			if (countEl) countEl.textContent = item.count;
@@ -209554,8 +209594,21 @@ var init_InventoryV1$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Inventory/InventoryV1/InventoryV1.js
-function _getRoot$30() {
+function _getRoot$38() {
 	return InventoryV1._shadow || InventoryV1._host;
+}
+function _sanitizeHtml$9(str) {
+	const whitelist = [
+		"font",
+		"i",
+		"b"
+	];
+	const div = document.createElement("div");
+	div.innerHTML = str;
+	div.querySelectorAll("*").forEach((el) => {
+		if (!whitelist.includes(el.tagName.toLowerCase())) el.replaceWith(...el.childNodes);
+	});
+	return div.innerHTML;
 }
 function _getBasicInfoRoot$2(ui) {
 	return ui._shadow || ui._host || document;
@@ -209606,7 +209659,7 @@ function onResize$9() {
 * Modify tab, filter display entries
 */
 function onSwitchTab$2() {
-	const root = _getRoot$30();
+	const root = _getRoot$38();
 	const buttons = root.querySelectorAll(".tabs button");
 	const idx = Array.from(buttons).indexOf(this);
 	_preferences$39.tab = parseInt(idx, 10);
@@ -209650,7 +209703,7 @@ function onSwitchTab$2() {
 * Hide/show inventory's content
 */
 function onToggleReduction$2() {
-	const panel = _getRoot$30().querySelector(".panel");
+	const panel = _getRoot$38().querySelector(".panel");
 	if (_realSize$3) {
 		if (panel) panel.style.display = "flex";
 		InventoryV1._host.style.height = `${_realSize$3}px`;
@@ -209665,7 +209718,7 @@ function onToggleReduction$2() {
 * Update tab, reset inventory content
 */
 function requestFilter$2() {
-	const root = _getRoot$30();
+	const root = _getRoot$38();
 	const host = root.querySelector(".scroll-host");
 	if (host) host.scrollTop = 0;
 	const content = root.querySelector(".container .content");
@@ -209734,7 +209787,7 @@ function onItemOver$13(_e) {
 	if (!item) return;
 	let quantity = " ea";
 	if (item.Options && (item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.SHADOWGEAR) && item.Options.filter((Option) => Option.index !== 0).length > 0) quantity = " Quantity";
-	const root = _getRoot$30();
+	const root = _getRoot$38();
 	const overlay = root.querySelector(".overlay");
 	const rootEl = root.querySelector("#InventoryV1") || root;
 	const itemRect = this.getBoundingClientRect();
@@ -209743,7 +209796,7 @@ function onItemOver$13(_e) {
 		overlay.style.display = "block";
 		overlay.style.top = `${itemRect.top - rootRect.top}px`;
 		overlay.style.left = `${itemRect.left - rootRect.left + 35}px`;
-		overlay.textContent = `${DB.getItemName(item)}: ${item.count || 1}${quantity}`;
+		overlay.innerHTML = _sanitizeHtml$9(`${DB.getItemName(item)}: ${item.count || 1}${quantity}`);
 		if (item.IsIdentified) overlay.classList.remove("grey");
 		else overlay.classList.add("grey");
 	}
@@ -209752,7 +209805,7 @@ function onItemOver$13(_e) {
 * Hide the item name
 */
 function onItemOut$14() {
-	const overlay = _getRoot$30().querySelector(".overlay");
+	const overlay = _getRoot$38().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 /**
@@ -209885,7 +209938,7 @@ function onItemLock$2() {
 	InventoryV1.itemlock = _preferences$39.itemlock;
 	const lockImg = _preferences$39.itemlock ? "inventory/item_drop_lock_on.bmp" : "inventory/item_drop_lock_off.bmp";
 	Client.loadFile(DB.INTERFACE_PATH + lockImg, (data) => {
-		const lockBtn = _getRoot$30().querySelector(".item_drop_lock");
+		const lockBtn = _getRoot$38().querySelector(".item_drop_lock");
 		if (lockBtn) lockBtn.style.backgroundImage = `url(${data})`;
 	});
 }
@@ -209897,7 +209950,7 @@ function onItemCompare$2() {
 	InventoryV1.itemcomp = _preferences$39.itemcomp;
 	const compImg = _preferences$39.itemcomp ? "inventory/item_compare_on.bmp" : "inventory/item_compare_off.bmp";
 	Client.loadFile(DB.INTERFACE_PATH + compImg, (data) => {
-		const compBtn = _getRoot$30().querySelector(".item_compare");
+		const compBtn = _getRoot$38().querySelector(".item_compare");
 		if (compBtn) compBtn.style.backgroundImage = `url(${data})`;
 	});
 }
@@ -209907,7 +209960,7 @@ function onItemCompare$2() {
 function onNPCLock$2() {
 	_preferences$39.npcsalelock = !_preferences$39.npcsalelock;
 	InventoryV1.npcsalelock = _preferences$39.npcsalelock;
-	const root = _getRoot$30();
+	const root = _getRoot$38();
 	if (_preferences$39.npcsalelock) {
 		const dealOn = root.querySelector(".deallock_on");
 		if (dealOn) dealOn.style.display = "";
@@ -210005,7 +210058,7 @@ var init_InventoryV1 = __esmMin((() => {
 	* Initialize UI
 	*/
 	InventoryV1.init = function Init() {
-		const root = _getRoot$30();
+		const root = _getRoot$38();
 		const baseBtn = root.querySelector(".titlebar .base");
 		if (baseBtn) baseBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
 		const miniBtn = root.querySelector(".titlebar .mini");
@@ -210114,14 +210167,14 @@ var init_InventoryV1 = __esmMin((() => {
 		this.magnet.LEFT = _preferences$39.magnet_left;
 		this.magnet.RIGHT = _preferences$39.magnet_right;
 		_realSize$3 = _preferences$39.reduce ? 0 : this._host.getBoundingClientRect().height;
-		const miniBtnAppend = _getRoot$30().querySelector(".titlebar .mini");
+		const miniBtnAppend = _getRoot$38().querySelector(".titlebar .mini");
 		if (miniBtnAppend) miniBtnAppend.dispatchEvent(new Event("mousedown"));
 	};
 	/**
 	* Remove Inventory from window (and so clean up items)
 	*/
 	InventoryV1.onRemove = function OnRemove() {
-		const content = _getRoot$30().querySelector(".container .content");
+		const content = _getRoot$38().querySelector(".container .content");
 		if (content) content.innerHTML = "";
 		this.list.length = 0;
 		InventoryV1.newItems.length = 0;
@@ -210152,7 +210205,7 @@ var init_InventoryV1 = __esmMin((() => {
 				} else {
 					this._host.dispatchEvent(new Event("mouseleave"));
 					this.clearNewItems();
-					_getRoot$30().querySelectorAll(".new_item").forEach((el) => {
+					_getRoot$38().querySelectorAll(".new_item").forEach((el) => {
 						el.style.backgroundImage = "";
 					});
 					this._host.style.display = "none";
@@ -210175,7 +210228,7 @@ var init_InventoryV1 = __esmMin((() => {
 		} else {
 			this._host.dispatchEvent(new Event("mouseleave"));
 			this.clearNewItems();
-			_getRoot$30().querySelectorAll(".new_item").forEach((el) => {
+			_getRoot$38().querySelectorAll(".new_item").forEach((el) => {
 				el.style.backgroundImage = "";
 			});
 			this._host.style.display = "none";
@@ -210199,7 +210252,7 @@ var init_InventoryV1 = __esmMin((() => {
 	*/
 	InventoryV1.resize = function Resize(width) {
 		width = Math.min(Math.max(width, 6), 8);
-		const content = _getRoot$30().querySelector(".container .content");
+		const content = _getRoot$38().querySelector(".container .content");
 		if (content) content.style.width = `${width * 32}px`;
 		this._host.style.width = `${55 + width * 32}px`;
 		this.updateScroll();
@@ -210208,7 +210261,7 @@ var init_InventoryV1 = __esmMin((() => {
 	* Force scroll clamping
 	*/
 	InventoryV1.updateScroll = function updateScroll() {
-		const root = _getRoot$30();
+		const root = _getRoot$38();
 		const hostEl = root.querySelector(".scroll-host");
 		if (!hostEl) return;
 		const contentEl = root.querySelector(".content");
@@ -210253,7 +210306,7 @@ var init_InventoryV1 = __esmMin((() => {
 	* Add items to the list
 	*/
 	InventoryV1.setItems = function SetItems(items) {
-		const root = _getRoot$30();
+		const root = _getRoot$38();
 		for (let i = 0, count = items.length; i < count; ++i) {
 			const object = this.getItemByIndex(items[i].index);
 			if (object) this.removeItem(object.index, object.count);
@@ -210270,7 +210323,7 @@ var init_InventoryV1 = __esmMin((() => {
 	*/
 	InventoryV1.addItem = function AddItem(item) {
 		let object = this.getItemByIndex(item.index);
-		const root = _getRoot$30();
+		const root = _getRoot$38();
 		const equippedIndex = InventoryV1.equippedItems.indexOf(item.index);
 		if (equippedIndex !== -1) InventoryV1.equippedItems.splice(equippedIndex, 1);
 		else {
@@ -210321,7 +210374,7 @@ var init_InventoryV1 = __esmMin((() => {
 		}
 		if (tab === _preferences$39.tab) {
 			const it = DB.getItemInfo(item.ITID);
-			const root = _getRoot$30();
+			const root = _getRoot$38();
 			const content = root.querySelector(".container .content");
 			if (!content) return true;
 			content.insertAdjacentHTML("beforeend", `<div class="item" data-index="${item.index}" draggable="true"><div class="new_item"></div><div class="icon"></div><div class="amount"><span class="count">${item.count || 1}</span></div></div>`);
@@ -210345,7 +210398,7 @@ var init_InventoryV1 = __esmMin((() => {
 	*/
 	InventoryV1.removeItem = function RemoveItem(index, count) {
 		const item = this.getItemByIndex(index);
-		const root = _getRoot$30();
+		const root = _getRoot$38();
 		if (!item || count <= 0) return null;
 		if (item.count) {
 			item.count -= count;
@@ -210373,7 +210426,7 @@ var init_InventoryV1 = __esmMin((() => {
 		const item = this.getItemByIndex(index);
 		if (!item) return;
 		item.count = count;
-		const root = _getRoot$30();
+		const root = _getRoot$38();
 		if (item.count > 0) {
 			const countEl = root.querySelector(`.item[data-index="${item.index}"] .count`);
 			if (countEl) countEl.textContent = item.count;
@@ -210469,7 +210522,7 @@ var init_SwitchEquip$1 = __esmMin((() => {
 /**
 * Helper to get shadow root
 */
-function _getRoot$29() {
+function _getRoot$37() {
 	return SwitchEquip._shadow || SwitchEquip._host;
 }
 /**
@@ -210521,7 +210574,7 @@ function onDragOver$6(event) {
 			const item = data.data;
 			if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR) && item.IsIdentified && !item.IsDamaged) {
 				const selector = getSelectorFromLocation$6("location" in item ? item.location : item.WearLocation);
-				const el = _getRoot$29().querySelector(selector);
+				const el = _getRoot$37().querySelector(selector);
 				if (el) Client.loadFile(DB.INTERFACE_PATH + "basic_interface/item_invert.bmp", (_data) => {
 					el.style.backgroundImage = `url(${_data})`;
 				});
@@ -210536,7 +210589,7 @@ function onDragOver$6(event) {
 * Drag out the window
 */
 function onDragLeave$5(event) {
-	_getRoot$29().querySelectorAll("td").forEach((td) => {
+	_getRoot$37().querySelectorAll("td").forEach((td) => {
 		td.style.backgroundImage = "none";
 	});
 	event.stopImmediatePropagation();
@@ -210553,7 +210606,7 @@ function onDrop$16(event) {
 	if (data && data.type === "item") {
 		const item = data.data;
 		if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.AMMO) && item.IsIdentified && !item.IsDamaged) {
-			_getRoot$29().querySelectorAll("td").forEach((td) => {
+			_getRoot$37().querySelectorAll("td").forEach((td) => {
 				td.style.backgroundImage = "none";
 			});
 			SwitchEquip.onAddSwitchEquip(item.index, "location" in item ? item.location : item.WearState);
@@ -210584,7 +210637,7 @@ function onSwitchEquipInfo(event) {
 function onSwitchEquipUnEquip() {
 	const index = parseInt(this.getAttribute("data-index"), 10);
 	SwitchEquip.onRemoveSwitchEquip(index);
-	const overlay = _getRoot$29().querySelector(".switchoverlay");
+	const overlay = _getRoot$37().querySelector(".switchoverlay");
 	if (overlay) overlay.style.display = "none";
 }
 /**
@@ -210594,7 +210647,7 @@ function onSwitchEquipOver() {
 	const idx = parseInt(this.parentNode.getAttribute("data-index"), 10);
 	const item = SwitchEquip._list[idx];
 	if (!item) return;
-	const overlay = _getRoot$29().querySelector(".switchoverlay");
+	const overlay = _getRoot$37().querySelector(".switchoverlay");
 	if (!overlay) return;
 	const posTop = this.offsetTop;
 	const posLeft = this.offsetLeft;
@@ -210608,7 +210661,7 @@ function onSwitchEquipOver() {
 * Remove the item name
 */
 function onSwitchEquipOut() {
-	const overlay = _getRoot$29().querySelector(".switchoverlay");
+	const overlay = _getRoot$37().querySelector(".switchoverlay");
 	if (overlay) overlay.style.display = "none";
 }
 /**
@@ -210649,7 +210702,7 @@ var init_SwitchEquip = __esmMin((() => {
 	* Initialize UI
 	*/
 	SwitchEquip.init = function init() {
-		const root = _getRoot$29();
+		const root = _getRoot$37();
 		const canvases = root.querySelectorAll("canvas");
 		_swapctx.push(canvases[0].getContext("2d"));
 		_swapctx.push(canvases[1].getContext("2d"));
@@ -210694,7 +210747,7 @@ var init_SwitchEquip = __esmMin((() => {
 	* @param {string} tabId - The ID of the tab to show.
 	*/
 	SwitchEquip.showSwapTab = function showSwapTab(tabId) {
-		const root = _getRoot$29();
+		const root = _getRoot$37();
 		if (!root) return;
 		const swapTabId = "swap" + tabId;
 		const swapContentDivs = {
@@ -210710,7 +210763,7 @@ var init_SwitchEquip = __esmMin((() => {
 	SwitchEquip.onAppend = function onAppend() {
 		const currentEquipTabId = EquipmentController.getUI().getCurrentTabId();
 		SwitchEquip.showSwapTab(currentEquipTabId);
-		const root = _getRoot$29();
+		const root = _getRoot$37();
 		if ((root ? root.querySelector("canvas") : null) && this._host.style.display !== "none") Renderer.render(swaprender);
 	};
 	/**
@@ -210719,7 +210772,7 @@ var init_SwitchEquip = __esmMin((() => {
 	SwitchEquip.onRemove = function onRemove() {
 		Renderer.stop(swaprender);
 		SwitchEquip._list = {};
-		const root = _getRoot$29();
+		const root = _getRoot$37();
 		if (root) root.querySelectorAll(".col1, .col3, .ammo").forEach((el) => {
 			el.innerHTML = "";
 		});
@@ -210765,7 +210818,7 @@ var init_SwitchEquip = __esmMin((() => {
 			if (string.length > limit) return string.substring(0, limit) + "...";
 			return string;
 		};
-		const root = _getRoot$29();
+		const root = _getRoot$37();
 		const selector = getSelectorFromLocation$6(location);
 		const el = root.querySelector(selector);
 		if (el) el.innerHTML = `<div class="item" data-index="${item.index}"><button></button><span class="itemName">${add3Dots(_escapeHtml(DB.getItemName(item)), 19)}</span></div>`;
@@ -210784,7 +210837,7 @@ var init_SwitchEquip = __esmMin((() => {
 	* @param {number} item location
 	*/
 	SwitchEquip.unEquip = function unEquip(index, location) {
-		const root = _getRoot$29();
+		const root = _getRoot$37();
 		const selector = getSelectorFromLocation$6(location);
 		const item = SwitchEquip._list[index];
 		item.equipped = 0;
@@ -210853,7 +210906,7 @@ var init_SwitchEquip = __esmMin((() => {
 	* Update the owner name for the equipment items
 	*/
 	SwitchEquip.onUpdateOwnerName = function() {
-		const root = _getRoot$29();
+		const root = _getRoot$37();
 		for (const index in SwitchEquip._list) {
 			const item = SwitchEquip._list[index];
 			if (item.slot && [
@@ -210896,7 +210949,7 @@ var init_SwitchEquip = __esmMin((() => {
 	*/
 	SwitchEquip.RequestSwitch = function() {
 		sendEquipSwitchRequest();
-		const button = _getRoot$29().querySelector("#swap-button");
+		const button = _getRoot$37().querySelector("#swap-button");
 		if (!button) return;
 		button.disabled = true;
 		button.classList.add("disabled");
@@ -210932,8 +210985,21 @@ var init_InventoryV2$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Inventory/InventoryV2/InventoryV2.js
-function _getRoot$28() {
+function _getRoot$36() {
 	return InventoryV2._shadow || InventoryV2._host;
+}
+function _sanitizeHtml$8(str) {
+	const whitelist = [
+		"font",
+		"i",
+		"b"
+	];
+	const div = document.createElement("div");
+	div.innerHTML = str;
+	div.querySelectorAll("*").forEach((el) => {
+		if (!whitelist.includes(el.tagName.toLowerCase())) el.replaceWith(...el.childNodes);
+	});
+	return div.innerHTML;
 }
 function _getBasicInfoRoot$1(ui) {
 	return ui._shadow || ui._host || document;
@@ -210975,7 +211041,7 @@ function onResize$8() {
 	window.addEventListener("mouseup", onMouseUp);
 }
 function onSwitchTab$1() {
-	const root = _getRoot$28();
+	const root = _getRoot$36();
 	const buttons = root.querySelectorAll(".tabs button");
 	const idx = Array.from(buttons).indexOf(this);
 	_preferences$38.tab = parseInt(idx, 10);
@@ -211016,7 +211082,7 @@ function onSwitchTab$1() {
 	}
 }
 function onToggleReduction$1() {
-	const panel = _getRoot$28().querySelector(".panel");
+	const panel = _getRoot$36().querySelector(".panel");
 	if (_realSize$2) {
 		if (panel) panel.style.display = "flex";
 		InventoryV2._host.style.height = `${_realSize$2}px`;
@@ -211028,7 +211094,7 @@ function onToggleReduction$1() {
 	}
 }
 function requestFilter$1() {
-	const root = _getRoot$28();
+	const root = _getRoot$36();
 	const host = root.querySelector(".scroll-host");
 	if (host) host.scrollTop = 0;
 	const content = root.querySelector(".container .content");
@@ -211091,7 +211157,7 @@ function onItemOver$12(_e) {
 	if (!item) return;
 	let quantity = " ea";
 	if (item.Options && (item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.SHADOWGEAR) && item.Options.filter((Option) => Option.index !== 0).length > 0) quantity = " Quantity";
-	const root = _getRoot$28();
+	const root = _getRoot$36();
 	const overlay = root.querySelector(".overlay");
 	const rootEl = root.querySelector("#InventoryV2") || root;
 	const itemRect = this.getBoundingClientRect();
@@ -211100,13 +211166,13 @@ function onItemOver$12(_e) {
 		overlay.style.display = "block";
 		overlay.style.top = `${itemRect.top - rootRect.top}px`;
 		overlay.style.left = `${itemRect.left - rootRect.left + 35}px`;
-		overlay.textContent = `${DB.getItemName(item)}: ${item.count || 1}${quantity}`;
+		overlay.innerHTML = _sanitizeHtml$8(`${DB.getItemName(item)}: ${item.count || 1}${quantity}`);
 		if (item.IsIdentified) overlay.classList.remove("grey");
 		else overlay.classList.add("grey");
 	}
 }
 function onItemOut$13() {
-	const overlay = _getRoot$28().querySelector(".overlay");
+	const overlay = _getRoot$36().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 function onItemDragStart$8(event) {
@@ -211215,7 +211281,7 @@ function onItemLock$1() {
 	InventoryV2.itemlock = _preferences$38.itemlock;
 	const lockImg = _preferences$38.itemlock ? "inventory/item_drop_lock_on.bmp" : "inventory/item_drop_lock_off.bmp";
 	Client.loadFile(DB.INTERFACE_PATH + lockImg, (data) => {
-		const btn = _getRoot$28().querySelector(".item_drop_lock");
+		const btn = _getRoot$36().querySelector(".item_drop_lock");
 		if (btn) btn.style.backgroundImage = `url(${data})`;
 	});
 }
@@ -211224,14 +211290,14 @@ function onItemCompare$1() {
 	InventoryV2.itemcomp = _preferences$38.itemcomp;
 	const compImg = _preferences$38.itemcomp ? "inventory/item_compare_on.bmp" : "inventory/item_compare_off.bmp";
 	Client.loadFile(DB.INTERFACE_PATH + compImg, (data) => {
-		const btn = _getRoot$28().querySelector(".item_compare");
+		const btn = _getRoot$36().querySelector(".item_compare");
 		if (btn) btn.style.backgroundImage = `url(${data})`;
 	});
 }
 function onNPCLock$1() {
 	_preferences$38.npcsalelock = !_preferences$38.npcsalelock;
 	InventoryV2.npcsalelock = _preferences$38.npcsalelock;
-	const root = _getRoot$28();
+	const root = _getRoot$36();
 	if (_preferences$38.npcsalelock) {
 		const dealOn = root.querySelector(".deallock_on");
 		if (dealOn) dealOn.style.display = "";
@@ -211316,7 +211382,7 @@ var init_InventoryV2 = __esmMin((() => {
 	InventoryV2.itemcomp = _preferences$38.itemcomp;
 	InventoryV2.npcsalelock = _preferences$38.npcsalelock;
 	InventoryV2.init = function Init() {
-		const root = _getRoot$28();
+		const root = _getRoot$36();
 		const baseBtn = root.querySelector(".titlebar .base");
 		if (baseBtn) baseBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
 		const miniBtn = root.querySelector(".titlebar .mini");
@@ -211417,11 +211483,11 @@ var init_InventoryV2 = __esmMin((() => {
 		this.magnet.LEFT = _preferences$38.magnet_left;
 		this.magnet.RIGHT = _preferences$38.magnet_right;
 		_realSize$2 = _preferences$38.reduce ? 0 : this._host.getBoundingClientRect().height;
-		const miniBtnAppend = _getRoot$28().querySelector(".titlebar .mini");
+		const miniBtnAppend = _getRoot$36().querySelector(".titlebar .mini");
 		if (miniBtnAppend) miniBtnAppend.dispatchEvent(new Event("mousedown"));
 	};
 	InventoryV2.onRemove = function OnRemove() {
-		const content = _getRoot$28().querySelector(".container .content");
+		const content = _getRoot$36().querySelector(".container .content");
 		if (content) content.innerHTML = "";
 		this.list.length = 0;
 		this.equipswitchlist.length = 0;
@@ -211448,7 +211514,7 @@ var init_InventoryV2 = __esmMin((() => {
 				} else {
 					this._host.dispatchEvent(new Event("mouseleave"));
 					this.clearNewItems();
-					_getRoot$28().querySelectorAll(".new_item").forEach((el) => {
+					_getRoot$36().querySelectorAll(".new_item").forEach((el) => {
 						el.style.backgroundImage = "";
 					});
 					this._host.style.display = "none";
@@ -211468,7 +211534,7 @@ var init_InventoryV2 = __esmMin((() => {
 		} else {
 			this._host.dispatchEvent(new Event("mouseleave"));
 			this.clearNewItems();
-			_getRoot$28().querySelectorAll(".new_item").forEach((el) => {
+			_getRoot$36().querySelectorAll(".new_item").forEach((el) => {
 				el.style.backgroundImage = "";
 			});
 			this._host.style.display = "none";
@@ -211484,13 +211550,13 @@ var init_InventoryV2 = __esmMin((() => {
 	};
 	InventoryV2.resize = function Resize(width) {
 		width = Math.min(Math.max(width, 6), 8);
-		const content = _getRoot$28().querySelector(".container .content");
+		const content = _getRoot$36().querySelector(".container .content");
 		if (content) content.style.width = `${width * 32}px`;
 		this._host.style.width = `${55 + width * 32}px`;
 		this.updateScroll();
 	};
 	InventoryV2.updateScroll = function updateScroll() {
-		const root = _getRoot$28();
+		const root = _getRoot$36();
 		const hostEl = root.querySelector(".scroll-host");
 		if (!hostEl) return;
 		const contentEl = root.querySelector(".content");
@@ -211520,7 +211586,7 @@ var init_InventoryV2 = __esmMin((() => {
 		return null;
 	};
 	InventoryV2.setItems = function SetItems(items) {
-		const root = _getRoot$28();
+		const root = _getRoot$36();
 		for (let i = 0, count = items.length; i < count; ++i) {
 			const object = this.getItemByIndex(items[i].index);
 			if (object) this.removeItem(object.index, object.count);
@@ -211534,7 +211600,7 @@ var init_InventoryV2 = __esmMin((() => {
 	};
 	InventoryV2.addItem = function AddItem(item) {
 		let object = this.getItemByIndex(item.index);
-		const root = _getRoot$28();
+		const root = _getRoot$36();
 		const equippedIndex = InventoryV2.equippedItems.indexOf(item.index);
 		if (equippedIndex !== -1) InventoryV2.equippedItems.splice(equippedIndex, 1);
 		else {
@@ -211581,7 +211647,7 @@ var init_InventoryV2 = __esmMin((() => {
 		if (isInSwitchList) SwitchEquip_default.equip(item, item.location, true);
 		if (tab === _preferences$38.tab) {
 			const it = DB.getItemInfo(item.ITID);
-			const root = _getRoot$28();
+			const root = _getRoot$36();
 			const content = root.querySelector(".container .content");
 			if (!content) return true;
 			content.insertAdjacentHTML("beforeend", `<div class="item" data-index="${item.index}" draggable="true"><div class="new_item"></div><div class="icon"></div><div class="switch1"></div><div class="switch2"></div><div class="amount"><span class="count">${item.count || 1}</span></div></div>`);
@@ -211615,7 +211681,7 @@ var init_InventoryV2 = __esmMin((() => {
 	};
 	InventoryV2.removeItem = function RemoveItem(index, count) {
 		const item = this.getItemByIndex(index);
-		const root = _getRoot$28();
+		const root = _getRoot$36();
 		if (!item || count <= 0) return null;
 		if (item.count) {
 			item.count -= count;
@@ -211640,7 +211706,7 @@ var init_InventoryV2 = __esmMin((() => {
 		const item = this.getItemByIndex(index);
 		if (!item) return;
 		item.count = count;
-		const root = _getRoot$28();
+		const root = _getRoot$36();
 		if (item.count > 0) {
 			const countEl = root.querySelector(`.item[data-index="${item.index}"] .count`);
 			if (countEl) countEl.textContent = item.count;
@@ -211716,7 +211782,7 @@ var init_InventoryV2 = __esmMin((() => {
 			this.equipswitchlist.splice(existingItemIndex, 1);
 		}
 		this.equipswitchlist.push(item);
-		const root = _getRoot$28();
+		const root = _getRoot$36();
 		Client.loadFile(DB.INTERFACE_PATH + "swap_equipment/bg_change.bmp", (data) => {
 			const el = root.querySelector(`.item[data-index="${item.index}"] .switch1`);
 			if (el) el.style.backgroundImage = `url(${data})`;
@@ -211736,7 +211802,7 @@ var init_InventoryV2 = __esmMin((() => {
 		}
 		const existingItemIndex = this.equipswitchlist.findIndex((existingItem) => existingItem.index === item.index);
 		if (existingItemIndex > -1) {
-			const root = _getRoot$28();
+			const root = _getRoot$36();
 			const sw1 = root.querySelector(`.item[data-index="${item.index}"] .switch1`);
 			if (sw1) sw1.style.backgroundImage = "none";
 			const sw2 = root.querySelector(`.item[data-index="${item.index}"] .switch2`);
@@ -214904,8 +214970,21 @@ var init_Enchant = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Inventory/InventoryV3/InventoryV3.js
-function _getRoot$27() {
+function _getRoot$35() {
 	return InventoryV3._shadow || InventoryV3._host;
+}
+function _sanitizeHtml$7(str) {
+	const whitelist = [
+		"font",
+		"i",
+		"b"
+	];
+	const div = document.createElement("div");
+	div.innerHTML = str;
+	div.querySelectorAll("*").forEach((el) => {
+		if (!whitelist.includes(el.tagName.toLowerCase())) el.replaceWith(...el.childNodes);
+	});
+	return div.innerHTML;
 }
 function _getBasicInfoRoot(ui) {
 	return ui._shadow || ui._host || document;
@@ -214947,7 +215026,7 @@ function onResize$7() {
 	window.addEventListener("mouseup", onMouseUp);
 }
 function onSwitchTab() {
-	const root = _getRoot$27();
+	const root = _getRoot$35();
 	const buttons = root.querySelectorAll(".tabs button");
 	const idx = Array.from(buttons).indexOf(this);
 	_preferences$37.tab = parseInt(idx, 10);
@@ -214988,7 +215067,7 @@ function onSwitchTab() {
 	}
 }
 function onToggleReduction() {
-	const panel = _getRoot$27().querySelector(".panel");
+	const panel = _getRoot$35().querySelector(".panel");
 	if (_realSize$1) {
 		if (panel) panel.style.display = "flex";
 		InventoryV3._host.style.height = `${_realSize$1}px`;
@@ -215000,7 +215079,7 @@ function onToggleReduction() {
 	}
 }
 function requestFilter() {
-	const root = _getRoot$27();
+	const root = _getRoot$35();
 	const host = root.querySelector(".scroll-host");
 	if (host) host.scrollTop = 0;
 	const content = root.querySelector(".container .content");
@@ -215063,7 +215142,7 @@ function onItemOver$10(_e) {
 	if (!item) return;
 	let quantity = " ea";
 	if (item.Options && (item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.SHADOWGEAR) && item.Options.filter((Option) => Option.index !== 0).length > 0) quantity = " Quantity";
-	const root = _getRoot$27();
+	const root = _getRoot$35();
 	const overlay = root.querySelector(".overlay");
 	const rootEl = root.querySelector("#InventoryV3") || root;
 	const itemRect = this.getBoundingClientRect();
@@ -215072,13 +215151,13 @@ function onItemOver$10(_e) {
 		overlay.style.display = "block";
 		overlay.style.top = `${itemRect.top - rootRect.top}px`;
 		overlay.style.left = `${itemRect.left - rootRect.left + 35}px`;
-		overlay.textContent = `${DB.getItemName(item)}: ${item.count || 1}${quantity}`;
+		overlay.innerHTML = _sanitizeHtml$7(`${DB.getItemName(item)}: ${item.count || 1}${quantity}`);
 		if (item.IsIdentified) overlay.classList.remove("grey");
 		else overlay.classList.add("grey");
 	}
 }
 function onItemOut$11() {
-	const overlay = _getRoot$27().querySelector(".overlay");
+	const overlay = _getRoot$35().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 function onItemDragStart$5(event) {
@@ -215206,7 +215285,7 @@ function onRequestInventoryExpandResult(pkt) {
 			const item = InventoryV3.getItemById(pkt.itemId);
 			if (!item) return false;
 			const itemname = DB.getItemName(item);
-			const mcntEl = _getRoot$27().querySelector(".mcnt");
+			const mcntEl = _getRoot$35().querySelector(".mcnt");
 			const currentlimit = mcntEl ? parseInt(mcntEl.textContent, 10) : 100;
 			const newlimit = currentlimit + 10;
 			UIManager.showPromptBox(DB.getMessage(3561).replace("%s", itemname).replace("%d", currentlimit).replace("%d", newlimit), "ok", "cancel", InventoryExpandReq, InventoryExpandCancel);
@@ -215260,7 +215339,7 @@ function onItemLock() {
 	InventoryV3.itemlock = _preferences$37.itemlock;
 	const lockImg = _preferences$37.itemlock ? "inventory/item_drop_lock_on.bmp" : "inventory/item_drop_lock_off.bmp";
 	Client.loadFile(DB.INTERFACE_PATH + lockImg, (data) => {
-		const btn = _getRoot$27().querySelector(".item_drop_lock");
+		const btn = _getRoot$35().querySelector(".item_drop_lock");
 		if (btn) btn.style.backgroundImage = `url(${data})`;
 	});
 }
@@ -215269,14 +215348,14 @@ function onItemCompare() {
 	InventoryV3.itemcomp = _preferences$37.itemcomp;
 	const compImg = _preferences$37.itemcomp ? "inventory/item_compare_on.bmp" : "inventory/item_compare_off.bmp";
 	Client.loadFile(DB.INTERFACE_PATH + compImg, (data) => {
-		const btn = _getRoot$27().querySelector(".item_compare");
+		const btn = _getRoot$35().querySelector(".item_compare");
 		if (btn) btn.style.backgroundImage = `url(${data})`;
 	});
 }
 function onNPCLock() {
 	_preferences$37.npcsalelock = !_preferences$37.npcsalelock;
 	InventoryV3.npcsalelock = _preferences$37.npcsalelock;
-	const root = _getRoot$27();
+	const root = _getRoot$35();
 	if (_preferences$37.npcsalelock) {
 		const dealOn = root.querySelector(".deallock_on");
 		if (dealOn) dealOn.style.display = "";
@@ -215366,7 +215445,7 @@ var init_InventoryV3 = __esmMin((() => {
 	InventoryV3.itemcomp = _preferences$37.itemcomp;
 	InventoryV3.npcsalelock = _preferences$37.npcsalelock;
 	InventoryV3.init = function Init() {
-		const root = _getRoot$27();
+		const root = _getRoot$35();
 		const baseBtn = root.querySelector(".titlebar .base");
 		if (baseBtn) baseBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
 		const miniBtn = root.querySelector(".titlebar .mini");
@@ -215469,11 +215548,11 @@ var init_InventoryV3 = __esmMin((() => {
 		this.magnet.LEFT = _preferences$37.magnet_left;
 		this.magnet.RIGHT = _preferences$37.magnet_right;
 		_realSize$1 = _preferences$37.reduce ? 0 : this._host.getBoundingClientRect().height;
-		const miniBtnAppend = _getRoot$27().querySelector(".titlebar .mini");
+		const miniBtnAppend = _getRoot$35().querySelector(".titlebar .mini");
 		if (miniBtnAppend) miniBtnAppend.dispatchEvent(new Event("mousedown"));
 	};
 	InventoryV3.onRemove = function OnRemove() {
-		const content = _getRoot$27().querySelector(".container .content");
+		const content = _getRoot$35().querySelector(".container .content");
 		if (content) content.innerHTML = "";
 		this.list.length = 0;
 		this.equipswitchlist.length = 0;
@@ -215500,7 +215579,7 @@ var init_InventoryV3 = __esmMin((() => {
 				} else {
 					this._host.dispatchEvent(new Event("mouseleave"));
 					this.clearNewItems();
-					_getRoot$27().querySelectorAll(".new_item").forEach((el) => {
+					_getRoot$35().querySelectorAll(".new_item").forEach((el) => {
 						el.style.backgroundImage = "";
 					});
 					this._host.style.display = "none";
@@ -215520,7 +215599,7 @@ var init_InventoryV3 = __esmMin((() => {
 		} else {
 			this._host.dispatchEvent(new Event("mouseleave"));
 			this.clearNewItems();
-			_getRoot$27().querySelectorAll(".new_item").forEach((el) => {
+			_getRoot$35().querySelectorAll(".new_item").forEach((el) => {
 				el.style.backgroundImage = "";
 			});
 			this._host.style.display = "none";
@@ -215536,13 +215615,13 @@ var init_InventoryV3 = __esmMin((() => {
 	};
 	InventoryV3.resize = function Resize(width) {
 		width = Math.min(Math.max(width, 6), 8);
-		const content = _getRoot$27().querySelector(".container .content");
+		const content = _getRoot$35().querySelector(".container .content");
 		if (content) content.style.width = `${width * 32}px`;
 		this._host.style.width = `${55 + width * 32}px`;
 		this.updateScroll();
 	};
 	InventoryV3.updateScroll = function updateScroll() {
-		const root = _getRoot$27();
+		const root = _getRoot$35();
 		const hostEl = root.querySelector(".scroll-host");
 		if (!hostEl) return;
 		const contentEl = root.querySelector(".content");
@@ -215572,7 +215651,7 @@ var init_InventoryV3 = __esmMin((() => {
 		return null;
 	};
 	InventoryV3.setItems = function SetItems(items) {
-		const root = _getRoot$27();
+		const root = _getRoot$35();
 		for (let i = 0, count = items.length; i < count; ++i) {
 			const object = this.getItemByIndex(items[i].index);
 			if (object) this.removeItem(object.index, object.count);
@@ -215587,7 +215666,7 @@ var init_InventoryV3 = __esmMin((() => {
 	InventoryV3.addItem = function AddItem(item) {
 		let object = this.getItemByIndex(item.index);
 		const hasRefineFlag = Configs.get("enableRefineUI") || PacketVerManager_default.value >= 20161012;
-		const root = _getRoot$27();
+		const root = _getRoot$35();
 		const equippedIndex = InventoryV3.equippedItems.indexOf(item.index);
 		if (equippedIndex !== -1) InventoryV3.equippedItems.splice(equippedIndex, 1);
 		else {
@@ -215641,7 +215720,7 @@ var init_InventoryV3 = __esmMin((() => {
 		if (isInSwitchList) SwitchEquip_default.equip(item, item.location, true);
 		if (tab === _preferences$37.tab) {
 			const it = DB.getItemInfo(item.ITID);
-			const root = _getRoot$27();
+			const root = _getRoot$35();
 			const content = root.querySelector(".container .content");
 			if (!content) return true;
 			content.insertAdjacentHTML("beforeend", `<div class="item" data-index="${item.index}" draggable="true"><div class="new_item"></div><div class="icon"></div><div class="switch1"></div><div class="switch2"></div><div class="grade"></div><div class="amount"><span class="count">${item.count || 1}</span></div></div>`);
@@ -215679,7 +215758,7 @@ var init_InventoryV3 = __esmMin((() => {
 	};
 	InventoryV3.removeItem = function RemoveItem(index, count) {
 		const item = this.getItemByIndex(index);
-		const root = _getRoot$27();
+		const root = _getRoot$35();
 		if (!item || count <= 0) return null;
 		if (item.count) {
 			item.count -= count;
@@ -215704,7 +215783,7 @@ var init_InventoryV3 = __esmMin((() => {
 		const item = this.getItemByIndex(index);
 		if (!item) return;
 		item.count = count;
-		const root = _getRoot$27();
+		const root = _getRoot$35();
 		if (item.count > 0) {
 			const countEl = root.querySelector(`.item[data-index="${item.index}"] .count`);
 			if (countEl) countEl.textContent = item.count;
@@ -215795,7 +215874,7 @@ var init_InventoryV3 = __esmMin((() => {
 			this.equipswitchlist.splice(existingItemIndex, 1);
 		}
 		this.equipswitchlist.push(item);
-		const root = _getRoot$27();
+		const root = _getRoot$35();
 		Client.loadFile(DB.INTERFACE_PATH + "swap_equipment/bg_change.bmp", (data) => {
 			const el = root.querySelector(`.item[data-index="${item.index}"] .switch1`);
 			if (el) el.style.backgroundImage = `url(${data})`;
@@ -215815,7 +215894,7 @@ var init_InventoryV3 = __esmMin((() => {
 		}
 		const existingItemIndex = this.equipswitchlist.findIndex((existingItem) => existingItem.index === item.index);
 		if (existingItemIndex > -1) {
-			const root = _getRoot$27();
+			const root = _getRoot$35();
 			const sw1 = root.querySelector(`.item[data-index="${item.index}"] .switch1`);
 			if (sw1) sw1.style.backgroundImage = "none";
 			const sw2 = root.querySelector(`.item[data-index="${item.index}"] .switch2`);
@@ -215881,7 +215960,7 @@ var init_Inventory = __esmMin((() => {
 //#endregion
 //#region src/UI/Components/ItemInfo/ItemInfo.js
 var ItemInfo_exports = /* @__PURE__ */ __exportAll({ default: () => ItemInfo_default });
-function _getRoot$26() {
+function _getRoot$34() {
 	return ItemInfo._shadow || ItemInfo._host;
 }
 /**
@@ -215911,7 +215990,7 @@ function addCard(cardList, itemId, index, slotCount) {
 	if (!cardList) return;
 	cardList.insertAdjacentHTML("beforeend", `<div class="item" data-index="${index}"><div class="icon"></div>${name}</div>`);
 	Client.loadFile(DB.INTERFACE_PATH + file, (data) => {
-		const element = _getRoot$26().querySelector(`.cardlist .item[data-index="${index}"] .icon`);
+		const element = _getRoot$34().querySelector(`.cardlist .item[data-index="${index}"] .icon`);
 		if (element) {
 			element.style.backgroundImage = `url(${data})`;
 			if (itemId && card) element.addEventListener("contextmenu", (e) => {
@@ -215953,7 +216032,7 @@ function onResize$6() {
 * @param {number} height
 */
 function resize$4(height) {
-	const root = _getRoot$26();
+	const root = _getRoot$34();
 	const container = root.querySelector(".container");
 	const description = root.querySelector(".description");
 	const descriptionInner = root.querySelector(".description-inner");
@@ -215967,7 +216046,7 @@ function resize$4(height) {
 	if (description) description.style.height = `${containerHeight - 45}px`;
 }
 function addEvent(item) {
-	const root = _getRoot$26();
+	const root = _getRoot$34();
 	let event = root.querySelector(".event_view");
 	if (!event) {
 		if (!validateFieldsExist(event)) event = root.querySelector(".event_view");
@@ -215984,7 +216063,11 @@ function addEvent(item) {
 		case ItemType_default.ETC: {
 			const filenameBook = `data/book/${item.ITID}.txt`;
 			Client.loadFile(filenameBook, (data) => {
-				MakeReadBook_default.startBook(data, item);
+				try {
+					MakeReadBook_default.startBook(data, item);
+				} catch (e) {
+					console.error("ItemInfo::addEvent() - startBook failed:", e.message);
+				}
 				eventsBooks();
 			});
 			break;
@@ -215995,7 +216078,7 @@ function addEvent(item) {
 	}
 }
 function updatePreviewButton(item) {
-	const previewButton = _getRoot$26().querySelector(".btn_mounting");
+	const previewButton = _getRoot$34().querySelector(".btn_mounting");
 	if (!previewButton) return;
 	if (!canPreviewItem(item)) {
 		previewButton.style.display = "none";
@@ -216035,7 +216118,7 @@ function toggleItemPreview(item) {
 	ItemPreview_default.setItem(item);
 }
 function eventsBooks() {
-	const root = _getRoot$26();
+	const root = _getRoot$34();
 	const event = root.querySelector(".event_view");
 	if (!event) return;
 	Client.getFiles(["data/sprite/book/Ã¥ÀÐ±â.spr", "data/sprite/book/Ã¥ÀÐ±â.act"], function(spr, act) {
@@ -216093,7 +216176,7 @@ function eventsBooks() {
 	});
 }
 function validateFieldsExist(event) {
-	const root = _getRoot$26();
+	const root = _getRoot$34();
 	if (!event) {
 		const validExitElement = "<div class=\"event_view\"><button class=\"view\" data-background=\"btn_view.bmp\" data-down=\"btn_view_a.bmp\" data-hover=\"btn_view_b.bmp\"></button><span class=\"overlay_open\">" + DB.getMessage(1294) + "</span><span class=\"overlay_read\">" + DB.getMessage(1295) + "</span></div>";
 		const collection = root.querySelector(".collection");
@@ -216222,7 +216305,7 @@ var init_ItemInfo = __esmMin((() => {
 	* Once append
 	*/
 	ItemInfo.onAppend = function onAppend() {
-		const descInner = _getRoot$26().querySelector(".description-inner");
+		const descInner = _getRoot$34().querySelector(".description-inner");
 		if (descInner) resize$4(descInner.offsetHeight + 45);
 	};
 	/**
@@ -216238,7 +216321,7 @@ var init_ItemInfo = __esmMin((() => {
 	* Initialize UI
 	*/
 	ItemInfo.init = function init() {
-		const root = _getRoot$26();
+		const root = _getRoot$34();
 		this._host.style.top = "200px";
 		this._host.style.left = "480px";
 		const extendBtn = root.querySelector(".extend");
@@ -216267,7 +216350,7 @@ var init_ItemInfo = __esmMin((() => {
 	*/
 	ItemInfo.setItem = function setItem(item) {
 		const it = DB.getItemInfo(item.ITID);
-		const root = _getRoot$26();
+		const root = _getRoot$34();
 		const cardList = root.querySelector(".cardlist .border");
 		const optionContainer = root.querySelector(".option-container");
 		this.item = it;
@@ -216427,7 +216510,7 @@ var init_EquipmentV0$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Equipment/EquipmentV0/EquipmentV0.js
-function _getRoot$25() {
+function _getRoot$33() {
 	return EquipmentV0._shadow || EquipmentV0._host;
 }
 function escapeHTML$5(str) {
@@ -216448,7 +216531,7 @@ function hideStatus$2() {
 	if (winStats.isEmbedded()) winStats.unembed();
 }
 function toggleStatus$5() {
-	const self = _getRoot$25().querySelector(".view_status");
+	const self = _getRoot$33().querySelector(".view_status");
 	const winStats = WinStatsController.getUI();
 	const isVisible = winStats.isEmbedded();
 	const state = isVisible ? "on" : "off";
@@ -216488,7 +216571,7 @@ function onDragOver$5(event) {
 			const item = data.data;
 			if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.SHADOWGEAR) && item.IsIdentified && !item.IsDamaged) {
 				const selector = getSelectorFromLocation$5("location" in item ? item.location : item.WearLocation);
-				const cells = _getRoot$25().querySelectorAll(selector);
+				const cells = _getRoot$33().querySelectorAll(selector);
 				Client.loadFile(DB.INTERFACE_PATH + "basic_interface/item_invert.bmp", (_data) => {
 					cells.forEach((c) => {
 						c.style.backgroundImage = `url(${_data})`;
@@ -216501,7 +216584,7 @@ function onDragOver$5(event) {
 	return false;
 }
 function onDragLeave$4(event) {
-	_getRoot$25().querySelectorAll("td").forEach((td) => {
+	_getRoot$33().querySelectorAll("td").forEach((td) => {
 		td.style.backgroundImage = "none";
 	});
 	event.stopImmediatePropagation();
@@ -216518,7 +216601,7 @@ function onDrop$13(event) {
 	if (data && data.type === "item") {
 		item = data.data;
 		if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.AMMO || item.type === ItemType_default.SHADOWGEAR) && item.IsIdentified && !item.IsDamaged) {
-			_getRoot$25().querySelectorAll("td").forEach((td) => {
+			_getRoot$33().querySelectorAll("td").forEach((td) => {
 				td.style.backgroundImage = "none";
 			});
 			EquipmentV0.onEquipItem(item.index, "location" in item ? item.location : item.WearState);
@@ -216541,14 +216624,14 @@ function onEquipmentInfo$4(event) {
 function onEquipmentUnEquip$4() {
 	const index = parseInt(this.getAttribute("data-index"), 10);
 	EquipmentV0.onUnEquip(index);
-	const overlay = _getRoot$25().querySelector(".overlay");
+	const overlay = _getRoot$33().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 function onEquipmentOver$4() {
 	const idx = parseInt(this.parentNode.getAttribute("data-index"), 10);
 	const item = _list$11[idx];
 	if (!item) return;
-	const root = _getRoot$25();
+	const root = _getRoot$33();
 	const overlay = root.querySelector(".overlay");
 	const rootEl = root.querySelector("#EquipmentV0") || root;
 	const btnRect = this.getBoundingClientRect();
@@ -216564,7 +216647,7 @@ function onEquipmentOver$4() {
 	}
 }
 function onEquipmentOut$4() {
-	const overlay = _getRoot$25().querySelector(".overlay");
+	const overlay = _getRoot$33().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 var EquipmentV0, _preferences$36, _list$11, _ctx$9, _showEquip$4, _btnLevelUp$4, renderCharacter$4, EquipmentV0_default;
@@ -216603,7 +216686,7 @@ var init_EquipmentV0 = __esmMin((() => {
 	_list$11 = {};
 	_showEquip$4 = false;
 	EquipmentV0.init = function init() {
-		const root = _getRoot$25();
+		const root = _getRoot$33();
 		const canvas = root.querySelector("canvas");
 		if (canvas) _ctx$9 = canvas.getContext("2d");
 		if (UIVersionManager.getEquipmentVersion() > 0) {
@@ -216678,21 +216761,21 @@ var init_EquipmentV0 = __esmMin((() => {
 		this._host.style.left = `${Math.min(Math.max(0, _preferences$36.x), Renderer.width - hostRect.width)}px`;
 		if (!_preferences$36.show) this._host.style.display = "none";
 		if (_preferences$36.reduce) {
-			const panel = _getRoot$25().querySelector(".panel");
+			const panel = _getRoot$33().querySelector(".panel");
 			if (panel) panel.style.display = "none";
 		}
 		if (UIVersionManager.getEquipmentVersion() > 0) if (_preferences$36.stats && _preferences$36.show) WinStatsController.getUI().embed(EquipmentV0._host);
 		else Client.loadFile(DB.INTERFACE_PATH + "basic_interface/viewon.bmp", (data) => {
-			const btn = _getRoot$25().querySelector(".view_status");
+			const btn = _getRoot$33().querySelector(".view_status");
 			if (btn) btn.style.backgroundImage = `url(${data})`;
 		});
-		if (_getRoot$25().querySelector("canvas") && this._host.style.display !== "none") Renderer.render(renderCharacter$4);
+		if (_getRoot$33().querySelector("canvas") && this._host.style.display !== "none") Renderer.render(renderCharacter$4);
 	};
 	EquipmentV0.onRemove = function onRemove() {
 		if (UIVersionManager.getEquipmentVersion() > 0 && _btnLevelUp$4 && _btnLevelUp$4.parentNode) _btnLevelUp$4.remove();
 		Renderer.stop(renderCharacter$4);
 		_list$11 = {};
-		const root = _getRoot$25();
+		const root = _getRoot$33();
 		root.querySelectorAll(".col1, .col3, .ammo").forEach((el) => {
 			el.innerHTML = "";
 		});
@@ -216730,7 +216813,7 @@ var init_EquipmentV0 = __esmMin((() => {
 	EquipmentV0.setEquipConfig = function setEquipConfig(on) {
 		_showEquip$4 = on;
 		Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (on ? "1" : "0") + ".bmp", (data) => {
-			const btn = _getRoot$25().querySelector(".show_equip");
+			const btn = _getRoot$33().querySelector(".show_equip");
 			if (btn) btn.style.backgroundImage = `url(${data})`;
 		});
 	};
@@ -216752,7 +216835,7 @@ var init_EquipmentV0 = __esmMin((() => {
 			if (text.length > limit) return text.substring(0, limit) + "...";
 			return text;
 		}
-		const root = _getRoot$25();
+		const root = _getRoot$33();
 		const selector = getSelectorFromLocation$5(location);
 		root.querySelectorAll(selector).forEach((cell) => {
 			cell.innerHTML = "<div class=\"item\" data-index=\"" + item.index + "\"><button></button><span class=\"itemName\">" + escapeHTML$5(add3Dots(DB.getItemName(item, {
@@ -216770,7 +216853,7 @@ var init_EquipmentV0 = __esmMin((() => {
 	};
 	EquipmentV0.unEquip = function unEquip(index, location) {
 		const selector = getSelectorFromLocation$5(location);
-		const root = _getRoot$25();
+		const root = _getRoot$33();
 		const item = _list$11[index];
 		root.querySelectorAll(selector).forEach((el) => {
 			el.innerHTML = "";
@@ -216811,7 +216894,7 @@ var init_EquipmentV0 = __esmMin((() => {
 			if (character.effectState !== _lastState || _hasCart !== character.hasCart) {
 				_lastState = character.effectState;
 				_hasCart = character.hasCart;
-				const root = _getRoot$25();
+				const root = _getRoot$33();
 				const removeOpt = root.querySelector(".removeOption");
 				const cartBtn = root.querySelector(".cartitems");
 				if (_lastState & HasAttachmentState || _hasCart) {
@@ -216839,7 +216922,7 @@ var init_EquipmentV0 = __esmMin((() => {
 		};
 	})();
 	EquipmentV0.onUpdateOwnerName = function() {
-		const root = _getRoot$25();
+		const root = _getRoot$33();
 		for (const index in _list$11) {
 			const item = _list$11[index];
 			if (item.slot && [
@@ -216882,7 +216965,7 @@ var init_EquipmentV1$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Equipment/EquipmentV1/EquipmentV1.js
-function _getRoot$24() {
+function _getRoot$32() {
 	return EquipmentV1._shadow || EquipmentV1._host;
 }
 function escapeHTML$4(str) {
@@ -216922,7 +217005,7 @@ function hideStatus$1() {
 	if (winStats.isEmbedded()) winStats.unembed();
 }
 function toggleStatus$4() {
-	const self = _getRoot$24().querySelector(".view_status");
+	const self = _getRoot$32().querySelector(".view_status");
 	const winStats = WinStatsController.getUI();
 	const isVisible = winStats.isEmbedded();
 	const state = isVisible ? "on" : "off";
@@ -216972,7 +217055,7 @@ function onDragOver$4(event) {
 			const item = data.data;
 			if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.SHADOWGEAR) && item.IsIdentified && !item.IsDamaged) {
 				const selector = getSelectorFromLocation$4("location" in item ? item.location : item.WearLocation);
-				const cells = _getRoot$24().querySelectorAll(selector);
+				const cells = _getRoot$32().querySelectorAll(selector);
 				Client.loadFile(DB.INTERFACE_PATH + "basic_interface/item_invert.bmp", (_data) => {
 					cells.forEach((c) => {
 						c.style.backgroundImage = `url(${_data})`;
@@ -216985,7 +217068,7 @@ function onDragOver$4(event) {
 	return false;
 }
 function onDragLeave$3(event) {
-	_getRoot$24().querySelectorAll("td").forEach((td) => {
+	_getRoot$32().querySelectorAll("td").forEach((td) => {
 		td.style.backgroundImage = "none";
 	});
 	event.stopImmediatePropagation();
@@ -217002,7 +217085,7 @@ function onDrop$12(event) {
 	if (data && data.type === "item") {
 		item = data.data;
 		if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.AMMO || item.type === ItemType_default.SHADOWGEAR) && item.IsIdentified && !item.IsDamaged) {
-			_getRoot$24().querySelectorAll("td").forEach((td) => {
+			_getRoot$32().querySelectorAll("td").forEach((td) => {
 				td.style.backgroundImage = "none";
 			});
 			EquipmentV1.onEquipItem(item.index, "location" in item ? item.location : item.WearState);
@@ -217025,14 +217108,14 @@ function onEquipmentInfo$3(event) {
 function onEquipmentUnEquip$3() {
 	const index = parseInt(this.getAttribute("data-index"), 10);
 	EquipmentV1.onUnEquip(index);
-	const overlay = _getRoot$24().querySelector(".overlay");
+	const overlay = _getRoot$32().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 function onEquipmentOver$3() {
 	const idx = parseInt(this.parentNode.getAttribute("data-index"), 10);
 	const item = _list$10[idx];
 	if (!item) return;
-	const root = _getRoot$24();
+	const root = _getRoot$32();
 	const overlay = root.querySelector(".overlay");
 	const rootEl = root.querySelector("#EquipmentV1") || root;
 	const btnRect = this.getBoundingClientRect();
@@ -217048,7 +217131,7 @@ function onEquipmentOver$3() {
 	}
 }
 function onEquipmentOut$3() {
-	const overlay = _getRoot$24().querySelector(".overlay");
+	const overlay = _getRoot$32().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 var EquipmentV1, _preferences$35, _list$10, _ctx$8, _showEquip$3, _btnLevelUp$3, tabLinks$3, contentDivs$3, currentTabId$3, renderCharacter$3, EquipmentV1_default;
@@ -217092,7 +217175,7 @@ var init_EquipmentV1 = __esmMin((() => {
 	contentDivs$3 = {};
 	currentTabId$3 = "general";
 	EquipmentV1.init = function init() {
-		const root = _getRoot$24();
+		const root = _getRoot$32();
 		const canvases = root.querySelectorAll("canvas");
 		if (canvases[0]) _ctx$8.push(canvases[0].getContext("2d"));
 		if (canvases[1]) _ctx$8.push(canvases[1].getContext("2d"));
@@ -217197,21 +217280,21 @@ var init_EquipmentV1 = __esmMin((() => {
 		this._host.style.left = `${Math.min(Math.max(0, _preferences$35.x), Renderer.width - hostRect.width)}px`;
 		if (!_preferences$35.show) this._host.style.display = "none";
 		if (_preferences$35.reduce) {
-			const panel = _getRoot$24().querySelector(".panel");
+			const panel = _getRoot$32().querySelector(".panel");
 			if (panel) panel.style.display = "none";
 		}
 		if (UIVersionManager.getEquipmentVersion() > 0) if (_preferences$35.stats && _preferences$35.show) WinStatsController.getUI().embed(EquipmentV1._host);
 		else Client.loadFile(DB.INTERFACE_PATH + "basic_interface/viewon.bmp", (data) => {
-			const btn = _getRoot$24().querySelector(".view_status");
+			const btn = _getRoot$32().querySelector(".view_status");
 			if (btn) btn.style.backgroundImage = `url(${data})`;
 		});
-		if (_getRoot$24().querySelector("canvas") && this._host.style.display !== "none") Renderer.render(renderCharacter$3);
+		if (_getRoot$32().querySelector("canvas") && this._host.style.display !== "none") Renderer.render(renderCharacter$3);
 	};
 	EquipmentV1.onRemove = function onRemove() {
 		if (UIVersionManager.getEquipmentVersion() > 0 && _btnLevelUp$3 && _btnLevelUp$3.parentNode) _btnLevelUp$3.remove();
 		Renderer.stop(renderCharacter$3);
 		_list$10 = {};
-		const root = _getRoot$24();
+		const root = _getRoot$32();
 		root.querySelectorAll(".col1, .col3, .ammo").forEach((el) => {
 			el.innerHTML = "";
 		});
@@ -217249,7 +217332,7 @@ var init_EquipmentV1 = __esmMin((() => {
 	EquipmentV1.setEquipConfig = function setEquipConfig(on) {
 		_showEquip$3 = on;
 		Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (on ? "1" : "0") + ".bmp", (data) => {
-			const btn = _getRoot$24().querySelector(".show_equip");
+			const btn = _getRoot$32().querySelector(".show_equip");
 			if (btn) btn.style.backgroundImage = `url(${data})`;
 		});
 	};
@@ -217268,7 +217351,7 @@ var init_EquipmentV1 = __esmMin((() => {
 			if (text.length > limit) return text.substring(0, limit) + "...";
 			return text;
 		}
-		const root = _getRoot$24();
+		const root = _getRoot$32();
 		const selector = getSelectorFromLocation$4(location);
 		root.querySelectorAll(selector).forEach((cell) => {
 			cell.innerHTML = "<div class=\"item\" data-index=\"" + item.index + "\"><button></button><span class=\"itemName\">" + escapeHTML$4(add3Dots(DB.getItemName(item, {
@@ -217286,7 +217369,7 @@ var init_EquipmentV1 = __esmMin((() => {
 	};
 	EquipmentV1.unEquip = function unEquip(index, location) {
 		const selector = getSelectorFromLocation$4(location);
-		const root = _getRoot$24();
+		const root = _getRoot$32();
 		const item = _list$10[index];
 		item.equipped = 0;
 		root.querySelectorAll(selector).forEach((el) => {
@@ -217339,7 +217422,7 @@ var init_EquipmentV1 = __esmMin((() => {
 			if (SessionStorage_default.Entity.effectState !== _lastState || _hasCart !== SessionStorage_default.Entity.hasCart) {
 				_lastState = SessionStorage_default.Entity.effectState;
 				_hasCart = SessionStorage_default.Entity.hasCart;
-				const root = _getRoot$24();
+				const root = _getRoot$32();
 				const removeOpt = root.querySelector(".removeOption");
 				const cartBtn = root.querySelector(".cartitems");
 				if (_lastState & HasAttachmentState || _hasCart) {
@@ -217376,7 +217459,7 @@ var init_EquipmentV1 = __esmMin((() => {
 		};
 	})();
 	EquipmentV1.onUpdateOwnerName = function() {
-		const root = _getRoot$24();
+		const root = _getRoot$32();
 		for (const index in _list$10) {
 			const item = _list$10[index];
 			if (item.slot && [
@@ -217416,7 +217499,7 @@ var init_EquipmentV2$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Equipment/EquipmentV2/EquipmentV2.js
-function _getRoot$23() {
+function _getRoot$31() {
 	return EquipmentV2._shadow || EquipmentV2._host;
 }
 function escapeHTML$3(str) {
@@ -217456,7 +217539,7 @@ function hideStatus() {
 	if (winStats.isEmbedded()) winStats.unembed();
 }
 function toggleStatus$3() {
-	const self = _getRoot$23().querySelector(".view_status");
+	const self = _getRoot$31().querySelector(".view_status");
 	const winStats = WinStatsController.getUI();
 	const isVisible = winStats.isEmbedded();
 	const state = isVisible ? "on" : "off";
@@ -217506,7 +217589,7 @@ function onDragOver$3(event) {
 			const item = data.data;
 			if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.SHADOWGEAR) && item.IsIdentified && !item.IsDamaged) {
 				const selector = getSelectorFromLocation$3("location" in item ? item.location : item.WearLocation);
-				const cells = _getRoot$23().querySelectorAll(selector);
+				const cells = _getRoot$31().querySelectorAll(selector);
 				Client.loadFile(DB.INTERFACE_PATH + "basic_interface/item_invert.bmp", (_data) => {
 					cells.forEach((c) => {
 						c.style.backgroundImage = `url(${_data})`;
@@ -217519,7 +217602,7 @@ function onDragOver$3(event) {
 	return false;
 }
 function onDragLeave$2(event) {
-	_getRoot$23().querySelectorAll("td").forEach((td) => {
+	_getRoot$31().querySelectorAll("td").forEach((td) => {
 		td.style.backgroundImage = "none";
 	});
 	event.stopImmediatePropagation();
@@ -217536,7 +217619,7 @@ function onDrop$11(event) {
 	if (data && data.type === "item") {
 		item = data.data;
 		if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.AMMO || item.type === ItemType_default.SHADOWGEAR) && item.IsIdentified && !item.IsDamaged) {
-			_getRoot$23().querySelectorAll("td").forEach((td) => {
+			_getRoot$31().querySelectorAll("td").forEach((td) => {
 				td.style.backgroundImage = "none";
 			});
 			EquipmentV2.onEquipItem(item.index, "location" in item ? item.location : item.WearState);
@@ -217559,14 +217642,14 @@ function onEquipmentInfo$2(event) {
 function onEquipmentUnEquip$2() {
 	const index = parseInt(this.getAttribute("data-index"), 10);
 	EquipmentV2.onUnEquip(index);
-	const overlay = _getRoot$23().querySelector(".overlay");
+	const overlay = _getRoot$31().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 function onEquipmentOver$2() {
 	const idx = parseInt(this.parentNode.getAttribute("data-index"), 10);
 	const item = _list$9[idx];
 	if (!item) return;
-	const root = _getRoot$23();
+	const root = _getRoot$31();
 	const overlay = root.querySelector(".overlay");
 	const rootEl = root.querySelector("#EquipmentV2") || root;
 	const btnRect = this.getBoundingClientRect();
@@ -217582,7 +217665,7 @@ function onEquipmentOver$2() {
 	}
 }
 function onEquipmentOut$2() {
-	const overlay = _getRoot$23().querySelector(".overlay");
+	const overlay = _getRoot$31().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 var EquipmentV2, _preferences$34, _list$9, _ctx$7, _showEquip$2, _btnLevelUp$2, tabLinks$2, contentDivs$2, currentTabId$2, renderCharacter$2, EquipmentV2_default;
@@ -217626,7 +217709,7 @@ var init_EquipmentV2 = __esmMin((() => {
 	contentDivs$2 = {};
 	currentTabId$2 = "general";
 	EquipmentV2.init = function init() {
-		const root = _getRoot$23();
+		const root = _getRoot$31();
 		const canvases = root.querySelectorAll("canvas");
 		if (canvases[0]) _ctx$7.push(canvases[0].getContext("2d"));
 		if (canvases[1]) _ctx$7.push(canvases[1].getContext("2d"));
@@ -217731,21 +217814,21 @@ var init_EquipmentV2 = __esmMin((() => {
 		this._host.style.left = `${Math.min(Math.max(0, _preferences$34.x), Renderer.width - hostRect.width)}px`;
 		if (!_preferences$34.show) this._host.style.display = "none";
 		if (_preferences$34.reduce) {
-			const panel = _getRoot$23().querySelector(".panel");
+			const panel = _getRoot$31().querySelector(".panel");
 			if (panel) panel.style.display = "none";
 		}
 		if (UIVersionManager.getEquipmentVersion() > 0) if (_preferences$34.stats && _preferences$34.show) WinStatsController.getUI().embed(EquipmentV2._host);
 		else Client.loadFile(DB.INTERFACE_PATH + "basic_interface/viewon.bmp", (data) => {
-			const btn = _getRoot$23().querySelector(".view_status");
+			const btn = _getRoot$31().querySelector(".view_status");
 			if (btn) btn.style.backgroundImage = `url(${data})`;
 		});
-		if (_getRoot$23().querySelector("canvas") && this._host.style.display !== "none") Renderer.render(renderCharacter$2);
+		if (_getRoot$31().querySelector("canvas") && this._host.style.display !== "none") Renderer.render(renderCharacter$2);
 	};
 	EquipmentV2.onRemove = function onRemove() {
 		if (UIVersionManager.getEquipmentVersion() > 0 && _btnLevelUp$2 && _btnLevelUp$2.parentNode) _btnLevelUp$2.remove();
 		Renderer.stop(renderCharacter$2);
 		_list$9 = {};
-		const root = _getRoot$23();
+		const root = _getRoot$31();
 		root.querySelectorAll(".col1, .col3, .ammo").forEach((el) => {
 			el.innerHTML = "";
 		});
@@ -217783,7 +217866,7 @@ var init_EquipmentV2 = __esmMin((() => {
 	EquipmentV2.setEquipConfig = function setEquipConfig(on) {
 		_showEquip$2 = on;
 		Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (on ? "1" : "0") + ".bmp", (data) => {
-			const btn = _getRoot$23().querySelector(".show_equip");
+			const btn = _getRoot$31().querySelector(".show_equip");
 			if (btn) btn.style.backgroundImage = `url(${data})`;
 		});
 	};
@@ -217802,7 +217885,7 @@ var init_EquipmentV2 = __esmMin((() => {
 			if (text.length > limit) return text.substring(0, limit) + "...";
 			return text;
 		}
-		const root = _getRoot$23();
+		const root = _getRoot$31();
 		const selector = getSelectorFromLocation$3(location);
 		root.querySelectorAll(selector).forEach((cell) => {
 			cell.innerHTML = "<div class=\"item\" data-index=\"" + item.index + "\"><button></button><span class=\"itemName\">" + escapeHTML$3(add3Dots(DB.getItemName(item, {
@@ -217820,7 +217903,7 @@ var init_EquipmentV2 = __esmMin((() => {
 	};
 	EquipmentV2.unEquip = function unEquip(index, location) {
 		const selector = getSelectorFromLocation$3(location);
-		const root = _getRoot$23();
+		const root = _getRoot$31();
 		const item = _list$9[index];
 		item.equipped = 0;
 		root.querySelectorAll(selector).forEach((el) => {
@@ -217873,7 +217956,7 @@ var init_EquipmentV2 = __esmMin((() => {
 			if (SessionStorage_default.Entity.effectState !== _lastState || _hasCart !== SessionStorage_default.Entity.hasCart) {
 				_lastState = SessionStorage_default.Entity.effectState;
 				_hasCart = SessionStorage_default.Entity.hasCart;
-				const root = _getRoot$23();
+				const root = _getRoot$31();
 				const removeOpt = root.querySelector(".removeOption");
 				const cartBtn = root.querySelector(".cartitems");
 				if (_lastState & HasAttachmentState || _hasCart) {
@@ -217910,7 +217993,7 @@ var init_EquipmentV2 = __esmMin((() => {
 		};
 	})();
 	EquipmentV2.onUpdateOwnerName = function() {
-		const root = _getRoot$23();
+		const root = _getRoot$31();
 		for (const index in _list$9) {
 			const item = _list$9[index];
 			if (item.slot && [
@@ -217950,7 +218033,7 @@ var init_EquipmentV3$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Equipment/EquipmentV3/EquipmentV3.js
-function _getRoot$22() {
+function _getRoot$30() {
 	return EquipmentV3._shadow || EquipmentV3._host;
 }
 function escapeHTML$2(str) {
@@ -217960,7 +218043,7 @@ function escapeHTML$2(str) {
 }
 function showTab$1() {
 	const selectedId = getHash$1(this.getAttribute("href"));
-	const root = _getRoot$22();
+	const root = _getRoot$30();
 	for (const id in contentDivs$1) if (id === selectedId) {
 		tabLinks$1[id].className = "tab selected";
 		if (contentDivs$1[id]) contentDivs$1[id].className = "content";
@@ -218004,7 +218087,7 @@ function onRemoveOption$2() {
 	Network.sendPacket(pkt);
 }
 function toggleStatus$2() {
-	const self = _getRoot$22().querySelector(".view_status");
+	const self = _getRoot$30().querySelector(".view_status");
 	const winStatsUI = WinStatsController.getUI();
 	const statusHost = winStatsUI._host || winStatsUI.ui;
 	const isVisible = statusHost ? statusHost.style ? statusHost.style.display !== "none" : true : false;
@@ -218049,7 +218132,7 @@ function onDragOver$2(event) {
 			const item = data.data;
 			if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.SHADOWGEAR) && item.IsIdentified && !item.IsDamaged) {
 				const selector = getSelectorFromLocation$2("location" in item ? item.location : item.WearLocation);
-				const cells = _getRoot$22().querySelectorAll(selector);
+				const cells = _getRoot$30().querySelectorAll(selector);
 				Client.loadFile(DB.INTERFACE_PATH + "basic_interface/item_invert.bmp", (_data) => {
 					cells.forEach((c) => {
 						c.style.backgroundImage = `url(${_data})`;
@@ -218062,7 +218145,7 @@ function onDragOver$2(event) {
 	return false;
 }
 function onDragLeave$1(event) {
-	_getRoot$22().querySelectorAll("td").forEach((td) => {
+	_getRoot$30().querySelectorAll("td").forEach((td) => {
 		td.style.backgroundImage = "none";
 	});
 	event.stopImmediatePropagation();
@@ -218079,7 +218162,7 @@ function onDrop$10(event) {
 	if (data && data.type === "item") {
 		item = data.data;
 		if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.AMMO || item.type === ItemType_default.SHADOWGEAR) && item.IsIdentified && !item.IsDamaged) {
-			_getRoot$22().querySelectorAll("td").forEach((td) => {
+			_getRoot$30().querySelectorAll("td").forEach((td) => {
 				td.style.backgroundImage = "none";
 			});
 			EquipmentV3.onEquipItem(item.index, "location" in item ? item.location : item.WearState);
@@ -218102,14 +218185,14 @@ function onEquipmentInfo$1(event) {
 function onEquipmentUnEquip$1() {
 	const index = parseInt(this.getAttribute("data-index"), 10);
 	EquipmentV3.onUnEquip(index);
-	const overlay = _getRoot$22().querySelector(".overlay");
+	const overlay = _getRoot$30().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 function onEquipmentOver$1() {
 	const idx = parseInt(this.parentNode.getAttribute("data-index"), 10);
 	const item = EquipmentV3._itemlist[idx];
 	if (!item) return;
-	const root = _getRoot$22();
+	const root = _getRoot$30();
 	const overlay = root.querySelector(".overlay");
 	const rootEl = root.querySelector("#EquipmentV3") || root;
 	const btnRect = this.getBoundingClientRect();
@@ -218125,7 +218208,7 @@ function onEquipmentOver$1() {
 	}
 }
 function onEquipmentOut$1() {
-	const overlay = _getRoot$22().querySelector(".overlay");
+	const overlay = _getRoot$30().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 function onSwtichEquip$1() {
@@ -218184,7 +218267,7 @@ var init_EquipmentV3 = __esmMin((() => {
 	currentTabId$1 = "general";
 	_currentTitleId$1 = 0;
 	EquipmentV3.init = function init() {
-		const root = _getRoot$22();
+		const root = _getRoot$30();
 		const canvases = root.querySelectorAll("canvas");
 		if (canvases[0]) _ctx$6.push(canvases[0].getContext("2d"));
 		if (canvases[1]) _ctx$6.push(canvases[1].getContext("2d"));
@@ -218291,20 +218374,20 @@ var init_EquipmentV3 = __esmMin((() => {
 		this._host.style.left = `${Math.min(Math.max(0, _preferences$33.x), Renderer.width - hostRect.width)}px`;
 		if (!_preferences$33.show) this._host.style.display = "none";
 		if (_preferences$33.reduce) {
-			const panel = _getRoot$22().querySelector(".panel");
+			const panel = _getRoot$30().querySelector(".panel");
 			if (panel) panel.style.display = "none";
 		}
 		if (UIVersionManager.getEquipmentVersion() > 0) {
 			if (!_preferences$33.stats) {
-				const statusComp = _getRoot$22().querySelector(".status_component");
+				const statusComp = _getRoot$30().querySelector(".status_component");
 				if (statusComp) statusComp.style.display = "none";
 				Client.loadFile(DB.INTERFACE_PATH + "basic_interface/viewon.bmp", (data) => {
-					const btn = _getRoot$22().querySelector(".view_status");
+					const btn = _getRoot$30().querySelector(".view_status");
 					if (btn) btn.style.backgroundImage = `url(${data})`;
 				});
 			}
 		}
-		if (_getRoot$22().querySelector("canvas") && this._host.style.display !== "none") Renderer.render(renderCharacter$1);
+		if (_getRoot$30().querySelector("canvas") && this._host.style.display !== "none") Renderer.render(renderCharacter$1);
 		SwitchEquip_default.append(switchappend$1);
 		if (SwitchEquip_default.ui) {
 			const switchHost = SwitchEquip_default._host || SwitchEquip_default.ui;
@@ -218315,7 +218398,7 @@ var init_EquipmentV3 = __esmMin((() => {
 		if (UIVersionManager.getEquipmentVersion() > 0 && _btnLevelUp$1 && _btnLevelUp$1.parentNode) _btnLevelUp$1.remove();
 		Renderer.stop(renderCharacter$1);
 		EquipmentV3._itemlist = {};
-		const root = _getRoot$22();
+		const root = _getRoot$30();
 		root.querySelectorAll(".col1, .col3, .ammo").forEach((el) => {
 			el.innerHTML = "";
 		});
@@ -218351,7 +218434,7 @@ var init_EquipmentV3 = __esmMin((() => {
 	EquipmentV3.setEquipConfig = function setEquipConfig(on) {
 		_showEquip$1 = on;
 		Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (on ? "1" : "0") + ".bmp", (data) => {
-			const btn = _getRoot$22().querySelector(".show_equip");
+			const btn = _getRoot$30().querySelector(".show_equip");
 			if (btn) btn.style.backgroundImage = `url(${data})`;
 		});
 	};
@@ -218370,7 +218453,7 @@ var init_EquipmentV3 = __esmMin((() => {
 			if (text.length > limit) return text.substring(0, limit) + "...";
 			return text;
 		}
-		const root = _getRoot$22();
+		const root = _getRoot$30();
 		const selector = getSelectorFromLocation$2(location);
 		root.querySelectorAll(selector).forEach((cell) => {
 			cell.innerHTML = "<div class=\"item\" data-index=\"" + item.index + "\"><button><div class=\"grade\"></div></button><span class=\"itemName\">" + escapeHTML$2(add3Dots(DB.getItemName(item, {
@@ -218396,7 +218479,7 @@ var init_EquipmentV3 = __esmMin((() => {
 	};
 	EquipmentV3.unEquip = function unEquip(index, location) {
 		const selector = getSelectorFromLocation$2(location);
-		const root = _getRoot$22();
+		const root = _getRoot$30();
 		const item = EquipmentV3._itemlist[index];
 		item.equipped = 0;
 		root.querySelectorAll(selector).forEach((el) => {
@@ -218449,7 +218532,7 @@ var init_EquipmentV3 = __esmMin((() => {
 			if (SessionStorage_default.Entity.effectState !== _lastState || _hasCart !== SessionStorage_default.Entity.hasCart) {
 				_lastState = SessionStorage_default.Entity.effectState;
 				_hasCart = SessionStorage_default.Entity.hasCart;
-				const root = _getRoot$22();
+				const root = _getRoot$30();
 				const removeOpt = root.querySelector(".removeOption");
 				const cartBtn = root.querySelector(".cartitems");
 				if (_lastState & HasAttachmentState || _hasCart) {
@@ -218486,7 +218569,7 @@ var init_EquipmentV3 = __esmMin((() => {
 		};
 	})();
 	EquipmentV3.onUpdateOwnerName = function() {
-		const root = _getRoot$22();
+		const root = _getRoot$30();
 		for (const index in EquipmentV3._itemlist) {
 			const item = EquipmentV3._itemlist[index];
 			if (item.slot && [
@@ -218504,7 +218587,7 @@ var init_EquipmentV3 = __esmMin((() => {
 		return num;
 	};
 	EquipmentV3.loadTitles = function() {
-		const titleList = _getRoot$22().querySelector("#title_list");
+		const titleList = _getRoot$30().querySelector("#title_list");
 		if (!titleList) return;
 		titleList.innerHTML = "";
 		const removeTitleText = DB.getMessage(2686) || "Remove Title";
@@ -218575,7 +218658,7 @@ var init_EquipmentV4$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Equipment/EquipmentV4/EquipmentV4.js
-function _getRoot$21() {
+function _getRoot$29() {
 	return EquipmentV4._shadow || EquipmentV4._host;
 }
 function escapeHTML$1(str) {
@@ -218585,7 +218668,7 @@ function escapeHTML$1(str) {
 }
 function showTab() {
 	const selectedId = getHash(this.getAttribute("href"));
-	const root = _getRoot$21();
+	const root = _getRoot$29();
 	for (const id in contentDivs) if (id === selectedId) {
 		tabLinks[id].className = "tab selected";
 		if (contentDivs[id]) contentDivs[id].className = "content";
@@ -218652,7 +218735,7 @@ function onRemoveOption$1() {
 	Network.sendPacket(pkt);
 }
 function toggleStatus$1() {
-	const self = _getRoot$21().querySelector(".view_status");
+	const self = _getRoot$29().querySelector(".view_status");
 	const winStatsUI = WinStatsController.getUI();
 	const statusHost = winStatsUI._host || winStatsUI.ui;
 	const isVisible = statusHost ? statusHost.style ? statusHost.style.display !== "none" : true : false;
@@ -218700,7 +218783,7 @@ function onDragOver$1(event) {
 			const item = data.data;
 			if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.SHADOWGEAR) && item.IsIdentified && !item.IsDamaged) {
 				const selector = getSelectorFromLocation$1("location" in item ? item.location : item.WearLocation);
-				const cells = _getRoot$21().querySelectorAll(selector);
+				const cells = _getRoot$29().querySelectorAll(selector);
 				Client.loadFile(DB.INTERFACE_PATH + "basic_interface/item_invert.bmp", (_data) => {
 					cells.forEach((c) => {
 						c.style.backgroundImage = `url(${_data})`;
@@ -218713,7 +218796,7 @@ function onDragOver$1(event) {
 	return false;
 }
 function onDragLeave(event) {
-	_getRoot$21().querySelectorAll("td").forEach((td) => {
+	_getRoot$29().querySelectorAll("td").forEach((td) => {
 		td.style.backgroundImage = "none";
 	});
 	event.stopImmediatePropagation();
@@ -218730,7 +218813,7 @@ function onDrop$9(event) {
 	if (data && data.type === "item") {
 		item = data.data;
 		if ((item.type === ItemType_default.WEAPON || item.type === ItemType_default.ARMOR || item.type === ItemType_default.AMMO || item.type === ItemType_default.SHADOWGEAR) && item.IsIdentified && !item.IsDamaged) {
-			_getRoot$21().querySelectorAll("td").forEach((td) => {
+			_getRoot$29().querySelectorAll("td").forEach((td) => {
 				td.style.backgroundImage = "none";
 			});
 			EquipmentV4.onEquipItem(item.index, "location" in item ? item.location : item.WearState);
@@ -218753,14 +218836,14 @@ function onEquipmentInfo(event) {
 function onEquipmentUnEquip() {
 	const index = parseInt(this.getAttribute("data-index"), 10);
 	EquipmentV4.onUnEquip(index);
-	const overlay = _getRoot$21().querySelector(".overlay");
+	const overlay = _getRoot$29().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 function onEquipmentOver() {
 	const idx = parseInt(this.parentNode.getAttribute("data-index"), 10);
 	const item = EquipmentV4._itemlist[idx];
 	if (!item) return;
-	const root = _getRoot$21();
+	const root = _getRoot$29();
 	const overlay = root.querySelector(".overlay");
 	const rootEl = root.querySelector("#EquipmentV4") || root;
 	const btnRect = this.getBoundingClientRect();
@@ -218776,7 +218859,7 @@ function onEquipmentOver() {
 	}
 }
 function onEquipmentOut() {
-	const overlay = _getRoot$21().querySelector(".overlay");
+	const overlay = _getRoot$29().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 function onSwtichEquip() {
@@ -218837,7 +218920,7 @@ var init_EquipmentV4 = __esmMin((() => {
 	contentDivs = {};
 	currentTabId = "general";
 	EquipmentV4.init = function init() {
-		const root = _getRoot$21();
+		const root = _getRoot$29();
 		const canvases = root.querySelectorAll("canvas");
 		if (canvases[0]) _ctx$5.push(canvases[0].getContext("2d"));
 		if (canvases[1]) _ctx$5.push(canvases[1].getContext("2d"));
@@ -218973,7 +219056,7 @@ var init_EquipmentV4 = __esmMin((() => {
 		EquipmentV4.setDamageMotion(savedMotion);
 	};
 	EquipmentV4.loadTitles = function() {
-		const titleList = _getRoot$21().querySelector("#title_list");
+		const titleList = _getRoot$29().querySelector("#title_list");
 		if (!titleList) return;
 		titleList.innerHTML = "";
 		const removeTitleText = DB.getMessage(2686) || "Remove Title";
@@ -219021,20 +219104,20 @@ var init_EquipmentV4 = __esmMin((() => {
 		this._host.style.left = `${Math.min(Math.max(0, _preferences$32.x), Renderer.width - hostRect.width)}px`;
 		if (!_preferences$32.show) this._host.style.display = "none";
 		if (_preferences$32.reduce) {
-			const panel = _getRoot$21().querySelector(".panel");
+			const panel = _getRoot$29().querySelector(".panel");
 			if (panel) panel.style.display = "none";
 		}
 		if (UIVersionManager.getEquipmentVersion() > 0) {
 			if (!_preferences$32.stats) {
-				const statusComp = _getRoot$21().querySelector(".status_component");
+				const statusComp = _getRoot$29().querySelector(".status_component");
 				if (statusComp) statusComp.style.display = "none";
 				Client.loadFile(DB.INTERFACE_PATH + "basic_interface/viewon.bmp", (data) => {
-					const btn = _getRoot$21().querySelector(".view_status");
+					const btn = _getRoot$29().querySelector(".view_status");
 					if (btn) btn.style.backgroundImage = `url(${data})`;
 				});
 			}
 		}
-		if (_getRoot$21().querySelector("canvas") && this._host.style.display !== "none") Renderer.render(renderCharacter);
+		if (_getRoot$29().querySelector("canvas") && this._host.style.display !== "none") Renderer.render(renderCharacter);
 		SwitchEquip_default.append(switchappend);
 		if (SwitchEquip_default.ui) {
 			const switchHost = SwitchEquip_default._host || SwitchEquip_default.ui;
@@ -219045,7 +219128,7 @@ var init_EquipmentV4 = __esmMin((() => {
 		if (UIVersionManager.getEquipmentVersion() > 0 && _btnLevelUp && _btnLevelUp.parentNode) _btnLevelUp.remove();
 		Renderer.stop(renderCharacter);
 		EquipmentV4._itemlist = {};
-		const root = _getRoot$21();
+		const root = _getRoot$29();
 		root.querySelectorAll(".col1, .col3, .ammo").forEach((el) => {
 			el.innerHTML = "";
 		});
@@ -219081,14 +219164,14 @@ var init_EquipmentV4 = __esmMin((() => {
 	EquipmentV4.setEquipConfig = function setEquipConfig(on) {
 		_showEquip = on;
 		Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (on ? "1" : "0") + ".bmp", (data) => {
-			const btn = _getRoot$21().querySelector(".show_equip");
+			const btn = _getRoot$29().querySelector(".show_equip");
 			if (btn) btn.style.backgroundImage = `url(${data})`;
 		});
 	};
 	EquipmentV4.setCostumeConfig = function setCostumeConfig(on) {
 		_hideCostume = on;
 		Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (on ? "0" : "1") + ".bmp", (data) => {
-			const btn = _getRoot$21().querySelector(".show_costume");
+			const btn = _getRoot$29().querySelector(".show_costume");
 			if (btn) btn.style.backgroundImage = `url(${data})`;
 		});
 	};
@@ -219106,7 +219189,7 @@ var init_EquipmentV4 = __esmMin((() => {
 			if (text.length > limit) return text.substring(0, limit) + "...";
 			return text;
 		}
-		const root = _getRoot$21();
+		const root = _getRoot$29();
 		const selector = getSelectorFromLocation$1(location);
 		root.querySelectorAll(selector).forEach((cell) => {
 			cell.innerHTML = "<div class=\"item\" data-index=\"" + item.index + "\"><button><div class=\"grade\"></div></button><span class=\"itemName\">" + escapeHTML$1(add3Dots(DB.getItemName(item, {
@@ -219132,7 +219215,7 @@ var init_EquipmentV4 = __esmMin((() => {
 	};
 	EquipmentV4.unEquip = function unEquip(index, location) {
 		const selector = getSelectorFromLocation$1(location);
-		const root = _getRoot$21();
+		const root = _getRoot$29();
 		const item = EquipmentV4._itemlist[index];
 		item.equipped = 0;
 		root.querySelectorAll(selector).forEach((el) => {
@@ -219185,7 +219268,7 @@ var init_EquipmentV4 = __esmMin((() => {
 			if (SessionStorage_default.Entity.effectState !== _lastState || _hasCart !== SessionStorage_default.Entity.hasCart) {
 				_lastState = SessionStorage_default.Entity.effectState;
 				_hasCart = SessionStorage_default.Entity.hasCart;
-				const root = _getRoot$21();
+				const root = _getRoot$29();
 				const removeOpt = root.querySelector(".removeOption");
 				const cartBtn = root.querySelector(".cartitems");
 				if (_lastState & HasAttachmentState || _hasCart) {
@@ -219222,7 +219305,7 @@ var init_EquipmentV4 = __esmMin((() => {
 		};
 	})();
 	EquipmentV4.onUpdateOwnerName = function() {
-		const root = _getRoot$21();
+		const root = _getRoot$29();
 		for (const index in EquipmentV4._itemlist) {
 			const item = EquipmentV4._itemlist[index];
 			if (item.slot && [
@@ -219240,7 +219323,7 @@ var init_EquipmentV4 = __esmMin((() => {
 		return num;
 	};
 	EquipmentV4.setDamageSkin = function setDamageSkin(skinId) {
-		const root = _getRoot$21();
+		const root = _getRoot$29();
 		const buttons = root.querySelectorAll("#damageskin .skin-option");
 		const buttonSelected = root.querySelector(`#damageskin .skin-option[data-skin="${skinId}"]`);
 		GraphicsSettings.damageSkin = skinId;
@@ -219269,7 +219352,7 @@ var init_EquipmentV4 = __esmMin((() => {
 	EquipmentV4.setDamageMotion = function setDamageMotion(motionId) {
 		GraphicsSettings.damageMotion = motionId;
 		GraphicsSettings.save();
-		_getRoot$21().querySelectorAll(".motion-check").forEach((btn) => {
+		_getRoot$29().querySelectorAll(".motion-check").forEach((btn) => {
 			const bgImage = parseInt(btn.getAttribute("data-motion"), 10) === motionId ? "checkbox_1.bmp" : "checkbox_0.bmp";
 			Client.loadFile(DB.INTERFACE_PATH + bgImage, (data) => {
 				btn.style.backgroundImage = `url(${data})`;
@@ -244859,14 +244942,14 @@ var ShortCut_exports = /* @__PURE__ */ __exportAll({ default: () => ShortCut_def
 /**
 * Helper to get the shadow root
 */
-function _getRoot$20() {
+function _getRoot$28() {
 	return ShortCut._shadow || ShortCut._host;
 }
 /**
 * Update tooltip for empty slots with hotkey only
 */
 function updateEmptySlotTooltips() {
-	const containers = _getRoot$20().querySelectorAll(".container");
+	const containers = _getRoot$28().querySelectorAll(".container");
 	for (let i = 0; i < containers.length; ++i) if (!_list$5[i] || !_list$5[i].isSkill && !_list$5[i].ID) {
 		const hotkey = getHotKeyString(i);
 		if (hotkey) containers[i].setAttribute("data-tooltip", hotkey);
@@ -244939,7 +245022,7 @@ function getHotKeyString(index) {
 function onContainerMouseEnter(event) {
 	const tooltipText = event.currentTarget.getAttribute("data-tooltip");
 	if (tooltipText) {
-		const tooltip = _getRoot$20().querySelector(".shortcut-tooltip");
+		const tooltip = _getRoot$28().querySelector(".shortcut-tooltip");
 		const hostRect = ShortCut._host.getBoundingClientRect();
 		tooltip.textContent = tooltipText;
 		tooltip.classList.add("show");
@@ -244957,7 +245040,7 @@ function onContainerMouseEnter(event) {
 * Hide fixed tooltip on container leave
 */
 function onContainerMouseLeave() {
-	const tooltip = _getRoot$20().querySelector(".shortcut-tooltip");
+	const tooltip = _getRoot$28().querySelector(".shortcut-tooltip");
 	if (tooltip) tooltip.classList.remove("show");
 }
 /**
@@ -244996,7 +245079,7 @@ function onResize$3(event) {
 function setDelayOnIndex(index, delay) {
 	if (_list$5[index].Delay && _list$5[index].Delay >= Renderer.tick + delay) return;
 	_list$5[index].Delay = Renderer.tick + delay;
-	const ui = _getRoot$20().querySelector(`.container[data-index="${index}"]`);
+	const ui = _getRoot$28().querySelector(`.container[data-index="${index}"]`);
 	if (!ui) return;
 	const existing = ui.querySelector(".cooldown-overlay");
 	if (existing) existing.remove();
@@ -245355,7 +245438,7 @@ var init_ShortCut = __esmMin((() => {
 	* Initialize UI
 	*/
 	ShortCut.init = function init() {
-		const root = _getRoot$20();
+		const root = _getRoot$28();
 		const resizeBtn = root.querySelector(".resize");
 		if (resizeBtn) resizeBtn.addEventListener("mousedown", onResize$3);
 		const closeBtn = root.querySelector(".close");
@@ -245423,7 +245506,7 @@ var init_ShortCut = __esmMin((() => {
 	* When removed, clean up
 	*/
 	ShortCut.onRemove = function onRemove() {
-		const tooltip = _getRoot$20().querySelector(".shortcut-tooltip");
+		const tooltip = _getRoot$28().querySelector(".shortcut-tooltip");
 		if (tooltip) tooltip.classList.remove("show");
 		_preferences$24.y = parseInt(this._host.style.top, 10);
 		_preferences$24.x = parseInt(this._host.style.left, 10);
@@ -245440,7 +245523,7 @@ var init_ShortCut = __esmMin((() => {
 	*/
 	ShortCut.clean = function clean() {
 		_list$5.length = 0;
-		_getRoot$20().querySelectorAll(".container").forEach((el) => {
+		_getRoot$28().querySelectorAll(".container").forEach((el) => {
 			el.innerHTML = "";
 		});
 	};
@@ -245484,7 +245567,7 @@ var init_ShortCut = __esmMin((() => {
 	*/
 	ShortCut.setList = function setList(list) {
 		let skill;
-		_getRoot$20().querySelectorAll(".container").forEach((el) => {
+		_getRoot$28().querySelectorAll(".container").forEach((el) => {
 			el.innerHTML = "";
 		});
 		_list$5.length = list.length;
@@ -245505,7 +245588,7 @@ var init_ShortCut = __esmMin((() => {
 	* Called when hotkey settings change
 	*/
 	ShortCut.updateAllTooltips = function updateAllTooltips() {
-		const root = _getRoot$20();
+		const root = _getRoot$28();
 		for (let i = 0, size = _list$5.length; i < size; ++i) {
 			const container = root.querySelector(`.container[data-index="${i}"]`);
 			if (!container) continue;
@@ -245540,7 +245623,7 @@ var init_ShortCut = __esmMin((() => {
 	*/
 	ShortCut.addElement = function addElement(index, isSkill, ID, count) {
 		let file, name;
-		const ui = _getRoot$20().querySelector(`.container[data-index="${index}"]`);
+		const ui = _getRoot$28().querySelector(`.container[data-index="${index}"]`);
 		if (!ui) return;
 		ui.innerHTML = "";
 		if (!_list$5[index]) _list$5[index] = {};
@@ -245603,7 +245686,7 @@ var init_ShortCut = __esmMin((() => {
 	*/
 	ShortCut.removeElement = function removeElement(isSkill, ID, row, amount) {
 		if (!ID) return;
-		const root = _getRoot$20();
+		const root = _getRoot$28();
 		for (let i = row * 9, count = Math.min(_list$5.length, row * 9 + 9); i < count; ++i) if (_list$5[i] && _list$5[i].isSkill == isSkill && _list$5[i].ID === ID && (!isSkill || _list$5[i].count == amount)) {
 			const container = root.querySelector(`.container[data-index="${i}"]`);
 			if (container) container.innerHTML = "";
@@ -246353,7 +246436,7 @@ function isLocked() {
 * Get internal root (shadow)
 * @returns {ShadowRoot|HTMLElement}
 */
-function _getRoot$19() {
+function _getRoot$27() {
 	return JoystickSelectionUI._shadow || JoystickSelectionUI._host;
 }
 function getJoystickComboForSlot(slotIndex) {
@@ -246397,7 +246480,7 @@ function getJoystickComboForSlot(slotIndex) {
 	}[slotIndex];
 }
 function updateGrid() {
-	const grid = _getRoot$19().querySelector(".shortcut-grid");
+	const grid = _getRoot$27().querySelector(".shortcut-grid");
 	if (!grid) return;
 	grid.innerHTML = "";
 	const startIdx = currentTab * 9;
@@ -246416,21 +246499,21 @@ function updateGrid() {
 	updateSelection();
 }
 function updateSelection() {
-	const grid = _getRoot$19().querySelector(".shortcut-grid");
+	const grid = _getRoot$27().querySelector(".shortcut-grid");
 	if (!grid) return;
 	grid.querySelectorAll(".slot-btn").forEach((el) => el.classList.remove("selected"));
 	const selected = grid.querySelector(`.slot-btn[data-index="${slotInTab}"]`);
 	if (selected) selected.classList.add("selected");
 }
 function updateTabButtons() {
-	const tabButtons = _getRoot$19().querySelector(".tab-buttons");
+	const tabButtons = _getRoot$27().querySelector(".tab-buttons");
 	if (!tabButtons) return;
 	tabButtons.querySelectorAll(".tab-btn").forEach((el) => el.classList.remove("active"));
 	const active = tabButtons.querySelector(`.tab-btn[data-tab="${currentTab}"]`);
 	if (active) active.classList.add("active");
 }
 function createTabButtons() {
-	const tabButtons = _getRoot$19().querySelector(".tab-buttons");
+	const tabButtons = _getRoot$27().querySelector(".tab-buttons");
 	if (!tabButtons) return;
 	tabButtons.innerHTML = "";
 	for (let t = 0; t < 4; t++) {
@@ -248376,7 +248459,7 @@ var init_PetInformations$1 = __esmMin((() => {
 /**
 * Helper to get the shadow root
 */
-function _getRoot$18() {
+function _getRoot$26() {
 	return PetInformations._shadow || PetInformations._host;
 }
 var PetInformations, _preferences$23, petAutoFeeding, PetInformations_default;
@@ -248405,7 +248488,7 @@ var init_PetInformations = __esmMin((() => {
 	*/
 	PetInformations.init = function init() {
 		this.draggable(".titlebar");
-		const root = _getRoot$18();
+		const root = _getRoot$26();
 		const closeBtn = root.querySelector(".close");
 		if (closeBtn) {
 			closeBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
@@ -248450,7 +248533,7 @@ var init_PetInformations = __esmMin((() => {
 		});
 	};
 	PetInformations.onAppend = function onAppend() {
-		const root = _getRoot$18();
+		const root = _getRoot$26();
 		Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (petAutoFeeding ? "1" : "0") + ".bmp", (data) => {
 			const el = root.querySelector(".pet_auto_feed");
 			if (el) el.style.backgroundImage = `url(${data})`;
@@ -248492,7 +248575,7 @@ var init_PetInformations = __esmMin((() => {
 	* @param {object} pet info
 	*/
 	PetInformations.setInformations = function setInformations(info) {
-		const root = _getRoot$18();
+		const root = _getRoot$26();
 		const nameInput = root.querySelector(".name");
 		if (nameInput) nameInput.value = info.szName;
 		const levelEl = root.querySelector(".level");
@@ -248548,12 +248631,12 @@ var init_PetInformations = __esmMin((() => {
 	* @param {number} intimacy
 	*/
 	PetInformations.setIntimacy = function setIntimacy(val) {
-		const el = _getRoot$18().querySelector(".intimacy");
+		const el = _getRoot$26().querySelector(".intimacy");
 		if (el) el.textContent = DB.getMessage(val < 100 ? 672 : val < 250 ? 673 : val < 600 ? 669 : val < 900 ? 674 : 675);
 	};
 	PetInformations.setFeedConfig = function setFeedConfig(flag) {
 		petAutoFeeding = flag;
-		const root = _getRoot$18();
+		const root = _getRoot$26();
 		if (root) Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (petAutoFeeding ? "1" : "0") + ".bmp", (data) => {
 			const el = root.querySelector(".pet_auto_feed");
 			if (el) el.style.backgroundImage = `url(${data})`;
@@ -248565,7 +248648,7 @@ var init_PetInformations = __esmMin((() => {
 	* @param {number} hunger
 	*/
 	PetInformations.setHunger = function setHunger(val) {
-		const el = _getRoot$18().querySelector(".hunger");
+		const el = _getRoot$26().querySelector(".hunger");
 		if (el) el.textContent = DB.getMessage(val < 10 ? 667 : val < 25 ? 668 : val < 75 ? 669 : val < 90 ? 670 : 671);
 	};
 	/**
@@ -249013,7 +249096,7 @@ var init_NpcBox$1 = __esmMin((() => {
 /**
 * Helper to get shadow root
 */
-function _getRoot$17() {
+function _getRoot$25() {
 	return NpcBox._shadow || NpcBox._host;
 }
 /**
@@ -249084,7 +249167,7 @@ var init_NpcBox = __esmMin((() => {
 	NpcBox.init = function init() {
 		this._host.style.top = `${Math.max(100, Renderer.height / 2 - 200)}px`;
 		this._host.style.left = `${Math.max(Renderer.width / 3, 20)}px`;
-		const root = _getRoot$17();
+		const root = _getRoot$25();
 		const nextBtn = root.querySelector(".next");
 		if (nextBtn) nextBtn.addEventListener("click", () => NpcBox.next());
 		const closeBtn = root.querySelector(".close");
@@ -249128,7 +249211,7 @@ var init_NpcBox = __esmMin((() => {
 	* Once NPC Box is removed from HTML, clean up data
 	*/
 	NpcBox.onRemove = function onRemove() {
-		const root = _getRoot$17();
+		const root = _getRoot$25();
 		const nextBtn = root.querySelector(".next");
 		if (nextBtn) nextBtn.style.display = "none";
 		const closeBtn = root.querySelector(".close");
@@ -249145,7 +249228,7 @@ var init_NpcBox = __esmMin((() => {
 	*/
 	NpcBox.onKeyDown = function onKeyDown(event) {
 		if (this._host.style.display === "none") return true;
-		const root = _getRoot$17();
+		const root = _getRoot$25();
 		switch (event.which) {
 			case KEYS.SPACE:
 			case KEYS.ENTER: {
@@ -249181,7 +249264,7 @@ var init_NpcBox = __esmMin((() => {
 	* @param {number} gid - npc id
 	*/
 	NpcBox.setText = function setText(text, gid) {
-		const content = _getRoot$17().querySelector(".content");
+		const content = _getRoot$25().querySelector(".content");
 		NpcBox.ownerID = gid;
 		if (_needCleanUp) {
 			_needCleanUp = false;
@@ -249198,7 +249281,7 @@ var init_NpcBox = __esmMin((() => {
 	*/
 	NpcBox.addNext = function addNext(gid) {
 		NpcBox.ownerID = gid;
-		const nextBtn = _getRoot$17().querySelector(".next");
+		const nextBtn = _getRoot$25().querySelector(".next");
 		if (nextBtn) nextBtn.style.display = "block";
 	};
 	/**
@@ -249208,7 +249291,7 @@ var init_NpcBox = __esmMin((() => {
 	*/
 	NpcBox.addClose = function addClose(gid) {
 		NpcBox.ownerID = gid;
-		const closeBtn = _getRoot$17().querySelector(".close");
+		const closeBtn = _getRoot$25().querySelector(".close");
 		if (closeBtn) closeBtn.style.display = "block";
 	};
 	/**
@@ -249216,7 +249299,7 @@ var init_NpcBox = __esmMin((() => {
 	*/
 	NpcBox.next = function next() {
 		_needCleanUp = true;
-		const nextBtn = _getRoot$17().querySelector(".next");
+		const nextBtn = _getRoot$25().querySelector(".next");
 		if (nextBtn) nextBtn.style.display = "none";
 		this.onNextPressed(NpcBox.ownerID);
 	};
@@ -249225,7 +249308,7 @@ var init_NpcBox = __esmMin((() => {
 	*/
 	NpcBox.close = function close() {
 		_needCleanUp = true;
-		const closeBtn = _getRoot$17().querySelector(".close");
+		const closeBtn = _getRoot$25().querySelector(".close");
 		if (closeBtn) closeBtn.style.display = "none";
 		this.onClosePressed(NpcBox.ownerID);
 	};
@@ -312296,7 +312379,7 @@ var init_MobileUI$1 = __esmMin((() => {
 /**
 * Helper to get shadow root
 */
-function _getRoot$16() {
+function _getRoot$24() {
 	return MobileUI._shadow || MobileUI._host;
 }
 /**
@@ -312340,7 +312423,7 @@ function keyPress(k) {
 * Toggles MobileUI button bars visibility (and thus buttons)
 */
 function toggleButtons() {
-	const root = _getRoot$16();
+	const root = _getRoot$24();
 	if (showButtons) {
 		[
 			"#topBar",
@@ -312439,7 +312522,7 @@ function toggleButtons() {
 * Toggles switch skill
 */
 function switchSkillButtons() {
-	const root = _getRoot$16();
+	const root = _getRoot$24();
 	const skillSets = [
 		[
 			"#f1Button",
@@ -312508,7 +312591,7 @@ function toggleStatus() {
 * Toggles touch targeting
 */
 function toggleTouchTargeting() {
-	const root = _getRoot$16();
+	const root = _getRoot$24();
 	if (SessionStorage_default.TouchTargeting) {
 		root.querySelector("#toggleTargetingButton").classList.remove("active");
 		root.querySelector("#toggleAutoFollowButton").classList.add("disabled");
@@ -312526,7 +312609,7 @@ function toggleTouchTargeting() {
 * Toggles automatic targeting
 */
 function toggleAutoTargeting() {
-	const root = _getRoot$16();
+	const root = _getRoot$24();
 	if (SessionStorage_default.AutoTargeting) {
 		root.querySelector("#toggleAutoTargetButton").classList.remove("active");
 		SessionStorage_default.AutoTargeting = false;
@@ -312540,7 +312623,7 @@ function toggleAutoTargeting() {
 * Toggles auto follow
 */
 function toggleAutoFollow() {
-	const root = _getRoot$16();
+	const root = _getRoot$24();
 	if (SessionStorage_default.autoFollow) {
 		root.querySelector("#toggleAutoFollowButton").classList.remove("active");
 		SessionStorage_default.autoFollow = false;
@@ -312623,7 +312706,7 @@ function stopPropagation$9(event) {
 * Auto follow logic
 */
 function onAutoFollow$1() {
-	const root = _getRoot$16();
+	const root = _getRoot$24();
 	if (SessionStorage_default.autoFollow) {
 		const player = SessionStorage_default.Entity;
 		const target = SessionStorage_default.autoFollowTarget;
@@ -312674,7 +312757,7 @@ function pickUpItem() {
 * Joystick handling for both mouse and touch input - MicromeX
 */
 function setupJoystick() {
-	const root = _getRoot$16();
+	const root = _getRoot$24();
 	_joystickBase = root.querySelector("#joystickBase");
 	_joystickThumb = root.querySelector("#joystickThumb");
 	maxDistance = _joystickBase.offsetWidth / 2;
@@ -312770,7 +312853,7 @@ function moveCharacter(x, y, tileSize) {
 * Talk to NPC Button Function - MicromeX
 */
 function setupTalkToNpcButton() {
-	const talkButton = _getRoot$16().querySelector("#talktonpcButton");
+	const talkButton = _getRoot$24().querySelector("#talktonpcButton");
 	function findNearestNpc() {
 		const player = SessionStorage_default.Entity;
 		if (!player) return null;
@@ -312883,7 +312966,7 @@ var init_MobileUI = __esmMin((() => {
 	* Initialize UI
 	*/
 	MobileUI.init = function init() {
-		const root = _getRoot$16();
+		const root = _getRoot$24();
 		bindButton(root, "#toggleUIButton", (e) => {
 			toggleButtons();
 			stopPropagation$9(e);
@@ -315304,7 +315387,7 @@ var init_Vending$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/Vending/Vending.js
-function _getRoot$15() {
+function _getRoot$23() {
 	return Vending._shadow || Vending._host;
 }
 function escapeHtml(text) {
@@ -315371,7 +315454,7 @@ function addItem$1(content, item, isinput) {
 		container.innerHTML = `<div class="item output" draggable="true" data-index="${item.index}"><div class="icon"></div><div class="amount">${amountText}</div>` + eaHtml + `<div class="name">${escapeHtml(DB.getItemName(item))}</div><div class="price">${textPrice} ${price}</div></div>`;
 		itemObj = container;
 		if (_type$3 === Vending.Type.BUYING_STORE) {
-			const limitInput = _getRoot$15().querySelector(".limitZeny");
+			const limitInput = _getRoot$23().querySelector(".limitZeny");
 			let limit = parseInt(limitInput.value, 10);
 			limit += item.count * item.price;
 			limitInput.value = limit;
@@ -315442,7 +315525,7 @@ function onDrop$5(event) {
 		return;
 	}
 	if (data.type !== "item" || data.from !== "Vending" || data.container === this.className) return;
-	const fromContent = _getRoot$15().querySelector(`.${data.container} .content`);
+	const fromContent = _getRoot$23().querySelector(`.${data.container} .content`);
 	const toContent = this.querySelector(".content");
 	requestMoveItem$1(data.index, fromContent, toContent, this.className === "OutputWindow");
 }
@@ -315461,7 +315544,7 @@ function onItemInfo$11(event) {
 }
 function onItemSelected$1() {
 	if (_type$3 === Vending.Type.BUY || _type$3 === Vending.Type.VENDING_STORE) return;
-	const root = _getRoot$15();
+	const root = _getRoot$23();
 	const inputWin = root.querySelector(".InputWindow");
 	let from, to;
 	if (inputWin.contains(this)) {
@@ -315474,7 +315557,7 @@ function onItemSelected$1() {
 	requestMoveItem$1(parseInt(this.getAttribute("data-index"), 10), from.querySelector(".content"), to.querySelector(".content"), from === inputWin);
 }
 function onItemFocus$1() {
-	_getRoot$15().querySelectorAll(".item.selected").forEach((el) => el.classList.remove("selected"));
+	_getRoot$23().querySelectorAll(".item.selected").forEach((el) => el.classList.remove("selected"));
 	this.classList.add("selected");
 }
 function onScroll$4(event) {
@@ -315487,7 +315570,7 @@ function onScroll$4(event) {
 	event.preventDefault();
 }
 function onDragStart$1(event) {
-	const root = _getRoot$15();
+	const root = _getRoot$23();
 	const inputWin = root.querySelector(".InputWindow");
 	const outputWin = root.querySelector(".OutputWindow");
 	const container = (inputWin.contains(this) ? inputWin : outputWin).className;
@@ -315504,7 +315587,7 @@ function onDragStart$1(event) {
 	}));
 }
 function onResizeInput() {
-	const inputWin = _getRoot$15().querySelector(".InputWindow");
+	const inputWin = _getRoot$23().querySelector(".InputWindow");
 	const content = inputWin.querySelector(".container .content");
 	const top = inputWin.offsetTop;
 	let lastHeight = 0;
@@ -315539,14 +315622,14 @@ function onItemOver$8() {
 	const idx = parseInt(this.getAttribute("data-index"), 10);
 	const item = _type$3 === Vending.Type.VENDING_STORE ? CartItems_default.getItemByIndex(idx) : InventoryController.getUI().getItemByIndex(idx);
 	if (!item) return;
-	const overlay = _getRoot$15().querySelector(".overlay");
+	const overlay = _getRoot$23().querySelector(".overlay");
 	overlay.style.display = "";
 	overlay.style.top = `${this.offsetTop - 20}px`;
 	overlay.style.left = `${this.offsetLeft - 10}px`;
 	overlay.textContent = `${DB.getItemName(item)} ${item.count || 1} ea`;
 }
 function onItemOut$9() {
-	const overlay = _getRoot$15().querySelector(".overlay");
+	const overlay = _getRoot$23().querySelector(".overlay");
 	if (overlay) overlay.style.display = "none";
 }
 var Vending, _preferences$21, _input$1, _output$1, _slots$4, _type$3, transferItem$1, Vending_default;
@@ -315597,7 +315680,7 @@ var init_Vending = __esmMin((() => {
 	_slots$4 = 0;
 	Vending.captureKeyEvents = true;
 	Vending.init = function init() {
-		const root = _getRoot$15();
+		const root = _getRoot$23();
 		const sellBtn = root.querySelector(".btn.sell");
 		if (sellBtn) {
 			sellBtn.addEventListener("mousedown", (e) => e.stopImmediatePropagation());
@@ -315687,7 +315770,7 @@ var init_Vending = __esmMin((() => {
 		});
 	};
 	Vending.onAppend = function onAppend() {
-		const root = _getRoot$15();
+		const root = _getRoot$23();
 		const inputWin = root.querySelector(".InputWindow");
 		const outputWin = root.querySelector(".OutputWindow");
 		const inputContent = inputWin.querySelector(".content");
@@ -315701,7 +315784,7 @@ var init_Vending = __esmMin((() => {
 		this._host.style.display = "none";
 	};
 	Vending.setType = function setType(type) {
-		const root = _getRoot$15();
+		const root = _getRoot$23();
 		const winBuyEls = root.querySelectorAll(".WinBuy");
 		const winSellEls = root.querySelectorAll(".WinSell");
 		switch (type) {
@@ -315729,7 +315812,7 @@ var init_Vending = __esmMin((() => {
 	};
 	Vending.onRemove = function onRemove() {
 		VendingModelMessage_default.onRemove();
-		const root = _getRoot$15();
+		const root = _getRoot$23();
 		const inputWin = root.querySelector(".InputWindow");
 		const outputWin = root.querySelector(".OutputWindow");
 		_input$1.length = 0;
@@ -315762,7 +315845,7 @@ var init_Vending = __esmMin((() => {
 		return true;
 	};
 	Vending.setList = function setList(items) {
-		const root = _getRoot$15();
+		const root = _getRoot$23();
 		root.querySelectorAll(".content").forEach((el) => {
 			el.innerHTML = "";
 		});
@@ -315809,7 +315892,7 @@ var init_Vending = __esmMin((() => {
 		if (Vending.isOpen) return;
 		_slots$4 = pkt.itemcount;
 		this.setList(CartItems_default.list);
-		const root = _getRoot$15();
+		const root = _getRoot$23();
 		root.querySelector(".add_shop").style.height = `${32 * _slots$4}px`;
 		root.querySelector(".shopname").value = "";
 		this._host.style.display = "";
@@ -315825,7 +315908,7 @@ var init_Vending = __esmMin((() => {
 			if (isItemStackable(item) && DB.isBuyable(item.ITID)) buyable.push(item);
 		}
 		this.setList(buyable);
-		const root = _getRoot$15();
+		const root = _getRoot$23();
 		root.querySelector(".add_shop").style.height = `${32 * _slots$4}px`;
 		root.querySelector(".shopname").value = "";
 		this._host.style.display = "";
@@ -315839,7 +315922,7 @@ var init_Vending = __esmMin((() => {
 	Vending.onSubmit = function onSubmit() {
 		const output = [];
 		const count = _output$1.length;
-		const root = _getRoot$15();
+		const root = _getRoot$23();
 		const shopname = root.querySelector(".shopname").value;
 		let limitZeny;
 		let ctr = 0;
@@ -317133,7 +317216,7 @@ var init_ShortCuts$1 = __esmMin((() => {
 /**
 * Helper to get the shadow root
 */
-function _getRoot$14() {
+function _getRoot$22() {
 	return ShortCuts._shadow || ShortCuts._host;
 }
 /**
@@ -317159,7 +317242,7 @@ function executeFlag(value) {
 	Network.sendPacket(pkt);
 }
 function loadValuesAlt() {
-	const root = _getRoot$14();
+	const root = _getRoot$22();
 	const length = Object.keys(_MACRO_INIT).length - 3;
 	for (let index = 0; index < length; index++) {
 		const element = _MACRO_INIT[`Num_${index}`];
@@ -317168,7 +317251,7 @@ function loadValuesAlt() {
 	}
 }
 function addValuesAlt() {
-	_getRoot$14().querySelectorAll(".macro input").forEach((input) => {
+	_getRoot$22().querySelectorAll(".macro input").forEach((input) => {
 		input.addEventListener("blur", () => {
 			const index = input.id.split("macro_")[1];
 			_MACRO_INIT[`Num_${index}`] = input.value;
@@ -317271,7 +317354,7 @@ var init_ShortCuts = __esmMin((() => {
 	* Initialize UI
 	*/
 	ShortCuts.init = function init() {
-		const root = _getRoot$14();
+		const root = _getRoot$22();
 		root.querySelectorAll(".footer button").forEach((btn) => {
 			btn.addEventListener("mousedown", () => {
 				if (btn.classList.contains("emoticons")) Emoticons_default.onShortCut({ cmd: "TOGGLE" });
@@ -317310,7 +317393,7 @@ var init_ShortCuts = __esmMin((() => {
 	* Remove ShortCuts from window (and so clean up items)
 	*/
 	ShortCuts.onRemove = function onRemove() {
-		const content = _getRoot$14().querySelector(".container .content");
+		const content = _getRoot$22().querySelector(".container .content");
 		if (content) content.innerHTML = "";
 		this.list.length = 0;
 		document.querySelectorAll(".ItemInfo").forEach((el) => el.remove());
@@ -317339,7 +317422,7 @@ var init_ShortCuts = __esmMin((() => {
 					this._host.style.display = "";
 					this._fixPositionOverflow();
 				} else this._host.style.display = "none";
-				_getRoot$14().querySelectorAll(".macro_").forEach((el) => el.classList.remove("input_macro_focus"));
+				_getRoot$22().querySelectorAll(".macro_").forEach((el) => el.classList.remove("input_macro_focus"));
 				if (this._host.style.display !== "none") this.focus();
 				break;
 			case "EXECUTE_MACRO_1":
@@ -317410,7 +317493,7 @@ var init_ShortCuts = __esmMin((() => {
 	ShortCuts.resize = function resize(width, height) {
 		width = Math.min(Math.max(width, 6), 9);
 		height = Math.min(Math.max(height, 2), 6);
-		const content = _getRoot$14().querySelector(".container .content");
+		const content = _getRoot$22().querySelector(".container .content");
 		if (content) {
 			content.style.width = `${width * 32 + 13}px`;
 			content.style.height = `${height * 32}px`;
@@ -317437,7 +317520,7 @@ var init_StatusIcons$1 = __esmMin((() => {
 /**
 * Helper to get the shadow root
 */
-function _getRoot$13() {
+function _getRoot$21() {
 	return StatusIcons._shadow || StatusIcons._host;
 }
 function addResizedStatusIcon(img, index) {
@@ -317473,7 +317556,7 @@ function addResizedStatusIcon(img, index) {
 * Used when one element is removed.
 */
 function resetElementsPosition() {
-	const elements = _getRoot$13().querySelectorAll(".state");
+	const elements = _getRoot$21().querySelectorAll(".state");
 	const count = elements.length;
 	let x = 0;
 	let y = 0;
@@ -317540,7 +317623,7 @@ function createElement(index) {
 * @param {CanvasElement}
 */
 function addElement$4(element) {
-	const root = _getRoot$13();
+	const root = _getRoot$21();
 	const elements = root.querySelectorAll(".state");
 	const max = (Renderer.height - 166) / 36 | 0;
 	const count = elements.length;
@@ -317641,7 +317724,7 @@ var init_StatusIcons = __esmMin((() => {
 	* Clean up component
 	*/
 	StatusIcons.clean = function clean() {
-		const container = _getRoot$13().querySelector("#StatusIcons");
+		const container = _getRoot$21().querySelector("#StatusIcons");
 		if (container) container.innerHTML = "";
 		_status = {};
 		ScreenEffectManager.clean();
@@ -321184,7 +321267,7 @@ var init_PvPTimer$1 = __esmMin((() => {
 /**
 * Helper to get the shadow root
 */
-function _getRoot$12() {
+function _getRoot$20() {
 	return PvPTimer._shadow || PvPTimer._host;
 }
 /**
@@ -321299,7 +321382,7 @@ var init_PvPTimer = __esmMin((() => {
 			_timeAtkAct = aAct;
 			_timeAtkSpr = aSpr;
 		});
-		const root = _getRoot$12();
+		const root = _getRoot$20();
 		_timerCanvas = root.querySelector(".pvp-timer-canvas");
 		_taCanvas = root.querySelector(".pvp-timeattack-canvas");
 		if (!_timerCanvas || !_taCanvas) return;
@@ -321359,7 +321442,7 @@ var init_PvPCount$1 = __esmMin((() => {
 /**
 * Helper to get the shadow root
 */
-function _getRoot$11() {
+function _getRoot$19() {
 	return PvPCount._shadow || PvPCount._host;
 }
 /**
@@ -321441,7 +321524,7 @@ var init_PvPCount = __esmMin((() => {
 			_rankfontAct = rAct;
 			_rankfontSpr = rSpr;
 		});
-		_rankCanvas = _getRoot$11().querySelector(".pvp-rank-canvas");
+		_rankCanvas = _getRoot$19().querySelector(".pvp-rank-canvas");
 		if (!_rankCanvas) return;
 		_rankCanvas.width = RANK_W;
 		_rankCanvas.height = RANK_H;
@@ -323128,7 +323211,7 @@ var init_NpcMenu$1 = __esmMin((() => {
 /**
 * Helper to get shadow root
 */
-function _getRoot$10() {
+function _getRoot$18() {
 	return NpcMenu._shadow || NpcMenu._host;
 }
 /**
@@ -323155,7 +323238,7 @@ function cancel$9() {
 * Select an index, change background color
 */
 function selectIndex(div) {
-	_getRoot$10().querySelector(".content").querySelectorAll("div").forEach((d) => d.classList.remove("selected"));
+	_getRoot$18().querySelector(".content").querySelectorAll("div").forEach((d) => d.classList.remove("selected"));
 	div.classList.add("selected");
 	_index$4 = parseInt(div.dataset.index, 10);
 }
@@ -323181,7 +323264,7 @@ var init_NpcMenu = __esmMin((() => {
 	* Initialize component
 	*/
 	NpcMenu.init = function init() {
-		const root = _getRoot$10();
+		const root = _getRoot$18();
 		const okBtn = root.querySelector(".ok");
 		if (okBtn) okBtn.addEventListener("click", () => validate());
 		const cancelBtn = root.querySelector(".cancel");
@@ -323206,7 +323289,7 @@ var init_NpcMenu = __esmMin((() => {
 	* Clean up events
 	*/
 	NpcMenu.onRemove = function onRemove() {
-		const content = _getRoot$10().querySelector(".content");
+		const content = _getRoot$18().querySelector(".content");
 		if (content) content.innerHTML = "";
 	};
 	/**
@@ -323214,7 +323297,7 @@ var init_NpcMenu = __esmMin((() => {
 	*/
 	NpcMenu.onKeyDown = function onKeyDown(event) {
 		if (this._host.style.display === "none") return true;
-		const content = _getRoot$10().querySelector(".content");
+		const content = _getRoot$18().querySelector(".content");
 		switch (event.which) {
 			case KEYS.SPACE:
 			case KEYS.ENTER:
@@ -323254,7 +323337,7 @@ var init_NpcMenu = __esmMin((() => {
 	* @param {number} gid - npc id
 	*/
 	NpcMenu.setMenu = function setMenu(menu, gid) {
-		const content = _getRoot$10().querySelector(".content");
+		const content = _getRoot$18().querySelector(".content");
 		const list = menu.split(":");
 		_ownerID = gid;
 		_index$4 = 0;
@@ -326231,26 +326314,48 @@ var init_ItemObtain$2 = __esmMin((() => {
 //#region src/UI/Components/ItemObtain/ItemObtain.css?raw
 var ItemObtain_default$1;
 var init_ItemObtain$1 = __esmMin((() => {
-	ItemObtain_default$1 = "#ItemObtain {\r\n	position: absolute;\r\n	top: 50px;\r\n	width: auto;\r\n	border-radius: 5px;\r\n	background: white;\r\n	padding: 2px;\r\n	letter-spacing: 0px;\r\n}\r\n#ItemObtain .content {\r\n	border: 1px solid #c1c6c2;\r\n	height: 25px;\r\n	padding-left: 10px;\r\n	padding-right: 15px;\r\n	border-radius: 5px;\r\n}\r\n#ItemObtain img {\r\n	vertical-align: -6px;\r\n}\r\n";
+	ItemObtain_default$1 = ":host {\r\n	top: 50px;\r\n	left: 0px;\r\n	pointer-events: none;\r\n}\r\n\r\n#ItemObtain {\r\n	position: relative;\r\n	width: auto;\r\n	border-radius: 5px;\r\n	background: white;\r\n	padding: 2px;\r\n	letter-spacing: 0px;\r\n	pointer-events: auto;\r\n}\r\n#ItemObtain .content {\r\n	border: 1px solid #c1c6c2;\r\n	height: 25px;\r\n	padding-left: 10px;\r\n	padding-right: 15px;\r\n	border-radius: 5px;\r\n	white-space: nowrap;\r\n	line-height: 25px;\r\n}\r\n#ItemObtain img {\r\n	vertical-align: -6px;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/ItemObtain/ItemObtain.js
+/**
+* Helper to get shadow root
+*/
+function _getRoot$17() {
+	return ItemObtain._shadow || ItemObtain._host;
+}
+/**
+* Sanitize HTML, allowing only whitelisted tags (font, i, b)
+*/
+function _sanitizeHtml$6(str) {
+	const whitelist = [
+		"font",
+		"i",
+		"b"
+	];
+	const div = document.createElement("div");
+	div.innerHTML = str;
+	div.querySelectorAll("*").forEach((el) => {
+		if (!whitelist.includes(el.tagName.toLowerCase())) el.replaceWith(...el.childNodes);
+	});
+	return div.innerHTML;
+}
 var ItemObtain, _timer, _life, ItemObtain_default;
 var init_ItemObtain = __esmMin((() => {
 	init_DBManager();
-	init_jquery();
 	init_Client();
 	init_Events();
 	init_Renderer();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
 	init_ItemObtain$2();
 	init_ItemObtain$1();
-	ItemObtain = new UIComponent("ItemObtain", ItemObtain_default$2, ItemObtain_default$1);
+	ItemObtain = new GUIComponent("ItemObtain", ItemObtain_default$1);
+	ItemObtain.render = () => ItemObtain_default$2;
 	/**
 	* Mouse can cross this UI
 	*/
-	ItemObtain.mouseMode = UIComponent.MouseMode.CROSS;
+	ItemObtain.mouseMode = GUIComponent.MouseMode.CROSS;
 	/**
 	* @var {boolean} do not focus this UI
 	*/
@@ -326265,7 +326370,8 @@ var init_ItemObtain = __esmMin((() => {
 	* Once append to body
 	*/
 	ItemObtain.onAppend = function onAppend() {
-		this.ui.css("left", Renderer.width - this.ui.width() >> 1);
+		const el = _getRoot$17().querySelector("#ItemObtain");
+		this._host.style.left = `${Renderer.width - (el ? el.offsetWidth : 0) >> 1}px`;
 	};
 	/**
 	* Once removed from HTML, clean timer
@@ -326288,6 +326394,7 @@ var init_ItemObtain = __esmMin((() => {
 	* @param {object} item
 	*/
 	ItemObtain.set = function set(item) {
+		const root = _getRoot$17();
 		const it = DB.getItemInfo(item.ITID);
 		const display = DB.getItemName(item, {
 			showItemSlots: false,
@@ -326295,11 +326402,14 @@ var init_ItemObtain = __esmMin((() => {
 		});
 		const resource = item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName;
 		this.placeOnTop();
-		this.ui.find(".content").html("<img src=\"data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==\" class=\"" + item.ITID + "\" width=\"24\" height=\"24\" /> " + jquery_default.escape(display + " " + DB.getMessage(696).replace("%d", item.count || 1)));
-		this.ui.css("left", Renderer.width - this.ui.width() >> 1);
-		Client.loadFile(DB.INTERFACE_PATH + "item/" + resource + ".bmp", function(url) {
-			this.ui.find("img." + item.ITID).attr("src", url);
-		}.bind(this));
+		const content = root.querySelector(".content");
+		if (content) content.innerHTML = `<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="item-${item.ITID}" width="24" height="24" /> ` + _sanitizeHtml$6(`${display} ${DB.getMessage(696).replace("%d", item.count || 1)}`);
+		const el = root.querySelector("#ItemObtain");
+		this._host.style.left = `${Renderer.width - (el ? el.offsetWidth : 0) >> 1}px`;
+		Client.loadFile(DB.INTERFACE_PATH + "item/" + resource + ".bmp", (url) => {
+			const img = root.querySelector(`img.item-${item.ITID}`);
+			if (img) img.src = url;
+		});
 		if (_timer) Events.clearTimeout(_timer);
 		_timer = Events.setTimeout(this.timeEnd.bind(this), _life);
 	};
@@ -326309,61 +326419,101 @@ var init_ItemObtain = __esmMin((() => {
 //#region src/UI/Components/ItemSelection/ItemSelection.html?raw
 var ItemSelection_default$2;
 var init_ItemSelection$2 = __esmMin((() => {
-	ItemSelection_default$2 = "<div id=\"ItemSelection\">\r\n	<div class=\"head\" data-background=\"basic_interface/titlebar_mid.bmp\">\r\n		<span class=\"text\"></span>\r\n	</div>\r\n	<div class=\"bottom\" data-background=\"login_interface/win_service.bmp\">\r\n		<button\r\n			class=\"btn cancel\"\r\n			data-background=\"btn_cancel.bmp\"\r\n			data-hover=\"btn_cancel_a.bmp\"\r\n			data-down=\"btn_cancel_b.bmp\"\r\n		></button>\r\n		<button class=\"btn ok\" data-background=\"btn_ok.bmp\" data-hover=\"btn_ok_a.bmp\" data-down=\"btn_ok_b.bmp\"></button>\r\n	</div>\r\n	<div class=\"content\">\r\n		<div class=\"list\"></div>\r\n	</div>\r\n</div>\r\n";
+	ItemSelection_default$2 = "<div id=\"ItemSelection\">\r\n	<div class=\"head\">\r\n		<ui-image src=\"basic_interface/titlebar_mid.bmp\"></ui-image>\r\n		<span class=\"text\"></span>\r\n	</div>\r\n	<div class=\"bottom\">\r\n		<ui-image src=\"login_interface/win_service.bmp\"></ui-image>\r\n		<ui-button class=\"btn cancel\" bg=\"btn_cancel.bmp\" hover=\"btn_cancel_a.bmp\" down=\"btn_cancel_b.bmp\"></ui-button>\r\n		<ui-button class=\"btn ok\" bg=\"btn_ok.bmp\" hover=\"btn_ok_a.bmp\" down=\"btn_ok_b.bmp\"></ui-button>\r\n	</div>\r\n	<div class=\"content\">\r\n		<div class=\"list\"></div>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/ItemSelection/ItemSelection.css?raw
 var ItemSelection_default$1;
 var init_ItemSelection$1 = __esmMin((() => {
-	ItemSelection_default$1 = "#ItemSelection {\r\n	z-index: 100;\r\n	position: absolute;\r\n	width: 200px;\r\n}\r\n#ItemSelection .head {\r\n	position: absolute;\r\n	width: 100%;\r\n	height: 22px;\r\n	top: 0px;\r\n	left: 0px;\r\n	background-repeat: repeat-x;\r\n	background-color: white;\r\n}\r\n#ItemSelection .head .text {\r\n	position: relative;\r\n	top: 2px;\r\n	left: 5px;\r\n	white-space: nowrap;\r\n}\r\n#ItemSelection .bottom {\r\n	position: relative;\r\n	height: 120px;\r\n	top: 80px;\r\n	left: 0px;\r\n}\r\n\r\n#ItemSelection .content {\r\n	position: absolute;\r\n	top: 22px;\r\n	left: 0px;\r\n	background-color: white;\r\n	width: 100%;\r\n}\r\n#ItemSelection .list {\r\n	background-color: #f7f7f7;\r\n	height: 130px;\r\n	overflow-y: auto;\r\n	margin-left: 10px;\r\n	margin-right: 10px;\r\n}\r\n#ItemSelection .list .item {\r\n	display: block;\r\n	height: 28px;\r\n	margin: 4px 4px 4px 4px;\r\n	position: relative;\r\n}\r\n#ItemSelection .list .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#ItemSelection .list .item .name {\r\n	position: absolute;\r\n	top: 7px;\r\n	left: 30px;\r\n	width: 90px;\r\n	white-space: nowrap;\r\n}\r\n\r\n#ItemSelection .btn {\r\n	position: absolute;\r\n	bottom: 0px;\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	bottom: 4px;\r\n	background-color: transparent;\r\n}\r\n#ItemSelection .ok {\r\n	right: 50px;\r\n}\r\n#ItemSelection .cancel {\r\n	right: 5px;\r\n}\r\n";
+	ItemSelection_default$1 = ":host {\r\n	width: 200px;\r\n	top: 0px;\r\n	left: 0px;\r\n}\r\n\r\n#ItemSelection {\r\n	position: absolute;\r\n	width: 200px;\r\n}\r\n#ItemSelection .head {\r\n	position: absolute;\r\n	width: 100%;\r\n	height: 22px;\r\n	top: 0px;\r\n	left: 0px;\r\n	background-repeat: repeat-x;\r\n	background-color: white;\r\n}\r\n#ItemSelection .head .text {\r\n	position: relative;\r\n	top: 2px;\r\n	left: 5px;\r\n	white-space: nowrap;\r\n}\r\n#ItemSelection .bottom {\r\n	position: relative;\r\n	height: 120px;\r\n	top: 80px;\r\n	left: 0px;\r\n}\r\n\r\n#ItemSelection .content {\r\n	position: absolute;\r\n	top: 22px;\r\n	left: 0px;\r\n	background-color: white;\r\n	width: 100%;\r\n}\r\n#ItemSelection .list {\r\n	background-color: #f7f7f7;\r\n	height: 130px;\r\n	overflow-y: auto;\r\n	margin-left: 10px;\r\n	margin-right: 10px;\r\n}\r\n#ItemSelection .list .item {\r\n	display: block;\r\n	height: 28px;\r\n	margin: 4px 4px 4px 4px;\r\n	position: relative;\r\n}\r\n#ItemSelection .list .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#ItemSelection .list .item .name {\r\n	position: absolute;\r\n	top: 7px;\r\n	left: 30px;\r\n	width: 90px;\r\n	white-space: nowrap;\r\n}\r\n\r\n#ItemSelection ui-button.btn {\r\n	position: absolute;\r\n	bottom: 4px;\r\n	width: 42px;\r\n	height: 20px;\r\n}\r\n#ItemSelection .ok {\r\n	right: 50px;\r\n}\r\n#ItemSelection .cancel {\r\n	right: 5px;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/ItemSelection/ItemSelection.js
 /**
+* Helper to get shadow root
+*/
+function _getRoot$16() {
+	return ItemSelection._shadow || ItemSelection._host;
+}
+/**
+* Sanitize HTML, allowing only whitelisted tags (font, i, b)
+*/
+function _sanitizeHtml$5(str) {
+	const whitelist = [
+		"font",
+		"i",
+		"b"
+	];
+	const div = document.createElement("div");
+	div.innerHTML = str;
+	div.querySelectorAll("*").forEach((el) => {
+		if (!whitelist.includes(el.tagName.toLowerCase())) el.replaceWith(...el.childNodes);
+	});
+	return div.innerHTML;
+}
+/**
 * Add an element to the list
 *
 * @param {string} image url
-* @param {index} index in list
+* @param {number} index in list
 * @param {string} element name
 */
 function addElement$3(url, index, name) {
-	ItemSelection.list.append("<div class=\"item\" data-index=\"" + index + "\"><div class=\"icon\"></div><span class=\"name\">" + jquery_default.escape(name) + "</span></div>");
-	Client.loadFile(url, function(data) {
-		ItemSelection.list.find("div[data-index=" + index + "] .icon").css("backgroundImage", "url(" + data + ")");
+	const root = _getRoot$16();
+	const listEl = root.querySelector(".list");
+	const div = document.createElement("div");
+	div.className = "item";
+	div.setAttribute("data-index", index);
+	div.innerHTML = `<div class="icon"></div><span class="name">${_sanitizeHtml$5(name)}</span>`;
+	listEl.appendChild(div);
+	Client.loadFile(url, (data) => {
+		const icon = root.querySelector(`div[data-index="${index}"] .icon`);
+		if (icon) icon.style.backgroundImage = `url(${data})`;
 	});
 }
 var ItemSelection, ItemSelection_default;
 var init_ItemSelection = __esmMin((() => {
-	init_jquery();
 	init_DBManager();
 	init_SkillInfo();
 	init_Client();
 	init_Renderer();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
 	init_Inventory();
+	init_Elements();
 	init_ItemSelection$2();
 	init_ItemSelection$1();
-	ItemSelection = new UIComponent("ItemSelection", ItemSelection_default$2, ItemSelection_default$1);
+	ItemSelection = new GUIComponent("ItemSelection", ItemSelection_default$1);
+	ItemSelection.render = () => ItemSelection_default$2;
 	/**
 	* Initialize UI
 	*/
 	ItemSelection.init = function init() {
-		this.ui.css({
-			top: (Renderer.height - 200) / 2,
-			left: (Renderer.width - 200) / 2
-		});
-		this.list = this.ui.find(".list:first");
+		const root = _getRoot$16();
+		this.list = root.querySelector(".list");
 		this.index = 0;
-		this.draggable(this.ui.find(".head"));
-		this.ui.find(".ok").click(this.selectIndex.bind(this));
-		this.ui.find(".cancel").click(function() {
-			this.index = -1;
-			this.selectIndex();
-		}.bind(this));
-		this.ui.on("dblclick", ".item", this.selectIndex.bind(this)).on("mousedown", ".item", function() {
-			ItemSelection.setIndex(Math.floor(this.getAttribute("data-index")));
+		this.draggable(root.querySelector(".head"));
+		root.querySelector("ui-button.ok").addEventListener("click", () => {
+			ItemSelection.selectIndex();
 		});
+		root.querySelector("ui-button.cancel").addEventListener("click", () => {
+			ItemSelection.index = -1;
+			ItemSelection.selectIndex();
+		});
+		root.querySelector("#ItemSelection").addEventListener("dblclick", (e) => {
+			if (e.target.closest(".item")) ItemSelection.selectIndex();
+		});
+		root.querySelector("#ItemSelection").addEventListener("mousedown", (e) => {
+			const item = e.target.closest(".item");
+			if (item) ItemSelection.setIndex(Math.floor(item.getAttribute("data-index")));
+		});
+	};
+	/**
+	* Once append to body
+	*/
+	ItemSelection.onAppend = function onAppend() {
+		this._host.style.top = `${(Renderer.height - 200) / 2}px`;
+		this._host.style.left = `${(Renderer.width - 200) / 2}px`;
 	};
 	/**
 	* Add elements to the list
@@ -326371,23 +326521,22 @@ var init_ItemSelection = __esmMin((() => {
 	* @param {Array} list object to display
 	*/
 	ItemSelection.setList = function setList(list, isSkill) {
-		let i, count;
-		let item, it, file, name;
-		ItemSelection.list.empty();
-		for (i = 0, count = list.length; i < count; ++i) if (isSkill) {
+		const listEl = _getRoot$16().querySelector(".list");
+		listEl.innerHTML = "";
+		for (let i = 0, count = list.length; i < count; ++i) if (isSkill) {
 			if (list[i] > 0 && list[i] in SkillInfo) {
-				item = SkillInfo[list[i]];
-				file = item.Name;
-				name = item.SkillName;
+				const item = SkillInfo[list[i]];
+				const file = item.Name;
+				const name = item.SkillName;
 				addElement$3(DB.INTERFACE_PATH + "item/" + file + ".bmp", list[i], name);
 			}
 		} else {
-			item = InventoryController.getUI().getItemByIndex(list[i]);
+			const item = InventoryController.getUI().getItemByIndex(list[i]);
 			if (item) {
-				it = DB.getItemInfo(item.ITID);
+				const it = DB.getItemInfo(item.ITID);
 				if (it) {
-					file = item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName;
-					name = DB.getItemName(item, {
+					const file = item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName;
+					const name = DB.getItemName(item, {
 						showItemGrade: false,
 						showItemSlots: false,
 						showItemOptions: false
@@ -326404,8 +326553,11 @@ var init_ItemSelection = __esmMin((() => {
 	* @param {number} id in list
 	*/
 	ItemSelection.setIndex = function setIndex(id) {
-		this.list.find("div[data-index=" + this.index + "]").css("backgroundColor", "transparent");
-		this.list.find("div[data-index=" + id + "]").css("backgroundColor", "#cde0ff");
+		const root = _getRoot$16();
+		const prev = root.querySelector(`div[data-index="${this.index}"]`);
+		if (prev) prev.style.backgroundColor = "transparent";
+		const next = root.querySelector(`div[data-index="${id}"]`);
+		if (next) next.style.backgroundColor = "#cde0ff";
 		this.index = id;
 	};
 	/**
@@ -326427,7 +326579,8 @@ var init_ItemSelection = __esmMin((() => {
 	* @param {string} title
 	*/
 	ItemSelection.setTitle = function setTitle(title) {
-		this.ui.find(".head .text").text(title);
+		const text = _getRoot$16().querySelector(".head .text");
+		if (text) text.textContent = title;
 	};
 	/**
 	* Functions to define
@@ -326439,27 +326592,56 @@ var init_ItemSelection = __esmMin((() => {
 //#region src/UI/Components/MakeItemSelection/MakeItemSelection.html?raw
 var MakeItemSelection_default$2;
 var init_MakeItemSelection$2 = __esmMin((() => {
-	MakeItemSelection_default$2 = "<div id=\"MakeItemSelection\">\r\n	<div class=\"head\" data-background=\"basic_interface/titlebar_mid.bmp\">\r\n		<span class=\"text\"></span>\r\n	</div>\r\n	<div class=\"bottom\" data-background=\"login_interface/win_service.bmp\">\r\n		<button\r\n			class=\"btn cancel\"\r\n			data-background=\"btn_cancel.bmp\"\r\n			data-hover=\"btn_cancel_a.bmp\"\r\n			data-down=\"btn_cancel_b.bmp\"\r\n		></button>\r\n		<button class=\"btn ok\" data-background=\"btn_ok.bmp\" data-hover=\"btn_ok_a.bmp\" data-down=\"btn_ok_b.bmp\"></button>\r\n	</div>\r\n	<div class=\"content\">\r\n		<div class=\"list\"></div>\r\n		<div class=\"materials\" data-background=\"basic_interface/itemwin_mid.bmp\"></div>\r\n	</div>\r\n</div>\r\n";
+	MakeItemSelection_default$2 = "<div id=\"MakeItemSelection\">\r\n	<div class=\"head\">\r\n		<ui-image src=\"basic_interface/titlebar_mid.bmp\"></ui-image>\r\n		<span class=\"text\"></span>\r\n	</div>\r\n	<div class=\"bottom\">\r\n		<ui-image src=\"login_interface/win_service.bmp\"></ui-image>\r\n		<ui-button class=\"btn cancel\" bg=\"btn_cancel.bmp\" hover=\"btn_cancel_a.bmp\" down=\"btn_cancel_b.bmp\"></ui-button>\r\n		<ui-button class=\"btn ok\" bg=\"btn_ok.bmp\" hover=\"btn_ok_a.bmp\" down=\"btn_ok_b.bmp\"></ui-button>\r\n	</div>\r\n	<div class=\"content\">\r\n		<div class=\"list\"></div>\r\n		<div class=\"materials\">\r\n			<ui-image src=\"basic_interface/itemwin_mid.bmp\"></ui-image>\r\n		</div>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/MakeItemSelection/MakeItemSelection.css?raw
 var MakeItemSelection_default$1;
 var init_MakeItemSelection$1 = __esmMin((() => {
-	MakeItemSelection_default$1 = "#MakeItemSelection {\r\n	z-index: 100;\r\n	position: absolute;\r\n	width: 200px;\r\n}\r\n#MakeItemSelection .head {\r\n	position: absolute;\r\n	width: 100%;\r\n	height: 22px;\r\n	top: 0px;\r\n	left: 0px;\r\n	background-repeat: repeat-x;\r\n	background-color: white;\r\n}\r\n#MakeItemSelection .head .text {\r\n	position: relative;\r\n	top: 2px;\r\n	left: 5px;\r\n	white-space: nowrap;\r\n}\r\n#MakeItemSelection .bottom {\r\n	position: relative;\r\n	height: 120px;\r\n	top: 80px;\r\n	left: 0px;\r\n}\r\n\r\n#MakeItemSelection .content {\r\n	position: absolute;\r\n	top: 22px;\r\n	left: 0px;\r\n	background-color: white;\r\n	width: 100%;\r\n}\r\n#MakeItemSelection .list {\r\n	background-color: #f7f7f7;\r\n	height: 130px;\r\n	overflow-y: auto;\r\n	overflow-x: hidden;\r\n	margin-left: 10px;\r\n	margin-right: 10px;\r\n}\r\n#MakeItemSelection .list .item {\r\n	display: block;\r\n	height: 28px;\r\n	margin: 4px 4px 4px 4px;\r\n	position: relative;\r\n}\r\n#MakeItemSelection .list .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#MakeItemSelection .list .item .name {\r\n	position: absolute;\r\n	top: 7px;\r\n	left: 30px;\r\n	width: 90px;\r\n	white-space: nowrap;\r\n}\r\n\r\n#MakeItemSelection .materials {\r\n	position: absolute;\r\n	bottom: 0px;\r\n	left: 10px;\r\n	background-color: white;\r\n	width: 96px;\r\n	height: 28px;\r\n	display: none;\r\n}\r\n#MakeItemSelection .materials .item {\r\n	display: block;\r\n	width: 24px;\r\n	height: 24px;\r\n	margin: 4px 4px 4px 4px;\r\n	position: relative;\r\n	float: left;\r\n}\r\n#MakeItemSelection .materials .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n\r\n#MakeItemSelection .materials .item .name {\r\n	position: absolute;\r\n	top: 7px;\r\n	left: 30px;\r\n	width: 90px;\r\n	white-space: nowrap;\r\n}\r\n\r\n#MakeItemSelection .btn {\r\n	position: absolute;\r\n	bottom: 0px;\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	bottom: 4px;\r\n	background-color: transparent;\r\n}\r\n#MakeItemSelection .ok {\r\n	right: 50px;\r\n}\r\n#MakeItemSelection .cancel {\r\n	right: 5px;\r\n}\r\n\r\n#MakeItemSelection .select {\r\n	background-color: rgb(205, 224, 255);\r\n}\r\n";
+	MakeItemSelection_default$1 = ":host {\r\n	width: 200px;\r\n	top: 0px;\r\n	left: 0px;\r\n}\r\n\r\n#MakeItemSelection {\r\n	position: absolute;\r\n	width: 200px;\r\n}\r\n#MakeItemSelection .head {\r\n	position: absolute;\r\n	width: 100%;\r\n	height: 22px;\r\n	top: 0px;\r\n	left: 0px;\r\n	background-repeat: repeat-x;\r\n	background-color: white;\r\n}\r\n#MakeItemSelection .head .text {\r\n	position: relative;\r\n	top: 2px;\r\n	left: 5px;\r\n	white-space: nowrap;\r\n}\r\n#MakeItemSelection .bottom {\r\n	position: relative;\r\n	height: 120px;\r\n	top: 80px;\r\n	left: 0px;\r\n}\r\n\r\n#MakeItemSelection .content {\r\n	position: absolute;\r\n	top: 22px;\r\n	left: 0px;\r\n	background-color: white;\r\n	width: 100%;\r\n}\r\n#MakeItemSelection .list {\r\n	background-color: #f7f7f7;\r\n	height: 130px;\r\n	overflow-y: auto;\r\n	overflow-x: hidden;\r\n	margin-left: 10px;\r\n	margin-right: 10px;\r\n}\r\n#MakeItemSelection .list .item {\r\n	display: block;\r\n	height: 28px;\r\n	margin: 4px 4px 4px 4px;\r\n	position: relative;\r\n}\r\n#MakeItemSelection .list .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#MakeItemSelection .list .item .name {\r\n	position: absolute;\r\n	top: 7px;\r\n	left: 30px;\r\n	width: 90px;\r\n	white-space: nowrap;\r\n}\r\n\r\n#MakeItemSelection .materials {\r\n	position: absolute;\r\n	bottom: 0px;\r\n	left: 10px;\r\n	background-color: white;\r\n	width: 96px;\r\n	height: 28px;\r\n	display: none;\r\n}\r\n#MakeItemSelection .materials .item {\r\n	display: block;\r\n	width: 24px;\r\n	height: 24px;\r\n	margin: 4px 4px 4px 4px;\r\n	position: relative;\r\n	float: left;\r\n}\r\n#MakeItemSelection .materials .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n\r\n#MakeItemSelection .materials .item .name {\r\n	position: absolute;\r\n	top: 7px;\r\n	left: 30px;\r\n	width: 90px;\r\n	white-space: nowrap;\r\n}\r\n\r\n#MakeItemSelection ui-button.btn {\r\n	position: absolute;\r\n	bottom: 4px;\r\n	width: 42px;\r\n	height: 20px;\r\n}\r\n#MakeItemSelection .ok {\r\n	right: 50px;\r\n}\r\n#MakeItemSelection .cancel {\r\n	right: 5px;\r\n}\r\n\r\n#MakeItemSelection .select {\r\n	background-color: rgb(205, 224, 255);\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/MakeItemSelection/MakeItemSelection.js
 /**
+* Helper to get shadow root
+*/
+function _getRoot$15() {
+	return MakeItemSelection._shadow || MakeItemSelection._host;
+}
+/**
+* Sanitize HTML, allowing only whitelisted tags (font, i, b)
+*/
+function _sanitizeHtml$4(str) {
+	const whitelist = [
+		"font",
+		"i",
+		"b"
+	];
+	const div = document.createElement("div");
+	div.innerHTML = str;
+	div.querySelectorAll("*").forEach((el) => {
+		if (!whitelist.includes(el.tagName.toLowerCase())) el.replaceWith(...el.childNodes);
+	});
+	return div.innerHTML;
+}
+/**
 * Add an element to the list
 *
 * @param {string} image url
-* @param {index} index in list
+* @param {number} index in list
 * @param {string} element name
 */
 function addElement$2(url, index, name) {
-	MakeItemSelection.list.append("<div class=\"item\" data-index=\"" + index + "\"><div class=\"icon\"></div><span class=\"name\">" + jquery_default.escape(name) + "</span></div>");
-	Client.loadFile(url, function(data) {
-		MakeItemSelection.list.find("div[data-index=" + index + "] .icon").css("backgroundImage", "url(" + data + ")");
+	const root = _getRoot$15();
+	const listEl = root.querySelector(".list");
+	const div = document.createElement("div");
+	div.className = "item";
+	div.setAttribute("data-index", index);
+	div.innerHTML = `<div class="icon"></div><span class="name">${_sanitizeHtml$4(name)}</span>`;
+	listEl.appendChild(div);
+	Client.loadFile(url, (data) => {
+		const icon = root.querySelector(`.list div[data-index="${index}"] .icon`);
+		if (icon) icon.style.backgroundImage = `url(${data})`;
 	});
 }
 /**
@@ -326468,11 +326650,12 @@ function addElement$2(url, index, name) {
 * @param {event}
 */
 function onDrop$3(event) {
+	event.preventDefault();
+	event.stopImmediatePropagation();
 	let data;
 	try {
-		data = JSON.parse(event.originalEvent.dataTransfer.getData("Text"));
-	} catch (e) {}
-	event.stopImmediatePropagation();
+		data = JSON.parse(event.dataTransfer.getData("Text"));
+	} catch (_e) {}
 	if (!data || data.type !== "item" || data.from !== "Inventory") return false;
 	const item = data.data;
 	item.count = 1;
@@ -326483,35 +326666,42 @@ function onDrop$3(event) {
 * Stop event propagation
 */
 function stopPropagation$4(event) {
+	event.preventDefault();
 	event.stopImmediatePropagation();
-	return false;
 }
 function bindSelectEvents(showMaterials) {
+	const root = _getRoot$15();
+	const okBtn = root.querySelector("ui-button.ok");
+	const mainEl = root.querySelector("#MakeItemSelection");
+	if (_okHandler) okBtn.removeEventListener("click", _okHandler);
+	if (_dblClickHandler) mainEl.removeEventListener("dblclick", _dblClickHandler);
 	if (showMaterials) {
-		MakeItemSelection.ui.find(".ok").unbind("click");
-		MakeItemSelection.ui.find(".ok").click(MakeItemSelection.advance.bind(MakeItemSelection));
-		MakeItemSelection.ui.off("dblclick", ".item");
-		MakeItemSelection.ui.on("dblclick", ".item", MakeItemSelection.advance.bind(MakeItemSelection));
+		_okHandler = () => MakeItemSelection.advance();
+		_dblClickHandler = (e) => {
+			if (e.target.closest(".item")) MakeItemSelection.advance();
+		};
 	} else {
-		MakeItemSelection.ui.find(".ok").unbind("click");
-		MakeItemSelection.ui.find(".ok").click(MakeItemSelection.selectIndex.bind(MakeItemSelection));
-		MakeItemSelection.ui.off("dblclick", ".item");
-		MakeItemSelection.ui.on("dblclick", ".item", MakeItemSelection.selectIndex.bind(MakeItemSelection));
+		_okHandler = () => MakeItemSelection.selectIndex();
+		_dblClickHandler = (e) => {
+			if (e.target.closest(".item")) MakeItemSelection.selectIndex();
+		};
 	}
+	okBtn.addEventListener("click", _okHandler);
+	mainEl.addEventListener("dblclick", _dblClickHandler);
 }
-var MakeItemSelection, validMultipleMaterials, validSingleMaterials, MakeItemSelection_default;
+var MakeItemSelection, validMultipleMaterials, validSingleMaterials, _okHandler, _dblClickHandler, MakeItemSelection_default;
 var init_MakeItemSelection = __esmMin((() => {
-	init_jquery();
 	init_DBManager();
 	init_Client();
-	init_Renderer();
 	init_KeyEventHandler();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
 	init_Inventory();
+	init_Elements();
 	init_MakeItemSelection$2();
 	init_MakeItemSelection$1();
-	MakeItemSelection = new UIComponent("MakeItemSelection", MakeItemSelection_default$2, MakeItemSelection_default$1);
+	MakeItemSelection = new GUIComponent("MakeItemSelection", MakeItemSelection_default$1);
+	MakeItemSelection.render = () => MakeItemSelection_default$2;
 	validMultipleMaterials = [1e3];
 	validSingleMaterials = [
 		997,
@@ -326519,29 +326709,31 @@ var init_MakeItemSelection = __esmMin((() => {
 		995,
 		994
 	];
+	_okHandler = null;
+	_dblClickHandler = null;
 	/**
 	* Initialize UI
 	*/
 	MakeItemSelection.init = function init() {
-		this.ui.css({
-			top: (Renderer.height - 200) / 2,
-			left: (Renderer.width - 200) / 2
-		});
-		this.list = this.ui.find(".list:first");
+		const root = _getRoot$15();
+		this.list = root.querySelector(".list");
 		this.index = 0;
 		this.mkType = 0;
 		this.material = [];
-		this.draggable(this.ui.find(".head"));
-		this.ui.find(".cancel").click(function() {
-			this.index = -1;
-			this.selectIndex();
-		}.bind(this));
-		this.ui.on("mousedown", ".item", function() {
-			MakeItemSelection.setIndex(Math.floor(this.getAttribute("data-index")));
+		this.draggable(root.querySelector(".head"));
+		root.querySelector("ui-button.cancel").addEventListener("click", () => {
+			MakeItemSelection.index = -1;
+			MakeItemSelection.selectIndex();
 		});
-		this.ui.find(".materials").on("drop", onDrop$3).on("dragover", stopPropagation$4);
-		this.ui.find(".item").remove();
-		this.ui.find(".materials").hide();
+		root.querySelector("#MakeItemSelection").addEventListener("mousedown", (e) => {
+			const item = e.target.closest(".item");
+			if (item) MakeItemSelection.setIndex(Math.floor(item.getAttribute("data-index")));
+		});
+		const materials = root.querySelector(".materials");
+		materials.addEventListener("drop", onDrop$3);
+		materials.addEventListener("dragover", stopPropagation$4);
+		root.querySelectorAll(".materials .item").forEach((el) => el.remove());
+		materials.style.display = "none";
 	};
 	/**
 	* Add elements to the list
@@ -326549,20 +326741,21 @@ var init_MakeItemSelection = __esmMin((() => {
 	* @param {Array} list object to display
 	*/
 	MakeItemSelection.setList = function setList(list) {
-		let i, count;
-		let item, it, file, name, showMaterials;
-		MakeItemSelection.list.empty();
-		this.ui.find(".list").css("backgroundColor", "#f7f7f7");
-		this.ui.find(".materials").hide();
-		this.ui.find(".item").remove();
-		showMaterials = true;
+		const root = _getRoot$15();
+		const listEl = root.querySelector(".list");
+		listEl.innerHTML = "";
+		listEl.style.backgroundColor = "#f7f7f7";
+		const materials = root.querySelector(".materials");
+		materials.style.display = "none";
+		root.querySelectorAll(".materials .item").forEach((el) => el.remove());
+		let showMaterials = true;
 		this.mkType = 0;
 		this.material = [];
-		for (i = 0, count = list.length; i < count; ++i) {
-			item = list[i];
-			it = DB.getItemInfo(item.ITID);
-			file = it.identifiedResourceName;
-			name = it.identifiedDisplayName;
+		for (let i = 0, count = list.length; i < count; ++i) {
+			const item = list[i];
+			const it = DB.getItemInfo(item.ITID);
+			const file = it.identifiedResourceName;
+			const name = it.identifiedDisplayName;
 			if (it.processitemlist === "") showMaterials = false;
 			addElement$2(DB.INTERFACE_PATH + "item/" + file + ".bmp", list[i].ITID, name);
 		}
@@ -326575,18 +326768,19 @@ var init_MakeItemSelection = __esmMin((() => {
 	* @param {Array} list object to display
 	*/
 	MakeItemSelection.setCookingList = function setCookingList(list, mkType) {
-		let i, count;
-		let item, it, file, name;
-		MakeItemSelection.list.empty();
-		this.ui.find(".list").css("backgroundColor", "#f7f7f7");
-		this.ui.find(".materials").hide();
-		this.ui.find(".item").remove();
+		const root = _getRoot$15();
+		const listEl = root.querySelector(".list");
+		listEl.innerHTML = "";
+		listEl.style.backgroundColor = "#f7f7f7";
+		const materials = root.querySelector(".materials");
+		materials.style.display = "none";
+		root.querySelectorAll(".materials .item").forEach((el) => el.remove());
 		this.mkType = mkType;
-		for (i = 0, count = list.length; i < count; ++i) {
-			item = list[i];
-			it = DB.getItemInfo(item);
-			file = it.identifiedResourceName;
-			name = it.identifiedDisplayName;
+		for (let i = 0, count = list.length; i < count; ++i) {
+			const item = list[i];
+			const it = DB.getItemInfo(item);
+			const file = it.identifiedResourceName;
+			const name = it.identifiedDisplayName;
 			addElement$2(DB.INTERFACE_PATH + "item/" + file + ".bmp", list[i], name);
 		}
 		this.setIndex(list[0].ITID);
@@ -326598,17 +326792,20 @@ var init_MakeItemSelection = __esmMin((() => {
 	* @param {number} index in list
 	*/
 	MakeItemSelection.advance = function advance() {
-		MakeItemSelection.list.empty();
+		const root = _getRoot$15();
+		const listEl = root.querySelector(".list");
+		listEl.innerHTML = "";
 		const it = DB.getItemInfo(this.index);
-		const title = it.identifiedDisplayName + " " + DB.getMessage(426);
+		const title = `${it.identifiedDisplayName} ${DB.getMessage(426)}`;
 		const metal = it.processitemlist;
 		MakeItemSelection.setTitle(title);
-		this.ui.find(".ok").unbind("click");
-		this.ui.find(".ok").click(this.selectIndex.bind(this));
-		this.ui.find(".list").css("backgroundColor", "#ffffff");
-		this.ui.find(".list").append(`<pre>${it.identifiedDisplayName} - ${DB.getMessage(427)}
-${metal}</pre>`);
-		this.ui.find(".materials").show();
+		const okBtn = root.querySelector("ui-button.ok");
+		if (_okHandler) okBtn.removeEventListener("click", _okHandler);
+		_okHandler = () => MakeItemSelection.selectIndex();
+		okBtn.addEventListener("click", _okHandler);
+		listEl.style.backgroundColor = "#ffffff";
+		listEl.innerHTML = `<pre>${_sanitizeHtml$4(it.identifiedDisplayName)} - ${DB.getMessage(427)}\n${_sanitizeHtml$4(metal)}</pre>`;
+		root.querySelector(".materials").style.display = "block";
 	};
 	/**
 	* Change selection
@@ -326616,9 +326813,12 @@ ${metal}</pre>`);
 	* @param {number} id in list
 	*/
 	MakeItemSelection.setIndex = function setIndex(id) {
+		const root = _getRoot$15();
 		id = id === 0 ? this.index : id;
-		this.list.find("div[data-index=" + this.index + "]").removeClass("select");
-		this.list.find("div[data-index=" + id + "]").addClass("select");
+		const prev = root.querySelector(`.list div[data-index="${this.index}"]`);
+		if (prev) prev.classList.remove("select");
+		const next = root.querySelector(`.list div[data-index="${id}"]`);
+		if (next) next.classList.add("select");
 		this.index = id;
 	};
 	/**
@@ -326636,7 +326836,7 @@ ${metal}</pre>`);
 		this.index = 0;
 	};
 	MakeItemSelection.onKeyDown = function onKeyDown(event) {
-		if ((event.which === KEYS.ESCAPE || event.key === "Escape") && this.ui.is(":visible")) this.remove();
+		if (event.which === KEYS.ESCAPE || event.key === "Escape") this.remove();
 	};
 	/**
 	* Set new window name
@@ -326644,7 +326844,8 @@ ${metal}</pre>`);
 	* @param {string} title
 	*/
 	MakeItemSelection.setTitle = function setTitle(title) {
-		this.ui.find(".head .text").text(title);
+		const text = _getRoot$15().querySelector(".head .text");
+		if (text) text.textContent = title;
 	};
 	/**
 	* Functions to define
@@ -326677,13 +326878,18 @@ ${metal}</pre>`);
 	* @param {object} Item
 	*/
 	MakeItemSelection.addItemSub = function AddItemSub(item) {
+		const root = _getRoot$15();
 		const it = DB.getItemInfo(item.ITID);
-		const content = this.ui.find(".materials");
-		content.append("<div class=\"item\" data-index=\"" + item.index + "\" draggable=\"false\"><div class=\"icon\"></div></div>");
-		if (content.height() < content[0].scrollHeight) this.ui.find(".hide").hide();
-		else this.ui.find(".hide").show();
-		Client.loadFile(DB.INTERFACE_PATH + "item/" + (item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName) + ".bmp", function(data) {
-			content.find(".item[data-index=\"" + item.index + "\"] .icon").css("backgroundImage", "url(" + data + ")");
+		const content = root.querySelector(".materials");
+		const div = document.createElement("div");
+		div.className = "item";
+		div.setAttribute("data-index", item.index);
+		div.setAttribute("draggable", "false");
+		div.innerHTML = "<div class=\"icon\"></div>";
+		content.appendChild(div);
+		Client.loadFile(DB.INTERFACE_PATH + "item/" + (item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName) + ".bmp", (data) => {
+			const icon = root.querySelector(`.materials .item[data-index="${item.index}"] .icon`);
+			if (icon) icon.style.backgroundImage = `url(${data})`;
 		});
 		return true;
 	};
@@ -326693,16 +326899,22 @@ ${metal}</pre>`);
 //#region src/UI/Components/MakeItemSelection/ItemConvertSelection/MakeModelMessage/MakeModelMessage.html?raw
 var MakeModelMessage_default$2;
 var init_MakeModelMessage$2 = __esmMin((() => {
-	MakeModelMessage_default$2 = "<div id=\"MakeModelMessage\">\r\n	<div class=\"titlebar\" data-background=\"basic_interface/titlebar_mid.bmp\">\r\n		<div class=\"left\">\r\n			<button\r\n				class=\"base\"\r\n				data-background=\"basic_interface/sys_base_off.bmp\"\r\n				data-hover=\"basic_interface/sys_base_on.bmp\"\r\n			></button>\r\n			<!-- data-text does not exist -->\r\n			<span class=\"text\">Message</span>\r\n		</div>\r\n		<div class=\"clear\"></div>\r\n	</div>\r\n	<div class=\"container\">\r\n		<div class=\"text_message\">\r\n			<span class=\"text\" data-text=\"1584\">Consumption items are used in the synthesis. Are you sure?</span>\r\n		</div>\r\n		<div class=\"btns\">\r\n			<button\r\n				class=\"btn ok\"\r\n				data-background=\"btn_ok.bmp\"\r\n				data-hover=\"btn_ok_a.bmp\"\r\n				data-down=\"btn_ok_b.bmp\"\r\n			></button>\r\n			<button\r\n				class=\"btn cancel\"\r\n				data-background=\"btn_cancel.bmp\"\r\n				data-hover=\"btn_cancel_a.bmp\"\r\n				data-down=\"btn_cancel_b.bmp\"\r\n			></button>\r\n		</div>\r\n	</div>\r\n</div>\r\n";
+	MakeModelMessage_default$2 = "<div id=\"MakeModelMessage\">\r\n	<div class=\"titlebar\">\r\n		<ui-image src=\"basic_interface/titlebar_mid.bmp\"></ui-image>\r\n		<div class=\"left\">\r\n			<ui-button\r\n				class=\"base\"\r\n				bg=\"basic_interface/sys_base_off.bmp\"\r\n				hover=\"basic_interface/sys_base_on.bmp\"\r\n			></ui-button>\r\n			<span class=\"text\">Message</span>\r\n		</div>\r\n		<div class=\"clear\"></div>\r\n	</div>\r\n	<div class=\"container\">\r\n		<div class=\"text_message\">\r\n			<ui-text class=\"text\" msg=\"1584\">Consumption items are used in the synthesis. Are you sure?</ui-text>\r\n		</div>\r\n		<div class=\"btns\">\r\n			<ui-button class=\"btn ok\" bg=\"btn_ok.bmp\" hover=\"btn_ok_a.bmp\" down=\"btn_ok_b.bmp\"></ui-button>\r\n			<ui-button\r\n				class=\"btn cancel\"\r\n				bg=\"btn_cancel.bmp\"\r\n				hover=\"btn_cancel_a.bmp\"\r\n				down=\"btn_cancel_b.bmp\"\r\n			></ui-button>\r\n		</div>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/MakeItemSelection/ItemConvertSelection/MakeModelMessage/MakeModelMessage.css?raw
 var MakeModelMessage_default$1;
 var init_MakeModelMessage$1 = __esmMin((() => {
-	MakeModelMessage_default$1 = "/* Message Model */\r\n#MakeModelMessage {\r\n	/* display: none; */\r\n	position: absolute;\r\n	top: 100px;\r\n	left: 100px;\r\n	width: 270px;\r\n}\r\n\r\n#MakeModelMessage .titlebar {\r\n	border-radius: 3px 3px 0px 0px;\r\n	height: 15px;\r\n	align-items: center;\r\n	padding: 1px;\r\n}\r\n#MakeModelMessage .titlebar .base {\r\n	width: 11px;\r\n	height: 11px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n	vertical-align: middle;\r\n}\r\n#MakeModelMessage .container {\r\n	background: white;\r\n	width: 268px;\r\n	height: 114px;\r\n	border-radius: 0px 0px 3px 3px;\r\n	border: 1px solid #ccc;\r\n	display: grid;\r\n}\r\n\r\n#MakeModelMessage .text_message {\r\n	height: 73px;\r\n	padding: 11px;\r\n}\r\n\r\n/** Buttons **/\r\n#MakeModelMessage .btns {\r\n	position: absolute;\r\n	bottom: -3px;\r\n	width: 100%;\r\n	height: 28px;\r\n}\r\n#MakeModelMessage .btn {\r\n	position: absolute;\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#MakeModelMessage .ok,\r\n#MakeModelMessage .make {\r\n	right: 50px;\r\n}\r\n#MakeModelMessage .cancel {\r\n	right: 4px;\r\n}\r\n#MakeModelMessage .delete {\r\n	left: 4px;\r\n}\r\n";
+	MakeModelMessage_default$1 = "/* Message Model */\r\n:host {\r\n	width: 270px;\r\n	top: 100px;\r\n	left: 100px;\r\n}\r\n\r\n#MakeModelMessage {\r\n	position: absolute;\r\n	width: 270px;\r\n}\r\n\r\n#MakeModelMessage .titlebar {\r\n	border-radius: 3px 3px 0px 0px;\r\n	height: 15px;\r\n	align-items: center;\r\n	padding: 1px;\r\n}\r\n#MakeModelMessage .titlebar .base {\r\n	width: 11px;\r\n	height: 11px;\r\n	vertical-align: middle;\r\n}\r\n#MakeModelMessage .container {\r\n	background: white;\r\n	width: 268px;\r\n	height: 114px;\r\n	border-radius: 0px 0px 3px 3px;\r\n	border: 1px solid #ccc;\r\n	display: grid;\r\n}\r\n\r\n#MakeModelMessage .text_message {\r\n	height: 73px;\r\n	padding: 11px;\r\n}\r\n\r\n/** Buttons **/\r\n#MakeModelMessage .btns {\r\n	position: absolute;\r\n	bottom: -3px;\r\n	width: 100%;\r\n	height: 28px;\r\n}\r\n#MakeModelMessage ui-button.btn {\r\n	position: absolute;\r\n	width: 42px;\r\n	height: 20px;\r\n}\r\n\r\n#MakeModelMessage .ok,\r\n#MakeModelMessage .make {\r\n	right: 50px;\r\n}\r\n#MakeModelMessage .cancel {\r\n	right: 4px;\r\n}\r\n#MakeModelMessage .delete {\r\n	left: 4px;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/MakeItemSelection/ItemConvertSelection/MakeModelMessage/MakeModelMessage.js
+/**
+* Helper to get shadow root
+*/
+function _getRoot$14() {
+	return MakeModelMessage._shadow || MakeModelMessage._host;
+}
 function onSendMaterial(event) {
 	event.stopImmediatePropagation();
 	ConvertItems_default.validItemSend(true);
@@ -326715,22 +326927,23 @@ var MakeModelMessage, MakeModelMessage_default;
 var init_MakeModelMessage = __esmMin((() => {
 	init_Renderer();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
+	init_Elements();
 	init_MakeModelMessage$2();
 	init_MakeModelMessage$1();
 	init_ConvertItems();
-	MakeModelMessage = new UIComponent("MakeModelMessage", MakeModelMessage_default$2, MakeModelMessage_default$1);
+	MakeModelMessage = new GUIComponent("MakeModelMessage", MakeModelMessage_default$1);
+	MakeModelMessage.render = () => MakeModelMessage_default$2;
 	/**
 	* Initialize UI
 	*/
 	MakeModelMessage.init = function init() {
-		this.ui.css({
-			top: (Renderer.height - 200) / 2,
-			left: (Renderer.width - 200) / 2
-		});
-		this.ui.find(".ok").on("click", onSendMaterial);
-		this.ui.find(".cancel").on("click", onClose$3);
-		this.draggable(this.ui.find(".titlebar"));
+		const root = _getRoot$14();
+		this._host.style.top = `${(Renderer.height - 200) / 2}px`;
+		this._host.style.left = `${(Renderer.width - 200) / 2}px`;
+		root.querySelector("ui-button.ok").addEventListener("click", onSendMaterial);
+		root.querySelector("ui-button.cancel").addEventListener("click", onClose$3);
+		this.draggable(root.querySelector(".titlebar"));
 	};
 	MakeModelMessage_default = UIManager.addComponent(MakeModelMessage);
 }));
@@ -326738,16 +326951,38 @@ var init_MakeModelMessage = __esmMin((() => {
 //#region src/UI/Components/MakeItemSelection/ItemConvertSelection/ConvertItems.html?raw
 var ConvertItems_default$2;
 var init_ConvertItems$2 = __esmMin((() => {
-	ConvertItems_default$2 = "<div id=\"ConvertItems\">\r\n	<div class=\"titlebar\" data-background=\"basic_interface/titlebar_mid.bmp\">\r\n		<div class=\"left\">\r\n			<span class=\"text\" data-text=\"1569\">Storage</span>\r\n		</div>\r\n		<div class=\"clear\"></div>\r\n	</div>\r\n	<div class=\"overlay\"></div>\r\n	<div class=\"panel\">\r\n		<div class=\"body\">\r\n			<div class=\"infor_nventory\">\r\n				<div class=\"tabs\" rowspan=\"2\" data-background=\"basic_interface/chatwin1_mid.bmp\"></div>\r\n				<div class=\"container\">\r\n					<div class=\"content\" data-background=\"basic_interface/itemwin_mid.bmp\"></div>\r\n				</div>\r\n			</div>\r\n			<div>\r\n				<div class=\"footer\" data-background=\"basic_interface/btnbar_mid2.bmp\">\r\n					<button\r\n						class=\"btn trade\"\r\n						data-background=\"btn_exchange.bmp\"\r\n						data-hover=\"btn_exchange_a.bmp\"\r\n						data-down=\"btn_exchange_b.bmp\"\r\n					></button>\r\n					<button\r\n						class=\"btn cancel\"\r\n						data-background=\"btn_cancel.bmp\"\r\n						data-hover=\"btn_cancel_a.bmp\"\r\n						data-down=\"btn_cancel_b.bmp\"\r\n					></button>\r\n					<button class=\"extend\" data-background=\"btn_resize.bmp\"></button>\r\n				</div>\r\n			</div>\r\n		</div>\r\n	</div>\r\n</div>\r\n";
+	ConvertItems_default$2 = "<div id=\"ConvertItems\">\r\n	<div class=\"titlebar\">\r\n		<ui-image src=\"basic_interface/titlebar_mid.bmp\"></ui-image>\r\n		<div class=\"left\">\r\n			<ui-text class=\"text\" msg=\"1569\">Storage</ui-text>\r\n		</div>\r\n		<div class=\"clear\"></div>\r\n	</div>\r\n	<div class=\"overlay\"></div>\r\n	<div class=\"panel\">\r\n		<div class=\"body\">\r\n			<div class=\"infor_nventory\">\r\n				<div class=\"tabs\" rowspan=\"2\">\r\n					<ui-image src=\"basic_interface/chatwin1_mid.bmp\"></ui-image>\r\n				</div>\r\n				<div class=\"container\">\r\n					<div class=\"content\">\r\n						<ui-image src=\"basic_interface/itemwin_mid.bmp\"></ui-image>\r\n					</div>\r\n				</div>\r\n			</div>\r\n			<div>\r\n				<div class=\"footer\">\r\n					<ui-image src=\"basic_interface/btnbar_mid2.bmp\"></ui-image>\r\n					<ui-button\r\n						class=\"btn trade\"\r\n						bg=\"btn_exchange.bmp\"\r\n						hover=\"btn_exchange_a.bmp\"\r\n						down=\"btn_exchange_b.bmp\"\r\n					></ui-button>\r\n					<ui-button\r\n						class=\"btn cancel\"\r\n						bg=\"btn_cancel.bmp\"\r\n						hover=\"btn_cancel_a.bmp\"\r\n						down=\"btn_cancel_b.bmp\"\r\n					></ui-button>\r\n					<ui-button class=\"extend\" bg=\"btn_resize.bmp\"></ui-button>\r\n				</div>\r\n			</div>\r\n		</div>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/MakeItemSelection/ItemConvertSelection/ConvertItems.css?raw
 var ConvertItems_default$1;
 var init_ConvertItems$1 = __esmMin((() => {
-	ConvertItems_default$1 = "#ConvertItems {\r\n	position: absolute;\r\n	top: 100px;\r\n	left: 100px;\r\n	width: 280px;\r\n}\r\n#ConvertItems .body {\r\n	border-spacing: 0px;\r\n	display: inline-block;\r\n	width: 100%;\r\n}\r\n\r\n#ConvertItems .titlebar {\r\n	width: 100%;\r\n	height: 17px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 3px 3px 0px 0px;\r\n}\r\n#ConvertItems .titlebar .text {\r\n	text-shadow: 1px 1px white;\r\n	vertical-align: -2px;\r\n	white-space: nowrap;\r\n	/* chrome bug */\r\n	display: inline-block;\r\n	width: 32px;\r\n	height: 13px;\r\n	margin-left: 15px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n\r\n#ConvertItems .titlebar .left {\r\n	margin-left: 3px;\r\n	float: left;\r\n}\r\n#ConvertItems .titlebar .clear {\r\n	clear: both;\r\n}\r\n\r\n#ConvertItems .infor_nventory {\r\n	display: flex;\r\n}\r\n\r\n#ConvertItems .tabs {\r\n	border-left: 1px solid #ccc;\r\n	width: 25px;\r\n	background-color: white;\r\n	vertical-align: top;\r\n	background-position: -1px 0px;\r\n}\r\n#ConvertItems .tabs button {\r\n	width: 20px;\r\n	height: 30px;\r\n	border: none;\r\n	background-color: transparent;\r\n	display: block;\r\n}\r\n#ConvertItems .tabs .item {\r\n	height: 25px;\r\n}\r\n\r\n#ConvertItems .container {\r\n	padding-left: 15px;\r\n	border-right: 1px solid #ccc;\r\n	background: white;\r\n	width: 100%;\r\n}\r\n#ConvertItems .content {\r\n	overflow-y: scroll;\r\n	overflow-x: hidden;\r\n	width: 100%;\r\n	height: 100%;\r\n	min-height: 262px;\r\n	background-color: transparent;\r\n	background-repeat: repeat-y;\r\n}\r\n\r\n#ConvertItems .content .item {\r\n	display: block;\r\n	width: 24px;\r\n	height: 28px;\r\n	margin: 4px 0px 0px 4px;\r\n	position: relative;\r\n}\r\n#ConvertItems .content .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#ConvertItems .overlay {\r\n	pointer-events: none;\r\n	position: absolute;\r\n	display: none;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	padding: 5px;\r\n	background: rgba(0, 0, 0, 0.7);\r\n	color: white;\r\n	text-shadow: 1px 1px black;\r\n}\r\n#ConvertItems .overlay.grey {\r\n	color: #aaa;\r\n}\r\n#ConvertItems .content .item .amount {\r\n	position: relative;\r\n	bottom: 9px;\r\n	right: 0px;\r\n	text-align: right;\r\n	text-shadow: -1px -1px white;\r\n}\r\n#ConvertItems .content .name {\r\n	position: absolute;\r\n	top: 7px;\r\n	left: 30px;\r\n	width: 190px;\r\n}\r\n\r\n#ConvertItems .footer {\r\n	border-radius: 0px 0px 3px 3px;\r\n	width: 100%;\r\n	height: 27px;\r\n	background-repeat: repeat-x;\r\n	background-color: transparent;\r\n	position: relative;\r\n	border-right: 1px solid #ccc;\r\n}\r\n#ConvertItems .footer .extend {\r\n	position: absolute;\r\n	right: 0px;\r\n	bottom: 1px;\r\n	width: 13px;\r\n	height: 13px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#ConvertItems .btn {\r\n	top: 5px;\r\n	position: absolute;\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#ConvertItems .cancel {\r\n	right: 20px;\r\n}\r\n#ConvertItems .trade {\r\n	right: 65px;\r\n}\r\n";
+	ConvertItems_default$1 = ":host {\r\n	width: 280px;\r\n	top: 100px;\r\n	left: 100px;\r\n}\r\n\r\n#ConvertItems {\r\n	position: absolute;\r\n	width: 280px;\r\n}\r\n#ConvertItems .body {\r\n	border-spacing: 0px;\r\n	display: inline-block;\r\n	width: 100%;\r\n}\r\n\r\n#ConvertItems .titlebar {\r\n	width: 100%;\r\n	height: 17px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 3px 3px 0px 0px;\r\n}\r\n#ConvertItems .titlebar .text {\r\n	text-shadow: 1px 1px white;\r\n	vertical-align: -2px;\r\n	white-space: nowrap;\r\n	/* chrome bug */\r\n	display: inline-block;\r\n	width: 32px;\r\n	height: 13px;\r\n	margin-left: 15px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n\r\n#ConvertItems .titlebar .left {\r\n	margin-left: 3px;\r\n	float: left;\r\n}\r\n#ConvertItems .titlebar .clear {\r\n	clear: both;\r\n}\r\n\r\n#ConvertItems .infor_nventory {\r\n	display: flex;\r\n}\r\n\r\n#ConvertItems .tabs {\r\n	border-left: 1px solid #ccc;\r\n	width: 25px;\r\n	background-color: white;\r\n	vertical-align: top;\r\n	background-position: -1px 0px;\r\n}\r\n#ConvertItems .tabs ui-button {\r\n	width: 20px;\r\n	height: 30px;\r\n	display: block;\r\n}\r\n#ConvertItems .tabs .item {\r\n	height: 25px;\r\n}\r\n\r\n#ConvertItems .container {\r\n	padding-left: 15px;\r\n	border-right: 1px solid #ccc;\r\n	background: white;\r\n	width: 100%;\r\n}\r\n#ConvertItems .content {\r\n	overflow-y: scroll;\r\n	overflow-x: hidden;\r\n	width: 100%;\r\n	height: 100%;\r\n	min-height: 262px;\r\n	background-color: transparent;\r\n	background-repeat: repeat-y;\r\n}\r\n\r\n#ConvertItems .content .item {\r\n	display: block;\r\n	width: 24px;\r\n	height: 28px;\r\n	margin: 4px 0px 0px 4px;\r\n	position: relative;\r\n}\r\n#ConvertItems .content .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#ConvertItems .overlay {\r\n	pointer-events: none;\r\n	position: absolute;\r\n	display: none;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	padding: 5px;\r\n	background: rgba(0, 0, 0, 0.7);\r\n	color: white;\r\n	text-shadow: 1px 1px black;\r\n}\r\n#ConvertItems .overlay.grey {\r\n	color: #aaa;\r\n}\r\n#ConvertItems .content .item .amount {\r\n	position: relative;\r\n	bottom: 9px;\r\n	right: 0px;\r\n	text-align: right;\r\n	text-shadow: -1px -1px white;\r\n}\r\n#ConvertItems .content .name {\r\n	position: absolute;\r\n	top: 7px;\r\n	left: 30px;\r\n	width: 190px;\r\n}\r\n\r\n#ConvertItems .footer {\r\n	border-radius: 0px 0px 3px 3px;\r\n	width: 100%;\r\n	height: 27px;\r\n	background-repeat: repeat-x;\r\n	background-color: transparent;\r\n	position: relative;\r\n	border-right: 1px solid #ccc;\r\n}\r\n#ConvertItems .footer .extend {\r\n	position: absolute;\r\n	right: 0px;\r\n	bottom: 1px;\r\n	width: 13px;\r\n	height: 13px;\r\n	background-repeat: no-repeat;\r\n}\r\n\r\n#ConvertItems ui-button.btn {\r\n	top: 5px;\r\n	position: absolute;\r\n	width: 42px;\r\n	height: 20px;\r\n}\r\n#ConvertItems .cancel {\r\n	right: 20px;\r\n}\r\n#ConvertItems .trade {\r\n	right: 65px;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/MakeItemSelection/ItemConvertSelection/ConvertItems.js
+/**
+* Helper to get shadow root
+*/
+function _getRoot$13() {
+	return ConvertItems._shadow || ConvertItems._host;
+}
+/**
+* Sanitize HTML, allowing only whitelisted tags (font, i, b)
+*/
+function _sanitizeHtml$3(str) {
+	const whitelist = [
+		"font",
+		"i",
+		"b"
+	];
+	const div = document.createElement("div");
+	div.innerHTML = str;
+	div.querySelectorAll("*").forEach((el) => {
+		if (!whitelist.includes(el.tagName.toLowerCase())) el.replaceWith(...el.childNodes);
+	});
+	return div.innerHTML;
+}
 function onMessageModel(event) {
 	event.stopImmediatePropagation();
 	MakeModelMessage_default.append();
@@ -326760,7 +326995,7 @@ function onClose$2(event) {
 * Extend ConvertItems window size
 */
 function onResize$2() {
-	const top = ConvertItems.ui.position().top;
+	const top = parseInt(ConvertItems._host.style.top, 10) || 0;
 	let lastHeight = 0;
 	function resizing() {
 		let h = Math.floor((Mouse.screen.y - top - 20) / 32);
@@ -326770,26 +327005,30 @@ function onResize$2() {
 		lastHeight = h;
 	}
 	const _Interval = setInterval(resizing, 30);
-	jquery_default(window).on("mouseup.resize", function(event) {
+	function onMouseUp(event) {
 		if (event.which === 1) {
 			clearInterval(_Interval);
-			jquery_default(window).off("mouseup.resize");
+			window.removeEventListener("mouseup", onMouseUp);
 		}
-	});
+	}
+	window.addEventListener("mouseup", onMouseUp);
 }
 /**
 * Extend ConvertItems window size
 */
 function resizeHeight$1(height) {
+	const root = _getRoot$13();
 	height = Math.min(Math.max(height, 8), 17);
-	ConvertItems.ui.find(".container .content").css("height", height * 32);
-	ConvertItems.ui.css("height", 50 + height * 32);
+	const content = root.querySelector(".container .content");
+	if (content) content.style.height = `${height * 32}px`;
+	ConvertItems._host.style.height = `${50 + height * 32}px`;
 }
 /**
 * Mouse mouve out of an item, hide title description
 */
 function onItemOut$2() {
-	ConvertItems.ui.find(".overlay").hide();
+	const overlay = _getRoot$13().querySelector(".overlay");
+	if (overlay) overlay.style.display = "none";
 }
 /**
 * Start dragging an item
@@ -326798,12 +327037,12 @@ function onItemDragStart$1(event) {
 	const i = getItemIndexById$1(parseInt(this.getAttribute("data-index"), 10));
 	if (i === -1) return;
 	const img = new Image();
-	let url = this.firstChild.style.backgroundImage.match(/\(([^\)]+)/)[1];
-	url = url.replace(/^\"/, "").replace(/\"$/, "");
+	let url = this.firstChild.style.backgroundImage.match(/\(([^)]+)/)[1];
+	url = url.replace(/^"/, "").replace(/"$/, "");
 	img.decoding = "async";
 	img.src = url;
-	event.originalEvent.dataTransfer.setDragImage(img, 12, 12);
-	event.originalEvent.dataTransfer.setData("Text", JSON.stringify(window._OBJ_DRAG_ = {
+	event.dataTransfer.setDragImage(img, 12, 12);
+	event.dataTransfer.setData("Text", JSON.stringify(window._OBJ_DRAG_ = {
 		type: "item",
 		from: "ConvertItems",
 		data: ConvertItems.material[i]
@@ -326812,7 +327051,6 @@ function onItemDragStart$1(event) {
 }
 /**
 * Display item description
-*
 */
 function onItemInfo$4(event) {
 	event.stopImmediatePropagation();
@@ -326836,8 +327074,7 @@ function onItemDragEnd$1() {
 * @param {number} item id
 */
 function getItemIndexById$1(index) {
-	let i, count;
-	for (i = 0, count = ConvertItems.material.length; i < count; ++i) if (ConvertItems.material[i].index === index) return i;
+	for (let i = 0, count = ConvertItems.material.length; i < count; ++i) if (ConvertItems.material[i].index === index) return i;
 	return -1;
 }
 /**
@@ -326846,11 +327083,12 @@ function getItemIndexById$1(index) {
 * @param {event}
 */
 function onDrop$2(event) {
+	event.preventDefault();
+	event.stopImmediatePropagation();
 	let data;
 	try {
-		data = JSON.parse(event.originalEvent.dataTransfer.getData("Text"));
-	} catch (e) {}
-	event.stopImmediatePropagation();
+		data = JSON.parse(event.dataTransfer.getData("Text"));
+	} catch (_e) {}
 	if (!data || data.type !== "item" || data.from !== "ItemListWindowSelection") return false;
 	const item = data.data;
 	const valid_select_all = !ItemListWindowSelection_default.getSelectAll();
@@ -326873,18 +327111,18 @@ function onDrop$2(event) {
 * Stop event propagation
 */
 function stopPropagation$3(event) {
+	event.preventDefault();
 	event.stopImmediatePropagation();
-	return false;
 }
 /**
 * Update scroll by block (32px)
 */
 function onScroll$2(event) {
 	let delta;
-	if (event.originalEvent.wheelDelta) {
-		delta = event.originalEvent.wheelDelta / 120;
+	if (event.wheelDelta) {
+		delta = event.wheelDelta / 120;
 		if (window.opera) delta = -delta;
-	} else if (event.originalEvent.detail) delta = -event.originalEvent.detail;
+	} else if (event.detail) delta = -event.detail;
 	this.scrollTop = Math.floor(this.scrollTop / 32) * 32 - delta * 32;
 	return false;
 }
@@ -326892,23 +327130,22 @@ function onScroll$2(event) {
 * Mouse over item, display name and informations
 */
 function onItemOver$2() {
+	const root = _getRoot$13();
 	const i = getItemIndexById$1(parseInt(this.getAttribute("data-index"), 10));
 	if (i < 0) return;
 	const item = ConvertItems.material[i];
-	const pos = jquery_default(this).position();
-	const overlay = ConvertItems.ui.find(".overlay");
-	overlay.show();
-	overlay.css({
-		top: pos.top - 10,
-		left: pos.left + 35
-	});
-	overlay.text(DB.getItemName(item) + " " + (item.count || 1) + " ea");
-	if (item.IsIdentified) overlay.removeClass("grey");
-	else overlay.addClass("grey");
+	const rect = this.getBoundingClientRect();
+	const hostRect = ConvertItems._host.getBoundingClientRect();
+	const overlay = root.querySelector(".overlay");
+	overlay.style.display = "block";
+	overlay.style.top = `${rect.top - hostRect.top - 10}px`;
+	overlay.style.left = `${rect.left - hostRect.left + 35}px`;
+	overlay.textContent = `${DB.getItemName(item)} ${item.count || 1} ea`;
+	if (item.IsIdentified) overlay.classList.remove("grey");
+	else overlay.classList.add("grey");
 }
 var _preferences$10, ConvertItems, ConvertItems_default;
 var init_ConvertItems = __esmMin((() => {
-	init_jquery();
 	init_DBManager();
 	init_ItemInfo();
 	init_Preferences$1();
@@ -326916,10 +327153,11 @@ var init_ConvertItems = __esmMin((() => {
 	init_Client();
 	init_Renderer();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
 	init_InputBox();
 	init_ItemListWindowSelection();
 	init_MakeModelMessage();
+	init_Elements();
 	init_ConvertItems$2();
 	init_ConvertItems$1();
 	_preferences$10 = Preferences.get("ConvertItems", {
@@ -326927,7 +327165,8 @@ var init_ConvertItems = __esmMin((() => {
 		y: 500,
 		height: 8
 	}, 1);
-	ConvertItems = new UIComponent("ConvertItems", ConvertItems_default$2, ConvertItems_default$1);
+	ConvertItems = new GUIComponent("ConvertItems", ConvertItems_default$1);
+	ConvertItems.render = () => ConvertItems_default$2;
 	/**
 	* Store Convert Items items
 	*/
@@ -326936,32 +327175,62 @@ var init_ConvertItems = __esmMin((() => {
 	* Initialize UI
 	*/
 	ConvertItems.init = function init() {
-		this.ui.css({
-			top: (Renderer.height - 200) / 2,
-			left: (Renderer.width - 10) / 2
-		});
+		const root = _getRoot$13();
+		this._host.style.top = `${(Renderer.height - 200) / 2}px`;
+		this._host.style.left = `${(Renderer.width - 10) / 2}px`;
 		this.material = [];
-		this.draggable(this.ui.find(".head"));
-		this.ui.find(".footer .extend").mousedown(onResize$2);
-		this.ui.find(".trade").on("click", onMessageModel);
-		this.ui.find(".cancel").on("click", onClose$2);
+		this.draggable(root.querySelector(".head"));
+		root.querySelector(".footer .extend").addEventListener("mousedown", onResize$2);
+		root.querySelector("ui-button.trade").addEventListener("click", onMessageModel);
+		root.querySelector("ui-button.cancel").addEventListener("click", onClose$2);
 		resizeHeight$1(_preferences$10.height);
-		this.ui.on("drop", onDrop$2).on("dragover", stopPropagation$3).find(".container .content").on("mousewheel DOMMouseScroll", onScroll$2).on("mouseover", ".item", onItemOver$2).on("mouseout", ".item", onItemOut$2).on("dragstart", ".item", onItemDragStart$1).on("dragend", ".item", onItemDragEnd$1).on("contextmenu", ".item", onItemInfo$4);
-		this.draggable(this.ui.find(".titlebar"));
+		const mainEl = root.querySelector("#ConvertItems");
+		mainEl.addEventListener("drop", onDrop$2);
+		mainEl.addEventListener("dragover", stopPropagation$3);
+		const content = root.querySelector(".container .content");
+		content.addEventListener("wheel", onScroll$2);
+		content.addEventListener("mouseover", (e) => {
+			const item = e.target.closest(".item");
+			if (item) onItemOver$2.call(item);
+		});
+		content.addEventListener("mouseout", (e) => {
+			if (e.target.closest(".item")) onItemOut$2();
+		});
+		content.addEventListener("dragstart", (e) => {
+			const item = e.target.closest(".item");
+			if (item) onItemDragStart$1.call(item, e);
+		});
+		content.addEventListener("dragend", (e) => {
+			if (e.target.closest(".item")) onItemDragEnd$1();
+		});
+		content.addEventListener("contextmenu", (e) => {
+			const item = e.target.closest(".item");
+			if (item) onItemInfo$4.call(item, e);
+		});
+		this.draggable(root.querySelector(".titlebar"));
 	};
 	/**
 	* Apply preferences once append to body
 	*/
 	ConvertItems.onAppend = function OnAppend() {
+		const root = _getRoot$13();
 		this.material = [];
-		this.ui.find(".item").remove();
+		root.querySelectorAll(".container .content .item").forEach((el) => el.remove());
 	};
 	ConvertItems.addItem = function addItem(item) {
+		const root = _getRoot$13();
 		const it = DB.getItemInfo(item.ITID);
-		this.ui.find(".container .content").append("<div class=\"item\" data-index=\"" + item.index + "\" draggable=\"true\"><div class=\"icon\"></div><div class=\"amount\">" + (item.count ? "<span class=\"count\">" + item.count + "</span> " : "") + "</div><span class=\"name\">" + jquery_default.escape(DB.getItemName(item)) + "</span></div>");
-		Client.loadFile(DB.INTERFACE_PATH + "item/" + (item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName) + ".bmp", function(data) {
-			this.ui.find(".item[data-index=\"" + item.index + "\"] .icon").css("backgroundImage", "url(" + data + ")");
-		}.bind(this));
+		const content = root.querySelector(".container .content");
+		const div = document.createElement("div");
+		div.className = "item";
+		div.setAttribute("data-index", item.index);
+		div.setAttribute("draggable", "true");
+		div.innerHTML = "<div class=\"icon\"></div><div class=\"amount\">" + (item.count ? `<span class="count">${item.count}</span> ` : "") + `</div><span class="name">${_sanitizeHtml$3(DB.getItemName(item))}</span>`;
+		content.appendChild(div);
+		Client.loadFile(DB.INTERFACE_PATH + "item/" + (item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName) + ".bmp", (data) => {
+			const icon = root.querySelector(`.item[data-index="${item.index}"] .icon`);
+			if (icon) icon.style.backgroundImage = `url(${data})`;
+		});
 		return true;
 	};
 	/**
@@ -326971,17 +327240,18 @@ var init_ConvertItems = __esmMin((() => {
 	* @param {number} count
 	*/
 	ConvertItems.updateItem = function UpdateItem(index, count) {
+		const root = _getRoot$13();
 		const item = this.getItemByIndex(index);
 		if (!item) return;
 		item.count = item.count + count;
 		if (item.count > 0) {
-			this.ui.find(".item[data-index=\"" + item.index + "\"] .count").text(item.count);
+			const countEl = root.querySelector(`.item[data-index="${item.index}"] .count`);
+			if (countEl) countEl.textContent = item.count;
 			return;
 		}
 		this.material.splice(this.material.indexOf(item), 1);
-		this.ui.find(".item[data-index=\"" + item.index + "\"]").remove();
-		const content = this.ui.find(".container .content");
-		if (content.height() === content[0].scrollHeight) this.ui.find(".hide").show();
+		const el = root.querySelector(`.item[data-index="${item.index}"]`);
+		if (el) el.remove();
 	};
 	/**
 	* Search in a list for an item by its index
@@ -326990,9 +327260,8 @@ var init_ConvertItems = __esmMin((() => {
 	* @returns {Item}
 	*/
 	ConvertItems.getItemByIndex = function getItemByIndex(index) {
-		let i, count;
 		const list = ConvertItems.material;
-		for (i = 0, count = list.length; i < count; ++i) if (list[i].index === index) return list[i];
+		for (let i = 0, count = list.length; i < count; ++i) if (list[i].index === index) return list[i];
 		return null;
 	};
 	ConvertItems.validItemSend = function validItemSend(valid_material) {
@@ -327018,7 +327287,8 @@ var init_ConvertItems = __esmMin((() => {
 	* @param {string} title
 	*/
 	ConvertItems.setTitle = function setTitle(title) {
-		this.ui.find(".head .text").text(title);
+		const text = _getRoot$13().querySelector(".head .text");
+		if (text) text.textContent = title;
 	};
 	/**
 	* Insert material to creation
@@ -327036,18 +327306,21 @@ var init_ConvertItems = __esmMin((() => {
 	* @param {number} index in Storage
 	*/
 	ConvertItems.removeItem = function removeItem(index, count) {
+		const root = _getRoot$13();
 		const i = getItemIndexById$1(index);
 		if (i < 0) return null;
 		if (ConvertItems.material[i].count) {
 			ConvertItems.material[i].count -= count;
 			if (ConvertItems.material[i].count > 0) {
-				this.ui.find(".item[data-index=\"" + index + "\"] .count").text(ConvertItems.material[i].count);
+				const countEl = root.querySelector(`.item[data-index="${index}"] .count`);
+				if (countEl) countEl.textContent = ConvertItems.material[i].count;
 				return ConvertItems.material[i];
 			}
 		}
 		const item = ConvertItems.material[i];
 		ConvertItems.material.splice(i, 1);
-		this.ui.find(".item[data-index=\"" + index + "\"]").remove();
+		const el = root.querySelector(`.item[data-index="${index}"]`);
+		if (el) el.remove();
 		return item;
 	};
 	ConvertItems_default = UIManager.addComponent(ConvertItems);
@@ -327056,21 +327329,43 @@ var init_ConvertItems = __esmMin((() => {
 //#region src/UI/Components/MakeItemSelection/ItemListWindowSelection.html?raw
 var ItemListWindowSelection_default$2;
 var init_ItemListWindowSelection$2 = __esmMin((() => {
-	ItemListWindowSelection_default$2 = "<div id=\"ItemListWindowSelection\">\r\n	<div class=\"titlebar\" data-background=\"basic_interface/titlebar_mid.bmp\">\r\n		<div class=\"left\">\r\n			<span class=\"text\" data-text=\"1568\">Storage</span>\r\n		</div>\r\n		<div class=\"clear\"></div>\r\n	</div>\r\n	<div class=\"overlay\"></div>\r\n	<div class=\"panel\">\r\n		<div class=\"body\">\r\n			<div class=\"infor_nventory\">\r\n				<div class=\"tabs\" rowspan=\"2\" data-background=\"basic_interface/chatwin1_mid.bmp\"></div>\r\n				<div class=\"container\">\r\n					<div class=\"content\" data-background=\"basic_interface/itemwin_mid.bmp\"></div>\r\n				</div>\r\n			</div>\r\n			<div>\r\n				<div class=\"footer\" data-background=\"basic_interface/btnbar_mid2.bmp\">\r\n					<div class=\"ask_quantity\">\r\n						<button\r\n							class=\"selectall event_selectall\"\r\n							data-background=\"checkbox_0.bmp\"\r\n							data-preload=\"checkbox_1.bmp\"\r\n						></button>\r\n						<span class=\"event_selectall event_add_cursor\" data-text=\"295\"\r\n							>Don't ask the Quantity of Items</span\r\n						>\r\n					</div>\r\n\r\n					<button class=\"extend\" data-background=\"btn_resize.bmp\"></button>\r\n				</div>\r\n			</div>\r\n		</div>\r\n	</div>\r\n</div>\r\n";
+	ItemListWindowSelection_default$2 = "<div id=\"ItemListWindowSelection\">\r\n	<div class=\"titlebar\">\r\n		<ui-image src=\"basic_interface/titlebar_mid.bmp\"></ui-image>\r\n		<div class=\"left\">\r\n			<ui-text class=\"text\" msg=\"1568\">Storage</ui-text>\r\n		</div>\r\n		<div class=\"clear\"></div>\r\n	</div>\r\n	<div class=\"overlay\"></div>\r\n	<div class=\"panel\">\r\n		<div class=\"body\">\r\n			<div class=\"infor_nventory\">\r\n				<div class=\"tabs\" rowspan=\"2\">\r\n					<ui-image src=\"basic_interface/chatwin1_mid.bmp\"></ui-image>\r\n				</div>\r\n				<div class=\"container\">\r\n					<div class=\"content\">\r\n						<ui-image src=\"basic_interface/itemwin_mid.bmp\"></ui-image>\r\n					</div>\r\n				</div>\r\n			</div>\r\n			<div>\r\n				<div class=\"footer\">\r\n					<ui-image src=\"basic_interface/btnbar_mid2.bmp\"></ui-image>\r\n					<div class=\"ask_quantity\">\r\n						<ui-button class=\"selectall event_selectall\" bg=\"checkbox_0.bmp\"></ui-button>\r\n						<ui-text class=\"event_selectall event_add_cursor\" msg=\"295\"\r\n							>Don't ask the Quantity of Items</ui-text\r\n						>\r\n					</div>\r\n\r\n					<ui-button class=\"extend\" bg=\"btn_resize.bmp\"></ui-button>\r\n				</div>\r\n			</div>\r\n		</div>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/MakeItemSelection/ItemListWindowSelection.css?raw
 var ItemListWindowSelection_default$1;
 var init_ItemListWindowSelection$1 = __esmMin((() => {
-	ItemListWindowSelection_default$1 = "#ItemListWindowSelection {\r\n	position: absolute;\r\n	top: 100px;\r\n	left: 100px;\r\n	width: 280px;\r\n}\r\n#ItemListWindowSelection .body {\r\n	border-spacing: 0px;\r\n	display: inline-block;\r\n	width: 100%;\r\n}\r\n\r\n#ItemListWindowSelection .titlebar {\r\n	width: 100%;\r\n	height: 17px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 3px 3px 0px 0px;\r\n}\r\n#ItemListWindowSelection .titlebar .text {\r\n	text-shadow: 1px 1px white;\r\n	vertical-align: -2px;\r\n	white-space: nowrap;\r\n	/* chrome bug */\r\n	display: inline-block;\r\n	width: 32px;\r\n	height: 13px;\r\n	margin-left: 15px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n\r\n#ItemListWindowSelection .titlebar .left {\r\n	margin-left: 3px;\r\n	float: left;\r\n}\r\n#ItemListWindowSelection .titlebar .clear {\r\n	clear: both;\r\n}\r\n\r\n#ItemListWindowSelection .infor_nventory {\r\n	display: flex;\r\n}\r\n\r\n#ItemListWindowSelection .tabs {\r\n	border-left: 1px solid #ccc;\r\n	width: 25px;\r\n	background-color: white;\r\n	vertical-align: top;\r\n	background-position: -1px 0px;\r\n}\r\n#ItemListWindowSelection .tabs button {\r\n	width: 20px;\r\n	height: 30px;\r\n	border: none;\r\n	background-color: transparent;\r\n	display: block;\r\n}\r\n#ItemListWindowSelection .tabs .item {\r\n	height: 25px;\r\n}\r\n\r\n#ItemListWindowSelection .container {\r\n	padding-left: 15px;\r\n	border-right: 1px solid #ccc;\r\n	background: white;\r\n	width: 100%;\r\n}\r\n#ItemListWindowSelection .content {\r\n	overflow-y: scroll;\r\n	overflow-x: hidden;\r\n	width: 100%;\r\n	height: 100%;\r\n	min-height: 262px;\r\n	background-color: transparent;\r\n	background-repeat: repeat-y;\r\n}\r\n\r\n#ItemListWindowSelection .content .item {\r\n	display: block;\r\n	width: 24px;\r\n	height: 28px;\r\n	margin: 4px 0px 0px 4px;\r\n	position: relative;\r\n}\r\n#ItemListWindowSelection .content .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#ItemListWindowSelection .overlay {\r\n	pointer-events: none;\r\n	position: absolute;\r\n	display: none;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	padding: 5px;\r\n	background: rgba(0, 0, 0, 0.7);\r\n	color: white;\r\n	text-shadow: 1px 1px black;\r\n}\r\n#ItemListWindowSelection .overlay.grey {\r\n	color: #aaa;\r\n}\r\n#ItemListWindowSelection .content .item .amount {\r\n	position: relative;\r\n	bottom: 9px;\r\n	right: 0px;\r\n	text-align: right;\r\n	text-shadow: -1px -1px white;\r\n}\r\n#ItemListWindowSelection .content .name {\r\n	position: absolute;\r\n	top: 7px;\r\n	left: 30px;\r\n	width: 190px;\r\n}\r\n\r\n#ItemListWindowSelection .footer {\r\n	border-radius: 0px 0px 3px 3px;\r\n	width: 100%;\r\n	height: 27px;\r\n	background-repeat: repeat-x;\r\n	background-color: transparent;\r\n	position: relative;\r\n	border-right: 1px solid #ccc;\r\n}\r\n#ItemListWindowSelection .footer .extend {\r\n	position: absolute;\r\n	right: 0px;\r\n	bottom: 1px;\r\n	width: 13px;\r\n	height: 13px;\r\n	border: none;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n#ItemListWindowSelection .footer .close {\r\n	position: absolute;\r\n	border: none;\r\n	width: 42px;\r\n	height: 20px;\r\n	bottom: 4px;\r\n	right: 15px;\r\n	background-repeat: no-repeat;\r\n	background-color: transparent;\r\n}\r\n\r\n#ItemListWindowSelection .ask_quantity {\r\n	padding-top: 7px;\r\n	padding-left: 20px;\r\n}\r\n#ItemListWindowSelection .selectall {\r\n	vertical-align: 2px;\r\n	width: 10px;\r\n	height: 10px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n";
+	ItemListWindowSelection_default$1 = ":host {\r\n	width: 280px;\r\n	top: 100px;\r\n	left: 100px;\r\n}\r\n\r\n#ItemListWindowSelection {\r\n	position: absolute;\r\n	width: 280px;\r\n}\r\n#ItemListWindowSelection .body {\r\n	border-spacing: 0px;\r\n	display: inline-block;\r\n	width: 100%;\r\n}\r\n\r\n#ItemListWindowSelection .titlebar {\r\n	width: 100%;\r\n	height: 17px;\r\n	background-color: white;\r\n	background-repeat: repeat-x;\r\n	border-radius: 3px 3px 0px 0px;\r\n}\r\n#ItemListWindowSelection .titlebar .text {\r\n	text-shadow: 1px 1px white;\r\n	vertical-align: -2px;\r\n	white-space: nowrap;\r\n	/* chrome bug */\r\n	display: inline-block;\r\n	width: 32px;\r\n	height: 13px;\r\n	margin-left: 15px;\r\n	font-size: 11px;\r\n	font-weight: bold;\r\n}\r\n\r\n#ItemListWindowSelection .titlebar .left {\r\n	margin-left: 3px;\r\n	float: left;\r\n}\r\n#ItemListWindowSelection .titlebar .clear {\r\n	clear: both;\r\n}\r\n\r\n#ItemListWindowSelection .infor_nventory {\r\n	display: flex;\r\n}\r\n\r\n#ItemListWindowSelection .tabs {\r\n	border-left: 1px solid #ccc;\r\n	width: 25px;\r\n	background-color: white;\r\n	vertical-align: top;\r\n	background-position: -1px 0px;\r\n}\r\n#ItemListWindowSelection .tabs ui-button {\r\n	width: 20px;\r\n	height: 30px;\r\n	display: block;\r\n}\r\n#ItemListWindowSelection .tabs .item {\r\n	height: 25px;\r\n}\r\n\r\n#ItemListWindowSelection .container {\r\n	padding-left: 15px;\r\n	border-right: 1px solid #ccc;\r\n	background: white;\r\n	width: 100%;\r\n}\r\n#ItemListWindowSelection .content {\r\n	overflow-y: scroll;\r\n	overflow-x: hidden;\r\n	width: 100%;\r\n	height: 100%;\r\n	min-height: 262px;\r\n	background-color: transparent;\r\n	background-repeat: repeat-y;\r\n}\r\n\r\n#ItemListWindowSelection .content .item {\r\n	display: block;\r\n	width: 24px;\r\n	height: 28px;\r\n	margin: 4px 0px 0px 4px;\r\n	position: relative;\r\n}\r\n#ItemListWindowSelection .content .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#ItemListWindowSelection .overlay {\r\n	pointer-events: none;\r\n	position: absolute;\r\n	display: none;\r\n	white-space: nowrap;\r\n	z-index: 900;\r\n	height: 13px;\r\n	padding: 5px;\r\n	background: rgba(0, 0, 0, 0.7);\r\n	color: white;\r\n	text-shadow: 1px 1px black;\r\n}\r\n#ItemListWindowSelection .overlay.grey {\r\n	color: #aaa;\r\n}\r\n#ItemListWindowSelection .content .item .amount {\r\n	position: relative;\r\n	bottom: 9px;\r\n	right: 0px;\r\n	text-align: right;\r\n	text-shadow: -1px -1px white;\r\n}\r\n#ItemListWindowSelection .content .name {\r\n	position: absolute;\r\n	top: 7px;\r\n	left: 30px;\r\n	width: 190px;\r\n}\r\n\r\n#ItemListWindowSelection .footer {\r\n	border-radius: 0px 0px 3px 3px;\r\n	width: 100%;\r\n	height: 27px;\r\n	background-repeat: repeat-x;\r\n	background-color: transparent;\r\n	position: relative;\r\n	border-right: 1px solid #ccc;\r\n}\r\n#ItemListWindowSelection .footer .extend {\r\n	position: absolute;\r\n	right: 0px;\r\n	bottom: 1px;\r\n	width: 13px;\r\n	height: 13px;\r\n	background-repeat: no-repeat;\r\n}\r\n#ItemListWindowSelection .footer .close {\r\n	position: absolute;\r\n	width: 42px;\r\n	height: 20px;\r\n	bottom: 4px;\r\n	right: 15px;\r\n	background-repeat: no-repeat;\r\n}\r\n\r\n#ItemListWindowSelection .ask_quantity {\r\n	padding-top: 7px;\r\n	padding-left: 20px;\r\n}\r\n#ItemListWindowSelection .selectall {\r\n	vertical-align: 2px;\r\n	width: 10px;\r\n	height: 10px;\r\n	background-repeat: no-repeat;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/MakeItemSelection/ItemListWindowSelection.js
 /**
+* Helper to get shadow root
+*/
+function _getRoot$12() {
+	return ItemListWindowSelection._shadow || ItemListWindowSelection._host;
+}
+/**
+* Sanitize HTML, allowing only whitelisted tags (font, i, b)
+*/
+function _sanitizeHtml$2(str) {
+	const whitelist = [
+		"font",
+		"i",
+		"b"
+	];
+	const div = document.createElement("div");
+	div.innerHTML = str;
+	div.querySelectorAll("*").forEach((el) => {
+		if (!whitelist.includes(el.tagName.toLowerCase())) el.replaceWith(...el.childNodes);
+	});
+	return div.innerHTML;
+}
+/**
 * Extend ItemListWindowSelection window size
 */
 function onResize$1() {
-	const top = ItemListWindowSelection.ui.position().top;
+	const top = parseInt(ItemListWindowSelection._host.style.top, 10) || 0;
 	let lastHeight = 0;
 	function resizing() {
 		let h = Math.floor((Mouse.screen.y - top - 20) / 32);
@@ -327080,26 +327375,30 @@ function onResize$1() {
 		lastHeight = h;
 	}
 	const _Interval = setInterval(resizing, 30);
-	jquery_default(window).on("mouseup.resize", function(event) {
+	function onMouseUp(event) {
 		if (event.which === 1) {
 			clearInterval(_Interval);
-			jquery_default(window).off("mouseup.resize");
+			window.removeEventListener("mouseup", onMouseUp);
 		}
-	});
+	}
+	window.addEventListener("mouseup", onMouseUp);
 }
 /**
 * Extend ItemListWindowSelection window size
 */
 function resizeHeight(height) {
+	const root = _getRoot$12();
 	height = Math.min(Math.max(height, 8), 17);
-	ItemListWindowSelection.ui.find(".container .content").css("height", height * 32);
-	ItemListWindowSelection.ui.css("height", 50 + height * 32);
+	const content = root.querySelector(".container .content");
+	if (content) content.style.height = `${height * 32}px`;
+	ItemListWindowSelection._host.style.height = `${50 + height * 32}px`;
 }
 /**
 * Mouse mouve out of an item, hide title description
 */
 function onItemOut$1() {
-	ItemListWindowSelection.ui.find(".overlay").hide();
+	const overlay = _getRoot$12().querySelector(".overlay");
+	if (overlay) overlay.style.display = "none";
 }
 /**
 * Start dragging an item
@@ -327108,12 +327407,12 @@ function onItemDragStart(event) {
 	const i = getItemIndexById(parseInt(this.getAttribute("data-index"), 10));
 	if (i === -1) return;
 	const img = new Image();
-	let url = this.firstChild.style.backgroundImage.match(/\(([^\)]+)/)[1];
-	url = url.replace(/^\"/, "").replace(/\"$/, "");
+	let url = this.firstChild.style.backgroundImage.match(/\(([^)]+)/)[1];
+	url = url.replace(/^"/, "").replace(/"$/, "");
 	img.decoding = "async";
 	img.src = url;
-	event.originalEvent.dataTransfer.setDragImage(img, 12, 12);
-	event.originalEvent.dataTransfer.setData("Text", JSON.stringify(window._OBJ_DRAG_ = {
+	event.dataTransfer.setDragImage(img, 12, 12);
+	event.dataTransfer.setData("Text", JSON.stringify(window._OBJ_DRAG_ = {
 		type: "item",
 		from: "ItemListWindowSelection",
 		data: ItemListWindowSelection.list[i]
@@ -327124,14 +327423,15 @@ function onItemDragStart(event) {
 * Option to automatically buy/sell alls items instead of specify the amount
 */
 function onToggleSelectAmount$1() {
+	const root = _getRoot$12();
 	_preferences$9.select_all = !_preferences$9.select_all;
-	Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (_preferences$9.select_all ? 1 : 0) + ".bmp", function(data) {
-		this.css("background-image", "url(" + data + ")");
-	}.bind(ItemListWindowSelection.ui.find(".selectall")));
+	Client.loadFile(DB.INTERFACE_PATH + "checkbox_" + (_preferences$9.select_all ? 1 : 0) + ".bmp", (data) => {
+		const btn = root.querySelector(".selectall");
+		if (btn) btn.style.backgroundImage = `url(${data})`;
+	});
 }
 /**
 * Display item description
-*
 */
 function onItemInfo$3(event) {
 	event.stopImmediatePropagation();
@@ -327155,8 +327455,7 @@ function onItemDragEnd() {
 * @param {number} item id
 */
 function getItemIndexById(index) {
-	let i, count;
-	for (i = 0, count = ItemListWindowSelection.list.length; i < count; ++i) if (ItemListWindowSelection.list[i].index === index) return i;
+	for (let i = 0, count = ItemListWindowSelection.list.length; i < count; ++i) if (ItemListWindowSelection.list[i].index === index) return i;
 	return -1;
 }
 /**
@@ -327165,11 +327464,12 @@ function getItemIndexById(index) {
 * @param {event}
 */
 function onDrop$1(event) {
+	event.preventDefault();
+	event.stopImmediatePropagation();
 	let data;
 	try {
-		data = JSON.parse(event.originalEvent.dataTransfer.getData("Text"));
-	} catch (e) {}
-	event.stopImmediatePropagation();
+		data = JSON.parse(event.dataTransfer.getData("Text"));
+	} catch (_e) {}
 	if (!data || data.type !== "item" || data.from !== "ConvertItems") return false;
 	const item = data.data;
 	const valid_select_all = !ItemListWindowSelection.getSelectAll();
@@ -327192,18 +327492,18 @@ function onDrop$1(event) {
 * Stop event propagation
 */
 function stopPropagation$2(event) {
+	event.preventDefault();
 	event.stopImmediatePropagation();
-	return false;
 }
 /**
 * Update scroll by block (32px)
 */
 function onScroll$1(event) {
 	let delta;
-	if (event.originalEvent.wheelDelta) {
-		delta = event.originalEvent.wheelDelta / 120;
+	if (event.wheelDelta) {
+		delta = event.wheelDelta / 120;
 		if (window.opera) delta = -delta;
-	} else if (event.originalEvent.detail) delta = -event.originalEvent.detail;
+	} else if (event.detail) delta = -event.detail;
 	this.scrollTop = Math.floor(this.scrollTop / 32) * 32 - delta * 32;
 	return false;
 }
@@ -327211,23 +327511,22 @@ function onScroll$1(event) {
 * Mouse over item, display name and informations
 */
 function onItemOver$1() {
+	const root = _getRoot$12();
 	const i = getItemIndexById(parseInt(this.getAttribute("data-index"), 10));
 	if (i < 0) return;
 	const item = ItemListWindowSelection.list[i];
-	const pos = jquery_default(this).position();
-	const overlay = ItemListWindowSelection.ui.find(".overlay");
-	overlay.show();
-	overlay.css({
-		top: pos.top - 10,
-		left: pos.left + 35
-	});
-	overlay.text(DB.getItemName(item) + " " + (item.count || 1) + " ea");
-	if (item.IsIdentified) overlay.removeClass("grey");
-	else overlay.addClass("grey");
+	const rect = this.getBoundingClientRect();
+	const hostRect = ItemListWindowSelection._host.getBoundingClientRect();
+	const overlay = root.querySelector(".overlay");
+	overlay.style.display = "block";
+	overlay.style.top = `${rect.top - hostRect.top - 10}px`;
+	overlay.style.left = `${rect.left - hostRect.left + 35}px`;
+	overlay.textContent = `${DB.getItemName(item)} ${item.count || 1} ea`;
+	if (item.IsIdentified) overlay.classList.remove("grey");
+	else overlay.classList.add("grey");
 }
 var _preferences$9, ItemListWindowSelection, ItemListWindowSelection_default;
 var init_ItemListWindowSelection = __esmMin((() => {
-	init_jquery();
 	init_DBManager();
 	init_ItemInfo();
 	init_Preferences$1();
@@ -327237,8 +327536,9 @@ var init_ItemListWindowSelection = __esmMin((() => {
 	init_Client();
 	init_Renderer();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
 	init_Inventory();
+	init_Elements();
 	init_ItemListWindowSelection$2();
 	init_ItemListWindowSelection$1();
 	_preferences$9 = Preferences.get("ItemListWindowSelection", {
@@ -327247,7 +327547,8 @@ var init_ItemListWindowSelection = __esmMin((() => {
 		height: 8,
 		select_all: false
 	}, 1);
-	ItemListWindowSelection = new UIComponent("ItemListWindowSelection", ItemListWindowSelection_default$2, ItemListWindowSelection_default$1);
+	ItemListWindowSelection = new GUIComponent("ItemListWindowSelection", ItemListWindowSelection_default$1);
+	ItemListWindowSelection.render = () => ItemListWindowSelection_default$2;
 	/**
 	* Store Convert Items items
 	*/
@@ -327256,17 +327557,38 @@ var init_ItemListWindowSelection = __esmMin((() => {
 	* Initialize UI
 	*/
 	ItemListWindowSelection.init = function init() {
-		this.ui.css({
-			top: (Renderer.height - 200) / 2,
-			left: (Renderer.width - 655) / 2
-		});
+		const root = _getRoot$12();
+		this._host.style.top = `${(Renderer.height - 200) / 2}px`;
+		this._host.style.left = `${(Renderer.width - 655) / 2}px`;
 		this.list = [];
-		this.draggable(this.ui.find(".head"));
-		this.ui.find(".footer .extend").mousedown(onResize$1);
-		this.ui.find(".event_selectall").mousedown(onToggleSelectAmount$1);
+		this.draggable(root.querySelector(".head"));
+		root.querySelector(".footer .extend").addEventListener("mousedown", onResize$1);
+		root.querySelector(".event_selectall").addEventListener("mousedown", onToggleSelectAmount$1);
 		resizeHeight(_preferences$9.height);
-		this.ui.on("drop", onDrop$1).on("dragover", stopPropagation$2).find(".container .content").on("mousewheel DOMMouseScroll", onScroll$1).on("mouseover", ".item", onItemOver$1).on("mouseout", ".item", onItemOut$1).on("dragstart", ".item", onItemDragStart).on("dragend", ".item", onItemDragEnd).on("contextmenu", ".item", onItemInfo$3);
-		this.draggable(this.ui.find(".titlebar"));
+		const mainEl = root.querySelector("#ItemListWindowSelection");
+		mainEl.addEventListener("drop", onDrop$1);
+		mainEl.addEventListener("dragover", stopPropagation$2);
+		const content = root.querySelector(".container .content");
+		content.addEventListener("wheel", onScroll$1);
+		content.addEventListener("mouseover", (e) => {
+			const item = e.target.closest(".item");
+			if (item) onItemOver$1.call(item);
+		});
+		content.addEventListener("mouseout", (e) => {
+			if (e.target.closest(".item")) onItemOut$1();
+		});
+		content.addEventListener("dragstart", (e) => {
+			const item = e.target.closest(".item");
+			if (item) onItemDragStart.call(item, e);
+		});
+		content.addEventListener("dragend", (e) => {
+			if (e.target.closest(".item")) onItemDragEnd();
+		});
+		content.addEventListener("contextmenu", (e) => {
+			const item = e.target.closest(".item");
+			if (item) onItemInfo$3.call(item, e);
+		});
+		this.draggable(root.querySelector(".titlebar"));
 		this.setList(InventoryController.getUI().list);
 	};
 	/**
@@ -327282,17 +327604,25 @@ var init_ItemListWindowSelection = __esmMin((() => {
 	* @param {Array} list object to display
 	*/
 	ItemListWindowSelection.setList = function setList(listItems) {
-		this.ui.find(".container .content").empty();
+		const root = _getRoot$12();
+		root.querySelector(".container .content").innerHTML = "";
 		this.list = listItems;
-		let i, count;
-		for (i = 0, count = listItems.length; i < count; ++i) this.addItem(listItems[i]);
+		for (let i = 0, count = listItems.length; i < count; ++i) this.addItem(listItems[i]);
 	};
 	ItemListWindowSelection.addItem = function addItem(item) {
+		const root = _getRoot$12();
 		const it = DB.getItemInfo(item.ITID);
-		this.ui.find(".container .content").append("<div class=\"item\" data-index=\"" + item.index + "\" draggable=\"true\"><div class=\"icon\"></div><div class=\"amount\">" + (item.count ? "<span class=\"count\">" + item.count + "</span> " : "") + "</div><span class=\"name\">" + jquery_default.escape(DB.getItemName(item)) + "</span></div>");
-		Client.loadFile(DB.INTERFACE_PATH + "item/" + (item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName) + ".bmp", function(data) {
-			this.ui.find(".item[data-index=\"" + item.index + "\"] .icon").css("backgroundImage", "url(" + data + ")");
-		}.bind(this));
+		const content = root.querySelector(".container .content");
+		const div = document.createElement("div");
+		div.className = "item";
+		div.setAttribute("data-index", item.index);
+		div.setAttribute("draggable", "true");
+		div.innerHTML = "<div class=\"icon\"></div><div class=\"amount\">" + (item.count ? `<span class="count">${item.count}</span> ` : "") + `</div><span class="name">${_sanitizeHtml$2(DB.getItemName(item))}</span>`;
+		content.appendChild(div);
+		Client.loadFile(DB.INTERFACE_PATH + "item/" + (item.IsIdentified ? it.identifiedResourceName : it.unidentifiedResourceName) + ".bmp", (data) => {
+			const icon = root.querySelector(`.item[data-index="${item.index}"] .icon`);
+			if (icon) icon.style.backgroundImage = `url(${data})`;
+		});
 	};
 	/**
 	* Add elements to the list
@@ -327300,10 +327630,10 @@ var init_ItemListWindowSelection = __esmMin((() => {
 	* @param {Array} list object to display
 	*/
 	ItemListWindowSelection.updateList = function UpdateList(item) {
+		const root = _getRoot$12();
 		this.list.push(item);
-		let i, count;
-		this.ui.find(".item").remove();
-		for (i = 0, count = this.list.length; i < count; ++i) this.addItem(this.list[i]);
+		root.querySelectorAll(".item").forEach((el) => el.remove());
+		for (let i = 0, count = this.list.length; i < count; ++i) this.addItem(this.list[i]);
 	};
 	/**
 	* Set new window name
@@ -327311,7 +327641,8 @@ var init_ItemListWindowSelection = __esmMin((() => {
 	* @param {string} title
 	*/
 	ItemListWindowSelection.setTitle = function setTitle(title) {
-		this.ui.find(".head .text").text(title);
+		const text = _getRoot$12().querySelector(".head .text");
+		if (text) text.textContent = title;
 	};
 	/**
 	* Insert material to creation
@@ -327328,18 +327659,21 @@ var init_ItemListWindowSelection = __esmMin((() => {
 	* @param {number} index in Storage
 	*/
 	ItemListWindowSelection.removeItem = function removeItem(index, count) {
+		const root = _getRoot$12();
 		const i = getItemIndexById(index);
 		if (i < 0) return null;
 		if (this.list[i].count) {
 			this.list[i].count -= count;
 			if (this.list[i].count > 0) {
-				this.ui.find(".item[data-index=\"" + index + "\"] .count").text(this.list[i].count);
+				const countEl = root.querySelector(`.item[data-index="${index}"] .count`);
+				if (countEl) countEl.textContent = this.list[i].count;
 				return this.list[i];
 			}
 		}
 		const item = this.list[i];
 		this.list.splice(i, 1);
-		this.ui.find(".item[data-index=\"" + index + "\"]").remove();
+		const el = root.querySelector(`.item[data-index="${index}"]`);
+		if (el) el.remove();
 		return item;
 	};
 	/**
@@ -327349,17 +327683,18 @@ var init_ItemListWindowSelection = __esmMin((() => {
 	* @param {number} count
 	*/
 	ItemListWindowSelection.updateItem = function UpdateItem(index, count) {
+		const root = _getRoot$12();
 		const item = this.getItemByIndex(index);
 		if (!item) return;
 		item.count = item.count + count;
 		if (item.count > 0) {
-			this.ui.find(".item[data-index=\"" + item.index + "\"] .count").text(item.count);
+			const countEl = root.querySelector(`.item[data-index="${item.index}"] .count`);
+			if (countEl) countEl.textContent = item.count;
 			return;
 		}
 		this.list.splice(this.list.indexOf(item), 1);
-		this.ui.find(".item[data-index=\"" + item.index + "\"]").remove();
-		const content = this.ui.find(".container .content");
-		if (content.height() === content[0].scrollHeight) this.ui.find(".hide").show();
+		const el = root.querySelector(`.item[data-index="${item.index}"]`);
+		if (el) el.remove();
 	};
 	/**
 	* Search in a list for an item by its index
@@ -327368,9 +327703,8 @@ var init_ItemListWindowSelection = __esmMin((() => {
 	* @returns {Item}
 	*/
 	ItemListWindowSelection.getItemByIndex = function getItemByIndex(index) {
-		let i, count;
 		const list = this.list;
-		for (i = 0, count = list.length; i < count; ++i) if (list[i].index === index) return list[i];
+		for (let i = 0, count = list.length; i < count; ++i) if (list[i].index === index) return list[i];
 		return null;
 	};
 	ItemListWindowSelection.getSelectAll = function getSelectAll() {
@@ -328643,60 +328977,100 @@ var init_Storage = __esmMin((() => {
 //#region src/UI/Components/MakeArrowSelection/MakeArrowSelection.html?raw
 var MakeArrowSelection_default$2;
 var init_MakeArrowSelection$2 = __esmMin((() => {
-	MakeArrowSelection_default$2 = "<div id=\"MakeArrowSelection\">\r\n	<div class=\"head\" data-background=\"basic_interface/titlebar_mid.bmp\">\r\n		<span class=\"text\"></span>\r\n	</div>\r\n	<div class=\"bottom\" data-background=\"login_interface/win_service.bmp\">\r\n		<button\r\n			class=\"btn cancel\"\r\n			data-background=\"btn_cancel.bmp\"\r\n			data-hover=\"btn_cancel_a.bmp\"\r\n			data-down=\"btn_cancel_b.bmp\"\r\n		></button>\r\n		<button class=\"btn ok\" data-background=\"btn_ok.bmp\" data-hover=\"btn_ok_a.bmp\" data-down=\"btn_ok_b.bmp\"></button>\r\n	</div>\r\n	<div class=\"content\">\r\n		<div class=\"list\"></div>\r\n	</div>\r\n</div>\r\n";
+	MakeArrowSelection_default$2 = "<div id=\"MakeArrowSelection\">\r\n	<div class=\"head\">\r\n		<ui-image src=\"basic_interface/titlebar_mid.bmp\"></ui-image>\r\n		<span class=\"text\"></span>\r\n	</div>\r\n	<div class=\"bottom\">\r\n		<ui-image src=\"login_interface/win_service.bmp\"></ui-image>\r\n		<ui-button class=\"btn cancel\" bg=\"btn_cancel.bmp\" hover=\"btn_cancel_a.bmp\" down=\"btn_cancel_b.bmp\"></ui-button>\r\n		<ui-button class=\"btn ok\" bg=\"btn_ok.bmp\" hover=\"btn_ok_a.bmp\" down=\"btn_ok_b.bmp\"></ui-button>\r\n	</div>\r\n	<div class=\"content\">\r\n		<div class=\"list\"></div>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/MakeArrowSelection/MakeArrowSelection.css?raw
 var MakeArrowSelection_default$1;
 var init_MakeArrowSelection$1 = __esmMin((() => {
-	MakeArrowSelection_default$1 = "#MakeArrowSelection {\r\n	z-index: 100;\r\n	position: absolute;\r\n	width: 200px;\r\n}\r\n#MakeArrowSelection .head {\r\n	position: absolute;\r\n	width: 100%;\r\n	height: 22px;\r\n	top: 0px;\r\n	left: 0px;\r\n	background-repeat: repeat-x;\r\n	background-color: white;\r\n}\r\n#MakeArrowSelection .head .text {\r\n	position: relative;\r\n	top: 2px;\r\n	left: 5px;\r\n	white-space: nowrap;\r\n}\r\n#MakeArrowSelection .bottom {\r\n	position: relative;\r\n	height: 120px;\r\n	top: 80px;\r\n	left: 0px;\r\n}\r\n\r\n#MakeArrowSelection .content {\r\n	position: absolute;\r\n	top: 22px;\r\n	left: 0px;\r\n	background-color: white;\r\n	width: 100%;\r\n}\r\n#MakeArrowSelection .list {\r\n	background-color: #f7f7f7;\r\n	height: 130px;\r\n	overflow-y: auto;\r\n	overflow-x: hidden;\r\n	margin-left: 10px;\r\n	margin-right: 10px;\r\n}\r\n#MakeArrowSelection .list .item {\r\n	display: block;\r\n	height: 28px;\r\n	margin: 4px 4px 4px 4px;\r\n	position: relative;\r\n}\r\n#MakeArrowSelection .list .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#MakeArrowSelection .list .item .name {\r\n	position: absolute;\r\n	top: 7px;\r\n	left: 30px;\r\n	width: 90px;\r\n	white-space: nowrap;\r\n}\r\n\r\n#MakeArrowSelection .btn {\r\n	position: absolute;\r\n	bottom: 0px;\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	bottom: 4px;\r\n	background-color: transparent;\r\n}\r\n#MakeArrowSelection .ok {\r\n	right: 50px;\r\n}\r\n#MakeArrowSelection .cancel {\r\n	right: 5px;\r\n}\r\n";
+	MakeArrowSelection_default$1 = ":host {\r\n	width: 200px;\r\n	top: 0px;\r\n	left: 0px;\r\n}\r\n\r\n#MakeArrowSelection {\r\n	position: absolute;\r\n	width: 200px;\r\n}\r\n#MakeArrowSelection .head {\r\n	position: absolute;\r\n	width: 100%;\r\n	height: 22px;\r\n	top: 0px;\r\n	left: 0px;\r\n	background-repeat: repeat-x;\r\n	background-color: white;\r\n}\r\n#MakeArrowSelection .head .text {\r\n	position: relative;\r\n	top: 2px;\r\n	left: 5px;\r\n	white-space: nowrap;\r\n}\r\n#MakeArrowSelection .bottom {\r\n	position: relative;\r\n	height: 120px;\r\n	top: 80px;\r\n	left: 0px;\r\n}\r\n\r\n#MakeArrowSelection .content {\r\n	position: absolute;\r\n	top: 22px;\r\n	left: 0px;\r\n	background-color: white;\r\n	width: 100%;\r\n}\r\n#MakeArrowSelection .list {\r\n	background-color: #f7f7f7;\r\n	height: 130px;\r\n	overflow-y: auto;\r\n	overflow-x: hidden;\r\n	margin-left: 10px;\r\n	margin-right: 10px;\r\n}\r\n#MakeArrowSelection .list .item {\r\n	display: block;\r\n	height: 28px;\r\n	margin: 4px 4px 4px 4px;\r\n	position: relative;\r\n}\r\n#MakeArrowSelection .list .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#MakeArrowSelection .list .item .name {\r\n	position: absolute;\r\n	top: 7px;\r\n	left: 30px;\r\n	width: 90px;\r\n	white-space: nowrap;\r\n}\r\n\r\n#MakeArrowSelection ui-button.btn {\r\n	position: absolute;\r\n	bottom: 4px;\r\n	width: 42px;\r\n	height: 20px;\r\n}\r\n#MakeArrowSelection .ok {\r\n	right: 50px;\r\n}\r\n#MakeArrowSelection .cancel {\r\n	right: 5px;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/MakeArrowSelection/MakeArrowSelection.js
 /**
+* Helper to get shadow root
+*/
+function _getRoot$11() {
+	return MakeArrowSelection._shadow || MakeArrowSelection._host;
+}
+/**
+* Sanitize HTML, allowing only whitelisted tags (font, i, b)
+*/
+function _sanitizeHtml$1(str) {
+	const whitelist = [
+		"font",
+		"i",
+		"b"
+	];
+	const div = document.createElement("div");
+	div.innerHTML = str;
+	div.querySelectorAll("*").forEach((el) => {
+		if (!whitelist.includes(el.tagName.toLowerCase())) el.replaceWith(...el.childNodes);
+	});
+	return div.innerHTML;
+}
+/**
 * Add an element to the list
 *
 * @param {string} image url
-* @param {index} index in list
+* @param {number} index in list
 * @param {string} element name
 */
 function addElement$1(url, index, name) {
-	MakeArrowSelection.list.append("<div class=\"item\" data-index=\"" + index + "\"><div class=\"icon\"></div><span class=\"name\">" + jquery_default.escape(name) + "</span></div>");
-	Client.loadFile(url, function(data) {
-		MakeArrowSelection.list.find("div[data-index=" + index + "] .icon").css("backgroundImage", "url(" + data + ")");
+	const root = _getRoot$11();
+	const listEl = root.querySelector(".list");
+	const div = document.createElement("div");
+	div.className = "item";
+	div.setAttribute("data-index", index);
+	div.innerHTML = `<div class="icon"></div><span class="name">${_sanitizeHtml$1(name)}</span>`;
+	listEl.appendChild(div);
+	Client.loadFile(url, (data) => {
+		const icon = root.querySelector(`div[data-index="${index}"] .icon`);
+		if (icon) icon.style.backgroundImage = `url(${data})`;
 	});
 }
 var MakeArrowSelection, MakeArrowSelection_default;
 var init_MakeArrowSelection = __esmMin((() => {
-	init_jquery();
 	init_DBManager();
 	init_Client();
 	init_Renderer();
 	init_KeyEventHandler();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
+	init_Elements();
 	init_MakeArrowSelection$2();
 	init_MakeArrowSelection$1();
-	MakeArrowSelection = new UIComponent("MakeArrowSelection", MakeArrowSelection_default$2, MakeArrowSelection_default$1);
+	MakeArrowSelection = new GUIComponent("MakeArrowSelection", MakeArrowSelection_default$1);
+	MakeArrowSelection.render = () => MakeArrowSelection_default$2;
 	/**
 	* Initialize UI
 	*/
 	MakeArrowSelection.init = function init() {
-		this.ui.css({
-			top: (Renderer.height - 200) / 2,
-			left: (Renderer.width - 200) / 2
-		});
-		this.list = this.ui.find(".list:first");
+		const root = _getRoot$11();
+		this.list = root.querySelector(".list");
 		this.index = 0;
-		this.draggable(this.ui.find(".head"));
-		this.ui.find(".ok").click(this.selectIndex.bind(this));
-		this.ui.find(".cancel").click(function() {
-			this.index = -1;
-			this.selectIndex();
-		}.bind(this));
-		this.ui.on("dblclick", ".item", this.selectIndex.bind(this)).on("mousedown", ".item", function() {
-			MakeArrowSelection.setIndex(Math.floor(this.getAttribute("data-index")));
+		this.draggable(root.querySelector(".head"));
+		root.querySelector("ui-button.ok").addEventListener("click", () => {
+			MakeArrowSelection.selectIndex();
 		});
+		root.querySelector("ui-button.cancel").addEventListener("click", () => {
+			MakeArrowSelection.index = -1;
+			MakeArrowSelection.selectIndex();
+		});
+		root.querySelector("#MakeArrowSelection").addEventListener("dblclick", (e) => {
+			if (e.target.closest(".item")) MakeArrowSelection.selectIndex();
+		});
+		root.querySelector("#MakeArrowSelection").addEventListener("mousedown", (e) => {
+			const item = e.target.closest(".item");
+			if (item) MakeArrowSelection.setIndex(Math.floor(item.getAttribute("data-index")));
+		});
+	};
+	/**
+	* Once append to body
+	*/
+	MakeArrowSelection.onAppend = function onAppend() {
+		this._host.style.top = `${(Renderer.height - 200) / 2}px`;
+		this._host.style.left = `${(Renderer.width - 200) / 2}px`;
 	};
 	/**
 	* Add elements to the list
@@ -328704,14 +329078,13 @@ var init_MakeArrowSelection = __esmMin((() => {
 	* @param {Array} list object to display
 	*/
 	MakeArrowSelection.setList = function setList(list) {
-		let i, count;
-		let item, it, file, name;
-		MakeArrowSelection.list.empty();
-		for (i = 0, count = list.length; i < count; ++i) {
-			item = list[i];
-			it = DB.getItemInfo(item.index);
-			file = it.identifiedResourceName;
-			name = it.identifiedDisplayName;
+		const listEl = _getRoot$11().querySelector(".list");
+		listEl.innerHTML = "";
+		for (let i = 0, count = list.length; i < count; ++i) {
+			const item = list[i];
+			const it = DB.getItemInfo(item.index);
+			const file = it.identifiedResourceName;
+			const name = it.identifiedDisplayName;
 			addElement$1(DB.INTERFACE_PATH + "item/" + file + ".bmp", list[i].index, name);
 		}
 		this.setIndex(list[0].index);
@@ -328722,8 +329095,11 @@ var init_MakeArrowSelection = __esmMin((() => {
 	* @param {number} id in list
 	*/
 	MakeArrowSelection.setIndex = function setIndex(id) {
-		this.list.find("div[data-index=" + this.index + "]").css("backgroundColor", "transparent");
-		this.list.find("div[data-index=" + id + "]").css("backgroundColor", "#cde0ff");
+		const root = _getRoot$11();
+		const prev = root.querySelector(`div[data-index="${this.index}"]`);
+		if (prev) prev.style.backgroundColor = "transparent";
+		const next = root.querySelector(`div[data-index="${id}"]`);
+		if (next) next.style.backgroundColor = "#cde0ff";
 		this.index = id;
 	};
 	/**
@@ -328745,14 +329121,15 @@ var init_MakeArrowSelection = __esmMin((() => {
 	* @param {string} title
 	*/
 	MakeArrowSelection.setTitle = function setTitle(title) {
-		this.ui.find(".head .text").text(title);
+		const text = _getRoot$11().querySelector(".head .text");
+		if (text) text.textContent = title;
 	};
 	/**
 	* Functions to define
 	*/
 	MakeArrowSelection.onIndexSelected = function onIndexSelected() {};
 	MakeArrowSelection.onKeyDown = function onKeyDown(event) {
-		if ((event.which === KEYS.ESCAPE || event.key === "Escape") && this.ui.is(":visible")) this.remove();
+		if (event.which === KEYS.ESCAPE || event.key === "Escape") this.remove();
 	};
 	MakeArrowSelection_default = UIManager.addComponent(MakeArrowSelection);
 }));
@@ -328760,59 +329137,99 @@ var init_MakeArrowSelection = __esmMin((() => {
 //#region src/UI/Components/RefineWeaponSelection/RefineWeaponSelection.html?raw
 var RefineWeaponSelection_default$2;
 var init_RefineWeaponSelection$2 = __esmMin((() => {
-	RefineWeaponSelection_default$2 = "<div id=\"RefineWeaponSelection\">\r\n	<div class=\"head\" data-background=\"basic_interface/titlebar_mid.bmp\">\r\n		<span class=\"text\"></span>\r\n	</div>\r\n	<div class=\"bottom\" data-background=\"login_interface/win_service.bmp\">\r\n		<button\r\n			class=\"btn cancel\"\r\n			data-background=\"btn_cancel.bmp\"\r\n			data-hover=\"btn_cancel_a.bmp\"\r\n			data-down=\"btn_cancel_b.bmp\"\r\n		></button>\r\n		<button class=\"btn ok\" data-background=\"btn_ok.bmp\" data-hover=\"btn_ok_a.bmp\" data-down=\"btn_ok_b.bmp\"></button>\r\n	</div>\r\n	<div class=\"content\">\r\n		<div class=\"list\"></div>\r\n	</div>\r\n</div>\r\n";
+	RefineWeaponSelection_default$2 = "<div id=\"RefineWeaponSelection\">\r\n	<div class=\"head\">\r\n		<ui-image src=\"basic_interface/titlebar_mid.bmp\"></ui-image>\r\n		<span class=\"text\"></span>\r\n	</div>\r\n	<div class=\"bottom\">\r\n		<ui-image src=\"login_interface/win_service.bmp\"></ui-image>\r\n		<ui-button class=\"btn cancel\" bg=\"btn_cancel.bmp\" hover=\"btn_cancel_a.bmp\" down=\"btn_cancel_b.bmp\"></ui-button>\r\n		<ui-button class=\"btn ok\" bg=\"btn_ok.bmp\" hover=\"btn_ok_a.bmp\" down=\"btn_ok_b.bmp\"></ui-button>\r\n	</div>\r\n	<div class=\"content\">\r\n		<div class=\"list\"></div>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/RefineWeaponSelection/RefineWeaponSelection.css?raw
 var RefineWeaponSelection_default$1;
 var init_RefineWeaponSelection$1 = __esmMin((() => {
-	RefineWeaponSelection_default$1 = "#RefineWeaponSelection {\r\n	z-index: 100;\r\n	position: absolute;\r\n	width: 200px;\r\n}\r\n#RefineWeaponSelection .head {\r\n	position: absolute;\r\n	width: 100%;\r\n	height: 22px;\r\n	top: 0px;\r\n	left: 0px;\r\n	background-repeat: repeat-x;\r\n	background-color: white;\r\n}\r\n#RefineWeaponSelection .head .text {\r\n	position: relative;\r\n	top: 2px;\r\n	left: 5px;\r\n	white-space: nowrap;\r\n}\r\n#RefineWeaponSelection .bottom {\r\n	position: relative;\r\n	height: 120px;\r\n	top: 80px;\r\n	left: 0px;\r\n}\r\n\r\n#RefineWeaponSelection .content {\r\n	position: absolute;\r\n	top: 22px;\r\n	left: 0px;\r\n	background-color: white;\r\n	width: 100%;\r\n}\r\n#RefineWeaponSelection .list {\r\n	background-color: #f7f7f7;\r\n	height: 130px;\r\n	overflow-y: auto;\r\n	margin-left: 10px;\r\n	margin-right: 10px;\r\n}\r\n#RefineWeaponSelection .list .item {\r\n	display: block;\r\n	height: 28px;\r\n	margin: 4px 4px 4px 4px;\r\n	position: relative;\r\n}\r\n#RefineWeaponSelection .list .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#RefineWeaponSelection .list .item .name {\r\n	position: absolute;\r\n	top: 7px;\r\n	left: 30px;\r\n	width: 90px;\r\n	white-space: nowrap;\r\n}\r\n\r\n#RefineWeaponSelection .btn {\r\n	position: absolute;\r\n	bottom: 0px;\r\n	border: 0;\r\n	width: 42px;\r\n	height: 20px;\r\n	bottom: 4px;\r\n	background-color: transparent;\r\n}\r\n#RefineWeaponSelection .ok {\r\n	right: 50px;\r\n}\r\n#RefineWeaponSelection .cancel {\r\n	right: 5px;\r\n}\r\n";
+	RefineWeaponSelection_default$1 = ":host {\r\n	width: 200px;\r\n	top: 0px;\r\n	left: 0px;\r\n}\r\n\r\n#RefineWeaponSelection {\r\n	position: absolute;\r\n	width: 200px;\r\n}\r\n#RefineWeaponSelection .head {\r\n	position: absolute;\r\n	width: 100%;\r\n	height: 22px;\r\n	top: 0px;\r\n	left: 0px;\r\n	background-repeat: repeat-x;\r\n	background-color: white;\r\n}\r\n#RefineWeaponSelection .head .text {\r\n	position: relative;\r\n	top: 2px;\r\n	left: 5px;\r\n	white-space: nowrap;\r\n}\r\n#RefineWeaponSelection .bottom {\r\n	position: relative;\r\n	height: 120px;\r\n	top: 80px;\r\n	left: 0px;\r\n}\r\n\r\n#RefineWeaponSelection .content {\r\n	position: absolute;\r\n	top: 22px;\r\n	left: 0px;\r\n	background-color: white;\r\n	width: 100%;\r\n}\r\n#RefineWeaponSelection .list {\r\n	background-color: #f7f7f7;\r\n	height: 130px;\r\n	overflow-y: auto;\r\n	margin-left: 10px;\r\n	margin-right: 10px;\r\n}\r\n#RefineWeaponSelection .list .item {\r\n	display: block;\r\n	height: 28px;\r\n	margin: 4px 4px 4px 4px;\r\n	position: relative;\r\n}\r\n#RefineWeaponSelection .list .item .icon {\r\n	width: 24px;\r\n	height: 24px;\r\n	border: none;\r\n	background-color: transparent;\r\n	background-repeat: no-repeat;\r\n}\r\n#RefineWeaponSelection .list .item .name {\r\n	position: absolute;\r\n	top: 7px;\r\n	left: 30px;\r\n	width: 90px;\r\n	white-space: nowrap;\r\n}\r\n\r\n#RefineWeaponSelection ui-button.btn {\r\n	position: absolute;\r\n	bottom: 4px;\r\n	width: 42px;\r\n	height: 20px;\r\n}\r\n#RefineWeaponSelection .ok {\r\n	right: 50px;\r\n}\r\n#RefineWeaponSelection .cancel {\r\n	right: 5px;\r\n}\r\n";
 }));
 //#endregion
 //#region src/UI/Components/RefineWeaponSelection/RefineWeaponSelection.js
 /**
+* Helper to get shadow root
+*/
+function _getRoot$10() {
+	return RefineWeaponSelection._shadow || RefineWeaponSelection._host;
+}
+/**
+* Sanitize HTML, allowing only whitelisted tags (font, i, b)
+*/
+function _sanitizeHtml(str) {
+	const whitelist = [
+		"font",
+		"i",
+		"b"
+	];
+	const div = document.createElement("div");
+	div.innerHTML = str;
+	div.querySelectorAll("*").forEach((el) => {
+		if (!whitelist.includes(el.tagName.toLowerCase())) el.replaceWith(...el.childNodes);
+	});
+	return div.innerHTML;
+}
+/**
 * Add an element to the list
 *
 * @param {string} image url
-* @param {index} index in list
+* @param {number} index in list
 * @param {string} element name
 */
 function addElement(url, index, name) {
-	RefineWeaponSelection.list.append("<div class=\"item\" data-index=\"" + index + "\"><div class=\"icon\"></div><span class=\"name\">" + jquery_default.escape(name) + "</span></div>");
-	Client.loadFile(url, function(data) {
-		RefineWeaponSelection.list.find("div[data-index=" + index + "] .icon").css("backgroundImage", "url(" + data + ")");
+	const root = _getRoot$10();
+	const listEl = root.querySelector(".list");
+	const div = document.createElement("div");
+	div.className = "item";
+	div.setAttribute("data-index", index);
+	div.innerHTML = `<div class="icon"></div><span class="name">${_sanitizeHtml(name)}</span>`;
+	listEl.appendChild(div);
+	Client.loadFile(url, (data) => {
+		const icon = root.querySelector(`div[data-index="${index}"] .icon`);
+		if (icon) icon.style.backgroundImage = `url(${data})`;
 	});
 }
 var RefineWeaponSelection, RefineWeaponSelection_default;
 var init_RefineWeaponSelection = __esmMin((() => {
-	init_jquery();
 	init_DBManager();
 	init_Client();
 	init_Renderer();
 	init_UIManager();
-	init_UIComponent();
+	init_GUIComponent();
+	init_Elements();
 	init_RefineWeaponSelection$2();
 	init_RefineWeaponSelection$1();
-	RefineWeaponSelection = new UIComponent("RefineWeaponSelection", RefineWeaponSelection_default$2, RefineWeaponSelection_default$1);
+	RefineWeaponSelection = new GUIComponent("RefineWeaponSelection", RefineWeaponSelection_default$1);
+	RefineWeaponSelection.render = () => RefineWeaponSelection_default$2;
 	/**
 	* Initialize UI
 	*/
 	RefineWeaponSelection.init = function init() {
-		this.ui.css({
-			top: (Renderer.height - 200) / 2,
-			left: (Renderer.width - 200) / 2
-		});
-		this.list = this.ui.find(".list:first");
+		const root = _getRoot$10();
+		this.list = root.querySelector(".list");
 		this.index = 0;
-		this.draggable(this.ui.find(".head"));
-		this.ui.find(".ok").click(this.selectIndex.bind(this));
-		this.ui.find(".cancel").click(function() {
-			this.index = -1;
-			this.selectIndex();
-		}.bind(this));
-		this.ui.on("dblclick", ".item", this.selectIndex.bind(this)).on("mousedown", ".item", function() {
-			RefineWeaponSelection.setIndex(Math.floor(this.getAttribute("data-index")));
+		this.draggable(root.querySelector(".head"));
+		root.querySelector("ui-button.ok").addEventListener("click", () => {
+			RefineWeaponSelection.selectIndex();
 		});
+		root.querySelector("ui-button.cancel").addEventListener("click", () => {
+			RefineWeaponSelection.index = -1;
+			RefineWeaponSelection.selectIndex();
+		});
+		root.querySelector("#RefineWeaponSelection").addEventListener("dblclick", (e) => {
+			if (e.target.closest(".item")) RefineWeaponSelection.selectIndex();
+		});
+		root.querySelector("#RefineWeaponSelection").addEventListener("mousedown", (e) => {
+			const item = e.target.closest(".item");
+			if (item) RefineWeaponSelection.setIndex(Math.floor(item.getAttribute("data-index")));
+		});
+	};
+	/**
+	* Once append to body
+	*/
+	RefineWeaponSelection.onAppend = function onAppend() {
+		this._host.style.top = `${(Renderer.height - 200) / 2}px`;
+		this._host.style.left = `${(Renderer.width - 200) / 2}px`;
 	};
 	/**
 	* Add elements to the list
@@ -328820,16 +329237,15 @@ var init_RefineWeaponSelection = __esmMin((() => {
 	* @param {Array} list object to display
 	*/
 	RefineWeaponSelection.setList = function setList(list) {
-		let i, count;
-		let it, file, name, refine;
-		RefineWeaponSelection.list.empty();
+		const listEl = _getRoot$10().querySelector(".list");
+		listEl.innerHTML = "";
 		RefineWeaponSelection.ItemList = [];
-		for (i = 0, count = list.length; i < count; ++i) {
+		for (let i = 0, count = list.length; i < count; ++i) {
 			RefineWeaponSelection.ItemList[i] = list[i];
-			it = DB.getItemInfo(list[i].ITID);
-			file = it.identifiedResourceName;
-			refine = list[i].RefiningLevel;
-			name = refine > 0 ? "+" + refine + " " + it.identifiedDisplayName : it.identifiedDisplayName;
+			const it = DB.getItemInfo(list[i].ITID);
+			const file = it.identifiedResourceName;
+			const refine = list[i].RefiningLevel;
+			const name = refine > 0 ? `+${refine} ${it.identifiedDisplayName}` : it.identifiedDisplayName;
 			addElement(DB.INTERFACE_PATH + "item/" + file + ".bmp", list[i].index, name);
 		}
 		this.setIndex(list[0].index);
@@ -328840,8 +329256,11 @@ var init_RefineWeaponSelection = __esmMin((() => {
 	* @param {number} id in list
 	*/
 	RefineWeaponSelection.setIndex = function setIndex(id) {
-		this.list.find("div[data-index=" + this.index + "]").css("backgroundColor", "transparent");
-		this.list.find("div[data-index=" + id + "]").css("backgroundColor", "#cde0ff");
+		const root = _getRoot$10();
+		const prev = root.querySelector(`div[data-index="${this.index}"]`);
+		if (prev) prev.style.backgroundColor = "transparent";
+		const next = root.querySelector(`div[data-index="${id}"]`);
+		if (next) next.style.backgroundColor = "#cde0ff";
 		this.index = id;
 	};
 	/**
@@ -328870,7 +329289,8 @@ var init_RefineWeaponSelection = __esmMin((() => {
 	* @param {string} title
 	*/
 	RefineWeaponSelection.setTitle = function setTitle(title) {
-		this.ui.find(".head .text").text(title);
+		const text = _getRoot$10().querySelector(".head .text");
+		if (text) text.textContent = title;
 	};
 	/**
 	* Functions to define
