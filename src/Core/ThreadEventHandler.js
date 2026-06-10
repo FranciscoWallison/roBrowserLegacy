@@ -157,34 +157,6 @@ onmessage = function receive(event) {
 			map.load(msg.data);
 			break;
 		}
-
-		// Background preload of a neighbour map (SeamlessFieldFlight plugin).
-		// Reuses MapLoader but emits *_PRELOAD message types so it can never
-		// clobber the live map's MAP_* Thread hooks, and stays silent on progress.
-		// A fresh worker cannot be re-initialised from a plugin (FileManager needs
-		// the main worker's CLIENT_INIT), so the plugin drives this command on the
-		// already-initialised main worker instead of spawning its own.
-		case 'PRELOAD_MAP': {
-			const map = new MapLoader();
-
-			map.onprogress = function () {};
-
-			map.onload = function (success, error) {
-				if (msg.uid) {
-					postMessage({
-						uid: msg.uid,
-						arguments: [success, error, msg.data]
-					});
-				}
-			};
-
-			map.ondata = function (type, data) {
-				postMessage({ type: type + '_PRELOAD', data: data });
-			};
-
-			map.load(msg.data);
-			break;
-		}
 	}
 };
 
