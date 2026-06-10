@@ -34,7 +34,7 @@ class Loader {
 	 * PHP servers: keep at 4-6 to avoid connection exhaustion.
 	 * Node.js (RemoteClient-JS): supports 12+ with HTTP/2 multiplexing.
 	 */
-	parallelDownload = 6;
+	parallelDownload = 10;
 
 	/**
 	 * Start to load the list

@@ -24,7 +24,7 @@ const _memory = {};
  * Node.js (RemoteClient-JS): 120-300s recommended, heap is usually abundant.
  * @var {number}
  */
-const _rememberTime = 30 * 1000; // 30s
+const _rememberTime = 120 * 1000; // 120s
 
 /**
  * @var {number} last time we clean up variables
