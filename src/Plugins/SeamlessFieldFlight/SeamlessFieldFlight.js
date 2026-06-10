@@ -27,6 +27,7 @@
  *   enableSeamlessFlight   (boolean, default true)  master on/off
  *   seamlessCacheSize      (number,  default 1)      destination payloads kept
  *   seamlessPreloadDistance(number,  default 30)     cells from a portal to preload
+ *   seamlessFadeDuration   (number,  default 200)    fade half-duration in ms
  */
 
 import Thread from 'Core/Thread.js';

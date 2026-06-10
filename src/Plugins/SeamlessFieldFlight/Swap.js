@@ -31,9 +31,16 @@ import SoundManager from 'Audio/SoundManager.js';
 import BGM from 'Audio/BGM.js';
 import Mouse from 'Controls/MouseEventHandler.js';
 import DB from 'DB/DBManager.js';
+import Configs from 'Core/Configs.js';
 
 import MapCache from './MapCache.js';
 import Preloader from './Preloader.js';
+
+/** Half-transition fade duration (ms); configurable, default 200. */
+function fadeDuration() {
+	const v = Configs.get('seamlessFadeDuration');
+	return typeof v === 'number' && v >= 0 ? v : 200;
+}
 
 /** Live worker-completion handlers, captured from Thread.hook. */
 const captured = {};
@@ -188,7 +195,7 @@ const Swap = {
 			// Drop any stale in-flight preload; the next neighbour is preloaded
 			// on edge approach by the edge trigger.
 			Preloader.cancel();
-		}, 200);
+		}, fadeDuration());
 
 		return true;
 	}
