@@ -42,6 +42,11 @@ function fadeDuration() {
 	return typeof v === 'number' && v >= 0 ? v : 200;
 }
 
+/** Whether to log transitions to the console (default ON). */
+function debugOn() {
+	return Configs.get('seamlessDebug') !== false;
+}
+
 /** Live worker-completion handlers, captured from Thread.hook. */
 const captured = {};
 
@@ -195,6 +200,13 @@ const Swap = {
 			// Drop any stale in-flight preload; the next neighbour is preloaded
 			// on edge approach by the edge trigger.
 			Preloader.cancel();
+
+			if (debugOn()) {
+				console.log(
+					'%c[SeamlessFlight] ✦ SWAP → ' + key + ' (sem tela de loading)',
+					'color:#4CAF50;font-weight:bold'
+				);
+			}
 		}, fadeDuration());
 
 		return true;

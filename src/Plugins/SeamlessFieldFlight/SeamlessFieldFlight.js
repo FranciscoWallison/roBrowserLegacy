@@ -28,6 +28,7 @@
  *   seamlessCacheSize      (number,  default 1)      destination payloads kept
  *   seamlessPreloadDistance(number,  default 30)     cells from a portal to preload
  *   seamlessFadeDuration   (number,  default 200)    fade half-duration in ms
+ *   seamlessDebug          (boolean, default true)   log transitions to console
  */
 
 import Thread from 'Core/Thread.js';
@@ -136,13 +137,16 @@ export default function SeamlessFieldFlightPlugin() {
 		MapRenderer.setMap = function (mapname) {
 			if (!MapRenderer.loading) {
 				const target = norm(mapname);
-				if (
-					MapRenderer.currentMap !== target &&
-					MapCache.has(target) &&
-					PortalGraph.isSeamlessEligible(MapRenderer.currentMap, target) &&
-					Swap.performSwap(target)
-				) {
-					return undefined;
+				if (MapRenderer.currentMap !== target && PortalGraph.isSeamlessEligible(MapRenderer.currentMap, target)) {
+					if (MapCache.has(target) && Swap.performSwap(target)) {
+						return undefined;
+					}
+					if (Configs.get('seamlessDebug') !== false) {
+						console.log(
+							'%c[SeamlessFlight] load normal → ' + target + ' (nao pre-carregado a tempo)',
+							'color:#FF9800'
+						);
+					}
 				}
 			}
 			return _origSetMap.call(MapRenderer, mapname);

@@ -18,6 +18,7 @@
 
 import Thread from 'Core/Thread.js';
 import DB from 'DB/DBManager.js';
+import Configs from 'Core/Configs.js';
 import MapCache from './MapCache.js';
 
 const PRELOAD_TYPES = [
@@ -108,6 +109,9 @@ const Preloader = {
 			if (!_cancelled && success && _payload && _inflight) {
 				_payload.mapInfo = DB.getMap(_inflight + '.rsw');
 				MapCache.put(_inflight, _payload);
+				if (Configs.get('seamlessDebug') !== false) {
+					console.log('%c[SeamlessFlight] cache ✓ ' + _inflight, 'color:#9E9E9E');
+				}
 			}
 			_busy = false;
 			_inflight = null;
