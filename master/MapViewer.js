@@ -285472,7 +285472,7 @@ function UpdateBody(job) {
 	if (this.costume) job = this.costume;
 	this.xSize = this.ySize = DB.isBaby(job) ? 4 : 5;
 	this.files.shadow.size = job in ShadowTable_default ? ShadowTable_default[job] : 1;
-	path = this.isAdmin ? DB.getAdminPath(this._sex) : DB.getBodyPath(job, this._sex);
+	path = this.isAdmin && !shouldSuppressHead.call(this) ? DB.getAdminPath(this._sex) : DB.getBodyPath(job, this._sex);
 	const Entity = this.constructor;
 	if (this.objecttype === Entity.TYPE_UNKNOWN) {
 		let objecttype;
