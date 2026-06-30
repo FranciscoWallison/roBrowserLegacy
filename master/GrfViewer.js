@@ -228909,7 +228909,7 @@ var init_SkillDescription = __esmMin((() => {
 //#region src/UI/Components/Guild/Guild.html?raw
 var Guild_default$2;
 var init_Guild$3 = __esmMin((() => {
-	Guild_default$2 = "<div id=\"Guild\">\r\n	<div class=\"titlebar\">\r\n		<ui-image src=\"basic_interface/titlebar_mid.bmp\"></ui-image>\r\n		<div class=\"right\">\r\n			<ui-button\r\n				class=\"base close\"\r\n				bg=\"basic_interface/sys_close_off.bmp\"\r\n				hover=\"basic_interface/sys_close_on.bmp\"\r\n			></ui-button>\r\n		</div>\r\n		<div class=\"clear\"></div>\r\n	</div>\r\n\r\n	<div class=\"tabs\">\r\n		<!--\r\n		--><button data-flag=\"0\" class=\"info\"><ui-text msg=\"340\">Guild Info</ui-text></button\r\n		><!--\r\n		--><button data-flag=\"1\" class=\"members\"><ui-text msg=\"341\">Guildsmen Info</ui-text></button\r\n		><!--\r\n		--><button data-flag=\"2\" class=\"positions\"><ui-text msg=\"342\">Position</ui-text></button\r\n		><!--\r\n		--><button data-flag=\"3\" class=\"skills\"><ui-text msg=\"343\">Guild Skill</ui-text></button\r\n		><!--\r\n		--><button data-flag=\"4\" class=\"history\"><ui-text msg=\"344\">Expel History</ui-text></button\r\n		><!--\r\n		--><button data-flag=\"6\" class=\"notice\"><ui-text msg=\"345\">Guild Notice</ui-text></button>\r\n	</div>\r\n\r\n	<div class=\"panel\">\r\n		<!-- INFO TAB -->\r\n		<div class=\"content info\">\r\n			<div class=\"name\"><ui-text msg=\"328\">Guild Name</ui-text> : <span class=\"value\"></span></div>\r\n			<div class=\"level\"><ui-text msg=\"329\">Guild lvl</ui-text> : <span class=\"value\"></span></div>\r\n			<div class=\"master\"><ui-text msg=\"330\">Guild Master</ui-text> : <span class=\"value\"></span></div>\r\n			<div class=\"members\">\r\n				<ui-text msg=\"331\">Guildsmen</ui-text> : <span class=\"numMember\">0</span> /\r\n				<span class=\"maxMember\">0</span> <ui-button bg=\"basic_interface/grp_online.bmp\"></ui-button>\r\n				<span class=\"online\"></span>\r\n			</div>\r\n			<div class=\"avglevel\"><ui-text msg=\"332\">Avg.lvl of Guildsmen</ui-text> : <span class=\"value\"></span></div>\r\n			<div class=\"territory\"><ui-text msg=\"333\">Territory</ui-text> : <span class=\"value\"></span></div>\r\n			<div class=\"tendency\">\r\n				<div class=\"title\"><ui-text msg=\"334\">Tendency</ui-text> : <span class=\"value\"></span></div>\r\n				<div class=\"righteous\">R</div>\r\n				<div class=\"wiked\">W</div>\r\n				<div class=\"vulgar\">V</div>\r\n				<div class=\"famed\">F</div>\r\n				<canvas width=\"90\" height=\"90\"></canvas>\r\n			</div>\r\n			<div class=\"exp\"><ui-text msg=\"335\">EXP</ui-text> : <span class=\"value\"></span></div>\r\n			<div class=\"emblem\"><ui-text msg=\"336\">Emblem</ui-text></div>\r\n			<div class=\"emblem_container\"></div>\r\n			<ui-button class=\"emblem_edit\" bg=\"btn_edit.bmp\" hover=\"btn_edit_a.bmp\" down=\"btn_edit_b.bmp\">\r\n				<input type=\"file\" />\r\n			</ui-button>\r\n\r\n			<div class=\"tax\"><ui-text msg=\"337\">Tax Point</ui-text> : <span class=\"value\">0</span></div>\r\n			<div class=\"ally\"><ui-text msg=\"338\">Alliance</ui-text></div>\r\n			<div class=\"ally_list\"></div>\r\n			<div class=\"hostile\"><ui-text msg=\"339\">Antagonist</ui-text></div>\r\n			<div class=\"hostile_list\"></div>\r\n		</div>\r\n\r\n		<!-- MEMBERS TAB -->\r\n		<div class=\"content members\">\r\n			<table>\r\n				<thead>\r\n					<tr>\r\n						<th class=\"name\"><ui-text msg=\"407\">Name</ui-text></th>\r\n						<th class=\"position\"><ui-text msg=\"503\">Position</ui-text></th>\r\n						<th class=\"job\"><ui-text msg=\"504\">Job</ui-text></th>\r\n						<th class=\"level\"><ui-text msg=\"408\">Level</ui-text></th>\r\n						<th class=\"note\"><ui-text msg=\"505\">Note</ui-text></th>\r\n						<th class=\"devotion\"><ui-text msg=\"506\">Devotion</ui-text></th>\r\n						<th class=\"tax\"><ui-text msg=\"507\">Tax Point</ui-text></th>\r\n					</tr>\r\n				</thead>\r\n				<tbody>\r\n					<tr class=\"MemberView\">\r\n						<td class=\"name\">\r\n							<canvas width=\"30\" height=\"30\"></canvas>\r\n							<span class=\"value\"></span>\r\n						</td>\r\n						<td class=\"position\"></td>\r\n						<td class=\"job\"></td>\r\n						<td class=\"level\"></td>\r\n						<td class=\"note\"></td>\r\n						<td class=\"devotion\"></td>\r\n						<td class=\"tax\"></td>\r\n					</tr>\r\n				</tbody>\r\n			</table>\r\n		</div>\r\n\r\n		<!-- POSITIONS TAB -->\r\n		<div class=\"content positions\">\r\n			<table>\r\n				<thead>\r\n					<tr>\r\n						<th class=\"id\"><ui-text msg=\"510\">Rank</ui-text></th>\r\n						<th class=\"title\"><ui-text msg=\"511\">Position Title</ui-text></th>\r\n						<th class=\"invite\"><ui-text msg=\"512\">Invitation</ui-text></th>\r\n						<th class=\"punish\"><ui-text msg=\"513\">Punish</ui-text></th>\r\n						<th class=\"tax\"><ui-text msg=\"514\">Tax</ui-text></th>\r\n					</tr>\r\n				</thead>\r\n				<tbody>\r\n					<tr class=\"PositionView\">\r\n						<td class=\"id\"></td>\r\n						<td class=\"title\">\r\n							<input type=\"text\" value=\"\" />\r\n						</td>\r\n						<td class=\"invite\">\r\n							<ui-button bg=\"checkbox_0.bmp\" class=\"off\"></ui-button>\r\n						</td>\r\n						<td class=\"punish\">\r\n							<ui-button bg=\"checkbox_0.bmp\" class=\"off\"></ui-button>\r\n						</td>\r\n						<td class=\"tax\"><input type=\"text\" value=\"0\" /> %</td>\r\n					</tr>\r\n				</tbody>\r\n			</table>\r\n		</div>\r\n\r\n		<!-- SKILLS TAB -->\r\n		<div class=\"content skills\">\r\n			<div class=\"skill_list\">\r\n				<table>\r\n					<!-- Just to get reference, will be removed -->\r\n					<ui-button\r\n						class=\"btn levelup\"\r\n						bg=\"basic_interface/skill_up_a.bmp\"\r\n						hover=\"basic_interface/skill_up_b.bmp\"\r\n						down=\"basic_interface/skill_up_c.bmp\"\r\n					></ui-button>\r\n				</table>\r\n			</div>\r\n\r\n			<div class=\"footer\">\r\n				<ui-image src=\"basic_interface/btnbar_mid2.bmp\"></ui-image>\r\n				<div class=\"text\">Skill Points: <span class=\"skpoints_count\">0</span></div>\r\n				<ui-button\r\n					class=\"btn apply\"\r\n					bg=\"btn_apply.bmp\"\r\n					hover=\"btn_apply_a.bmp\"\r\n					down=\"btn_apply_b.bmp\"\r\n				></ui-button>\r\n				<ui-button\r\n					class=\"btn reset\"\r\n					bg=\"btn_reset.bmp\"\r\n					hover=\"btn_reset_a.bmp\"\r\n					down=\"btn_reset_b.bmp\"\r\n				></ui-button>\r\n			</div>\r\n		</div>\r\n\r\n		<!-- HISTORY BAN TAB -->\r\n		<div class=\"content history\">\r\n			<table>\r\n				<thead>\r\n					<tr>\r\n						<th class=\"name\"><ui-text msg=\"407\">Name</ui-text></th>\r\n						<th class=\"reason\"><ui-text msg=\"462\">The Reason of Expulsion</ui-text></th>\r\n					</tr>\r\n				</thead>\r\n				<tbody>\r\n					<tr class=\"ExpelView\">\r\n						<td class=\"name\"></td>\r\n						<td class=\"reason\"></td>\r\n					</tr>\r\n				</tbody>\r\n			</table>\r\n		</div>\r\n\r\n		<!-- NOTICE TAB -->\r\n		<div class=\"content notice\">\r\n			<div class=\"subjectTitle\"><ui-text msg=\"515\">Title</ui-text></div>\r\n			<input type=\"text\" class=\"subject\" />\r\n\r\n			<div class=\"noticeTitle\"><ui-text msg=\"516\">Contents</ui-text></div>\r\n			<textarea class=\"notice\"></textarea>\r\n		</div>\r\n	</div>\r\n\r\n	<div class=\"footer\">\r\n		<ui-image src=\"basic_interface/btnbar_mid2.bmp\"></ui-image>\r\n		<ui-button class=\"btn_ok\" bg=\"btn_ok.bmp\" hover=\"btn_ok_a.bmp\" down=\"btn_ok_b.bmp\"></ui-button>\r\n	</div>\r\n</div>\r\n";
+	Guild_default$2 = "<div id=\"Guild\">\r\n	<div class=\"titlebar\">\r\n		<ui-image src=\"basic_interface/titlebar_mid.bmp\"></ui-image>\r\n		<div class=\"right\">\r\n			<ui-button\r\n				class=\"base close\"\r\n				bg=\"basic_interface/sys_close_off.bmp\"\r\n				hover=\"basic_interface/sys_close_on.bmp\"\r\n			></ui-button>\r\n		</div>\r\n		<div class=\"clear\"></div>\r\n	</div>\r\n\r\n	<div class=\"tabs\">\r\n		<!--\r\n		--><button data-flag=\"0\" class=\"info\"><ui-text msg=\"340\">Guild Info</ui-text></button><!--\r\n		--><button data-flag=\"1\" class=\"members\"><ui-text msg=\"341\">Guildsmen Info</ui-text></button><!--\r\n		--><button data-flag=\"2\" class=\"positions\"><ui-text msg=\"342\">Position</ui-text></button><!--\r\n		--><button data-flag=\"3\" class=\"skills\"><ui-text msg=\"343\">Guild Skill</ui-text></button><!--\r\n		--><button data-flag=\"4\" class=\"history\"><ui-text msg=\"344\">Expel History</ui-text></button><!--\r\n		--><button data-flag=\"6\" class=\"notice\"><ui-text msg=\"345\">Guild Notice</ui-text></button>\r\n	</div>\r\n\r\n	<div class=\"panel\">\r\n		<!-- INFO TAB -->\r\n		<div class=\"content info\">\r\n			<div class=\"name\"><ui-text msg=\"328\">Guild Name</ui-text> : <span class=\"value\"></span></div>\r\n			<div class=\"level\"><ui-text msg=\"329\">Guild lvl</ui-text> : <span class=\"value\"></span></div>\r\n			<div class=\"master\"><ui-text msg=\"330\">Guild Master</ui-text> : <span class=\"value\"></span></div>\r\n			<div class=\"members\">\r\n				<ui-text msg=\"331\">Guildsmen</ui-text> : <span class=\"numMember\">0</span> /\r\n				<span class=\"maxMember\">0</span> <ui-button bg=\"basic_interface/grp_online.bmp\"></ui-button>\r\n				<span class=\"online\"></span>\r\n			</div>\r\n			<div class=\"avglevel\"><ui-text msg=\"332\">Avg.lvl of Guildsmen</ui-text> : <span class=\"value\"></span></div>\r\n			<div class=\"territory\"><ui-text msg=\"333\">Territory</ui-text> : <span class=\"value\"></span></div>\r\n			<div class=\"tendency\">\r\n				<div class=\"title\"><ui-text msg=\"334\">Tendency</ui-text> : <span class=\"value\"></span></div>\r\n				<div class=\"righteous\">R</div>\r\n				<div class=\"wiked\">W</div>\r\n				<div class=\"vulgar\">V</div>\r\n				<div class=\"famed\">F</div>\r\n				<canvas width=\"90\" height=\"90\"></canvas>\r\n			</div>\r\n			<div class=\"exp\"><ui-text msg=\"335\">EXP</ui-text> : <span class=\"value\"></span></div>\r\n			<div class=\"emblem\"><ui-text msg=\"336\">Emblem</ui-text></div>\r\n			<div class=\"emblem_container\"></div>\r\n			<ui-button class=\"emblem_edit\" bg=\"btn_edit.bmp\" hover=\"btn_edit_a.bmp\" down=\"btn_edit_b.bmp\">\r\n				<input type=\"file\" />\r\n			</ui-button>\r\n\r\n			<div class=\"tax\"><ui-text msg=\"337\">Tax Point</ui-text> : <span class=\"value\">0</span></div>\r\n			<div class=\"ally\"><ui-text msg=\"338\">Alliance</ui-text></div>\r\n			<div class=\"ally_list\"></div>\r\n			<div class=\"hostile\"><ui-text msg=\"339\">Antagonist</ui-text></div>\r\n			<div class=\"hostile_list\"></div>\r\n		</div>\r\n\r\n		<!-- MEMBERS TAB -->\r\n		<div class=\"content members\">\r\n			<table>\r\n				<thead>\r\n					<tr>\r\n						<th class=\"name\"><ui-text msg=\"407\">Name</ui-text></th>\r\n						<th class=\"position\"><ui-text msg=\"503\">Position</ui-text></th>\r\n						<th class=\"job\"><ui-text msg=\"504\">Job</ui-text></th>\r\n						<th class=\"level\"><ui-text msg=\"408\">Level</ui-text></th>\r\n						<th class=\"note\"><ui-text msg=\"505\">Note</ui-text></th>\r\n						<th class=\"devotion\"><ui-text msg=\"506\">Devotion</ui-text></th>\r\n						<th class=\"tax\"><ui-text msg=\"507\">Tax Point</ui-text></th>\r\n					</tr>\r\n				</thead>\r\n				<tbody>\r\n					<tr class=\"MemberView\">\r\n						<td class=\"name\">\r\n							<canvas width=\"30\" height=\"30\"></canvas>\r\n							<span class=\"value\"></span>\r\n						</td>\r\n						<td class=\"position\"></td>\r\n						<td class=\"job\"></td>\r\n						<td class=\"level\"></td>\r\n						<td class=\"note\"></td>\r\n						<td class=\"devotion\"></td>\r\n						<td class=\"tax\"></td>\r\n					</tr>\r\n				</tbody>\r\n			</table>\r\n		</div>\r\n\r\n		<!-- POSITIONS TAB -->\r\n		<div class=\"content positions\">\r\n			<table>\r\n				<thead>\r\n					<tr>\r\n						<th class=\"id\"><ui-text msg=\"510\">Rank</ui-text></th>\r\n						<th class=\"title\"><ui-text msg=\"511\">Position Title</ui-text></th>\r\n						<th class=\"invite\"><ui-text msg=\"512\">Invitation</ui-text></th>\r\n						<th class=\"punish\"><ui-text msg=\"513\">Punish</ui-text></th>\r\n						<th class=\"tax\"><ui-text msg=\"514\">Tax</ui-text></th>\r\n					</tr>\r\n				</thead>\r\n				<tbody>\r\n					<tr class=\"PositionView\">\r\n						<td class=\"id\"></td>\r\n						<td class=\"title\">\r\n							<input type=\"text\" value=\"\" />\r\n						</td>\r\n						<td class=\"invite\">\r\n							<ui-button bg=\"checkbox_0.bmp\" class=\"off\"></ui-button>\r\n						</td>\r\n						<td class=\"punish\">\r\n							<ui-button bg=\"checkbox_0.bmp\" class=\"off\"></ui-button>\r\n						</td>\r\n						<td class=\"tax\"><input type=\"text\" value=\"0\" /> %</td>\r\n					</tr>\r\n				</tbody>\r\n			</table>\r\n		</div>\r\n\r\n		<!-- SKILLS TAB -->\r\n		<div class=\"content skills\">\r\n			<div class=\"skill_list\">\r\n				<table>\r\n					<!-- Just to get reference, will be removed -->\r\n					<ui-button\r\n						class=\"btn levelup\"\r\n						bg=\"basic_interface/skill_up_a.bmp\"\r\n						hover=\"basic_interface/skill_up_b.bmp\"\r\n						down=\"basic_interface/skill_up_c.bmp\"\r\n					></ui-button>\r\n				</table>\r\n			</div>\r\n\r\n			<div class=\"footer\">\r\n				<ui-image src=\"basic_interface/btnbar_mid2.bmp\"></ui-image>\r\n				<div class=\"text\">Skill Points: <span class=\"skpoints_count\">0</span></div>\r\n				<ui-button\r\n					class=\"btn apply\"\r\n					bg=\"btn_apply.bmp\"\r\n					hover=\"btn_apply_a.bmp\"\r\n					down=\"btn_apply_b.bmp\"\r\n				></ui-button>\r\n				<ui-button\r\n					class=\"btn reset\"\r\n					bg=\"btn_reset.bmp\"\r\n					hover=\"btn_reset_a.bmp\"\r\n					down=\"btn_reset_b.bmp\"\r\n				></ui-button>\r\n			</div>\r\n		</div>\r\n\r\n		<!-- HISTORY BAN TAB -->\r\n		<div class=\"content history\">\r\n			<table>\r\n				<thead>\r\n					<tr>\r\n						<th class=\"name\"><ui-text msg=\"407\">Name</ui-text></th>\r\n						<th class=\"reason\"><ui-text msg=\"462\">The Reason of Expulsion</ui-text></th>\r\n					</tr>\r\n				</thead>\r\n				<tbody>\r\n					<tr class=\"ExpelView\">\r\n						<td class=\"name\"></td>\r\n						<td class=\"reason\"></td>\r\n					</tr>\r\n				</tbody>\r\n			</table>\r\n		</div>\r\n\r\n		<!-- NOTICE TAB -->\r\n		<div class=\"content notice\">\r\n			<div class=\"subjectTitle\"><ui-text msg=\"515\">Title</ui-text></div>\r\n			<input type=\"text\" class=\"subject\" />\r\n\r\n			<div class=\"noticeTitle\"><ui-text msg=\"516\">Contents</ui-text></div>\r\n			<textarea class=\"notice\"></textarea>\r\n		</div>\r\n	</div>\r\n\r\n	<div class=\"footer\">\r\n		<ui-image src=\"basic_interface/btnbar_mid2.bmp\"></ui-image>\r\n		<ui-button class=\"btn_ok\" bg=\"btn_ok.bmp\" hover=\"btn_ok_a.bmp\" down=\"btn_ok_b.bmp\"></ui-button>\r\n	</div>\r\n</div>\r\n";
 }));
 //#endregion
 //#region src/UI/Components/Guild/Guild.css?raw
@@ -310464,6 +310464,17 @@ var init_DBManager = __esmMin((() => {
 		static isBaby(jobid) {
 			return BabyTable_default.indexOf(jobid) > -1;
 		}
+		/**
+		* Is character a TaeKwon-tree job (TaeKwon → Star Gladiator /
+		* Soul Linker → Star Emperor / Soul Reaper / Sky Emperor /
+		* Soul Ascetic, incl. baby and union variants) ?
+		*
+		* @param {number} jobid
+		* @return {boolean}
+		*/
+		static isTaeKwon(jobid) {
+			return jobid >= 4046 && jobid <= 4049 || jobid >= 4225 && jobid <= 4227 || jobid >= 4238 && jobid <= 4246 || jobid == 4302 || jobid == 4303 || jobid == 4316;
+		}
 		static isMadogear(jobid) {
 			return jobid == 4086 || jobid == 4087 || jobid == 4112 || jobid == 4279;
 		}
@@ -318474,6 +318485,16 @@ var init_StatusIcons$1 = __esmMin((() => {
 }));
 //#endregion
 //#region src/UI/Components/StatusIcons/StatusIcons.js
+function loadStatusIcon(index) {
+	const tkmVariant = SessionStorage_default.Entity && DB.isTaeKwon(SessionStorage_default.Entity._job) && TKM_ICON_OVERRIDE[index] || null;
+	const iconName = tkmVariant || StatusInfo[index].icon;
+	_status[index].tkmVariant = tkmVariant;
+	Client.loadFile(`data/texture/effect/${iconName}`, (data) => {
+		Texture.load(data, function() {
+			if (_status[index] && !_status[index].img) addResizedStatusIcon(this, index);
+		});
+	});
+}
 function addResizedStatusIcon(img, index) {
 	if (img.width < 33 && img.height < 33) {
 		_status[index].img = img;
@@ -318634,9 +318655,10 @@ function rendering$1(tick) {
 		for (let i = 0; i < count; ++i) renderStatus(_status[indexes[i]], tick);
 	}
 }
-var StatusIcons, _status, _last_updated_time, _render_time, StatusIcons_default;
+var StatusIcons, _status, _last_updated_time, _render_time, TKM_ICON_OVERRIDE, StatusIcons_default;
 var init_StatusIcons = __esmMin((() => {
 	init_StatusInfo();
+	init_StatusConst();
 	init_DBManager();
 	init_Texture();
 	init_Client();
@@ -318644,6 +318666,7 @@ var init_StatusIcons = __esmMin((() => {
 	init_UIManager();
 	init_GUIComponent();
 	init_ScreenEffectManager();
+	init_SessionStorage();
 	init_StatusIcons$2();
 	init_StatusIcons$1();
 	StatusIcons = new GUIComponent("StatusIcons", StatusIcons_default$1);
@@ -318659,6 +318682,15 @@ var init_StatusIcons = __esmMin((() => {
 	_status = {};
 	_last_updated_time = Date.now();
 	_render_time = 500;
+	TKM_ICON_OVERRIDE = {
+		[StatusConst_default.ASPERSIO]: "i_p_SAINT.tga",
+		[StatusConst_default.PROPERTYFIRE]: "i_p_FIRE.tga",
+		[StatusConst_default.PROPERTYWATER]: "i_p_WATER.tga",
+		[StatusConst_default.PROPERTYWIND]: "i_p_WIND.tga",
+		[StatusConst_default.PROPERTYGROUND]: "i_p_EARTH.tga",
+		[StatusConst_default.PROPERTYDARK]: "i_p_DARK.tga",
+		[StatusConst_default.PROPERTYTELEKINESIS]: "i_p_TELE.tga"
+	};
 	/**
 	* Start rendering icons
 	*/
@@ -318698,12 +318730,12 @@ var init_StatusIcons = __esmMin((() => {
 		_status[index].start = Renderer.tick;
 		_status[index].end = Renderer.tick + life;
 		if (life === 9999) _status[index].end = Infinity;
-		if (_status[index].img) return;
-		Client.loadFile(`data/texture/effect/${StatusInfo[index].icon}`, (data) => {
-			Texture.load(data, function() {
-				if (_status[index] && !_status[index].img) addResizedStatusIcon(this, index);
-			});
-		});
+		if (_status[index].img) if (TKM_ICON_OVERRIDE[index]) {
+			const wantVariant = SessionStorage_default.Entity && DB.isTaeKwon(SessionStorage_default.Entity._job) && TKM_ICON_OVERRIDE[index] || null;
+			if (_status[index].tkmVariant !== wantVariant) _status[index].img = null;
+			else return;
+		} else return;
+		loadStatusIcon(index);
 		ScreenEffectManager.parseStatus(index);
 	};
 	StatusIcons_default = UIManager.addComponent(StatusIcons);
